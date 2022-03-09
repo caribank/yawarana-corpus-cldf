@@ -1,1 +1,1 @@
-WIP
+This CLDF dataset aims to contain all data needed for the [digital sketch grammar](https://github.com/fmatter/yaw_sketch) of Yawarana.
