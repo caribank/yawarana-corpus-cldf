@@ -1,14 +1,79 @@
 ID,Language_ID,Parameter_ID,Form,Segments,Comment,Morpheme_ID
-plur1,yab,PLUR,-pëtï,,,plur
-plur2,yab,PLUR,-pëj,,Syllable reduction,plur
-pstse,yab,PST,-se,,,pstse
+plur1,yab,PLUR,-pëtï,,,petiplur
+plur2,yab,PLUR,-pëj,,Syllable reduction,petiplur
+septcp,yab,PST,-se,,,septcp
 i31,yab,3,i-,,,i3
 i32,yab,3,ij-,,Irregular allomorph on ‘to go’.,i3
-pstjpe1,yab,PST,-jpë,,,pstjpe
-pljne1,yab,PL,-jne,,,pljne
-tojpe,yab,FUT,-tojpe,,,tojpe
-0040db97-5be9-4716-a3ad-33f3e679f129-0,yab,stop.pain,moronkepï,,,0040db97-5be9-4716-a3ad-33f3e679f129
-0040db97-5be9-4716-a3ad-33f3e679f129-1,yab,stop.pain,moronkej,,,0040db97-5be9-4716-a3ad-33f3e679f129
+pstjpe1,yab,PST,-jpë,,,jpepst
+pljne1,yab,PL,-jne,,,jnepl
+tojpe,yab,FUT,-tojpe,,,tojpefut
+me2,yab,2,më-,,,me2
+jraneg,yab,NEG,-jra,,,jraneg
+kempinire,yab,PTCP.NZR.GNO:NEG,-kempïnirë,,,kempinire
+tanecns,yab,CNCS,-tane,,,tanecncs
+podes,yab,DES,-po,,,podes
+ta3,yab,3,ta-,,,t3
+t3,yab,3,t-,,,t3
+toponmlz,yab,NMLZ,-topo,,,toponmlz
+ylk,yab,LK,y-,,,ylk
+u1,yab,1,u-,,,u1
+keimp,yab,IMP,-kë,,,keimp
+sapepfv,yab,PFV,-sapë,,,sapepfv
+nonmlz,yab,NMLZ,-no,,,nonmlz
+pokobecause,yab,because,poko,,,pokobecause
+konomopl,yab,PL,-konomo,,,konomopl
+tomopl,yab,PL,-tomo,,,tomopl
+minmlz,yab,NMLZ,-mï,,,minmlz
+tamotimp,yab,MOTIMP,-ta,,,tamotimp
+tikenepost,yab,POST,-tïkene,,,tikenepost
+peess,yab,ESS,-pe,,,peess
+pijkedim,yab,DIM,-pïjkë,,,pijkedim
+rupert,yab,PERT,-ru,,,rupert
+sareinm,yab,INM,-sarë,,,sareinm
+dt2,yab,DETRZ,s-,,,dt2
+tavbz,yab,VBZ,-ta,,,tavbz
+dt1,yab,DETRZ,ëj-,,,dt1
+manlex0-0,yab,heart,ajpu,,,manlex0
+manlex1-0,yab,open,wejyaka,,,manlex1
+manlex2-0,yab,sakunkai,sakunkai,,,manlex2
+manlex3-0,yab,?,maniki,,,manlex3
+manlex4-0,yab,man,waraijtokon,,,manlex4
+manlex5-0,yab,one,enijpëtërë,,,manlex5
+manlex6-0,yab,far; long,tëijpo,,,manlex6
+manlex7-0,yab,mother.VOC,makë,,,manlex7
+manlex8-0,yab,?,taji,,,manlex8
+manlex9-0,yab,drink,yëni,,,manlex9
+manlex10-0,yab,REL.INAN,mare,,,manlex10
+manlex11-0,yab,and,nwarë,,,manlex11
+manlex12-0,yab,cook,ijmoka,,,manlex12
+manlex12-1,yab,cook,ijmojka,,,manlex12
+asamo-0,yab,cry,asamo,,,asamo
+manlex14-0,yab,create,këyama,,,manlex14
+manlex15-0,yab,marry,sepamï,,,manlex15
+manlex15-1,yab,marry,sepan,,,manlex15
+manlex16-0,yab,game.food,oti,,,manlex16
+manlex17-0,yab,grow.up,këyata,,,manlex17
+manlex17-1,yab,grow.up,këyeta,,,manlex17
+manlex17-2,yab,grow.up,këyëta,,,manlex17
+manlex18-0,yab,Pérez,perez,,,manlex18
+manlex19-0,yab,Rafel,rafa,,,manlex19
+manlex20-0,yab,go.IMP,maijtë,,,manlex20
+manlex21-0,yab,DIM,pïjkë,,,manlex21
+manlex22-0,yab,big,kampra,,,manlex22
+manlex23-0,yab,padrastro,padrastro,,,manlex23
+manlex24-0,yab,long.time,ïmparëjra,,,manlex24
+manlex25-0,yab,like,ta,,,manlex25
+manlex26-0,yab,tire,sereka,,,manlex26
+manlex27-0,yab,oh,kï,,,manlex27
+manlex28-0,yab,see.self,esene,,,manlex28
+manlex28-1,yab,see.self,sene,,,manlex28
+manlex29-0,yab,COP,chi,,,manlex29
+manlex29-1,yab,COP,ch,,,manlex29
+manlex29-2,yab,COP,chij,,,manlex29
+enejka-0,yab,watch,enejka,,,enejka
+kaimo-0,yab,game,kaimo,,,kaimo
+moronkepi-0,yab,stop.pain,moronkepï,,,moronkepi
+moronkepi-1,yab,stop.pain,moronkej,,,moronkepi
 0064f13a-d694-4f4c-834b-307545c2d25e-0,yab,like,marë,,,0064f13a-d694-4f4c-834b-307545c2d25e
 00852021-4600-4c55-af3d-3eab5b708f82-0,yab,distract,yënkejka,,,00852021-4600-4c55-af3d-3eab5b708f82
 01347200-0897-46a7-b93c-2bcffc09f3a9-0,yab,unripe,yajrari,,,01347200-0897-46a7-b93c-2bcffc09f3a9
@@ -71,7 +136,7 @@ tojpe,yab,FUT,-tojpe,,,tojpe
 0da5c89c-c4a6-46c8-9b1a-3a74e21a2a02-0,yab,fast,tajnema,,,0da5c89c-c4a6-46c8-9b1a-3a74e21a2a02
 0df3a24a-c202-43ce-9d70-0f90149c088a-0,yab,lay.in.hammock,yejwetijtë,,,0df3a24a-c202-43ce-9d70-0f90149c088a
 0e583e82-77e0-4f03-b20c-11d4168ff0ae-0,yab,pick.up,yameku,,,0e583e82-77e0-4f03-b20c-11d4168ff0ae
-0f40009d-39ec-4751-aec9-01c47243cf1f-0,yab,feed,yerema,,,0f40009d-39ec-4751-aec9-01c47243cf1f
+yerema-0,yab,feed,yerema,,,yerema
 0f9e9c35-293f-4169-abde-4e4809064b54-0,yab,shake,tëtëpamï,,,0f9e9c35-293f-4169-abde-4e4809064b54
 0f9e9c35-293f-4169-abde-4e4809064b54-1,yab,shake,tëtëpan,,,0f9e9c35-293f-4169-abde-4e4809064b54
 102777ba-f373-4837-9fc1-07451d4ea611-0,yab,(conoto),noto,,,102777ba-f373-4837-9fc1-07451d4ea611
@@ -121,7 +186,7 @@ tojpe,yab,FUT,-tojpe,,,tojpe
 1b6a0cfd-9ed7-407d-98b7-d77633835d9d-0,yab,tooth,yë,,,1b6a0cfd-9ed7-407d-98b7-d77633835d9d
 1b6a0cfd-9ed7-407d-98b7-d77633835d9d-1,yab,tooth,ye,,,1b6a0cfd-9ed7-407d-98b7-d77633835d9d
 1c577f46-bc13-47d4-9808-c7baff3fd35e-0,yab,pour.drink,warepa,,,1c577f46-bc13-47d4-9808-c7baff3fd35e
-1d02b141-5985-4013-ab47-665bbf78b137-0,yab,vomit,wenaka,,,1d02b141-5985-4013-ab47-665bbf78b137
+wenaka-0,yab,vomit,wenaka,,,wenaka
 1d0c82dc-b85e-4c47-8c2a-beb15596e4ec-0,yab,summer,yama,,,1d0c82dc-b85e-4c47-8c2a-beb15596e4ec
 1d0c82dc-b85e-4c47-8c2a-beb15596e4ec-1,yab,summer,yëma,,,1d0c82dc-b85e-4c47-8c2a-beb15596e4ec
 1d47445b-035f-458f-ab65-fa1bf664f129-0,yab,be.happy,wajyakïtï,,,1d47445b-035f-458f-ab65-fa1bf664f129
@@ -213,7 +278,7 @@ tojpe,yab,FUT,-tojpe,,,tojpe
 2b261735-fb54-42c4-9010-2ec3525b1928-0,yab,calculate,kujnëjtë,,,2b261735-fb54-42c4-9010-2ec3525b1928
 2b47341c-1634-4b1b-828d-3ed7d972ea5c-0,yab,use.potion,marajtë,,,2b47341c-1634-4b1b-828d-3ed7d972ea5c
 2b5fa12b-1e2c-4dcb-92bd-48dfa2a32842-0,yab,1SG,wïrë,,,2b5fa12b-1e2c-4dcb-92bd-48dfa2a32842
-2bb05c6b-af02-4532-9b07-434f29cb6719-0,yab,urine,suku,,,2bb05c6b-af02-4532-9b07-434f29cb6719
+suku-0,yab,urine,suku,,,suku
 2be51fab-e93c-4c03-9573-bdfc26fd3f01-0,yab,piranha.sp,peʼne,,,2be51fab-e93c-4c03-9573-bdfc26fd3f01
 2be51fab-e93c-4c03-9573-bdfc26fd3f01-1,yab,piranha.sp,pene,,,2be51fab-e93c-4c03-9573-bdfc26fd3f01
 2c1ac604-1a1a-4eaf-bc10-5180d0e7f40a-0,yab,basket.type,poroko,,,2c1ac604-1a1a-4eaf-bc10-5180d0e7f40a
@@ -610,9 +675,9 @@ tojpe,yab,FUT,-tojpe,,,tojpe
 7ccbc960-3700-48fe-8eb9-422b9fef6f78-1,yab,leave,yïmïj,,,7ccbc960-3700-48fe-8eb9-422b9fef6f78
 7ccdea1f-add1-4fd0-b650-5473ccff99fd-0,yab,painful,morone,,,7ccdea1f-add1-4fd0-b650-5473ccff99fd
 7d093765-b392-4ad9-a0ab-787481d79b99-0,yab,over.here,sarë,,,7d093765-b392-4ad9-a0ab-787481d79b99
-7d38ba55-07de-4d93-b218-038373f4d764-0,yab,good; easy,nope,,,7d38ba55-07de-4d93-b218-038373f4d764
-7d38ba55-07de-4d93-b218-038373f4d764-1,yab,good; easy,nopa,,,7d38ba55-07de-4d93-b218-038373f4d764
-7d38ba55-07de-4d93-b218-038373f4d764-2,yab,good; easy,nop,,,7d38ba55-07de-4d93-b218-038373f4d764
+nope-0,yab,good; easy,nope,,,nope
+nope-1,yab,good; easy,nopa,,,nope
+nope-2,yab,good; easy,nop,,,nope
 7d4ec9af-e0f3-4e4a-8b44-fb30c86eefdf-0,yab,smell,cha,,,7d4ec9af-e0f3-4e4a-8b44-fb30c86eefdf
 7da418cc-15de-47ff-8fb3-a13a31d132e0-0,yab,preferred,wakïtï,,,7da418cc-15de-47ff-8fb3-a13a31d132e0
 7da418cc-15de-47ff-8fb3-a13a31d132e0-1,yab,preferred,wakïj,,,7da418cc-15de-47ff-8fb3-a13a31d132e0
