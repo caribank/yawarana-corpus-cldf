@@ -127,7 +127,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#FormTable",
-            "dc:extent": 254,
+            "dc:extent": 252,
             "tableSchema": {
                 "columns": [
                     {
@@ -276,7 +276,7 @@
             "url": "languages.csv"
         },
         {
-            "dc:extent": 193,
+            "dc:extent": 303,
             "tableSchema": {
                 "columns": [
                     {
@@ -342,7 +342,7 @@
             "url": "FormSlices"
         },
         {
-            "dc:extent": 659,
+            "dc:extent": 718,
             "tableSchema": {
                 "columns": [
                     {
@@ -407,7 +407,7 @@
             "url": "ExampleSlices"
         },
         {
-            "dc:extent": 1272,
+            "dc:extent": 1276,
             "tableSchema": {
                 "columns": [
                     {
@@ -494,7 +494,7 @@
             "url": "MorphTable"
         },
         {
-            "dc:extent": 988,
+            "dc:extent": 989,
             "tableSchema": {
                 "columns": [
                     {

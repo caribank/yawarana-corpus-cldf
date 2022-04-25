@@ -114,6 +114,7 @@ with CLDFWriter(spec) as writer:
     ):
         morpheme_id = morpheme["ID"]
         if morpheme_id in id_dict:
+            log.error(morpheme_id)
             raise ValueError
         id_dict[morpheme_id] = {}
         writer.objects["MorphsetTable"].append(morpheme)
@@ -134,6 +135,7 @@ with CLDFWriter(spec) as writer:
         else:
             morpheme_id = lexeme["ID"]
         if morpheme_id in id_dict:
+            log.error(morpheme_id)
             raise ValueError
         id_dict[morpheme_id] = {}
         forms = lexeme["Form"].split("; ")
@@ -166,6 +168,7 @@ with CLDFWriter(spec) as writer:
         forms = sorted(forms, key=lambda x: len(x), reverse=True)
         morpheme_id = flexeme["ID"]
         if morpheme_id in id_dict:
+            log.error(morpheme_id)
             raise ValueError
         id_dict[morpheme_id] = {}
         for i, form in enumerate(forms):
@@ -179,7 +182,8 @@ with CLDFWriter(spec) as writer:
                     "Language_ID": flexeme["Language_ID"],
                 }
             )
-            id_dict[morpheme_id][form + ":" + flexeme["Gloss_en"]] = morph_id
+            for g in flexeme["Gloss_en"].split("; "):
+                id_dict[morpheme_id][form + ":" + g] = morph_id
             autocomplete_data.append((f"m:{form}", f"[m]({morph_id})"))
         writer.objects["MorphsetTable"].append(
             {
@@ -223,7 +227,7 @@ with CLDFWriter(spec) as writer:
                     id_dic=id_dict,
                 )
                 if None in morph_ids:
-                    print(word.word, word.gloss, morph_ids)
+                    print(word.word, word.gloss, morpheme_ids.split(","), morph_ids)
                     continue
                 for morph_count, morph_id in enumerate(morph_ids):
                     writer.objects["FormSlices"].append(

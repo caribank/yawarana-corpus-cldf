@@ -1,5 +1,5 @@
 ID,Language_ID,Parameter_ID,Form,Segments,Comment,Morpheme_ID
-plur1,yab,PLUR,-pëtï,,,petiplur
+plur1,yab,PLUR,-pëti,,,petiplur
 plur2,yab,PLUR,-pëj,,Syllable reduction,petiplur
 septcp,yab,PST,-se,,,septcp
 i31,yab,3,i-,,,i3
@@ -30,6 +30,8 @@ peess,yab,ESS,-pe,,,peess
 pijkedim,yab,DIM,-pïjkë,,,pijkedim
 rupert,yab,PERT,-ru,,,rupert
 sareinm,yab,INM,-sarë,,,sareinm
+ri-zero,yab,IPFV,-∅,,,ri
+ri,yab,IPFV,-ri,,,ri
 dt2,yab,DETRZ,s-,,,dt2
 tavbz,yab,VBZ,-ta,,,tavbz
 dt1,yab,DETRZ,ëj-,,,dt1
@@ -72,6 +74,8 @@ manlex29-1,yab,COP,ch,,,manlex29
 manlex29-2,yab,COP,chij,,,manlex29
 enejka-0,yab,watch,enejka,,,enejka
 kaimo-0,yab,game,kaimo,,,kaimo
+suku-0,yab,urine,suku,,,suku
+suku-1,yab,urine,suj,,,suku
 moronkepi-0,yab,stop.pain,moronkepï,,,moronkepi
 moronkepi-1,yab,stop.pain,moronkej,,,moronkepi
 0064f13a-d694-4f4c-834b-307545c2d25e-0,yab,like,marë,,,0064f13a-d694-4f4c-834b-307545c2d25e
@@ -278,7 +282,7 @@ wenaka-0,yab,vomit,wenaka,,,wenaka
 2b261735-fb54-42c4-9010-2ec3525b1928-0,yab,calculate,kujnëjtë,,,2b261735-fb54-42c4-9010-2ec3525b1928
 2b47341c-1634-4b1b-828d-3ed7d972ea5c-0,yab,use.potion,marajtë,,,2b47341c-1634-4b1b-828d-3ed7d972ea5c
 2b5fa12b-1e2c-4dcb-92bd-48dfa2a32842-0,yab,1SG,wïrë,,,2b5fa12b-1e2c-4dcb-92bd-48dfa2a32842
-suku-0,yab,urine,suku,,,suku
+2bb05c6b-af02-4532-9b07-434f29cb6719-0,yab,urine,suku,,,2bb05c6b-af02-4532-9b07-434f29cb6719
 2be51fab-e93c-4c03-9573-bdfc26fd3f01-0,yab,piranha.sp,peʼne,,,2be51fab-e93c-4c03-9573-bdfc26fd3f01
 2be51fab-e93c-4c03-9573-bdfc26fd3f01-1,yab,piranha.sp,pene,,,2be51fab-e93c-4c03-9573-bdfc26fd3f01
 2c1ac604-1a1a-4eaf-bc10-5180d0e7f40a-0,yab,basket.type,poroko,,,2c1ac604-1a1a-4eaf-bc10-5180d0e7f40a

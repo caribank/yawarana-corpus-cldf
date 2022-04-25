@@ -28,7 +28,7 @@ pyglottolog==3.7.0
 pyigt==1.2.0
 pykwalify==1.8.0
 -e git+ssh://git@github.com/fmatter/pylacoan.git@b0b8df8cf7cd9b45f56f89bda4381fe36ed6b6fa#egg=pylacoan
--e git+ssh://git@github.com/fmatter/pylingdocs.git@27aa3ba1962dfb784102398d87fac7ac2ba99b66#egg=pylingdocs
+-e git+ssh://git@github.com/fmatter/pylingdocs.git@aeda6d50cfeb37dccdacdb33070c96cb39220f4c#egg=pylingdocs
 pyrsistent==0.18.1
 python-dateutil==2.8.2
 python-gettext==4.0
