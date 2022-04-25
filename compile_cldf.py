@@ -122,10 +122,8 @@ with CLDFWriter(spec) as writer:
 
     for morph in pd.concat([infl_morphs, deriv_morphs]).to_dict(orient="records"):
         morpheme_id = morph["Morpheme_ID"]
-        # print(morph)
-        id_dict[morpheme_id][
-            morph["Form"].strip("-") + ":" + morph["Parameter_ID"]
-        ] = morph["ID"]
+        for g in morph["Parameter_ID"].split("; "):
+            id_dict[morpheme_id][morph["Form"].strip("-") + ":" + g] = morph["ID"]
         writer.objects["MorphTable"].append(morph)
         autocomplete_data.append((f"m:{morph['Form']}", f"[m]({morph['ID']})"))
 
@@ -150,7 +148,9 @@ with CLDFWriter(spec) as writer:
                     "Language_ID": "yab",
                 }
             )
-            id_dict[morpheme_id][form + ":" + lexeme["Gloss_en"]] = morph_id
+            for g in lexeme["Gloss_en"].split("; "):
+                id_dict[morpheme_id][form + ":" + g] = morph_id
+            # id_dict[morpheme_id][form + ":" + lexeme["Gloss_en"]] = morph_id
             autocomplete_data.append((f"m:{form}", f"[m]({morph_id})"))
         writer.objects["MorphsetTable"].append(
             {
@@ -172,7 +172,7 @@ with CLDFWriter(spec) as writer:
             raise ValueError
         id_dict[morpheme_id] = {}
         for i, form in enumerate(forms):
-            morph_id = f"{morpheme_id}-{i}"
+            morph_id = f"{morpheme_id}{i}"
             writer.objects["MorphTable"].append(
                 {
                     "ID": morph_id,
@@ -195,6 +195,7 @@ with CLDFWriter(spec) as writer:
         )
         autocomplete_data.append((f"mp:{forms[0]}", f"[mp]({morpheme_id})"))
 
+    # print(id_dict["manlex6"])
     # store all word forms in the corpus
     forms = {}
     form_slices = []
@@ -210,10 +211,16 @@ with CLDFWriter(spec) as writer:
         if ex["Primary_Text"] == "###":
             continue
         igt = pyigt.IGT(ex["Analyzed_Word"], ex["Gloss"])
+        if len(ex["Morpheme_IDs"]) != len(igt.morphosyntactic_words):
+            for wc, word in enumerate(ex["Analyzed_Word"]):
+                if "=" in word:
+                    ex["Morpheme_IDs"].insert(wc, ex["Morpheme_IDs"][wc])
         word_count = -1
         for morpheme_ids, word in zip(ex["Morpheme_IDs"], igt.morphosyntactic_words):
             word_count += 1
             slug = slugify(word.word + ":" + word.gloss)
+            # if ex["ID"] == "convrisamaj-47":
+            #     print(morpheme_ids, word.word, word.gloss)
             if slug not in forms:
                 forms[slug] = {"IGT": word}
                 if "***" in morpheme_ids:
@@ -227,7 +234,8 @@ with CLDFWriter(spec) as writer:
                     id_dic=id_dict,
                 )
                 if None in morph_ids:
-                    print(word.word, word.gloss, morpheme_ids.split(","), morph_ids)
+                    msg = f"Unidentified morphs in {ex['ID']} {word.word} '{word.gloss}': {morpheme_ids} > {morph_ids}"
+                    log.error(msg)
                     continue
                 for morph_count, morph_id in enumerate(morph_ids):
                     writer.objects["FormSlices"].append(
