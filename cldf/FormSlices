@@ -39,8 +39,6 @@ ki-oh-0,ki-oh,manlex27-0,0
 mokontomo-2pl-0,mokontomo-2pl,6834a422-bece-4f7c-9e98-baa8ba7f2f38-1,0
 ka-take-out-ipfv-0,ka-take-out-ipfv,7abdc22a-b215-41be-8de4-f1bf7b3e84f1-0,0
 ka-take-out-ipfv-1,ka-take-out-ipfv,ri-zero,1
-t-aro-3-rice-0,t-aro-3-rice,t3,0
-t-aro-3-rice-1,t-aro-3-rice,9d95bdea-d5de-48df-8e71-8e49d8ce1809-0,1
 ta-like-0,ta-like,manlex25-0,0
 tewi-3sg-0,tewi-3sg,587b3015-391a-4db2-b4b9-0e92563a5332-0,0
 i-ri-put-ipfv-0,i-ri-put-ipfv,0c04e481-d982-43f9-bc0f-faffaa9b2795-1,0
@@ -51,6 +49,9 @@ yarika-ri-laugh-at-ipfv-0,yarika-ri-laugh-at-ipfv,99e9f0d6-2f24-4f4b-bb64-4e1a03
 yarika-ri-laugh-at-ipfv-1,yarika-ri-laugh-at-ipfv,ri,1
 tawaja-not-thus-0,tawaja-not-thus,b0116386-4331-4c42-90a4-c7e6721b511c-0,0
 pirare-nothing-0,pirare-nothing,b97a0ed7-7ceb-4cab-83d8-5b30b45d9a59-0,0
+ta-ita-po-3p-hear-des-0,ta-ita-po-3p-hear-des,ta3,0
+ta-ita-po-3p-hear-des-1,ta-ita-po-3p-hear-des,b149cf62-a901-473f-980f-78788d653ed8-0,1
+ta-ita-po-3p-hear-des-2,ta-ita-po-3p-hear-des,podes,2
 chi-ri-cop-ipfv-0,chi-ri-cop-ipfv,manlex29-0,0
 chi-ri-cop-ipfv-1,chi-ri-cop-ipfv,ri,1
 ma-throw-ipfv-0,ma-throw-ipfv,4046b469-5335-41e2-b62f-e4c2ca7ce5e5-0,0
@@ -206,8 +207,6 @@ keyama-se-create-pst-1,keyama-se-create-pst,septcp,1
 wera-like-0,wera-like,1031534e-9933-4b6c-9269-47a9af4a820c-0,0
 waraijtokomo-man-0,waraijtokomo-man,8f10c5a4-e0c7-475b-9f83-ee4dbbde9bb4-0,0
 waraijtokon-man-0,waraijtokon-man,manlex4-0,0
-t-akere-3-com-0,t-akere-3-com,t3,0
-t-akere-3-com-1,t-akere-3-com,1e660160-fcfa-4356-963c-7ce339c95c53-0,1
 imparejra-long-time-0,imparejra-long-time,manlex24-0,0
 ware-thus-0,ware-thus,82b6a876-e630-48bc-943e-382481300ba9-4,0
 tajtojpe-hesit-0,tajtojpe-hesit,f33cf869-aff6-4e7e-ba36-73d2edee4627-0,0
@@ -274,6 +273,10 @@ waijta-tomo-jpe-mouse-pl-pst-2,waijta-tomo-jpe-mouse-pl-pst,pstjpe1,2
 ej-wenaka-jpe-detrz-vomit-pst-0,ej-wenaka-jpe-detrz-vomit-pst,dt1,0
 ej-wenaka-jpe-detrz-vomit-pst-1,ej-wenaka-jpe-detrz-vomit-pst,wenaka-0,1
 ej-wenaka-jpe-detrz-vomit-pst-2,ej-wenaka-jpe-detrz-vomit-pst,pstjpe1,2
+ta-in-peti-ri-3p-see-plur-ipfv-0,ta-in-peti-ri-3p-see-plur-ipfv,ta3,0
+ta-in-peti-ri-3p-see-plur-ipfv-1,ta-in-peti-ri-3p-see-plur-ipfv,db2ee1eb-62e7-439d-bad9-bd65ee3a230b-2,1
+ta-in-peti-ri-3p-see-plur-ipfv-2,ta-in-peti-ri-3p-see-plur-ipfv,plur1,2
+ta-in-peti-ri-3p-see-plur-ipfv-3,ta-in-peti-ri-3p-see-plur-ipfv,ri,3
 in-peti-see-plur-ipfv-0,in-peti-see-plur-ipfv,db2ee1eb-62e7-439d-bad9-bd65ee3a230b-2,0
 in-peti-see-plur-ipfv-1,in-peti-see-plur-ipfv,plur1,1
 in-peti-see-plur-ipfv-2,in-peti-see-plur-ipfv,ri-zero,2
@@ -298,7 +301,5 @@ ekejna-where-to-0,ekejna-where-to,a992b4b6-c478-4e4b-9814-670e19682543-0,0
 won-se-enter-pst-0,won-se-enter-pst,bcfb197f-800e-48bd-8ec6-664e658aff04-1,0
 won-se-enter-pst-1,won-se-enter-pst,septcp,1
 maniki-0,maniki,manlex3-0,0
-t-iwij-3-house-0,t-iwij-3-house,t3,0
-t-iwij-3-house-1,t-iwij-3-house,fb472c41-d260-4cb8-9bcd-064cc1ca14b6-1,1
 maniki-jpe-pst-0,maniki-jpe-pst,manlex3-0,0
 maniki-jpe-pst-1,maniki-jpe-pst,pstjpe1,1
