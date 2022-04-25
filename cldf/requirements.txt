@@ -1,7 +1,6 @@
 appdirs==1.4.4
 attrs==21.4.0
 certifi==2021.10.8
-cffconvert==2.0.0
 chardet==4.0.0
 cldfbench==1.10.0
 cldfcatalog==1.4.0
@@ -13,7 +12,6 @@ gitdb==4.0.9
 greenlet==1.1.2
 idna==3.3
 isodate==0.6.1
-jsonschema==3.2.0
 lingpy==2.6.9
 Markdown==3.3.6
 networkx==2.6.3
@@ -26,10 +24,8 @@ pycldf==1.25.1
 pycountry==22.3.5
 pyglottolog==3.7.0
 pyigt==1.2.0
-pykwalify==1.8.0
 -e git+ssh://git@github.com/fmatter/pylacoan.git@b0b8df8cf7cd9b45f56f89bda4381fe36ed6b6fa#egg=pylacoan
--e git+ssh://git@github.com/fmatter/pylingdocs.git@aeda6d50cfeb37dccdacdb33070c96cb39220f4c#egg=pylingdocs
-pyrsistent==0.18.1
+-e git+ssh://git@github.com/fmatter/pylingdocs.git@3b099e74752e0ec55953f23a11a2216f03a53baa#egg=pylingdocs
 python-dateutil==2.8.2
 python-gettext==4.0
 python-slugify==6.1.1

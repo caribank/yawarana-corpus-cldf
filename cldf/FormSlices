@@ -1,5 +1,5 @@
 ID,Form_ID,Morph_ID,Slice
-ati-what-0,ati-what,1f94ee19-38df-4543-a405-b4bdd12d41b51,0
+ati-field-0,ati-field,d5f051fe-c25a-4507-b4cc-f04a47e15e240,0
 re-emp-0,re-emp,emp-0,0
 warai-like-0,warai-like,10c9a4a5-17d1-4474-b399-bf7d2c418a951,0
 mere-3in-md-0,mere-3in-md,77c34bc8-9e7f-446c-8495-82a2837ee83d0,0
@@ -9,7 +9,7 @@ irejpe-then-0,irejpe-then,2d4fe89b-c49d-4d19-86ae-209f48c5b2250,0
 me-yarika-2-laugh-at-ipfv-0,me-yarika-2-laugh-at-ipfv,me2,0
 me-yarika-2-laugh-at-ipfv-1,me-yarika-2-laugh-at-ipfv,99e9f0d6-2f24-4f4b-bb64-4e1a03b8d3c90,1
 me-yarika-2-laugh-at-ipfv-2,me-yarika-2-laugh-at-ipfv,ri-zero,2
-ti-quot-0,ti-quot,8d454d1d-1899-40cb-91a2-e5a9a79298f90,0
+ti-like-0,ti-like,d46af2f7-8cec-41e5-9757-55dd8bd7d2210,0
 me-yaruwa-ri-2-laugh-ipfv-0,me-yaruwa-ri-2-laugh-ipfv,me2,0
 me-yaruwa-ri-2-laugh-ipfv-1,me-yaruwa-ri-2-laugh-ipfv,866eb4fd-5869-403f-a12d-922cb0f26a9a0,1
 me-yaruwa-ri-2-laugh-ipfv-2,me-yaruwa-ri-2-laugh-ipfv,ri,2
@@ -51,8 +51,7 @@ mokontomo-2pl-0,mokontomo-2pl,6834a422-bece-4f7c-9e98-baa8ba7f2f381,0
 sereka-po-jra-tire-des-priv-0,sereka-po-jra-tire-des-priv,manlex26-0,0
 sereka-po-jra-tire-des-priv-1,sereka-po-jra-tire-des-priv,podes,1
 sereka-po-jra-tire-des-priv-2,sereka-po-jra-tire-des-priv,jraneg,2
-ka-take-out-ipfv-0,ka-take-out-ipfv,7abdc22a-b215-41be-8de4-f1bf7b3e84f10,0
-ka-take-out-ipfv-1,ka-take-out-ipfv,ri-zero,1
+ka-qp-0,ka-qp,99c23c0e-7736-44ed-ac43-7d6e900677c20,0
 t-aro-3-rice-0,t-aro-3-rice,t3,0
 t-aro-3-rice-1,t-aro-3-rice,9d95bdea-d5de-48df-8e71-8e49d8ce18090,1
 ta-say-ipfv-0,ta-say-ipfv,62e12d1c-dd51-4a74-af84-2c7b0b87d0c12,0
@@ -60,9 +59,6 @@ ta-say-ipfv-1,ta-say-ipfv,ri-zero,1
 ta-like-0,ta-like,manlex25-0,0
 ya-erg-0,ya-erg,yaerg-0,0
 tewi-3sg-0,tewi-3sg,587b3015-391a-4db2-b4b9-0e92563a53320,0
-ta-jne-say-ipfv-pl-0,ta-jne-say-ipfv-pl,62e12d1c-dd51-4a74-af84-2c7b0b87d0c12,0
-ta-jne-say-ipfv-pl-1,ta-jne-say-ipfv-pl,ri-zero,1
-ta-jne-say-ipfv-pl-2,ta-jne-say-ipfv-pl,pljne1,2
 poko-no-on-surface-nmlz-0,poko-no-on-surface-nmlz,pekeon-1,0
 poko-no-on-surface-nmlz-1,poko-no-on-surface-nmlz,nonmlz,1
 i-ri-put-ipfv-0,i-ri-put-ipfv,0c04e481-d982-43f9-bc0f-faffaa9b27951,0
@@ -106,8 +102,8 @@ i-tari-3-griddle-1,i-tari-3-griddle,a34da529-8cf1-4859-8873-4a7cc1c4879e0,1
 wajyakiti-jra-be-happy-ipfv-neg-0,wajyakiti-jra-be-happy-ipfv-neg,1d47445b-035f-458f-ab65-fa1bf664f1290,0
 wajyakiti-jra-be-happy-ipfv-neg-1,wajyakiti-jra-be-happy-ipfv-neg,ri-zero,1
 wajyakiti-jra-be-happy-ipfv-neg-2,wajyakiti-jra-be-happy-ipfv-neg,jraneg,2
-kajke-say-imp-ipfv-0,kajke-say-imp-ipfv,7a0566cf-3599-466e-937b-b7f9a47085680,0
-kajke-say-imp-ipfv-1,kajke-say-imp-ipfv,ri-zero,1
+kaj-ke-weave-imp-0,kaj-ke-weave-imp,c3d86e76-7b22-41c1-80f2-71e9997e3afd1,0
+kaj-ke-weave-imp-1,kaj-ke-weave-imp,keimp,1
 wej-saj-cop-pfv-0,wej-saj-cop-pfv,ccb970b7-980c-4dc2-84fc-f291fd9a6bab0,0
 wej-saj-cop-pfv-1,wej-saj-cop-pfv,sajpfv,1
 tawaraij-thus-n-0,tawaraij-thus-n,a2dc27e5-7407-4c77-915e-2f6eac7c17960,0
@@ -123,7 +119,7 @@ yaruwa-topo-laugh-circ-nmlz-1,yaruwa-topo-laugh-circ-nmlz,toponmlz,1
 in-ke-see-imp-0,in-ke-see-imp,db2ee1eb-62e7-439d-bad9-bd65ee3a230b2,0
 in-ke-see-imp-1,in-ke-see-imp,keimp,1
 ire-tmp-dem-0,ire-tmp-dem,970de200-9d4a-4b20-8fe0-cf7db81112520,0
-nwa-glute-0,nwa-glute,483c2bd6-4457-4f24-99c3-f4de31a3f7f01,0
+nwa-thus-0,nwa-thus,e5878716-bc48-4e01-b82d-d9c6e602e5900,0
 tewisantomo-3pl-0,tewisantomo-3pl,31f8c6fb-23e7-448a-8b2c-4cf698a01a6d0,0
 yaruwa-tepeke-laugh-prog-intr-0,yaruwa-tepeke-laugh-prog-intr,866eb4fd-5869-403f-a12d-922cb0f26a9a0,0
 yaruwa-tepeke-laugh-prog-intr-1,yaruwa-tepeke-laugh-prog-intr,tepeke,1
@@ -149,8 +145,9 @@ onono-another-0,onono-another,e4f82478-b8ba-469b-92e9-fe9ec4a18cef0,0
 pare-and-0,pare-and,a6194807-28a2-45e2-a45f-e335729278fb0,0
 yatum-sun-0,yatum-sun,763cd0a8-2338-47f6-be83-51c37991b1292,0
 ponoko-every-0,ponoko-every,manlex46-0,0
-takon-tomo-other-pl-0,takon-tomo-other-pl,f3bad57e-6777-4fc4-a6d5-3e67bdc9da262,0
-takon-tomo-other-pl-1,takon-tomo-other-pl,tomopl,1
+t-akon-tomo-3-ygr-brother-pl-0,t-akon-tomo-3-ygr-brother-pl,t3,0
+t-akon-tomo-3-ygr-brother-pl-1,t-akon-tomo-3-ygr-brother-pl,f7d9599e-4cb0-4047-b10a-8ac37ca90d4e1,1
+t-akon-tomo-3-ygr-brother-pl-2,t-akon-tomo-3-ygr-brother-pl,tomopl,2
 ini-ja-see-ipfv-neg-0,ini-ja-see-ipfv-neg,db2ee1eb-62e7-439d-bad9-bd65ee3a230b0,0
 ini-ja-see-ipfv-neg-1,ini-ja-see-ipfv-neg,ri-zero,1
 ini-ja-see-ipfv-neg-2,ini-ja-see-ipfv-neg,janeg,2
@@ -162,6 +159,7 @@ u-yare-1-on-own-1,u-yare-1-on-own,3dcad055-2e9d-4968-9e90-af3a760614290,1
 peremeki-ri-talk-ipfv-0,peremeki-ri-talk-ipfv,5a18649c-d742-45d3-975d-e9618da883bd1,0
 peremeki-ri-talk-ipfv-1,peremeki-ri-talk-ipfv,ri-ri,1
 aniki-who-0,aniki-who,manlex45-0,0
+nare-asrt-0,nare-asrt,2019268f-49d4-46f6-8757-97b27a4727270,0
 pe-ess-0,pe-ess,esspe-0,0
 y-akere-lk-com-0,y-akere-lk-com,ylk,0
 y-akere-lk-com-1,y-akere-lk-com,1e660160-fcfa-4356-963c-7ce339c95c530,1
@@ -170,10 +168,10 @@ chi-cop-ipfv-0,chi-cop-ipfv,manlex29-0,0
 chi-cop-ipfv-1,chi-cop-ipfv,ri-zero,1
 ta-ri-say-ipfv-0,ta-ri-say-ipfv,62e12d1c-dd51-4a74-af84-2c7b0b87d0c12,0
 ta-ri-say-ipfv-1,ta-ri-say-ipfv,ri,1
-yarika-se-mi-jra-laugh-at-ptcp-nmlz-neg-0,yarika-se-mi-jra-laugh-at-ptcp-nmlz-neg,99e9f0d6-2f24-4f4b-bb64-4e1a03b8d3c90,0
-yarika-se-mi-jra-laugh-at-ptcp-nmlz-neg-1,yarika-se-mi-jra-laugh-at-ptcp-nmlz-neg,septcp,1
-yarika-se-mi-jra-laugh-at-ptcp-nmlz-neg-2,yarika-se-mi-jra-laugh-at-ptcp-nmlz-neg,minmlz,2
-yarika-se-mi-jra-laugh-at-ptcp-nmlz-neg-3,yarika-se-mi-jra-laugh-at-ptcp-nmlz-neg,jraneg,3
+yarika-se-mi-jra-laugh-at-ptcp-nmlz-priv-0,yarika-se-mi-jra-laugh-at-ptcp-nmlz-priv,99e9f0d6-2f24-4f4b-bb64-4e1a03b8d3c90,0
+yarika-se-mi-jra-laugh-at-ptcp-nmlz-priv-1,yarika-se-mi-jra-laugh-at-ptcp-nmlz-priv,septcp,1
+yarika-se-mi-jra-laugh-at-ptcp-nmlz-priv-2,yarika-se-mi-jra-laugh-at-ptcp-nmlz-priv,minmlz,2
+yarika-se-mi-jra-laugh-at-ptcp-nmlz-priv-3,yarika-se-mi-jra-laugh-at-ptcp-nmlz-priv,jraneg,3
 ente-here-0,ente-here,4a9eb16a-798f-4d8f-b712-20d70bc69fb21,0
 ana-1-3-0,ana-1-3,9af2823b-63a9-4aa0-affc-07d31dde4aaa0,0
 keyeta-jpe-grow-up-pst-0,keyeta-jpe-grow-up-pst,manlex17-1,0
@@ -238,8 +236,7 @@ s-erema-tojpe-detrz-feed-fut-0,s-erema-tojpe-detrz-feed-fut,dt2,0
 s-erema-tojpe-detrz-feed-fut-1,s-erema-tojpe-detrz-feed-fut,yerema-1,1
 s-erema-tojpe-detrz-feed-fut-2,s-erema-tojpe-detrz-feed-fut,tojpefut,2
 pan-deceased-0,pan-deceased,pano-1,0
-pata-jpe-town-pst-0,pata-jpe-town-pst,fbfba517-2e95-49ee-a166-ba024120a1660,0
-pata-jpe-town-pst-1,pata-jpe-town-pst,pstjpe1,1
+patajpe-death-0,patajpe-death,c28b3b5f-585a-4ef7-ae7d-c38576a79f120,0
 te-go-ipfv-0,te-go-ipfv,a5589c54-8bcd-40e2-9d28-b29f1592ccd30,0
 te-go-ipfv-1,te-go-ipfv,ri-zero,1
 sema-saj-die-pfv-0,sema-saj-die-pfv,6224407d-8682-4a57-b404-4510e4fe5e241,0
@@ -310,9 +307,8 @@ waraijtokon-man-0,waraijtokon-man,manlex4-0,0
 t-akere-3-com-0,t-akere-3-com,t3,0
 t-akere-3-com-1,t-akere-3-com,1e660160-fcfa-4356-963c-7ce339c95c530,1
 imparejra-long-time-0,imparejra-long-time,manlex24-0,0
-ware-thus-0,ware-thus,82b6a876-e630-48bc-943e-382481300ba94,0
-taj-tojpe-say-fut-0,taj-tojpe-say-fut,62e12d1c-dd51-4a74-af84-2c7b0b87d0c11,0
-taj-tojpe-say-fut-1,taj-tojpe-say-fut,tojpefut,1
+ware-like-0,ware-like,f72955ca-fde8-40d4-ae99-ae03e9dfd2880,0
+tajtojpe-hesit-0,tajtojpe-hesit,f33cf869-aff6-4e7e-ba36-73d2edee46270,0
 wejtane-however-0,wejtane-however,01feb68b-3266-4cd2-88a7-6234865d1cbf0,0
 teijpe-far-0,teijpe-far,eae27c23-976a-46c4-be11-4495531d3da10,0
 pijke-dim-0,pijke-dim,manlex21-0,0
@@ -327,12 +323,12 @@ empare-already-0,empare-already,62d16d71-ea6f-446d-874e-e5ef08d093082,0
 taji-0,taji,manlex8-0,0
 waijta-mouse-0,waijta-mouse,661dfe17-72bb-4a4f-aac2-e6d211c3b46b0,0
 enijpetere-one-0,enijpetere-one,manlex5-0,0
-ti-like-0,ti-like,d46af2f7-8cec-41e5-9757-55dd8bd7d2210,0
 mijna-there-0,mijna-there,a674355b-5de9-409b-9daa-7c5825152b830,0
 teijpo-far-0,teijpo-far,manlex6-0,0
 winij-se-sleep-pst-0,winij-se-sleep-pst,f90c63ed-bd4c-43b7-b9f9-2709d3ff0ddd1,0
 winij-se-sleep-pst-1,winij-se-sleep-pst,septcp,1
 yutu-wilderness-0,yutu-wilderness,9bd33fe6-5f38-4696-be71-1073ceb952560,0
+ti-quot-0,ti-quot,8d454d1d-1899-40cb-91a2-e5a9a79298f90,0
 tawani-darkness-0,tawani-darkness,041cd4a0-4dca-4c25-8f2f-ebceb26331430,0
 enuj-se-go-up-pst-0,enuj-se-go-up-pst,dc33b380-8376-4775-83e2-46bcef4011991,0
 enuj-se-go-up-pst-1,enuj-se-go-up-pst,septcp,1
@@ -355,6 +351,7 @@ soj-id-dabble-0,soj-id-dabble,b88eb9d8-3039-47c5-b822-a13e422aeb480,0
 naij-peti-ri-do-plur-ipfv-0,naij-peti-ri-do-plur-ipfv,77ab3f90-a8cd-4217-9b75-aacb941802e50,0
 naij-peti-ri-do-plur-ipfv-1,naij-peti-ri-do-plur-ipfv,plur1,1
 naij-peti-ri-do-plur-ipfv-2,naij-peti-ri-do-plur-ipfv,ri,2
+ware-thus-0,ware-thus,82b6a876-e630-48bc-943e-382481300ba94,0
 waijta-tomo-mouse-pl-0,waijta-tomo-mouse-pl,661dfe17-72bb-4a4f-aac2-e6d211c3b46b0,0
 waijta-tomo-mouse-pl-1,waijta-tomo-mouse-pl,tomopl,1
 nwa-jte-ri-dance-vbz-tr-ipfv-0,nwa-jte-ri-dance-vbz-tr-ipfv,nwadance-0,0
@@ -414,7 +411,6 @@ nwa-jte-konton-dance-vbz-tr-ipfv-pl-0,nwa-jte-konton-dance-vbz-tr-ipfv-pl,nwadan
 nwa-jte-konton-dance-vbz-tr-ipfv-pl-1,nwa-jte-konton-dance-vbz-tr-ipfv-pl,jtevbz,1
 nwa-jte-konton-dance-vbz-tr-ipfv-pl-2,nwa-jte-konton-dance-vbz-tr-ipfv-pl,ri-zero,2
 nwa-jte-konton-dance-vbz-tr-ipfv-pl-3,nwa-jte-konton-dance-vbz-tr-ipfv-pl,kontonpl,3
-ware-like-0,ware-like,f72955ca-fde8-40d4-ae99-ae03e9dfd2880,0
 tipa-pej-se-jne-go-group-plur-pst-pl-0,tipa-pej-se-jne-go-group-plur-pst-pl,c658eb03-b8e5-4e3e-a5ba-21c1d8ce3eee1,0
 tipa-pej-se-jne-go-group-plur-pst-pl-1,tipa-pej-se-jne-go-group-plur-pst-pl,plur2,1
 tipa-pej-se-jne-go-group-plur-pst-pl-2,tipa-pej-se-jne-go-group-plur-pst-pl,septcp,2

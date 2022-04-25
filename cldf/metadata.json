@@ -127,7 +127,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#FormTable",
-            "dc:extent": 255,
+            "dc:extent": 254,
             "tableSchema": {
                 "columns": [
                     {
@@ -276,7 +276,7 @@
             "url": "languages.csv"
         },
         {
-            "dc:extent": 431,
+            "dc:extent": 427,
             "tableSchema": {
                 "columns": [
                     {
@@ -342,7 +342,7 @@
             "url": "FormSlices"
         },
         {
-            "dc:extent": 783,
+            "dc:extent": 784,
             "tableSchema": {
                 "columns": [
                     {
