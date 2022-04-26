@@ -1,6 +1,6 @@
 ID,Language_ID,Parameter_ID,Form,Comment
 petiplur,yab,PLUR,-pëtï,This is a description of the morpheme. Wow.
-septcp,yab,PST; PTCP,-se,
+septcp,yab,PST; PTCP; SUP,-se,
 i3,yab,3,i-,
 jpepst,yab,PST,-jpë,Also NMLZ
 jnepl,yab,PL,-jnë,
@@ -41,7 +41,7 @@ manlex3,yab,?,maniki,
 manlex4,yab,man,waraijtokon,
 manlex5,yab,one,enijpëtërë,
 manlex6,yab,far; long,tëijpo,
-manlex7,yab,mother.VOC,makë,
+manlex7,yab,mother,makë,
 manlex8,yab,?,taji,
 manlex9,yab,drink,yëni,
 manlex10,yab,REL.INAN,mare,

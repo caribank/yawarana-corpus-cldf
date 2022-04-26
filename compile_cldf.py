@@ -2,16 +2,18 @@ import pandas as pd
 from cldfbench.cldf import CLDFWriter
 from cldfbench import CLDFSpec
 from clldutils.loglib import get_colorlog
+from pathlib import Path
 import logging
 import sys
 from clldutils import jsonlib
 import pybtex
 from pycldf.sources import Source
-from pylingdocs.models import Morpheme, Morph
+from pylingdocs.models import Morpheme, Morph, Text
 from pylingdocs.cldf import metadata as cldf_md
 from slugify import slugify
 import pyigt
 from pylacoan.helpers import sort_uniparser_ids
+import yaml
 
 log = get_colorlog(__name__, sys.stdout, level=logging.INFO)
 
@@ -24,49 +26,61 @@ def cread(filename):
 spec = CLDFSpec(dir="cldf", module="Generic", metadata_fname="metadata.json")
 
 
-examples = cread("../yawarana_corpus/yawarana_pylacoan/output/parsed.csv")
-examples["Sentence"] = examples["Sentence"].replace("", "***")
-examples.rename(columns={"Sentence": "Primary_Text"}, inplace=True)
-examples["Language_ID"] = "yab"
-
-
-log.info("Writing CLDF data")
 with CLDFWriter(spec) as writer:
-    writer.cldf.properties.setdefault("rdf:ID", "yaw_gram")
+    writer.cldf.properties.setdefault("rdf:ID", "yawarana-dataset")
+    writer.cldf.properties.setdefault("dc:title", "A descriptive dataset of Yawarana")
     writer.cldf.properties.setdefault(
-        "dc:title", "Data for a digital sketch grammar of Yawarana"
+        "dc:description",
+        "This data is primarily intended for a digital sketch grammar of Yawarana.",
     )
-    writer.cldf.properties.setdefault(
-        "dc:description", "Data for a digital sketch grammar of Yawarana"
-    )
+
+    log.info("Adding components")
+    # set up components
     writer.cldf.add_component("ExampleTable")
+    # examples can refer to texts
+    writer.cldf.add_columns(
+        "ExampleTable",
+        {
+            "name": "Text_ID",
+            "dc:extent": "singlevalued",
+            "dc:description": "The text to which this record belongs",
+            "datatype": "string",
+        },
+    )
     writer.cldf.add_component("FormTable")
     writer.cldf.add_component("LanguageTable")
     writer.cldf.add_component(cldf_md("FormSlices"))
     writer.cldf.add_component(cldf_md("ExampleSlices"))
 
+    # custom metadata from pylingdocs models
     writer.cldf.add_component(Morph.cldf_metadata())
-
     writer.cldf.add_component(Morpheme.cldf_metadata())
+    writer.cldf.add_component(Text.cldf_metadata())
 
-    writer.cldf.add_foreign_key(
-        "MorphTable", "Morpheme_ID", "MorphsetTable", "ID"
-    )
-    writer.cldf.add_foreign_key(
-        "FormSlices", "Form_ID", "FormTable", "ID"
-    )
-    writer.cldf.add_foreign_key(
-        "FormSlices", "Morph_ID", "MorphTable", "ID"
-    )
-    writer.cldf.add_foreign_key(
-        "ExampleSlices", "Form_ID", "FormTable", "ID"
-    )
-    writer.cldf.add_foreign_key(
-        "ExampleSlices", "Example_ID", "ExampleTable", "ID"
-    )
+    # various foreign keys
+    writer.cldf.add_foreign_key("MorphTable", "Morpheme_ID", "MorphsetTable", "ID")
+    writer.cldf.add_foreign_key("FormSlices", "Form_ID", "FormTable", "ID")
+    writer.cldf.add_foreign_key("FormSlices", "Morph_ID", "MorphTable", "ID")
+    writer.cldf.add_foreign_key("ExampleSlices", "Form_ID", "FormTable", "ID")
+    writer.cldf.add_foreign_key("ExampleSlices", "Example_ID", "ExampleTable", "ID")
+    writer.cldf.add_foreign_key("ExampleTable", "Text_ID", "TextTable", "ID")
+
+    log.info("Reading data")
+
+    examples = cread("../yawarana_corpus/yawarana_pylacoan/output/parsed.csv")
+    examples["Sentence"] = examples["Sentence"].replace("", "***")
+    examples.rename(columns={"Sentence": "Primary_Text"}, inplace=True)
+    examples["Language_ID"] = "yab"
+
+    texts = {}
+    for f in Path("../yawarana_corpus/text_notes/").glob("*.yaml"):
+        with open(f) as file:
+            text_data = yaml.load(file, Loader=yaml.SafeLoader)
+            texts[text_data.pop("id")] = text_data
 
     # keys: morpheme IDs
     # values: different (allo)morph forms and associated morph IDs
+    # used for converting uniparser's morpheme IDs into morph IDs
     id_dict = {}
 
     flexemes = cread("../yawarana_corpus/flexports/flexports.csv")
@@ -77,20 +91,18 @@ with CLDFWriter(spec) as writer:
     manual_lexemes = cread(
         "/home/florianm/Dropbox/development/uniparser-yawarana/compile_parser/lexicon/lexemes.csv"
     )
-
     infl_morphs = cread(
-        "/home/florianm/Dropbox/development/uniparser-yawarana/compile_parser/morphosyntax/inflection.csv"
+        "etc/inflection.csv"
     )
     infl_morphemes = cread(
-        "/home/florianm/Dropbox/development/uniparser-yawarana/compile_parser/morphosyntax/inflection_morphemes.csv"
+        "etc/inflection_morphemes.csv"
     )
     deriv_morphs = cread(
-        "/home/florianm/Dropbox/development/uniparser-yawarana/compile_parser/morphosyntax/derivation_morphs.csv"
+        "etc/derivation_morphs.csv"
     )
     deriv_morphemes = cread(
-        "/home/florianm/Dropbox/development/uniparser-yawarana/compile_parser/morphosyntax/derivation_morphemes.csv"
+        "etc/derivation_morphemes.csv"
     )
-
     for cdf in [infl_morphemes, infl_morphs, deriv_morphs, deriv_morphemes]:
         cdf["Language_ID"] = "yab"
     for cdf in [infl_morphemes, deriv_morphemes]:
@@ -100,6 +112,7 @@ with CLDFWriter(spec) as writer:
     morph_meanings = dict(zip(deriv_morphemes["ID"], deriv_morphemes["Parameter_ID"]))
     deriv_morphs["Parameter_ID"] = deriv_morphs["Morpheme_ID"].map(morph_meanings)
 
+    log.info("Sources")
     found_refs = jsonlib.load("etc/refs.json")
     bib = pybtex.database.parse_file("etc/car.bib", bib_format="bibtex")
     sources = [
@@ -107,18 +120,17 @@ with CLDFWriter(spec) as writer:
     ]
     writer.cldf.add_sources(*sources)
 
+    log.info("Writing morphemes")
     autocomplete_data = []
 
-    for morpheme in pd.concat([infl_morphemes, deriv_morphemes]).to_dict(
-        orient="records"
-    ):
-        morpheme_id = morpheme["ID"]
+    for mp in pd.concat([infl_morphemes, deriv_morphemes]).to_dict(orient="records"):
+        morpheme_id = mp["ID"]
         if morpheme_id in id_dict:
             log.error(morpheme_id)
             raise ValueError
         id_dict[morpheme_id] = {}
-        writer.objects["MorphsetTable"].append(morpheme)
-        autocomplete_data.append((f"mp:{morpheme['Form']}", f"[mp]({morpheme['ID']})"))
+        writer.objects["MorphsetTable"].append(mp)
+        autocomplete_data.append((f"mp:{mp['Form']}", f"[mp]({mp['ID']})"))
 
     for morph in pd.concat([infl_morphs, deriv_morphs]).to_dict(orient="records"):
         morpheme_id = morph["Morpheme_ID"]
@@ -195,13 +207,28 @@ with CLDFWriter(spec) as writer:
         )
         autocomplete_data.append((f"mp:{forms[0]}", f"[mp]({morpheme_id})"))
 
-    # print(id_dict["manlex6"])
+
+    for text_id, text_data in texts.items():
+        metadata = {x: text_data[x]for x in ["genre", "tags"] if x in text_data}
+        writer.objects["TextTable"].append(
+            {
+                "ID": text_id,
+                "Title": text_data["title_es"],
+                "Description": text_data["summary"],
+                "Comment": "; ".join(text_data["comments"]),
+                "Type": text_data["genre"],
+                "Metadata": metadata
+            }
+        )
+
+    print(id_dict["septcp"])
     # store all word forms in the corpus
     forms = {}
     form_slices = []
     example_slices = []
 
     for ex in examples.to_dict("records"):
+        # print(ex)
         ex["ID"] = ex["ID"].replace(".", "-").lower()
         ex["Analyzed_Word"] = ex["Analyzed_Word"].split(" ")
         ex["Gloss"] = ex["Gloss"].split(" ")
@@ -243,16 +270,16 @@ with CLDFWriter(spec) as writer:
                             "ID": f"{slug}-{morph_count}",
                             "Form_ID": slug,
                             "Morph_ID": morph_id,
-                            "Slice": str(morph_count)
+                            "Slice": str(morph_count),
                         }
                     )
 
             writer.objects["ExampleSlices"].append(
                 {
-                    "ID": ex["ID"]+"-"+str(word_count),
+                    "ID": ex["ID"] + "-" + str(word_count),
                     "Form_ID": slug,
                     "Example_ID": ex["ID"],
-                    "Slice": str(word_count)
+                    "Slice": str(word_count),
                 }
             )
         writer.objects["ExampleTable"].append(ex)

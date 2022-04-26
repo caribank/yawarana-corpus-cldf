@@ -6,9 +6,9 @@
         }
     ],
     "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#Generic",
-    "dc:description": "Data for a digital sketch grammar of Yawarana",
+    "dc:description": "This data is primarily intended for a digital sketch grammar of Yawarana.",
     "dc:source": "sources.bib",
-    "dc:title": "Data for a digital sketch grammar of Yawarana",
+    "dc:title": "A descriptive dataset of Yawarana",
     "prov:wasGeneratedBy": [
         {
             "dc:title": "python",
@@ -19,7 +19,7 @@
             "dc:relation": "requirements.txt"
         }
     ],
-    "rdf:ID": "yaw_gram",
+    "rdf:ID": "yawarana-dataset",
     "rdf:type": "http://www.w3.org/ns/dcat#Distribution",
     "dialect": {
         "commentPrefix": null
@@ -93,6 +93,12 @@
                         "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#comment",
                         "required": false,
                         "name": "Comment"
+                    },
+                    {
+                        "dc:description": "The text to which this record belongs",
+                        "dc:extent": "singlevalued",
+                        "datatype": "string",
+                        "name": "Text_ID"
                     }
                 ],
                 "foreignKeys": [
@@ -117,6 +123,17 @@
                                 "ID"
                             ]
                         }
+                    },
+                    {
+                        "columnReference": [
+                            "Text_ID"
+                        ],
+                        "reference": {
+                            "resource": "TextTable",
+                            "columnReference": [
+                                "ID"
+                            ]
+                        }
                     }
                 ],
                 "primaryKey": [
@@ -127,7 +144,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#FormTable",
-            "dc:extent": 254,
+            "dc:extent": 256,
             "tableSchema": {
                 "columns": [
                     {
@@ -276,7 +293,7 @@
             "url": "languages.csv"
         },
         {
-            "dc:extent": 427,
+            "dc:extent": 431,
             "tableSchema": {
                 "columns": [
                     {
@@ -554,6 +571,61 @@
                 ]
             },
             "url": "MorphsetTable"
+        },
+        {
+            "dc:extent": 3,
+            "tableSchema": {
+                "columns": [
+                    {
+                        "datatype": {
+                            "base": "string",
+                            "format": "[a-zA-Z0-9_\\-]+"
+                        },
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#id",
+                        "required": true,
+                        "name": "ID"
+                    },
+                    {
+                        "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#name",
+                        "required": true,
+                        "name": "Title"
+                    },
+                    {
+                        "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#description",
+                        "required": false,
+                        "name": "Description"
+                    },
+                    {
+                        "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#comment",
+                        "required": false,
+                        "name": "Comment"
+                    },
+                    {
+                        "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#source",
+                        "required": false,
+                        "separator": ";",
+                        "name": "Source"
+                    },
+                    {
+                        "datatype": "string",
+                        "required": false,
+                        "name": "Type"
+                    },
+                    {
+                        "datatype": "json",
+                        "required": false,
+                        "name": "Metadata"
+                    }
+                ],
+                "primaryKey": [
+                    "ID"
+                ]
+            },
+            "url": "TextTable"
         }
     ]
 }

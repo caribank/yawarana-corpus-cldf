@@ -1,7 +1,7 @@
 ID,Language_ID,Parameter_ID,Form,Segments,Comment,Morpheme_ID
 plur1,yab,PLUR,-pëti,,,petiplur
 plur2,yab,PLUR,-pëj,,Syllable reduction,petiplur
-septcp,yab,PST; PTCP,-se,,,septcp
+septcp,yab,PST; PTCP; SUP,-se,,,septcp
 i31,yab,3,i-,,,i3
 i32,yab,3,ij-,,Irregular allomorph on ‘to go’.,i3
 pstjpe1,yab,PST,-jpë,,,jpepst
@@ -53,7 +53,7 @@ manlex3-0,yab,?,maniki,,,manlex3
 manlex4-0,yab,man,waraijtokon,,,manlex4
 manlex5-0,yab,one,enijpëtërë,,,manlex5
 manlex6-0,yab,far; long,tëijpo,,,manlex6
-manlex7-0,yab,mother.VOC,makë,,,manlex7
+manlex7-0,yab,mother,makë,,,manlex7
 manlex8-0,yab,?,taji,,,manlex8
 manlex9-0,yab,drink,yëni,,,manlex9
 manlex10-0,yab,REL.INAN,mare,,,manlex10
