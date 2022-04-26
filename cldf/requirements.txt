@@ -25,7 +25,7 @@ pycountry==22.3.5
 pyglottolog==3.7.0
 pyigt==1.2.0
 -e git+ssh://git@github.com/fmatter/pylacoan.git@b0b8df8cf7cd9b45f56f89bda4381fe36ed6b6fa#egg=pylacoan
--e git+ssh://git@github.com/fmatter/pylingdocs.git@a3a0e7e8b3667e53c716ea4e7b85814569d5bc07#egg=pylingdocs
+-e git+ssh://git@github.com/fmatter/pylingdocs.git@3b240e7f5c21dd7479ef81767ad3241e82e4f392#egg=pylingdocs
 python-dateutil==2.8.2
 python-gettext==4.0
 python-slugify==6.1.1
