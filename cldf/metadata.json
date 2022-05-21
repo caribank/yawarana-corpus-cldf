@@ -27,7 +27,7 @@
     "tables": [
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ExampleTable",
-            "dc:extent": 153,
+            "dc:extent": 312,
             "tableSchema": {
                 "columns": [
                     {
@@ -144,7 +144,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#FormTable",
-            "dc:extent": 256,
+            "dc:extent": 303,
             "tableSchema": {
                 "columns": [
                     {
@@ -163,13 +163,6 @@
                         "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#languageReference",
                         "required": true,
                         "name": "Language_ID"
-                    },
-                    {
-                        "dc:description": "A reference to the meaning denoted by the form",
-                        "datatype": "string",
-                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#parameterReference",
-                        "required": true,
-                        "name": "Parameter_ID"
                     },
                     {
                         "dc:description": "The written expression of the form. If possible the transcription system used for the written form should be described in CLDF metadata (e.g. via adding a common property `dc:conformsTo` to the column description using concept URLs of the GOLD Ontology (such as [phonemicRep](http://linguistics-ontology.org/gold/2010/phonemicRep) or [phoneticRep](http://linguistics-ontology.org/gold/2010/phoneticRep)) as values).",
@@ -199,9 +192,28 @@
                         "required": false,
                         "separator": ";",
                         "name": "Source"
+                    },
+                    {
+                        "dc:description": "A reference to the meaning denoted by the form",
+                        "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#parameterReference",
+                        "required": true,
+                        "separator": "; ",
+                        "name": "Parameter_ID"
                     }
                 ],
                 "foreignKeys": [
+                    {
+                        "columnReference": [
+                            "Parameter_ID"
+                        ],
+                        "reference": {
+                            "resource": "parameters.csv",
+                            "columnReference": [
+                                "ID"
+                            ]
+                        }
+                    },
                     {
                         "columnReference": [
                             "Language_ID"
@@ -219,6 +231,84 @@
                 ]
             },
             "url": "forms.csv"
+        },
+        {
+            "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ParameterTable",
+            "dc:extent": 1047,
+            "tableSchema": {
+                "columns": [
+                    {
+                        "datatype": {
+                            "base": "string",
+                            "format": "[a-zA-Z0-9_\\-]+"
+                        },
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#id",
+                        "required": true,
+                        "name": "ID"
+                    },
+                    {
+                        "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#name",
+                        "required": false,
+                        "name": "Name"
+                    },
+                    {
+                        "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#description",
+                        "required": false,
+                        "name": "Description"
+                    }
+                ],
+                "primaryKey": [
+                    "ID"
+                ]
+            },
+            "url": "parameters.csv"
+        },
+        {
+            "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#MediaTable",
+            "dc:extent": 151,
+            "tableSchema": {
+                "columns": [
+                    {
+                        "datatype": {
+                            "base": "string",
+                            "format": "[a-zA-Z0-9_\\-]+"
+                        },
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#id",
+                        "required": true,
+                        "name": "ID"
+                    },
+                    {
+                        "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#name",
+                        "required": false,
+                        "name": "Name"
+                    },
+                    {
+                        "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#description",
+                        "required": false,
+                        "name": "Description"
+                    },
+                    {
+                        "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#mediaType",
+                        "required": true,
+                        "name": "Media_Type"
+                    },
+                    {
+                        "datatype": "anyURI",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#downloadUrl",
+                        "required": false,
+                        "name": "Download_URL"
+                    }
+                ],
+                "primaryKey": [
+                    "ID"
+                ]
+            },
+            "url": "media.csv"
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#LanguageTable",
@@ -293,7 +383,7 @@
             "url": "languages.csv"
         },
         {
-            "dc:extent": 431,
+            "dc:extent": 514,
             "tableSchema": {
                 "columns": [
                     {
@@ -318,14 +408,23 @@
                         "name": "Morph_ID"
                     },
                     {
-                        "dc:description": "Specifies the slice of morphemes.",
+                        "dc:description": "Specifies the position of a morph in a form.",
                         "datatype": {
                             "base": "string",
                             "format": "\\d+(:\\d+)?"
                         },
-                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#segmentSlice",
                         "required": false,
-                        "name": "Slice"
+                        "name": "Index"
+                    },
+                    {
+                        "datatype": "string",
+                        "required": false,
+                        "name": "Morpheme_Meaning"
+                    },
+                    {
+                        "datatype": "string",
+                        "required": false,
+                        "name": "Form_Meaning"
                     }
                 ],
                 "foreignKeys": [
@@ -350,6 +449,28 @@
                                 "ID"
                             ]
                         }
+                    },
+                    {
+                        "columnReference": [
+                            "Form_Meaning"
+                        ],
+                        "reference": {
+                            "resource": "parameters.csv",
+                            "columnReference": [
+                                "ID"
+                            ]
+                        }
+                    },
+                    {
+                        "columnReference": [
+                            "Morpheme_Meaning"
+                        ],
+                        "reference": {
+                            "resource": "parameters.csv",
+                            "columnReference": [
+                                "ID"
+                            ]
+                        }
                     }
                 ],
                 "primaryKey": [
@@ -359,7 +480,7 @@
             "url": "FormSlices"
         },
         {
-            "dc:extent": 784,
+            "dc:extent": 1090,
             "tableSchema": {
                 "columns": [
                     {
@@ -391,9 +512,27 @@
                         },
                         "required": false,
                         "name": "Slice"
+                    },
+                    {
+                        "dc:description": "A reference to the meaning denoted by the form",
+                        "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#parameterReference",
+                        "required": false,
+                        "name": "Parameter_ID"
                     }
                 ],
                 "foreignKeys": [
+                    {
+                        "columnReference": [
+                            "Parameter_ID"
+                        ],
+                        "reference": {
+                            "resource": "parameters.csv",
+                            "columnReference": [
+                                "ID"
+                            ]
+                        }
+                    },
                     {
                         "columnReference": [
                             "Form_ID"
@@ -415,6 +554,17 @@
                                 "ID"
                             ]
                         }
+                    },
+                    {
+                        "columnReference": [
+                            "Parameter_ID"
+                        ],
+                        "reference": {
+                            "resource": "parameters.csv",
+                            "columnReference": [
+                                "ID"
+                            ]
+                        }
                     }
                 ],
                 "primaryKey": [
@@ -424,7 +574,7 @@
             "url": "ExampleSlices"
         },
         {
-            "dc:extent": 1310,
+            "dc:extent": 1331,
             "tableSchema": {
                 "columns": [
                     {
@@ -445,19 +595,10 @@
                         "name": "Language_ID"
                     },
                     {
-                        "dc:description": "A reference to the meaning denoted by the form",
                         "datatype": "string",
-                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#parameterReference",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#name",
                         "required": true,
-                        "name": "Parameter_ID"
-                    },
-                    {
-                        "dc:description": "The representation of the form.",
-                        "dc:extent": "singlevalued",
-                        "datatype": "string",
-                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#form",
-                        "required": true,
-                        "name": "Form"
+                        "name": "Name"
                     },
                     {
                         "dc:extent": "multivalued",
@@ -478,9 +619,28 @@
                         "datatype": "string",
                         "required": true,
                         "name": "Morpheme_ID"
+                    },
+                    {
+                        "dc:description": "A reference to the meaning denoted by the form",
+                        "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#parameterReference",
+                        "required": false,
+                        "separator": "; ",
+                        "name": "Parameter_ID"
                     }
                 ],
                 "foreignKeys": [
+                    {
+                        "columnReference": [
+                            "Parameter_ID"
+                        ],
+                        "reference": {
+                            "resource": "parameters.csv",
+                            "columnReference": [
+                                "ID"
+                            ]
+                        }
+                    },
                     {
                         "columnReference": [
                             "Language_ID"
@@ -511,7 +671,7 @@
             "url": "MorphTable"
         },
         {
-            "dc:extent": 1006,
+            "dc:extent": 1022,
             "tableSchema": {
                 "columns": [
                     {
@@ -532,28 +692,38 @@
                         "name": "Language_ID"
                     },
                     {
-                        "dc:description": "A reference to the meaning denoted by the morpheme",
                         "datatype": "string",
-                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#parameterReference",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#name",
                         "required": true,
-                        "name": "Parameter_ID"
-                    },
-                    {
-                        "dc:description": "The representation of the morpheme.",
-                        "dc:extent": "singlevalued",
-                        "datatype": "string",
-                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#form",
-                        "required": true,
-                        "name": "Form"
+                        "name": "Name"
                     },
                     {
                         "datatype": "string",
                         "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#comment",
                         "required": false,
                         "name": "Comment"
+                    },
+                    {
+                        "dc:description": "A reference to the meaning denoted by the form",
+                        "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#parameterReference",
+                        "required": false,
+                        "separator": "; ",
+                        "name": "Parameter_ID"
                     }
                 ],
                 "foreignKeys": [
+                    {
+                        "columnReference": [
+                            "Parameter_ID"
+                        ],
+                        "reference": {
+                            "resource": "parameters.csv",
+                            "columnReference": [
+                                "ID"
+                            ]
+                        }
+                    },
                     {
                         "columnReference": [
                             "Language_ID"
@@ -573,7 +743,7 @@
             "url": "MorphsetTable"
         },
         {
-            "dc:extent": 3,
+            "dc:extent": 5,
             "tableSchema": {
                 "columns": [
                     {

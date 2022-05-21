@@ -1,4 +1,6 @@
 ID,Title,Description,Comment,Source,Type,Metadata
-HistAnFo,Historia personal por AnFo,Personal narrative about childhood in San Juan Manapiare. Aunt sends uncle to go hunt and fish.,none,,Personal narrative,"{""genre"": ""Personal narrative"", ""tags"": [""personal""]}"
+HistAnFo,Historia personal por AnFo,Personal narrative about childhood in San Juan Manapiare. Aunt sends uncle to go hunt and fish.,"is *ya* in (21) really OBL, and not ERG? see (22); why is htere no supine in (24)?",,Personal narrative,"{""genre"": ""Personal narrative"", ""tags"": [""personal""]}"
 CtoRat,Cuento de las ratas por AnFo,"Man goes up in the hills to sleep, rats are dancing.",short text; enijjpëtërë warajitokomo 'un hombre' (one man); /wï/ often [u] (wïnïjse),,Story,"{""genre"": ""Story"", ""tags"": [""narrative""]}"
 ConvRisaMAJ,Conversación sobre la risa entre GrMe y ElPe,TBD,TBD,,Conversation,"{""genre"": ""Conversation"", ""tags"": [""conversation""]}"
+HistPajIrDi,Historia de Pajarito y algunas preguntas sobre Tamanaco,TBD,TBD,,Narrative,"{""genre"": ""Narrative"", ""tags"": [""narrative""]}"
+DescCasMAJ,Descripción sobre como hacer casabe por IrDi y ElPe,TBD,TBD,,description,"{""genre"": ""description"", ""tags"": [""description""]}"
