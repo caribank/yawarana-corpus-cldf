@@ -5,6 +5,7 @@
             "@language": "en"
         }
     ],
+    "dc:bibliographicCitation": "Matter, Florian, 2022. A digital grammar sketch of Yawarana",
     "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#Generic",
     "dc:description": "This data is primarily intended for a digital sketch grammar of Yawarana.",
     "dc:source": "sources.bib",
@@ -144,7 +145,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#FormTable",
-            "dc:extent": 303,
+            "dc:extent": 316,
             "tableSchema": {
                 "columns": [
                     {
@@ -234,7 +235,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ParameterTable",
-            "dc:extent": 1047,
+            "dc:extent": 1060,
             "tableSchema": {
                 "columns": [
                     {
@@ -267,7 +268,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#MediaTable",
-            "dc:extent": 151,
+            "dc:extent": 205,
             "tableSchema": {
                 "columns": [
                     {
@@ -383,7 +384,7 @@
             "url": "languages.csv"
         },
         {
-            "dc:extent": 514,
+            "dc:extent": 545,
             "tableSchema": {
                 "columns": [
                     {
@@ -480,7 +481,7 @@
             "url": "FormSlices"
         },
         {
-            "dc:extent": 1090,
+            "dc:extent": 1132,
             "tableSchema": {
                 "columns": [
                     {
@@ -574,7 +575,7 @@
             "url": "ExampleSlices"
         },
         {
-            "dc:extent": 1331,
+            "dc:extent": 1333,
             "tableSchema": {
                 "columns": [
                     {
@@ -671,7 +672,7 @@
             "url": "MorphTable"
         },
         {
-            "dc:extent": 1022,
+            "dc:extent": 1024,
             "tableSchema": {
                 "columns": [
                     {
@@ -741,6 +742,44 @@
                 ]
             },
             "url": "MorphsetTable"
+        },
+        {
+            "dc:extent": 22,
+            "tableSchema": {
+                "columns": [
+                    {
+                        "datatype": {
+                            "base": "string",
+                            "format": "[a-zA-Z0-9_\\-]+"
+                        },
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#id",
+                        "required": true,
+                        "name": "ID"
+                    },
+                    {
+                        "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#name",
+                        "required": true,
+                        "name": "Name"
+                    },
+                    {
+                        "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#description",
+                        "required": false,
+                        "name": "Description"
+                    },
+                    {
+                        "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#comment",
+                        "required": false,
+                        "name": "Comment"
+                    }
+                ],
+                "primaryKey": [
+                    "ID"
+                ]
+            },
+            "url": "PhonemeTable"
         },
         {
             "dc:extent": 5,

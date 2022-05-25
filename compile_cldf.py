@@ -15,12 +15,14 @@ from clld_morphology_plugin.cldf import MorphTable, MorphsetTable, FormSlices
 from slugify import slugify as sslug
 import pyigt
 from pylacoan.helpers import sort_uniparser_ids
+from pylacoan.annotator import Segmentizer
 import yaml
 import pycldf
 import json
 
 bare_slugs = 0
 zero_slugged = {}
+
 
 def slugify(input_str):
     global bare_slugs
@@ -33,6 +35,7 @@ def slugify(input_str):
         return zero_slugged[input_str]
     else:
         return slug
+
 
 def custom_spec(component, column, separator):
     path = (
@@ -63,10 +66,20 @@ def cread(filename):
 
 spec = CLDFSpec(dir="cldf", module="Generic", metadata_fname="metadata.json")
 
+segmentizer = Segmentizer(
+    segments=cread("etc/phonemes.csv").to_dict(orient="records"), delete=["-", "∅"]
+)
+
+word_audios = {}
+for filename in Path("/home/florianm/Downloads/New_Dictionary_Clippings").iterdir():
+    leggo = filename.stem.split("_")[3].split("-")[0]
+    word_audios.setdefault(leggo, [])
+    word_audios[leggo].append(filename)
 
 with CLDFWriter(spec) as writer:
     writer.cldf.properties.setdefault("rdf:ID", "yawarana-dataset")
     writer.cldf.properties.setdefault("dc:title", "A descriptive dataset of Yawarana")
+    writer.cldf.properties.setdefault("dc:bibliographicCitation", "Matter, Florian, 2022. A digital grammar sketch of Yawarana")
     writer.cldf.properties.setdefault(
         "dc:description",
         "This data is primarily intended for a digital sketch grammar of Yawarana.",
@@ -99,6 +112,7 @@ with CLDFWriter(spec) as writer:
     # custom metadata from pylingdocs models
     writer.cldf.add_component(MorphTable)
     writer.cldf.add_component(MorphsetTable)
+    writer.cldf.add_component(jsonlib.load("etc/PhonemeTable-metadata.json"))
     writer.cldf.add_component(Text.cldf_metadata())
 
     # various foreign keys
@@ -106,7 +120,9 @@ with CLDFWriter(spec) as writer:
     writer.cldf.add_foreign_key("FormSlices", "Form_ID", "FormTable", "ID")
     writer.cldf.add_foreign_key("FormSlices", "Morph_ID", "MorphTable", "ID")
     writer.cldf.add_foreign_key("FormSlices", "Form_Meaning", "ParameterTable", "ID")
-    writer.cldf.add_foreign_key("FormSlices", "Morpheme_Meaning", "ParameterTable", "ID")
+    writer.cldf.add_foreign_key(
+        "FormSlices", "Morpheme_Meaning", "ParameterTable", "ID"
+    )
     writer.cldf.add_foreign_key("ExampleSlices", "Form_ID", "FormTable", "ID")
     writer.cldf.add_foreign_key("ExampleSlices", "Example_ID", "ExampleTable", "ID")
     writer.cldf.add_foreign_key("ExampleSlices", "Parameter_ID", "ParameterTable", "ID")
@@ -121,7 +137,12 @@ with CLDFWriter(spec) as writer:
 
     example_add = cread("etc/example_additions.csv")
     examples = examples.merge(example_add, on="ID", how="left")
-    examples["Translated_Text"] = examples.apply(lambda x: x["Translation_en"] if not pd.isnull(x["Translation_en"]) else x["Translated_Text"], axis=1)
+    examples["Translated_Text"] = examples.apply(
+        lambda x: x["Translation_en"]
+        if not (pd.isnull(x["Translation_en"]) or x["Translation_en"] == "")
+        else x["Translated_Text"],
+        axis=1,
+    )
 
     texts = {}
     for f in Path("../yawarana_corpus/text_notes/").glob("*.yaml"):
@@ -334,7 +355,9 @@ with CLDFWriter(spec) as writer:
                     forms[slug] = {"Form": word.word, "Parameter_ID": [meaning_slug]}
                 elif word.gloss not in forms[slug]["Parameter_ID"]:
                     forms[slug]["Parameter_ID"].append(meaning_slug)
-                for morph_count, (morph_id, glossed_morph) in enumerate(zip(morph_ids, word.glossed_morphemes)):
+                for morph_count, (morph_id, glossed_morph) in enumerate(
+                    zip(morph_ids, word.glossed_morphemes)
+                ):
                     writer.objects["FormSlices"].append(
                         {
                             "ID": f"{form_slug}-{morph_count}",
@@ -342,13 +365,11 @@ with CLDFWriter(spec) as writer:
                             "Morph_ID": morph_id,
                             "Index": str(morph_count),
                             "Morpheme_Meaning": slugify(glossed_morph.gloss),
-                            "Form_Meaning": meaning_slug
+                            "Form_Meaning": meaning_slug,
                         }
                     )
             else:
                 slug = form_meanings[form_slug]
-
-                
 
             writer.objects["ExampleSlices"].append(
                 {
@@ -356,18 +377,20 @@ with CLDFWriter(spec) as writer:
                     "Form_ID": slug,
                     "Example_ID": ex["ID"],
                     "Slice": str(word_count),
-                    "Parameter_ID": meaning_slug
+                    "Parameter_ID": meaning_slug,
                 }
             )
         writer.objects["ExampleTable"].append(ex)
 
+    phonemes = cread("etc/phonemes.csv")
+    done_phonemes = []
+    for phoneme in phonemes.to_dict(orient="records"):
+        if phoneme["IPA"] not in done_phonemes:
+            done_phonemes.append(phoneme["IPA"])
+            writer.objects["PhonemeTable"].append({"ID": phoneme["ID"], "Name": phoneme["IPA"]})
+
     for meaning_id, meaning in meanings.items():
-        writer.objects["ParameterTable"].append(
-            {
-                "ID": meaning_id,
-                "Name": meaning,
-            }
-        )
+        writer.objects["ParameterTable"].append({"ID": meaning_id, "Name": meaning})
 
     for form_id, form in forms.items():
         writer.objects["FormTable"].append(
@@ -376,8 +399,18 @@ with CLDFWriter(spec) as writer:
                 "Language_ID": "yab",
                 "Parameter_ID": form["Parameter_ID"],
                 "Form": form["Form"],
+                "Segments": segmentizer.parse_string(form["Form"]).split(" "),
             }
         )
+        form_slug = slugify(form["Form"].replace("-", "").replace("∅", ""))
+        if form_slug in word_audios:
+            writer.objects["MediaTable"].append(
+                {
+                    "ID": form_id,
+                    "Media_Type": "wav",
+                    "Name": word_audios[form_slug][0].stem,
+                }
+            )
 
     writer.objects["LanguageTable"].append(
         {

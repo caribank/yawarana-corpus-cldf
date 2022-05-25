@@ -1,58 +1,58 @@
 ID,Language_ID,Primary_Text,Analyzed_Word,Gloss,Translated_Text,Meta_Language_ID,Comment,Text_ID
-ctorat-01,yab, makë ya ta taji rë,makë\tya\tta-∅\ttaji\trë,mother\tERG\tsay-IPFV\t?\tEMP,mi mamá contaba de eso,,nan,CtoRat
-ctorat-02,yab, waijta,waijta,mouse,ratón,,nan,CtoRat
-ctorat-03,yab, enijpëtërë waraijtokomo ijtëse ti mïjna tëijpo wïnïjse,enijpëtërë\twaraijtokomo\tij-të-se\tti\tmïjna\ttëijpo\twïnïj-se,one\tman\t3-go-PST\tQUOT\tthere\tfar\tsleep-SUP,"un hombre se fué allá, a dormir lejos",,nan,CtoRat
-ctorat-04,yab, yutu yaka,yutu\tyaka,wilderness\tALL,al monte,,nan,CtoRat
-ctorat-05,yab, irëjpë ti ta ti ta,irëjpë\tti\tta-∅\tti\tta,then\tQUOT\tsay-IPFV\tQUOT\tlike,después dijo,,nan,CtoRat
-ctorat-06,yab, wïnïjse,wïnïj-se,sleep-PST,durmió,,nan,CtoRat
-ctorat-07,yab, tawani yawë senejka wejsapë irëjpë ënujse kawë,tawani\tyawë\ts-enejka-∅\twej-sapë\t?\tënuj-se\tkawë,darkness\tLOC\t?\tCOP-PFV\t?\t?\thigh,estaba en la oscuridad y se subió hacia arriba (de la casa),,nan,CtoRat
-ctorat-08,yab, kawë ënujse irëjpë,kawë\tënuj-se\tirëjpë,high\tgo.up-PST\tthen,se subió alto y después,,nan,CtoRat
-ctorat-09,yab, ti waijtaton nwajtë wejsapë,ti\twaijta-ton\tnwa-jtë-∅\twej-sapë,QUOT\tmouse-PL\tdance-VBZ.TR-IPFV\tCOP-PFV,las ratas estaban bailando,,nan,CtoRat
-ctorat-10,yab, sakunkai sakunkai,sakunkai\tsakunkai,sakunkai\tsakunkai,"""sakunkai, sakunkai""",,nan,CtoRat
-ctorat-11,yab,""" sakunkai"" ta ta irëjpë"" sakunkai""",sakunkai\tta-∅\tta\tirëjpë\tsakunkai,sakunkai\tsay-IPFV\tlike\tthen\tsakunkai,"decían ""sakunkai"" y después ""sakúnkai""",,nan,CtoRat
-ctorat-12,yab, wurijyampïjkë kantajnë tawara rë wejsapë,wurijyam-pïjkë\tkantajnë-∅\ttawara\trë\twej-sapë,woman-DIM\tsing-IPFV\ttoo\tEMP\tCOP-PFV,la hembrita cantaba igual,,nan,CtoRat
-ctorat-13,yab, tëwï naikonton ti tawara,tëwï\tnai-∅-konton\tti\ttawara,3SG\tmake-IPFV-PL\tQUOT\ttoo,ellos hacían así,,nan,CtoRat
-ctorat-14,yab, okï yëni tajne ya soj soj soj,okï\tyëni-∅\tta-jne\tya\tsoj\tsoj\tsoj,yarake\tdrink-IPFV\t3-PL\tERG\tID:dabble\tID:dabble\tID:dabble,"tomaban yaraki ellos, saj, saj",,nan,CtoRat
-ctorat-15,yab, tajne naijpëtiri warë,ta-jne\tnaij-pëti-ri\t?,3-PL\t?\t?,ellos hacía así,,nan,CtoRat
-ctorat-16,yab, irëjpë tëwï waijtatomo nwajtëri,irëjpë\ttëwï\twaijta-tomo\tnwa-jtë-ri,then\t3SG\tmouse-PL\tdance-VBZ.TR-IPFV,después las ratas estaban bailando,,nan,CtoRat
-ctorat-17,yab, waijtatomo ëjwenakase,waijta-tomo\tëj-wenaka-se,mouse-PL\tDETRZ-vomit-PST,se vomitaron las ratas,,nan,CtoRat
-ctorat-18,yab, irë wejtane ti,irë\twejtane\tti,TMP:DEM\thowever\tQUOT,aunque fue así,,nan,CtoRat
-ctorat-19,yab, pïrarë ti iwenaru wejsapë,pïrarë\tti\ti-wena-ru\twej-sapë,nothing\tQUOT\t3-vomit-PERT\tCOP-PFV,no había su vómito,,nan,CtoRat
-ctorat-20,yab, wenaru pïrarë,wena-ru\tpïrarë,vomit-PERT\tnothing,no había nada de vómito,,nan,CtoRat
-ctorat-21,yab, ta ti ta tëwï waraijtokomo ya,ta\tti\t?\ttëwï\twaraijtokomo\t?,like\tQUOT\t?\t3SG\tman\t?,dijo el hombre,,nan,CtoRat
-ctorat-22,yab, sujtase ti wejsapë,suj-ta-se\tti\twej-sapë,urine-VBZ-PST\tQUOT\tCOP-PFV,se orinó,,nan,CtoRat
-ctorat-23,yab, aaa usukuru morone ta wïrë usujta ta ne,aaa\tu-suku-ru\tmorone\tta\twïrë\tu-suj-ta-∅\tta\tne,ah\t1-urine-PERT\tpainful\tlike\t1SG\t1-urine-VBZ-IPFV\tlike\tINTS,"me duele mis orines, voy a orinar",,nan,CtoRat
-ctorat-24,yab, warë sujtase,warë\tsuj-ta-se,thus\turine-VBZ-PST,después se orino,,nan,CtoRat
-ctorat-25,yab, irëjpë ta ti ta konopo wejsarë konopo wejsarë,irëjpë\tta-∅\tti\tta\tkonopo\twej-sarë\tkonopo\twej-sarë,then\tsay-IPFV\tQUOT\tlike\train\tcome-INM\train\tcome-INM,"después dijo, está lloviendo, está lloviendo!",,nan,CtoRat
-ctorat-26,yab, ta ti ta waijtatomo ya,ta\tti\tta\twaijta-tomo\tya,like\tQUOT\tlike\tmouse-PL\tERG, ‎‎say_RVA ERG_NP TF_ta-ri,,nan,CtoRat
-ctorat-27,yab, irëjpë pïrarë ti warë irëjpë warë,irëjpë\tpïrarë\tti\twarë\tirëjpë\twarë,then\tnothing\tQUOT\tthus\tthen\tthus,después no había nada,,nan,CtoRat
-ctorat-28,yab, irëjpë tawejka yawë,irëjpë\ttawejka-∅\tyawë,then\tto.daylight-NMLZ\tLOC,después al amanecer,,nan,CtoRat
-ctorat-29,yab, waijtatomojpë ijtëse ti,waijta-tomo-jpë\tij-të-se\tti,mouse-PL-PST\t3-go-PST\tQUOT,las ratas se fueron,,nan,CtoRat
-ctorat-30,yab, tipasekontomo warë irëjpë pïrarë,tipa-se-kontomo\twarë\tirëjpë\tpïrarë,go.group-PST-PL\tthus\tthen\tnothing,se fueron y después no estaban,,nan,CtoRat
-ctorat-31,yab, ëjwenakajpë tainpëtiri waraijtokomo tëwï,ëj-wenaka-jpë\tta-in-pëti-ri\twaraijtokomo\ttëwï,?\t?\tman\t3SG,el hombre estaba viendo su vómito,,nan,CtoRat
-ctorat-32,yab, waraijtokomo ya inpëti ti,waraijtokomo\tya\tin-pëti-∅\tti,man\tOBL\tsee-PLUR-IPFV\tQUOT,el hombre lo estaba viendo,,nan,CtoRat
-ctorat-33,yab, irëjpë ti wenakajpë mare pïrarë ti,irëjpë\tti\twenaka-jpë\t?\tpïrarë\tti,then\tQUOT\t?\t?\tnothing\tQUOT,después no había nada de lo que vomitaron,,nan,CtoRat
-ctorat-34,yab, ëkëtë mërë ëkï,ëkëtë\tmërë\tëkï,where\t3IN:MD\tmanioc.beer,donde está el yaraki?,,nan,CtoRat
-ctorat-35,yab, ëkï ta rë pïrarë wenarujpë ta rë pïrarë,ëkï\tta\trë\tpïrarë\twena-ru-jpë\tta\trë\tpïrarë,manioc.beer\tlike\tEMP\tnothing\tvomit-PERT-PST\tlike\tEMP\tnothing,el yaraki no había y tampoco el vómito,,nan,CtoRat
-ctorat-36,yab, ta ti wejsaj ti tëwï,ta-∅\tti\twej-saj\tti\ttëwï,say-IPFV\tQUOT\tCOP-PFV\tQUOT\t3SG,dijo él,,nan,CtoRat
-ctorat-37,yab, waijtatomo nwajtë mare,waijta-tomo\tnwa-jtë-∅\tmare,mouse-PL\tdance-VBZ.TR-IPFV\tkeeps.going,la rata estaba bailando,,nan,CtoRat
-ctorat-38,yab, ëjtë kërëjpë yawë nwajtëkonton ti wejsapë waijta,ëjtë\tkërëjpë\tyawë\tnwa-jtë-∅-konton\tti\twej-sapë\twaijta,house\told\tLOC\tdance-VBZ.TR-IPFV-PL\tQUOT\tCOP-PFV\tmouse,en la casa vieja es que estaba bailando la rata,,nan,CtoRat
-ctorat-39,yab, sukase nwajtëri irëjpë ti warë,sukase\tnwa-jtë-ri\tirëjpë\tti\twarë,all\tdance-VBZ.TR-IPFV\tthen\tQUOT\tthus,"todos estaban bailando, después",,nan,CtoRat
-ctorat-40,yab, tipapëjsejne waijtajne,tipa-pëj-se-jne\twaijta-jne,go.group-PLUR-PST-PL\tmouse-PL,las ratas se fueron,,nan,CtoRat
-ctorat-41,yab, ajpachi yaka pïnika ëkëjna neke wonse,ajpachi\tyaka\tpïnika\tëkëjna\tneke\twon-se,weeds\tALL\tPROB\twhere.to\tCONTRAST\tenter-PST,"pal monte será que se fueron, no se a donde se metieron",,nan,CtoRat
-ctorat-42,yab, tëwï ajpachi yaka wonse pïnika tëwï,tëwï\tajpachi\tyaka\twon-se\tpïnika\ttëwï,3SG\tweeds\tALL\tenter-PST\tPROB\t3SG,tal vez se metió en el monte,,nan,CtoRat
-ctorat-43,yab, tëwï ma tase makë ya,tëwï\tma\tta-se\tmakë\tya,3SG\tRESTR\tsay-SUP\tmother\tERG, ‎‎say_OVA ERG_NP TF_ta-se,,nan,CtoRat
-ctorat-44,yab, tawara ma ta ti wejsapë tëwï waraijtokon maniki,tawara\tma\tta-∅\tti\twej-sapë\ttëwï\twaraijtokon\tmaniki,too\tRESTR\tsay-IPFV\tQUOT\tCOP-PFV\t3SG\tman\t?,así no más decía el hombre,,nan,CtoRat
-ctorat-45,yab, irëjpë ijtëse,irëjpë\tij-të-se,then\t3-go-PST,después se fue,,nan,CtoRat
-ctorat-46,yab, tïwïj yaka waraijtokomo manikijpë,t-ïwïj\tyaka\twaraijtokomo\tmaniki-jpë,3-house\tALL\tman\t?-PST,se fue el hombre para su casa (porque ya amaneció),,nan,CtoRat
-anfoperso-01,yab, wïrë tawara rë entë,wïrë\ttawara\trë\t?,1SG\ttoo\tEMP\t?,yo estaba aquí (en San Juan Manapiare),,nan,HistAnFo
+ctorat-01,yab, makë ya ta taji rë,makë\tya\tta-∅\ttaji\trë,mother\tERG\tsay-IPFV\t?\tEMP,My mother told this (story).,,,CtoRat
+ctorat-02,yab, waijta,waijta,mouse,The mice.,,,CtoRat
+ctorat-03,yab, enijpëtërë waraijtokomo ijtëse ti mïjna tëijpo wïnïjse,enijpëtërë\twaraijtokomo\tij-të-se\tti\tmïjna\ttëijpo\twïnïj-se,one\tman\t3-go-PST\tQUOT\tthere\tfar\tsleep-SUP,"A man went there, far, to sleep.",,Focus intonation contour on ‘there’.,CtoRat
+ctorat-04,yab, yutu yaka,yutu\tyaka,wilderness\tALL,To the woods.,,,CtoRat
+ctorat-05,yab, irëjpë ti ta ti ta,irëjpë\tti\tta-∅\tti\tta,then\tQUOT\tsay-IPFV\tQUOT\tlike,Then she said:,,,CtoRat
+ctorat-06,yab, wïnïjse,wïnïj-se,sleep-PST,He slept.,,,CtoRat
+ctorat-07,yab, tawani yawë senejka wejsapë irëjpë ënujse kawë,tawani\tyawë\tsenejka\t?\t?\tënuj-se\tkawë,darkness\tLOC\t***\t?\t?\t?\thigh,He was staying in the dark and then went up high (in the house).,,,CtoRat
+ctorat-08,yab, kawë ënujse irëjpë,kawë\tënuj-se\tirëjpë,high\tgo.up-PST\tthen,He went up high and then...,,,CtoRat
+ctorat-09,yab, ti waijtaton nwajtë wejsapë,ti\twaijta-ton\tnwajtë-∅\twej-sapë,QUOT\tmouse-PL\tdance-IPFV\tCOP-PFV,The mice were dancing.,,,CtoRat
+ctorat-10,yab, sakunkai sakunkai,sakunkai\tsakunkai,sakunkai\tsakunkai,"Sakunkai, Sakunkai.",,,CtoRat
+ctorat-11,yab,""" sakunkai"" ta ta irëjpë"" sakunkai""",sakunkai\tta-∅\tta\tirëjpë\tsakunkai,sakunkai\tsay-IPFV\tlike\tthen\tsakunkai,"“Sakunkai”, they said, and then “Sakunkai”.",,,CtoRat
+ctorat-12,yab, wurijyampïjkë kantajnë tawara rë wejsapë,wurijyam-pïjkë\tkantajnë-∅\ttawara\trë\twej-sapë,woman-DIM\tsing-IPFV\ttoo\tEMP\tCOP-PFV,"The female was singing, too.",,,CtoRat
+ctorat-13,yab, tëwï naikonton ti tawara,tëwï\tnai-∅-konton\tti\ttawara,3SG\tmake-IPFV-PL\tQUOT\ttoo,They did like this.,,,CtoRat
+ctorat-14,yab, okï yëni tajne ya soj soj soj,okï\tyëni-∅\tta-jne\tya\tsoj\tsoj\tsoj,yarake\tdrink-IPFV\t3-PL\tERG\tID:dabble\tID:dabble\tID:dabble,"They drank chicha, splash.",,,CtoRat
+ctorat-15,yab, tajne naijpëtiri warë,ta-jne\tnaij-pëti-ri\twarë,3-PL\tmake-PLUR-IPFV\tthus,They did like this.,,,CtoRat
+ctorat-16,yab, irëjpë tëwï waijtatomo nwajtëri,irëjpë\ttëwï\twaijta-tomo\tnwajtë-ri,then\t3SG\tmouse-PL\tdance-IPFV,Then the mice were dancing.,,,CtoRat
+ctorat-17,yab, waijtatomo ëjwenakase,waijta-tomo\tëj-wenaka-se,mouse-PL\tDETRZ-vomit-PST,The mice vomited.,,,CtoRat
+ctorat-18,yab, irë wejtane ti,irë\twejtane\tti,TMP:DEM\thowever\tQUOT,But it was like this:,,,CtoRat
+ctorat-19,yab, pïrarë ti iwenaru wejsapë,pïrarë\tti\ti-wena-ru\twej-sapë,nothing\tQUOT\t3-vomit-PERT\tCOP-PFV,Their vomit was not there.,,,CtoRat
+ctorat-20,yab, wenaru pïrarë,wena-ru\tpïrarë,vomit-PERT\tnothing,There was no vomit.,,,CtoRat
+ctorat-21,yab, ta ti ta tëwï waraijtokomo ya,ta-∅\tti\tta\ttëwï\twaraijtokomo\tya,say-IPFV\tQUOT\tlike\t3SG\tman\tERG,said the man (?).,,,CtoRat
+ctorat-22,yab, sujtase ti wejsapë,suj-ta-se\tti\twej-sapë,urine-VBZ-PST\tQUOT\tCOP-PFV,He urinated.,,More material.,CtoRat
+ctorat-23,yab, aaa usukuru morone ta wïrë usujta ta ne,aaa\tu-suku-ru\tmorone\tta\twïrë\tu-suj-ta-∅\tta\tne,ah\t1-urine-PERT\tpainful\tlike\t1SG\t1-urine-VBZ-IPFV\tlike\tINTS,"My urine hurts, I will urinate.",,,CtoRat
+ctorat-24,yab, warë sujtase,warë\tsuj-ta-se,thus\turine-VBZ-PST,Then he urinated.,,,CtoRat
+ctorat-25,yab, irëjpë ta ti ta konopo wejsarë konopo wejsarë,irëjpë\tta-∅\tti\tta\tkonopo\twej-sarë\tkonopo\twej-sarë,then\tsay-IPFV\tQUOT\tlike\train\tcome-INM\train\tcome-INM,"Then they said: “it’s raining, it’s raining”.",,,CtoRat
+ctorat-26,yab, ta ti ta waijtatomo ya,ta\tti\tta\twaijta-tomo\tya,like\tQUOT\tlike\tmouse-PL\tERG,...said the mice.,,Missing translation,CtoRat
+ctorat-27,yab, irëjpë pïrarë ti warë irëjpë warë,irëjpë\tpïrarë\tti\twarë\tirëjpë\twarë,then\tnothing\tQUOT\tthus\tthen\tthus,Then there was nothing.,,,CtoRat
+ctorat-28,yab, irëjpë tawejka yawë,irëjpë\ttawejka-∅\tyawë,then\tto.daylight-NMLZ\tLOC,"Then, in the morning...",,,CtoRat
+ctorat-29,yab, waijtatomojpë ijtëse ti,waijta-tomo-jpë\tij-të-se\tti,mouse-PL-PST\t3-go-PST\tQUOT,the mice went away.,,,CtoRat
+ctorat-30,yab, tipasekontomo warë irëjpë pïrarë,tipa-se-kontomo\twarë\tirëjpë\tpïrarë,go.group-PST-PL\tthus\tthen\tnothing,They left and were gone.,,,CtoRat
+ctorat-31,yab, ëjwenakajpë tainpëtiri waraijtokomo tëwï,ëj-wenaka-jpë\tta-in-pëti-ri\twaraijtokomo\ttëwï,DETRZ-vomit-PST.ACNMLZ\t3P-see-PLUR-IPFV\tman\t3SG,The man saw their vomit.,,Actually *t-ëj-wenaka-jpë*? Also: [kontu] for komo tëwï.,CtoRat
+ctorat-32,yab, waraijtokomo ya inpëti ti,waraijtokomo\tya\tin-pëti-∅\tti,man\tOBL\tsee-PLUR-IPFV\tQUOT,He saw it.,,,CtoRat
+ctorat-33,yab, irëjpë ti wenakajpë mare pïrarë ti,irëjpë\tti\twenaka-jpë\tmare\tpïrarë\tti,then\tQUOT\tvomit-PST.ACNMLZ\tREL.INAN\tnothing\tQUOT,Then there was nothing of their vomit.,,,CtoRat
+ctorat-34,yab, ëkëtë mërë ëkï,ëkëtë\tmërë\tëkï,where\t3IN:MD\tmanioc.beer,Where is the chicha?,,*okï*,CtoRat
+ctorat-35,yab, ëkï ta rë pïrarë wenarujpë ta rë pïrarë,ëkï\tta\trë\tpïrarë\twena-ru-jpë\tta\trë\tpïrarë,manioc.beer\tlike\tEMP\tnothing\tvomit-PERT-PST\tlike\tEMP\tnothing,The chicha was gone and so was the vomit.,,,CtoRat
+ctorat-36,yab, ta ti wejsaj ti tëwï,ta-∅\tti\twej-saj\tti\ttëwï,say-IPFV\tQUOT\tCOP-PFV\tQUOT\t3SG,...he said.,,,CtoRat
+ctorat-37,yab, waijtatomo nwajtë mare,waijta-tomo\tnwajtë-∅\tmare,mouse-PL\tdance-IPFV\tkeeps.going,The mice were dancing.,,,CtoRat
+ctorat-38,yab, ëjtë kërëjpë yawë nwajtëkonton ti wejsapë waijta,ëjtë\tkërëjpë\tyawë\tnwajtë-∅-konton\tti\twej-sapë\twaijta,house\told\tLOC\tdance-IPFV-PL\tQUOT\tCOP-PFV\tmouse,In the old house the mice were dancing.,,Something after *yawë*?,CtoRat
+ctorat-39,yab, sukase nwajtëri irëjpë ti warë,sukase\tnwajtë-ri\tirëjpë\tti\twarë,all\tdance-IPFV\tthen\tQUOT\tthus,"They were all dancing, then.",,Glottal stop before *warë*?,CtoRat
+ctorat-40,yab, tipapëjsejne waijtajne,tipa-pëj-se-jne\twaijta-jne,go.group-PLUR-PST-PL\tmouse-PL,the mice went away.,,,CtoRat
+ctorat-41,yab, ajpachi yaka pïnika ëkëjna neke wonse,ajpachi\tyaka\tpïnika\tëkëjna\tneke\twon-se,weeds\tALL\tPROB\twhere.to\tCONTRAST\tenter-PST,"Probably to the woods, dunno where they went.",,,CtoRat
+ctorat-42,yab, tëwï ajpachi yaka wonse pïnika tëwï,tëwï\tajpachi\tyaka\twon-se\tpïnika\ttëwï,3SG\tweeds\tALL\tenter-PST\tPROB\t3SG,Maybe they went to the woods.,,,CtoRat
+ctorat-43,yab, tëwï ma tase makë ya,tëwï\tma\tta-se\tmakë\tya,3SG\tRESTR\tsay-PST\tmother\tERG,That’s what my mother said.,,Missing translation,CtoRat
+ctorat-44,yab, tawara ma ta ti wejsapë tëwï waraijtokon maniki,tawara\tma\tta-∅\tti\twej-sapë\ttëwï\twaraijtokon\tmaniki,too\tRESTR\tsay-IPFV\tQUOT\tCOP-PFV\t3SG\tman\t?,That’s all she said.,,Mismatch of audio & transcription.,CtoRat
+ctorat-45,yab, irëjpë ijtëse,irëjpë\tij-të-se,then\t3-go-PST,Then the man went.,,,CtoRat
+ctorat-46,yab, tïwïj yaka waraijtokomo manikijpë,t-ïwïj\tyaka\twaraijtokomo\tmaniki-jpë,3-house\tALL\tman\t?-PST,He went to his house.,,,CtoRat
+anfoperso-01,yab, wïrë tawara rë entë,wïrë\ttawara\trë\tentë,1SG\ttoo\tEMP\there,yo estaba aquí (en San Juan Manapiare),,nan,HistAnFo
 anfoperso-02,yab," ana këyetajpë, intipijkë ana chi yawë",ana\tkëyeta-jpë\tintipijkë\tana\tchi-∅\tyawë,1+3\tgrow.up-PST\ta.little\t1+3\tCOP-NMLZ\tLOC,nos criamos cuando estábamos chiquiticos nosotros,,nan,HistAnFo
-anfoperso-03,yab, ana yïmï sëmajpë pe,ana\tyïmï\tsëma-jpë\tpe,1+3\tfather\t?\tESS,cuando se murió mi papá,,nan,HistAnFo
+anfoperso-03,yab, ana yïmï sëmajpë pe,ana\tyïmï\tsëma-jpë\tpe,1+3\tfather\tdie-PST\tESS,cuando se murió mi papá,,nan,HistAnFo
 anfoperso-04,yab," ana këyetase papa kampra ya, ana yoti wejsapë yojtë ta sukase aroma warai, yakuri warai yojtë wejsaj ta",ana\tkëyeta-se\tpapa\tkampra\tya\tana\ty-oti\twej-sapë\tyojtë-∅\tta\tsukase\taroma\twarai\tyakuri\twarai\tyojtë-∅\twej-saj\tta,1+3\tgrow.up-PST\tfather:VOC\tbig\tERG\t1+3\tLK-game.food\tCOP-PFV\tfish-IPFV\tlike\tall\tpaca\tlike\tagouti\tlike\tfish-IPFV\tCOP-PFV\tlike,"nosotros crecimos, mi tio pescaba toda nuestra comida, lapa, picure",,nan,HistAnFo
 anfoperso-05,yab," papa kampra ya, makampra ya ta wejsaj ta, maijtë kaimotata, mukuton yomiri",papa\tkampra\tya\tmakampra\tya\tta-∅\twej-saj\tta\tmaijtë\tkaimo-ta-ta\tmuku-ton\tyomi-ri,father:VOC\tbig\tERG\tmaternal.aunt:VOC\tERG\tsay-IPFV\tCOP-PFV\tlike\tgo.IMP\tgame-VBZ-MOTIMP\tchild-PL\tbe.hungry-IPFV,"mi tía estaba diciendo para mi tío ""vaya a cazar que los niños tienen hambre""",,nan,HistAnFo
 anfoperso-06,yab," asamori ta wejsaj ta, irë makë ta wejsapë",asamo-ri\tta-∅\twej-saj\tta\tirë\tmakë\tta-∅\twej-sapë,cry-IPFV\tsay-IPFV\tCOP-PFV\tlike\tTMP:DEM\tmother\tsay-IPFV\tCOP-PFV,"mi  tía dijo ""están llorando""",,nan,HistAnFo
 anfoperso-07,yab," pachi, kërë takï yëmi pïnirë",pachi\t?\t?\t?\tpïnirë,older.sister.F\t?\t?\t?\tnothing,"dijo ""hermana, ese no tiene hambre""",,nan,HistAnFo
-anfoperso-08,yab, asamorijra asamori muku,asamorijra\tasamo-ri\tmuku,***\t?\tchild,por llorar no más lloran los niños,,nan,HistAnFo
+anfoperso-08,yab, asamorijra asamori muku,asamo-ri-jra\tasamo-ri\tmuku,cry-IPFV-NEG\tcry-IPFV\tchild,por llorar no más lloran los niños,,nan,HistAnFo
 anfoperso-09,yab," tejetum pïnika, ta wejsaj ta makë ya, makë pano ya",tejetum\tpïnika\tta-∅\twej-saj\tta\tmakë\tya\tmakë\tpano\tya,sick\tPROB\tsay-IPFV\tCOP-PFV\tlike\tmother\tERG\tmother\tdeceased\tERG,"mi mamá decía ""no ese está enfermo será",,nan,HistAnFo
 anfoperso-10,yab," sukase ta wejsaj ta, irëjpë papa kampra ijtëri",sukase\tta-∅\twej-saj\tta\tirëjpë\tpapa\tkampra\tij-të-ri,all\tsay-IPFV\tCOP-PFV\tlike\tthen\tfather:VOC\tbig\t3-go-IPFV,"todo decía, después se iba mi tío",,nan,HistAnFo
 anfoperso-11,yab, ipakuri yakërë,i-pakuri\t?,3-arrow\t?,con su flecha,,nan,HistAnFo
@@ -97,7 +97,7 @@ anfoperso-49,yab, irëjpë rë warë tajtojpe pïnika wïrë sepanse,irëjpë\tr
 anfoperso-50,yab, irëjpë,?,?,después,,nan,HistAnFo
 anfoperso-51,yab, ana wejsapë,ana\twej-sapë,1+3\tCOP-PFV,nosotros estábamos,,nan,HistAnFo
 anfoperso-52,yab," makë yakërë ma wejtane, tëijpë rë pïjkë ana yïwïtï",makë\ty-akërë\tma\twejtane\ttëijpë\trë\tpïjkë\tana\ty-ïwïtï,mother\tLK-COM\tRESTR\thowever\tfar\tEMP\tDIM\t1+3\tLK-house,"aunque estaba con mi mamá, nuestra casa estaba un poquito lejos",,nan,HistAnFo
-anfoperso-53,yab," ana yïwïj yawë ana senejka wejsapë, tawara ma ana këyatajpë ana",ana\ty-ïwïj\tyawë\tana\ts-enejka-∅\twej-sapë\ttawara\tma\tana\tkëyata-jpë\tana,1+3\tLK-house\tLOC\t1+3\t?\tCOP-PFV\ttoo\tRESTR\t1+3\t?\t1+3,"nosotros estábamos en nuestra casa, así nos criamos",,nan,HistAnFo
+anfoperso-53,yab," ana yïwïj yawë ana senejka wejsapë, tawara ma ana këyatajpë ana",ana\ty-ïwïj\tyawë\tana\tsenejka\t?\ttawara\tma\tana\tkëyata-jpë\tana,1+3\tLK-house\tLOC\t1+3\t***\t?\ttoo\tRESTR\t1+3\t?\t1+3,"nosotros estábamos en nuestra casa, así nos criamos",,nan,HistAnFo
 anfoperso-54,yab, papa pano patajpë të,papa\tpano\tpata-jpë\ttë,father:VOC\tdeceased\ttown-PST\tLOC,en lo que era el pueblo del finado mi papá,,nan,HistAnFo
 anfoperso-55,yab, ëmpare,ëmpare,already,ya,,nan,HistAnFo
 convrisamaj-01,yab," ati rë warai mërë iniri, irëjpë mëyarika ti",ati\trë\twarai\tmërë\tini-ri\tirëjpë\tmë-yarika-∅\tti,what\tEMP\tlike\t2SG\tsee-IPFV\tthen\t2-laugh.at-IPFV\tQUOT,You see something and then you laugh.,,,ConvRisaMAJ
@@ -113,45 +113,45 @@ convrisamaj-10,yab," tajne yarikari irëjpë, tajne yakarama pokono",ta-jne\tyar
 convrisamaj-11,yab," tawaja ejnë, ejnë neke ne, ejnë pëkëpene ejnë yarikaja",tawaja\tejnë\tejnë\tneke\tne\tejnë\tpëkëpene\tejnë\tyarika-∅-ja,not.thus\t1+2\t1+2\tCONTRAST\tINTS\t1+2\talone\t1+2\tlaugh.at-IPFV-NEG,"We’re not like that, we don’t just laugh.",,,ConvRisaMAJ
 convrisamaj-12,yab,¿ ati ejnë yaruwari?,ati\tejnë\tyaruwa-ri,what\t1+2\tlaugh-IPFV,What are we going to laugh about?,,,ConvRisaMAJ
 convrisamaj-13,yab," pïrarë, seneja ejnë yarikatopo",pïrarë\tsene-∅-ja\tejnë\tyarika-topo,nothing\tsee.self-IPFV-NEG\t1+2\tlaugh.at-CIRC.NMLZ,"Nothing, there’s nothing for us to laugh.",,,ConvRisaMAJ
-convrisamaj-14,yab, nwarë ti ta ta,nwarë\tti\tta-∅\tta,thus\tQUOT\tsay-IPFV\tlike,That’s what I say.,,,ConvRisaMAJ
+convrisamaj-14,yab, nwarë ti ta ta,nwarë\tti\t?\t?,like\tQUOT\t?\t?,That’s what I say.,,,ConvRisaMAJ
 convrisamaj-15,yab, taitapo ti,ta-ita-po\tti,3P-hear-DES\tQUOT,I want to hear it.,,,ConvRisaMAJ
 convrisamaj-16,yab,¿ ati ta ta?,ati\tta-∅\tta,what\tsay-IPFV\tlike,What are you saying?,,,ConvRisaMAJ
 convrisamaj-17,yab, chiri ma wïrë taro,chi-ri\tma\twïrë\ttaro-∅,COP-NMLZ\tRESTR\t1SG\tsay-IPFV,That’s all I’m saying.,,,ConvRisaMAJ
 convrisamaj-18,yab," tawarama taro wïrë, wïrë yewenke",tawara=ma\ttaro-∅\twïrë\twïrë\ty-ewenke,too=RESTR\tsay-IPFV\t1SG\t1SG\tLK-not.know,"That’s all I’m saying, too, I don’t know.",,,ConvRisaMAJ
 convrisamaj-19,yab,¿ ati pëkë ejnë yaruwari?,ati\tpëkë\tejnë\tyaruwa-ri,what\ton.surface\t1+2\tlaugh-IPFV,What are we going to laugh about?,,,ConvRisaMAJ
 convrisamaj-20,yab,### yaruwakempïnirë wïrë,yaruwa-kempïnirë\twïrë,laugh-PTCP.NZR.GNO:NEG\t1SG,I don’t laugh.,,,ConvRisaMAJ
-convrisamaj-21,yab," wïrë yaruwakempïnirë wïrë senejkarï uyïwïj yaka sukuri, jwama",wïrë\tyaruwa-kempïnirë\twïrë\ts-enejka-rï\tu-y-ïwïj\tyaka\tsukuri\tjwama,1SG\tlaugh-PTCP.NZR.GNO:NEG\t1SG\tDETRZ-watch-IPFV\t1-LK-house\tALL\tquietly\t***,"I don’t laugh, I silently stay in my house.",,,ConvRisaMAJ
+convrisamaj-21,yab," wïrë yaruwakempïnirë wïrë senejkarï uyïwïj yaka sukuri, jwama",wïrë\tyaruwa-kempïnirë\twïrë\tsenejkarï\tu-y-ïwïj\t?\t?\tjwama,1SG\tlaugh-PTCP.NZR.GNO:NEG\t1SG\t***\t1-LK-house\t?\t?\t***,"I don’t laugh, I silently stay in my house.",,,ConvRisaMAJ
 convrisamaj-22,yab, mëkïsantomo yaruwari wïrë itari,mëkïsantomo\tyaruwa-ri\twïrë\tita-ri,3AN:RM:PL\tlaugh-IPFV\t1SG\thear-IPFV,They’re laughing and I’m listening.,,Something after *itari*?,ConvRisaMAJ
 convrisamaj-23,yab," kï, serekapojra ka mokontomo yaruwari",kï\tsereka-po-jra\tka\tmokontomo\tyaruwa-ri,oh\ttire-DES-NEG\tQP\t2PL\tlaugh-NMLZ,"Ugh, don’t you get tired from laughing so much?",,*yaruwa-ri*?,ConvRisaMAJ
 convrisamaj-24,yab, wïrë wajyakïtïjra taro wïrë ta wïrë ya,wïrë\twajyakïtï-∅-jra\ttaro-∅\twïrë\tta-∅\twïrë\tya,1SG\tbe.happy-IPFV-NEG\tsay-IPFV\t1SG\tsay-IPFV\t1SG\tERG,I’m saying I am not happy.,,No initial *wïrë*?,ConvRisaMAJ
 convrisamaj-25,yab, kajkë,kaj-kë,say-IMP,You’re right.,,,ConvRisaMAJ
 convrisamaj-26,yab,### ta wejsaj wïrë,ta-∅\twej-saj\twïrë,say-IPFV\tCOP-PFV\t1SG,### I say.,,,ConvRisaMAJ
 convrisamaj-27,yab," tawaraij wïrë, yaruwakempïnirë,",tawaraij\twïrë\tyaruwa-kempïnirë,thus.N\t1SG\tlaugh-PTCP.NZR.GNO:NEG,"I’m not like that, I don’t laugh.",,,ConvRisaMAJ
-convrisamaj-28,yab, uyïwïj yawë usenejkari sukuri jwama,u-y-ïwïj\tyawë\tu-s-enejka-ri\tsukuri\tjwama,1-LK-house\tLOC\t1-DETRZ-watch-IPFV\tquietly\t***,I silently stay in my house.,,,ConvRisaMAJ
-convrisamaj-29,yab, nope seneja chipokono ejnë pana nope seneja chipokono ejnë yaruwatopo pïrärë,nope\tsene-∅-ja\tchi=poko-no\tejnë\tpana\tnope\tsene-∅-ja\tchi=poko-no\tejnë\tyaruwa-topo\tpïrärë,good\tsee.self-IPFV-NEG\tCOP=on.surface-NMLZ\t1+2\tDAT\tgood\tsee.self-IPFV-NEG\tCOP=on.surface-NMLZ\t1+2\tlaugh-CIRC.NMLZ\t***,"We don’t see anything good, so we don’t laugh.",,Typo: *pïrärë*,ConvRisaMAJ
-convrisamaj-30,yab," inkë, irë nwa chipëkë",in-kë\tirë\tnwa\tchi=pëkë,see-IMP\tTMP:DEM\tthus\tCOP=on.surface,"You see, that’s why",,,ConvRisaMAJ
-convrisamaj-31,yab, mërë nwa chipokono ejnë yarikaja,?\t?\tchi=poko-no\tejnë\tyarika-∅-ja,?\t?\tCOP=on.surface-NMLZ\t1+2\tlaugh.at-IPFV-NEG,por eso nosotros no nos reímos,,nan,ConvRisaMAJ
-convrisamaj-32,yab, tëwïsantomo neke ne yaruwatëpëkë ma rë chikontomo,tëwïsantomo\tneke\tne\tyaruwa-tëpëkë\t?\trë\tchi-∅-kontomo,3PL\tCONTRAST\tINTS\tlaugh-PROG.INTR\t?\tEMP\tCOP-IPFV-PL,ellos sí siempre pasan riendose,,nan,ConvRisaMAJ
-convrisamaj-33,yab, tajne ini pokono waimukontomo,ta-jne\t?\tpoko-no\twaimu-∅-kontomo,3-PL\t?\ton.surface-NMLZ\tspeak-IPFV-PL,porque ellos ven ellos hablan,,nan,ConvRisaMAJ
-convrisamaj-34,yab," tajne ya ijpë mare tëwï, tajne ya yekerema pïnika ta wïrë",ta-jne\t?\ti-jpë\t?\ttëwï\tta-jne\t?\tyekerema\tpïnika\t?\twïrë,3-PL\t?\t?\t?\t3SG\t3-PL\t?\t***\tPROB\t?\t1SG,"lo que hacen, ellos será que lo cuentan",,nan,ConvRisaMAJ
-convrisamaj-35,yab," pïnika, pïnika, tawara chipokon pïnika yaruwakontomo",pïnika\tpïnika\ttawara\tchi=poko-n\tpïnika\tyaruwa-∅-kontomo,PROB\tPROB\ttoo\tCOP=on.surface-NMLZ\tPROB\tlaugh-IPFV-PL,será por eso que se rien,,nan,ConvRisaMAJ
-convrisamaj-36,yab, taro mare wïrë ya,?\t?\twïrë\t?,?\t?\t1SG\t?,yo no sé nada pero digo así,,nan,ConvRisaMAJ
-convrisamaj-37,yab, nwa ma pïnika ta wïrë ya,?\t?\tpïnika\t?\twïrë\t?,?\t?\tPROB\t?\t1SG\t?,así no más digo yo,,nan,ConvRisaMAJ
-convrisamaj-38,yab, tejpore sa ne yaruwakontomo,tejpore\tsa\tne\tyaruwa-∅-kontomo,tasty\tEVAL\tINTS\tlaugh-IPFV-PL,se ríen con muchas ganas,,nan,ConvRisaMAJ
-convrisamaj-40,yab, tawarama wïrë itari onono parë,tawara=ma\twïrë\tita-ri\tonono\tparë,too=RESTR\t1SG\thear-IPFV\tanother\tand,yo también escucho algunas veces,,nan,ConvRisaMAJ
-convrisamaj-42,yab, yaruwakontomo yatum ponoko,yaruwa-∅-kontomo\tyatum\tponoko,laugh-IPFV-PL\tsun\tevery,se rien cada dia,,nan,ConvRisaMAJ
-convrisamaj-43,yab, ta takontomo,?\t?,?\t?,,,nan,ConvRisaMAJ
-convrisamaj-44,yab, wïrë inija ta rë,wïrë\t?\t?\trë,1SG\t?\t?\tEMP,yo no he visto,,nan,ConvRisaMAJ
-convrisamaj-45,yab,"¡ kë%¡ mokontomo wajyakïtï ta, wïrë wajyakïtïjra taro wïrë ta wïrë ya",kë\tmokontomo\twajyakïtï-∅\t?\twïrë\twajyakïtïjra\t?\twïrë\t?\twïrë\t?,ouch\t2PL\t?\t?\t1SG\t***\t?\t1SG\t?\t1SG\t?,"ay! ustedes si están alegres, pero yo no estoy alegre, digo",,nan,ConvRisaMAJ
-convrisamaj-46,yab, uyarë wïrë përemekïrï,?\twïrë\tpëremekï-rï,?\t1SG\ttalk-IPFV,yo hablo sola,,nan,ConvRisaMAJ
-convrisamaj-47,yab," aniki narëpe yakërë ejnë përemekïrï, ejnë pëkëpene, wanene",aniki\tnarëpe\t?\tejnë\tpëremekï-rï\tejnë\tpëkëpene\twanene,who\t***\t?\t1+2\ttalk-IPFV\t1+2\talone\taunt:VOC,"con quién será que vamos a hablar nosotros, nosotras estamos solas",,nan,ConvRisaMAJ
-convrisamaj-48,yab, pïrarë ejnë chiyakon chipokono ejnë yaruwatopo pïrarë,pïrarë\tejnë\tchiyakon\tchi=poko-no\tejnë\tyaruwa-topo\tpïrarë,nothing\t1+2\tfriend\tCOP=on.surface-NMLZ\t1+2\tlaugh-CIRC.NMLZ\tnothing,porque no tenemos amigas para nosotros reir,,nan,ConvRisaMAJ
-convrisamaj-49,yab, inkë,in-kë,see-IMP,así,,nan,ConvRisaMAJ
-convrisamaj-50,yab," ejnë pëkëpene ejnë chi yawë, ejnë yarikaja",ejnë\tpëkëpene\tejnë\tchi-∅\tyawë\tejnë\tyarika-∅-ja,1+2\talone\t1+2\t?\tLOC\t1+2\tlaugh.at-IPFV-NEG,"cuando estamos solas, nosotras no nos reímos",,nan,ConvRisaMAJ
-convrisamaj-51,yab,¿ ati ejnë yarikari%¿ pïrarë,?\tejnë\tyarika-ri\tpïrarë,?\t1+2\t?\tnothing,¿de qué nos vamos a reir? no hay nada,,nan,ConvRisaMAJ
-convrisamaj-52,yab,¡ tari%¡ yarikasemïjra,?\tyarika-se-mï-jra,?\tlaugh.at-PTCP-NMLZ-PRIV,uy! no hay como para reir,,nan,ConvRisaMAJ
-convrisamaj-53,yab, nwa ma ta wïrë ya,?\t?\t?\twïrë\t?,?\t?\t?\t1SG\t?,así no más,,nan,ConvRisaMAJ
-convrisamaj-54,yab, pïrarë,pïrarë,nothing,no hay,,nan,ConvRisaMAJ
+convrisamaj-28,yab, uyïwïj yawë usenejkari sukuri jwama,u-y-ïwïj\tyawë\tu-senejka-ri\tsukuri\tjwama,1-LK-house\tLOC\t1-remain-IPFV\tquietly\t***,I silently stay in my house.,,,ConvRisaMAJ
+convrisamaj-29,yab, nope seneja chipokono ejnë pana nope seneja chipokono ejnë yaruwatopo pïrärë,nope\tsene-∅-ja\tchi=poko-no\tejnë\tpana\tnope\tsene-∅-ja\tchi=poko-no\tejnë\tyaruwa-topo\tpïrärë,good\tsee.self-IPFV-NEG\tCOP=on.surface-NMLZ\t1+2\tDAT\tgood\tsee.self-IPFV-NEG\tCOP=on.surface-NMLZ\t1+2\tlaugh-CIRC.NMLZ\t***,"We don’t see anything good, so we don’t laugh.",,Typo: *pïrärë*.,ConvRisaMAJ
+convrisamaj-30,yab," inkë, irë nwa chipëkë",in-kë\tirë\tnwa\tchi=pëkë,see-IMP\tTMP:DEM\tthus\tCOP=on.surface,"You see, that’s why.",,,ConvRisaMAJ
+convrisamaj-31,yab, mërë nwa chipokono ejnë yarikaja,mërë\tnwa\tchi=poko-no\tejnë\tyarika-∅-ja,3IN:MD\tthus\tCOP=on.surface-NMLZ\t1+2\tlaugh.at-IPFV-NEG,That’s why we don’t laugh.,,,ConvRisaMAJ
+convrisamaj-32,yab, tëwïsantomo neke ne yaruwatëpëkë ma rë chikontomo,tëwïsantomo\tneke\tne\tyaruwa-tëpëkë\tma\trë\tchi-∅-kontomo,3PL\tCONTRAST\tINTS\tlaugh-PROG.INTR\tRESTR\tEMP\tCOP-IPFV-PL,But they’re constantly laughing.,,"*tëwïsanto*, no *-mo*.",ConvRisaMAJ
+convrisamaj-33,yab, tajne ini pokono waimukontomo,ta-jne\tini-∅\tpoko-no\twaimu-∅-kontomo,3-PL\tsee-NMLZ\ton.surface-NMLZ\tspeak-IPFV-PL,Because they see they laugh.,,,ConvRisaMAJ
+convrisamaj-34,yab," tajne ya ijpë mare tëwï, tajne ya yekerema pïnika ta wïrë",ta-jne\tya\ti-jpë\tmare\ttëwï\tta-jne\tya\tyekerema\tpïnika\tta-∅\twïrë,3-PL\tERG\tput-PST\tREL.INAN\t3SG\t3-PL\tERG\t***\tPROB\tsay-IPFV\t1SG,"What they did, they’re going to tell.",,,ConvRisaMAJ
+convrisamaj-35,yab," pïnika, pïnika, tawara chipokon pïnika yaruwakontomo",pïnika\tpïnika\ttawara\tchi=poko-n\tpïnika\tyaruwa-∅-kontomo,PROB\tPROB\ttoo\tCOP=on.surface-NMLZ\tPROB\tlaugh-IPFV-PL,So that’s why they’re laughing.,,No *-mo*.,ConvRisaMAJ
+convrisamaj-36,yab, taro mare wïrë ya,taro-∅\tmare\twïrë\tya,say-IPFV\tkeeps.going\t1SG\tERG,yo no sé nada pero digo así,,Unclear Spanish translation.,ConvRisaMAJ
+convrisamaj-37,yab, nwa ma pïnika ta wïrë ya,nwa\tma\tpïnika\tta-∅\twïrë\tya,thus\tRESTR\tPROB\tsay-IPFV\t1SG\tERG,So I won’t say any more.,,,ConvRisaMAJ
+convrisamaj-38,yab, tejpore sa ne yaruwakontomo,tejpore\tsa\tne\tyaruwa-∅-kontomo,tasty\tEVAL\tINTS\tlaugh-IPFV-PL,They like laughing.,,No *-mo*.,ConvRisaMAJ
+convrisamaj-40,yab, tawarama wïrë itari onono parë,tawara=ma\twïrë\tita-ri\tonono\tparë,too=RESTR\t1SG\thear-IPFV\tanother\tand,I also listened some times.,,,ConvRisaMAJ
+convrisamaj-42,yab, yaruwakontomo yatum ponoko,yaruwa-∅-kontomo\tyatum\tponoko,laugh-IPFV-PL\tsun\tevery,They laugh every day.,,,ConvRisaMAJ
+convrisamaj-43,yab, ta takontomo,ta-∅\t?,say-IPFV\t?,That’s what they say (?),,,ConvRisaMAJ
+convrisamaj-44,yab, wïrë inija ta rë,wïrë\tini-∅-ja\tta\trë,1SG\tsee-IPFV-NEG\tlike\tEMP,I haven’t seen.,,,ConvRisaMAJ
+convrisamaj-45,yab,"¡ kë%¡ mokontomo wajyakïtï ta, wïrë wajyakïtïjra taro wïrë ta wïrë ya",kë\tmokontomo\twajyakïtï-∅\tta\twïrë\twajyakïtï-∅-jra\ttaro-∅\twïrë\tta\twïrë\tya,ouch\t2PL\tbe.happy-IPFV\tlike\t1SG\tbe.happy-IPFV-NEG\tsay-IPFV\t1SG\tlike\t1SG\tERG,"Ugh, you are happy but I am not, I say.",,,ConvRisaMAJ
+convrisamaj-46,yab, uyarë wïrë përemekïrï,u-ya=rë\twïrë\tpëremekï-rï,1-ERG=EMP\t1SG\ttalk-IPFV,I just talk.,,,ConvRisaMAJ
+convrisamaj-47,yab," aniki narëpe yakërë ejnë përemekïrï, ejnë pëkëpene, wanene",aniki\tnarëpe\ty-akërë\tejnë\tpëremekï-rï\tejnë\tpëkëpene\twanene,who\t***\tLK-COM\t1+2\ttalk-IPFV\t1+2\talone\taunt:VOC,"Who are we gonna talk to? We’re alone, aunt.",,,ConvRisaMAJ
+convrisamaj-48,yab, pïrarë ejnë chiyakon chipokono ejnë yaruwatopo pïrarë,pïrarë\tejnë\tchiyakon\tchi=poko-no\tejnë\tyaruwa-topo\tpïrarë,nothing\t1+2\tfriend\tCOP=on.surface-NMLZ\t1+2\tlaugh-CIRC.NMLZ\tnothing,Because we don’t have friends we don’t have anything to laugh.,,,ConvRisaMAJ
+convrisamaj-49,yab, inkë,in-kë,see-IMP,That’s right!,,,ConvRisaMAJ
+convrisamaj-50,yab," ejnë pëkëpene ejnë chi yawë, ejnë yarikaja",ejnë\tpëkëpene\tejnë\tchi-∅\tyawë\tejnë\tyarika-∅-ja,1+2\talone\t1+2\tCOP-NMLZ\tLOC\t1+2\tlaugh.at-IPFV-NEG,"When we’re alone, we don’t laugh.",,,ConvRisaMAJ
+convrisamaj-51,yab,¿ ati ejnë yarikari%¿ pïrarë,ati\tejnë\tyarika-ri\tpïrarë,what\t1+2\tlaugh.at-IPFV\tnothing,What are we going to laugh about? Nothing.,,,ConvRisaMAJ
+convrisamaj-52,yab,¡ tari%¡ yarikasemïjra,ta-ri\tyarika-se-mï-jra,say-NMLZ\tlaugh.at-PTCP-NMLZ-NEG,"Oh, there’s nothing to laugh about.",,,ConvRisaMAJ
+convrisamaj-53,yab, nwa ma ta wïrë ya,nwa\tma\tta-∅\twïrë\tya,thus\tRESTR\tsay-IPFV\t1SG\tERG,That’s all I’m saying.,,,ConvRisaMAJ
+convrisamaj-54,yab, pïrarë,pïrarë,nothing,Nothing.,,,ConvRisaMAJ
 desccasmaj-001,yab," irë wejtane, ejnë waimuja mërë warë",?\twejtane\tejnë\twaimu-∅-ja\t?\t?,?\thowever\t1+2\tspeak-IPFV-NEG\t?\t?,,,nan,DescCasMAJ
 desccasmaj-002,yab," toto yaye, ejnë waimu",toto\tyaye\tejnë\twaimu-∅,non.indian\t***\t1+2\t?,,,nan,DescCasMAJ
 desccasmaj-003,yab, irëjpë rë,?\trë,?\tEMP,después,,nan,DescCasMAJ
@@ -179,14 +179,14 @@ desccasmaj-024,yab, irëjpë...,?,?,,,nan,DescCasMAJ
 desccasmaj-025,yab, mënai wëjkase chijpë wararë,më-nai-∅\twëjka-se\tchi-jpë\t?,?\t?\t?\t?,se cayó tu cosa,,nan,DescCasMAJ
 desccasmaj-026,yab,¿ wïrë nai wëjkase?,wïrë\tnai-∅\twëjka-se,1SG\t?\t?,se me cayó mi cosa (el microfono)?,,nan,DescCasMAJ
 desccasmaj-027,yab, wïrë pojteja ta,wïrë\tpojteja\t?,1SG\t***\t?,no me quiere,,nan,DescCasMAJ
-desccasmaj-028,yab, waimujrama sejkë ta,waimujrama\tsejkë\t?,***\t***\t?,no hables todavía,,nan,DescCasMAJ
+desccasmaj-028,yab, waimujrama sejkë ta,waimu-∅-jra=ma\tsejkë\t?,speak-IPFV-NEG=RESTR\t***\t?,no hables todavía,,nan,DescCasMAJ
 desccasmaj-029,yab, nopejra mëwaimuru ta ta,nope-jra\tmë-waimuru-∅\t?\t?,good-NEG\t?\t?\t?,estás hablando feo,,nan,DescCasMAJ
 desccasmaj-030,yab, wa chipëkë takï wïrë takï,wa\tchi=pëkë\t?\twïrë\t?,thus\tCOP=on.surface\t?\t1SG\t?,,,nan,DescCasMAJ
 desccasmaj-031,yab, tawanke wïrë chijpë pïnirë,tawanke\twïrë\tchi-jpë\tpïnirë,with.knowledge\t1SG\t?\tnothing,yo no sabía nada antes,,nan,DescCasMAJ
 desccasmaj-032,yab, mukupe wïrë chi yawë wïrë yëwanëta wanene pano,muku-pe\twïrë\tchi-∅\tyawë\twïrë\tyëwanëta-∅\twanene\tpano,child-ESS\t1SG\t?\tLOC\t1SG\t?\taunt:VOC\tdeceased,cuando era chiquita me enseño la finada mi suegra,,nan,DescCasMAJ
 desccasmaj-033,yab," tari mukujpë pëkë wïrë yekepïti yawë, tëpo ma wïrë yëwanëjtëse wïrë",?\t?\tpëkë\twïrë\tyekepïti\tyawë\ttë-po\t?\twïrë\tyëwanëjtë-se\twïrë,?\t?\ton.surface\t1SG\t***\tLOC\tgo-DES\t?\t1SG\t?\t1SG,"extendiendo en un budare chiquitico, en eso yo aprendí",,nan,DescCasMAJ
 desccasmaj-034,yab," wuriyampe wïrë wejtane ti, warë uyemekun yaka wëjkase,###",wuriyam-pe\twïrë\t?\tti\t?\tu-y-emekun\t?\twëjka-se,woman-ESS\t1SG\t?\tQUOT\t?\t1-LK-hand\t?\t?,"cuando ya me volví mujer, mi mano aprendió,",,nan,DescCasMAJ
-desccasmaj-035,yab, wïrë yewenke tarojra wïrë ya,wïrë\ty-ewenke\tt-aro-jra\twïrë\t?,1SG\tLK-not.know\t3-rice-PRIV\t1SG\t?,no puedo decir que no sé,,nan,DescCasMAJ
+desccasmaj-035,yab, wïrë yewenke tarojra wïrë ya,wïrë\ty-ewenke\t?\twïrë\t?,1SG\tLK-not.know\t?\t1SG\t?,no puedo decir que no sé,,nan,DescCasMAJ
 desccasmaj-036,yab," wïrë yasukari, wïrë yekeri, wajto inche wïtëri, wïrë yasukari, katara kunë wïrë ya, kïmïi inche wïrë tëri, wïrë katara yaka wïrë itojpe, warë",wïrë\tyasuka-ri\twïrë\tyeke-ri\twajto\tin-che\twïtëri\twïrë\tyasuka-ri\tkatara\tkunë-∅\twïrë\t?\tkïmïi\tin-che\twïrë\ttë-ri\twïrë\tkatara\t?\twïrë\ti-tojpe\t?,1SG\t?\t1SG\t?\tfire\t?\t***\t1SG\t?\thot.sauce\t?\t1SG\t?\thot.pepper\t?\t1SG\t?\t1SG\thot.sauce\t?\t1SG\t?\t?,"yo lo sebucaneo, yo lo tiendo, voy a buscar la leña,  lo sebucaneo, hiervo mi catara, voy a buscar mi ají, para echarle a mi catara, ok",,nan,DescCasMAJ
 desccasmaj-037,yab," warë wïrë chijpë mukupïjkë, marë inkë enirë, marë wïrë",?\twïrë\tchi-jpë\tmuku-pïjkë\t?\tin-kë\t?\t?\twïrë,?\t1SG\t?\tchild-DIM\t?\tsee-IMP\t?\t?\t1SG,"así era cuando era chiquitica, mira ahora, todavía soy así",,nan,DescCasMAJ
 desccasmaj-038,yab," yapijtompe wïrë wejtane,¡ kë%¡ wïyapë moroni",yapijtom-pe\twïrë\t?\tkë\twïyapë\tmoroni,old-ESS\t1SG\t?\touch\t***\tpain,"aunque soy vieja, ay me duelen mis brazos",,nan,DescCasMAJ
@@ -215,7 +215,7 @@ desccasmaj-060,yab," tawarajra takï mokontomo toto chi, nope mokontomo seremari
 desccasmaj-061,yab, tawaja takï ana,tawaja\t?\tana,not.thus\t?\t1+3,nosotros no es así,,nan,DescCasMAJ
 desccasmaj-062,yab, pumanse ana tujtëri,pumanse\tana\ttujtë-ri,little.food\t1+3\t?,"###, preparamos comida",,nan,DescCasMAJ
 desccasmaj-063,yab, sere yawakïrï,?\tyawakï-rï,?\tgrate-IPFV,rallar yuca,,nan,DescCasMAJ
-desccasmaj-064,yab," serere yawakïja chi yawë, pïrarë serejra",serere\tyawakï-∅-ja\tchi-∅\tyawë\tpïrarë\tsere-jra,***\tgrate-IPFV-NEG\t?\tLOC\tnothing\tcassava.bread-PRIV,"si no se ralla yuca, no hay yuca",,nan,DescCasMAJ
+desccasmaj-064,yab," serere yawakïja chi yawë, pïrarë serejra",serere\tyawakï-∅-ja\tchi-∅\tyawë\tpïrarë\t?,***\tgrate-IPFV-NEG\t?\tLOC\tnothing\t?,"si no se ralla yuca, no hay yuca",,nan,DescCasMAJ
 desccasmaj-065,yab," mañuku yamanëja chi yawë, pïrarë mañukujra",mañuku\t?\tchi-∅\tyawë\tpïrarë\tmañuku-jra,manioc.meal\t?\t?\tLOC\tnothing\tmanioc.meal-PRIV,"si no hace mañoco, no hay mañoco",,nan,DescCasMAJ
 desccasmaj-066,yab, sere yamapo yawë,?\tyama-po\tyawë,?\tmake-DES\tLOC,cuando quiere hacer yuca,,nan,DescCasMAJ
 desccasmaj-067,yab," mañuku neke ne, arokatë",mañuku\tneke\tne\tarokatë,manioc.meal\tCONTRAST\tINTS\t***,el mañoco es difícil,,nan,DescCasMAJ
@@ -234,7 +234,7 @@ desccasmaj-080,yab," mokontomo warota yawë, sere pëkë mokontomo warota yawë"
 desccasmaj-081,yab," mokontomo yeretapi pëkë, mokontomo warota yawë, mokontomo sawankuijtojpan pïnirë, tarojpë tajne ya, irë wa chipëkë, tawarai ma takï ana",mokontomo\ty-eretapi\tpëkë\tmokontomo\twarota\tyawë\tmokontomo\tsawankuijtojpan\tpïnirë\t?\tta-jne\t?\t?\twa\tchi=pëkë\ttawarai\t?\t?\tana,2PL\tLK-crop\ton.surface\t2PL\t***\tLOC\t2PL\t***\tnothing\t?\t3-PL\t?\t?\tthus\tCOP=on.surface\tthus.N\t?\t?\t1+3,"si ustedes trabajan con sus sembrados no van a pasar trabajos, dijeron ellas, por eso somos así",,nan,DescCasMAJ
 desccasmaj-082,yab, ana warotari,ana\twarotari,1+3\t***,nosotros trabajamos,,nan,DescCasMAJ
 desccasmaj-083,yab," inkë takï, sarë wïrë wepïja wejsapë, mëwejyaka",in-kë\t?\t?\twïrë\twepï-∅-ja\twej-sapë\t?,see-IMP\t?\t?\t1SG\tcome-IPFV-NEG\tCOP-PFV\t?,"mira, yo no vine donde usted",,nan,DescCasMAJ
-desccasmaj-084,yab," wïrë warotapëkë, wïrë sererijra",wïrë\twarotapëkë\twïrë\tsererijra,1SG\t***\t1SG\t***,"estaba trabajando (en otras cosas), no tengo casabe",,nan,DescCasMAJ
+desccasmaj-084,yab," wïrë warotapëkë, wïrë sererijra",wïrë\twarotapëkë\twïrë\ts-ere-ri-jra,1SG\t***\t1SG\tDETRZ-scare-IPFV-NEG,"estaba trabajando (en otras cosas), no tengo casabe",,nan,DescCasMAJ
 desccasmaj-085,yab, irë pana rë warë yapijtom terepun rërë,?\t?\trë\t?\tyapijtom\tt-erepun\trë=rë,?\t?\tEMP\t?\told\t3-sick\tEMP=EMP,pa completar el viejo el viejo está enfermo,,nan,DescCasMAJ
 desccasmaj-086,yab," irë wa chipëkë, wïrë wepïrï tarine wïrë warotapëkë, muku",?\twa\tchi=pëkë\twïrë\twepï-rï\ttarine\twïrë\twarotapëkë\tmuku,?\tthus\tCOP=on.surface\t1SG\tcome-IPFV\t***\t1SG\t***\tchild,"por eso vine rápido, estoy trabajando, hija",,nan,DescCasMAJ
 desccasmaj-087,yab," mïntë wïrë mëjtane pïnika tajtekene, tarine wïrë naiche ta",mïntë\twïrë\tmëj-tane\tpïnika\ttajtekene\ttarine\twïrë\tnai-che\t?,there\t1SG\twait-CNCS\tPROB\t***\t***\t1SG\t?\t?,"allá será que me está esperando, me vine rápido",,nan,DescCasMAJ
@@ -253,11 +253,11 @@ desccasmaj-099,yab, enirë marë intompijkë waretasapë,?\t?\tintompijkë\tware
 desccasmaj-100,yab, marë ta ta wïrë,?\t?\t?\twïrë,?\t?\t?\t1SG,todavía digo yo,,nan,DescCasMAJ
 desccasmaj-101,yab, mërë wa chipokono tasujre,?\twa\tchi=poko-no\ttasujre,?\tthus\tCOP=on.surface-NMLZ\tliquid,por eso está aguado,,nan,DescCasMAJ
 desccasmaj-102,yab, wa chipëkë wïrë taro,wa\tchi=pëkë\twïrë\ttaro-∅,thus\tCOP=on.surface\t1SG\t?,por eso digo,,nan,DescCasMAJ
-desccasmaj-103,yab, najmo sere kajra sejpëjtëkë,najmo\t?\tkajra-∅\tsejpëjtëkë-∅,grand.mother\t?\t?\t?,abuela no pregunten por casabe,,nan,DescCasMAJ
+desccasmaj-103,yab, najmo sere kajra sejpëjtëkë,najmo\t?\t?\tsejpëjtëkë-∅,grand.mother\t?\t?\t?,abuela no pregunten por casabe,,nan,DescCasMAJ
 desccasmaj-104,yab," wïrë yamanëja sere, yapijtompe wïrë tejwetune wïrë",wïrë\t?\t?\tyapijtom-pe\twïrë\ttejwetune\twïrë,1SG\t?\t?\told-ESS\t1SG\tsick\t1SG,"yo no hago casabe, estoy vieja y enferma",,nan,DescCasMAJ
 desccasmaj-105,yab, anajpïrï mërë inija ka terepunu maniki?,anajpïrï\t?\t?\t?\tt-erepunu\t?,***\t?\t?\t?\t3-sick\t?,¿ustedes no han visto que su abuelo está enfermo,,nan,DescCasMAJ
 desccasmaj-106,yab,¿ kwase wïrë warotari?,kwase\twïrë\twarotari,how\t1SG\t***,¿cómo trabajo?,,nan,DescCasMAJ
-desccasmaj-107,yab," ta wïrë, uyatïrïrï wïrë, parurujne wïrë yawakarijra, tarojra",?\twïrë\tuyatïrïrï\twïrë\tparurujne\twïrë\tyawakarijra\tt-aro-jra,?\t1SG\t***\t1SG\t***\t1SG\t***\t3-rice-PRIV,"digo yo, mi conuco, no voy a sembrar platano, no digo",,nan,DescCasMAJ
+desccasmaj-107,yab," ta wïrë, uyatïrïrï wïrë, parurujne wïrë yawakarijra, tarojra",?\twïrë\tuyatïrïrï\twïrë\tparurujne\twïrë\tyawaka-ri-jra\t?,?\t1SG\t***\t1SG\t***\t1SG\tsow-IPFV-NEG\t?,"digo yo, mi conuco, no voy a sembrar platano, no digo",,nan,DescCasMAJ
 desccasmaj-108,yab, ëmo pokono uyënkano pëkë,ëmo\tpoko-no\tu-y-ënkano\tpëkë,2:father:POS\ton.surface-NMLZ\t1-LK-thought\ton.surface,estoy pensando de tu papá,,nan,DescCasMAJ
 desccasmaj-109,yab, mërë takï sere pëkë ana warotari,?\t?\t?\tpëkë\tana\twarotari,?\t?\t?\ton.surface\t1+3\t***,así trabajamos con la yuca,,nan,DescCasMAJ
 desccasmaj-110,yab," warotase, tawarajra takï toto seremari",warotase\ttawara-jra\t?\ttoto\ts-erema-ri,***\ttoo-NEG\t?\tnon.indian\t?,"trabajando (mucho), así no comen los criollos",,nan,DescCasMAJ
@@ -302,7 +302,7 @@ desccasmaj-147,yab," ëinjëi, ëinjëi, ëinjëi",ëinjëi\tëinjëi\tëinjëi,
 desccasmaj-148,yab,"¡ pa%¡ papa wejtano wëra wïrë, ta wïrë",pa\tpapa\twejtano\twëra\twïrë\t?\twïrë,surprise?IDEO\tfather:VOC\t***\tlike\t1SG\t?\t1SG,,,nan,DescCasMAJ
 desccasmaj-149,yab," papa serematano wëra, wïrë seremari",papa\tserematano\twëra\twïrë\ts-erema-ri,father:VOC\t***\tlike\t1SG\t?,parece que mi papá está comiendo y yo estoy comiendo,,nan,DescCasMAJ
 desccasmaj-150,yab," papa sukutaka yëntano wëra, wïrë sukutaka yëni wïrë ya",papa\tsukutaka\tyëntano\twëra\twïrë\tsukutaka\tyëni-∅\twïrë\t?,father:VOC\tmanioc.drink\t***\tlike\t1SG\tmanioc.drink\t?\t1SG\t?,"parece que  estuviera mi papá tomando yucuta, cuando yo tomo yucuta",,nan,DescCasMAJ
-desccasmaj-151,yab," warë wïrë waimuru wïrë, wïrë samori kojpaye",?\twïrë\twaimu-ru\twïrë\twïrë\tsamori\tkojpaye,?\t1SG\t?\t1SG\t1SG\t***\tlast.night,"así digo yo, y lloro de noche",,nan,DescCasMAJ
+desccasmaj-151,yab," warë wïrë waimuru wïrë, wïrë samori kojpaye",?\twïrë\twaimuru-∅\twïrë\twïrë\tsamori\tkojpaye,?\t1SG\t?\t1SG\t1SG\t***\tlast.night,"así digo yo, y lloro de noche",,nan,DescCasMAJ
 desccasmaj-152,yab, nope ne wïrë wïnïkïja,nope\tne\twïrë\twïnïkï-∅-ja,good\tINTS\t1SG\tsleep-IPFV-NEG,no duermo bien,,nan,DescCasMAJ
 desccasmaj-153,yab, warë wïrë waraijtori terepunu rërë,?\twïrë\twaraijto-ri\tt-erepunu\trë=rë,?\t1SG\thusband-PERT\t3-sick\tEMP=EMP,ahora mi marido está enfermo,,nan,DescCasMAJ
 desccasmaj-154,yab, tëwï ma pïnika,tëwï\t?\tpïnika,3SG\t?\tPROB,hasta ahí no más,,nan,DescCasMAJ
