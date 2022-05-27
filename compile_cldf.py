@@ -163,6 +163,11 @@ with CLDFWriter(spec) as writer:
     manual_lexemes = cread(
         "/home/florianm/Dropbox/development/uniparser-yawarana/compile_parser/lexicon/lexemes.csv"
     )
+    roots = cread(
+        "/home/florianm/Dropbox/development/uniparser-yawarana/compile_parser/lexicon/roots.csv"
+    )
+    manual_lexemes = pd.concat([manual_lexemes, roots])
+    print(manual_lexemes)
     infl_morphs = cread("etc/inflection_morphs.csv")
     infl_morphemes = cread("etc/inflection_morphemes.csv")
     deriv_morphs = cread("etc/derivation_morphs.csv")
@@ -306,10 +311,59 @@ with CLDFWriter(spec) as writer:
     # word forms are treated as identical based on their morphological makeup
     # i.e., one form can have different meanings, depending on the context
 
-    # different form-meaning pairs, to avoid sorting IDs every time
+
+    # different form-meaning pairs, to avoid sorting IDs every time (slow)
     form_meanings = {}
     # the actual word forms, which can have different meanings
     forms = {}
+
+
+
+    # these are some wordforms collected for the dictionary, parsed with uniparser
+    dic_wordforms  = cread(
+        "/home/florianm/Dropbox/development/uniparser-yawarana/var/parsed_forms.csv"
+    )
+    for wf in dic_wordforms.to_dict("records"):
+        form_slug = slugify(wf["Segmented"] + ":" + wf["Gloss"])
+        meaning_slug = slugify(wf["Gloss"])
+        if meaning_slug not in meanings:
+            meanings[meaning_slug] = wf["Translation"]
+        if form_slug not in form_meanings:
+            morph_ids = sort_uniparser_ids(
+                id_list=wf["Morpheme_IDs"].split(","),
+                obj=wf["Segmented"],
+                gloss=wf["Gloss"],
+                id_dic=id_dict,
+            )
+            if None in morph_ids:
+                msg = f"Unidentified morphs in {wf['ID']}!"
+                log.error(msg)
+                continue
+            slug = slugify("-".join(morph_ids))
+            form_meanings[form_slug] = slug
+            if slug not in forms:
+                forms[slug] = {"Form": wf["Segmented"], "Parameter_ID": [meaning_slug]}
+            elif wf["Gloss"] not in forms[slug]["Parameter_ID"]:
+                forms[slug]["Parameter_ID"].append(meaning_slug)
+            igt = pyigt.IGT(wf["Segmented"], wf["Gloss"])
+            for morpheme_ids, word in zip(wf["Morpheme_IDs"], igt.morphosyntactic_words):
+                for morph_count, (morph_id, glossed_morph) in enumerate(
+                    zip(morph_ids, word.glossed_morphemes)
+                ):
+                    writer.objects["FormSlices"].append(
+                        {
+                            "ID": f"{form_slug}-{morph_count}",
+                            "Form_ID": slug,
+                            "Morph_ID": morph_id,
+                            "Index": str(morph_count),
+                            "Morpheme_Meaning": slugify(glossed_morph.gloss),
+                            "Form_Meaning": meaning_slug,
+                        }
+                    )
+        else:
+            slug = form_meanings[form_slug]
+    # print(dic_wordforms)
+
 
     for ex in examples.to_dict("records"):
         audio_path = example_audios / f'{ex["ID"]}.wav'

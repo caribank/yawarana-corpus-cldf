@@ -1,4 +1,12 @@
 ID,Form_ID,Morph_ID,Index,Morpheme_Meaning,Form_Meaning
+ta-yojte-se-mi-3p-fish-ptcp-nmlz-0,ta3-d8e0e5d2-cc64-4f1e-aae3-ee38de2a06eb0-septcp-minmlz,ta3,0,3p,3p-fish-ptcp-nmlz
+ta-yojte-se-mi-3p-fish-ptcp-nmlz-1,ta3-d8e0e5d2-cc64-4f1e-aae3-ee38de2a06eb0-septcp-minmlz,d8e0e5d2-cc64-4f1e-aae3-ee38de2a06eb0,1,fish,3p-fish-ptcp-nmlz
+ta-yojte-se-mi-3p-fish-ptcp-nmlz-2,ta3-d8e0e5d2-cc64-4f1e-aae3-ee38de2a06eb0-septcp-minmlz,septcp,2,ptcp,3p-fish-ptcp-nmlz
+ta-yojte-se-mi-3p-fish-ptcp-nmlz-3,ta3-d8e0e5d2-cc64-4f1e-aae3-ee38de2a06eb0-septcp-minmlz,minmlz,3,nmlz,3p-fish-ptcp-nmlz
+t-en-se-mi-3p-drink-ptcp-nmlz-0,t3-eni-drink-1-septcp-minmlz,t3,0,3p,3p-drink-ptcp-nmlz
+t-en-se-mi-3p-drink-ptcp-nmlz-1,t3-eni-drink-1-septcp-minmlz,eni-drink-1,1,drink,3p-drink-ptcp-nmlz
+t-en-se-mi-3p-drink-ptcp-nmlz-2,t3-eni-drink-1-septcp-minmlz,septcp,2,ptcp,3p-drink-ptcp-nmlz
+t-en-se-mi-3p-drink-ptcp-nmlz-3,t3-eni-drink-1-septcp-minmlz,minmlz,3,nmlz,3p-drink-ptcp-nmlz
 make-mother-0,make-mother-0,make-mother-0,0,mother,mother
 ya-erg-0,yaerg-0,yaerg-0,0,erg,erg
 ta-say-ipfv-0,62e12d1c-dd51-4a74-af84-2c7b0b87d0c12-ri-zero,62e12d1c-dd51-4a74-af84-2c7b0b87d0c12,0,say,say-ipfv

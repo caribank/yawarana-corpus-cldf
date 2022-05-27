@@ -145,7 +145,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#FormTable",
-            "dc:extent": 318,
+            "dc:extent": 320,
             "tableSchema": {
                 "columns": [
                     {
@@ -235,7 +235,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ParameterTable",
-            "dc:extent": 1061,
+            "dc:extent": 1065,
             "tableSchema": {
                 "columns": [
                     {
@@ -384,7 +384,7 @@
             "url": "languages.csv"
         },
         {
-            "dc:extent": 549,
+            "dc:extent": 557,
             "tableSchema": {
                 "columns": [
                     {
@@ -575,7 +575,7 @@
             "url": "ExampleSlices"
         },
         {
-            "dc:extent": 1333,
+            "dc:extent": 1337,
             "tableSchema": {
                 "columns": [
                     {
@@ -672,7 +672,7 @@
             "url": "MorphTable"
         },
         {
-            "dc:extent": 1024,
+            "dc:extent": 1027,
             "tableSchema": {
                 "columns": [
                     {

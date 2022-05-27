@@ -5,7 +5,7 @@ chardet==4.0.0
 cldfbench==1.10.0
 cldfcatalog==1.4.0
 clld==9.0.2
--e git+ssh://git@github.com/fmatter/clld-morphology-plugin.git@8f6c7f2bd0eac6ab4326423d14160017d1bc1016#egg=clld_morphology_plugin
+-e git+ssh://git@github.com/fmatter/clld-morphology-plugin.git@3c132099df1b83496ddac2f3f4300cd645861fe0#egg=clld_morphology_plugin
 clldutils==3.11.1
 colorlog==6.6.0
 csvw==2.0.0
@@ -29,7 +29,7 @@ pycountry==22.3.5
 pyglottolog==3.7.0
 pyigt==1.2.0
 -e git+ssh://git@github.com/fmatter/pylacoan.git@3a16cca3ef04dfc7cdc40228128ebd51c95c1eb2#egg=pylacoan
--e git+ssh://git@github.com/fmatter/pylingdocs.git@211fb74a88b34696b9340f181ac97ad183c61848#egg=pylingdocs
+-e git+ssh://git@github.com/fmatter/pylingdocs.git@c5716c987048fdb503e7625abe84591a5cc1557a#egg=pylingdocs
 pyramid==2.0
 python-dateutil==2.8.2
 python-gettext==4.0
