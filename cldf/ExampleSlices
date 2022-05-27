@@ -43,7 +43,7 @@ ctorat-12-2,3b92fde8-f646-47dd-b190-18c1ca2d60791,ctorat-12,2,too
 ctorat-12-3,reemp-0,ctorat-12,3,emp
 ctorat-12-4,ccb970b7-980c-4dc2-84fc-f291fd9a6bab0-sapepfv,ctorat-12,4,cop-pfv
 ctorat-13-0,587b3015-391a-4db2-b4b9-0e92563a53320,ctorat-13,0,3sg
-ctorat-13-1,nai-naij-make-0-ri-zero-kontonpl,ctorat-13,1,make-ipfv-pl
+ctorat-13-1,nai-naij-do-0-ri-zero-kontonpl,ctorat-13,1,do-ipfv-pl
 ctorat-13-2,8d454d1d-1899-40cb-91a2-e5a9a79298f90,ctorat-13,2,quot
 ctorat-13-3,3b92fde8-f646-47dd-b190-18c1ca2d60791,ctorat-13,3,too
 ctorat-14-0,931a59a4-84a2-46ed-b87c-f741d91d38650,ctorat-14,0,yarake
@@ -52,7 +52,7 @@ ctorat-14-3,yaerg-0,ctorat-14,3,erg
 ctorat-14-4,b88eb9d8-3039-47c5-b822-a13e422aeb480,ctorat-14,4,id-dabble
 ctorat-14-5,b88eb9d8-3039-47c5-b822-a13e422aeb480,ctorat-14,5,id-dabble
 ctorat-14-6,b88eb9d8-3039-47c5-b822-a13e422aeb480,ctorat-14,6,id-dabble
-ctorat-15-1,nai-naij-make-1-plur1-ri,ctorat-15,1,make-plur-ipfv
+ctorat-15-1,nai-naij-do-1-plur1-ri,ctorat-15,1,do-plur-ipfv
 ctorat-15-2,82b6a876-e630-48bc-943e-382481300ba94,ctorat-15,2,thus
 ctorat-16-0,2d4fe89b-c49d-4d19-86ae-209f48c5b2250,ctorat-16,0,then
 ctorat-16-1,587b3015-391a-4db2-b4b9-0e92563a53320,ctorat-16,1,3sg
@@ -96,7 +96,7 @@ ctorat-25-4,1f36b437-2c36-4e00-9e6c-7416f5bebee30,ctorat-25,4,rain
 ctorat-25-5,55db3ac7-4711-4980-845e-4b966dff41bc1-sareinm,ctorat-25,5,come-inm
 ctorat-25-6,1f36b437-2c36-4e00-9e6c-7416f5bebee30,ctorat-25,6,rain
 ctorat-25-7,55db3ac7-4711-4980-845e-4b966dff41bc1-sareinm,ctorat-25,7,come-inm
-ctorat-26-0,ta-like-0,ctorat-26,0,like
+ctorat-26-0,62e12d1c-dd51-4a74-af84-2c7b0b87d0c12-ri-zero,ctorat-26,0,say-ipfv
 ctorat-26-1,8d454d1d-1899-40cb-91a2-e5a9a79298f90,ctorat-26,1,quot
 ctorat-26-2,ta-like-0,ctorat-26,2,like
 ctorat-26-3,661dfe17-72bb-4a4f-aac2-e6d211c3b46b0-tomopl,ctorat-26,3,mouse-pl
@@ -128,7 +128,7 @@ ctorat-32-3,8d454d1d-1899-40cb-91a2-e5a9a79298f90,ctorat-32,3,quot
 ctorat-33-0,2d4fe89b-c49d-4d19-86ae-209f48c5b2250,ctorat-33,0,then
 ctorat-33-1,8d454d1d-1899-40cb-91a2-e5a9a79298f90,ctorat-33,1,quot
 ctorat-33-2,wenaka0-pstjpe1,ctorat-33,2,vomit-pst-acnmlz
-ctorat-33-3,mare-rel-inan-0,ctorat-33,3,rel-inan
+ctorat-33-3,05f86c62-a7e7-4293-9e49-0f2acad45e6a1,ctorat-33,3,keeps-going
 ctorat-33-4,b97a0ed7-7ceb-4cab-83d8-5b30b45d9a590,ctorat-33,4,nothing
 ctorat-33-5,8d454d1d-1899-40cb-91a2-e5a9a79298f90,ctorat-33,5,quot
 ctorat-34-0,07bd51f6-fb85-483e-b0cf-b27e244f61b40,ctorat-34,0,where
@@ -1018,9 +1018,11 @@ desccasmaj-118-2,ylk-ba4e062c-47d3-40c5-b184-a9f7511dc2950,desccasmaj-118,2,lk-h
 desccasmaj-118-3,2b5fa12b-1e2c-4dcb-92bd-48dfa2a328420,desccasmaj-118,3,1sg
 desccasmaj-118-4,2b5fa12b-1e2c-4dcb-92bd-48dfa2a328420,desccasmaj-118,4,1sg
 desccasmaj-118-5,201ea58b-0ea4-44af-8d30-cb391b164c0e0-ripert,desccasmaj-118,5,container-pert
+desccasmaj-119-0,3fe489a3-a437-4fb9-a418-9ecf007420b50,desccasmaj-119,0,taj
 desccasmaj-119-1,2b5fa12b-1e2c-4dcb-92bd-48dfa2a328420,desccasmaj-119,1,1sg
-desccasmaj-119-2,nai-naij-make-1-toponmlz,desccasmaj-119,2,make-circ-nmlz
+desccasmaj-119-2,nai-naij-do-1-toponmlz,desccasmaj-119,2,do-circ-nmlz
 desccasmaj-119-3,7ccdea1f-add1-4fd0-b650-5473ccff99fd0,desccasmaj-119,3,painful
+desccasmaj-119-4,dt2-enkafinish-1-septcp,desccasmaj-119,4,detrz-finish-pst
 desccasmaj-119-5,9b08ef13-a56a-4e19-acf8-5783e1ce46d30,desccasmaj-119,5,nail
 desccasmaj-120-0,e4e9ed1e-f5ad-485b-a3ab-08c1ee75d3150,desccasmaj-120,0,non-indian
 desccasmaj-121-0,660cbd87-a405-4b7b-80cd-f9d5875e20a00,desccasmaj-121,0,1-2

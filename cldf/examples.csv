@@ -11,9 +11,9 @@ ctorat-09,yab, ti waijtaton nwajtë wejsapë,ti\twaijta-ton\tnwajtë-∅\twej-sa
 ctorat-10,yab, sakunkai sakunkai,sakunkai\tsakunkai,sakunkai\tsakunkai,"Sakunkai, Sakunkai.",,,CtoRat
 ctorat-11,yab,""" sakunkai"" ta ta irëjpë"" sakunkai""",sakunkai\tta-∅\tta\tirëjpë\tsakunkai,sakunkai\tsay-IPFV\tlike\tthen\tsakunkai,"“Sakunkai”, they said, and then “Sakunkai”.",,,CtoRat
 ctorat-12,yab, wurijyampïjkë kantajnë tawara rë wejsapë,wurijyam-pïjkë\tkantajnë-∅\ttawara\trë\twej-sapë,woman-DIM\tsing-IPFV\ttoo\tEMP\tCOP-PFV,"The female was singing, too.",,,CtoRat
-ctorat-13,yab, tëwï naikonton ti tawara,tëwï\tnai-∅-konton\tti\ttawara,3SG\tmake-IPFV-PL\tQUOT\ttoo,They did like this.,,,CtoRat
+ctorat-13,yab, tëwï naikonton ti tawara,tëwï\tnai-∅-konton\tti\ttawara,3SG\tdo-IPFV-PL\tQUOT\ttoo,They did like this.,,,CtoRat
 ctorat-14,yab, okï yëni tajne ya soj soj soj,okï\tyëni-∅\tta-jne\tya\tsoj\tsoj\tsoj,yarake\tdrink-IPFV\t3-PL\tERG\tID:dabble\tID:dabble\tID:dabble,"They drank chicha, splash.",,,CtoRat
-ctorat-15,yab, tajne naijpëtiri warë,ta-jne\tnaij-pëti-ri\twarë,3-PL\tmake-PLUR-IPFV\tthus,They did like this.,,,CtoRat
+ctorat-15,yab, tajne naijpëtiri warë,ta-jne\tnaij-pëti-ri\twarë,3-PL\tdo-PLUR-IPFV\tthus,They did like this.,,,CtoRat
 ctorat-16,yab, irëjpë tëwï waijtatomo nwajtëri,irëjpë\ttëwï\twaijta-tomo\tnwajtë-ri,then\t3SG\tmouse-PL\tdance-IPFV,Then the mice were dancing.,,,CtoRat
 ctorat-17,yab, waijtatomo ëjwenakase,waijta-tomo\tëj-wenaka-se,mouse-PL\tDETRZ-vomit-PST,The mice vomited.,,,CtoRat
 ctorat-18,yab, irë wejtane ti,irë\twejtane\tti,TMP:DEM\thowever\tQUOT,But it was like this:,,,CtoRat
@@ -24,14 +24,14 @@ ctorat-22,yab, sujtase ti wejsapë,suj-ta-se\tti\twej-sapë,urine-VBZ-PST\tQUOT\
 ctorat-23,yab, aaa usukuru morone ta wïrë usujta ta ne,aaa\tu-suku-ru\tmorone\tta\twïrë\tu-suj-ta-∅\tta\tne,ah\t1-urine-PERT\tpainful\tlike\t1SG\t1-urine-VBZ-IPFV\tlike\tINTS,"My urine hurts, I will urinate.",,,CtoRat
 ctorat-24,yab, warë sujtase,warë\tsuj-ta-se,thus\turine-VBZ-PST,Then he urinated.,,,CtoRat
 ctorat-25,yab, irëjpë ta ti ta konopo wejsarë konopo wejsarë,irëjpë\tta-∅\tti\tta\tkonopo\twej-sarë\tkonopo\twej-sarë,then\tsay-IPFV\tQUOT\tlike\train\tcome-INM\train\tcome-INM,"Then they said: “it’s raining, it’s raining”.",,,CtoRat
-ctorat-26,yab, ta ti ta waijtatomo ya,ta\tti\tta\twaijta-tomo\tya,like\tQUOT\tlike\tmouse-PL\tERG,...said the mice.,,Missing translation,CtoRat
+ctorat-26,yab, ta ti ta waijtatomo ya,ta-∅\tti\tta\twaijta-tomo\tya,say-IPFV\tQUOT\tlike\tmouse-PL\tERG,...said the mice.,,Missing translation,CtoRat
 ctorat-27,yab, irëjpë pïrarë ti warë irëjpë warë,irëjpë\tpïrarë\tti\twarë\tirëjpë\twarë,then\tnothing\tQUOT\tthus\tthen\tthus,Then there was nothing.,,,CtoRat
 ctorat-28,yab, irëjpë tawejka yawë,irëjpë\ttawejka-∅\tyawë,then\tto.daylight-NMLZ\tLOC,"Then, in the morning...",,,CtoRat
 ctorat-29,yab, waijtatomojpë ijtëse ti,waijta-tomo-jpë\tij-të-se\tti,mouse-PL-PST\t3-go-PST\tQUOT,the mice went away.,,,CtoRat
 ctorat-30,yab, tipasekontomo warë irëjpë pïrarë,tipa-se-kontomo\twarë\tirëjpë\tpïrarë,go.group-PST-PL\tthus\tthen\tnothing,They left and were gone.,,,CtoRat
 ctorat-31,yab, ëjwenakajpë tainpëtiri waraijtokomo tëwï,ëj-wenaka-jpë\tta-in-pëti-ri\twaraijtokomo\ttëwï,DETRZ-vomit-PST.ACNMLZ\t3P-see-PLUR-IPFV\tman\t3SG,The man saw their vomit.,,Actually *t-ëj-wenaka-jpë*? Also: [kontu] for komo tëwï.,CtoRat
 ctorat-32,yab, waraijtokomo ya inpëti ti,waraijtokomo\tya\tin-pëti-∅\tti,man\tOBL\tsee-PLUR-IPFV\tQUOT,He saw it.,,,CtoRat
-ctorat-33,yab, irëjpë ti wenakajpë mare pïrarë ti,irëjpë\tti\twenaka-jpë\tmare\tpïrarë\tti,then\tQUOT\tvomit-PST.ACNMLZ\tREL.INAN\tnothing\tQUOT,Then there was nothing of their vomit.,,,CtoRat
+ctorat-33,yab, irëjpë ti wenakajpë mare pïrarë ti,irëjpë\tti\twenaka-jpë\tmare\tpïrarë\tti,then\tQUOT\tvomit-PST.ACNMLZ\tkeeps.going\tnothing\tQUOT,Then there was nothing of their vomit.,,,CtoRat
 ctorat-34,yab, ëkëtë mërë ëkï,ëkëtë\tmërë\tëkï,where\t3IN:MD\tmanioc.beer,Where is the chicha?,,*okï*,CtoRat
 ctorat-35,yab, ëkï ta rë pïrarë wenarujpë ta rë pïrarë,ëkï\tta\trë\tpïrarë\twena-ru-jpë\tta\trë\tpïrarë,manioc.beer\tlike\tEMP\tnothing\tvomit-PERT-PST\tlike\tEMP\tnothing,The chicha was gone and so was the vomit.,,,CtoRat
 ctorat-36,yab, ta ti wejsaj ti tëwï,ta-∅\tti\twej-saj\tti\ttëwï,say-IPFV\tQUOT\tCOP-PFV\tQUOT\t3SG,...he said.,,,CtoRat
@@ -269,7 +269,7 @@ desccasmaj-115,yab, ejnë yemekunu tatune,ejnë\ty-emekunu\ttatune,1+2\tLK-hand\
 desccasmaj-116,yab," eni morone, sukase, senijne",eni\tmorone\tsukase\tsenijne,3IN:PX\tpainful\tall\t***,"esto duele, todo, estos",,nan,DescCasMAJ
 desccasmaj-117,yab," tatune, sere chipëkë",tatune\t?\tchi=pëkë,***\t?\tCOP=on.surface,porque el casabe es caliente,,nan,DescCasMAJ
 desccasmaj-118,yab," inkë, wïrë yemekunu wïrë wïrë parankanari warë",in-kë\twïrë\ty-emekunu\twïrë\twïrë\tparankana-ri\t?,see-IMP\t1SG\tLK-hand\t1SG\t1SG\tcontainer-PERT\t?,"mira, mis manos, mi olla es así",,nan,DescCasMAJ
-desccasmaj-119,yab,"¡ taj%¡ wïrë naijtopo morone, sënkase poijpë, mjm",?\twïrë\tnaij-topo\tmorone\ts-ënka-se\tpoijpë\tmjm,?\t1SG\tmake-CIRC.NMLZ\tpainful\t?\tnail\t***,"taj! cuando yo hago duele, se acabaron mis uñas, aja",,nan,DescCasMAJ
+desccasmaj-119,yab,"¡ taj%¡ wïrë naijtopo morone, sënkase poijpë, mjm",taj\twïrë\tnaij-topo\tmorone\ts-ënka-se\tpoijpë\tmjm,taj\t1SG\tdo-CIRC.NMLZ\tpainful\tDETRZ-finish-PST\tnail\t***,"taj! cuando yo hago duele, se acabaron mis uñas, aja",,nan,DescCasMAJ
 desccasmaj-120,yab, toto###,toto,non.indian,los criollos ###,,nan,DescCasMAJ
 desccasmaj-121,yab, ejnë yajka yawë rë,ejnë\tyajka-∅\tyawë\trë,1+2\t?\tLOC\tEMP,cuando limpiamos,,nan,DescCasMAJ
 desccasmaj-122,yab, ejnë yemekun poijpë përëtëri sukase rë,ejnë\ty-emekun\tpoijpë\tpërëtë-ri\tsukase\trë,1+2\tLK-hand\tnail\t?\tall\tEMP,por eso nuestras uñas de las manos se quiebran todo,,nan,DescCasMAJ

@@ -28,11 +28,11 @@ a3708ba1-94ef-4011-8c06-fcbe4e45b2e52-pijkedim,yab,wurijyam-pïjkë,w u r i h j 
 93b0a595-e7b7-413e-a88b-9ca8d868dddd0-ri-zero,yab,kantajnë-∅,k a n t a h n ə,,,sing-ipfv
 3b92fde8-f646-47dd-b190-18c1ca2d60791,yab,tawara,t a w a r a,,,too
 587b3015-391a-4db2-b4b9-0e92563a53320,yab,tëwï,t ə w ɨ,,,3sg
-nai-naij-make-0-ri-zero-kontonpl,yab,nai-∅-konton,n a i k o n t o n,,,make-ipfv-pl
+nai-naij-do-0-ri-zero-kontonpl,yab,nai-∅-konton,n a i k o n t o n,,,do-ipfv-pl
 931a59a4-84a2-46ed-b87c-f741d91d38650,yab,okï,o k ɨ,,,yarake
 yeni-drink-0-ri-zero,yab,yëni-∅,j ə n i,,,drink-ipfv
 b88eb9d8-3039-47c5-b822-a13e422aeb480,yab,soj,s o h,,,id-dabble
-nai-naij-make-1-plur1-ri,yab,naij-pëti-ri,n a i h p ə t i r i,,,make-plur-ipfv
+nai-naij-do-1-plur1-ri,yab,naij-pëti-ri,n a i h p ə t i r i,,,do-plur-ipfv
 82b6a876-e630-48bc-943e-382481300ba94,yab,warë,w a r ə,,,thus
 661dfe17-72bb-4a4f-aac2-e6d211c3b46b0-tomopl,yab,waijta-tomo,w a i h t a t o m o,,,mouse-pl
 nwajtedance-0-ri,yab,nwajtë-ri,n w a h t ə r i,,,dance-ipfv
@@ -59,13 +59,12 @@ ta3-db2ee1eb-62e7-439d-bad9-bd65ee3a230b2-plur1-ri,yab,ta-in-pëti-ri,t a i n p 
 yaobl-0,yab,ya,j a,,,obl
 db2ee1eb-62e7-439d-bad9-bd65ee3a230b2-plur1-ri-zero,yab,in-pëti-∅,i n p ə t i,,,see-plur-ipfv
 wenaka0-pstjpe1,yab,wenaka-jpë,w e n a k a h p ə,,,vomit-pst-acnmlz
-mare-rel-inan-0,yab,mare,m a r e,,,rel-inan
+05f86c62-a7e7-4293-9e49-0f2acad45e6a1,yab,mare,m a r e,,,keeps-going
 07bd51f6-fb85-483e-b0cf-b27e244f61b40,yab,ëkëtë,ə k ə t ə,,,where
 77c34bc8-9e7f-446c-8495-82a2837ee83d0,yab,mërë,m ə r ə,,,3in-md
 58bf6d86-1230-4458-997c-15f94ad6fbd60,yab,ëkï,ə k ɨ,,,manioc-beer
 79766ee2-3962-4bcd-ae1b-bcc332d75e880-rupert-pstjpe1,yab,wena-ru-jpë,w e n a r u h p ə,,,vomit-pert-pst
 ccb970b7-980c-4dc2-84fc-f291fd9a6bab0-sajpfv,yab,wej-saj,w e h s a h,,,cop-pfv
-05f86c62-a7e7-4293-9e49-0f2acad45e6a1,yab,mare,m a r e,,,keeps-going
 0156f6d1-6947-43e9-b897-14e2ceb1313d0,yab,ëjtë,ə h t ə,,,house
 02c99f34-5b27-4ff8-819a-dc4a34dca14e0,yab,kërëjpë,k ə r ə h p ə,,,old
 nwajtedance-0-ri-zero-kontonpl,yab,nwajtë-∅-konton,n w a h t ə k o n t o n,,,dance-ipfv-pl
@@ -131,6 +130,7 @@ chi-ch-chij-cop-1,yab,ch,t͡ʃ,,,cop
 yaweloc-1,yab,awë,a w ə,,,loc
 984c0006-d17d-4c00-bf9d-c9d619efc53d0-tomopl,yab,muku-tomo,m u k u t o m o,,,child-pl
 asamo-0-ri-zero,yab,asamo-∅,a s a m o,,,cry-nmlz
+mare-rel-inan-0,yab,mare,m a r e,,,rel-inan
 d46043e6-2d2c-46d8-bc77-f9b50b8b7c370,yab,tapëkë,t a p ə k ə,,,that-s-why
 23a588f1-4d83-4973-a6db-2a25f9f017e90,yab,weroro,w e r o r o,,,dog
 e000169a-4f21-43c5-83ba-a855450cb5a20-ri-zero,yab,yarë-∅,j a r ə,,,carry-ipfv
@@ -299,7 +299,9 @@ t3-ba4e062c-47d3-40c5-b184-a9f7511dc2952,yab,t-emekun,t e m e k u n,,,3-hand
 ylk-ba4e062c-47d3-40c5-b184-a9f7511dc2950,yab,y-emekunu,j e m e k u n u,,,lk-hand
 f3d65599-8188-4f15-b65e-c5844f4b58790,yab,eni,e n i,,,3in-px
 201ea58b-0ea4-44af-8d30-cb391b164c0e0-ripert,yab,parankana-ri,p a r a n k a n a r i,,,container-pert
-nai-naij-make-1-toponmlz,yab,naij-topo,n a i h t o p o,,,make-circ-nmlz
+3fe489a3-a437-4fb9-a418-9ecf007420b50,yab,taj,t a h,,,taj
+nai-naij-do-1-toponmlz,yab,naij-topo,n a i h t o p o,,,do-circ-nmlz
+dt2-enkafinish-1-septcp,yab,s-ënka-se,s ə n k a s e,,,detrz-finish-pst
 9b08ef13-a56a-4e19-acf8-5783e1ce46d30,yab,poijpë,p o i h p ə,,,nail
 ylk-ba4e062c-47d3-40c5-b184-a9f7511dc2952,yab,y-emekun,j e m e k u n,,,lk-hand
 9b1b7ee2-19d3-4a1d-b21f-bc50e66c21150,yab,achikïpe,a t͡ʃ i k ɨ p e,,,dirty
