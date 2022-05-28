@@ -31,6 +31,8 @@ ylk,yab,y-,,,ylk,lk
 a2,yab,a-,,,a2,2
 neinf,yab,-në,,,neinf,inf
 jnarineg,yab,-jnari,,,jnarineg,neg
+tenpert,yab,-të,,,tenpert,npert
+tipert,yab,-ti,,,tipert,pert
 dt2,yab,s-,,,dt2,detrz
 tavbz,yab,-ta,,,tavbz,vbz
 dt1,yab,ëj-,,,dt1,detrz
@@ -138,6 +140,7 @@ ajpachi-undergrowth-0,yab,ajpachi,,,ajpachi-undergrowth,undergrowth
 akajra-bow-0,yab,akajra,,,akajra-bow,bow
 eni-drink-0,yab,ëni,,,eni-drink,drink
 eni-drink-1,yab,ën,,,eni-drink,drink
+ese-name-0,yab,ese,,,ese-name,name
 moronkepi0,yab,moronkepï,,,moronkepi,stop-pain
 moronkepi1,yab,moronkej,,,moronkepi,stop-pain
 0064f13a-d694-4f4c-834b-307545c2d25e0,yab,marë,,,0064f13a-d694-4f4c-834b-307545c2d25e,like
