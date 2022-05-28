@@ -235,7 +235,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ParameterTable",
-            "dc:extent": 1067,
+            "dc:extent": 1068,
             "tableSchema": {
                 "columns": [
                     {
@@ -575,7 +575,7 @@
             "url": "ExampleSlices"
         },
         {
-            "dc:extent": 1341,
+            "dc:extent": 1342,
             "tableSchema": {
                 "columns": [
                     {
@@ -672,7 +672,7 @@
             "url": "MorphTable"
         },
         {
-            "dc:extent": 1030,
+            "dc:extent": 1031,
             "tableSchema": {
                 "columns": [
                     {
