@@ -82,7 +82,7 @@ marestr-0,yab,ma,m a,,,restr
 62e12d1c-dd51-4a74-af84-2c7b0b87d0c12-septcp,yab,ta-se,t a s e,,,say-pst; say-sup
 waraijtokon-man-0,yab,waraijtokon,w a r a i h t o k o n,,,man
 maniki-0,yab,maniki,m a n i k i,,,slug-1
-t3-fb472c41-d260-4cb8-9bcd-064cc1ca14b61,yab,t-ïwïj,t ɨ w ɨ h,,,3-house
+it3-fb472c41-d260-4cb8-9bcd-064cc1ca14b61,yab,t-ïwïj,t ɨ w ɨ h,,,3-house
 maniki-0-pstjpe1,yab,maniki-jpë,m a n i k i h p ə,,,pst
 4a9eb16a-798f-4d8f-b712-20d70bc69fb21,yab,entë,e n t ə,,,here
 9af2823b-63a9-4aa0-affc-07d31dde4aaa0,yab,ana,a n a,,,1-3
@@ -163,7 +163,7 @@ keyama-create-0-septcp,yab,këyama-se,k ə j a m a s e,,,create-pst
 nope2-anonmlz,yab,nop-ano,n o p a n o,,,good-nmlz
 62dbbf94-0f12-4d10-a827-3b11b386b9740-ri-zero-janeg,yab,tapa-∅-ja,t a p a h a,,,hit-ipfv-neg
 nope0,yab,nope,n o p e,,,good
-t3-1e660160-fcfa-4356-963c-7ce339c95c530,yab,t-akërë,t a k ə r ə,,,3-com
+it3-1e660160-fcfa-4356-963c-7ce339c95c530,yab,t-akërë,t a k ə r ə,,,3-com
 imparejra-long-time-0,yab,ïmparëjra,ɨ m p a r ə h r a,,,long-time
 f33cf869-aff6-4e7e-ba36-73d2edee46270,yab,tajtojpe,t a h t o h p e,,,hesit
 eae27c23-976a-46c4-be11-4495531d3da10,yab,tëijpë,t ə i h p ə,,,far
@@ -282,8 +282,9 @@ ylk-7a2a1999-afd0-4447-a72f-d8361923e38e0,yab,y-eretapi,j e r e t a p i,,,lk-cro
 a2dc27e5-7407-4c77-915e-2f6eac7c17961,yab,tawarai,t a w a r a i,,,thus-n
 55db3ac7-4711-4980-845e-4b966dff41bc0-ri-zero-janeg,yab,wepï-∅-ja,w e p ɨ h a,,,come-ipfv-neg
 dt2-erepiscare-2-ri-jraneg,yab,s-ere-ri-jra,s e r e r i h r a,,,detrz-scare-ipfv-neg
+7cc6bc32-d27f-4900-a476-8233b39f126e0,yab,pana,p a n a,,,ear
 587df19c-4c17-4861-8fca-fcabc24673051,yab,yapijtom,j a p i h t o m,,,old
-t3-23268750-7625-4627-9e7f-19bd706bbb2d1,yab,t-erepun,t e r e p u n,,,3-sick
+it3-23268750-7625-4627-9e7f-19bd706bbb2d1,yab,t-erepun,t e r e p u n,,,3-sick
 55db3ac7-4711-4980-845e-4b966dff41bc0-ri-ri,yab,wepï-rï,w e p ɨ r ɨ,,,come-ipfv
 fe742a95-c553-4212-a181-fc826f5432ae1-tanecns,yab,mëj-tane,m ə h t a n e,,,wait-cncs
 2c96339f-4a65-4af5-8751-9313e50594670,yab,kwatojpe,k w a t o h p e,,,what-for
@@ -291,13 +292,15 @@ fe742a95-c553-4212-a181-fc826f5432ae1-tanecns,yab,mëj-tane,m ə h t a n e,,,wai
 52a43911-b956-43e5-a771-9cb4612a6e4b1,yab,intompijkë,i n t o m p i h k ə,,,small
 82005b02-7f1b-4ccc-a302-16259548c8180,yab,najmo,n a h m o,,,grand-mother
 ff32aa22-53ea-484c-b1ce-64e2aca269800,yab,tejwetune,t e h w e t u n e,,,sick
-t3-23268750-7625-4627-9e7f-19bd706bbb2d0,yab,t-erepunu,t e r e p u n u,,,3-sick
+it3-23268750-7625-4627-9e7f-19bd706bbb2d0,yab,t-erepunu,t e r e p u n u,,,3-sick
+b3d58a48-11f2-42ee-b520-1258225ec0cb0,yab,maniki,m a n i k i,,,an-rel
 7716b314-dd7c-424e-b49b-41a39089a7b20-ri-jraneg,yab,yawaka-ri-jra,j a w a k a r i h r a,,,sow-ipfv-neg
 49550103-678d-4250-89f2-17cab19db59d0,yab,ëmo,ə m o,,,2-father-pos
 u1-ylk-dcf760be-fd50-4f3c-8e1f-4b98d836e5a40,yab,u-y-ënkano,u j ə n k a n o,,,1-lk-thought
 1b2f09ba-909f-45b3-92da-bda975ebc94d0,yab,arepa,a r e p a,,,arepa
 10c9a4a5-17d1-4474-b399-bf7d2c418a950,yab,waraij,w a r a i h,,,like
-t3-ba4e062c-47d3-40c5-b184-a9f7511dc2952,yab,t-emekun,t e m e k u n,,,3-hand
+b1df8e7d-c7bc-4333-a260-1591c907a1880-ri-zero,yab,yamanë-∅,j a m a n ə,,,make-ipfv
+it3-ba4e062c-47d3-40c5-b184-a9f7511dc2952,yab,t-emekun,t e m e k u n,,,3-hand
 ylk-ba4e062c-47d3-40c5-b184-a9f7511dc2950,yab,y-emekunu,j e m e k u n u,,,lk-hand
 f3d65599-8188-4f15-b65e-c5844f4b58790,yab,eni,e n i,,,3in-px
 201ea58b-0ea4-44af-8d30-cb391b164c0e0-ripert,yab,parankana-ri,p a r a n k a n a r i,,,container-pert

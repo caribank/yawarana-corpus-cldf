@@ -191,7 +191,7 @@ ctorat-44-6,waraijtokon-man-0,ctorat-44,6,man
 ctorat-44-7,maniki-0,ctorat-44,7,slug-1
 ctorat-45-0,2d4fe89b-c49d-4d19-86ae-209f48c5b2250,ctorat-45,0,then
 ctorat-45-1,i32-a5589c54-8bcd-40e2-9d28-b29f1592ccd30-septcp,ctorat-45,1,3-go-pst
-ctorat-46-0,t3-fb472c41-d260-4cb8-9bcd-064cc1ca14b61,ctorat-46,0,3-house
+ctorat-46-0,it3-fb472c41-d260-4cb8-9bcd-064cc1ca14b61,ctorat-46,0,3-house
 ctorat-46-1,yakaall-0,ctorat-46,1,all
 ctorat-46-2,8f10c5a4-e0c7-475b-9f83-ee4dbbde9bb40,ctorat-46,2,man
 ctorat-46-3,maniki-0-pstjpe1,ctorat-46,3,pst
@@ -446,7 +446,7 @@ anfoperso-47-3,9af2823b-63a9-4aa0-affc-07d31dde4aaa0,anfoperso-47,3,1-3
 anfoperso-47-4,keyama-create-0-septcp,anfoperso-47,4,create-pst
 anfoperso-47-5,ta-like-0,anfoperso-47,5,like
 anfoperso-47-6,ccb970b7-980c-4dc2-84fc-f291fd9a6bab0-sapepfv,anfoperso-47,6,cop-pfv
-anfoperso-48-0,t3-1e660160-fcfa-4356-963c-7ce339c95c530,anfoperso-48,0,3-com
+anfoperso-48-0,it3-1e660160-fcfa-4356-963c-7ce339c95c530,anfoperso-48,0,3-com
 anfoperso-48-1,9af2823b-63a9-4aa0-affc-07d31dde4aaa0,anfoperso-48,1,1-3
 anfoperso-48-2,ccb970b7-980c-4dc2-84fc-f291fd9a6bab0-sapepfv,anfoperso-48,2,cop-pfv
 anfoperso-48-3,imparejra-long-time-0,anfoperso-48,3,long-time
@@ -921,9 +921,12 @@ desccasmaj-083-5,ccb970b7-980c-4dc2-84fc-f291fd9a6bab0-sapepfv,desccasmaj-083,5,
 desccasmaj-084-0,2b5fa12b-1e2c-4dcb-92bd-48dfa2a328420,desccasmaj-084,0,1sg
 desccasmaj-084-2,2b5fa12b-1e2c-4dcb-92bd-48dfa2a328420,desccasmaj-084,2,1sg
 desccasmaj-084-3,dt2-erepiscare-2-ri-jraneg,desccasmaj-084,3,detrz-scare-ipfv-neg
+desccasmaj-085-0,970de200-9d4a-4b20-8fe0-cf7db81112520,desccasmaj-085,0,tmp-dem
+desccasmaj-085-1,7cc6bc32-d27f-4900-a476-8233b39f126e0,desccasmaj-085,1,ear
 desccasmaj-085-2,reemp-0,desccasmaj-085,2,emp
+desccasmaj-085-3,82b6a876-e630-48bc-943e-382481300ba94,desccasmaj-085,3,thus
 desccasmaj-085-4,587df19c-4c17-4861-8fca-fcabc24673051,desccasmaj-085,4,old
-desccasmaj-085-5,t3-23268750-7625-4627-9e7f-19bd706bbb2d1,desccasmaj-085,5,3-sick
+desccasmaj-085-5,it3-23268750-7625-4627-9e7f-19bd706bbb2d1,desccasmaj-085,5,3-sick
 desccasmaj-085-6,reemp-0,desccasmaj-085,6,emp
 desccasmaj-085-7,reemp-0,desccasmaj-085,7,emp
 desccasmaj-086-1,e5878716-bc48-4e01-b82d-d9c6e602e5901,desccasmaj-086,1,thus
@@ -980,7 +983,11 @@ desccasmaj-104-3,587df19c-4c17-4861-8fca-fcabc24673051-peess,desccasmaj-104,3,ol
 desccasmaj-104-4,2b5fa12b-1e2c-4dcb-92bd-48dfa2a328420,desccasmaj-104,4,1sg
 desccasmaj-104-5,ff32aa22-53ea-484c-b1ce-64e2aca269800,desccasmaj-104,5,sick
 desccasmaj-104-6,2b5fa12b-1e2c-4dcb-92bd-48dfa2a328420,desccasmaj-104,6,1sg
-desccasmaj-105-4,t3-23268750-7625-4627-9e7f-19bd706bbb2d0,desccasmaj-105,4,3-sick
+desccasmaj-105-1,25af4d03-e9ab-4253-a134-df1ec0e477a10,desccasmaj-105,1,2sg
+desccasmaj-105-2,db2ee1eb-62e7-439d-bad9-bd65ee3a230b0-ri-zero-janeg,desccasmaj-105,2,see-ipfv-neg
+desccasmaj-105-3,99c23c0e-7736-44ed-ac43-7d6e900677c20,desccasmaj-105,3,qp
+desccasmaj-105-4,it3-23268750-7625-4627-9e7f-19bd706bbb2d0,desccasmaj-105,4,3-sick
+desccasmaj-105-5,b3d58a48-11f2-42ee-b520-1258225ec0cb0,desccasmaj-105,5,an-rel
 desccasmaj-106-0,5e07b708-79a9-4b84-8bb2-8d90daf937b31,desccasmaj-106,0,how
 desccasmaj-106-1,2b5fa12b-1e2c-4dcb-92bd-48dfa2a328420,desccasmaj-106,1,1sg
 desccasmaj-107-1,2b5fa12b-1e2c-4dcb-92bd-48dfa2a328420,desccasmaj-107,1,1sg
@@ -997,7 +1004,9 @@ desccasmaj-110-1,3b92fde8-f646-47dd-b190-18c1ca2d60791-jraneg,desccasmaj-110,1,t
 desccasmaj-110-3,e4e9ed1e-f5ad-485b-a3ab-08c1ee75d3150,desccasmaj-110,3,non-indian
 desccasmaj-111-0,1b2f09ba-909f-45b3-92da-bda975ebc94d0,desccasmaj-111,0,arepa
 desccasmaj-111-1,10c9a4a5-17d1-4474-b399-bf7d2c418a950,desccasmaj-111,1,like
-desccasmaj-111-4,t3-ba4e062c-47d3-40c5-b184-a9f7511dc2952,desccasmaj-111,4,3-hand
+desccasmaj-111-2,b1df8e7d-c7bc-4333-a260-1591c907a1880-ri-zero,desccasmaj-111,2,make-ipfv
+desccasmaj-111-3,ta-like-0,desccasmaj-111,3,like
+desccasmaj-111-4,it3-ba4e062c-47d3-40c5-b184-a9f7511dc2952,desccasmaj-111,4,3-hand
 desccasmaj-111-5,pekeon-0,desccasmaj-111,5,on-surface
 desccasmaj-112-1,nope0,desccasmaj-112,1,good
 desccasmaj-113-1,01feb68b-3266-4cd2-88a7-6234865d1cbf0,desccasmaj-113,1,however
@@ -1115,9 +1124,10 @@ desccasmaj-152-0,nope0,desccasmaj-152,0,good
 desccasmaj-152-1,intsne-0,desccasmaj-152,1,ints
 desccasmaj-152-2,2b5fa12b-1e2c-4dcb-92bd-48dfa2a328420,desccasmaj-152,2,1sg
 desccasmaj-152-3,f90c63ed-bd4c-43b7-b9f9-2709d3ff0ddd0-ri-zero-janeg,desccasmaj-152,3,sleep-ipfv-neg
+desccasmaj-153-0,82b6a876-e630-48bc-943e-382481300ba94,desccasmaj-153,0,thus
 desccasmaj-153-1,2b5fa12b-1e2c-4dcb-92bd-48dfa2a328420,desccasmaj-153,1,1sg
 desccasmaj-153-2,ef5c051f-d59f-483c-b927-8d95082f19bf1-ripert,desccasmaj-153,2,husband-pert
-desccasmaj-153-3,t3-23268750-7625-4627-9e7f-19bd706bbb2d0,desccasmaj-153,3,3-sick
+desccasmaj-153-3,it3-23268750-7625-4627-9e7f-19bd706bbb2d0,desccasmaj-153,3,3-sick
 desccasmaj-153-4,reemp-0,desccasmaj-153,4,emp
 desccasmaj-153-5,reemp-0,desccasmaj-153,5,emp
 desccasmaj-154-0,587b3015-391a-4db2-b4b9-0e92563a53320,desccasmaj-154,0,3sg
