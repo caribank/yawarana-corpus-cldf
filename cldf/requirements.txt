@@ -5,7 +5,7 @@ chardet==4.0.0
 cldfbench==1.10.0
 cldfcatalog==1.4.0
 clld==9.0.2
--e git+ssh://git@github.com/fmatter/clld-morphology-plugin.git@3c132099df1b83496ddac2f3f4300cd645861fe0#egg=clld_morphology_plugin
+-e git+ssh://git@github.com/fmatter/clld-morphology-plugin.git@3d577fc3bba1f91813e5ecb2219fab2e05c28dd1#egg=clld_morphology_plugin
 clldutils==3.11.1
 colorlog==6.6.0
 csvw==2.0.0
