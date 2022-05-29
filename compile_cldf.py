@@ -11,6 +11,8 @@ from pycldf.sources import Source
 from pylingdocs.models import Morpheme, Morph, Text
 from pylingdocs.cldf import metadata as cldf_md
 from clld_morphology_plugin.cldf import MorphTable, MorphsetTable, FormSlices
+from pylacoan.helpers import ortho_strip
+
 
 from slugify import slugify as sslug
 import pyigt
@@ -144,11 +146,24 @@ with CLDFWriter(spec) as writer:
         axis=1,
     )
 
+
+
     texts = {}
     for f in Path("../yawarana_corpus/text_notes/").glob("*.yaml"):
         with open(f) as file:
             text_data = yaml.load(file, Loader=yaml.SafeLoader)
             texts[text_data.pop("id")] = text_data
+
+
+    bare_examples = cread("../yawarana_corpus/flexports/yab_texts.csv")
+    bare_examples["ID"] = bare_examples["ID"].apply(lambda x: x.replace(".", "-").lower())
+    bare_examples = bare_examples[~(bare_examples["ID"].isin(examples["ID"]))]
+    bare_examples["Primary_Text"] = bare_examples["Sentence"].apply(lambda x: ortho_strip(x, additions=["%", "¿", "###", "#"]))
+    print(bare_examples.columns)
+    bare_examples.drop(columns=["Segmentation", "Gloss"], inplace=True)
+    print(bare_examples["Text_ID"])
+    bare_examples = bare_examples[(bare_examples["Text_ID"]).isin(texts.keys())]
+    print(bare_examples)
 
     # keys: morpheme IDs
     # values: different (allo)morph forms and associated morph IDs
@@ -434,6 +449,12 @@ with CLDFWriter(spec) as writer:
                     "Parameter_ID": meaning_slug,
                 }
             )
+        writer.objects["ExampleTable"].append(ex)
+
+    for ex in bare_examples.to_dict("records"):
+        audio_path = example_audios / f'{ex["ID"]}.wav'
+        if audio_path.is_file():
+            writer.objects["MediaTable"].append({"ID": ex["ID"], "Media_Type": "wav"})
         writer.objects["ExampleTable"].append(ex)
 
     phonemes = cread("etc/phonemes.csv")
