@@ -28,7 +28,7 @@
     "tables": [
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ExampleTable",
-            "dc:extent": 598,
+            "dc:extent": 640,
             "tableSchema": {
                 "columns": [
                     {
@@ -782,7 +782,7 @@
             "url": "PhonemeTable"
         },
         {
-            "dc:extent": 5,
+            "dc:extent": 6,
             "tableSchema": {
                 "columns": [
                     {

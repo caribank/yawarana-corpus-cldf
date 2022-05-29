@@ -161,7 +161,6 @@ with CLDFWriter(spec) as writer:
     bare_examples["Primary_Text"] = bare_examples["Sentence"].apply(lambda x: ortho_strip(x, additions=["%", "¿", "###", "#"]))
     print(bare_examples.columns)
     bare_examples.drop(columns=["Segmentation", "Gloss"], inplace=True)
-    print(bare_examples["Text_ID"])
     bare_examples = bare_examples[(bare_examples["Text_ID"]).isin(texts.keys())]
     print(bare_examples)
 
