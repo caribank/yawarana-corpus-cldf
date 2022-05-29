@@ -33,6 +33,7 @@ neinf,yab,-në,,,neinf,inf
 jnarineg,yab,-jnari,,,jnarineg,neg
 tenpert,yab,-të,,,tenpert,npert
 tipert,yab,-ti,,,tipert,pert
+o2,yab,o-,,,a2,2
 dt2,yab,s-,,,dt2,detrz
 tavbz,yab,-ta,,,tavbz,vbz
 dt1,yab,ëj-,,,dt1,detrz
@@ -138,12 +139,12 @@ enkafinish-0,yab,yënka,,,enkafinish,finish
 enkafinish-1,yab,ënka,,,enkafinish,finish
 senejkastay-0,yab,senejka,,,senejkastay,remain
 nwajtedance-0,yab,nwajtë,,,nwajtedance,dance
-ajpachi-undergrowth-0,yab,ajpachi,,,ajpachi-undergrowth,undergrowth
-akajra-bow-0,yab,akajra,,,akajra-bow,bow
-yate-loc-0,yab,yatë,,,yate-loc,loc
-po-on-in-0,yab,po,,,po-on-in,on-in
-poye-above-0,yab,poye,,,poye-above,above
-yapo-neg-0,yab,yapo,,,yapo-neg,neg
+achi-wilderness-0,yab,achi,,,achi-wilderness,wilderness
+achi-wilderness-1,yab,asi,,,achi-wilderness,wilderness
+chika-bite-0,yab,chika,,,chika-bite,bite
+noti-potential-partner-0,yab,noti,,,noti-potential-partner,potential-partner
+tu-give-0,yab,tu,,,tu-give,give
+ye-tooth-0,yab,yë,,,ye-tooth,tooth
 eni-drink-0,yab,ëni,,,eni-drink,drink
 eni-drink-1,yab,ën,,,eni-drink,drink
 ese-name-0,yab,ese,,,ese-name,name

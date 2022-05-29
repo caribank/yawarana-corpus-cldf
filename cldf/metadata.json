@@ -28,7 +28,7 @@
     "tables": [
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ExampleTable",
-            "dc:extent": 640,
+            "dc:extent": 642,
             "tableSchema": {
                 "columns": [
                     {
@@ -100,6 +100,13 @@
                         "dc:extent": "singlevalued",
                         "datatype": "string",
                         "name": "Text_ID"
+                    },
+                    {
+                        "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#source",
+                        "required": false,
+                        "separator": ";",
+                        "name": "Source"
                     }
                 ],
                 "foreignKeys": [
@@ -235,7 +242,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ParameterTable",
-            "dc:extent": 1071,
+            "dc:extent": 1068,
             "tableSchema": {
                 "columns": [
                     {
@@ -384,7 +391,7 @@
             "url": "languages.csv"
         },
         {
-            "dc:extent": 561,
+            "dc:extent": 558,
             "tableSchema": {
                 "columns": [
                     {
@@ -481,7 +488,7 @@
             "url": "FormSlices"
         },
         {
-            "dc:extent": 1144,
+            "dc:extent": 1140,
             "tableSchema": {
                 "columns": [
                     {
@@ -575,7 +582,7 @@
             "url": "ExampleSlices"
         },
         {
-            "dc:extent": 1347,
+            "dc:extent": 1348,
             "tableSchema": {
                 "columns": [
                     {
@@ -672,7 +679,7 @@
             "url": "MorphTable"
         },
         {
-            "dc:extent": 1036,
+            "dc:extent": 1035,
             "tableSchema": {
                 "columns": [
                     {

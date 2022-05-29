@@ -22,6 +22,7 @@ ctorat-05-4,ta-like-0,ctorat-05,4,like
 ctorat-06-0,f90c63ed-bd4c-43b7-b9f9-2709d3ff0ddd1-septcp,ctorat-06,0,sleep-pst
 ctorat-07-0,041cd4a0-4dca-4c25-8f2f-ebceb26331430,ctorat-07,0,darkness
 ctorat-07-1,yaweloc-0,ctorat-07,1,loc
+ctorat-07-3,ccb970b7-980c-4dc2-84fc-f291fd9a6bab0-sapepfv,ctorat-07,3,cop-pfv
 ctorat-07-6,e3b3482c-4e80-4935-9308-c271dff140970,ctorat-07,6,high
 ctorat-08-0,e3b3482c-4e80-4935-9308-c271dff140970,ctorat-08,0,high
 ctorat-08-1,dc33b380-8376-4775-83e2-46bcef4011991-septcp,ctorat-08,1,go-up-pst
@@ -69,12 +70,10 @@ ctorat-19-2,i31-79766ee2-3962-4bcd-ae1b-bcc332d75e880-rupert,ctorat-19,2,3-vomit
 ctorat-19-3,ccb970b7-980c-4dc2-84fc-f291fd9a6bab0-sapepfv,ctorat-19,3,cop-pfv
 ctorat-20-0,79766ee2-3962-4bcd-ae1b-bcc332d75e880-rupert,ctorat-20,0,vomit-pert
 ctorat-20-1,b97a0ed7-7ceb-4cab-83d8-5b30b45d9a590,ctorat-20,1,nothing
-ctorat-21-0,62e12d1c-dd51-4a74-af84-2c7b0b87d0c12-ri-zero,ctorat-21,0,say-ipfv
+ctorat-21-0,ta-like-0,ctorat-21,0,like
 ctorat-21-1,8d454d1d-1899-40cb-91a2-e5a9a79298f90,ctorat-21,1,quot
-ctorat-21-2,ta-like-0,ctorat-21,2,like
 ctorat-21-3,587b3015-391a-4db2-b4b9-0e92563a53320,ctorat-21,3,3sg
 ctorat-21-4,8f10c5a4-e0c7-475b-9f83-ee4dbbde9bb40,ctorat-21,4,man
-ctorat-21-5,yaerg-0,ctorat-21,5,erg
 ctorat-22-0,suku-1-tavbz-septcp,ctorat-22,0,urine-vbz-pst
 ctorat-22-1,8d454d1d-1899-40cb-91a2-e5a9a79298f90,ctorat-22,1,quot
 ctorat-22-2,ccb970b7-980c-4dc2-84fc-f291fd9a6bab0-sapepfv,ctorat-22,2,cop-pfv
@@ -96,11 +95,9 @@ ctorat-25-4,1f36b437-2c36-4e00-9e6c-7416f5bebee30,ctorat-25,4,rain
 ctorat-25-5,55db3ac7-4711-4980-845e-4b966dff41bc1-sareinm,ctorat-25,5,come-inm
 ctorat-25-6,1f36b437-2c36-4e00-9e6c-7416f5bebee30,ctorat-25,6,rain
 ctorat-25-7,55db3ac7-4711-4980-845e-4b966dff41bc1-sareinm,ctorat-25,7,come-inm
-ctorat-26-0,62e12d1c-dd51-4a74-af84-2c7b0b87d0c12-ri-zero,ctorat-26,0,say-ipfv
+ctorat-26-0,ta-like-0,ctorat-26,0,like
 ctorat-26-1,8d454d1d-1899-40cb-91a2-e5a9a79298f90,ctorat-26,1,quot
-ctorat-26-2,ta-like-0,ctorat-26,2,like
 ctorat-26-3,661dfe17-72bb-4a4f-aac2-e6d211c3b46b0-tomopl,ctorat-26,3,mouse-pl
-ctorat-26-4,yaerg-0,ctorat-26,4,erg
 ctorat-27-0,2d4fe89b-c49d-4d19-86ae-209f48c5b2250,ctorat-27,0,then
 ctorat-27-1,b97a0ed7-7ceb-4cab-83d8-5b30b45d9a590,ctorat-27,1,nothing
 ctorat-27-2,8d454d1d-1899-40cb-91a2-e5a9a79298f90,ctorat-27,2,quot
@@ -117,8 +114,7 @@ ctorat-30-0,c658eb03-b8e5-4e3e-a5ba-21c1d8ce3eee1-septcp-kontomopl,ctorat-30,0,g
 ctorat-30-1,82b6a876-e630-48bc-943e-382481300ba94,ctorat-30,1,thus
 ctorat-30-2,2d4fe89b-c49d-4d19-86ae-209f48c5b2250,ctorat-30,2,then
 ctorat-30-3,b97a0ed7-7ceb-4cab-83d8-5b30b45d9a590,ctorat-30,3,nothing
-ctorat-31-0,dt1-wenaka0-pstjpe1,ctorat-31,0,detrz-vomit-pst-acnmlz
-ctorat-31-1,ta3-db2ee1eb-62e7-439d-bad9-bd65ee3a230b2-plur1-ri,ctorat-31,1,3p-see-plur-ipfv
+ctorat-31-0,dt1-wenaka0-pstjpe1,ctorat-31,0,detrz-vomit-pst
 ctorat-31-2,8f10c5a4-e0c7-475b-9f83-ee4dbbde9bb40,ctorat-31,2,man
 ctorat-31-3,587b3015-391a-4db2-b4b9-0e92563a53320,ctorat-31,3,3sg
 ctorat-32-0,8f10c5a4-e0c7-475b-9f83-ee4dbbde9bb40,ctorat-32,0,man
@@ -207,7 +203,7 @@ anfoperso-02-4,chi-ch-chij-cop-0-ri-zero,anfoperso-02,4,cop-nmlz
 anfoperso-02-5,yaweloc-0,anfoperso-02,5,loc
 anfoperso-03-0,9af2823b-63a9-4aa0-affc-07d31dde4aaa0,anfoperso-03,0,1-3
 anfoperso-03-1,91df2c92-c11c-4e9c-be27-649c3b66a9921,anfoperso-03,1,father
-anfoperso-03-2,6224407d-8682-4a57-b404-4510e4fe5e241-pstjpe1,anfoperso-03,2,die-pst
+anfoperso-03-2,6224407d-8682-4a57-b404-4510e4fe5e241-pstjpe1,anfoperso-03,2,die-pst-acnmlz
 anfoperso-03-3,esspe-0,anfoperso-03,3,ess
 anfoperso-04-0,9af2823b-63a9-4aa0-affc-07d31dde4aaa0,anfoperso-04,0,1-3
 anfoperso-04-1,keyata-keyeta-keyeta-grow-up-1-septcp,anfoperso-04,1,grow-up-pst
@@ -351,14 +347,11 @@ anfoperso-24-6,ta-like-0,anfoperso-24,6,like
 anfoperso-24-7,a7d763c0-f046-4cea-9d50-7f3e96125fa70,anfoperso-24,7,agouti
 anfoperso-24-8,607c409f-35a4-4003-928d-d2d9ccad5a820-tojpefut,anfoperso-24,8,bark-at-o-purp
 anfoperso-25-1,a7d763c0-f046-4cea-9d50-7f3e96125fa70,anfoperso-25,1,agouti
-anfoperso-26-0,ta3-6400160c-fbed-464d-b384-80ea2bb739750-ri-ru,anfoperso-26,0,3p-give-ipfv
 anfoperso-26-1,8d9d72eb-5abd-4532-a482-b8717e80f4fa0,anfoperso-26,1,maternal-aunt-voc
 anfoperso-26-3,9af2823b-63a9-4aa0-affc-07d31dde4aaa0,anfoperso-26,3,1-3
-anfoperso-26-4,ylk-oti-game-food-0,anfoperso-26,4,lk-game-food
 anfoperso-27-0,ijmoka-ijmojka-cook-0-tojpefut,anfoperso-27,0,cook-purp
 anfoperso-28-4,ccb970b7-980c-4dc2-84fc-f291fd9a6bab0-sapepfv,anfoperso-28,4,cop-pfv
 anfoperso-29-0,9af2823b-63a9-4aa0-affc-07d31dde4aaa0,anfoperso-29,0,1-3
-anfoperso-29-1,ylk-oti-game-food-0,anfoperso-29,1,lk-game-food
 anfoperso-29-2,a7d763c0-f046-4cea-9d50-7f3e96125fa70,anfoperso-29,2,agouti
 anfoperso-30-0,8d9d72eb-5abd-4532-a482-b8717e80f4fa0,anfoperso-30,0,maternal-aunt-voc
 anfoperso-31-0,abf45ba7-3cea-4ef9-8a78-6229ac7b2cc10,anfoperso-31,0,all
@@ -472,6 +465,7 @@ anfoperso-53-0,9af2823b-63a9-4aa0-affc-07d31dde4aaa0,anfoperso-53,0,1-3
 anfoperso-53-1,ylk-fb472c41-d260-4cb8-9bcd-064cc1ca14b61,anfoperso-53,1,lk-house
 anfoperso-53-2,yaweloc-0,anfoperso-53,2,loc
 anfoperso-53-3,9af2823b-63a9-4aa0-affc-07d31dde4aaa0,anfoperso-53,3,1-3
+anfoperso-53-5,ccb970b7-980c-4dc2-84fc-f291fd9a6bab0-sapepfv,anfoperso-53,5,cop-pfv
 anfoperso-53-6,3b92fde8-f646-47dd-b190-18c1ca2d60791,anfoperso-53,6,too
 anfoperso-53-7,marestr-0,anfoperso-53,7,restr
 anfoperso-53-8,9af2823b-63a9-4aa0-affc-07d31dde4aaa0,anfoperso-53,8,1-3
@@ -589,6 +583,7 @@ convrisamaj-20-1,2b5fa12b-1e2c-4dcb-92bd-48dfa2a328420,convrisamaj-20,1,1sg
 convrisamaj-21-0,2b5fa12b-1e2c-4dcb-92bd-48dfa2a328420,convrisamaj-21,0,1sg
 convrisamaj-21-1,866eb4fd-5869-403f-a12d-922cb0f26a9a0-kempinire,convrisamaj-21,1,laugh-ptcp-nzr-gno-neg
 convrisamaj-21-2,2b5fa12b-1e2c-4dcb-92bd-48dfa2a328420,convrisamaj-21,2,1sg
+convrisamaj-21-3,senejkastay-0-ri-ri,convrisamaj-21,3,remain-ipfv
 convrisamaj-21-4,u1-ylk-fb472c41-d260-4cb8-9bcd-064cc1ca14b61,convrisamaj-21,4,1-lk-house
 convrisamaj-22-0,ce4c16fd-2aa7-44cf-b831-5a11b944d3040,convrisamaj-22,0,3an-rm-pl
 convrisamaj-22-1,866eb4fd-5869-403f-a12d-922cb0f26a9a0-ri,convrisamaj-22,1,laugh-ipfv
@@ -687,7 +682,8 @@ convrisamaj-40-5,a6194807-28a2-45e2-a45f-e335729278fb0,convrisamaj-40,5,and
 convrisamaj-42-0,866eb4fd-5869-403f-a12d-922cb0f26a9a0-ri-zero-kontomopl,convrisamaj-42,0,laugh-ipfv-pl
 convrisamaj-42-1,763cd0a8-2338-47f6-be83-51c37991b1292,convrisamaj-42,1,sun
 convrisamaj-42-2,ponoko-every-0,convrisamaj-42,2,every
-convrisamaj-43-0,62e12d1c-dd51-4a74-af84-2c7b0b87d0c12-ri-zero,convrisamaj-43,0,say-ipfv
+convrisamaj-43-0,ta-like-0,convrisamaj-43,0,like
+convrisamaj-43-1,62e12d1c-dd51-4a74-af84-2c7b0b87d0c12-ri-zero-kontomopl,convrisamaj-43,1,say-ipfv-pl
 convrisamaj-44-0,2b5fa12b-1e2c-4dcb-92bd-48dfa2a328420,convrisamaj-44,0,1sg
 convrisamaj-44-1,db2ee1eb-62e7-439d-bad9-bd65ee3a230b0-ri-zero-janeg,convrisamaj-44,1,see-ipfv-neg
 convrisamaj-44-2,ta-like-0,convrisamaj-44,2,like
@@ -735,7 +731,6 @@ convrisamaj-51-1,660cbd87-a405-4b7b-80cd-f9d5875e20a00,convrisamaj-51,1,1-2
 convrisamaj-51-2,99e9f0d6-2f24-4f4b-bb64-4e1a03b8d3c90-ri,convrisamaj-51,2,laugh-at-ipfv
 convrisamaj-51-3,b97a0ed7-7ceb-4cab-83d8-5b30b45d9a590,convrisamaj-51,3,nothing
 convrisamaj-52-0,62e12d1c-dd51-4a74-af84-2c7b0b87d0c12-ri,convrisamaj-52,0,say-nmlz
-convrisamaj-52-1,99e9f0d6-2f24-4f4b-bb64-4e1a03b8d3c90-septcp-minmlz-jraneg,convrisamaj-52,1,laugh-at-ptcp-nmlz-neg
 convrisamaj-53-0,e5878716-bc48-4e01-b82d-d9c6e602e5900,convrisamaj-53,0,thus
 convrisamaj-53-1,marestr-0,convrisamaj-53,1,restr
 convrisamaj-53-2,62e12d1c-dd51-4a74-af84-2c7b0b87d0c12-ri-zero,convrisamaj-53,2,say-ipfv
@@ -1069,7 +1064,6 @@ desccasmaj-132-5,72a3a43c-8f74-4c86-967a-caf0649c90390,desccasmaj-132,5,later
 desccasmaj-133-0,b97a0ed7-7ceb-4cab-83d8-5b30b45d9a590,desccasmaj-133,0,nothing
 desccasmaj-133-1,3b92fde8-f646-47dd-b190-18c1ca2d60791,desccasmaj-133,1,too
 desccasmaj-134-2,660cbd87-a405-4b7b-80cd-f9d5875e20a00,desccasmaj-134,2,1-2
-desccasmaj-134-4,4b4b2003-6289-4891-b10f-ad7cac69a7d11,desccasmaj-134,4,beverage
 desccasmaj-136-2,9af2823b-63a9-4aa0-affc-07d31dde4aaa0,desccasmaj-136,2,1-3
 desccasmaj-137-1,9af2823b-63a9-4aa0-affc-07d31dde4aaa0,desccasmaj-137,1,1-3
 desccasmaj-138-0,784793f4-7a39-41f8-bce9-790e98edeefb1-peess,desccasmaj-138,0,strength-ess
@@ -1143,3 +1137,5 @@ desccasmaj-158-1,2b5fa12b-1e2c-4dcb-92bd-48dfa2a328420,desccasmaj-158,1,1sg
 desccasmaj-158-2,73780e8f-39a0-4e59-b0ce-d13fe4cdedad0-ri-zero-janeg,desccasmaj-158,2,rot-ipfv-neg
 desccasmaj-158-3,reemp-0,desccasmaj-158,3,emp
 desccasmaj-159-2,97376aaf-48ae-4848-b0b5-80e15dcc0f640,desccasmaj-159,2,prob
+676f9d00-be36-4f53-9745-4fe5460acd82-0-0-0,u1-82005b02-7f1b-4ccc-a302-16259548c8180-ripert,676f9d00-be36-4f53-9745-4fe5460acd82-0-0,0,1-grand-mother-pert
+676f9d00-be36-4f53-9745-4fe5460acd82-0-1-0,a2-82005b02-7f1b-4ccc-a302-16259548c8180-ripert,676f9d00-be36-4f53-9745-4fe5460acd82-0-1,0,2-grand-mother-pert

@@ -99,6 +99,15 @@ with CLDFWriter(spec) as writer:
             "dc:description": "The text to which this record belongs",
             "datatype": "string",
         },
+{
+                "name": "Source",
+                "required": False,
+                "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#source",
+                "datatype": {
+                    "base": "string"
+                },
+                "separator": ";"
+            }
     )
     writer.cldf.add_component("FormTable")
     writer.cldf.add_component("ParameterTable")
@@ -136,6 +145,7 @@ with CLDFWriter(spec) as writer:
     examples["Sentence"] = examples["Sentence"].replace("", "***")
     examples.rename(columns={"Sentence": "Primary_Text"}, inplace=True)
     examples["Language_ID"] = "yab"
+    examples["Source"] = examples["Source"].str.split("; ")
 
     example_add = cread("etc/example_additions.csv")
     examples = examples.merge(example_add, on="ID", how="left")
@@ -159,10 +169,8 @@ with CLDFWriter(spec) as writer:
     bare_examples["ID"] = bare_examples["ID"].apply(lambda x: x.replace(".", "-").lower())
     bare_examples = bare_examples[~(bare_examples["ID"].isin(examples["ID"]))]
     bare_examples["Primary_Text"] = bare_examples["Sentence"].apply(lambda x: ortho_strip(x, additions=["%", "¿", "###", "#"]))
-    print(bare_examples.columns)
     bare_examples.drop(columns=["Segmentation", "Gloss"], inplace=True)
     bare_examples = bare_examples[(bare_examples["Text_ID"]).isin(texts.keys())]
-    print(bare_examples)
 
     # keys: morpheme IDs
     # values: different (allo)morph forms and associated morph IDs
@@ -181,7 +189,6 @@ with CLDFWriter(spec) as writer:
         "/home/florianm/Dropbox/development/uniparser-yawarana/compile_parser/lexicon/roots.csv"
     )
     manual_lexemes = pd.concat([manual_lexemes, roots])
-    print(manual_lexemes)
     infl_morphs = cread("etc/inflection_morphs.csv")
     infl_morphemes = cread("etc/inflection_morphemes.csv")
     deriv_morphs = cread("etc/derivation_morphs.csv")

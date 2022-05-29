@@ -1,6 +1,6 @@
 ID,Language_ID,Form,Segments,Comment,Source,Parameter_ID
+o2-noti-potential-partner-0,yab,o-noti,o n o t i,,,2-potential-partner
 ta3-d8e0e5d2-cc64-4f1e-aae3-ee38de2a06eb0-septcp-minmlz,yab,ta-yojtë-se-mï,t a j o h t ə s e m ɨ,,,3p-fish-ptcp-nmlz
-t3-eni-drink-1-septcp-minmlz,yab,t-ën-se-mï,t ə n s e m ɨ,,,3p-drink-ptcp-nmlz
 make-mother-0,yab,makë,m a k ə,,,mother
 yaerg-0,yab,ya,j a,,,erg
 62e12d1c-dd51-4a74-af84-2c7b0b87d0c12-ri-zero,yab,ta-∅,t a,,,say-ipfv
@@ -20,11 +20,11 @@ yakaall-0,yab,yaka,j a k a,,,all
 ta-like-0,yab,ta,t a,,,like
 041cd4a0-4dca-4c25-8f2f-ebceb26331430,yab,tawani,t a w a n i,,,darkness
 yaweloc-0,yab,yawë,j a w ə,,,loc
+ccb970b7-980c-4dc2-84fc-f291fd9a6bab0-sapepfv,yab,wej-sapë,w e h s a p ə,,,cop-pfv
 e3b3482c-4e80-4935-9308-c271dff140970,yab,kawë,k a w ə,,,high
 dc33b380-8376-4775-83e2-46bcef4011991-septcp,yab,ënuj-se,ə n u h s e,,,go-up-pst
 661dfe17-72bb-4a4f-aac2-e6d211c3b46b0-tonpl,yab,waijta-ton,w a i h t a t o n,,,mouse-pl
 nwajtedance-0-ri-zero,yab,nwajtë-∅,n w a h t ə,,,dance-ipfv
-ccb970b7-980c-4dc2-84fc-f291fd9a6bab0-sapepfv,yab,wej-sapë,w e h s a p ə,,,cop-pfv
 sakunkai-sakunkai-0,yab,sakunkai,s a k u n k a i,,,sakunkai
 a3708ba1-94ef-4011-8c06-fcbe4e45b2e52-pijkedim,yab,wurijyam-pïjkë,w u r i h j a m p ɨ h k ə,,,woman-dim
 93b0a595-e7b7-413e-a88b-9ca8d868dddd0-ri-zero,yab,kantajnë-∅,k a n t a h n ə,,,sing-ipfv
@@ -56,8 +56,7 @@ intsne-0,yab,ne,n e,,,ints
 efec7abd-f480-462a-9648-e2434e3bee0d0-ri-zero,yab,tawejka-∅,t a w e h k a,,,to-daylight-nmlz
 661dfe17-72bb-4a4f-aac2-e6d211c3b46b0-tomopl-pstjpe1,yab,waijta-tomo-jpë,w a i h t a t o m o h p ə,,,mouse-pl-pst
 c658eb03-b8e5-4e3e-a5ba-21c1d8ce3eee1-septcp-kontomopl,yab,tipa-se-kontomo,t i p a s e k o n t o m o,,,go-group-pst-pl
-dt1-wenaka0-pstjpe1,yab,ëj-wenaka-jpë,ə h w e n a k a h p ə,,,detrz-vomit-pst-acnmlz
-ta3-db2ee1eb-62e7-439d-bad9-bd65ee3a230b2-plur1-ri,yab,ta-in-pëti-ri,t a i n p ə t i r i,,,3p-see-plur-ipfv
+dt1-wenaka0-pstjpe1,yab,ëj-wenaka-jpë,ə h w e n a k a h p ə,,,detrz-vomit-pst
 yaobl-0,yab,ya,j a,,,obl
 db2ee1eb-62e7-439d-bad9-bd65ee3a230b2-plur1-ri-zero,yab,in-pëti-∅,i n p ə t i,,,see-plur-ipfv
 wenaka0-pstjpe1,yab,wenaka-jpë,w e n a k a h p ə,,,vomit-pst-acnmlz
@@ -90,7 +89,7 @@ keyata-keyeta-keyeta-grow-up-1-pstjpe1,yab,këyeta-jpë,k ə j e t a h p ə,,,gr
 13cd1d8d-11c6-434c-aa1f-02e60843e20f1,yab,intipijkë,i n t i p i h k ə,,,a-little
 chi-ch-chij-cop-0-ri-zero,yab,chi-∅,t͡ʃ i,,,cop-nmlz
 91df2c92-c11c-4e9c-be27-649c3b66a9921,yab,yïmï,j ɨ m ɨ,,,father
-6224407d-8682-4a57-b404-4510e4fe5e241-pstjpe1,yab,sëma-jpë,s ə m a h p ə,,,die-pst
+6224407d-8682-4a57-b404-4510e4fe5e241-pstjpe1,yab,sëma-jpë,s ə m a h p ə,,,die-pst-acnmlz
 esspe-0,yab,pe,p e,,,ess
 keyata-keyeta-keyeta-grow-up-1-septcp,yab,këyeta-se,k ə j e t a s e,,,grow-up-pst
 d60c16f6-6d07-454e-8e29-02ac2e523b210,yab,papa,p a p a,,,father-voc
@@ -137,7 +136,6 @@ d46043e6-2d2c-46d8-bc77-f9b50b8b7c370,yab,tapëkë,t a p ə k ə,,,that-s-why
 23a588f1-4d83-4973-a6db-2a25f9f017e90,yab,weroro,w e r o r o,,,dog
 e000169a-4f21-43c5-83ba-a855450cb5a20-ri-zero,yab,yarë-∅,j a r ə,,,carry-ipfv
 607c409f-35a4-4003-928d-d2d9ccad5a820-tojpefut,yab,këjma-tojpe,k ə h m a t o h p e,,,bark-at-o-purp
-ta3-6400160c-fbed-464d-b384-80ea2bb739750-ri-ru,yab,ta-tu-ru,t a t u r u,,,3p-give-ipfv
 ijmoka-ijmojka-cook-0-tojpefut,yab,ijmoka-tojpe,i h m o k a t o h p e,,,cook-purp
 keyata-keyeta-keyeta-grow-up-0-pstjpe1,yab,këyata-jpë,k ə j a t a h p ə,,,grow-up-pst
 e4f82478-b8ba-469b-92e9-fe9ec4a18cef0,yab,onono,o n o n o,,,another
@@ -209,6 +207,7 @@ esene-sene-see-self-1-ri-zero-janeg,yab,sene-∅-ja,s e n e h a,,,see-self-ipfv-
 ta3-b149cf62-a901-473f-980f-78788d653ed80-podes,yab,ta-ita-po,t a i t a p o,,,3p-hear-des
 chi-ch-chij-cop-0-ri,yab,chi-ri,t͡ʃ i r i,,,cop-nmlz
 ylk-fa238937-9392-4a63-8142-4c56dd4a5c990,yab,y-ewenke,j e w e n k e,,,lk-not-know
+senejkastay-0-ri-ri,yab,senejka-rï,s e n e h k a r ɨ,,,remain-ipfv
 u1-ylk-fb472c41-d260-4cb8-9bcd-064cc1ca14b61,yab,u-y-ïwïj,u j ɨ w ɨ h,,,1-lk-house
 b149cf62-a901-473f-980f-78788d653ed80-ri,yab,ita-ri,i t a r i,,,hear-ipfv
 1d47445b-035f-458f-ab65-fa1bf664f1290-ri-zero-jraneg,yab,wajyakïtï-∅-jra,w a h j a k ɨ t ɨ h r a,,,be-happy-ipfv-neg
@@ -232,6 +231,7 @@ f3e78ed2-7584-444f-9487-84e46b62362b0,yab,sa,s a,,,eval
 a6194807-28a2-45e2-a45f-e335729278fb0,yab,parë,p a r ə,,,and
 763cd0a8-2338-47f6-be83-51c37991b1292,yab,yatum,j a t u m,,,sun
 ponoko-every-0,yab,ponoko,p o n o k o,,,every
+62e12d1c-dd51-4a74-af84-2c7b0b87d0c12-ri-zero-kontomopl,yab,ta-∅-kontomo,t a k o n t o m o,,,say-ipfv-pl
 db2ee1eb-62e7-439d-bad9-bd65ee3a230b0-ri-zero-janeg,yab,ini-∅-ja,i n i h a,,,see-ipfv-neg
 5fc2465b-ffb2-41f9-b168-18f867a833530,yab,kë,k ə,,,ouch
 1d47445b-035f-458f-ab65-fa1bf664f1290-ri-zero,yab,wajyakïtï-∅,w a h j a k ɨ t ɨ,,,be-happy-ipfv
@@ -240,7 +240,6 @@ u1-yaerg-0,yab,u-ya,u j a,,,1-erg
 aniki-who-0,yab,aniki,a n i k i,,,who
 0321699f-bfd7-43cb-90a8-b479353ff5481,yab,chiyakon,t͡ʃ i j a k o n,,,friend
 62e12d1c-dd51-4a74-af84-2c7b0b87d0c12-ri,yab,ta-ri,t a r i,,,say-nmlz
-99e9f0d6-2f24-4f4b-bb64-4e1a03b8d3c90-septcp-minmlz-jraneg,yab,yarika-se-mï-jra,j a r i k a s e m ɨ h r a,,,laugh-at-ptcp-nmlz-neg
 3078733f-0930-414f-8b78-42c99ecef0553-ri-zero-janeg,yab,waimu-∅-ja,w a i m u h a,,,speak-ipfv-neg
 e4e9ed1e-f5ad-485b-a3ab-08c1ee75d3150,yab,toto,t o t o,,,non-indian
 731c9d57-5510-4f21-95bd-c6c357b94eee1,yab,ë'ë,ə ʔ ə,,,yes
@@ -311,7 +310,6 @@ dt2-enkafinish-1-septcp,yab,s-ënka-se,s ə n k a s e,,,detrz-finish-pst
 ylk-ba4e062c-47d3-40c5-b184-a9f7511dc2952,yab,y-emekun,j e m e k u n,,,lk-hand
 9b1b7ee2-19d3-4a1d-b21f-bc50e66c21150,yab,achikïpe,a t͡ʃ i k ɨ p e,,,dirty
 6cbe3502-f914-46b3-8ebf-9606dc331fdb0,yab,chej,t͡ʃ e h,,,pull-out
-4b4b2003-6289-4891-b10f-ad7cac69a7d11,yab,tënsen,t ə n s e n,,,beverage
 784793f4-7a39-41f8-bce9-790e98edeefb1-peess,yab,tëtum-pe,t ə t u m p e,,,strength-ess
 984c0006-d17d-4c00-bf9d-c9d619efc53d0-rupert,yab,muku-ru,m u k u r u,,,child-pert
 make-mother-0-tonpl,yab,makë-ton,m a k ə t o n,,,mother-pl
@@ -322,3 +320,5 @@ ef5c051f-d59f-483c-b927-8d95082f19bf1-ripert,yab,waraijto-ri,w a r a i h t o r i
 17979045-3607-4747-86de-4cdeacfc568b0,yab,werewere,w e r e w e r e,,,fly
 6224407d-8682-4a57-b404-4510e4fe5e241-ri-zero-janeg,yab,sëma-∅-ja,s ə m a h a,,,die-ipfv-neg
 73780e8f-39a0-4e59-b0ce-d13fe4cdedad0-ri-zero-janeg,yab,këta-∅-ja,k ə t a h a,,,rot-ipfv-neg
+u1-82005b02-7f1b-4ccc-a302-16259548c8180-ripert,yab,u-najmo-ri,u n a h m o r i,,,1-grand-mother-pert
+a2-82005b02-7f1b-4ccc-a302-16259548c8180-ripert,yab,a-najmo-ri,a n a h m o r i,,,2-grand-mother-pert
