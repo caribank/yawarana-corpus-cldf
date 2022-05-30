@@ -1,5 +1,7 @@
 ID,Title,Description,Comment,Source,Type,Metadata
+Hist2MaPe,Historia personal por MaPe (2da parte),TBD,,,Narrative,"{""genre"": ""Narrative""}"
 CtoAraGrMe,Cuento de la araña,TBD,TBD,,Traditional narrative,"{""genre"": ""Traditional narrative"", ""tags"": [""narrative""]}"
+ConvEstSJM,Conversación sobre estudios,TBD,,,Conversation,"{""genre"": ""Conversation""}"
 HistAnFo,Historia personal por AnFo,Personal narrative about childhood in San Juan Manapiare. Aunt sends uncle to go hunt and fish.,"is *ya* in (21) really OBL, and not ERG? see (22); why is htere no supine in (24)?",,Personal narrative,"{""genre"": ""Personal narrative"", ""tags"": [""personal""]}"
 CtoRat,Cuento de las ratas por AnFo,"Man goes up in the hills to sleep, mice are dancing, drinking chicha, and vomiting. He has to pee. The mice are gone in the morning, and their vomit disappears (?). The man goes home.",short text; /wï/ often [u] (wïnïjse),,Story,"{""genre"": ""Story"", ""tags"": [""narrative""]}"
 ConCosNoInd,Conversación cosas no indígenas,TBD,,,Conversation,"{""genre"": ""Conversation""}"
