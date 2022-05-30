@@ -5,6 +5,7 @@ default:
 all:
 	make default
 	make doc
+	make readme
 
 doc:
 	cp /home/florianm/Dropbox/research/cariban/yawarana/yaw_sketch/output/latex/main.pdf ./yawarana-sketch.pdf
