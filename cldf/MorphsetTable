@@ -29,7 +29,7 @@ jnarineg,yab,-jnari,,neg
 tenpert,yab,-të,,npert
 tipert,yab,-ti,,pert
 riipfv,yab,-ri,From [](MorphsetTable#cldf:rinmlz),ipfv
-sepst,yab,-se,From [](MorphsetTable#cldf:septcp),sepst
+sepst,yab,-se,From [](MorphsetTable#cldf:septcp),pst
 dt2,yab,s-,,detrz
 tavbz,yab,-ta,,vbz
 anonmlz,yab,-ano,,nmlz
@@ -107,6 +107,9 @@ me-pol,yab,me,,pol
 enkafinish,yab,yënka,,finish
 senejkastay,yab,senejka,,remain
 nwajtedance,yab,nwajtë,,dance
+ti-hsy,yab,ti,,hsy
+ti-quot,yab,ti,,quot
+wej-cop,yab,wej,,cop
 achi-wilderness,yab,achi,,wilderness
 chika-bite,yab,chika,,bite
 ejne-1-2pro,yab,ejnë,,1-2pro

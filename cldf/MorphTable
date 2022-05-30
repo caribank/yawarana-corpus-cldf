@@ -38,7 +38,7 @@ ri-zero,yab,-∅,,,riipfv,ipfv
 ri,yab,-ri,,,riipfv,ipfv
 ri-ri,yab,-rï,,,riipfv,ipfv
 ri-ru,yab,-ru,,,riipfv,ipfv
-sepst,yab,-se,,,sepst,sepst
+sepst,yab,-se,,,sepst,pst
 dt2,yab,s-,,,dt2,detrz
 tavbz,yab,-ta,,,tavbz,vbz
 dt1,yab,ëj-,,,dt1,detrz
@@ -140,6 +140,9 @@ enkafinish-0,yab,yënka,,,enkafinish,finish
 enkafinish-1,yab,ënka,,,enkafinish,finish
 senejkastay-0,yab,senejka,,,senejkastay,remain
 nwajtedance-0,yab,nwajtë,,,nwajtedance,dance
+ti-hsy-0,yab,ti,,,ti-hsy,hsy
+ti-quot-0,yab,ti,,,ti-quot,quot
+wej-cop-0,yab,wej,,,wej-cop,cop
 achi-wilderness-0,yab,achi,,,achi-wilderness,wilderness
 achi-wilderness-1,yab,asi,,,achi-wilderness,wilderness
 chika-bite-0,yab,chika,,,chika-bite,bite
