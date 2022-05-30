@@ -164,9 +164,16 @@ with CLDFWriter(spec) as writer:
             text_data = yaml.load(file, Loader=yaml.SafeLoader)
             texts[text_data.pop("id")] = text_data
 
+    bad_ids = ["GrMe"]
+    def get_id(row):
+        if row["ID"] not in bad_ids:
+            return row["ID"].replace(".", "-").lower()
+        else:
+            return row["ID"].lower() + "-" + str(int(row["Part"]))
 
     bare_examples = cread("../yawarana_corpus/flexports/yab_texts.csv")
-    bare_examples["ID"] = bare_examples["ID"].apply(lambda x: x.replace(".", "-").lower())
+    bare_examples["ID"] = bare_examples.apply(get_id, axis=1)
+    bare_examples = bare_examples.merge(example_add, on="ID", how="left")
     bare_examples = bare_examples[~(bare_examples["ID"].isin(examples["ID"]))]
     bare_examples["Primary_Text"] = bare_examples["Sentence"].apply(lambda x: ortho_strip(x, additions=["%", "¿", "###", "#"]))
     bare_examples.drop(columns=["Segmentation", "Gloss"], inplace=True)
