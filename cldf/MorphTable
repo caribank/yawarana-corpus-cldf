@@ -34,6 +34,11 @@ jnarineg,yab,-jnari,,,jnarineg,neg
 tenpert,yab,-të,,,tenpert,npert
 tipert,yab,-ti,,,tipert,pert
 o2,yab,o-,,,a2,2
+ri-zero,yab,-∅,,,riipfv,ipfv
+ri,yab,-ri,,,riipfv,ipfv
+ri-ri,yab,-rï,,,riipfv,ipfv
+ri-ru,yab,-ru,,,riipfv,ipfv
+sepst,yab,-se,,,sepst,sepst
 dt2,yab,s-,,,dt2,detrz
 tavbz,yab,-ta,,,tavbz,vbz
 dt1,yab,ëj-,,,dt1,detrz
@@ -44,10 +49,6 @@ jtevbz,yab,-jtë,,,jtevbz,vbz-tr
 pstjpe1,yab,-jpë,,,jpepst,pst; pst-acnmlz
 plur1,yab,-pëti,,,petiplur,plur
 plur2,yab,-pëj,,Syllable reduction,petiplur,plur
-ri-zero,yab,-∅,,,ri,ipfv; nmlz
-ri,yab,-ri,,,ri,ipfv; nmlz
-ri-ri,yab,-rï,,,ri,ipfv; nmlz
-ri-ru,yab,-ru,,,ri,ipfv; nmlz
 rupert,yab,-ru,,,rupert,pert
 sapepfv,yab,-sapë,,,sapepfv,pfv; nmlz
 sajpfv,yab,-saj,,,sapepfv,pfv; nmlz
@@ -142,9 +143,18 @@ nwajtedance-0,yab,nwajtë,,,nwajtedance,dance
 achi-wilderness-0,yab,achi,,,achi-wilderness,wilderness
 achi-wilderness-1,yab,asi,,,achi-wilderness,wilderness
 chika-bite-0,yab,chika,,,chika-bite,bite
+ejne-1-2pro-0,yab,ejnë,,,ejne-1-2pro,1-2pro
+najmo-grandmother-0,yab,najmo,,,najmo-grandmother,grandmother
+najmo-grandmother-1,yab,najmu,,,najmo-grandmother,grandmother
+najpi-grandfather-0,yab,najpï,,,najpi-grandfather,grandfather
 noti-potential-partner-0,yab,noti,,,noti-potential-partner,potential-partner
 tu-give-0,yab,tu,,,tu-give,give
+waraijtokomo-man-0,yab,waraijtokomo,,,waraijtokomo-man,man
+yarika-laugh-0,yab,yarika,,,yarika-laugh,laugh
+yaruwa-laugh-0,yab,yaruwa,,,yaruwa-laugh,laugh
+yutu-forest-0,yab,yutu,,,yutu-forest,forest
 ye-tooth-0,yab,yë,,,ye-tooth,tooth
+ejte-house-0,yab,ëjtë,,,ejte-house,house
 eni-drink-0,yab,ëni,,,eni-drink,drink
 eni-drink-1,yab,ën,,,eni-drink,drink
 ese-name-0,yab,ese,,,ese-name,name

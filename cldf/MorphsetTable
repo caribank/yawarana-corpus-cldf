@@ -28,6 +28,8 @@ neinf,yab,-në,,inf
 jnarineg,yab,-jnari,,neg
 tenpert,yab,-të,,npert
 tipert,yab,-ti,,pert
+riipfv,yab,-ri,From [](MorphsetTable#cldf:rinmlz),ipfv
+sepst,yab,-se,From [](MorphsetTable#cldf:septcp),sepst
 dt2,yab,s-,,detrz
 tavbz,yab,-ta,,vbz
 anonmlz,yab,-ano,,nmlz
@@ -36,7 +38,7 @@ dt1,yab,ëj-,,detrz
 petiplur,yab,-pëti,,plur
 septcp,yab,-se,,pst; ptcp; sup
 jpepst,yab,-jpë,,pst; pst-acnmlz
-ri,yab,-ri,,ipfv; nmlz
+rinmlz,yab,-ri,Gave rise to [](MorphsetTable#cldf:riipfv),nmlz
 minmlz,yab,-mï,,nmlz
 rupert,yab,-ru,,pert
 sapepfv,yab,-sapë,,pfv; nmlz
@@ -107,9 +109,17 @@ senejkastay,yab,senejka,,remain
 nwajtedance,yab,nwajtë,,dance
 achi-wilderness,yab,achi,,wilderness
 chika-bite,yab,chika,,bite
+ejne-1-2pro,yab,ejnë,,1-2pro
+najmo-grandmother,yab,najmo,,grandmother
+najpi-grandfather,yab,najpï,,grandfather
 noti-potential-partner,yab,noti,,potential-partner
 tu-give,yab,tu,,give
+waraijtokomo-man,yab,waraijtokomo,,man
+yarika-laugh,yab,yarika,,laugh
+yaruwa-laugh,yab,yaruwa,,laugh
+yutu-forest,yab,yutu,,forest
 ye-tooth,yab,yë,,tooth
+ejte-house,yab,ëjtë,,house
 eni-drink,yab,ëni,,drink
 ese-name,yab,ese,,name
 moronkepi,yab,moronkepï,,stop-pain

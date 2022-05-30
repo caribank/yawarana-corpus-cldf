@@ -28,7 +28,7 @@
     "tables": [
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ExampleTable",
-            "dc:extent": 642,
+            "dc:extent": 644,
             "tableSchema": {
                 "columns": [
                     {
@@ -152,7 +152,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#FormTable",
-            "dc:extent": 323,
+            "dc:extent": 57,
             "tableSchema": {
                 "columns": [
                     {
@@ -242,7 +242,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ParameterTable",
-            "dc:extent": 1068,
+            "dc:extent": 940,
             "tableSchema": {
                 "columns": [
                     {
@@ -275,7 +275,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#MediaTable",
-            "dc:extent": 437,
+            "dc:extent": 385,
             "tableSchema": {
                 "columns": [
                     {
@@ -391,7 +391,7 @@
             "url": "languages.csv"
         },
         {
-            "dc:extent": 558,
+            "dc:extent": 94,
             "tableSchema": {
                 "columns": [
                     {
@@ -488,7 +488,7 @@
             "url": "FormSlices"
         },
         {
-            "dc:extent": 1140,
+            "dc:extent": 171,
             "tableSchema": {
                 "columns": [
                     {
@@ -582,7 +582,7 @@
             "url": "ExampleSlices"
         },
         {
-            "dc:extent": 1348,
+            "dc:extent": 1358,
             "tableSchema": {
                 "columns": [
                     {
@@ -679,7 +679,7 @@
             "url": "MorphTable"
         },
         {
-            "dc:extent": 1035,
+            "dc:extent": 1045,
             "tableSchema": {
                 "columns": [
                     {
@@ -789,7 +789,7 @@
             "url": "PhonemeTable"
         },
         {
-            "dc:extent": 6,
+            "dc:extent": 7,
             "tableSchema": {
                 "columns": [
                     {

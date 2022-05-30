@@ -321,7 +321,7 @@ with CLDFWriter(spec) as writer:
                 "ID": text_id,
                 "Title": text_data["title_es"],
                 "Description": text_data["summary"],
-                "Comment": "; ".join(text_data["comments"]),
+                "Comment": "; ".join(text_data.get("comments", [])),
                 "Type": text_data["genre"],
                 "Metadata": metadata,
             }
@@ -461,6 +461,8 @@ with CLDFWriter(spec) as writer:
         audio_path = example_audios / f'{ex["ID"]}.wav'
         if audio_path.is_file():
             writer.objects["MediaTable"].append({"ID": ex["ID"], "Media_Type": "wav"})
+        if ex["Primary_Text"] == "":
+            continue
         writer.objects["ExampleTable"].append(ex)
 
     phonemes = cread("etc/phonemes.csv")
