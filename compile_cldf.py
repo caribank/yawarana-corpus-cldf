@@ -38,7 +38,6 @@ def slugify(input_str):
     else:
         return slug
 
-
 def custom_spec(component, column, separator):
     path = (
         Path(pycldf.__file__)
@@ -78,14 +77,41 @@ for filename in Path("/home/florianm/Downloads/New_Dictionary_Clippings").iterdi
     word_audios.setdefault(leggo, [])
     word_audios[leggo].append(filename)
 
+version = yaml.load(open("/home/florianm/Dropbox/research/cariban/yawarana/yaw_sketch/metadata.yaml"), Loader=yaml.SafeLoader)["version"]
+
 with CLDFWriter(spec) as writer:
     writer.cldf.properties.setdefault("rdf:ID", "yawarana-dataset")
-    writer.cldf.properties.setdefault("dc:title", "A descriptive dataset of Yawarana")
+    writer.cldf.properties.setdefault("dc:title", f"A digital sketch grammar of Yawarana (v{version})")
     writer.cldf.properties.setdefault("dc:bibliographicCitation", "Matter, Florian, 2022. A digital grammar sketch of Yawarana")
     writer.cldf.properties.setdefault(
-        "dc:description",
-        "This data is primarily intended for a digital sketch grammar of Yawarana.",
+        "dc:description", open(
+            "/home/florianm/Dropbox/research/cariban/yawarana/yaw-sketch-landing-page/output/clld/content.txt",
+            "r",
+        ).read()
     )
+    writer.cldf.properties["dc:license"] = "https://creativecommons.org/licenses/by-sa/4.0/"
+    writer.cldf.properties["dc:identifier"] = "https://fl.mt/yawarana-sketch"
+
+    doc_path = Path("/home/florianm/Dropbox/research/cariban/yawarana/yaw_sketch/output/clld/")
+    writer.cldf.add_component(cldf_md("ChapterTable"))
+    chapters = pd.read_csv(doc_path / "chapters.csv")
+    for chapter in chapters.to_dict("records"):
+        writer.objects["ChapterTable"].append({"ID": chapter["ID"], "Name": chapter["title"], "Number": chapter["Number"], "Description": open(doc_path / chapter["Filename"], "r").read()})
+
+    writer.objects["ChapterTable"].append({
+        "ID": "ambiguity",
+        "Name": "Manuscript: Parsing ambiguity",
+        "Description": open(
+            "/home/florianm/Dropbox/research/cariban/yawarana/yawarana-parsing-ambiguity/clld_output.txt",
+            "r",
+        ).read()
+})
+
+    writer.cldf.add_component(cldf_md("ContributorTable"))
+    for contributor in pd.read_csv("etc/contributors.csv").to_dict("records"):
+        contributor["Name"] = contributor["First"] + " " + contributor["Given"]
+        writer.objects["ContributorTable"].append(contributor)
+
 
     log.info("Adding components")
     # set up components

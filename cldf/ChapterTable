@@ -1,0 +1,550 @@
+ID,Name,Description,Number
+intro,Introduction,"<a id='intro'></a>
+## The Yawarana people and their language {#sec:people}
+
+## Location, historical records {#sec:context}
+
+## Current life {#sec:currentlife}
+
+## Sociolinguistic vitality {#sec:vitality}
+
+## Previous studies on the Yawarana language {#sec:previous}
+
+## This project {#sec:thisproject}
+",1
+phono,Phonetics and phonology,"<a id='phono'></a>
+## Segmental phonetics and phonemes {#sec:segmental}
+The consonant phonemes of Yawarana are shown in <a href='#tab:consonants' class='crossref' id='tab:consonants'>crossref</a>, and the vowels in <a href='#tab:vowels' class='crossref' id='tab:vowels'>crossref</a>.
+This is a fairly standard Cariban phoneme inventory, only departing from the mainstream by the addition of [Phoneme ch](PhonemeTable?#cldf:ch).
+
+
+<a id='tab:consonants'></a><div class='caption table' id='tab:consonants'>Consonant phonemes</div>
+
+|           | bilabial                          | alveolar                          | palatal                             | velar                             | glottal                           |
+|:----------|:----------------------------------|:----------------------------------|:------------------------------------|:----------------------------------|:----------------------------------|
+| occlusive | [Phoneme p](PhonemeTable?#cldf:p) | [Phoneme t](PhonemeTable?#cldf:t) | [Phoneme ch](PhonemeTable?#cldf:ch) | [Phoneme k](PhonemeTable?#cldf:k) |                                   |
+| nasal     | [Phoneme m](PhonemeTable?#cldf:m) | [Phoneme n](PhonemeTable?#cldf:n) | [Phoneme J](PhonemeTable?#cldf:J)   |                                   |                                   |
+| fricative |                                   | [Phoneme s](PhonemeTable?#cldf:s) |                                     |                                   | [Phoneme j](PhonemeTable?#cldf:j) |
+| liquid    |                                   | [Phoneme r](PhonemeTable?#cldf:r) |                                     |                                   |                                   |
+| glide     | [Phoneme w](PhonemeTable?#cldf:w) |                                   | [Phoneme y](PhonemeTable?#cldf:y)   |                                   |                                   |
+
+
+<a id='tab:vowels'></a><div class='caption table' id='tab:vowels'>Vowel phonemes</div>
+
+|       | front                             | central                                   | back                              |
+|:------|:----------------------------------|:------------------------------------------|:----------------------------------|
+| close | [Phoneme i](PhonemeTable?#cldf:i) | [Phoneme 1](PhonemeTable?#cldf:1)         | [Phoneme u](PhonemeTable?#cldf:u) |
+| mid   | [Phoneme e](PhonemeTable?#cldf:e) | [Phoneme schwa](PhonemeTable?#cldf:schwa) | [Phoneme o](PhonemeTable?#cldf:o) |
+| open  |                                   | [Phoneme a](PhonemeTable?#cldf:a)         |                                   |
+
+### Consonants {#sec:consonants}
+
+### Vowels {#sec:vowels}
+
+## Morphophonological Processes {#sec:morphophono}
+
+### Syllable Reduction {#sec:sylred}
+
+### Vowel harmony? {#sec:vowelharm}
+
+## Prosody {#sec:prosody}
+
+### Lexical stress {#sec:stress}
+
+### Intonational Phrases {#sec:intphrases}
+
+### Intonational Melodies {#sec:intmelodies}
+
+## Historical Considerations {#sec:histphono}
+",2
+POS,Distinguishing parts of speech in Yawarana,<a id='POS'></a>,3
+nouns,Nouns,"<a id='nouns'></a>
+## Pronouns {#sec:pronouns}
+The personal pronouns of [Language yab](LanguageTable?#cldf:yab) are shown in <a href='#tab:pronouns' class='crossref' id='tab:pronouns'>crossref</a>.
+It shows the usual Cariban inclusive/exclusive (<span class=""smallcaps"">1+2</span> and <span class=""smallcaps"">1+3</span>) distinction. <span title='is the 1+2 form cognate with apina? do we know something about its etymology?'>❓</span>
+Note that the plural marker [Morpheme kontomopl](MorphsetTable?#cldf:kontomopl) appears to usually be restricted to verbs, while *-santomo* is found with third person pronouns and demonstratives.
+
+
+<a id='tab:pronouns'></a><div class='caption table' id='tab:pronouns'>Pronouns</div>
+
+|                                    | <span class=""smallcaps"">sg</span>                                                                         | <span class=""smallcaps"">pl</span>                                                                         |
+|:-----------------------------------|:----------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------|
+| <span class=""smallcaps"">1</span>   | [Morpheme 2b5fa12b-1e2c-4dcb-92bd-48dfa2a32842](MorphsetTable?#cldf:2b5fa12b-1e2c-4dcb-92bd-48dfa2a32842) |                                                                                                           |
+| <span class=""smallcaps"">1+2</span> |                                                                                                           | [Morpheme 660cbd87-a405-4b7b-80cd-f9d5875e20a0](MorphsetTable?#cldf:660cbd87-a405-4b7b-80cd-f9d5875e20a0) |
+| <span class=""smallcaps"">1+3</span> |                                                                                                           | [Morpheme 9af2823b-63a9-4aa0-affc-07d31dde4aaa](MorphsetTable?#cldf:9af2823b-63a9-4aa0-affc-07d31dde4aaa) |
+| <span class=""smallcaps"">2</span>   | [Morpheme 25af4d03-e9ab-4253-a134-df1ec0e477a1](MorphsetTable?#cldf:25af4d03-e9ab-4253-a134-df1ec0e477a1) | [Morph 6834a422-bece-4f7c-9e98-baa8ba7f2f381](MorphTable?#cldf:6834a422-bece-4f7c-9e98-baa8ba7f2f381)     |
+| <span class=""smallcaps"">3</span>   | [Morpheme 587b3015-391a-4db2-b4b9-0e92563a5332](MorphsetTable?#cldf:587b3015-391a-4db2-b4b9-0e92563a5332) | [Morpheme 31f8c6fb-23e7-448a-8b2c-4cf698a01a6d](MorphsetTable?#cldf:31f8c6fb-23e7-448a-8b2c-4cf698a01a6d) |
+
+Short forms of the first and second person pronouns can occur as proclitics attaching to nouns to indicate possessor (<a href='#sec:nominalperson' class='crossref' id='sec:nominalperson'>crossref</a>), attached to verbs to indicate subject or object (described in [crossref](ChapterTable?_anchor=verbinfl#cldf:verbinfl)), or attached to postpositions to indicate object of the postposition (described in [crossref](ChapterTable?_anchor=sec:postinfl#cldf:postp)):
+
+[Example convrisamaj-28](ExampleTable?example_no=1#cldf:convrisamaj-28)
+
+[Example desccasmaj-025](ExampleTable?example_no=2#cldf:desccasmaj-025)
+
+[Example convrisamaj-02](ExampleTable?example_no=3#cldf:convrisamaj-02)
+
+An open question is whether [Morpheme t3](MorphsetTable?#cldf:t3) on verbs is a reduction of [Morpheme 587b3015-391a-4db2-b4b9-0e92563a5332](MorphsetTable?#cldf:587b3015-391a-4db2-b4b9-0e92563a5332). <span title='or is there a clear yes/no answer?'>❓</span>
+
+The third person demonstrative pronouns or articles are shown in <a href='#tab:pronouns3' class='crossref' id='tab:pronouns3'>crossref</a>.
+<span title='is there a 4‑way distinction? [cf. Ye’kwana?]'>❓</span>
+
+
+<a id='tab:pronouns3'></a><div class='caption table' id='tab:pronouns3'>Demonstrative pronouns / articles</div>
+
+|                                     | <span class=""smallcaps"">anim</span>                                                                       |                                                                                                           | <span class=""smallcaps"">inan</span>                                                                       |                                                                                                                     |
+|:------------------------------------|:----------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------|
+|                                     | <span class=""smallcaps"">sg</span>                                                                         | <span class=""smallcaps"">pl</span>                                                                         | <span class=""smallcaps"">sg</span>                                                                         | <span class=""smallcaps"">pl</span>                                                                                   |
+| <span class=""smallcaps"">prox</span> | [Morpheme b224d7f6-73d8-4e37-83f0-424d1f9a842c](MorphsetTable?#cldf:b224d7f6-73d8-4e37-83f0-424d1f9a842c) | *kërësantomo*                                                                                             | [Morpheme f3d65599-8188-4f15-b65e-c5844f4b5879](MorphsetTable?#cldf:f3d65599-8188-4f15-b65e-c5844f4b5879) | [Morpheme f3d65599-8188-4f15-b65e-c5844f4b5879](MorphsetTable?#cldf:f3d65599-8188-4f15-b65e-c5844f4b5879)-*santomo* |
+| medial? near?                       | [Morpheme 93cb02af-47f8-4312-af77-94d3b8adc0a7](MorphsetTable?#cldf:93cb02af-47f8-4312-af77-94d3b8adc0a7) |                                                                                                           | [Morpheme 77c34bc8-9e7f-446c-8495-82a2837ee83d](MorphsetTable?#cldf:77c34bc8-9e7f-446c-8495-82a2837ee83d) | [Morpheme 77c34bc8-9e7f-446c-8495-82a2837ee83d](MorphsetTable?#cldf:77c34bc8-9e7f-446c-8495-82a2837ee83d)-*santomo* |
+| <span class=""smallcaps"">dist</span> | [Morpheme cfc3b598-85fe-4b07-b7e3-bf1cecd682dc](MorphsetTable?#cldf:cfc3b598-85fe-4b07-b7e3-bf1cecd682dc) | [Morpheme ce4c16fd-2aa7-44cf-b831-5a11b944d304](MorphsetTable?#cldf:ce4c16fd-2aa7-44cf-b831-5a11b944d304) | [Morpheme efcd0f9e-3ea6-401e-8598-945a664617c4](MorphsetTable?#cldf:efcd0f9e-3ea6-401e-8598-945a664617c4) | [Morpheme efcd0f9e-3ea6-401e-8598-945a664617c4](MorphsetTable?#cldf:efcd0f9e-3ea6-401e-8598-945a664617c4)-*santomo* |
+
+None of the demonstrative pronouns have shortened, phonologically bound counterparts.
+
+* Nominal Interrogative pronouns:
+    * [Morpheme aniki-who](MorphsetTable?#cldf:aniki-who) ‘who? anim’
+    * [Morpheme d5f051fe-c25a-4507-b4cc-f04a47e15e24](MorphsetTable?#cldf:d5f051fe-c25a-4507-b4cc-f04a47e15e24) ‘what? inan’
+    * _ëjkë_ ‘which? inan’
+<span title='No plural forms for any of these?'>❓</span>
+
+
+## Nominal inflection {#sec:nouninfl}
+
+Nouns in Yawarana may bear suffixes for possession (<a href='#sec:nounposssuf' class='crossref' id='sec:nounposssuf'>crossref</a>) and number (<a href='#sec:nominalnumber' class='crossref' id='sec:nominalnumber'>crossref</a>), and possessed nouns may bear a third person prefix, indexing a third person possessor, or a first or second proclitic (a reduced form of the free pronoun), indexing a first or second person possessor (<a href='#sec:nominalperson' class='crossref' id='sec:nominalperson'>crossref</a>). 
+
+### Suffixes for possessed (<span class=""smallcaps"">poss</span>) and non-possessed (<span class=""smallcaps"">nposs</span>) nouns {#sec:nounposssuf}
+
+In the possession construction in Yawarana, the possessor noun occurs immediately preceding the possessed noun, which is the head of the possession phrase. Alternatively, the possessor can appear as a bound pronominal clitic (first & second person) or a prefix (third person) on the possessed noun. The possessor noun is never marked (for instance, with genitive case), but the possessed noun (the head) is often marked by a lexically specified ‘possessed’ suffix, either [Morpheme rupert](MorphsetTable?#cldf:rupert) '<span class=""smallcaps"">pert</span>' or [Morpheme tipert](MorphsetTable?#cldf:tipert) ‘pos’. Unpossessed nouns generally are unmarked, but some 15 nouns bear the suffix [Morpheme tenpert](MorphsetTable?#cldf:tenpert) ‘<span class=""smallcaps"">npert</span>’ when they appear without a possessor. 
+Examples <a class=""exref"" exid=""onlypossessed""end=""unsuffixednouns"" ></a> illustrate the possible patterns of markedness for nouns when possessed and unpossessed. In the first category, which contains the vast majority of nouns in our corpus, the unpossessed noun is unmarked, but when possessed the suffix -ri ‘pos’ occurs <a class=""exref"" exid=""onlypossessed""></a>. A handful of nouns is marked with -ri/-ti ‘pos’ when possessed and with -të ‘npos’ when not possessed <a class=""exref"" exid=""diffpossessed""></a>. Another handful is unmarked when possessed and marked with -të when not possessed <a class=""exref"" exid=""suffunpossessed""></a>. The fourth logical possibility, in which the noun bears no marker of possession (or non-possession) whether possessed or unpossessed, contains very few members (only one attested so far); in this case, the difference is marked only by the presence or absence of a possessive prefix or free-form possessor <a class=""exref"" exid=""unsuffixednouns""></a>. 
+
+<ol markdown=""block"" class=""example"">
+<li class=""example"" markdown=""block"" id=""onlypossessed""><div markdown=""block"">Nouns that take a suffix only when possessed:
+
+| *akajra-ri*   | ‘X’s bow’          | *akajra*   | ‘bow’          |
+|:--------------|:-------------------|:-----------|:---------------|
+| *y-amaka-ri*  | ‘X’s yucca’        | *amaka*    | ‘yucca’        |
+| *y-ántë-ri*   | ‘X’s fishhook’     | *antë*     | ‘fishhook’     |
+| *y-ateri-ri*  | ‘X’s garden/field’ | *ateri*    | ‘garden/field’ |
+| *ënu-ru*      | ‘X’s eye’          | *ënu*      | ‘eye’          |
+| *y-ëpi-ri*    | ‘X’s medicine’     | *ëpi*      | ‘medicine’     |</div>
+</li>
+</ol>
+
+<ol markdown=""block"" class=""example"">
+<li class=""example"" markdown=""block"" id=""diffpossessed""><div markdown=""block"">Nouns that take one suffix when possessed and another when unpossessed
+
+| *yë-ri*      | ‘X’s tooth’   | *yë-të*   | ‘tooth’                                |
+|:-------------|:--------------|:----------|:---------------------------------------|
+| *pata-ri*    | ‘X’s place’   | *pata-të* | ‘(part of name) San Juan de Manapiare’ |
+| *y-ese-ti*   | ‘X’s name’    | *ese-të*  | ‘name’                                 |
+| *y-ase-tï*   | ‘X’s cord’    | *ase-të*  | ‘cord’                                 |</div>
+</li>
+</ol>
+
+<ol markdown=""block"" class=""example"">
+<li class=""example"" markdown=""block"" id=""suffunpossessed""><div markdown=""block"">Nouns that take a suffix only when unpossessed:
+
+
+| *yëjpë*   | ‘X’s bone’   | *yëjpë-të*           | ‘bone’   |
+|:----------|:-------------|:---------------------|:---------|
+| *petï*    | ‘X’s thigh’  | *petï-të* / *pej-të* | ‘thigh’  |
+| *y-aponi* | ‘X’s stool’  | *apon-të*            | ‘stool’  |</div>
+</li>
+</ol>
+
+<ol markdown=""block"" class=""example"">
+<li class=""example"" markdown=""block"" id=""unsuffixednouns""><div markdown=""block"">Nouns that never take a suffix, whether possessed or unpossessed:
+
+| *i-jmëy*   | 'his egg’   | *ëjmëy*   | 'egg’   |
+|:-----------|:------------|:----------|:--------|
+|            |             |           |         |</div>
+</li>
+</ol>
+
+### Number suffixes {#sec:nominalnumber}
+There are two plural suffixes that can occur on nouns, apparently freely interchangeable.
+What conditions the choice of suffix is not clear as of yet.
+
+[Example ctorat-17](ExampleTable?example_no=4#cldf:ctorat-17)
+
+[Example ctorat-40](ExampleTable?example_no=5#cldf:ctorat-40)
+
+### Argument prefixes {#sec:nominalperson}
+Person prefixes on nouns are conditioned by the initial segment (<a href='#tab:possprefixes' class='crossref' id='tab:possprefixes'>crossref</a>).
+C-initial nouns take third person [Morph i31](MorphTable?#cldf:i31), and first and second person are bare [Morph u1](MorphTable?#cldf:u1) and [Morph me2](MorphTable?#cldf:me2).
+On V-initial nouns, third person is marked by [Morph it3](MorphTable?#cldf:it3), and first and second person combine with the linker [Morpheme ylk](MorphsetTable?#cldf:ylk).
+Some examples are shown in <a class=""exref"" exid=""ctorat-23""end=""ctorat-19"" ></a>.
+
+
+<a id='tab:possprefixes'></a><div class='caption table' id='tab:possprefixes'>Possessive prefixes on nouns</div>
+
+|                                  | _C                                | _V                                                                 |
+|:---------------------------------|:----------------------------------|:-------------------------------------------------------------------|
+| <span class=""smallcaps"">1</span> | [Morph u1](MorphTable?#cldf:u1)   | [Morph u1](MorphTable?#cldf:u1)[Morph ylk](MorphTable?#cldf:ylk)   |
+| <span class=""smallcaps"">2</span> | [Morph me2](MorphTable?#cldf:me2) | [Morph me2](MorphTable?#cldf:me2)[Morph ylk](MorphTable?#cldf:ylk) |
+| <span class=""smallcaps"">3</span> | [Morph i31](MorphTable?#cldf:i31) | [Morph it3](MorphTable?#cldf:it3)                                  |
+
+[Example ctorat-23](ExampleTable?example_no=6#cldf:ctorat-23)
+
+[Example convrisamaj-28](ExampleTable?example_no=7#cldf:convrisamaj-28)
+
+[Example desccasmaj-025](ExampleTable?example_no=8#cldf:desccasmaj-025)
+
+[Example ctorat-46](ExampleTable?example_no=9#cldf:ctorat-46)
+
+[Example ctorat-19](ExampleTable?example_no=10#cldf:ctorat-19)
+
+
+The linker also occurs with (pro-)nominal possessors:
+
+[Example desccasmaj-131](ExampleTable?example_no=11#cldf:desccasmaj-131)
+
+There are some nouns (kinship terms?) that take an apparently older old second person [Morpheme a2](MorphsetTable?#cldf:a2) (<a href='#tab:oldpossprefixes' class='crossref' id='tab:oldpossprefixes'>crossref</a>).
+
+
+<a id='tab:oldpossprefixes'></a><div class='caption table' id='tab:oldpossprefixes'>Archaic possessive prefixes on nouns</div>
+
+|                                  | _C                                | _V                                                               |
+|:---------------------------------|:----------------------------------|:-----------------------------------------------------------------|
+| <span class=""smallcaps"">1</span> | [Morph u1](MorphTable?#cldf:u1)   | [Morph u1](MorphTable?#cldf:u1)[Morph ylk](MorphTable?#cldf:ylk) |
+| <span class=""smallcaps"">2</span> | [Morph a2](MorphTable?#cldf:a2)   | [Morph a2](MorphTable?#cldf:a2)[Morph ylk](MorphTable?#cldf:ylk) |
+| <span class=""smallcaps"">3</span> | [Morph i31](MorphTable?#cldf:i31) | [Morph it3](MorphTable?#cldf:it3)                                |
+
+<span title='find examples for these'>❗️</span>
+
+## Nominal Derivational Morphology {#sec:nounderiv}
+
+* V → N
+    * [Morpheme rinmlz](MorphsetTable?#cldf:rinmlz) ‘act.nzr’
+    * [Morpheme jpepst](MorphsetTable?#cldf:jpepst)
+        * ‘past.abs.nzr’
+        * ‘past.act.nzr?’ 
+    * ?[Morpheme neinf](MorphsetTable?#cldf:neinf) ‘infinitive / generic action nominalizer’
+        * Only intransitive verbs? no also *wanumanë* 'gossip, lie' and *wajtënë* 'dance' 
+    * [Morpheme ninmlz](MorphsetTable?#cldf:ninmlz) ‘a.nzr’
+    * [Morpheme nnmlzpre](MorphsetTable?#cldf:nnmlzpre) ‘o.nzr’
+        * [Morpheme nnmlzpre](MorphsetTable?#cldf:nnmlzpre)V[Morpheme rinmlz](MorphsetTable?#cldf:rinmlz)    ‘nonpast?’
+        * ?? [Morpheme nnmlzpre](MorphsetTable?#cldf:nnmlzpre)V[Morpheme jpepst](MorphsetTable?#cldf:jpepst)    ‘past?’
+    * [Morpheme sapepfv](MorphsetTable?#cldf:sapepfv) ‘abs.nzr’ (contrast with ‑jpë )
+    * [Morpheme toponmlz](MorphsetTable?#cldf:toponmlz) ‘circ.nzr’
+    * [Morpheme pininmlz](MorphsetTable?#cldf:pininmlz) ‘privative.nzr’ ?
+* Adv → N 
+    * [Morpheme minmlz](MorphsetTable?#cldf:minmlz) ‘nzr’
+* Postp → N
+    * [Morpheme anonmlz](MorphsetTable?#cldf:anonmlz) ‘nzr’
+* What about [Morpheme jpepst](MorphsetTable?#cldf:jpepst) on AD forms? Does it derive a noun?
+
+### Misc
+predicative negation of nominalized verb:
+
+[Example convrisamaj-52](ExampleTable?example_no=12#cldf:convrisamaj-52)
+
+
+",4
+verbinfl,Verbal inflection,"<a id='verbinfl'></a>
+## Personal prefixation(?)
+
+
+<a id='tab:verbprefixes'></a><div class='caption table' id='tab:verbprefixes'>Person marking prefixes on verbs</div>
+
+|                                  | <span class=""smallcaps"">intr</span>     | <span class=""smallcaps"">tr</span>       |
+|:---------------------------------|:----------------------------------------|:----------------------------------------|
+| <span class=""smallcaps"">1</span> | [Morpheme u1](MorphsetTable?#cldf:u1)   | [Morpheme u1](MorphsetTable?#cldf:u1)   |
+| <span class=""smallcaps"">2</span> | [Morpheme me2](MorphsetTable?#cldf:me2) | [Morpheme me2](MorphsetTable?#cldf:me2) |
+| <span class=""smallcaps"">3</span> | ∅                                       | [Morpheme t3](MorphsetTable?#cldf:t3)   |
+
+* Absolutive proclitics 
+    * (Check: appears that they are reduced forms, with long vowel?)
+    * *wï= /u=* ‘1S/O’
+    * *më= / mo=* ‘2S/O’
+        * one example of (më=) ‘2A’ on imperative verb 
+* Third person
+    * Ø‑ ‘3S’ with intransitive verbs
+    *   • exception: *ij‑të‑ri* ‘he goes’ plus 2 more
+    * Ø‑ ‘3O’ with transitive verbs with 1A or 2A; also sometimes 3A
+    * *ta=* ‘3A3O’
+        * Not required, but possible
+            * Check: not in alternation with preceding O NP?
+        * *ta=* ‘3O’ attested on one V in the pan‑Cariban “progressive” construction w/ 2nd person A
+* Note that all transitive verbs are consonant‑initial, whether etymologically or not because _y‑_ ‘rel’ is added to all vowel‑initial roots
+    * the _y‑_ disappears when preceded by the detransitivizer 
+
+## Non‑personal prefixation — is there any? Probably not?
+* t‑V‑se is no more — the t‑ is gone (except with tënëse ‘eat’ and tenise ‘drink’)
+  * Any funny forms with the negative?
+    * _i‑_ with intransitive negatives?
+    * _an‑_ with transitive negatives?
+    
+## Tense‑aspect‑mood‑polarity suffixes
+
+
+<a id='tab:verbtam'></a><div class='caption table' id='tab:verbtam'>Verbal TAM suffixes</div>
+
+| Suffix                                          | Function                                 |
+|:------------------------------------------------|:-----------------------------------------|
+| [Morpheme riipfv](MorphsetTable?#cldf:riipfv)   | imperfective                             |
+| [Morpheme jpepst](MorphsetTable?#cldf:jpepst)   | past                                     |
+| [Morpheme sepst](MorphsetTable?#cldf:sepst)     | past 2?                                  |
+| [Morpheme sapepfv](MorphsetTable?#cldf:sapepfv) | perfective?                              |
+| [Morpheme sareinm](MorphsetTable?#cldf:sareinm) | imminent future                          |
+| [Morpheme tepeke](MorphsetTable?#cldf:tepeke)   | <span class=""smallcaps"">prog.intr</span> |
+| [Morpheme pekeon](MorphsetTable?#cldf:pekeon)   | <span class=""smallcaps"">prog.tr</span>   |
+| [Morpheme sareinm](MorphsetTable?#cldf:sareinm) | imminent future                          |
+
+<span title='how do these fit in?'>❓</span>
+
+* [Morpheme janeg](MorphsetTable?#cldf:janeg) ‘<span class=""smallcaps"">neg</span>’
+* [Morph ri](MorphTable?#cldf:ri)=[Morpheme jraneg](MorphsetTable?#cldf:jraneg) ‘<span class=""smallcaps"">ipfv</span>=<span class=""smallcaps"">neg</span>’
+* [Morpheme septcp](MorphsetTable?#cldf:septcp)=[Morpheme jraneg](MorphsetTable?#cldf:jraneg) ‘<span class=""smallcaps"">pst</span>=<span class=""smallcaps"">neg</span>’
+* [Morpheme septcp](MorphsetTable?#cldf:septcp)=[Morpheme pano](MorphsetTable?#cldf:pano) ‘<span class=""smallcaps"">pst</span>=<span class=""smallcaps"">concl</span>’
+* [Morph sajpfv](MorphTable?#cldf:sajpfv)=[Morpheme pano](MorphsetTable?#cldf:pano) ‘<span class=""smallcaps"">pfv</span>=<span class=""smallcaps"">concl</span>’
+* *‑jrama* ‘<span class=""smallcaps"">proh</span>’
+* [Morpheme keimp](MorphsetTable?#cldf:keimp) ‑*të*[Morpheme keimp](MorphsetTable?#cldf:keimp) ‘<span class=""smallcaps"">imp</span> / <span class=""smallcaps"">imp.pl</span>’
+* [Morpheme tamotimp](MorphsetTable?#cldf:tamotimp) / [Morpheme tamotimp](MorphsetTable?#cldf:tamotimp)*ntë*[Morpheme keimp](MorphsetTable?#cldf:keimp) ‘<span class=""smallcaps"">imp</span>.<span class=""smallcaps"">mot</span> / <span class=""smallcaps"">imp</span>.<span class=""smallcaps"">mot.pl</span>’
+* *‑tojpano* ‘<span class=""smallcaps"">fut</span>’
+
+### [Morpheme riipfv](MorphsetTable?#cldf:riipfv)
+
+* allomorphy
+* Diachrony, related to other *-ri*
+* combines with [Morpheme jraneg](MorphsetTable?#cldf:jraneg):
+
+[Example convrisamaj-04](ExampleTable?example_no=13#cldf:convrisamaj-04)
+
+#### Semantics
+gnomic (?) tense:
+
+[Example ctorat-16](ExampleTable?example_no=14#cldf:ctorat-16)
+[Example convrisamaj-06](ExampleTable?example_no=15#cldf:convrisamaj-06)
+[Example convrisamaj-04](ExampleTable?example_no=16#cldf:convrisamaj-04)
+[Example convrisamaj-28](ExampleTable?example_no=17#cldf:convrisamaj-28)
+
+### [Morpheme jpepst](MorphsetTable?#cldf:jpepst)
+
+* allomorphy: none?
+* diachrony: from other *-jpë*
+* negation?
+
+### [Morpheme sepst](MorphsetTable?#cldf:sepst)
+* allomorphy: [Morph septcp](MorphTable?#cldf:septcp)/[Morph cheptcp](MorphTable?#cldf:cheptcp)
+* diachrony: from participle
+* negation?
+
+### [Morpheme sapepfv](MorphsetTable?#cldf:sapepfv)
+* diachrony and distribution:  only occurs on the copula?
+* allomorphy: [Morph sapepfv](MorphTable?#cldf:sapepfv) and [Morph sajpfv](MorphTable?#cldf:sajpfv)
+* negation: on lexical verb <a class=""exref"" exid=""ctoaragrme-38""></a>
+
+[Example ctoaragrme-38](ExampleTable?example_no=18#cldf:ctoaragrme-38)
+[Example ctoaragrme-39](ExampleTable?example_no=19#cldf:ctoaragrme-39)
+[Example ctoaragrme-40](ExampleTable?example_no=20#cldf:ctoaragrme-40)
+
+### [Morpheme sareinm](MorphsetTable?#cldf:sareinm)
+
+[Example ctorat-25](ExampleTable?example_no=21#cldf:ctorat-25)
+[Example ctoaragrme-25](ExampleTable?example_no=22#cldf:ctoaragrme-25)
+
+what about this?
+
+[Example ctorat-19](ExampleTable?example_no=23#cldf:ctorat-19)
+
+## Subordinate Clause markers
+* Nominalizations
+* Adverbial Clauses
+    * [Morpheme septcp](MorphsetTable?#cldf:septcp) ‘supine’
+    * [Morpheme tojpefut](MorphsetTable?#cldf:tojpefut) ‘purpose’
+    * (‑jpë)=tërë ‘after’
+    * [Morpheme tanecncs](MorphsetTable?#cldf:tanecncs) ‘concessive’
+    * [Morpheme sareinm](MorphsetTable?#cldf:sareinm) ‘converb’
+    * [Morpheme yaweloc](MorphsetTable?#cldf:yaweloc) ‘simult’
+    * *‑yapo* ‘neg.purp’
+    * others?
+
+## Number
+* ‑rï=komtomo
+* ‑se=jne=kontomo
+* ‑se=jne=pano (‑se=jne=kontom=pano?)
+
+## Copula / Auxiliary
+  ◦ Paradigm
+  ◦ Any particles? Man, wai, manai, etc?
+  ◦ Past/Perfect particles? nahkë, etc.
+chijpë , wejsapë 
+
+",5
+derbderiv,Verbal roots and stems,"<a id='derbderiv'></a>
+",6
+adverbs,Adverbs,<a id='adverbs'></a>,7
+postp,Postpositions,"<a id='postp'></a>
+## Defining the category
+
+## Inflectional morphology {#sec:postinfl}
+Postpositions take the same inflectional prefixes as nouns ([crossref](ChapterTable?_anchor=sec:nounposssuf#cldf:nouns)). <span title='are there any examples of postpositions inflected for third person?'>❓</span>
+
+
+|                                  |                                         |
+|:---------------------------------|:----------------------------------------|
+| <span class=""smallcaps"">1</span> | [Morpheme u1](MorphsetTable?#cldf:u1)   |
+| <span class=""smallcaps"">2</span> | [Morpheme me2](MorphsetTable?#cldf:me2) |
+| <span class=""smallcaps"">3</span> | [Morpheme i3](MorphsetTable?#cldf:i3)?  |
+
+## Locative Postpositions
+* Clear bipartite Ground+Path
+* Unproductive Bipartite X+Path?
+* Other forms
+
+
+<a id='tab:locpost'></a><div class='caption table' id='tab:locpost'>Locative postpositions</div>
+
+|         | <span class=""smallcaps"">all</span>                                                                        | <span class=""smallcaps"">loc</span>                                                                        |
+|:--------|:----------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------|
+| inside  | [Morpheme yakaall](MorphsetTable?#cldf:yakaall)                                                           | [Morpheme yaweloc](MorphsetTable?#cldf:yaweloc)                                                           |
+| aquatic | [Morpheme 912b3549-888e-4efa-953a-4aab76d5ff49](MorphsetTable?#cldf:912b3549-888e-4efa-953a-4aab76d5ff49) | [Morpheme eb7abf0a-143e-4724-8d4c-85f92ee39be2](MorphsetTable?#cldf:eb7abf0a-143e-4724-8d4c-85f92ee39be2) |
+
+how do these fit in?
+
+* [Morpheme poye-above](MorphsetTable?#cldf:poye-above)
+* [Morpheme po-on-in](MorphsetTable?#cldf:po-on-in)
+* [Morpheme yate-loc](MorphsetTable?#cldf:yate-loc)
+* [Morpheme yapo-neg](MorphsetTable?#cldf:yapo-neg)
+
+
+[Example histpajirdi-186](ExampleTable?example_no=24#cldf:histpajirdi-186)
+
+## Nonlocative Oblique Postpositions 
+* ya ‘erg’
+* ke ‘instr’
+* wanai
+* etc.
+
+## Propositional Postpositions
+* =se ‘desiderative’
+* others?
+",8
+partideo,Particles and Ideophones,<a id='partideo'></a>,9
+phrases,Phrases,<a id='phrases'></a>,10
+nonverbal,Nonverbal predications,<a id='nonverbal'></a>,11
+simpleverb,Simple verbal clauses,<a id='simpleverb'></a>,12
+negation,Negation,<a id='negation'></a>,13
+questions,Questions,<a id='questions'></a>,14
+multiclausal,Multiclausal,<a id='multiclausal'></a>,15
+wordorder,Word order variation,<a id='wordorder'></a>,16
+marked,Pragmatically marked constructions,<a id='marked'></a>,17
+for-testing-purposes,For testing purposes,"<a id='for-testing-purposes'></a>
+## Inline linked entities
+
+### Single
+1. morph: [Morph pljne1](MorphTable?#cldf:pljne1)
+1. morpheme: [Morpheme jnepl](MorphsetTable?#cldf:jnepl)
+1. wordform: [Form asamo-0-ri-jraneg](FormTable?#cldf:asamo-0-ri-jraneg)
+1. text: [Text HistAnFo](TextTable?#cldf:HistAnFo)
+
+### Multiple
+1. morph: [Morph pljne1,ipert](MorphTable?ids=pljne1,ipert#cldf:__all__)
+1. morpheme: [Morpheme jnepl,rupert](MorphsetTable?ids=jnepl,rupert#cldf:__all__)
+1. wordform: [Form asamo-0-ri-jraneg,asamo-0-ri-zero](FormTable?ids=asamo-0-ri-jraneg,asamo-0-ri-zero#cldf:__all__)
+1. text: [Text HistAnFo,CtoRat](TextTable?ids=HistAnFo,CtoRat#cldf:__all__)
+
+## Examples
+
+### Interlinear
+
+[Example ctorat-34](ExampleTable?example_no=25#cldf:ctorat-34)
+
+[Example ctorat-35,ctorat-36](ExampleTable?exid=multiigt&ids=ctorat-35,ctorat-36&example_no=26#cldf:__all__)
+
+### Other
+
+<ol markdown=""block"" class=""example"">
+<li class=""example"" markdown=""block"" id=""test1""><div markdown=""block""> 
+ 
+
+| [Morpheme 1f36b437-2c36-4e00-9e6c-7416f5bebee3](MorphsetTable?#cldf:1f36b437-2c36-4e00-9e6c-7416f5bebee3)   | root   |
+|:------------------------------------------------------------------------------------------------------------|:-------|
+| [Morpheme septcp](MorphsetTable?#cldf:septcp)                                                               | suffix |</div>
+</li>
+</ol>
+
+<ol markdown=""block"" class=""example"">
+<li class=""example"" markdown=""block"" id=""multiparttest"">
+<ol markdown=""block"" class=""subexample"">
+
+<li class=""subexample"" markdown=""block"" id=""test2"">
+<div markdown=""block"">Hello [Morpheme septcp](MorphsetTable?#cldf:septcp) 'PST'</div>
+</li>
+<li class=""subexample"" markdown=""block"" id=""test3"">
+<div markdown=""block"">World
+
+*and* more</div>
+</li>
+
+</ol>
+</li>
+</ol>
+
+### Example references
+
+<a class=""exref"" exid=""ctorat-34""></a>
+
+<a class=""exref"" exid=""multiigt""></a> or <a class=""exref"" exid=""ctorat-36""></a> or even <a class=""exref"" exid=""multiigt""suffix=""a-b"" ></a>
+
+<a class=""exref"" exid=""test1""></a>
+
+<a class=""exref"" exid=""multiparttest""></a>
+
+<a class=""exref"" exid=""test1""end=""multiparttest"" ></a>
+
+
+",18
+ambiguity,Manuscript: Parsing ambiguity,"# Introduction <a id='sec:intro'></a>
+
+* [Language yab](LanguageTable?#cldf:yab) ([yaba1248](https://glottolog.org/resource/languoid/id/yaba1248)) is an underdescribed Cariban language of Venezuela.
+* [matter2022uniparser](sources.bib?with_internal_ref_link&ref#cldf:matter2022uniparser) is a morphological parser for [Language yab](LanguageTable?#cldf:yab), implemented with [uniparser-morph](https://github.com/timarkh/uniparser-morph)
+* for many forms, the parser suggests multiple possible analyses
+* this paper discusses these ambiguous forms, the reasons behind them, and the implemented solutions
+
+# uniparser-morph
+
+* something about uniparser-morph
+
+## uniparser-yawarana
+
+## Analysis elimination mechanisms
+
+* bad analyses
+
+* CG3 rules
+
+# The ambiguities
+
+## Accidental
+* *makë*: 'mother' or ma-kë 'throw!'
+* *yaka*: 'excavate' or 'ALL'
+* *ma*: 'throw-NMLZ' or 'RESTR'?
+    * safe to remove it after [Form 3b92fde8-f646-47dd-b190-18c1ca2d60791](FormTable?#cldf:3b92fde8-f646-47dd-b190-18c1ca2d60791): `REMOVE (""ma"" vt) IF (-1 (""tawara""));` 
+* syllable reduction leads to homophonous [Morpheme 55db3ac7-4711-4980-845e-4b966dff41bc](MorphsetTable?#cldf:55db3ac7-4711-4980-845e-4b966dff41bc) and [Morpheme ccb970b7-980c-4dc2-84fc-f291fd9a6bab](MorphsetTable?#cldf:ccb970b7-980c-4dc2-84fc-f291fd9a6bab)
+* [Morpheme teloc](MorphsetTable?#cldf:teloc) and [Morpheme a5589c54-8bcd-40e2-9d28-b29f1592ccd3](MorphsetTable?#cldf:a5589c54-8bcd-40e2-9d28-b29f1592ccd3)
+* [Morpheme yakaall](MorphsetTable?#cldf:yakaall) and [Morpheme 02b332df-f7da-4749-9720-574666e70d71](MorphsetTable?#cldf:02b332df-f7da-4749-9720-574666e70d71) and [Morpheme 75b2df1a-11a1-44ad-8e38-88a6acf07322](MorphsetTable?#cldf:75b2df1a-11a1-44ad-8e38-88a6acf07322)
+* [Morph t3](MorphTable?#cldf:t3)[Morph 9d95bdea-d5de-48df-8e71-8e49d8ce18090](MorphTable?#cldf:9d95bdea-d5de-48df-8e71-8e49d8ce18090) '3-rice' or just [Morph 62e12d1c-dd51-4a74-af84-2c7b0b87d0c10](MorphTable?#cldf:62e12d1c-dd51-4a74-af84-2c7b0b87d0c10) 'say'?
+
+## Polysemy
+* *ya*: ERG or OBL
+* *-se*: PTCP/PST/SUP
+* -*ri*: NMLZ/IPFV
+* -*sapë*: NMLZ/PFV
+* -*tojpe*: PURP/FUT
+
+These are interesting.
+In some instances, the nominal analysis can be chosen based on the following word:
+
+* [Morpheme esspe](MorphsetTable?#cldf:esspe)
+
+[Example anfoperso-03](ExampleTable?example_no=1#cldf:anfoperso-03)
+
+
+## FLEx artifacts
+* *enijpëtërë*: 'one' with or without EMP
+* [Morph 2d4fe89b-c49d-4d19-86ae-209f48c5b2250](MorphTable?#cldf:2d4fe89b-c49d-4d19-86ae-209f48c5b2250) or [Morph 970de200-9d4a-4b20-8fe0-cf7db81112520](MorphTable?#cldf:970de200-9d4a-4b20-8fe0-cf7db81112520)[Morph pstjpe1](MorphTable?#cldf:pstjpe1)?
+* [Morph e5878716-bc48-4e01-b82d-d9c6e602e5901](MorphTable?#cldf:e5878716-bc48-4e01-b82d-d9c6e602e5901) and [Morph reemp-0](MorphTable?#cldf:reemp-0) or [Morph f72955ca-fde8-40d4-ae99-ae03e9dfd2880](MorphTable?#cldf:f72955ca-fde8-40d4-ae99-ae03e9dfd2880)?
+* *entë* 'here' or *en-të* '3INAN.PROX-LOC'?
+
+",
