@@ -100,7 +100,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ExampleTable",
-            "dc:extent": 847,
+            "dc:extent": 951,
             "tableSchema": {
                 "columns": [
                     {
@@ -224,7 +224,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#FormTable",
-            "dc:extent": 39,
+            "dc:extent": 89,
             "tableSchema": {
                 "columns": [
                     {
@@ -314,7 +314,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ParameterTable",
-            "dc:extent": 938,
+            "dc:extent": 961,
             "tableSchema": {
                 "columns": [
                     {
@@ -347,7 +347,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#MediaTable",
-            "dc:extent": 385,
+            "dc:extent": 390,
             "tableSchema": {
                 "columns": [
                     {
@@ -463,7 +463,7 @@
             "url": "languages.csv"
         },
         {
-            "dc:extent": 69,
+            "dc:extent": 167,
             "tableSchema": {
                 "columns": [
                     {
@@ -560,7 +560,7 @@
             "url": "FormSlices"
         },
         {
-            "dc:extent": 58,
+            "dc:extent": 245,
             "tableSchema": {
                 "columns": [
                     {
@@ -861,7 +861,7 @@
             "url": "PhonemeTable"
         },
         {
-            "dc:extent": 8,
+            "dc:extent": 9,
             "tableSchema": {
                 "columns": [
                     {
