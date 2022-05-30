@@ -22,7 +22,7 @@
             "dc:relation": "requirements.txt"
         }
     ],
-    "rdf:ID": "yawarana-dataset",
+    "rdf:ID": "yawarana-sketch",
     "rdf:type": "http://www.w3.org/ns/dcat#Distribution",
     "dialect": {
         "commentPrefix": null
