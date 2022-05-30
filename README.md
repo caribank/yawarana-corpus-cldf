@@ -1,7 +1,8 @@
 # A digital sketch grammar of Yawarana
 
-The most recent version of this dataset is served [here](https://fl.mt/yawarana-sketch).
-The `pylingdocs` source is available [here](https://github.com/fmatter/yawarana-sketch).
+The most recent release of this dataset is served [here](https://fl.mt/yawarana-sketch).
+The document was written with [`pylingdocs`](https://github.com/fmatter/pylingdocs/).
+The corresponding source is available [here](https://github.com/fmatter/yawarana-sketch).
 
 ## Running the web app
 You can run an app serving this version of the CLDF dataset as follows:
@@ -10,7 +11,7 @@ You can run an app serving this version of the CLDF dataset as follows:
 2. download the source code of the CLLD app: https://github.com/fmatter/yawarana-sketch-clld
 3. enter app folder: `cd /path/to/yawarana-sketch-clld`
 2. install app: `pip install -e .`
-3. initialize database: `clld initdb development.ini --cldf /path/to/the/yawarana/sketch/cldf/metadata.json`
+3. initialize database: `clld initdb development.ini --cldf /path/to/yawarana-sketch-cldf/cldf/metadata.json`
 4. run server: `pserve --reload development.ini`
 
 There is no audio for the moment, sorry.
