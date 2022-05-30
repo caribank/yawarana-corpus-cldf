@@ -38,6 +38,7 @@ def slugify(input_str):
     else:
         return slug
 
+
 def custom_spec(component, column, separator):
     path = (
         Path(pycldf.__file__)
@@ -77,41 +78,62 @@ for filename in Path("/home/florianm/Downloads/New_Dictionary_Clippings").iterdi
     word_audios.setdefault(leggo, [])
     word_audios[leggo].append(filename)
 
-version = yaml.load(open("/home/florianm/Dropbox/research/cariban/yawarana/yaw_sketch/metadata.yaml"), Loader=yaml.SafeLoader)["version"]
+version = yaml.load(
+    open("/home/florianm/Dropbox/research/cariban/yawarana/yaw_sketch/metadata.yaml"),
+    Loader=yaml.SafeLoader,
+)["version"]
 
 with CLDFWriter(spec) as writer:
     writer.cldf.properties.setdefault("rdf:ID", "yawarana-sketch")
-    writer.cldf.properties.setdefault("dc:title", f"A digital sketch grammar of Yawarana (v{version})")
-    writer.cldf.properties.setdefault("dc:bibliographicCitation", "Matter, Florian, 2022. A digital grammar sketch of Yawarana")
     writer.cldf.properties.setdefault(
-        "dc:description", open(
+        "dc:title", f"A digital sketch grammar of Yawarana (v{version})"
+    )
+    writer.cldf.properties.setdefault(
+        "dc:bibliographicCitation",
+        "Matter, Florian, 2022. A digital grammar sketch of Yawarana",
+    )
+    writer.cldf.properties.setdefault(
+        "dc:description",
+        open(
             "/home/florianm/Dropbox/research/cariban/yawarana/yaw-sketch-landing-page/output/clld/content.txt",
             "r",
-        ).read()
+        ).read(),
     )
-    writer.cldf.properties["dc:license"] = "https://creativecommons.org/licenses/by-sa/4.0/"
+    writer.cldf.properties[
+        "dc:license"
+    ] = "https://creativecommons.org/licenses/by-sa/4.0/"
     writer.cldf.properties["dc:identifier"] = "https://fl.mt/yawarana-sketch"
 
-    doc_path = Path("/home/florianm/Dropbox/research/cariban/yawarana/yaw_sketch/output/clld/")
+    doc_path = Path(
+        "/home/florianm/Dropbox/research/cariban/yawarana/yaw_sketch/output/clld/"
+    )
     writer.cldf.add_component(cldf_md("ChapterTable"))
     chapters = pd.read_csv(doc_path / "chapters.csv")
     for chapter in chapters.to_dict("records"):
-        writer.objects["ChapterTable"].append({"ID": chapter["ID"], "Name": chapter["title"], "Number": chapter["Number"], "Description": open(doc_path / chapter["Filename"], "r").read()})
+        writer.objects["ChapterTable"].append(
+            {
+                "ID": chapter["ID"],
+                "Name": chapter["title"],
+                "Number": chapter["Number"],
+                "Description": open(doc_path / chapter["Filename"], "r").read(),
+            }
+        )
 
-    writer.objects["ChapterTable"].append({
-        "ID": "ambiguity",
-        "Name": "Manuscript: Parsing ambiguity",
-        "Description": open(
-            "/home/florianm/Dropbox/research/cariban/yawarana/yawarana-parsing-ambiguity/clld_output.txt",
-            "r",
-        ).read()
-})
+    writer.objects["ChapterTable"].append(
+        {
+            "ID": "ambiguity",
+            "Name": "Manuscript: Parsing ambiguity",
+            "Description": open(
+                "/home/florianm/Dropbox/research/cariban/yawarana/yawarana-parsing-ambiguity/clld_output.txt",
+                "r",
+            ).read(),
+        }
+    )
 
     writer.cldf.add_component(cldf_md("ContributorTable"))
     for contributor in pd.read_csv("etc/contributors.csv").to_dict("records"):
         contributor["Name"] = contributor["First"] + " " + contributor["Given"]
         writer.objects["ContributorTable"].append(contributor)
-
 
     log.info("Adding components")
     # set up components
@@ -125,15 +147,19 @@ with CLDFWriter(spec) as writer:
             "dc:description": "The text to which this record belongs",
             "datatype": "string",
         },
-{
-                "name": "Source",
-                "required": False,
-                "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#source",
-                "datatype": {
-                    "base": "string"
-                },
-                "separator": ";"
-            }
+        {
+            "name": "Part",
+            "dc:extent": "singlevalued",
+            "dc:description": "Position in the text",
+            "datatype": "integer",
+        },
+        {
+            "name": "Source",
+            "required": False,
+            "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#source",
+            "datatype": {"base": "string"},
+            "separator": ";",
+        },
     )
     writer.cldf.add_component("FormTable")
     writer.cldf.add_component("ParameterTable")
@@ -182,8 +208,6 @@ with CLDFWriter(spec) as writer:
         axis=1,
     )
 
-
-
     texts = {}
     for f in Path("../yawarana_corpus/text_notes/").glob("*.yaml"):
         with open(f) as file:
@@ -191,6 +215,7 @@ with CLDFWriter(spec) as writer:
             texts[text_data.pop("id")] = text_data
 
     bad_ids = ["GrMe"]
+
     def get_id(row):
         if row["ID"] not in bad_ids:
             return row["ID"].replace(".", "-").lower()
@@ -200,8 +225,16 @@ with CLDFWriter(spec) as writer:
     bare_examples = cread("../yawarana_corpus/flexports/yab_texts.csv")
     bare_examples["ID"] = bare_examples.apply(get_id, axis=1)
     bare_examples = bare_examples.merge(example_add, on="ID", how="left")
+    bare_examples["Translated_Text"] = bare_examples.apply(
+        lambda x: x["Translation_en"]
+        if not (pd.isnull(x["Translation_en"]) or x["Translation_en"] == "")
+        else x["Translated_Text"],
+        axis=1,
+    )
     bare_examples = bare_examples[~(bare_examples["ID"].isin(examples["ID"]))]
-    bare_examples["Primary_Text"] = bare_examples["Sentence"].apply(lambda x: ortho_strip(x, additions=["%", "¿", "###", "#"]))
+    bare_examples["Primary_Text"] = bare_examples["Sentence"].apply(
+        lambda x: ortho_strip(x, additions=["%", "¿", "###", "#"])
+    )
     bare_examples.drop(columns=["Segmentation", "Gloss"], inplace=True)
     bare_examples = bare_examples[(bare_examples["Text_ID"]).isin(texts.keys())]
 
@@ -365,16 +398,13 @@ with CLDFWriter(spec) as writer:
     # word forms are treated as identical based on their morphological makeup
     # i.e., one form can have different meanings, depending on the context
 
-
     # different form-meaning pairs, to avoid sorting IDs every time (slow)
     form_meanings = {}
     # the actual word forms, which can have different meanings
     forms = {}
 
-
-
     # these are some wordforms collected for the dictionary, parsed with uniparser
-    dic_wordforms  = cread(
+    dic_wordforms = cread(
         "/home/florianm/Dropbox/development/uniparser-yawarana/var/parsed_forms.csv"
     )
     for wf in dic_wordforms.to_dict("records"):
@@ -400,7 +430,9 @@ with CLDFWriter(spec) as writer:
             elif wf["Gloss"] not in forms[slug]["Parameter_ID"]:
                 forms[slug]["Parameter_ID"].append(meaning_slug)
             igt = pyigt.IGT(wf["Segmented"], wf["Gloss"])
-            for morpheme_ids, word in zip(wf["Morpheme_IDs"], igt.morphosyntactic_words):
+            for morpheme_ids, word in zip(
+                wf["Morpheme_IDs"], igt.morphosyntactic_words
+            ):
                 for morph_count, (morph_id, glossed_morph) in enumerate(
                     zip(morph_ids, word.glossed_morphemes)
                 ):
@@ -417,7 +449,6 @@ with CLDFWriter(spec) as writer:
         else:
             slug = form_meanings[form_slug]
     # print(dic_wordforms)
-
 
     for ex in examples.to_dict("records"):
         audio_path = example_audios / f'{ex["ID"]}.wav'
@@ -503,7 +534,9 @@ with CLDFWriter(spec) as writer:
     for phoneme in phonemes.to_dict(orient="records"):
         if phoneme["IPA"] not in done_phonemes:
             done_phonemes.append(phoneme["IPA"])
-            writer.objects["PhonemeTable"].append({"ID": phoneme["ID"], "Name": phoneme["IPA"]})
+            writer.objects["PhonemeTable"].append(
+                {"ID": phoneme["ID"], "Name": phoneme["IPA"]}
+            )
 
     for meaning_id, meaning in meanings.items():
         writer.objects["ParameterTable"].append({"ID": meaning_id, "Name": meaning})
