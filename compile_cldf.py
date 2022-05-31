@@ -24,6 +24,7 @@ import json
 bare_slugs = 0
 zero_slugged = {}
 
+
 def slugify(input_str):
     global bare_slugs
     global zero_slugged
@@ -444,7 +445,7 @@ with CLDFWriter(spec) as writer:
     for wf in dic_wordforms.to_dict("records"):
         form_slug = slugify(wf["Segmented"] + ":" + wf["Gloss"])
         if wf["Gloss"] in dangerous_glosses:
-            meaning_slug = slugify(wf["Gloss"])+"-1"
+            meaning_slug = slugify(wf["Gloss"]) + "-1"
         else:
             meaning_slug = slugify(wf["Gloss"])
         if meaning_slug not in meanings:
@@ -463,7 +464,11 @@ with CLDFWriter(spec) as writer:
             slug = slugify("-".join(morph_ids))
             form_meanings[form_slug] = slug
             if slug not in forms:
-                forms[slug] = {"Form": wf["Segmented"], "Parameter_ID": [meaning_slug], "POS": get_pos(wf["Gramm"], pos_list=pos_list)}
+                forms[slug] = {
+                    "Form": wf["Segmented"],
+                    "Parameter_ID": [meaning_slug],
+                    "POS": get_pos(wf["Gramm"], pos_list=pos_list),
+                }
             elif wf["Gloss"] not in forms[slug]["Parameter_ID"]:
                 forms[slug]["Parameter_ID"].append(meaning_slug)
             igt = pyigt.IGT(wf["Segmented"], wf["Gloss"])
@@ -512,7 +517,7 @@ with CLDFWriter(spec) as writer:
             word_count += 1
             form_slug = slugify(word.word + ":" + word.gloss)
             if word.gloss in dangerous_glosses:
-                meaning_slug = slugify(word.gloss)+"-1"
+                meaning_slug = slugify(word.gloss) + "-1"
             else:
                 meaning_slug = slugify(word.gloss)
             if meaning_slug not in meanings:
