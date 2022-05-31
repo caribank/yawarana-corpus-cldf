@@ -1,0 +1,22 @@
+version: 0.0.2.draft
+title: A digital sketch grammar of Yawarana
+authors:
+-   family-names: Matter
+    given-names: Florian
+    orcid: https://orcid.org/0000-0002-2545-5154
+    email: florianmatter@gmail.com
+    affiliation: University of Oregon and University of Bern
+-   family-names: Cáceres Arandia
+    given-names: Natalia
+-   family-names: Gildea
+    given-names: Spike
+abstract: This is a digital sketch grammar of Yawarana, an endangered language of the Cariban family, spoken in Venezuela.
+url: https://github.com/fmatter/yawarana-sketch-cldf/tree/0.0.2.draft
+keywords:
+- keyword1
+- keyword2
+license: CC-BY-SA-4.0
+type: dataset
+message: Created with [pylingdocs](https://github.com/fmatter/pylingdocs/)
+date-released: '2022-05-04'
+cff-version: 1.2.0
