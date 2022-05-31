@@ -3,7 +3,7 @@ o2-noti-potential-partner-0,yab,o-noti,o n o t i,,,2-potential-partner,n
 make-mother-0,yab,makë,m a k ə,,,mother,n
 yaerg-0,yab,ya,j a,,,erg,postp
 taro-say-2-ri-zero,yab,ta-∅,t a,,,say-ipfv,vt
-taji-0,yab,taji,t a h i,,,slug-1,ideo
+taji-0,yab,taji,t a h i,,,slug-1,
 reemp-0,yab,rë,r ə,,,emp,postp
 waijta-mouse-0,yab,waijta,w a i h t a,,,mouse,n
 enijpetere-one-0,yab,enijpëtërë,e n i h p ə t ə r ə,,,one,adv
@@ -118,7 +118,7 @@ tawara-too-3-janeg,yab,tawa-ja,t a w a h a,,,too-neg,adv
 yarika-laugh-0-ri-zero-janeg,yab,yarika-∅-ja,j a r i k a h a,,,laugh-ipfv-neg,vi
 esene-see-self-1-ri-zero-janeg,yab,sene-∅-ja,s e n e h a,,,see-self-ipfv-neg,vi
 ta3-ita-hear-0-podes,yab,ta-ita-po,t a i t a p o,,,3p-hear-des,vt
-chi-cop-0-ri,yab,chi-ri,t͡ʃ i r i,,,cop-ipfv,
+chi-cop-0-ri,yab,chi-ri,t͡ʃ i r i,,,cop-ipfv,vi
 senejkastay-0-ri-ri,yab,senejka-rï,s e n e h k a r ɨ,,,remain-ipfv,vi
 u1-ylk-iwiti-house-1,yab,u-y-ïwïj,u j ɨ w ɨ h,,,1-lk-house,n
 suku-0-ripert,yab,suku-ri,s u k u r i,,,urine-pert,n
@@ -132,7 +132,7 @@ ire-dem-0,yab,irë,i r ə,,,dem,pn
 nwadance-0,yab,nwa,n w a,,,dance,n
 tewisantomo-3pro-pl-0,yab,tëwïsantomo,t ə w ɨ s a n t o m o,,,3pro-pl,pn
 yaruwa-laugh-0-tepeke,yab,yaruwa-tëpëkë,j a r u w a t ə p ə k ə,,,laugh-prog-intr,vi
-chi-cop-0-ri-zero-kontomopl,yab,chi-∅-kontomo,t͡ʃ i k o n t o m o,,,cop-ipfv-pl,
+chi-cop-0-ri-zero-kontomopl,yab,chi-∅-kontomo,t͡ʃ i k o n t o m o,,,cop-ipfv-pl,vi
 ini-see-0-ri-zero,yab,ini-∅,i n i,,,see-ipfv,vt
 waimu-talk-0-ri-zero-kontomopl,yab,waimu-∅-kontomo,w a i m u k o n t o m o,,,talk-ipfv-pl,vi
 yaobl-0,yab,ya,j a,,,obl,postp
@@ -151,7 +151,7 @@ u1-yaerg-0,yab,u-ya,u j a,,,1-erg,postp
 aniki-who-0,yab,aniki,a n i k i,,,who,pn
 5a18649c-d742-45d3-975d-e9618da883bd1-ri-ri,yab,përemekï-rï,p ə r e m e k ɨ r ɨ,,,talk-ipfv,vi
 chiyakono-friend-1,yab,chiyakon,t͡ʃ i j a k o n,,,friend,n
-chi-cop-0-ri-zero,yab,chi-∅,t͡ʃ i,,,cop-ipfv,
+chi-cop-0-ri-zero,yab,chi-∅,t͡ʃ i,,,cop-ipfv,vi
 taro-say-2-ri,yab,ta-ri,t a r i,,,say-ipfv,vt
 ware-thus-3,yab,nwa,n w a,,,thus,adv
 a2-najmo-grandmother-0-ripert,yab,a-najmo-ri,a n a h m o r i,,,2-grandmother-pert,n
