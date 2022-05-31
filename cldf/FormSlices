@@ -82,8 +82,8 @@ u-suj-ta-1-urine-vbz-ipfv-2,u1-suku-1-tavbz-ri-zero,tavbz,2,vbz,1-urine-vbz-ipfv
 u-suj-ta-1-urine-vbz-ipfv-3,u1-suku-1-tavbz-ri-zero,ri-zero,3,ipfv,1-urine-vbz-ipfv
 ne-ints-0,intsne-0,intsne-0,0,ints,ints
 konopo-rain-0,konopo-rain-0,konopo-rain-0,0,rain,rain
-wej-sare-cop-inm-0,wej-cop-0-sareinm,wej-cop-0,0,cop,cop-inm
-wej-sare-cop-inm-1,wej-cop-0-sareinm,sareinm,1,inm,cop-inm
+wej-sare-cop-imn-0,wej-cop-0-sareimn,wej-cop-0,0,cop,cop-imn
+wej-sare-cop-imn-1,wej-cop-0-sareimn,sareimn,1,imn,cop-imn
 tawejka-to-daylight-ipfv-0,efec7abd-f480-462a-9648-e2434e3bee0d0-ri-zero,efec7abd-f480-462a-9648-e2434e3bee0d0,0,to-daylight,to-daylight-ipfv
 tawejka-to-daylight-ipfv-1,efec7abd-f480-462a-9648-e2434e3bee0d0-ri-zero,ri-zero,1,ipfv,to-daylight-ipfv
 waijta-tomo-jpe-mouse-pl-pst-0,waijta-mouse-0-tomopl-pstjpe1,waijta-mouse-0,0,mouse,mouse-pl-pst
@@ -237,7 +237,6 @@ ini-see-ipfv-1,ini-see-0-ri-zero,ri-zero,1,ipfv,see-ipfv
 waimu-kontomo-talk-ipfv-pl-0,waimu-talk-0-ri-zero-kontomopl,waimu-talk-0,0,talk,talk-ipfv-pl
 waimu-kontomo-talk-ipfv-pl-1,waimu-talk-0-ri-zero-kontomopl,ri-zero,1,ipfv,talk-ipfv-pl
 waimu-kontomo-talk-ipfv-pl-2,waimu-talk-0-ri-zero-kontomopl,kontomopl,2,pl,talk-ipfv-pl
-ya-obl-0,yaobl-0,yaobl-0,0,obl,obl
 i-jpe-do-pst-0,i-do-0-pstjpe1,i-do-0,0,do,do-pst
 i-jpe-do-pst-1,i-do-0-pstjpe1,pstjpe1,1,pst,do-pst
 yaruwa-kontomo-laugh-ipfv-pl-0,yaruwa-laugh-0-ri-zero-kontomopl,yaruwa-laugh-0,0,laugh,laugh-ipfv-pl

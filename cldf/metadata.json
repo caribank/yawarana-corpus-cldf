@@ -7,7 +7,7 @@
     ],
     "dc:bibliographicCitation": "Matter, Florian, 2022. A digital grammar sketch of Yawarana",
     "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#Generic",
-    "dc:description": "#### The corpus\n\nA corpus of [texts](texts) forms the basis of this grammar sketch.\nThey were collected by [Natalia C\u00e1ceres-Arandia](https://pages.uoregon.edu/nataliac/) in the course of the NSF funded project ['Documenting Linguistic Structure and Language Change in Yawarana'](https://nsf.gov/awardsearch/showAward?AWD_ID=1500714&HistoricalAwards=false).\nThey were transcribed in ELAN and enriched with morphological annotation by [uniparser-yawarana](https://github.com/fmatter/uniparser-yawarana/) ([matter2022uniparser](sources.bib?with_internal_ref_link&ref#cldf:matter2022uniparser))\nThe following excerpt showcases the features of the corpus:\n\n[Example ctorat-03](ExampleTable?example_no=1#cldf:ctorat-03)\n\nThe first object line is a link to the entire text record ('sentence', 'example'...).\nThe second line contains links to individual word forms.\nThe third line contains links to individual morphs.\nThe link in parentheses leads to the (con-)text of the record.\nAudio associated with the record is shown below it.\nTranslations are partially in English, partially in the contact language, Spanish.\n\nWords that uniparser-yawarana was unable to parse are glossed with `***`:\n\n[Example convrisamaj-28](ExampleTable?example_no=2#cldf:convrisamaj-28)\n\nWords with multiple possible analyses (where none has been confirmed manually yet) are glossed with `?`:\n\n[Example anfoperso-01](ExampleTable?example_no=3#cldf:anfoperso-01)\n\n#### The 'dictionary'\nThe dictionary part of this app contains different kinds of entities.\nAt the moment, these are morphemes, morphs, and word forms.\nThey relate to each other as follows: word forms are forms that occur in the annotated corpus or were uttered in elicitation.\nAt the moment, there are no unattested (but existent) word forms.\nWord forms are composed of morphs, which in turn belong to morphemes.\nWord forms as well as morphemes and their morphs can have different meanings, depending on the context.\n\nTo illustrate: the form [](FormTable#cldf:f90c63ed-bd4c-43b7-b9f9-2709d3ff0ddd1-septcp) 's/he slept' is composed of the morphs [Morph f90c63ed-bd4c-43b7-b9f9-2709d3ff0ddd1](MorphTable?#cldf:f90c63ed-bd4c-43b7-b9f9-2709d3ff0ddd1) and [Morph septcp](MorphTable?#cldf:septcp), which in turn belong to the morphemes [Morpheme f90c63ed-bd4c-43b7-b9f9-2709d3ff0ddd](MorphsetTable?#cldf:f90c63ed-bd4c-43b7-b9f9-2709d3ff0ddd) and [Morpheme septcp](MorphsetTable?#cldf:septcp).\nAll of the preceding links lead to detail views of these entities, with information like morphological structure, associated word forms, and, most importantly, tokens from the corpus.\n\n#### The grammar\n...is under construction.\nThe text is written with [pylingdocs](https://github.com/fmatter/pylingdocs), and is available as individual chapters under [documents](documents).\nA PDF version can be found [here](download).\n\n",
+    "dc:description": "This is a digital description of Yawarana.",
     "dc:identifier": "https://fl.mt/yawarana-sketch",
     "dc:license": "https://creativecommons.org/licenses/by-sa/4.0/",
     "dc:source": "sources.bib",
@@ -29,7 +29,7 @@
     },
     "tables": [
         {
-            "dc:extent": 19,
+            "dc:extent": 20,
             "tableSchema": {
                 "columns": [
                     {
@@ -230,7 +230,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#FormTable",
-            "dc:extent": 159,
+            "dc:extent": 158,
             "tableSchema": {
                 "columns": [
                     {
@@ -337,7 +337,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ParameterTable",
-            "dc:extent": 243,
+            "dc:extent": 252,
             "tableSchema": {
                 "columns": [
                     {
@@ -486,7 +486,7 @@
             "url": "languages.csv"
         },
         {
-            "dc:extent": 280,
+            "dc:extent": 279,
             "tableSchema": {
                 "columns": [
                     {
@@ -615,7 +615,7 @@
             "url": "POSTable"
         },
         {
-            "dc:extent": 443,
+            "dc:extent": 437,
             "tableSchema": {
                 "columns": [
                     {
@@ -709,7 +709,7 @@
             "url": "ExampleSlices"
         },
         {
-            "dc:extent": 265,
+            "dc:extent": 277,
             "tableSchema": {
                 "columns": [
                     {
@@ -806,7 +806,7 @@
             "url": "MorphTable"
         },
         {
-            "dc:extent": 191,
+            "dc:extent": 202,
             "tableSchema": {
                 "columns": [
                     {

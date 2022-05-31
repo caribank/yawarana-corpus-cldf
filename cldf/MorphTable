@@ -14,7 +14,7 @@ peess,yab,-pe,,,peess,ess
 pijkedim,yab,-pïjkë,,,pijkedim,dim
 podes,yab,-po,,,podes,des
 pokobecause,yab,poko,,,pokobecause,because
-sareinm,yab,-sarë,,,sareinm,inm
+sareimn,yab,-sarë,,,sareimn,imn
 ta3,yab,ta-,,,t3,3p; 3
 t3,yab,t-,,,t3,3p; 3
 it3,yab,t-,,,i3,3
@@ -159,11 +159,15 @@ waimu-talk-0,yab,waimu,,,waimu-talk,talk
 achi-wilderness-0,yab,achi,,,achi-wilderness,wilderness
 achi-wilderness-1,yab,asi,,,achi-wilderness,wilderness
 ajpachi-undergrowth-0,yab,ajpachi,,,ajpachi-undergrowth,undergrowth
+ana-1-3pro-0,yab,ana,,,ana-1-3pro,1-3pro
 chika-bite-0,yab,chika,,,chika-bite,bite
 chiyakono-friend-0,yab,chiyakono,,,chiyakono-friend,friend
 chiyakono-friend-1,yab,chiyakon,,,chiyakono-friend,friend
 chiyakono-friend-2,yab,chiyakom,,,chiyakono-friend,friend
 ejne-1-2pro-0,yab,ejnë,,,ejne-1-2pro,1-2pro
+eni-prox-inan-0,yab,eni,,,eni-prox-inan,prox-inan
+eni-prox-inan-1,yab,seni,,,eni-prox-inan,prox-inan
+enijne-prox-inan-pl-0,yab,enijne,,,enijne-prox-inan-pl,prox-inan-pl
 ini-see-0,yab,ini,,,ini-see,see
 ini-see-1,yab,yini,,,ini-see,see
 ini-see-2,yab,in,,,ini-see,see
@@ -172,9 +176,17 @@ ita-hear-0,yab,ita,,,ita-hear,hear
 ka-q-0,yab,ka,,,ka-q,q
 kawe-high-0,yab,kawë,,,kawe-high,high
 konopo-rain-0,yab,konopo,,,konopo-rain,rain
+kere-prox-anim-0,yab,kërë,,,kere-prox-anim,prox-anim
+keresantomo-prox-anim-pl-0,yab,kërësantomo,,,keresantomo-prox-anim-pl,prox-anim-pl
+michisantomo-med-inan-pl-0,yab,michisantomo,,,michisantomo-med-inan-pl,med-inan-pl
+michitomo-med-inan-pl-0,yab,michitomo,,,michitomo-med-inan-pl,med-inan-pl
+michi-med-anim-0,yab,michí,,,michi-med-anim,med-anim
+misi-med-inan-0,yab,misi,,,misi-med-inan,med-inan
 monkontomo-2pl-pro-0,yab,monkontomo,,,monkontomo-2pl-pro,2pl-pro
 monkontomo-2pl-pro-1,yab,mokontomo,,,monkontomo-2pl-pro,2pl-pro
 morone-hurting-0,yab,morone,,,morone-hurting,hurting
+mejnijne-dist-inan-pl-0,yab,mëjnijne,,,mejnijne-dist-inan-pl,dist-inan-pl
+mejni-dist-inan-0,yab,mëjnï,,,mejni-dist-inan,dist-inan
 mekisantomo-dist-anim-pl-0,yab,mëkïsantomo,,,mekisantomo-dist-anim-pl,dist-anim-pl
 mekisantomo-dist-anim-pl-1,yab,mejkïsantomo,,,mekisantomo-dist-anim-pl,dist-anim-pl
 mere-2pro-0,yab,mërë,,,mere-2pro,2pro

@@ -28,7 +28,7 @@ pycldf==1.25.1
 pycountry==22.3.5
 pyglottolog==3.7.0
 pyigt==1.2.0
--e git+ssh://git@github.com/fmatter/pylacoan.git@073e1df4d21e813db77d85adaa5ce33f172c7a36#egg=pylacoan
+-e git+ssh://git@github.com/fmatter/pylacoan.git@73fdd32d5a785d04de61c6f99977e54ccd6f7042#egg=pylacoan
 -e git+ssh://git@github.com/fmatter/pylingdocs.git@1a773f8382783452f3de9a504eb48a0cb7aebedc#egg=pylingdocs
 pyramid==2.0
 python-dateutil==2.8.2

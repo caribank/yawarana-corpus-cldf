@@ -57,7 +57,10 @@ This is a fairly standard Cariban phoneme inventory, only departing from the mai
 
 ## Historical Considerations {#sec:histphono}
 ",2
-POS,Distinguishing parts of speech in Yawarana,<a id='POS'></a>,3
+POS,Distinguishing parts of speech in Yawarana,"<a id='POS'></a>
+<span title='should this be a separate chapter?'>❓</span>
+
+",3
 nouns,Nouns,"<a id='nouns'></a>
 ## Pronouns {#sec:pronouns}
 The personal pronouns of [Language yab](LanguageTable?#cldf:yab) are shown in <a href='#tab:pronouns' class='crossref' id='tab:pronouns'>crossref</a>.
@@ -67,13 +70,13 @@ Note that the plural marker [Morpheme kontomopl](MorphsetTable?#cldf:kontomopl) 
 
 <a id='tab:pronouns'></a><div class='caption table' id='tab:pronouns'>Pronouns</div>
 
-|                                    | <span class=""smallcaps"">sg</span>                                                                         | <span class=""smallcaps"">pl</span>                                                                         |
-|:-----------------------------------|:----------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------|
-| <span class=""smallcaps"">1</span>   | [Morpheme 2b5fa12b-1e2c-4dcb-92bd-48dfa2a32842](MorphsetTable?#cldf:2b5fa12b-1e2c-4dcb-92bd-48dfa2a32842) |                                                                                                           |
-| <span class=""smallcaps"">1+2</span> |                                                                                                           | [Morpheme 660cbd87-a405-4b7b-80cd-f9d5875e20a0](MorphsetTable?#cldf:660cbd87-a405-4b7b-80cd-f9d5875e20a0) |
-| <span class=""smallcaps"">1+3</span> |                                                                                                           | [Morpheme 9af2823b-63a9-4aa0-affc-07d31dde4aaa](MorphsetTable?#cldf:9af2823b-63a9-4aa0-affc-07d31dde4aaa) |
-| <span class=""smallcaps"">2</span>   | [Morpheme 25af4d03-e9ab-4253-a134-df1ec0e477a1](MorphsetTable?#cldf:25af4d03-e9ab-4253-a134-df1ec0e477a1) | [Morph 6834a422-bece-4f7c-9e98-baa8ba7f2f381](MorphTable?#cldf:6834a422-bece-4f7c-9e98-baa8ba7f2f381)     |
-| <span class=""smallcaps"">3</span>   | [Morpheme 587b3015-391a-4db2-b4b9-0e92563a5332](MorphsetTable?#cldf:587b3015-391a-4db2-b4b9-0e92563a5332) | [Morpheme 31f8c6fb-23e7-448a-8b2c-4cf698a01a6d](MorphsetTable?#cldf:31f8c6fb-23e7-448a-8b2c-4cf698a01a6d) |
+|                                    | <span class=""smallcaps"">sg</span>                   | <span class=""smallcaps"">pl</span>                                       |
+|:-----------------------------------|:----------------------------------------------------|:------------------------------------------------------------------------|
+| <span class=""smallcaps"">1</span>   | [Morpheme wire-1pro](MorphsetTable?#cldf:wire-1pro) |                                                                         |
+| <span class=""smallcaps"">1+2</span> |                                                     | [Morpheme ejne-1-2pro](MorphsetTable?#cldf:ejne-1-2pro)                 |
+| <span class=""smallcaps"">1+3</span> |                                                     | [Morpheme ana-1-3pro](MorphsetTable?#cldf:ana-1-3pro)                   |
+| <span class=""smallcaps"">2</span>   | [Morpheme mere-2pro](MorphsetTable?#cldf:mere-2pro) | [Morpheme monkontomo-2pl-pro](MorphsetTable?#cldf:monkontomo-2pl-pro)   |
+| <span class=""smallcaps"">3</span>   | [Morpheme tewi-3pro](MorphsetTable?#cldf:tewi-3pro) | [Morpheme tewisantomo-3pro-pl](MorphsetTable?#cldf:tewisantomo-3pro-pl) |
 
 Short forms of the first and second person pronouns can occur as proclitics attaching to nouns to indicate possessor (<a href='#sec:nominalperson' class='crossref' id='sec:nominalperson'>crossref</a>), attached to verbs to indicate subject or object (described in [crossref](ChapterTable?_anchor=verbinfl#cldf:verbinfl)), or attached to postpositions to indicate object of the postposition (described in [crossref](ChapterTable?_anchor=sec:postinfl#cldf:postp)):
 
@@ -91,12 +94,12 @@ The third person demonstrative pronouns or articles are shown in <a href='#tab:p
 
 <a id='tab:pronouns3'></a><div class='caption table' id='tab:pronouns3'>Demonstrative pronouns / articles</div>
 
-|                                     | <span class=""smallcaps"">anim</span>                                                                       |                                                                                                           | <span class=""smallcaps"">inan</span>                                                                       |                                                                                                                     |
-|:------------------------------------|:----------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------|
-|                                     | <span class=""smallcaps"">sg</span>                                                                         | <span class=""smallcaps"">pl</span>                                                                         | <span class=""smallcaps"">sg</span>                                                                         | <span class=""smallcaps"">pl</span>                                                                                   |
-| <span class=""smallcaps"">prox</span> | [Morpheme b224d7f6-73d8-4e37-83f0-424d1f9a842c](MorphsetTable?#cldf:b224d7f6-73d8-4e37-83f0-424d1f9a842c) | *kërësantomo*                                                                                             | [Morpheme f3d65599-8188-4f15-b65e-c5844f4b5879](MorphsetTable?#cldf:f3d65599-8188-4f15-b65e-c5844f4b5879) | [Morpheme f3d65599-8188-4f15-b65e-c5844f4b5879](MorphsetTable?#cldf:f3d65599-8188-4f15-b65e-c5844f4b5879)-*santomo* |
-| medial? near?                       | [Morpheme 93cb02af-47f8-4312-af77-94d3b8adc0a7](MorphsetTable?#cldf:93cb02af-47f8-4312-af77-94d3b8adc0a7) |                                                                                                           | [Morpheme 77c34bc8-9e7f-446c-8495-82a2837ee83d](MorphsetTable?#cldf:77c34bc8-9e7f-446c-8495-82a2837ee83d) | [Morpheme 77c34bc8-9e7f-446c-8495-82a2837ee83d](MorphsetTable?#cldf:77c34bc8-9e7f-446c-8495-82a2837ee83d)-*santomo* |
-| <span class=""smallcaps"">dist</span> | [Morpheme cfc3b598-85fe-4b07-b7e3-bf1cecd682dc](MorphsetTable?#cldf:cfc3b598-85fe-4b07-b7e3-bf1cecd682dc) | [Morpheme ce4c16fd-2aa7-44cf-b831-5a11b944d304](MorphsetTable?#cldf:ce4c16fd-2aa7-44cf-b831-5a11b944d304) | [Morpheme efcd0f9e-3ea6-401e-8598-945a664617c4](MorphsetTable?#cldf:efcd0f9e-3ea6-401e-8598-945a664617c4) | [Morpheme efcd0f9e-3ea6-401e-8598-945a664617c4](MorphsetTable?#cldf:efcd0f9e-3ea6-401e-8598-945a664617c4)-*santomo* |
+|                                     | <span class=""smallcaps"">anim</span>                           |                                                                                   | <span class=""smallcaps"">inan</span>                                                                                       |                                                                                                                                                                 |
+|:------------------------------------|:--------------------------------------------------------------|:----------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                                     | <span class=""smallcaps"">sg</span>                             | <span class=""smallcaps"">pl</span>                                                 | <span class=""smallcaps"">sg</span>                                                                                         | <span class=""smallcaps"">pl</span>                                                                                                                               |
+| <span class=""smallcaps"">prox</span> | [Morpheme kere-prox-anim](MorphsetTable?#cldf:kere-prox-anim) | [Morpheme keresantomo-prox-anim-pl](MorphsetTable?#cldf:keresantomo-prox-anim-pl) | [Morpheme eni-prox-inan](MorphsetTable?#cldf:eni-prox-inan)                                                               | [Morpheme enijne-prox-inan-pl](MorphsetTable?#cldf:enijne-prox-inan-pl)                                                                                         |
+| medial? near?                       | [Morpheme michi-med-anim](MorphsetTable?#cldf:michi-med-anim) |                                                                                   | [Morpheme misi-med-inan](MorphsetTable?#cldf:misi-med-inan) / [Morpheme mere-med-inan](MorphsetTable?#cldf:mere-med-inan) | [Morpheme michisantomo-med-inan-pl](MorphsetTable?#cldf:michisantomo-med-inan-pl) / [Morpheme michitomo-med-inan-pl](MorphsetTable?#cldf:michitomo-med-inan-pl) |
+| <span class=""smallcaps"">dist</span> | *mëkï*?                                                       | [Morpheme mekisantomo-dist-anim-pl](MorphsetTable?#cldf:mekisantomo-dist-anim-pl) | [Morpheme mejni-dist-inan](MorphsetTable?#cldf:mejni-dist-inan)                                                           | [Morpheme mejnijne-dist-inan-pl](MorphsetTable?#cldf:mejnijne-dist-inan-pl)                                                                                     |
 
 None of the demonstrative pronouns have shortened, phonologically bound counterparts.
 
@@ -287,10 +290,10 @@ verbinfl,Verbal inflection,"<a id='verbinfl'></a>
 | [Morpheme jpepst](MorphsetTable?#cldf:jpepst)   | past                                     |
 | [Morpheme sepst](MorphsetTable?#cldf:sepst)     | past 2?                                  |
 | [Morpheme sapepfv](MorphsetTable?#cldf:sapepfv) | perfective?                              |
-| [Morpheme sareinm](MorphsetTable?#cldf:sareinm) | imminent future                          |
+| [Morpheme sareimn](MorphsetTable?#cldf:sareimn) | imminent future                          |
 | [Morpheme tepeke](MorphsetTable?#cldf:tepeke)   | <span class=""smallcaps"">prog.intr</span> |
 | [Morpheme pekeon](MorphsetTable?#cldf:pekeon)   | <span class=""smallcaps"">prog.tr</span>   |
-| [Morpheme sareinm](MorphsetTable?#cldf:sareinm) | imminent future                          |
+| [Morpheme sareimn](MorphsetTable?#cldf:sareimn) | imminent future                          |
 
 <span title='how do the following ones fit in?'>❓</span>
 
@@ -353,7 +356,7 @@ not specified for tense, just imperfective aspect:
 
 [Example ctorat-19](ExampleTable?example_no=21#cldf:ctorat-19)
 
-### [Morpheme sareinm](MorphsetTable?#cldf:sareinm)
+### [Morpheme sareimn](MorphsetTable?#cldf:sareimn)
 
 [Example ctorat-25](ExampleTable?example_no=22#cldf:ctorat-25)
 [Example ctoaragrme-25](ExampleTable?example_no=23#cldf:ctoaragrme-25)
@@ -369,10 +372,12 @@ not specified for tense, just imperfective aspect:
     * [Morpheme tojpefut](MorphsetTable?#cldf:tojpefut) ‘purpose’
     * (‑jpë)=tërë ‘after’
     * [Morpheme tanecncs](MorphsetTable?#cldf:tanecncs) ‘concessive’
-    * [Morpheme sareinm](MorphsetTable?#cldf:sareinm) ‘converb’
+    * [Morpheme sareimn](MorphsetTable?#cldf:sareimn) ‘converb’
     * [Morpheme yaweloc](MorphsetTable?#cldf:yaweloc) ‘simult’
     * *‑yapo* ‘neg.purp’
     * others?
+
+What about [Morpheme podes](MorphsetTable?#cldf:podes)?
 
 ## Number
 * _‑rï=kontomo_
@@ -389,6 +394,8 @@ not specified for tense, just imperfective aspect:
 derbderiv,Verbal roots and stems,"<a id='derbderiv'></a>
 ",6
 adverbs,Adverbs,"<a id='adverbs'></a>
+* [POS adv](POSTable?#cldf:adv)
+
 ## Inflection
 
 * presumably no prefixation
@@ -401,6 +408,8 @@ adverbs,Adverbs,"<a id='adverbs'></a>
 ## Derived adverbs {#sec:derivedadv}
 ",7
 postp,Postpositions,"<a id='postp'></a>
+* [POS postp](POSTable?#cldf:postp)
+
 ## Defining the category
 
 ## Inflectional morphology {#sec:postinfl}
@@ -445,11 +454,25 @@ Postpositions take the same inflectional prefixes as nouns ([crossref](ChapterTa
 * =se ‘desiderative’
 * others?
 ",8
-partideo,Particles and Ideophones,<a id='partideo'></a>,9
+partideo,Particles and Ideophones,"<a id='partideo'></a>
+* [POS part](POSTable?#cldf:part)
+* [POS ideo](POSTable?#cldf:ideo)
+",9
 phrases,Phrases,<a id='phrases'></a>,10
 nonverbal,Nonverbal predications,<a id='nonverbal'></a>,11
 simpleverb,Simple verbal clauses,<a id='simpleverb'></a>,12
-negation,Negation,<a id='negation'></a>,13
+negation,Negation,"<a id='negation'></a>
+<span title='should this really be a separate chapter?'>❓</span>
+
+Relevant morphemes:
+
+* [Morpheme janeg](MorphsetTable?#cldf:janeg)
+* [Morpheme jraneg](MorphsetTable?#cldf:jraneg)
+* [Morpheme jnarineg](MorphsetTable?#cldf:jnarineg)
+* [Morpheme kempinire](MorphsetTable?#cldf:kempinire)
+* [Morpheme pinire-nothing](MorphsetTable?#cldf:pinire-nothing)
+* [Morpheme b97a0ed7-7ceb-4cab-83d8-5b30b45d9a59](MorphsetTable?#cldf:b97a0ed7-7ceb-4cab-83d8-5b30b45d9a59)
+",13
 questions,Questions,<a id='questions'></a>,14
 multiclausal,Multiclausal,<a id='multiclausal'></a>,15
 wordorder,Word order variation,<a id='wordorder'></a>,16
@@ -520,6 +543,47 @@ for-testing-purposes,For testing purposes,"<a id='for-testing-purposes'></a>
 
 
 ",18
+landingpage,Landing page,"#### The corpus
+
+A corpus of [texts](texts) forms the basis of this grammar sketch.
+They were collected by [Natalia Cáceres-Arandia](https://pages.uoregon.edu/nataliac/) in the course of the NSF funded project ['Documenting Linguistic Structure and Language Change in Yawarana'](https://nsf.gov/awardsearch/showAward?AWD_ID=1500714&HistoricalAwards=false).
+They were transcribed in ELAN and enriched with morphological annotation by [uniparser-yawarana](https://github.com/fmatter/uniparser-yawarana/) ([matter2022uniparser](sources.bib?with_internal_ref_link&ref#cldf:matter2022uniparser))
+The following excerpt showcases the features of the corpus:
+
+[Example ctorat-03](ExampleTable?example_no=1#cldf:ctorat-03)
+
+The first object line is a link to the entire text record ('sentence', 'example'...).
+The second line contains links to individual word forms.
+The third line contains links to individual morphs.
+The link in parentheses leads to the (con-)text of the record.
+Audio associated with the record is shown below it.
+Translations are partially in English, partially in the contact language, Spanish.
+
+Words that uniparser-yawarana was unable to parse are glossed with `***`:
+
+[Example convrisamaj-28](ExampleTable?example_no=2#cldf:convrisamaj-28)
+
+Words with multiple possible analyses (where none has been confirmed manually yet) are glossed with `?`:
+
+[Example anfoperso-01](ExampleTable?example_no=3#cldf:anfoperso-01)
+
+#### The 'dictionary'
+The dictionary part of this app contains different kinds of entities.
+At the moment, these are morphemes, morphs, and word forms.
+They relate to each other as follows: word forms are forms that occur in the annotated corpus or were uttered in elicitation.
+At the moment, there are no unattested (but existent) word forms.
+Word forms are composed of morphs, which in turn belong to morphemes.
+Word forms as well as morphemes and their morphs can have different meanings, depending on the context.
+
+To illustrate: the form [](FormTable#cldf:f90c63ed-bd4c-43b7-b9f9-2709d3ff0ddd1-septcp) 's/he slept' is composed of the morphs [Morph f90c63ed-bd4c-43b7-b9f9-2709d3ff0ddd1](MorphTable?#cldf:f90c63ed-bd4c-43b7-b9f9-2709d3ff0ddd1) and [Morph septcp](MorphTable?#cldf:septcp), which in turn belong to the morphemes [Morpheme f90c63ed-bd4c-43b7-b9f9-2709d3ff0ddd](MorphsetTable?#cldf:f90c63ed-bd4c-43b7-b9f9-2709d3ff0ddd) and [Morpheme septcp](MorphsetTable?#cldf:septcp).
+All of the preceding links lead to detail views of these entities, with information like morphological structure, associated word forms, and, most importantly, tokens from the corpus.
+
+#### The grammar
+...is under construction.
+The text is written with [pylingdocs](https://github.com/fmatter/pylingdocs), and is available as individual chapters under [documents](documents).
+A PDF version can be found [here](download).
+
+",
 ambiguity,Manuscript: Parsing ambiguity,"# Introduction <a id='sec:intro'></a>
 
 * [Language yab](LanguageTable?#cldf:yab) ([yaba1248](https://glottolog.org/resource/languoid/id/yaba1248)) is an underdescribed Cariban language of Venezuela.

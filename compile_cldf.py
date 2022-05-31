@@ -93,11 +93,7 @@ with CLDFWriter(spec) as writer:
         "Matter, Florian, 2022. A digital grammar sketch of Yawarana",
     )
     writer.cldf.properties.setdefault(
-        "dc:description",
-        open(
-            "/home/florianm/Dropbox/research/cariban/yawarana/yaw-sketch-landing-page/output/clld/content.txt",
-            "r",
-        ).read(),
+        "dc:description", "This is a digital description of Yawarana."
     )
     writer.cldf.properties[
         "dc:license"
@@ -119,6 +115,17 @@ with CLDFWriter(spec) as writer:
                 "Description": open(doc_path / chapter["Filename"], "r").read(),
             }
         )
+
+    writer.objects["ChapterTable"].append(
+        {
+            "ID": "landingpage",
+            "Name": "Landing page",
+            "Description": open(
+                "/home/florianm/Dropbox/research/cariban/yawarana/yaw-sketch-landing-page/output/clld/content.txt",
+                "r",
+            ).read(),
+        }
+    )
 
     writer.objects["ChapterTable"].append(
         {
