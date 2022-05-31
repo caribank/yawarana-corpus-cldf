@@ -84,6 +84,7 @@ version = yaml.load(
 )["version"]
 
 with CLDFWriter(spec) as writer:
+    log.info("Dataset properties")
     writer.cldf.properties.setdefault("rdf:ID", "yawarana-sketch")
     writer.cldf.properties.setdefault(
         "dc:title", f"A digital sketch grammar of Yawarana (v{version})"
@@ -104,6 +105,7 @@ with CLDFWriter(spec) as writer:
     ] = "https://creativecommons.org/licenses/by-sa/4.0/"
     writer.cldf.properties["dc:identifier"] = "https://fl.mt/yawarana-sketch"
 
+    log.info("Chapters and authors")
     doc_path = Path(
         "/home/florianm/Dropbox/research/cariban/yawarana/yaw_sketch/output/clld/"
     )
@@ -135,7 +137,7 @@ with CLDFWriter(spec) as writer:
         contributor["Name"] = contributor["First"] + " " + contributor["Given"]
         writer.objects["ContributorTable"].append(contributor)
 
-    log.info("Adding components")
+    log.info("Components")
     # set up components
     writer.cldf.add_component("ExampleTable")
     # examples can refer to texts
@@ -276,7 +278,7 @@ with CLDFWriter(spec) as writer:
     ]
     writer.cldf.add_sources(*sources)
 
-    log.info("Writing morphemes")
+    log.info("Morphemes")
 
     # the distinct meanings
     meanings = {}
@@ -380,6 +382,8 @@ with CLDFWriter(spec) as writer:
             }
         )
 
+    log.info("Text")
+
     for text_id, text_data in texts.items():
         metadata = {x: text_data[x] for x in ["genre", "tags"] if x in text_data}
         writer.objects["TextTable"].append(
@@ -392,6 +396,8 @@ with CLDFWriter(spec) as writer:
                 "Metadata": metadata,
             }
         )
+
+    log.info("Wordforms")
 
     # print(id_dict)
     # store all word forms in the corpus
@@ -449,6 +455,8 @@ with CLDFWriter(spec) as writer:
         else:
             slug = form_meanings[form_slug]
     # print(dic_wordforms)
+
+    log.info("Examples")
 
     for ex in examples.to_dict("records"):
         audio_path = example_audios / f'{ex["ID"]}.wav'
@@ -521,6 +529,8 @@ with CLDFWriter(spec) as writer:
             )
         writer.objects["ExampleTable"].append(ex)
 
+    log.info("Audio")
+
     for ex in bare_examples.to_dict("records"):
         audio_path = example_audios / f'{ex["ID"]}.wav'
         if audio_path.is_file():
@@ -528,6 +538,8 @@ with CLDFWriter(spec) as writer:
         if ex["Primary_Text"] == "":
             continue
         writer.objects["ExampleTable"].append(ex)
+
+    log.info("Phonemes")
 
     phonemes = cread("etc/phonemes.csv")
     done_phonemes = []
@@ -537,6 +549,8 @@ with CLDFWriter(spec) as writer:
             writer.objects["PhonemeTable"].append(
                 {"ID": phoneme["ID"], "Name": phoneme["IPA"]}
             )
+
+    log.info("Meanings")
 
     for meaning_id, meaning in meanings.items():
         writer.objects["ParameterTable"].append({"ID": meaning_id, "Name": meaning})

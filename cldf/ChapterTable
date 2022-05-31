@@ -114,7 +114,7 @@ Nouns in Yawarana may bear suffixes for possession (<a href='#sec:nounposssuf' c
 ### Suffixes for possessed (<span class=""smallcaps"">poss</span>) and non-possessed (<span class=""smallcaps"">nposs</span>) nouns {#sec:nounposssuf}
 
 In the possession construction in Yawarana, the possessor noun occurs immediately preceding the possessed noun, which is the head of the possession phrase. Alternatively, the possessor can appear as a bound pronominal clitic (first & second person) or a prefix (third person) on the possessed noun. The possessor noun is never marked (for instance, with genitive case), but the possessed noun (the head) is often marked by a lexically specified ‘possessed’ suffix, either [Morpheme rupert](MorphsetTable?#cldf:rupert) '<span class=""smallcaps"">pert</span>' or [Morpheme tipert](MorphsetTable?#cldf:tipert) ‘pos’. Unpossessed nouns generally are unmarked, but some 15 nouns bear the suffix [Morpheme tenpert](MorphsetTable?#cldf:tenpert) ‘<span class=""smallcaps"">npert</span>’ when they appear without a possessor. 
-Examples <a class=""exref"" exid=""onlypossessed""end=""unsuffixednouns"" ></a> illustrate the possible patterns of markedness for nouns when possessed and unpossessed. In the first category, which contains the vast majority of nouns in our corpus, the unpossessed noun is unmarked, but when possessed the suffix -ri ‘pos’ occurs <a class=""exref"" exid=""onlypossessed""></a>. A handful of nouns is marked with -ri/-ti ‘pos’ when possessed and with -të ‘npos’ when not possessed <a class=""exref"" exid=""diffpossessed""></a>. Another handful is unmarked when possessed and marked with -të when not possessed <a class=""exref"" exid=""suffunpossessed""></a>. The fourth logical possibility, in which the noun bears no marker of possession (or non-possession) whether possessed or unpossessed, contains very few members (only one attested so far); in this case, the difference is marked only by the presence or absence of a possessive prefix or free-form possessor <a class=""exref"" exid=""unsuffixednouns""></a>. 
+Examples <a class=""exref"" example_id=""onlypossessed""end=""unsuffixednouns"" ></a> illustrate the possible patterns of markedness for nouns when possessed and unpossessed. In the first category, which contains the vast majority of nouns in our corpus, the unpossessed noun is unmarked, but when possessed the suffix -ri ‘pos’ occurs <a class=""exref"" example_id=""onlypossessed""></a>. A handful of nouns is marked with -ri/-ti ‘pos’ when possessed and with -të ‘npos’ when not possessed <a class=""exref"" example_id=""diffpossessed""></a>. Another handful is unmarked when possessed and marked with -të when not possessed <a class=""exref"" example_id=""suffunpossessed""></a>. The fourth logical possibility, in which the noun bears no marker of possession (or non-possession) whether possessed or unpossessed, contains very few members (only one attested so far); in this case, the difference is marked only by the presence or absence of a possessive prefix or free-form possessor <a class=""exref"" example_id=""unsuffixednouns""></a>. 
 
 <span title='where did these come from? elicitation? is there a record?'>❓</span>
 
@@ -174,7 +174,7 @@ What conditions the choice of suffix is not clear as of yet.
 Person prefixes on nouns are conditioned by the initial segment (<a href='#tab:possprefixes' class='crossref' id='tab:possprefixes'>crossref</a>).
 C-initial nouns take third person [Morph i31](MorphTable?#cldf:i31), and first and second person are bare [Morph u1](MorphTable?#cldf:u1) and [Morph me2](MorphTable?#cldf:me2).
 On V-initial nouns, third person is marked by [Morph it3](MorphTable?#cldf:it3), and first and second person combine with the linker [Morpheme ylk](MorphsetTable?#cldf:ylk).
-Some examples are shown in <a class=""exref"" exid=""ctorat-23""end=""ctorat-19"" ></a>.
+Some examples are shown in <a class=""exref"" example_id=""ctorat-23""end=""ctorat-19"" ></a>.
 
 
 <a id='tab:possprefixes'></a><div class='caption table' id='tab:possprefixes'>Possessive prefixes on nouns</div>
@@ -342,14 +342,14 @@ not specified for tense, just imperfective aspect:
 ### [Morpheme sapepfv](MorphsetTable?#cldf:sapepfv)
 * diachrony and distribution:  only occurs on the copula?
 * allomorphy: [Morph sapepfv](MorphTable?#cldf:sapepfv) and [Morph sajpfv](MorphTable?#cldf:sajpfv)
-* negation: with [Morpheme janeg](MorphsetTable?#cldf:janeg) on lexical verb <a class=""exref"" exid=""ctoaragrme-38""end=""ctoaragrme-40"" ></a>
+* negation: with [Morpheme janeg](MorphsetTable?#cldf:janeg) on lexical verb <a class=""exref"" example_id=""ctoaragrme-38""end=""ctoaragrme-40"" ></a>
 <span title='semantics?'>❓</span>
 
 [Example ctoaragrme-38](ExampleTable?example_no=18#cldf:ctoaragrme-38)
 [Example ctoaragrme-39](ExampleTable?example_no=19#cldf:ctoaragrme-39)
 [Example ctoaragrme-40](ExampleTable?example_no=20#cldf:ctoaragrme-40)
 
-* what about <a class=""exref"" exid=""ctorat-19""></a>? is that existential negation?
+* what about <a class=""exref"" example_id=""ctorat-19""></a>? is that existential negation?
 
 [Example ctorat-19](ExampleTable?example_no=21#cldf:ctorat-19)
 
@@ -508,15 +508,15 @@ for-testing-purposes,For testing purposes,"<a id='for-testing-purposes'></a>
 
 ### Example references
 
-<a class=""exref"" exid=""ctorat-34""></a>
+<a class=""exref"" example_id=""ctorat-34""></a>
 
-<a class=""exref"" exid=""multiigt""></a> or <a class=""exref"" exid=""ctorat-36""></a> or even <a class=""exref"" exid=""multiigt""suffix=""a-b"" ></a>
+<a class=""exref"" example_id=""multiigt""></a> or <a class=""exref"" example_id=""ctorat-36""></a> or even <a class=""exref"" example_id=""multiigt""suffix=""a-b"" ></a>
 
-<a class=""exref"" exid=""test1""></a>
+<a class=""exref"" example_id=""test1""></a>
 
-<a class=""exref"" exid=""multiparttest""></a>
+<a class=""exref"" example_id=""multiparttest""></a>
 
-<a class=""exref"" exid=""test1""end=""multiparttest"" ></a>
+<a class=""exref"" example_id=""test1""end=""multiparttest"" ></a>
 
 
 ",18
