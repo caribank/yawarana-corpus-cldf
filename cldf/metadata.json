@@ -230,7 +230,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#FormTable",
-            "dc:extent": 39,
+            "dc:extent": 161,
             "tableSchema": {
                 "columns": [
                     {
@@ -320,7 +320,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ParameterTable",
-            "dc:extent": 938,
+            "dc:extent": 243,
             "tableSchema": {
                 "columns": [
                     {
@@ -353,7 +353,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#MediaTable",
-            "dc:extent": 385,
+            "dc:extent": 406,
             "tableSchema": {
                 "columns": [
                     {
@@ -469,7 +469,7 @@
             "url": "languages.csv"
         },
         {
-            "dc:extent": 69,
+            "dc:extent": 283,
             "tableSchema": {
                 "columns": [
                     {
@@ -566,7 +566,7 @@
             "url": "FormSlices"
         },
         {
-            "dc:extent": 58,
+            "dc:extent": 447,
             "tableSchema": {
                 "columns": [
                     {
@@ -660,7 +660,7 @@
             "url": "ExampleSlices"
         },
         {
-            "dc:extent": 1361,
+            "dc:extent": 265,
             "tableSchema": {
                 "columns": [
                     {
@@ -757,7 +757,7 @@
             "url": "MorphTable"
         },
         {
-            "dc:extent": 1048,
+            "dc:extent": 191,
             "tableSchema": {
                 "columns": [
                     {

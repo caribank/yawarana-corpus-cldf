@@ -249,6 +249,9 @@ with CLDFWriter(spec) as writer:
     flexemes = flexemes[~(flexemes["Form"].str.contains("-"))]
     flexemes = flexemes[~(flexemes["Form"].str.contains("="))]
     flexemes["Language_ID"] = "yab"
+    include = open("/home/florianm/Dropbox/development/uniparser-yawarana/compile_parser/include.txt", "r").read().split("\n")
+    include = [x.split(" #")[0] for x in include]
+    flexemes = flexemes[(flexemes["ID"].isin(include))]
 
     manual_lexemes = cread(
         "/home/florianm/Dropbox/development/uniparser-yawarana/compile_parser/lexicon/lexemes.csv"
@@ -311,7 +314,7 @@ with CLDFWriter(spec) as writer:
 
     for i, lexeme in enumerate(manual_lexemes.to_dict(orient="records")):
         if lexeme["ID"] == "":
-            morpheme_id = slugify(f'{lexeme["Form"]}-{lexeme["Gloss_en"]}')
+            morpheme_id = slugify(f'{lexeme["Form"].split("; ")[0]}-{lexeme["Gloss_en"].split("; ")[0]}')
         else:
             morpheme_id = lexeme["ID"]
         if morpheme_id in id_dict:
