@@ -10,9 +10,8 @@ import pybtex
 from pycldf.sources import Source
 from pylingdocs.models import Morpheme, Morph, Text
 from pylingdocs.cldf import metadata as cldf_md
-from clld_morphology_plugin.cldf import MorphTable, MorphsetTable, FormSlices
-from pylacoan.helpers import ortho_strip
-
+from clld_morphology_plugin.cldf import MorphTable, MorphsetTable, FormSlices, POSTable
+from pylacoan.helpers import ortho_strip, get_pos
 
 from slugify import slugify as sslug
 import pyigt
@@ -24,7 +23,6 @@ import json
 
 bare_slugs = 0
 zero_slugged = {}
-
 
 def slugify(input_str):
     global bare_slugs
@@ -168,10 +166,18 @@ with CLDFWriter(spec) as writer:
     writer.cldf.add_component("MediaTable")
     writer.cldf.add_component("LanguageTable")
     writer.cldf.add_component(FormSlices)
+    writer.cldf.add_component(POSTable)
     writer.cldf.add_component(cldf_md("ExampleSlices"))
     writer.cldf.remove_columns("FormTable", "Parameter_ID")
     writer.cldf.add_columns(
-        "FormTable", custom_spec("FormTable", "Parameter_ID", separator="; ")
+        "FormTable",
+        custom_spec("FormTable", "Parameter_ID", separator="; "),
+        {
+            "name": "POS",
+            "dc:extent": "singlevalued",
+            "dc:description": "Part of speech",
+            "datatype": "string",
+        },
     )
 
     # custom metadata from pylingdocs models
@@ -181,6 +187,7 @@ with CLDFWriter(spec) as writer:
     writer.cldf.add_component(Text.cldf_metadata())
 
     # various foreign keys
+    writer.cldf.add_foreign_key("FormTable", "POS", "POSTable", "ID")
     writer.cldf.add_foreign_key("MorphTable", "Morpheme_ID", "MorphsetTable", "ID")
     writer.cldf.add_foreign_key("FormSlices", "Form_ID", "FormTable", "ID")
     writer.cldf.add_foreign_key("FormSlices", "Morph_ID", "MorphTable", "ID")
@@ -194,6 +201,9 @@ with CLDFWriter(spec) as writer:
     writer.cldf.add_foreign_key("ExampleTable", "Text_ID", "TextTable", "ID")
 
     log.info("Reading data")
+
+    pos = cread("etc/pos.csv")
+    pos_list = list(pos["ID"])
 
     examples = cread("../yawarana_corpus/yawarana_pylacoan/output/parsed.csv")
     examples["Sentence"] = examples["Sentence"].replace("", "***")
@@ -249,7 +259,14 @@ with CLDFWriter(spec) as writer:
     flexemes = flexemes[~(flexemes["Form"].str.contains("-"))]
     flexemes = flexemes[~(flexemes["Form"].str.contains("="))]
     flexemes["Language_ID"] = "yab"
-    include = open("/home/florianm/Dropbox/development/uniparser-yawarana/compile_parser/include.txt", "r").read().split("\n")
+    include = (
+        open(
+            "/home/florianm/Dropbox/development/uniparser-yawarana/compile_parser/include.txt",
+            "r",
+        )
+        .read()
+        .split("\n")
+    )
     include = [x.split(" #")[0] for x in include]
     flexemes = flexemes[(flexemes["ID"].isin(include))]
 
@@ -280,6 +297,10 @@ with CLDFWriter(spec) as writer:
         Source.from_entry(k, e) for k, e in bib.entries.items() if k in found_refs
     ]
     writer.cldf.add_sources(*sources)
+
+    log.info("POS")
+    for p in pos.to_dict("records"):
+        writer.objects["POSTable"].append(p)
 
     log.info("Morphemes")
 
@@ -314,7 +335,9 @@ with CLDFWriter(spec) as writer:
 
     for i, lexeme in enumerate(manual_lexemes.to_dict(orient="records")):
         if lexeme["ID"] == "":
-            morpheme_id = slugify(f'{lexeme["Form"].split("; ")[0]}-{lexeme["Gloss_en"].split("; ")[0]}')
+            morpheme_id = slugify(
+                f'{lexeme["Form"].split("; ")[0]}-{lexeme["Gloss_en"].split("; ")[0]}'
+            )
         else:
             morpheme_id = lexeme["ID"]
         if morpheme_id in id_dict:
@@ -412,13 +435,18 @@ with CLDFWriter(spec) as writer:
     # the actual word forms, which can have different meanings
     forms = {}
 
+    dangerous_glosses = ["all"]
+
     # these are some wordforms collected for the dictionary, parsed with uniparser
     dic_wordforms = cread(
         "/home/florianm/Dropbox/development/uniparser-yawarana/var/parsed_forms.csv"
     )
     for wf in dic_wordforms.to_dict("records"):
         form_slug = slugify(wf["Segmented"] + ":" + wf["Gloss"])
-        meaning_slug = slugify(wf["Gloss"])
+        if wf["Gloss"] in dangerous_glosses:
+            meaning_slug = slugify(wf["Gloss"])+"-1"
+        else:
+            meaning_slug = slugify(wf["Gloss"])
         if meaning_slug not in meanings:
             meanings[meaning_slug] = wf["Translation"]
         if form_slug not in form_meanings:
@@ -435,7 +463,7 @@ with CLDFWriter(spec) as writer:
             slug = slugify("-".join(morph_ids))
             form_meanings[form_slug] = slug
             if slug not in forms:
-                forms[slug] = {"Form": wf["Segmented"], "Parameter_ID": [meaning_slug]}
+                forms[slug] = {"Form": wf["Segmented"], "Parameter_ID": [meaning_slug], "POS": get_pos(wf["Gramm"], pos_list=pos_list)}
             elif wf["Gloss"] not in forms[slug]["Parameter_ID"]:
                 forms[slug]["Parameter_ID"].append(meaning_slug)
             igt = pyigt.IGT(wf["Segmented"], wf["Gloss"])
@@ -478,10 +506,15 @@ with CLDFWriter(spec) as writer:
                 if "=" in word:
                     ex["Morpheme_IDs"].insert(wc, ex["Morpheme_IDs"][wc])
         word_count = -1
-        for morpheme_ids, word in zip(ex["Morpheme_IDs"], igt.morphosyntactic_words):
+        for morpheme_ids, word, gramm in zip(
+            ex["Morpheme_IDs"], igt.morphosyntactic_words, ex["Gramm"].split(" ")
+        ):
             word_count += 1
             form_slug = slugify(word.word + ":" + word.gloss)
-            meaning_slug = slugify(word.gloss)
+            if word.gloss in dangerous_glosses:
+                meaning_slug = slugify(word.gloss)+"-1"
+            else:
+                meaning_slug = slugify(word.gloss)
             if meaning_slug not in meanings:
                 meanings[meaning_slug] = word.gloss
             if form_slug not in form_meanings:
@@ -501,8 +534,14 @@ with CLDFWriter(spec) as writer:
                     continue
                 slug = slugify("-".join(morph_ids))
                 form_meanings[form_slug] = slug
+                if " " in gramm:
+                    print(ex["Gramm"], "iii", gramm)
                 if slug not in forms:
-                    forms[slug] = {"Form": word.word, "Parameter_ID": [meaning_slug]}
+                    forms[slug] = {
+                        "Form": word.word,
+                        "Parameter_ID": [meaning_slug],
+                        "POS": get_pos(gramm, pos_list=pos_list),
+                    }
                 elif word.gloss not in forms[slug]["Parameter_ID"]:
                     forms[slug]["Parameter_ID"].append(meaning_slug)
                 for morph_count, (morph_id, glossed_morph) in enumerate(
@@ -558,6 +597,7 @@ with CLDFWriter(spec) as writer:
     for meaning_id, meaning in meanings.items():
         writer.objects["ParameterTable"].append({"ID": meaning_id, "Name": meaning})
 
+    log.info("Forms")
     for form_id, form in forms.items():
         writer.objects["FormTable"].append(
             {
@@ -565,6 +605,7 @@ with CLDFWriter(spec) as writer:
                 "Language_ID": "yab",
                 "Parameter_ID": form["Parameter_ID"],
                 "Form": form["Form"],
+                "POS": form.get("POS", ""),
                 "Segments": segmentizer.parse_string(form["Form"]).split(" "),
             }
         )

@@ -118,7 +118,7 @@ kerejpe-old-0,02c99f34-5b27-4ff8-819a-dc4a34dca14e0,02c99f34-5b27-4ff8-819a-dc4a
 nwajte-konton-dance-ipfv-pl-0,nwajtedance-0-ri-zero-kontonpl,nwajtedance-0,0,dance,dance-ipfv-pl
 nwajte-konton-dance-ipfv-pl-1,nwajtedance-0-ri-zero-kontonpl,ri-zero,1,ipfv,dance-ipfv-pl
 nwajte-konton-dance-ipfv-pl-2,nwajtedance-0-ri-zero-kontonpl,kontonpl,2,pl,dance-ipfv-pl
-sukase-all-0,sukase-all-0,sukase-all-0,0,all,all
+sukase-all-0,sukase-all-0,sukase-all-0,0,all,all-1
 tipa-pej-se-jne-go-in-group-plur-pst-pl-0,etipa-go-in-group-2-plur2-sepst-pljne1,etipa-go-in-group-2,0,go-in-group,go-in-group-plur-pst-pl
 tipa-pej-se-jne-go-in-group-plur-pst-pl-1,etipa-go-in-group-2-plur2-sepst-pljne1,plur2,1,plur,go-in-group-plur-pst-pl
 tipa-pej-se-jne-go-in-group-plur-pst-pl-2,etipa-go-in-group-2-plur2-sepst-pljne1,sepst,2,pst,go-in-group-plur-pst-pl
@@ -206,8 +206,6 @@ ta-ita-po-3p-hear-des-1,ta3-ita-hear-0-podes,ita-hear-0,1,hear,3p-hear-des
 ta-ita-po-3p-hear-des-2,ta3-ita-hear-0-podes,podes,2,des,3p-hear-des
 chi-ri-cop-ipfv-0,chi-cop-0-ri,chi-cop-0,0,cop,cop-ipfv
 chi-ri-cop-ipfv-1,chi-cop-0-ri,ri,1,ipfv,cop-ipfv
-y-ewenke-lk-not-know-0,ylk-fa238937-9392-4a63-8142-4c56dd4a5c990,ylk,0,lk,lk-not-know
-y-ewenke-lk-not-know-1,ylk-fa238937-9392-4a63-8142-4c56dd4a5c990,fa238937-9392-4a63-8142-4c56dd4a5c990,1,not-know,lk-not-know
 senejka-ri-remain-ipfv-0,senejkastay-0-ri-ri,senejkastay-0,0,remain,remain-ipfv
 senejka-ri-remain-ipfv-1,senejkastay-0-ri-ri,ri-ri,1,ipfv,remain-ipfv
 u-y-iwij-1-lk-house-0,u1-ylk-iwiti-house-1,u1,0,1,1-lk-house
@@ -248,7 +246,6 @@ yaruwa-kontomo-laugh-ipfv-pl-2,yaruwa-laugh-0-ri-zero-kontomopl,kontomopl,2,pl,l
 tejpore-tasty-0,tejpore-tasty-0,tejpore-tasty-0,0,tasty,tasty
 sa-eval-0,f3e78ed2-7584-444f-9487-84e46b62362b0,f3e78ed2-7584-444f-9487-84e46b62362b0,0,eval,eval
 onono-another-0,onono-another-0,onono-another-0,0,another,another
-pare-and-0,a6194807-28a2-45e2-a45f-e335729278fb0,a6194807-28a2-45e2-a45f-e335729278fb0,0,and,and
 yatum-sun-0,763cd0a8-2338-47f6-be83-51c37991b1292,763cd0a8-2338-47f6-be83-51c37991b1292,0,sun,sun
 ponoko-every-0,ponoko-every-0,ponoko-every-0,0,every,every
 ta-kontomo-say-ipfv-pl-0,taro-say-2-ri-zero-kontomopl,taro-say-2,0,say,say-ipfv-pl
@@ -261,9 +258,9 @@ ke-ouch-0,5fc2465b-ffb2-41f9-b168-18f867a833530,5fc2465b-ffb2-41f9-b168-18f867a8
 wajyakiti-very-happy-0,wajyakiti-very-happy-0,wajyakiti-very-happy-0,0,very-happy,very-happy
 u-ya-1-erg-0,u1-yaerg-0,u1,0,1,1-erg
 u-ya-1-erg-1,u1-yaerg-0,yaerg-0,1,erg,1-erg
+aniki-who-0,aniki-who-0,aniki-who-0,0,who,who
 peremeki-ri-talk-ipfv-0,5a18649c-d742-45d3-975d-e9618da883bd1-ri-ri,5a18649c-d742-45d3-975d-e9618da883bd1,0,talk,talk-ipfv
 peremeki-ri-talk-ipfv-1,5a18649c-d742-45d3-975d-e9618da883bd1-ri-ri,ri-ri,1,ipfv,talk-ipfv
-aniki-who-0,aniki-who-0,aniki-who-0,0,who,who
 chiyakon-friend-0,chiyakono-friend-1,chiyakono-friend-1,0,friend,friend
 chi-cop-ipfv-0,chi-cop-0-ri-zero,chi-cop-0,0,cop,cop-ipfv
 chi-cop-ipfv-1,chi-cop-0-ri-zero,ri-zero,1,ipfv,cop-ipfv

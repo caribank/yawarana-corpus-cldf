@@ -230,7 +230,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#FormTable",
-            "dc:extent": 161,
+            "dc:extent": 159,
             "tableSchema": {
                 "columns": [
                     {
@@ -286,6 +286,12 @@
                         "required": true,
                         "separator": "; ",
                         "name": "Parameter_ID"
+                    },
+                    {
+                        "dc:description": "Part of speech",
+                        "dc:extent": "singlevalued",
+                        "datatype": "string",
+                        "name": "POS"
                     }
                 ],
                 "foreignKeys": [
@@ -306,6 +312,17 @@
                         ],
                         "reference": {
                             "resource": "languages.csv",
+                            "columnReference": [
+                                "ID"
+                            ]
+                        }
+                    },
+                    {
+                        "columnReference": [
+                            "POS"
+                        ],
+                        "reference": {
+                            "resource": "POSTable",
                             "columnReference": [
                                 "ID"
                             ]
@@ -353,7 +370,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#MediaTable",
-            "dc:extent": 406,
+            "dc:extent": 405,
             "tableSchema": {
                 "columns": [
                     {
@@ -469,7 +486,7 @@
             "url": "languages.csv"
         },
         {
-            "dc:extent": 283,
+            "dc:extent": 280,
             "tableSchema": {
                 "columns": [
                     {
@@ -566,7 +583,39 @@
             "url": "FormSlices"
         },
         {
-            "dc:extent": 447,
+            "dc:extent": 11,
+            "tableSchema": {
+                "columns": [
+                    {
+                        "datatype": {
+                            "base": "string",
+                            "format": "[a-zA-Z0-9_\\-]+"
+                        },
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#id",
+                        "required": true,
+                        "name": "ID"
+                    },
+                    {
+                        "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#name",
+                        "required": true,
+                        "name": "Name"
+                    },
+                    {
+                        "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#description",
+                        "required": false,
+                        "name": "Description"
+                    }
+                ],
+                "primaryKey": [
+                    "ID"
+                ]
+            },
+            "url": "POSTable"
+        },
+        {
+            "dc:extent": 444,
             "tableSchema": {
                 "columns": [
                     {
