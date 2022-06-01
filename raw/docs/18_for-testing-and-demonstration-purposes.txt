@@ -41,7 +41,7 @@
 
 [Example ctorat-34](ExampleTable?example_no=31#cldf:ctorat-34)
 
-[Example ctorat-35,ctorat-36](ExampleTable?exid=multiigt&ids=ctorat-35,ctorat-36&example_no=32#cldf:__all__)
+[Example ctorat-35,ctorat-36](ExampleTable?example_id=multiigt&ids=ctorat-35,ctorat-36&example_no=32#cldf:__all__)
 
 ### Other
 

@@ -5,7 +5,7 @@
             "@language": "en"
         }
     ],
-    "dc:bibliographicCitation": "Matter, Florian, 2022. A digital grammar sketch of Yawarana",
+    "dc:bibliographicCitation": "Matter F., C\u00e1ceres Arandia N., Gildea S. (2022). A digital sketch grammar of Yawarana (version 0.0.2.draft). URL: https://github.com/fmatter/yawarana-sketch-cldf/tree/0.0.2.draft",
     "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#Generic",
     "dc:description": "This is a digital description of Yawarana.",
     "dc:identifier": "https://fl.mt/yawarana-sketch",
@@ -715,7 +715,7 @@
             "url": "ExampleSlices"
         },
         {
-            "dc:extent": 277,
+            "dc:extent": 278,
             "tableSchema": {
                 "columns": [
                     {

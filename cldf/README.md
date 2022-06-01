@@ -8,7 +8,7 @@ This is a digital description of Yawarana.
 
 property | value
  --- | ---
-[dc:bibliographicCitation](http://purl.org/dc/terms/bibliographicCitation) | Matter, Florian, 2022. A digital grammar sketch of Yawarana
+[dc:bibliographicCitation](http://purl.org/dc/terms/bibliographicCitation) | Matter F., Cáceres Arandia N., Gildea S. (2022). A digital sketch grammar of Yawarana (version 0.0.2.draft). URL: https://github.com/fmatter/yawarana-sketch-cldf/tree/0.0.2.draft
 [dc:conformsTo](http://purl.org/dc/terms/conformsTo) | [CLDF Generic](http://cldf.clld.org/v1.0/terms.rdf#Generic)
 [dc:identifier](http://purl.org/dc/terms/identifier) | https://fl.mt/yawarana-sketch
 [dc:license](http://purl.org/dc/terms/license) | https://creativecommons.org/licenses/by-sa/4.0/
@@ -204,7 +204,7 @@ Name/Property | Datatype | Description
 
 property | value
  --- | ---
-[dc:extent](http://purl.org/dc/terms/extent) | 277
+[dc:extent](http://purl.org/dc/terms/extent) | 278
 
 
 ### Columns

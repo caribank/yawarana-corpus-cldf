@@ -462,13 +462,15 @@ partideo,Particles and Ideophones,"<a id='partideo'></a>
 * [POS part](POSTable?#cldf:part)
 * [POS ideo](POSTable?#cldf:ideo)
 ",9
-phrases,Phrases,<a id='phrases'></a>,10
+phrases,Phrases,"<a id='phrases'></a>
+TBD
+",10
 nonverbal,Nonverbal predications,<a id='nonverbal'></a>,11
 simpleverb,Simple verbal clauses,<a id='simpleverb'></a>,12
 negation,Negation,"<a id='negation'></a>
 <span title='should this really be a separate chapter?'>❓</span>
 
-Relevant morphemes:
+Probably relevant morphemes:
 
 * [Morpheme janeg](MorphsetTable?#cldf:janeg)
 * [Morpheme jraneg](MorphsetTable?#cldf:jraneg)
@@ -524,7 +526,7 @@ for-testing-and-demonstration-purposes,For testing and demonstration purposes,"<
 
 [Example ctorat-34](ExampleTable?example_no=31#cldf:ctorat-34)
 
-[Example ctorat-35,ctorat-36](ExampleTable?exid=multiigt&ids=ctorat-35,ctorat-36&example_no=32#cldf:__all__)
+[Example ctorat-35,ctorat-36](ExampleTable?example_id=multiigt&ids=ctorat-35,ctorat-36&example_no=32#cldf:__all__)
 
 ### Other
 
