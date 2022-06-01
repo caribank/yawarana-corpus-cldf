@@ -55,7 +55,7 @@ Name/Property | Datatype | Description
 property | value
  --- | ---
 [dc:conformsTo](http://purl.org/dc/terms/conformsTo) | [CLDF ExampleTable](http://cldf.clld.org/v1.0/terms.rdf#ExampleTable)
-[dc:extent](http://purl.org/dc/terms/extent) | 951
+[dc:extent](http://purl.org/dc/terms/extent) | 1441
 
 
 ### Columns
@@ -73,13 +73,14 @@ Name/Property | Datatype | Description
 `Text_ID` | `string` | The text to which this record belongs<br>References [TextTable::ID](#table-texttable)
 `Part` | `integer` | Position in the text
 [Source](http://cldf.clld.org/v1.0/terms.rdf#source) | list of `string` (separated by `;`) | References [sources.bib::BibTeX-key](./sources.bib)
+`Tags` | list of `string` (separated by `,`) | 
 
 ## <a name="table-formscsv"></a>Table [forms.csv](./forms.csv)
 
 property | value
  --- | ---
 [dc:conformsTo](http://purl.org/dc/terms/conformsTo) | [CLDF FormTable](http://cldf.clld.org/v1.0/terms.rdf#FormTable)
-[dc:extent](http://purl.org/dc/terms/extent) | 158
+[dc:extent](http://purl.org/dc/terms/extent) | 172
 
 
 ### Columns
@@ -100,7 +101,7 @@ Name/Property | Datatype | Description
 property | value
  --- | ---
 [dc:conformsTo](http://purl.org/dc/terms/conformsTo) | [CLDF ParameterTable](http://cldf.clld.org/v1.0/terms.rdf#ParameterTable)
-[dc:extent](http://purl.org/dc/terms/extent) | 252
+[dc:extent](http://purl.org/dc/terms/extent) | 253
 
 
 ### Columns
@@ -116,7 +117,7 @@ Name/Property | Datatype | Description
 property | value
  --- | ---
 [dc:conformsTo](http://purl.org/dc/terms/conformsTo) | [CLDF MediaTable](http://cldf.clld.org/v1.0/terms.rdf#MediaTable)
-[dc:extent](http://purl.org/dc/terms/extent) | 405
+[dc:extent](http://purl.org/dc/terms/extent) | 407
 
 
 ### Columns
@@ -186,7 +187,7 @@ Name/Property | Datatype | Description
 
 property | value
  --- | ---
-[dc:extent](http://purl.org/dc/terms/extent) | 437
+[dc:extent](http://purl.org/dc/terms/extent) | 459
 
 
 ### Columns
@@ -255,7 +256,7 @@ Name/Property | Datatype | Description
 
 property | value
  --- | ---
-[dc:extent](http://purl.org/dc/terms/extent) | 9
+[dc:extent](http://purl.org/dc/terms/extent) | 11
 
 
 ### Columns
