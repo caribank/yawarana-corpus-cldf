@@ -44,6 +44,7 @@ b97a0ed7-7ceb-4cab-83d8-5b30b45d9a590,yab,pïrarë,p ɨ r a r ə,,,nothing,part
 i31-79766ee2-3962-4bcd-ae1b-bcc332d75e880-rupert,yab,i-wena-ru,i w e n a r u,,,3-vomit-pert,n
 79766ee2-3962-4bcd-ae1b-bcc332d75e880-rupert,yab,wena-ru,w e n a r u,,,vomit-pert,n
 suku-1-tavbz-sepst,yab,suj-ta-se,s u h t a s e,,,urine-vbz-pst,vi
+aaa,yab,aaa,a a a,,,unknown,
 u1-suku-0-rupert,yab,u-suku-ru,u s u k u r u,,,1-urine-pert,n
 morone-hurting-0,yab,morone,m o r o n e,,,hurting,adv
 wire-1pro-0,yab,wïrë,w ɨ r ə,,,1pro,pn
@@ -102,6 +103,7 @@ nope-good-0,yab,nope,n o p e,,,good,adv
 esene-see-self-0-ri-zero,yab,esene-∅,e s e n e,,,see-self-ipfv,vi
 mare-rel-inan-0,yab,mare,m a r e,,,rel-inan,
 5e07b708-79a9-4b84-8bb2-8d90daf937b31,yab,kwase,k w a s e,,,how,qpro
+yaruwakempinire,yab,yaruwakempïnirë,j a r u w a k e m p ɨ n i r ə,,,unknown,
 mekisantomo-dist-anim-pl-0,yab,mëkïsantomo,m ə k ɨ s a n t o m o,,,dist-anim-pl,det
 ajaja-hahaha-0,yab,ajaja,a h a h a,,,hahaha,intj
 taro-say-1-tanecns,yab,taj-tane,t a h t a n e,,,say-cncs,vt
@@ -113,29 +115,38 @@ taro-say-0-ri-zero,yab,taro-∅,t a r o,,,say-ipfv,vt
 pekeon-1-nonmlz,yab,poko-no,p o k o n o,,,on-surface-nmlz,n
 i-do-0-ri,yab,i-ri,i r i,,,do-ipfv,vt
 minte-there-loc-0,yab,mïntë,m ɨ n t ə,,,there-loc,adv
+tunampe,yab,tunampe,t u n a m p e,,,unknown,
 yarika-laugh-0-ri,yab,yarika-ri,j a r i k a r i,,,laugh-ipfv,vi
 tawara-too-3-janeg,yab,tawa-ja,t a w a h a,,,too-neg,adv
 yarika-laugh-0-ri-zero-janeg,yab,yarika-∅-ja,j a r i k a h a,,,laugh-ipfv-neg,vi
 esene-see-self-1-ri-zero-janeg,yab,sene-∅-ja,s e n e h a,,,see-self-ipfv-neg,vi
+yarikatopo,yab,yarikatopo,j a r i k a t o p o,,,unknown,
 ta3-ita-hear-0-podes,yab,ta-ita-po,t a i t a p o,,,3p-hear-des,vt
 chi-cop-0-ri,yab,chi-ri,t͡ʃ i r i,,,cop-ipfv,vi
 senejkastay-0-ri-ri,yab,senejka-rï,s e n e h k a r ɨ,,,remain-ipfv,vi
 u1-ylk-iwiti-house-1,yab,u-y-ïwïj,u j ɨ w ɨ h,,,1-lk-house,n
 suku-0-ripert,yab,suku-ri,s u k u r i,,,urine-pert,n
+jwama,yab,jwama,h w a m a,,,unknown,
 ita-hear-0-ri,yab,ita-ri,i t a r i,,,hear-ipfv,vt
 wajyakiti-very-happy-0-jraneg,yab,wajyakïtï-jra,w a h j a k ɨ t ɨ h r a,,,very-happy-priv,n
 tawara-too-1,yab,tawaraij,t a w a r a i h,,,too,adv
 u1-senejkastay-0-ri,yab,u-senejka-ri,u s e n e h k a r i,,,1-remain-ipfv,vi
+chipokono,yab,chipokono,t͡ʃ i p o k o n o,,,unknown,
 panadat-0,yab,pana,p a n a,,,dat,postp
+yaruwatopo,yab,yaruwatopo,j a r u w a t o p o,,,unknown,
+pirare,yab,pïrärë,p ɨ r � r ə,,,unknown,
 ini-see-2-keimp,yab,in-kë,i n k ə,,,see-imp,vt
 ire-dem-0,yab,irë,i r ə,,,dem,pn
 nwadance-0,yab,nwa,n w a,,,dance,n
+chipeke,yab,chipëkë,t͡ʃ i p ə k ə,,,unknown,
 tewisantomo-3pro-pl-0,yab,tëwïsantomo,t ə w ɨ s a n t o m o,,,3pro-pl,pn
 yaruwa-laugh-0-tepeke,yab,yaruwa-tëpëkë,j a r u w a t ə p ə k ə,,,laugh-prog-intr,vi
 chi-cop-0-ri-zero-kontomopl,yab,chi-∅-kontomo,t͡ʃ i k o n t o m o,,,cop-ipfv-pl,vi
 ini-see-0-ri-zero,yab,ini-∅,i n i,,,see-ipfv,vt
 waimu-talk-0-ri-zero-kontomopl,yab,waimu-∅-kontomo,w a i m u k o n t o m o,,,talk-ipfv-pl,vi
 i-do-0-pstjpe1,yab,i-jpë,i h p ə,,,do-pst,vt
+yekerema,yab,yekerema,j e k e r e m a,,,unknown,
+chipokon,yab,chipokon,t͡ʃ i p o k o n,,,unknown,
 yaruwa-laugh-0-ri-zero-kontomopl,yab,yaruwa-∅-kontomo,j a r u w a k o n t o m o,,,laugh-ipfv-pl,vi
 tejpore-tasty-0,yab,tejpore,t e h p o r e,,,tasty,adv
 f3e78ed2-7584-444f-9487-84e46b62362b0,yab,sa,s a,,,eval,part
@@ -148,10 +159,13 @@ ini-see-0-ri-zero-janeg,yab,ini-∅-ja,i n i h a,,,see-ipfv-neg,vt
 wajyakiti-very-happy-0,yab,wajyakïtï,w a h j a k ɨ t ɨ,,,very-happy,n
 u1-yaerg-0,yab,u-ya,u j a,,,1-erg,postp
 aniki-who-0,yab,aniki,a n i k i,,,who,pn
+narepe,yab,narëpe,n a r ə p e,,,unknown,
+yakere,yab,yakërë,j a k ə r ə,,,unknown,
 5a18649c-d742-45d3-975d-e9618da883bd1-ri-ri,yab,përemekï-rï,p ə r e m e k ɨ r ɨ,,,talk-ipfv,vi
 chiyakono-friend-1,yab,chiyakon,t͡ʃ i j a k o n,,,friend,n
 chi-cop-0-ri-zero,yab,chi-∅,t͡ʃ i,,,cop-ipfv,vi
 taro-say-2-ri,yab,ta-ri,t a r i,,,say-ipfv,vt
+yarikasemijra,yab,yarikasemïjra,j a r i k a s e m ɨ h r a,,,unknown,
 ware-thus-3,yab,nwa,n w a,,,thus,adv
 a2-najmo-grandmother-0-ripert,yab,a-najmo-ri,a n a h m o r i,,,2-grandmother-pert,n
 a2-najpi-grandfather-0-ripert,yab,a-najpï-ri,a n a h p ɨ r i,,,2-grandfather-pert,n

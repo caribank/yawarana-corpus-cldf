@@ -168,6 +168,12 @@ with CLDFWriter(spec) as writer:
             "datatype": {"base": "string"},
             "separator": ";",
         },
+        {
+            "name": "Tags",
+            "required": False,
+            "datatype": "string",
+            "separator": ",",
+        }
     )
     writer.cldf.add_component("FormTable")
     writer.cldf.add_component("ParameterTable")
@@ -313,7 +319,7 @@ with CLDFWriter(spec) as writer:
     log.info("Morphemes")
 
     # the distinct meanings
-    meanings = {}
+    meanings = {"unknown": "***"}
 
     for mp in pd.concat([infl_morphemes, deriv_morphemes]).to_dict(orient="records"):
         morpheme_id = mp["ID"]
@@ -502,6 +508,7 @@ with CLDFWriter(spec) as writer:
     log.info("Examples")
 
     for ex in examples.to_dict("records"):
+        ex["Tags"] = ex["Tags"].split(" ")
         audio_path = example_audios / f'{ex["ID"]}.wav'
         if audio_path.is_file():
             writer.objects["MediaTable"].append({"ID": ex["ID"], "Media_Type": "wav"})
@@ -531,6 +538,18 @@ with CLDFWriter(spec) as writer:
                 meanings[meaning_slug] = word.gloss
             if form_slug not in form_meanings:
                 if "***" in morpheme_ids:
+                    slug = slugify(word.word)
+                    if slug not in forms:
+                        forms[slug] = {"Form": word.word, "Parameter_ID": ["unknown"]}
+                    writer.objects["ExampleSlices"].append(
+                        {
+                            "ID": ex["ID"] + "-" + str(word_count),
+                            "Form_ID": slug,
+                            "Example_ID": ex["ID"],
+                            "Slice": str(word_count),
+                            "Parameter_ID": "unknown"
+                        }
+                    )
                     continue
                 if morpheme_ids == "":
                     continue
@@ -586,6 +605,7 @@ with CLDFWriter(spec) as writer:
     log.info("Audio")
 
     for ex in bare_examples.to_dict("records"):
+        ex["Tags"] = ex["Tags"].split(" ")
         audio_path = example_audios / f'{ex["ID"]}.wav'
         if audio_path.is_file():
             writer.objects["MediaTable"].append({"ID": ex["ID"], "Media_Type": "wav"})

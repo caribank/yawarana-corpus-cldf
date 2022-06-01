@@ -185,6 +185,12 @@
                         "required": false,
                         "separator": ";",
                         "name": "Source"
+                    },
+                    {
+                        "datatype": "string",
+                        "required": false,
+                        "separator": ",",
+                        "name": "Tags"
                     }
                 ],
                 "foreignKeys": [
@@ -230,7 +236,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#FormTable",
-            "dc:extent": 158,
+            "dc:extent": 172,
             "tableSchema": {
                 "columns": [
                     {
@@ -337,7 +343,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ParameterTable",
-            "dc:extent": 252,
+            "dc:extent": 253,
             "tableSchema": {
                 "columns": [
                     {
@@ -370,7 +376,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#MediaTable",
-            "dc:extent": 405,
+            "dc:extent": 407,
             "tableSchema": {
                 "columns": [
                     {
@@ -615,7 +621,7 @@
             "url": "POSTable"
         },
         {
-            "dc:extent": 437,
+            "dc:extent": 459,
             "tableSchema": {
                 "columns": [
                     {
