@@ -1,0 +1,11 @@
+<a id='negation'></a>
+<span title='should this really be a separate chapter?'>❓</span>
+
+Probably relevant morphemes:
+
+* [Morpheme janeg](MorphsetTable?#cldf:janeg)
+* [Morpheme jraneg](MorphsetTable?#cldf:jraneg)
+* [Morpheme jnarineg](MorphsetTable?#cldf:jnarineg)
+* [Morpheme kempinire](MorphsetTable?#cldf:kempinire)
+* [Morpheme pinire-nothing](MorphsetTable?#cldf:pinire-nothing)
+* [Morpheme b97a0ed7-7ceb-4cab-83d8-5b30b45d9a59](MorphsetTable?#cldf:b97a0ed7-7ceb-4cab-83d8-5b30b45d9a59)

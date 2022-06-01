@@ -1,0 +1,44 @@
+<a id='phono'></a>
+## Segmental phonetics and phonemes {#sec:segmental}
+The consonant phonemes of Yawarana are shown in <a href='#tab:consonants' class='crossref' id='tab:consonants'>crossref</a>, and the vowels in <a href='#tab:vowels' class='crossref' id='tab:vowels'>crossref</a>.
+This is a fairly standard Cariban phoneme inventory, only departing from the mainstream by the addition of [Phoneme ch](PhonemeTable?#cldf:ch).
+
+
+<a id='tab:consonants'></a><div class='caption table' id='tab:consonants'>Consonant phonemes</div>
+
+|           | bilabial                          | alveolar                          | palatal                             | velar                             | glottal                           |
+|:----------|:----------------------------------|:----------------------------------|:------------------------------------|:----------------------------------|:----------------------------------|
+| occlusive | [Phoneme p](PhonemeTable?#cldf:p) | [Phoneme t](PhonemeTable?#cldf:t) | [Phoneme ch](PhonemeTable?#cldf:ch) | [Phoneme k](PhonemeTable?#cldf:k) |                                   |
+| nasal     | [Phoneme m](PhonemeTable?#cldf:m) | [Phoneme n](PhonemeTable?#cldf:n) | [Phoneme J](PhonemeTable?#cldf:J)   |                                   |                                   |
+| fricative |                                   | [Phoneme s](PhonemeTable?#cldf:s) |                                     |                                   | [Phoneme j](PhonemeTable?#cldf:j) |
+| liquid    |                                   | [Phoneme r](PhonemeTable?#cldf:r) |                                     |                                   |                                   |
+| glide     | [Phoneme w](PhonemeTable?#cldf:w) |                                   | [Phoneme y](PhonemeTable?#cldf:y)   |                                   |                                   |
+
+
+<a id='tab:vowels'></a><div class='caption table' id='tab:vowels'>Vowel phonemes</div>
+
+|       | front                             | central                                   | back                              |
+|:------|:----------------------------------|:------------------------------------------|:----------------------------------|
+| close | [Phoneme i](PhonemeTable?#cldf:i) | [Phoneme 1](PhonemeTable?#cldf:1)         | [Phoneme u](PhonemeTable?#cldf:u) |
+| mid   | [Phoneme e](PhonemeTable?#cldf:e) | [Phoneme schwa](PhonemeTable?#cldf:schwa) | [Phoneme o](PhonemeTable?#cldf:o) |
+| open  |                                   | [Phoneme a](PhonemeTable?#cldf:a)         |                                   |
+
+### Consonants {#sec:consonants}
+
+### Vowels {#sec:vowels}
+
+## Morphophonological Processes {#sec:morphophono}
+
+### Syllable Reduction {#sec:sylred}
+
+### Vowel harmony? {#sec:vowelharm}
+
+## Prosody {#sec:prosody}
+
+### Lexical stress {#sec:stress}
+
+### Intonational Phrases {#sec:intphrases}
+
+### Intonational Melodies {#sec:intmelodies}
+
+## Historical Considerations {#sec:histphono}

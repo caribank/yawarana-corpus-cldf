@@ -1,0 +1,87 @@
+<a id='for-testing-and-demonstration-purposes'></a>
+## here's what an ignorant parser couldn't handle:
+
+* combination of verb with [Morpheme kempinire](MorphsetTable?#cldf:kempinire) results in what? always used as predicate
+
+[Example convrisamaj-07](ExampleTable?example_no=26#cldf:convrisamaj-07)
+
+* deverbal from [Morpheme tunami-hide](MorphsetTable?#cldf:tunami-hide) to an adverb, right?
+
+[Example convrisamaj-09](ExampleTable?example_no=27#cldf:convrisamaj-09)
+
+* deverbal nominalizer:
+
+[Example convrisamaj-13](ExampleTable?example_no=28#cldf:convrisamaj-13)
+
+* probably special handling needed (copula + [Morpheme pekeon](MorphsetTable?#cldf:pekeon) + ? 'because of that') 
+
+[Example convrisamaj-29](ExampleTable?example_no=29#cldf:convrisamaj-29)
+
+* MCMM has *narë* as emphatic particle... is this a adverbialization?
+
+[Example convrisamaj-47](ExampleTable?example_no=30#cldf:convrisamaj-47)
+
+## Inline linked entities
+
+### Single
+1. morph: [Morph pljne1](MorphTable?#cldf:pljne1)
+1. morpheme: [Morpheme jnepl](MorphsetTable?#cldf:jnepl)
+1. wordform: (asamo-0-ri-jraneg)
+1. text: [Text HistAnFo](TextTable?#cldf:HistAnFo)
+
+### Multiple
+1. morph: [Morph pljne1,ipert](MorphTable?ids=pljne1,ipert#cldf:__all__)
+1. morpheme: [Morpheme jnepl,rupert](MorphsetTable?ids=jnepl,rupert#cldf:__all__)
+1. wordform: (asamo-0-ri-jraneg,asamo-0-ri-zero)
+1. text: [Text HistAnFo,CtoRat](TextTable?ids=HistAnFo,CtoRat#cldf:__all__)
+
+## Examples
+
+### Interlinear
+
+[Example ctorat-34](ExampleTable?example_no=31#cldf:ctorat-34)
+
+[Example ctorat-35,ctorat-36](ExampleTable?exid=multiigt&ids=ctorat-35,ctorat-36&example_no=32#cldf:__all__)
+
+### Other
+
+<ol markdown="block" class="example">
+<li class="example" markdown="block" id="test1"><div markdown="block"> 
+ 
+
+| [Morpheme yakaall](MorphsetTable?#cldf:yakaall)   | root   |
+|:--------------------------------------------------|:-------|
+| [Morpheme septcp](MorphsetTable?#cldf:septcp)     | suffix |</div>
+</li>
+</ol>
+
+<ol markdown="block" class="example">
+<li class="example" markdown="block" id="multiparttest">
+<ol markdown="block" class="subexample">
+
+<li class="subexample" markdown="block" id="test2">
+<div markdown="block">Hello [Morpheme septcp](MorphsetTable?#cldf:septcp) 'PST'</div>
+</li>
+<li class="subexample" markdown="block" id="test3">
+<div markdown="block">World
+
+*and* more</div>
+</li>
+
+</ol>
+</li>
+</ol>
+
+### Example references
+
+<a class="exref" example_id="ctorat-34"></a>
+
+<a class="exref" example_id="multiigt"></a> or <a class="exref" example_id="ctorat-36"></a> or even <a class="exref" example_id="multiigt"suffix="a-b" ></a>
+
+<a class="exref" example_id="test1"></a>
+
+<a class="exref" example_id="multiparttest"></a>
+
+<a class="exref" example_id="test1"end="multiparttest" ></a>
+
+

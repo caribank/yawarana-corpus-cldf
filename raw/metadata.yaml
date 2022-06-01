@@ -1,0 +1,24 @@
+id: yawarana-sketch
+version: 0.0.2.draft
+title: A digital sketch grammar of Yawarana
+authors: 
+    - family-names: Matter
+      given-names: Florian
+      orcid: 0000-0002-2545-5154
+      email: florianmatter@gmail.com
+      affiliation: University of Oregon and University of Bern
+    - family-names: Cáceres Arandia
+      given-names: Natalia
+    - family-names: Gildea
+      given-names: Spike
+repository: https://github.com/fmatter/yawarana-sketch
+abstract: This is a digital sketch grammar of Yawarana, an endangered language of the Cariban family, spoken in Venezuela.
+keywords:
+    - digital linguistics
+    - grammar sketch
+    - descriptive linguistics
+    - endangered languages
+    - yawarana
+    - cariban
+license: CC-BY-SA-4.0
+type: unpublished

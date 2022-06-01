@@ -1,0 +1,3 @@
+<a id='partideo'></a>
+* [POS part](POSTable?#cldf:part)
+* [POS ideo](POSTable?#cldf:ideo)

@@ -80,11 +80,11 @@ for filename in Path("/home/florianm/Downloads/New_Dictionary_Clippings").iterdi
     word_audios[leggo].append(filename)
 
 version = yaml.load(
-    open("/home/florianm/Dropbox/research/cariban/yawarana/yaw_sketch/metadata.yaml"),
+    open("raw/metadata.yaml"),
     Loader=yaml.SafeLoader,
 )["version"]
 
-citation = create_citation(infile="/home/florianm/Dropbox/research/cariban/yawarana/yaw_cldf/CITATION.cff", url=None)
+citation = create_citation(infile="CITATION.cff", url=None)
 validate_or_write_output(outputformat="apalike", citation=citation, outfile="/tmp/citation.txt", validate_only=False)
 citation = open("/tmp/citation.txt", "r", encoding="utf8").read().strip()
 
@@ -109,7 +109,7 @@ with CLDFWriter(spec) as writer:
 
     log.info("Chapters and authors")
     doc_path = Path(
-        "/home/florianm/Dropbox/research/cariban/yawarana/yaw_sketch/output/clld/"
+        "raw/docs"
     )
     writer.cldf.add_component(cldf_md("ChapterTable"))
     chapters = pd.read_csv(doc_path / "chapters.csv")
@@ -128,7 +128,7 @@ with CLDFWriter(spec) as writer:
             "ID": "landingpage",
             "Name": "Landing page",
             "Description": open(
-                "/home/florianm/Dropbox/research/cariban/yawarana/yaw-sketch-landing-page/output/clld/content.txt",
+                "raw/landingpage.txt",
                 "r",
             ).read(),
         }
@@ -139,7 +139,7 @@ with CLDFWriter(spec) as writer:
             "ID": "ambiguity",
             "Name": "Manuscript: Parsing ambiguity",
             "Description": open(
-                "/home/florianm/Dropbox/research/cariban/yawarana/yawarana-parsing-ambiguity/clld_output.txt",
+                "raw/ambiguity.txt",
                 "r",
             ).read(),
         }
@@ -282,7 +282,7 @@ with CLDFWriter(spec) as writer:
     flexemes["Language_ID"] = "yab"
     include = (
         open(
-            "/home/florianm/Dropbox/development/uniparser-yawarana/compile_parser/include.txt",
+            "raw/include_flex.txt",
             "r",
         )
         .read()
@@ -292,10 +292,10 @@ with CLDFWriter(spec) as writer:
     flexemes = flexemes[(flexemes["ID"].isin(include))]
 
     manual_lexemes = cread(
-        "/home/florianm/Dropbox/development/uniparser-yawarana/compile_parser/lexicon/lexemes.csv"
+        "raw/lexemes.csv"
     )
     roots = cread(
-        "/home/florianm/Dropbox/development/uniparser-yawarana/compile_parser/lexicon/roots.csv"
+        "raw/dictionary_roots.csv"
     )
     manual_lexemes = pd.concat([manual_lexemes, roots])
     infl_morphs = cread("etc/inflection_morphs.csv")
@@ -460,7 +460,7 @@ with CLDFWriter(spec) as writer:
 
     # these are some wordforms collected for the dictionary, parsed with uniparser
     dic_wordforms = cread(
-        "/home/florianm/Dropbox/development/uniparser-yawarana/var/parsed_forms.csv"
+        "raw/parsed_forms.csv"
     )
     for wf in dic_wordforms.to_dict("records"):
         form_slug = slugify(wf["Segmented"] + ":" + wf["Gloss"])
