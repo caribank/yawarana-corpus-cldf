@@ -2,3 +2,4 @@ CITATION.cff export-ignore
 raw export-ignore
 etc export-ignore
 compile_cldf.py export-ignore
+.gitattributes export-ignore
