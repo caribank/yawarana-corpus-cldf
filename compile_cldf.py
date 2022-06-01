@@ -457,7 +457,6 @@ with CLDFWriter(spec) as writer:
     forms = {}
 
     dangerous_glosses = ["all"]
-
     # these are some wordforms collected for the dictionary, parsed with uniparser
     dic_wordforms = cread(
         "raw/parsed_forms.csv"
@@ -471,6 +470,13 @@ with CLDFWriter(spec) as writer:
         if meaning_slug not in meanings:
             meanings[meaning_slug] = wf["Translation"]
         if form_slug not in form_meanings:
+            morpheme_ids = sort_uniparser_ids(
+                id_list=wf["Morpheme_IDs"].split(","),
+                obj=wf["Segmented"],
+                gloss=wf["Gloss"],
+                id_dic=id_dict,
+                mode="morphemes"
+            )
             morph_ids = sort_uniparser_ids(
                 id_list=wf["Morpheme_IDs"].split(","),
                 obj=wf["Segmented"],
@@ -560,6 +566,13 @@ with CLDFWriter(spec) as writer:
                     continue
                 if morpheme_ids == "":
                     continue
+                ids_for_slug = sort_uniparser_ids(
+                    id_list=morpheme_ids.split(","),
+                    obj=word.word,
+                    gloss=word.gloss,
+                    id_dic=id_dict,
+                    mode="morphemes"
+                )
                 morph_ids = sort_uniparser_ids(
                     id_list=morpheme_ids.split(","),
                     obj=word.word,
