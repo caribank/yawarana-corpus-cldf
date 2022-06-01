@@ -12,6 +12,8 @@ from pylingdocs.models import Morpheme, Morph, Text
 from pylingdocs.cldf import metadata as cldf_md
 from clld_morphology_plugin.cldf import MorphTable, MorphsetTable, FormSlices, POSTable
 from pylacoan.helpers import ortho_strip, get_pos
+from cffconvert.cli.create_citation import create_citation
+from cffconvert.cli.validate_or_write_output import validate_or_write_output
 
 from slugify import slugify as sslug
 import pyigt
@@ -82,6 +84,11 @@ version = yaml.load(
     Loader=yaml.SafeLoader,
 )["version"]
 
+citation = create_citation(infile="/home/florianm/Dropbox/research/cariban/yawarana/yaw_cldf/CITATION.cff", url=None)
+validate_or_write_output(outputformat="apalike", citation=citation, outfile="/tmp/citation.txt", validate_only=False)
+citation = open("/tmp/citation.txt", "r", encoding="utf8").read().strip()
+
+
 with CLDFWriter(spec) as writer:
     log.info("Dataset properties")
     writer.cldf.properties.setdefault("rdf:ID", "yawarana-sketch")
@@ -90,7 +97,7 @@ with CLDFWriter(spec) as writer:
     )
     writer.cldf.properties.setdefault(
         "dc:bibliographicCitation",
-        "Matter, Florian, 2022. A digital grammar sketch of Yawarana",
+        citation,
     )
     writer.cldf.properties.setdefault(
         "dc:description", "This is a digital description of Yawarana."
