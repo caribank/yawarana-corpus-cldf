@@ -2,7 +2,7 @@
 
 The most recent release of this dataset is served [here](https://fl.mt/yawarana-sketch).
 The [`pylingdocs`](https://github.com/fmatter/pylingdocs/) source is available [here](https://github.com/fmatter/yawarana-sketch/releases/tag/0.0.2.draft).
-Released versions of this dataset can be found [here](releases), for the latest click [here](https://github.com/fmatter/yawarana-sketch-cldf/releases/tag/0.0.2.draft).
+Released versions of this dataset can be found under [releases](https://github.com/fmatter/yawarana-sketch-cldf/releases/), the latest is version [0.0.2.draft](https://github.com/fmatter/yawarana-sketch-cldf/releases/tag/0.0.2.draft).
 
 ## Running the app
 To reproduce the interactive version of the grammar, you will need [python](https://www.python.org/) with [pip and a virtual environment manager](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/), and [git](https://git-scm.com/).
