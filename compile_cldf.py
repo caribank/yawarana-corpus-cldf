@@ -251,7 +251,7 @@ with CLDFWriter(spec) as writer:
 
     def get_id(row):
         if row["ID"] not in bad_ids:
-            return row["ID"].replace(".", "-").lower()
+            return row["ID"].replace(".", "-").replace("​", "").lower()
         else:
             return row["ID"].lower() + "-" + str(int(row["Part"]))
 
