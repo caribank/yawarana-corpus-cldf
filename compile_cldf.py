@@ -387,7 +387,7 @@ with CLDFWriter(spec) as writer:
         for j, form in enumerate(forms):
             morph_id = f"{morpheme_id}-{j}"
             for g in lexeme["Gloss_en"].split("; "):
-                id_dict[morpheme_id][form + ":" + g] = morph_id
+                id_dict[morpheme_id][form + ":" + g.replace(" ", ".")] = morph_id
                 if slugify(g) not in meanings:
                     meanings[slugify(g)] = g
             writer.objects["MorphTable"].append(
