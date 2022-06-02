@@ -234,6 +234,8 @@ with CLDFWriter(spec) as writer:
 
     example_add = cread("etc/example_additions.csv")
     examples = examples.merge(example_add, on="ID", how="left")
+    examples = examples.fillna("")
+    examples["Tags"] = examples.apply(lambda x: x["Tags_y"] + " " + x["Tags_x"], axis=1)
     examples["Translated_Text"] = examples.apply(
         lambda x: x["Translation_en"]
         if not (pd.isnull(x["Translation_en"]) or x["Translation_en"] == "")
@@ -242,10 +244,16 @@ with CLDFWriter(spec) as writer:
     )
 
     texts = {}
+    good_texts = open("raw/good_texts.txt", "r", encoding="utf8").read().split("\n")
     for f in Path("../yawarana_corpus/text_notes/").glob("*.yaml"):
         with open(f) as file:
             text_data = yaml.load(file, Loader=yaml.SafeLoader)
-            texts[text_data.pop("id")] = text_data
+            text_id = text_data.pop("id")
+            if len(sys.argv) > 1 and sys.argv[1] == "release":
+                if text_id in good_texts:
+                    texts[text_id] = text_data
+            else:
+                texts[text_id] = text_data
 
     bad_ids = ["GrMe"]
 
@@ -255,21 +263,26 @@ with CLDFWriter(spec) as writer:
         else:
             return row["ID"].lower() + "-" + str(int(row["Part"]))
 
-    bare_examples = cread("../yawarana_corpus/flexports/yab_texts.csv")
-    bare_examples["ID"] = bare_examples.apply(get_id, axis=1)
-    bare_examples = bare_examples.merge(example_add, on="ID", how="left")
-    bare_examples["Translated_Text"] = bare_examples.apply(
-        lambda x: x["Translation_en"]
-        if not (pd.isnull(x["Translation_en"]) or x["Translation_en"] == "")
-        else x["Translated_Text"],
-        axis=1,
-    )
-    bare_examples = bare_examples[~(bare_examples["ID"].isin(examples["ID"]))]
-    bare_examples["Primary_Text"] = bare_examples["Sentence"].apply(
-        lambda x: ortho_strip(x, additions=["%", "¿", "###", "#"])
-    )
-    bare_examples.drop(columns=["Segmentation", "Gloss"], inplace=True)
-    bare_examples = bare_examples[(bare_examples["Text_ID"]).isin(texts.keys())]
+    if len(sys.argv) > 1 and sys.argv[1] == "release":
+        bare_examples = pd.DataFrame()
+    else:
+        bare_examples = cread("../yawarana_corpus/flexports/yab_texts.csv")
+        bare_examples["ID"] = bare_examples.apply(get_id, axis=1)
+        bare_examples = bare_examples.merge(example_add, on="ID", how="left")
+        bare_examples["Translated_Text"] = bare_examples.apply(
+            lambda x: x["Translation_en"]
+            if not (pd.isnull(x["Translation_en"]) or x["Translation_en"] == "")
+            else x["Translated_Text"],
+            axis=1,
+        )
+        bare_examples = bare_examples.fillna("")
+        bare_examples["Tags"] = bare_examples.apply(lambda x: x["Tags_y"] + " " + x["Tags_x"], axis=1)
+        bare_examples = bare_examples[~(bare_examples["ID"].isin(examples["ID"]))]
+        bare_examples["Primary_Text"] = bare_examples["Sentence"].apply(
+            lambda x: ortho_strip(x, additions=["%", "¿", "###", "#"])
+        )
+        bare_examples.drop(columns=["Segmentation", "Gloss"], inplace=True)
+        bare_examples = bare_examples[(bare_examples["Text_ID"]).isin(texts.keys())]
 
     # keys: morpheme IDs
     # values: different (allo)morph forms and associated morph IDs
@@ -297,19 +310,23 @@ with CLDFWriter(spec) as writer:
     roots = cread(
         "raw/dictionary_roots.csv"
     )
+    misc = cread(
+        "etc/misc_morphs.csv"
+    )
     manual_lexemes = pd.concat([manual_lexemes, roots])
     infl_morphs = cread("etc/inflection_morphs.csv")
     infl_morphemes = cread("etc/inflection_morphemes.csv")
     deriv_morphs = cread("etc/derivation_morphs.csv")
     deriv_morphemes = cread("etc/derivation_morphemes.csv")
-    for cdf in [infl_morphemes, infl_morphs, deriv_morphs, deriv_morphemes]:
+    misc_morphs = cread("etc/misc_morphs.csv")
+    misc_morphemes = cread("etc/misc_morphemes.csv")
+    for cdf in [infl_morphemes, infl_morphs, deriv_morphs, deriv_morphemes, misc_morphs, misc_morphemes]:
         cdf["Language_ID"] = "yab"
-    for cdf in [infl_morphemes, deriv_morphemes]:
+    for cdf in [infl_morphemes, deriv_morphemes, misc_morphemes]:
         cdf.rename(columns={"Gloss": "Parameter_ID"}, inplace=True)
-    morph_meanings = dict(zip(infl_morphemes["ID"], infl_morphemes["Parameter_ID"]))
-    infl_morphs["Parameter_ID"] = infl_morphs["Morpheme_ID"].map(morph_meanings)
-    morph_meanings = dict(zip(deriv_morphemes["ID"], deriv_morphemes["Parameter_ID"]))
-    deriv_morphs["Parameter_ID"] = deriv_morphs["Morpheme_ID"].map(morph_meanings)
+    for a, b in [(infl_morphemes, infl_morphs), (deriv_morphemes, deriv_morphs), (misc_morphemes, misc_morphs)]:
+        morph_meanings = dict(zip(a["ID"], a["Parameter_ID"]))
+        b["Parameter_ID"] = b["Morpheme_ID"].map(morph_meanings)
 
     log.info("Sources")
     found_refs = jsonlib.load("etc/refs.json")
@@ -328,7 +345,7 @@ with CLDFWriter(spec) as writer:
     # the distinct meanings
     meanings = {"unknown": "***"}
 
-    for mp in pd.concat([infl_morphemes, deriv_morphemes]).to_dict(orient="records"):
+    for mp in pd.concat([infl_morphemes, deriv_morphemes, misc_morphemes]).to_dict(orient="records"):
         morpheme_id = mp["ID"]
         if morpheme_id in id_dict:
             log.error(morpheme_id)
@@ -340,7 +357,7 @@ with CLDFWriter(spec) as writer:
         mp["Parameter_ID"] = [slugify(y) for y in mp["Parameter_ID"].split("; ")]
         writer.objects["MorphsetTable"].append(mp)
 
-    for morph in pd.concat([infl_morphs, deriv_morphs]).to_dict(orient="records"):
+    for morph in pd.concat([infl_morphs, deriv_morphs, misc_morphs]).to_dict(orient="records"):
         morpheme_id = morph["Morpheme_ID"]
         if pd.isnull(morph["Parameter_ID"]):
             log.error("Empty meaning for morph")
@@ -586,7 +603,7 @@ with CLDFWriter(spec) as writer:
                 slug = slugify("-".join(morph_ids))
                 form_meanings[form_slug] = slug
                 if " " in gramm:
-                    print(ex["Gramm"], "iii", gramm)
+                    print(ex["Gramm"], "eeek", gramm)
                 if slug not in forms:
                     forms[slug] = {
                         "Form": word.word,
