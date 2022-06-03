@@ -379,7 +379,7 @@ with CLDFWriter(spec) as writer:
         else:
             morpheme_id = lexeme["ID"]
         if morpheme_id in id_dict:
-            log.error(morpheme_id)
+            log.error(f"{morpheme_id} is already in id_dict")
             raise ValueError
         id_dict[morpheme_id] = {}
         forms = lexeme["Form"].split("; ")
