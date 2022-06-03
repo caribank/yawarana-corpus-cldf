@@ -1,7 +1,7 @@
 ID,Name,Gloss,Comment
 i3,i-/t-,3,The old *_-it_.
 jnepl,-jnë,PL,
-tojpefut,-tojpe,FUT; PURP,
+tojpefut,-tojpe,FUT,From [](MorphsetTable#cldf:tojpepurp)
 me2,më-,2,
 jraneg,-jra,NEG; PRIV,Is this really a privative? Or a cessative? [ex](anfoperso-08)
 janeg,-ja,NEG,
@@ -30,3 +30,6 @@ tenpert,-të,NPERT,
 tipert,-ti,PERT,
 riipfv,-ri,IPFV,From [](MorphsetTable#cldf:rinmlz)
 sepst,-se,PST,From [](MorphsetTable#cldf:septcp)
+jpepst,-jpë,PST,From [](MorphsetTable#cldf:jpenmlz)
+rupert,-ru,PERT,From [](MorphsetTable#cldf:sapenmlz)
+sapepfv,-sapë,PFV,

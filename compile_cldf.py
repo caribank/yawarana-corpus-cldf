@@ -79,15 +79,18 @@ for filename in Path("/home/florianm/Downloads/New_Dictionary_Clippings").iterdi
     word_audios.setdefault(leggo, [])
     word_audios[leggo].append(filename)
 
-version = yaml.load(
-    open("raw/metadata.yaml"),
-    Loader=yaml.SafeLoader,
-)["version"]
+version = yaml.load(open("raw/metadata.yaml"), Loader=yaml.SafeLoader)["version"]
 
 citation = create_citation(infile="CITATION.cff", url=None)
-validate_or_write_output(outputformat="apalike", citation=citation, outfile="/tmp/citation.txt", validate_only=False)
+validate_or_write_output(
+    outputformat="apalike",
+    citation=citation,
+    outfile="/tmp/citation.txt",
+    validate_only=False,
+)
 citation = open("/tmp/citation.txt", "r", encoding="utf8").read().strip()
 
+release = len(sys.argv) > 1 and sys.argv[1] == "release"
 
 with CLDFWriter(spec) as writer:
     log.info("Dataset properties")
@@ -95,10 +98,7 @@ with CLDFWriter(spec) as writer:
     writer.cldf.properties.setdefault(
         "dc:title", f"A digital sketch grammar of Yawarana (v{version})"
     )
-    writer.cldf.properties.setdefault(
-        "dc:bibliographicCitation",
-        citation,
-    )
+    writer.cldf.properties.setdefault("dc:bibliographicCitation", citation)
     writer.cldf.properties.setdefault(
         "dc:description", "This is a digital description of Yawarana."
     )
@@ -108,9 +108,7 @@ with CLDFWriter(spec) as writer:
     writer.cldf.properties["dc:identifier"] = "https://fl.mt/yawarana-sketch"
 
     log.info("Chapters and authors")
-    doc_path = Path(
-        "raw/docs"
-    )
+    doc_path = Path("raw/docs")
     writer.cldf.add_component(cldf_md("ChapterTable"))
     chapters = pd.read_csv(doc_path / "chapters.csv")
     for chapter in chapters.to_dict("records"):
@@ -127,23 +125,18 @@ with CLDFWriter(spec) as writer:
         {
             "ID": "landingpage",
             "Name": "Landing page",
-            "Description": open(
-                "raw/landingpage.txt",
-                "r",
-            ).read(),
+            "Description": open("raw/landingpage.txt", "r").read(),
         }
     )
 
-    writer.objects["ChapterTable"].append(
-        {
-            "ID": "ambiguity",
-            "Name": "Manuscript: Parsing ambiguity",
-            "Description": open(
-                "raw/ambiguity.txt",
-                "r",
-            ).read(),
-        }
-    )
+    if not release:
+        writer.objects["ChapterTable"].append(
+            {
+                "ID": "ambiguity",
+                "Name": "Manuscript: Parsing ambiguity",
+                "Description": open("raw/ambiguity.txt", "r").read(),
+            }
+        )
 
     writer.cldf.add_component(cldf_md("ContributorTable"))
     for contributor in pd.read_csv("etc/contributors.csv").to_dict("records"):
@@ -175,12 +168,7 @@ with CLDFWriter(spec) as writer:
             "datatype": {"base": "string"},
             "separator": ";",
         },
-        {
-            "name": "Tags",
-            "required": False,
-            "datatype": "string",
-            "separator": ",",
-        }
+        {"name": "Tags", "required": False, "datatype": "string", "separator": ","},
     )
     writer.cldf.add_component("FormTable")
     writer.cldf.add_component("ParameterTable")
@@ -249,7 +237,7 @@ with CLDFWriter(spec) as writer:
         with open(f) as file:
             text_data = yaml.load(file, Loader=yaml.SafeLoader)
             text_id = text_data.pop("id")
-            if len(sys.argv) > 1 and sys.argv[1] == "release":
+            if release:
                 if text_id in good_texts:
                     texts[text_id] = text_data
             else:
@@ -263,7 +251,7 @@ with CLDFWriter(spec) as writer:
         else:
             return row["ID"].lower() + "-" + str(int(row["Part"]))
 
-    if len(sys.argv) > 1 and sys.argv[1] == "release":
+    if release:
         bare_examples = pd.DataFrame()
     else:
         bare_examples = cread("../yawarana_corpus/flexports/yab_texts.csv")
@@ -276,7 +264,9 @@ with CLDFWriter(spec) as writer:
             axis=1,
         )
         bare_examples = bare_examples.fillna("")
-        bare_examples["Tags"] = bare_examples.apply(lambda x: x["Tags_y"] + " " + x["Tags_x"], axis=1)
+        bare_examples["Tags"] = bare_examples.apply(
+            lambda x: x["Tags_y"] + " " + x["Tags_x"], axis=1
+        )
         bare_examples = bare_examples[~(bare_examples["ID"].isin(examples["ID"]))]
         bare_examples["Primary_Text"] = bare_examples["Sentence"].apply(
             lambda x: ortho_strip(x, additions=["%", "¿", "###", "#"])
@@ -293,26 +283,13 @@ with CLDFWriter(spec) as writer:
     flexemes = flexemes[~(flexemes["Form"].str.contains("-"))]
     flexemes = flexemes[~(flexemes["Form"].str.contains("="))]
     flexemes["Language_ID"] = "yab"
-    include = (
-        open(
-            "raw/include_flex.txt",
-            "r",
-        )
-        .read()
-        .split("\n")
-    )
+    include = open("raw/include_flex.txt", "r").read().split("\n")
     include = [x.split(" #")[0] for x in include]
     flexemes = flexemes[(flexemes["ID"].isin(include))]
 
-    manual_lexemes = cread(
-        "raw/lexemes.csv"
-    )
-    roots = cread(
-        "raw/dictionary_roots.csv"
-    )
-    misc = cread(
-        "etc/misc_morphs.csv"
-    )
+    manual_lexemes = cread("raw/lexemes.csv")
+    roots = cread("raw/dictionary_roots.csv")
+    misc = cread("etc/misc_morphs.csv")
     manual_lexemes = pd.concat([manual_lexemes, roots])
     infl_morphs = cread("etc/inflection_morphs.csv")
     infl_morphemes = cread("etc/inflection_morphemes.csv")
@@ -320,11 +297,22 @@ with CLDFWriter(spec) as writer:
     deriv_morphemes = cread("etc/derivation_morphemes.csv")
     misc_morphs = cread("etc/misc_morphs.csv")
     misc_morphemes = cread("etc/misc_morphemes.csv")
-    for cdf in [infl_morphemes, infl_morphs, deriv_morphs, deriv_morphemes, misc_morphs, misc_morphemes]:
+    for cdf in [
+        infl_morphemes,
+        infl_morphs,
+        deriv_morphs,
+        deriv_morphemes,
+        misc_morphs,
+        misc_morphemes,
+    ]:
         cdf["Language_ID"] = "yab"
     for cdf in [infl_morphemes, deriv_morphemes, misc_morphemes]:
         cdf.rename(columns={"Gloss": "Parameter_ID"}, inplace=True)
-    for a, b in [(infl_morphemes, infl_morphs), (deriv_morphemes, deriv_morphs), (misc_morphemes, misc_morphs)]:
+    for a, b in [
+        (infl_morphemes, infl_morphs),
+        (deriv_morphemes, deriv_morphs),
+        (misc_morphemes, misc_morphs),
+    ]:
         morph_meanings = dict(zip(a["ID"], a["Parameter_ID"]))
         b["Parameter_ID"] = b["Morpheme_ID"].map(morph_meanings)
 
@@ -345,7 +333,9 @@ with CLDFWriter(spec) as writer:
     # the distinct meanings
     meanings = {"unknown": "***"}
 
-    for mp in pd.concat([infl_morphemes, deriv_morphemes, misc_morphemes]).to_dict(orient="records"):
+    for mp in pd.concat([infl_morphemes, deriv_morphemes, misc_morphemes]).to_dict(
+        orient="records"
+    ):
         morpheme_id = mp["ID"]
         if morpheme_id in id_dict:
             log.error(morpheme_id)
@@ -357,7 +347,9 @@ with CLDFWriter(spec) as writer:
         mp["Parameter_ID"] = [slugify(y) for y in mp["Parameter_ID"].split("; ")]
         writer.objects["MorphsetTable"].append(mp)
 
-    for morph in pd.concat([infl_morphs, deriv_morphs, misc_morphs]).to_dict(orient="records"):
+    for morph in pd.concat([infl_morphs, deriv_morphs, misc_morphs]).to_dict(
+        orient="records"
+    ):
         morpheme_id = morph["Morpheme_ID"]
         if pd.isnull(morph["Parameter_ID"]):
             log.error("Empty meaning for morph")
@@ -475,9 +467,7 @@ with CLDFWriter(spec) as writer:
 
     dangerous_glosses = ["all"]
     # these are some wordforms collected for the dictionary, parsed with uniparser
-    dic_wordforms = cread(
-        "raw/parsed_forms.csv"
-    )
+    dic_wordforms = cread("raw/parsed_forms.csv")
     for wf in dic_wordforms.to_dict("records"):
         form_slug = slugify(wf["Segmented"] + ":" + wf["Gloss"])
         if wf["Gloss"] in dangerous_glosses:
@@ -492,7 +482,7 @@ with CLDFWriter(spec) as writer:
                 obj=wf["Segmented"],
                 gloss=wf["Gloss"],
                 id_dic=id_dict,
-                mode="morphemes"
+                mode="morphemes",
             )
             morph_ids = sort_uniparser_ids(
                 id_list=wf["Morpheme_IDs"].split(","),
@@ -577,7 +567,7 @@ with CLDFWriter(spec) as writer:
                             "Form_ID": slug,
                             "Example_ID": ex["ID"],
                             "Slice": str(word_count),
-                            "Parameter_ID": "unknown"
+                            "Parameter_ID": "unknown",
                         }
                     )
                     continue
@@ -588,7 +578,7 @@ with CLDFWriter(spec) as writer:
                     obj=word.word,
                     gloss=word.gloss,
                     id_dic=id_dict,
-                    mode="morphemes"
+                    mode="morphemes",
                 )
                 morph_ids = sort_uniparser_ids(
                     id_list=morpheme_ids.split(","),
