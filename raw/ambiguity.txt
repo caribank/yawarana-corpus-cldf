@@ -1,35 +1,37 @@
-# Introduction <a id='sec:intro'></a>
+## Introduction {#sec:intro}
 
 * [Language yab](LanguageTable?#cldf:yab) ([yaba1248](https://glottolog.org/resource/languoid/id/yaba1248)) is an underdescribed Cariban language of Venezuela.
 * [matter2022uniparser](sources.bib?with_internal_ref_link&ref#cldf:matter2022uniparser) is a morphological parser for [Language yab](LanguageTable?#cldf:yab), implemented with [uniparser-morph](https://github.com/timarkh/uniparser-morph)
 * for many forms, the parser suggests multiple possible analyses
 * this paper discusses these ambiguous forms, the reasons behind them, and the implemented solutions
 
-# uniparser-morph
+## uniparser-morph
 
 * something about uniparser-morph
 
-## uniparser-yawarana
+### uniparser-yawarana
 
-## Analysis elimination mechanisms
+### Analysis elimination mechanisms
 
 * bad analyses
 
 * CG3 rules
 
-# The ambiguities
+## The ambiguities
 
-## Accidental
+### Accidental
 * *makë*: 'mother' or ma-kë 'throw!'
 * *yaka*: 'excavate' or 'ALL'
-* *ma*: 'throw-NMLZ' or 'RESTR'?
-    * safe to remove it after [Form 3b92fde8-f646-47dd-b190-18c1ca2d60791](FormTable?#cldf:3b92fde8-f646-47dd-b190-18c1ca2d60791): `REMOVE ("ma" vt) IF (-1 ("tawara"));` 
-* syllable reduction leads to homophonous [Morpheme 55db3ac7-4711-4980-845e-4b966dff41bc](MorphsetTable?#cldf:55db3ac7-4711-4980-845e-4b966dff41bc) and [Morpheme ccb970b7-980c-4dc2-84fc-f291fd9a6bab](MorphsetTable?#cldf:ccb970b7-980c-4dc2-84fc-f291fd9a6bab)
-* [Morpheme teloc](MorphsetTable?#cldf:teloc) and [Morpheme a5589c54-8bcd-40e2-9d28-b29f1592ccd3](MorphsetTable?#cldf:a5589c54-8bcd-40e2-9d28-b29f1592ccd3)
-* [Morpheme yakaall](MorphsetTable?#cldf:yakaall) and [Morpheme 02b332df-f7da-4749-9720-574666e70d71](MorphsetTable?#cldf:02b332df-f7da-4749-9720-574666e70d71) and [Morpheme 75b2df1a-11a1-44ad-8e38-88a6acf07322](MorphsetTable?#cldf:75b2df1a-11a1-44ad-8e38-88a6acf07322)
-* [Morph t3](MorphTable?#cldf:t3)[Morph 9d95bdea-d5de-48df-8e71-8e49d8ce18090](MorphTable?#cldf:9d95bdea-d5de-48df-8e71-8e49d8ce18090) '3-rice' or just [Morph 62e12d1c-dd51-4a74-af84-2c7b0b87d0c10](MorphTable?#cldf:62e12d1c-dd51-4a74-af84-2c7b0b87d0c10) 'say'?
+* *ma*: 'throw-NMLZ' or 'RESTR'? 
+    * safe to remove it after [Morpheme tawara-too](MorphsetTable?#cldf:tawara-too):
+    `REMOVE ("ma" vt) IF (-1 ("tawara"));` 
+* syllable reduction leads to homophonous [Morph wej-cop-0](MorphTable?#cldf:wej-cop-0) and _wej_ 'come'
+* [Morpheme teloc](MorphsetTable?#cldf:teloc) and [Morpheme tenpert](MorphsetTable?#cldf:tenpert)
+* [Morpheme yakaall](MorphsetTable?#cldf:yakaall) and _yaka_ 'deer' and _yaka_ 'excavate'
+* [Morph t3](MorphTable?#cldf:t3)_aro_ '3-rice' or just [Morpheme taro-say](MorphsetTable?#cldf:taro-say) 'say'?
+* *yakara=ma* 'believe=<span class="smallcaps">rst</span>' or [Morpheme yakarama-tell](MorphsetTable?#cldf:yakarama-tell) 'tell'? 
 
-## Polysemy
+### (Historical) polysemy
 * *ya*: ERG or OBL
 * *-se*: PTCP/PST/SUP
 * -*ri*: NMLZ/IPFV
@@ -43,10 +45,8 @@ In some instances, the nominal analysis can be chosen based on the following wor
 
 [Example anfoperso-03](ExampleTable?example_no=1#cldf:anfoperso-03)
 
-
-## FLEx artifacts
-* *enijpëtërë*: 'one' with or without EMP
-* [Morph 2d4fe89b-c49d-4d19-86ae-209f48c5b2250](MorphTable?#cldf:2d4fe89b-c49d-4d19-86ae-209f48c5b2250) or [Morph 970de200-9d4a-4b20-8fe0-cf7db81112520](MorphTable?#cldf:970de200-9d4a-4b20-8fe0-cf7db81112520)[Morph pstjpe1](MorphTable?#cldf:pstjpe1)?
-* [Morph e5878716-bc48-4e01-b82d-d9c6e602e5901](MorphTable?#cldf:e5878716-bc48-4e01-b82d-d9c6e602e5901) and [Morph reemp-0](MorphTable?#cldf:reemp-0) or [Morph f72955ca-fde8-40d4-ae99-ae03e9dfd2880](MorphTable?#cldf:f72955ca-fde8-40d4-ae99-ae03e9dfd2880)?
+### Unclear
 * *entë* 'here' or *en-të* '3INAN.PROX-LOC'?
+* *ënka* 'right', homophonous with verbal 'finish' or polysemy?
+
 

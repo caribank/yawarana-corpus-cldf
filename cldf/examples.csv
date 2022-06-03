@@ -1,1442 +1,166 @@
 ID,Language_ID,Primary_Text,Analyzed_Word,Gloss,Translated_Text,Meta_Language_ID,Comment,Text_ID,Part,Source,Tags
-ctorat-01,yab, makë ya ta taji rë,makë\tya\tta-∅\ttaji\trë,mother\tERG\tsay-IPFV\t?\tEMP,My mother told this (story).,,,CtoRat,1.0,,"say_AV,ERG_NP,TF_ta-ri"
-ctorat-02,yab, waijta,waijta,mouse,The mice.,,,CtoRat,2.0,,NP_
-ctorat-03,yab, enijpëtërë waraijtokomo ijtëse ti mïjna tëijpo wïnïjse,enijpëtërë\twaraijtokomo\tij-të-se\tti\tmïjna\ttëijpo\twïnïj-se,one\tman\t3-go-PST\tHSY\tthere.ALL\tfar\tsleep-PST,"A man went there, far, to sleep.",,,CtoRat,3.0,,"INTR_SVLX,@,INTRsub_XV"
-ctorat-04,yab, yutu yaka,yutu\tyaka,forest\tALL,To the woods.,,,CtoRat,4.0,,fragment_
-ctorat-05,yab, irëjpë ti ta ti ta,irëjpë\tti\tta-∅\tti\tta,then\tHSY\tsay-IPFV\tHSY\tlike,Then she said:,,,CtoRat,5.0,,"say_TV,ERGØ,TF_ta-ri"
-ctorat-06,yab, wïnïjse,wïnïj-se,sleep-PST,He slept.,,,CtoRat,6.0,,INTR_V
-ctorat-07,yab, tawani yawë senejka wejsapë irëjpë ënujse kawë,tawani\tyawë\tsenejka-∅\twej-sapë\tirëjpë\tënuj-se\tkawë,darkness\tLOC\tremain-IPFV\tCOP-PFV\tthen\tgo.up-PST\thigh,He was staying in the dark and then went up high (in the house).,,,CtoRat,7.0,,"INTR_LVH,@,INTR_TVL"
-ctorat-08,yab, kawë ënujse irëjpë,kawë\tënuj-se\tirëjpë,high\tgo.up-PST\tthen,He went up high and then...,,,CtoRat,8.0,,INTR_LV
-ctorat-09,yab, ti waijtaton nwajtë wejsapë,ti\twaijta-ton\tnwajtë-∅\twej-sapë,HSY\tmouse-PL\tdance-IPFV\tCOP-PFV,The mice were dancing.,,,CtoRat,9.0,,INTR_SVH
-ctorat-10,yab, sakunkai sakunkai,sakunkai\tsakunkai,sakunkai\tsakunkai,"Sakunkai, Sakunkai.",,,CtoRat,10.0,,
-ctorat-11,yab,""" sakunkai"" ta ta irëjpë"" sakunkai""",sakunkai\tta-∅\tta\tirëjpë\tsakunkai,sakunkai\tsay-IPFV\tlike\tthen\tsakunkai,"“Sakunkai”, they said, and then “Sakunkai”.",,,CtoRat,11.0,,"say_RV,ERGØ,TF_ta-ri"
-ctorat-12,yab, wurijyampïjkë kantajnë tawara rë wejsapë,wurijyam-pïjkë\tkantajnë-∅\ttawara\trë\twej-sapë,woman-DIM\tsing-IPFV\ttoo\tEMP\tCOP-PFV,"The female was singing, too.",,,CtoRat,12.0,,INTR_SVXH
-ctorat-13,yab, tëwï naikonton ti tawara,tëwï\tnai-∅-konton\tti\ttawara,3PRO\tdo-IPFV-PL\tHSY\ttoo,They did like this.,,,CtoRat,13.0,,"TR_AVX,noERG_3,TF_nai-ri"
-ctorat-14,yab, okï yëni tajne ya soj soj soj,okï\tyëni-∅\tta-jne\tya\tsoj\tsoj\tsoj,chicha\tdrink-IPFV\t3-PL\tERG\tID:dabble\tID:dabble\tID:dabble,"They drank chicha, splash.",,,CtoRat,14.0,,"TR_OVA,ERG_3PL,TF_yeni-ri"
-ctorat-15,yab, tajne naijpëtiri warë,ta-jne\tnaij-pëti-ri\twarë,3-PL\tdo-PLUR-IPFV\tthus,They did like this.,,,CtoRat,15.0,,"TR_AVX,ERG_3PL,TF_nai-ri"
-ctorat-16,yab, irëjpë tëwï waijtatomo nwajtëri,irëjpë\ttëwï\twaijta-tomo\tnwajtë-ri,then\t3PRO\tmouse-PL\tdance-IPFV,Then the mice were dancing.,,,CtoRat,16.0,,INTR_LSV
-ctorat-17,yab, waijtatomo ëjwenakase,waijta-tomo\tëj-wenaka-se,mouse-PL\tDETRZ-vomit-PST,The mice vomited.,,,CtoRat,17.0,,"TR_AV,noERG_NP,TF_wenaka-se"
-ctorat-18,yab, irë wejtane ti,?\twej-tane\tti,?\tCOP-CNCS\tHSY,But it was like this:,,,CtoRat,18.0,,fragment
-ctorat-19,yab, pïrarë ti iwenaru wejsapë,pïrarë\tti\ti-wena-ru\twej-sapë,nothing\tHSY\t3-vomit-PERT\tCOP-PFV,Their vomit was not there.,,,CtoRat,19.0,,NVP_
-ctorat-20,yab, wenaru pïrarë,wena-ru\tpïrarë,vomit-PERT\tnothing,There was no vomit.,,,CtoRat,20.0,,NVP_
-ctorat-21,yab, ta ti ta tëwï waraijtokomo ya,ta\tti\t?\ttëwï\twaraijtokomo\t?,like\tHSY\t?\t3PRO\tman\t?,said the man (?).,,,CtoRat,21.0,,"say_VA,ERG_NP,TF_ta-ri"
-ctorat-22,yab, sujtase ti wejsapë,suj-ta-se\tti\twej-sapë,urine-VBZ-PST\tHSY\tCOP-PFV,He urinated.,,,CtoRat,22.0,,INTR_VH
-ctorat-23,yab, aaa usukuru morone ta wïrë usujta ta ne,aaa\tu-suku-ru\tmorone\tta\twïrë\tu-suj-ta-∅\tta\tne,***\t1-urine-PERT\thurting\tlike\t1PRO\t1-urine-VBZ-IPFV\tlike\tINTS,"My urine hurts, I will urinate.",,,CtoRat,23.0,,"NVP_,@,INTR_VS"
-ctorat-24,yab, warë sujtase,warë\tsuj-ta-se,thus\turine-VBZ-PST,Then he urinated.,,,CtoRat,24.0,,INTR_XV
-ctorat-25,yab, irëjpë ta ti ta konopo wejsarë konopo wejsarë,irëjpë\tta-∅\tti\tta\tkonopo\twej-sarë\tkonopo\twej-sarë,then\tsay-IPFV\tHSY\tlike\train\tCOP-IMN\train\tCOP-IMN,"Then they said: “it’s raining, it’s raining”.",,,CtoRat,25.0,,"say_XVR,ERGØ,TF_ta-ri,;,INTR_SV"
-ctorat-26,yab, ta ti ta waijtatomo ya,ta\tti\t?\twaijta-tomo\t?,like\tHSY\t?\tmouse-PL\t?,...said the mice.,,,CtoRat,26.0,,
-ctorat-27,yab, irëjpë pïrarë ti warë irëjpë warë,irëjpë\tpïrarë\tti\twarë\tirëjpë\twarë,then\tnothing\tHSY\tthus\tthen\tthus,Then there was nothing.,,,CtoRat,27.0,,NVP_
-ctorat-28,yab, irëjpë tawejka yawë,irëjpë\ttawejka-∅\tyawë,then\tto.daylight-IPFV\tLOC,"Then, in the morning...",,,CtoRat,28.0,,fragment_
-ctorat-29,yab, waijtatomojpë ijtëse ti,waijta-tomo-jpë\tij-të-se\tti,mouse-PL-PST\t3-go-PST\tHSY,the mice went away.,,,CtoRat,29.0,,INTR_SV
-ctorat-30,yab, tipasekontomo warë irëjpë pïrarë,tipa-se-kontomo\twarë\tirëjpë\tpïrarë,go.in.group-PST-PL\tthus\tthen\tnothing,They left and were gone.,,,CtoRat,30.0,,"INTR_V,@,NVP_"
-ctorat-31,yab, ëjwenakajpë tainpëtiri waraijtokomo tëwï,ëj-wenaka-jpë\tta-in-pëti-ri\twaraijtokomo\ttëwï,DETRZ-vomit-PST\t3P-see-PLUR-IPFV\tman\t3PRO,The man saw their vomit.,,,CtoRat,31.0,,"TR_OVA,noERG_ta,TF_ini-ri"
-ctorat-32,yab, waraijtokomo ya inpëti ti,waraijtokomo\tya\tin-pëti-∅\tti,man\tERG\tsee-PLUR-IPFV\tHSY,He saw it.,,,CtoRat,32.0,,"TR_AV,ERG_NP,TF_ini-ri"
-ctorat-33,yab, irëjpë ti wenakajpë mare pïrarë ti,irëjpë\tti\twenaka-jpë\tmare\tpïrarë\tti,then\tHSY\tvomit-PST\tstill\tnothing\tHSY,Then there was nothing of their vomit.,,,CtoRat,33.0,,NVP_
-ctorat-34,yab, ëkëtë mërë ëkï,ëkëtë\tmërë\tëkï,where\tMED.INAN\tmanioc.beer,Where is the chicha?,,,CtoRat,34.0,,NVP_
-ctorat-35,yab, ëkï ta rë pïrarë wenarujpë ta rë pïrarë,ëkï\tta\trë\tpïrarë\twena-ru-jpë\tta\trë\tpïrarë,manioc.beer\tlike\tEMP\tnothing\tvomit-PERT-PST\tlike\tEMP\tnothing,The chicha was gone and so was the vomit.,,,CtoRat,35.0,,"NVP_,@,NVP_"
-ctorat-36,yab, ta ti wejsaj ti tëwï,ta-∅\tti\twej-saj\tti\ttëwï,say-IPFV\tHSY\tCOP-PFV\tHSY\t3PRO,...he said.,,,CtoRat,36.0,,"say_VHA,noERG_3,TF_ta-ri"
-ctorat-37,yab, waijtatomo nwajtë mare,waijta-tomo\tnwajtë-∅\tmare,mouse-PL\tdance-IPFV\tstill,The mice were dancing.,,,CtoRat,37.0,,INTR_SV
-ctorat-38,yab, ëjtë kërëjpë yawë nwajtëkonton ti wejsapë waijta,ëjtë\tkërëjpë\tyawë\tnwajtë-∅-konton\tti\twej-sapë\twaijta,house\told\tLOC\tdance-IPFV-PL\tHSY\tCOP-PFV\tmouse,In the old house the mice were dancing.,,,CtoRat,38.0,,INTR_LVHS
-ctorat-39,yab, sukase nwajtëri irëjpë ti warë,sukase\tnwajtë-ri\tirëjpë\tti\twarë,all\tdance-IPFV\tthen\tHSY\tthus,"They were all dancing, then.",,,CtoRat,39.0,,INTR_NVX
-ctorat-40,yab, tipapëjsejne waijtajne,tipa-pëj-se-jne\twaijta-jne,go.in.group-PLUR-PST-PL\tmouse-PL,the mice went away.,,,CtoRat,40.0,,INTR_VS
-ctorat-41,yab, ajpachi yaka pïnika ëkëjna neke wonse,ajpachi\tyaka\tpïnika\tëkëjna\tneke\twon-se,undergrowth\tALL\tPROB\twhere.to\tCONTRAST\tenter-PST,"Probably to the woods, dunno where they went.",,,CtoRat,41.0,,INTR_LV
-ctorat-42,yab, tëwï ajpachi yaka wonse pïnika tëwï,tëwï\tajpachi\tyaka\twon-se\tpïnika\ttëwï,3PRO\tundergrowth\tALL\tenter-PST\tPROB\t3PRO,Maybe they went to the woods.,,,CtoRat,42.0,,"REPEAT_S,@,INTR_SLVS"
-ctorat-43,yab, tëwï ma tase makë ya,tëwï\tma\tta-se\tmakë\tya,3PRO\tRESTR\tsay-PST\tmother\tERG,That’s what my mother said.,,,CtoRat,43.0,,
-ctorat-44,yab, tawara ma ta ti wejsapë tëwï waraijtokon maniki,tawara\tma\tta-∅\tti\twej-sapë\ttëwï\twaraijtokon\tmaniki,too\tRESTR\tsay-IPFV\tHSY\tCOP-PFV\t3PRO\tman\t?,That’s all she said.,,,CtoRat,44.0,,"say_XVHA,noERG_3,TF_ta-ri-H-sapë"
-ctorat-45,yab, irëjpë ijtëse,irëjpë\tij-të-se,then\t3-go-PST,Then the man went.,,,CtoRat,45.0,,INTR_SXV
-ctorat-46,yab, tïwïj yaka waraijtokomo manikijpë,t-ïwïj\tyaka\twaraijtokomo\tmaniki-jpë,3-house\tALL\tman\t?-PST,He went to his house.,,,CtoRat,46.0,,fragment_
-convrisamaj-01,yab," ati rë warai mërë iniri, irëjpë mëyarika ti",ati\trë\twarai\tmërë\tini-ri\tirëjpë\tmë-yarika-∅\tti,what\tEMP\tlike\t2PRO\tsee-IPFV\tthen\t2-laugh-IPFV\tHSY,You see something and then you laugh.,,,ConvRisaMAJ,1.0,,
-convrisamaj-02,yab," mëyaruwari, mëpëkëpene",më-yaruwa-ri\tmë-pëkëpene,2-laugh-IPFV\t2-alone,You just laugh.,,,ConvRisaMAJ,2.0,,
-convrisamaj-03,yab," ejnë pëkëpene ejnë yaruwaja, ënka wanene",ejnë\tpëkëpene\tejnë\tyaruwa-∅-ja\tënka\twanene,1+2PRO\talone\t1+2PRO\tlaugh-IPFV-NEG\tright\taunt,"We don’t just laugh, right, aunt?",,,ConvRisaMAJ,3.0,,
-convrisamaj-04,yab, wïrë yaruwarijra###,wïrë\tyaruwa-ri-jra,1PRO\tlaugh-IPFV-NEG,I don’t laugh.,,,ConvRisaMAJ,4.0,,
-convrisamaj-05,yab," ejnë yaruwari tajne yakarama pëkë rë nwarë, nope esene mare, tawara neke ne, ënka",ejnë\tyaruwa-ri\tta-jne\tyakarama-∅\tpëkë\trë\tnwarë\tnope\tesene-∅\tmare\ttawara\tneke\tne\tënka,1+2PRO\tlaugh-IPFV\t3-PL\ttell-IPFV\ton.surface\tEMP\tthus\tgood\tsee.self-IPFV\tREL.INAN\ttoo\tCONTRAST\tINTS\tright,"We laugh when somebody tells (us) something, something you see well, like that, right.",,,ConvRisaMAJ,5.0,,
-convrisamaj-06,yab,¿ kwase ejnë yaruwari?,kwase\tejnë\tyaruwa-ri,how\t1+2PRO\tlaugh-IPFV,How will we laugh?,,,ConvRisaMAJ,6.0,,
-convrisamaj-07,yab," wïrë yaruwakempïnirë, mëkïsantomo a-ja-ja tajtane",wïrë\tyaruwakempïnirë\tmëkïsantomo\tajaja\ttaj-tane,1PRO\t***\tDIST.ANIM.PL\thahaha\tsay-CNCS,"I don’t laugh, but they are saying “hahaha”.",,,ConvRisaMAJ,7.0,,
-convrisamaj-08,yab,"¡ kï%¡¿ mokontomo serekapojra ka mokontomo yaruwari%¿ wïrë yaruwarijra taro wïrë, ta ta wïrë ya",kï\tmokontomo\tsereka-po-jra\tka\tmokontomo\tyaruwa-ri\twïrë\tyaruwa-ri-jra\ttaro-∅\twïrë\tta-∅\tta\twïrë\tya,oh\t2PL.PRO\ttire-DES-NEG\tQ\t2PL.PRO\tlaugh-IPFV\t1PRO\tlaugh-IPFV-NEG\tsay-IPFV\t1PRO\tsay-IPFV\tlike\t1PRO\tERG,"Oh! You don’t get tired of laughing? I don’t laugh, is what I’m saying.",,,ConvRisaMAJ,8.0,,
-convrisamaj-09,yab," tëwï neke ne, tajne yakarama pokono nwarë tajne iri mïntë, tunampe",tëwï\tneke\tne\tta-jne\tyakarama-∅\tpoko-no\tnwarë\tta-jne\ti-ri\tmïntë\ttunampe,3PRO\tCONTRAST\tINTS\t3-PL\ttell-IPFV\ton.surface-NMLZ\tthus\t3-PL\tdo-IPFV\tthere.LOC\t***,"Yes indeed, they tell what they are doing there on the down-low.",,,ConvRisaMAJ,9.0,,
-convrisamaj-10,yab," tajne yarikari irëjpë, tajne yakarama pokono",ta-jne\tyarika-ri\tirëjpë\tta-jne\tyakarama-∅\tpoko-no,3-PL\tlaugh-IPFV\tthen\t3-PL\ttell-IPFV\ton.surface-NMLZ,They laugh because they tell it.,,,ConvRisaMAJ,10.0,,
-convrisamaj-11,yab," tawaja ejnë, ejnë neke ne, ejnë pëkëpene ejnë yarikaja",tawa-ja\tejnë\tejnë\tneke\tne\tejnë\tpëkëpene\tejnë\tyarika-∅-ja,too-NEG\t1+2PRO\t1+2PRO\tCONTRAST\tINTS\t1+2PRO\talone\t1+2PRO\tlaugh-IPFV-NEG,"We’re not like that, we don’t just laugh.",,,ConvRisaMAJ,11.0,,
-convrisamaj-12,yab,¿ ati ejnë yaruwari?,ati\tejnë\tyaruwa-ri,what\t1+2PRO\tlaugh-IPFV,What are we going to laugh about?,,,ConvRisaMAJ,12.0,,
-convrisamaj-13,yab," pïrarë, seneja ejnë yarikatopo",pïrarë\tsene-∅-ja\tejnë\tyarikatopo,nothing\tsee.self-IPFV-NEG\t1+2PRO\t***,"Nothing, there’s nothing for us to laugh.",,,ConvRisaMAJ,13.0,,
-convrisamaj-14,yab, nwarë ti ta ta,nwarë\tti\tta-∅\tta,thus\tHSY\tsay-IPFV\tlike,That’s what I say.,,,ConvRisaMAJ,14.0,,
-convrisamaj-15,yab, taitapo ti,ta-ita-po\tti,3P-hear-DES\tHSY,I want to hear it.,,,ConvRisaMAJ,15.0,,
-convrisamaj-16,yab,¿ ati ta ta?,ati\tta-∅\tta,what\tsay-IPFV\tlike,What are you saying?,,,ConvRisaMAJ,16.0,,
-convrisamaj-17,yab, chiri ma wïrë taro,chi-ri\tma\twïrë\ttaro-∅,COP-IPFV\tRESTR\t1PRO\tsay-IPFV,That’s all I’m saying.,,,ConvRisaMAJ,17.0,,
-convrisamaj-18,yab," tawarama taro wïrë, wïrë yewenke",tawara=ma\ttaro-∅\twïrë\twïrë\ty-ewenke,too=RESTR\tsay-IPFV\t1PRO\t1PRO\tLK-not.know,"That’s all I’m saying, too, I don’t know.",,,ConvRisaMAJ,18.0,,
-convrisamaj-19,yab,¿ ati pëkë ejnë yaruwari?,ati\tpëkë\tejnë\tyaruwa-ri,what\ton.surface\t1+2PRO\tlaugh-IPFV,What are we going to laugh about?,,,ConvRisaMAJ,19.0,,
-convrisamaj-20,yab,### yaruwakempïnirë wïrë,yaruwakempïnirë\twïrë,***\t1PRO,I don’t laugh.,,,ConvRisaMAJ,20.0,,
-convrisamaj-21,yab," wïrë yaruwakempïnirë wïrë senejkarï uyïwïj yaka sukuri, jwama",wïrë\tyaruwakempïnirë\twïrë\tsenejka-rï\tu-y-ïwïj\tyaka\tsuku-ri\tjwama,1PRO\t***\t1PRO\tremain-IPFV\t1-LK-house\tALL\turine-PERT\t***,"I don’t laugh, I silently stay in my house.",,,ConvRisaMAJ,21.0,,
-convrisamaj-22,yab, mëkïsantomo yaruwari wïrë itari,mëkïsantomo\tyaruwa-ri\twïrë\tita-ri,DIST.ANIM.PL\tlaugh-IPFV\t1PRO\thear-IPFV,They’re laughing and I’m listening.,,,ConvRisaMAJ,22.0,,
-convrisamaj-23,yab," kï, serekapojra ka mokontomo yaruwari",kï\tsereka-po-jra\tka\tmokontomo\tyaruwa-ri,oh\ttire-DES-NEG\tQ\t2PL.PRO\tlaugh-IPFV,"Ugh, don’t you get tired from laughing so much?",,,ConvRisaMAJ,23.0,,
-convrisamaj-24,yab, wïrë wajyakïtïjra taro wïrë ta wïrë ya,wïrë\twajyakïtï-jra\ttaro-∅\twïrë\tta-∅\twïrë\tya,1PRO\tvery.happy-PRIV\tsay-IPFV\t1PRO\tsay-IPFV\t1PRO\tERG,I’m saying I am not happy.,,,ConvRisaMAJ,24.0,,
-convrisamaj-25,yab, kajkë,kaj-kë,say-IMP,You’re right.,,,ConvRisaMAJ,25.0,,
-convrisamaj-26,yab,### ta wejsaj wïrë,ta-∅\twej-saj\twïrë,say-IPFV\tCOP-PFV\t1PRO,### I say.,,,ConvRisaMAJ,26.0,,
-convrisamaj-27,yab," tawaraij wïrë, yaruwakempïnirë,",tawaraij\twïrë\tyaruwakempïnirë,too\t1PRO\t***,"I’m not like that, I don’t laugh.",,,ConvRisaMAJ,27.0,,
-convrisamaj-28,yab, uyïwïj yawë usenejkari sukuri jwama,u-y-ïwïj\tyawë\tu-senejka-ri\tsuku-ri\tjwama,1-LK-house\tLOC\t1-remain-IPFV\turine-PERT\t***,I silently stay in my house.,,,ConvRisaMAJ,28.0,,
-convrisamaj-29,yab, nope seneja chipokono ejnë pana nope seneja chipokono ejnë yaruwatopo pïrärë,nope\tsene-∅-ja\tchipokono\tejnë\tpana\tnope\tsene-∅-ja\tchipokono\tejnë\tyaruwatopo\tpïrärë,good\tsee.self-IPFV-NEG\t***\t1+2PRO\tDAT\tgood\tsee.self-IPFV-NEG\t***\t1+2PRO\t***\t***,"We don’t see anything good, so we don’t laugh.",,,ConvRisaMAJ,29.0,,
-convrisamaj-30,yab," inkë, irë nwa chipëkë",in-kë\tirë\tnwa\tchipëkë,see-IMP\tDEM\tdance\t***,"You see, that’s why.",,,ConvRisaMAJ,30.0,,
-convrisamaj-31,yab, mërë nwa chipokono ejnë yarikaja,mërë\tnwa\tchipokono\tejnë\tyarika-∅-ja,MED.INAN\tdance\t***\t1+2PRO\tlaugh-IPFV-NEG,That’s why we don’t laugh.,,,ConvRisaMAJ,31.0,,
-convrisamaj-32,yab, tëwïsantomo neke ne yaruwatëpëkë ma rë chikontomo,tëwïsantomo\tneke\tne\tyaruwa-tëpëkë\tma\trë\tchi-∅-kontomo,3PRO.PL\tCONTRAST\tINTS\tlaugh-PROG.INTR\tRESTR\tEMP\tCOP-IPFV-PL,But they’re constantly laughing.,,,ConvRisaMAJ,32.0,,
-convrisamaj-33,yab, tajne ini pokono waimukontomo,ta-jne\tini-∅\tpoko-no\twaimu-∅-kontomo,3-PL\tsee-IPFV\ton.surface-NMLZ\ttalk-IPFV-PL,Because they see they laugh.,,,ConvRisaMAJ,33.0,,
-convrisamaj-34,yab," tajne ya ijpë mare tëwï, tajne ya yekerema pïnika ta wïrë",ta-jne\tya\ti-jpë\t?\ttëwï\t?\t?\tyekerema\tpïnika\t?\twïrë,3-PL\tERG\tdo-PST\t?\t3PRO\t?\t?\t***\tPROB\t?\t1PRO,"What they did, they’re going to tell.",,,ConvRisaMAJ,34.0,,
-convrisamaj-35,yab," pïnika, pïnika, tawara chipokon pïnika yaruwakontomo",pïnika\tpïnika\ttawara\tchipokon\tpïnika\tyaruwa-∅-kontomo,PROB\tPROB\ttoo\t***\tPROB\tlaugh-IPFV-PL,So that’s why they’re laughing.,,,ConvRisaMAJ,35.0,,
-convrisamaj-36,yab, taro mare wïrë ya,taro-∅\tmare\twïrë\tya,say-IPFV\tstill\t1PRO\tERG,yo no sé nada pero digo así,,,ConvRisaMAJ,36.0,,
-convrisamaj-37,yab, nwa ma pïnika ta wïrë ya,nwa\tma\tpïnika\tta-∅\twïrë\tya,dance\tRESTR\tPROB\tsay-IPFV\t1PRO\tERG,So I won’t say any more.,,,ConvRisaMAJ,37.0,,
-convrisamaj-38,yab, tejpore sa ne yaruwakontomo,tejpore\tsa\tne\tyaruwa-∅-kontomo,tasty\tEVAL\tINTS\tlaugh-IPFV-PL,They like laughing.,,,ConvRisaMAJ,38.0,,
-convrisamaj-40,yab, tawarama wïrë itari onono parë,tawara=ma\twïrë\tita-ri\tonono\tparë,too=RESTR\t1PRO\thear-IPFV\tanother\tand,I also listened some times.,,,ConvRisaMAJ,40.0,,
-convrisamaj-42,yab, yaruwakontomo yatum ponoko,yaruwa-∅-kontomo\tyatum\tponoko,laugh-IPFV-PL\tsun\tevery,They laugh every day.,,,ConvRisaMAJ,42.0,,
-convrisamaj-43,yab, ta takontomo,ta\tta-∅-kontomo,like\tsay-IPFV-PL,That’s what they say (?),,,ConvRisaMAJ,43.0,,
-convrisamaj-44,yab, wïrë inija ta rë,wïrë\tini-∅-ja\tta\trë,1PRO\tsee-IPFV-NEG\tlike\tEMP,I haven’t seen.,,,ConvRisaMAJ,44.0,,
-convrisamaj-45,yab,"¡ kë%¡ mokontomo wajyakïtï ta, wïrë wajyakïtïjra taro wïrë ta wïrë ya",kë\tmokontomo\twajyakïtï\tta-∅\twïrë\twajyakïtï-jra\ttaro-∅\twïrë\tta-∅\twïrë\tya,ouch\t2PL.PRO\tvery.happy\tsay-IPFV\t1PRO\tvery.happy-PRIV\tsay-IPFV\t1PRO\tsay-IPFV\t1PRO\tERG,"Ugh, you are happy but I am not, I say.",,,ConvRisaMAJ,45.0,,
-convrisamaj-46,yab, uyarë wïrë përemekïrï,u-ya=rë\twïrë\tpëremekï-rï,1-ERG=EMP\t1PRO\ttalk-IPFV,I just talk.,,,ConvRisaMAJ,46.0,,
-convrisamaj-47,yab," aniki narëpe yakërë ejnë përemekïrï, ejnë pëkëpene, wanene",aniki\tnarëpe\tyakërë\tejnë\tpëremekï-rï\tejnë\tpëkëpene\twanene,who\t***\t***\t1+2PRO\ttalk-IPFV\t1+2PRO\talone\taunt,"Who are we gonna talk to? We’re alone, aunt.",,,ConvRisaMAJ,47.0,,
-convrisamaj-48,yab, pïrarë ejnë chiyakon chipokono ejnë yaruwatopo pïrarë,pïrarë\tejnë\tchiyakon\tchipokono\tejnë\tyaruwatopo\tpïrarë,nothing\t1+2PRO\tfriend\t***\t1+2PRO\t***\tnothing,Because we don’t have friends we don’t have anything to laugh.,,,ConvRisaMAJ,48.0,,
-convrisamaj-49,yab, inkë,in-kë,see-IMP,That’s right!,,,ConvRisaMAJ,49.0,,
-convrisamaj-50,yab," ejnë pëkëpene ejnë chi yawë, ejnë yarikaja",ejnë\tpëkëpene\tejnë\tchi-∅\tyawë\tejnë\tyarika-∅-ja,1+2PRO\talone\t1+2PRO\tCOP-IPFV\tLOC\t1+2PRO\tlaugh-IPFV-NEG,"When we’re alone, we don’t laugh.",,,ConvRisaMAJ,50.0,,
-convrisamaj-51,yab,¿ ati ejnë yarikari%¿ pïrarë,ati\tejnë\tyarika-ri\tpïrarë,what\t1+2PRO\tlaugh-IPFV\tnothing,What are we going to laugh about? Nothing.,,,ConvRisaMAJ,51.0,,
-convrisamaj-52,yab,¡ tari%¡ yarikasemïjra,ta-ri\tyarikasemïjra,say-IPFV\t***,"Oh, there’s nothing to laugh about.",,,ConvRisaMAJ,52.0,,
-convrisamaj-53,yab, nwa ma ta wïrë ya,nwa\tma\tta-∅\twïrë\tya,thus\tRESTR\tsay-IPFV\t1PRO\tERG,That’s all I’m saying.,,,ConvRisaMAJ,53.0,,
-convrisamaj-54,yab, pïrarë,pïrarë,nothing,Nothing.,,,ConvRisaMAJ,54.0,,
-676f9d00-be36-4f53-9745-4fe5460acd82-0-1,yab,anajmori,a-najmo-ri,2-grandmother-PERT,tu abuela,,,,,muller2021yawarana,
-ff077ddb-2933-477b-9470-5ba443b72fdf-0-1,yab,anajpïri,a-najpï-ri,2-grandfather-PERT,tu abuelo,,,,,muller2021yawarana,
-676f9d00-be36-4f53-9745-4fe5460acd82-0-0,yab,unajmori,u-najmo-ri,1-grandmother-PERT,mi abuela,,,,,muller2021yawarana,
-ff077ddb-2933-477b-9470-5ba443b72fdf-0-0,yab,unajpïri,u-najpï-ri,1-grandfather-PERT,mi abuelo,,,,,muller2021yawarana,
-convcosnoind-001,yab, penajrë,,,antes,,nan,ConvCosNoInd,1.0,,
-convcosnoind-002,yab, toto nairi,,,¿las cosas de los criollos?,,nan,ConvCosNoInd,2.0,,
-convcosnoind-003,yab, kwaraijyawë rë mokontomo ya yenijpë ta ta seremajpë ta wara,,,"desde cuando ustedes toman, dijo, como comieron eso?",,nan,ConvCosNoInd,3.0,,
-convcosnoind-004,yab, tototon yoti ti,,,¿la comida de los criollos?,,nan,ConvCosNoInd,4.0,,
-convcosnoind-005,yab, aaa tëwï yoti kajwe warai awena warai pïnika ta wara,,,"aa, su comida, como café, como avena, tal vez así",,nan,ConvCosNoInd,5.0,,
-convcosnoind-006,yab, ë'ë tëwï waraij tase ta asuka,,,"sí, como eso, azúcar",,nan,ConvCosNoInd,6.0,,
-convcosnoind-007,yab, tëwï waraij chi yawë asuka warai,,,"como eso, como azúcar",,nan,ConvCosNoInd,7.0,,
-convcosnoind-008,yab, sayu neke ne penajrë wepïjpë,,,la sal vino desde antes,,nan,ConvCosNoInd,8.0,,
-convcosnoind-009,yab, chijpë pïnirë,,,no existía,,nan,ConvCosNoInd,9.0,,
-convcosnoind-010,yab, tëwï yewenke,,,eso no se sabe,,nan,ConvCosNoInd,10.0,,
-convcosnoind-011,yab, awata sayu takï,,,"no sé, si la sal",,nan,ConvCosNoInd,11.0,,
-convcosnoind-012,yab, penajrë pïnika pïrarë wejsapë nwarë katara ma,,,"antes tal vez no había, solo yare",,nan,ConvCosNoInd,12.0,,
-convcosnoind-013,yab, ati katara ma,,,"###, solo yare",,nan,ConvCosNoInd,13.0,,
-convcosnoind-014,yab, kïmïij yakërë ma ejnë serema wejsapë,,,comíamos sólo con ají,,nan,ConvCosNoInd,14.0,,
-convcosnoind-015,yab, penajrë sa tanijpë,,,¡antes!,,nan,ConvCosNoInd,15.0,,
-convcosnoind-016,yab, irëjpë takï sayu,,,después sí la sal,,nan,ConvCosNoInd,16.0,,
-convcosnoind-017,yab, mm enirë pëkema,,,,,nan,ConvCosNoInd,17.0,,
-convcosnoind-018,yab, enirë pëkema sayu ke ejnë seremari,,,desde no hace mucho comemos con sal,,nan,ConvCosNoInd,18.0,,
-convcosnoind-019,yab, penajrë takï wejsapë katara ma,,,antes solo era el yare,,nan,ConvCosNoInd,19.0,,
-convcosnoind-020,yab, ë'ë katara ke,,,"sí, con yare",,nan,ConvCosNoInd,20.0,,
-convcosnoind-021,yab, ejnë serema wejsapë,,,nosotros comíamos,,nan,ConvCosNoInd,21.0,,
-convcosnoind-022,yab, tëwï tawarama kajwe yenija ma,,,"ese tampoco tomabamos, café",,nan,ConvCosNoInd,22.0,,
-convcosnoind-023,yab, ë'ë kajwe warai yënija,,,"sí, no tomabamos como café",,nan,ConvCosNoInd,23.0,,
-convcosnoind-024,yab, chiri ma takï enirë pëkema,,,es así desde hace poco,,nan,ConvCosNoInd,24.0,,
-convcosnoind-025,yab, enirë pëkema takï mërë esene marë,,,hasta ahora no más es que se está viendo,,nan,ConvCosNoInd,25.0,,
-convcosnoind-026,yab, penajrë takï seneja ta warai,,,antes no se veía,,nan,ConvCosNoInd,26.0,,
-convcosnoind-027,yab, warë takï sukase enirë arina marë tëpare,,,"ahora hay todo, lo que es harina también",,nan,ConvCosNoInd,27.0,,
-convcosnoind-028,yab, eni ejpagueti warai,,,como ese espaghetti,,nan,ConvCosNoInd,28.0,,
-convcosnoind-029,yab, aro warai ta enirë pëkema,,,el arroz desde hace poco,,nan,ConvCosNoInd,29.0,,
-convcosnoind-030,yab, mm enirë pëkanoma sukase yënësemï toto yoti,,,desde ahora no más hay todo lo que comen los criollos,,nan,ConvCosNoInd,30.0,,
-convcosnoind-031,yab, toto yoti tajtane,,,está diciendo comida de criollo,,nan,ConvCosNoInd,31.0,,
-convcosnoind-032,yab, penajrë takï pïrarë,,,antes no había,,nan,ConvCosNoInd,32.0,,
-convcosnoind-033,yab, pïrarë wejsapë ta warai,,,no había como eso,,nan,ConvCosNoInd,33.0,,
-convcosnoind-034,yab, sere ma,,,casabe no más,,nan,ConvCosNoInd,34.0,,
-convcosnoind-035,yab, chiri ma,,,eso nada más,,nan,ConvCosNoInd,35.0,,
-convcosnoind-036,yab, ejnë serema wejsapë sere ke ma,,,comiamos sólo con casabe,,nan,ConvCosNoInd,36.0,,
-convcosnoind-037,yab, ejnë okïrï tanapï,,,nuestra bebida es el yaraki dulce,,nan,ConvCosNoInd,37.0,,
-convcosnoind-038,yab, tëwï ma,,,eso nada más,,nan,ConvCosNoInd,38.0,,
-convcosnoind-039,yab, tajweremï tanijpë,,,como es dulce,,nan,ConvCosNoInd,39.0,,
-convcosnoind-040,yab, sukutaka ma,,,solamente la yucuta,,nan,ConvCosNoInd,40.0,,
-convcosnoind-042,yab, tëwï ma takï yapëjtëni,,,ese nada más es el que sostiene,,nan,ConvCosNoInd,42.0,,
-convcosnoind-043,yab, nwarë ta ejnë kamicha warai pïrarë penajrë,,,así nuestra ropa no existía antes,,nan,ConvCosNoInd,43.0,,
-convcosnoind-044,yab, aaa ejnë neke ne kamicha kërëjpë ma,,,"ah, nuestras camisas son viejas",,nan,ConvCosNoInd,44.0,,
-convcosnoind-045,yab, ë'ë kamicha kërëjpë ma wejsapë,,,sí la ropa estaba usada,,nan,ConvCosNoInd,45.0,,
-convcosnoind-046,yab, intipijkë tawara taji,,,así un poquito,,nan,ConvCosNoInd,46.0,,
-convcosnoind-048,yab, eni takï tajtojpe ne kamicha mëtë,,,ahora ahí está ropa,,nan,ConvCosNoInd,48.0,,
-convcosnoind-049,yab, mëtë wejtane intipijkë ma wejsapë kamicha waraijne,,,"aunque existía, había poquito",,nan,ConvCosNoInd,49.0,,
-convcosnoind-050,yab, yawë yajtëpe penajrë tainija,,,"al principio, antes no lo veía",,nan,ConvCosNoInd,50.0,,
-convcosnoind-051,yab, tëwï ta kwa chipëkë yajtëpe sukase kwaraijyawë ne,,,"eso, por qué primero, cuando todo...",,nan,ConvCosNoInd,51.0,,
-convcosnoind-052,yab, toto yoti tajtoj mare,,,lo que llaman la comida de los criollos,,nan,ConvCosNoInd,52.0,,
-convcosnoind-053,yab, inijpë tawara inijpë,,,"lo vieron también, lo vieron",,nan,ConvCosNoInd,53.0,,
-convcosnoind-054,yab, aaa ë'ë,,,,,nan,ConvCosNoInd,54.0,,
-convcosnoind-055,yab, aaa ejnë inijpë wara,,,"ah, como lo vimos",,nan,ConvCosNoInd,55.0,,
-convcosnoind-056,yab, tëwï narë ma ka,,,¿eso no más?,,nan,ConvCosNoInd,56.0,,
-convcosnoind-057,yab, mm enirë pëkano ma yapori,,,"sí, ahora no más lo está probando",,nan,ConvCosNoInd,57.0,,
-convcosnoind-058,yab, kampra ke ejnë chawë tanijpë,,,cuando estabamos grandes,,nan,ConvCosNoInd,58.0,,
-convcosnoind-059,yab, ë'ë kampra ke ejnë chiyawë rë,,,"sí, cuando estabamos grandes",,nan,ConvCosNoInd,59.0,,
-convcosnoind-060,yab, intipijkë chawë takï tëwï yënija wejsapë,,,cuando eramos pequeños no tomabamos eso,,nan,ConvCosNoInd,60.0,,
-convcosnoind-061,yab, yënëja tëwarai,,,no se comía de eso,,nan,ConvCosNoInd,61.0,,
-convcosnoind-062,yab, aro warai ejnë yënëja wejsapë,,,aro warai ejnë yëkïja wejsapë,,nan,ConvCosNoInd,62.0,,
-convcosnoind-063,yab, sere ke ma ejnë seremari,,,con casabe solamente nosotros comíamos,,nan,ConvCosNoInd,63.0,,
-convcosnoind-064,yab, tëwï takï ejnë yoti,,,esa es nuestra comida,,nan,ConvCosNoInd,64.0,,
-convcosnoind-065,yab, ejnë seremajpë sereke ma ejnë këyatajpë,,,crecimos comiendo con casabe,,nan,ConvCosNoInd,65.0,,
-convcosnoind-066,yab, ejnë yuru tane,,,viene siendo nuestra comida,,nan,ConvCosNoInd,66.0,,
-convcosnoind-067,yab, ejnë yuru takï mërë sere mañuku warai tëwï ma,,,"ese es nuestra comida, como casabe, mañoco, eso no más",,nan,ConvCosNoInd,67.0,,
-convcosnoind-068,yab, tanapï,,,,,nan,ConvCosNoInd,68.0,,
-convcosnoind-069,yab, aaa tanapï,,,"ah, la bebida",,nan,ConvCosNoInd,69.0,,
-convcosnoind-070,yab, onono pëkë tanapï ijmojka ta makë pano ya,,,hay veces que la finada mi mamá cocinaba yaraki dulce,,nan,ConvCosNoInd,70.0,,
-convcosnoind-071,yab, tajweremï,,,dulce,,nan,ConvCosNoInd,71.0,,
-convcosnoind-072,yab, tëwï ma yenipëkë ejnë këyatajpë,,,crecimos tomando eso solamente,,nan,ConvCosNoInd,72.0,,
-convcosnoind-073,yab, kïmïi ma,,,con ají,,nan,ConvCosNoInd,73.0,,
-convcosnoind-074,yab, kïmïi,,,,,nan,ConvCosNoInd,74.0,,
-convcosnoind-075,yab, kïrïmasapë,,,cuajado,,nan,ConvCosNoInd,75.0,,
-convcosnoind-076,yab, kïmïi yajrari ma nwarë,,,puro ají verde,,nan,ConvCosNoInd,76.0,,
-convcosnoind-077,yab, chikene chikene nwarë sayu ke ejnë yemepëti wejsapë,,,se pisaba y lo comiamos con sal,,nan,ConvCosNoInd,77.0,,
-convcosnoind-078,yab, iyawë takï sayu wejsapë,,,en ese momento ya había sal,,nan,ConvCosNoInd,78.0,,
-convcosnoind-079,yab, kïrïmasapë tawara rë,,,cuajado también,,nan,ConvCosNoInd,79.0,,
-convcosnoind-080,yab, irëjpë sukutaka yeni ejnë ya to,,,despues tomabamos yucutas ¡zas!,,nan,ConvCosNoInd,80.0,,
-convcosnoind-081,yab, nwa chipëkë tëke ma ejnë këyatajpë tëke ma,,,por eso con eso nos criamos,,nan,ConvCosNoInd,81.0,,
-convcosnoind-082,yab, papa kampra pano ya yojtëjpë,,,mi papá pescaba ###,,nan,ConvCosNoInd,82.0,,
-convcosnoind-083,yab, tëwï narë ma,,,ese mismo,,nan,ConvCosNoInd,83.0,,
-convcosnoind-084,yab, tëwï ma takï enirëno ma takï takërë ma toto yoti ejnë yënëri,,,"eso, lo de ahora con el, comemos comida de criollo",,nan,ConvCosNoInd,84.0,,
-convcosnoind-085,yab, enirëno ma takï yumpe toto yoti ejnë ya yënë mare,,,"lo de ahora es bastante, la comida de los criollos que comemos",,nan,ConvCosNoInd,85.0,,
-convcosnoind-086,yab, tëwï ma takï iyajtëpe,,,eso fue antes,,nan,ConvCosNoInd,86.0,,
-convcosnoind-087,yab, tëwï narë ma pïrarë,,,"hasta ahí no más que llega, no hay más",,nan,ConvCosNoInd,87.0,,
-convcosnoind-088,yab, tajtojpe neke ne takï tajtojpe neke ne,,,como se dice eso,,nan,ConvCosNoInd,88.0,,
-convcosnoind-089,yab, ejnë yumu wejsapë pïrarë nwa chipëkë takï,,,"nuestros padres no estaban, así",,nan,ConvCosNoInd,89.0,,
-convcosnoind-090,yab, yojtënijpë,,,pescaron,,nan,ConvCosNoInd,90.0,,
-convcosnoind-091,yab, nwa chipëkë tëwï ma takï ejnë yënë wejsapë,,,"así, ese solamente comíamos",,nan,ConvCosNoInd,91.0,,
-convcosnoind-093,yab, irëjpë neke ne kamprake ne chawë mëkï tajtojpe neke ne ejnë,,,"después, cuando estuvimos grandes, aquel, como es que se dice, nuestro...",,nan,ConvCosNoInd,93.0,,
-convcosnoind-094,yab, ejnë iyajtënijpë ejnë këyamanijpë ya,,,"el que nos cuidó, el que crió",,nan,ConvCosNoInd,94.0,,Phono_glottal-fricative-switch
-convcosnoind-095,yab, inche ijtëse wejsapë romana,,,se fue a ver para abajo,,nan,ConvCosNoInd,95.0,,
-convcosnoind-096,yab, ati rë warai,,,como unas cosas,,nan,ConvCosNoInd,96.0,,
-convcosnoind-097,yab, ejnë kampra ke chiyawë ejnë,,,cuando nosotros estabamos grandes,,nan,ConvCosNoInd,97.0,,
-convcosnoind-098,yab, ïmparë ne kampra ke chiyawë,,,ya cuando estabamos grandes,,nan,ConvCosNoInd,98.0,,
-convcosnoind-099,yab, tëwï narë ma taji tanijpë,,,eso no más,,nan,ConvCosNoInd,99.0,,
-convcosnoind-100,yab, tëwï takï tajne tewenke mare kwase iyajtëpe sënkaja rë kwaraijyawë ne mokontomo seremajpë toto yoti tajtoj mare,,,"esos son los que no sabe, como antes no se acabó, desde cuando comieron ustedes la comida de criollos",,nan,ConvCosNoInd,100.0,,
-convcosnoind-101,yab, tëwï takï enirë pëkano ma kamprake ejnë chawë,,,"eso está desde hace no mucho, cuando eramos grandes",,nan,ConvCosNoInd,101.0,,
-convcosnoind-102,yab, ë'ë kamprake ejnë chawë,,,cuando eramos grandes,,nan,ConvCosNoInd,102.0,,
-convcosnoind-104,yab, pïrarë,,,no hay,,nan,ConvCosNoInd,104.0,,
-convcosnoind-105,yab, sukutaka ma,,,solamente yucuta,,nan,ConvCosNoInd,105.0,,
-convcosnoind-106,yab, sere ma mañuku warai,,,"casabe solamente, y mañoco",,nan,ConvCosNoInd,106.0,,
-convcosnoind-107,yab, tëwï ma takï ejnë inawë wejsapë,,,eso era lo que teníamos,,nan,ConvCosNoInd,107.0,,
-convcosnoind-108,yab, ejnë këyatajpë ya,,,donde crecimos,,nan,ConvCosNoInd,108.0,,
-convcosnoind-109,yab, chiri ma takï,,,eso solamente,,nan,ConvCosNoInd,109.0,,
-convcosnoind-110,yab, tëwï ma pïnika warë tajto pïnika,,,eso no más decimos,,nan,ConvCosNoInd,110.0,,
-convcosnoind-111,yab, aaa tëwï ma,,,eso no más,,nan,ConvCosNoInd,111.0,,
-convcosnoind-112,yab, toto tëwï musika ti kwaraijyawë,,,,,nan,ConvCosNoInd,112.0,,
-convcosnoind-113,yab, kwase mokontomo këyatajpë sukase,,,cómo crecieron todos ustedes,,nan,ConvCosNoInd,113.0,,
-convcosnoind-114,yab, kamprake,,,grande,,nan,ConvCosNoInd,114.0,,
-convcosnoind-115,yab, këyajtëja,,,no crecieron ###,,nan,ConvCosNoInd,115.0,,
-convcosnoind-116,yab, iyawë takï kamprake ejnë chi yawëno rë taji rë,,,en ese momento ya eramos grandes,,nan,ConvCosNoInd,116.0,,
-convcosnoind-117,yab, wajiwotomo wepïjpë takï wajiwotom,,,cuando los jiwis llegaron,,nan,ConvCosNoInd,117.0,,
-convcosnoind-118,yab, marajai'bë tajto mare,,,que le dicen marajai'bë,,nan,ConvCosNoInd,118.0,,
-convcosnoind-119,yab, wïrë nwajtëjpë takï wejsapë,,,yo bailé,,nan,ConvCosNoInd,119.0,,
-convcosnoind-120,yab, nwarë takï tototomo naike tajtoj mare,,,ahora se utilizan las cosas de los criollos,,nan,ConvCosNoInd,120.0,,
-convcosnoind-122,yab, arikuwa ma taji ejnë ya lampara tajtoj mare wejsapë arikuwa,,,lo que se llama lámpara era mechón,,nan,ConvCosNoInd,121.0,,
-convcosnoind-123,yab, ejnë tëwï nairi,,,eso es nuestro,,nan,ConvCosNoInd,122.0,,
-convcosnoind-124,yab, enirëno ma takï lampara ta tajtoj mare ta,,,ahorita es que lo dicen lámpara (usamos pues),,nan,ConvCosNoInd,123.0,,
-convcosnoind-125,yab, ejnë wepatopo,,,para alumbrarnos,,nan,ConvCosNoInd,124.0,,
-convcosnoind-128,yab, mariya pïnika penajrë wejsapë,,,el cuchillo estaba será hace tiempo,,nan,ConvCosNoInd,125.0,,
-convcosnoind-129,yab, ati ke ejnë yoti yamanë wejsapë tëwï,,,con ese preparabamos la carne,,nan,ConvCosNoInd,126.0,,
-convcosnoind-130,yab, supara,,,el machete,,nan,ConvCosNoInd,127.0,,
-convcosnoind-131,yab, ejnë yumpano,,,nuestros padres,,nan,ConvCosNoInd,128.0,,
-convcosnoind-132,yab, ejnë najpïtomo tëwï takï,,,"ellos, los abuelos de nosotros",,nan,ConvCosNoInd,129.0,,
-convcosnoind-133,yab, aniki netu ya nepïjpë pïnika wejsapë supara waraijne penajrë,,,"este, Nestor lo trajo el machete hace tiempo",,nan,ConvCosNoInd,130.0,,
-convcosnoind-134,yab, yajtëpe sa melicio pano chiyawë,,,"antes, cuando estaba Melicio Perez",,nan,ConvCosNoInd,131.0,,
-convcosnoind-135,yab, tëwï ya nepïjpë wejsapë,,,él lo trajo,,nan,ConvCosNoInd,132.0,,
-convcosnoind-136,yab, parapi warai pïnika tawara rë enirë pëkema,,,el plato es también tal vez de ahora,,nan,ConvCosNoInd,133.0,,
-convcosnoind-137,yab, ejnë seremajpë takï ati yawëno ma,,,en qué será que comiamos,,nan,ConvCosNoInd,134.0,,
-convcosnoind-138,yab, ërinë yawëno ma,,,en la pailita de barro,,nan,ConvCosNoInd,135.0,,
-convcosnoind-139,yab, nono tëwï,,,ese es de barro,,nan,ConvCosNoInd,136.0,,
-convcosnoind-140,yab, nono yërinë,,,olla de barro,,nan,ConvCosNoInd,137.0,,
-convcosnoind-141,yab, ejnë ijmojkatopo,,,para nosotros cocinar,,nan,ConvCosNoInd,138.0,,
-convcosnoind-142,yab, enirëno ma takï parankana tajtoj mare tajne ya,,,ahora no más que se usa lo que se llama palangana,,nan,ConvCosNoInd,139.0,,
-convcosnoind-143,yab, toto nairi,,,,,nan,ConvCosNoInd,140.0,,
-convcosnoind-144,yab, saparari parë,,,la olla pesada también,,nan,ConvCosNoInd,141.0,,
-convcosnoind-145,yab, saparari pïnika penajrë chijpë,,,`la paila es tal vez de antes,,nan,ConvCosNoInd,142.0,,
-convcosnoind-146,yab, ë'ë pïnika,,,a lo mejor,,nan,ConvCosNoInd,143.0,,
-convcosnoind-147,yab, enirëno ma takï sukase pataka mare,,,ahora sale todo,,nan,ConvCosNoInd,144.0,,
-convcosnoind-148,yab, enwarë ejnë ojojpatoj mare,,,así teníamos para tomar,,nan,ConvCosNoInd,145.0,,
-convcosnoind-149,yab, wanata ma wejsapë ejnë ojojpatopo,,,solamente la totuma era para tomar,,nan,ConvCosNoInd,146.0,,
-convcosnoind-150,yab, apontë marë neke n ti mëtë wejsapë apontë,,," ‘lo que es la silla, ya existía",,nan,ConvCosNoInd,147.0,,
-convcosnoind-151,yab, yëye warë kani pëijpë,,,"de palo, y de concha de morrocoy",,nan,ConvCosNoInd,148.0,,
-convcosnoind-152,yab, warë tajne yamanëri yëye yamansapë tokoke mare apontë,,,"preparaban el palo concavo, para sentar",,nan,ConvCosNoInd,149.0,,
-convcosnoind-153,yab, tëwï ma wejsapë ejnë yapontëri,,,eso nada más era nuestro asiento,,nan,ConvCosNoInd,150.0,,
-convcosnoind-154,yab, apontë,,,,,nan,ConvCosNoInd,151.0,,
-convcosnoind-155,yab, pïrarë en warai pïrarë,,,no había como este,,nan,ConvCosNoInd,152.0,,
-convcosnoind-156,yab, mërë warai tawara rë pïrarë wejsapë ëjka,,,"como ese no había , verdad",,nan,ConvCosNoInd,153.0,,
-convcosnoind-157,yab, ejnserema wejsapë ati pinji poye ma,,,comiamos sobre que,,nan,ConvCosNoInd,154.0,,
-convcosnoind-158,yab, turima po ma,,,sobre la estera,,nan,ConvCosNoInd,155.0,,
-convcosnoind-159,yab, poroko,,,estera,,nan,ConvCosNoInd,156.0,,
-convcosnoind-160,yab, nono po ma ejnë serema wejsapë,,,comíamos en el piso no más,,nan,ConvCosNoInd,157.0,,
-convcosnoind-161,yab, enirëno ma seneri mërë warai,,,ahora no más es que se ve como eso,,nan,ConvCosNoInd,158.0,,
-convcosnoind-162,yab, penajrë takï ejnë yewenke wejsapë,,,antes no conociamos,,nan,ConvCosNoInd,159.0,,
-convcosnoind-163,yab, tëwï narë ma pïnika,,,ese nada más,,nan,ConvCosNoInd,160.0,,
-convestsjm-001,yab, kwase ne iyajtëpe ti,,,¿cómo empezó?,,nan,ConvEstSJM,1.0,,
-convestsjm-002,yab, iyajtëpe wejyakatojpe papera ejnë ëmpantojpe ti,,,"al principio, el papel era para nosotros estudiar",,nan,ConvEstSJM,2.0,,
-convestsjm-003,yab, tajtojpe neke ne wejsapë takï,,,"este..., era...",,nan,ConvEstSJM,3.0,,
-convestsjm-004,yab, ejnë yewenke wejsapë wejtane takï warë ta ejnë ëmpanse,,,aunque nosotros no sabíamos nada pero aprendimos,,nan,ConvEstSJM,4.0,,
-convestsjm-005,yab, tajtojpe neke ne,,,así era,,nan,ConvEstSJM,5.0,,
-convestsjm-006,yab, irëjpë warë,,,después...,,nan,ConvEstSJM,6.0,,
-convestsjm-007,yab, enirë tajtojpe ne enirë takï tajtojpe neke ne ejnë wepïja teijpo,,,hoy en día no vamos lejos,,nan,ConvEstSJM,7.0,,
-convestsjm-008,yab, wejtane ejnë ëmpanse intipijkë ma,,,sin embargo nosotros aprendimos muy poco,,nan,ConvEstSJM,8.0,,
-convestsjm-009,yab, wejtane enirë takï mukuton takï,,,"sin embargo, hoy en día, los niños...",,nan,ConvEstSJM,9.0,,
-convestsjm-010,yab, tëwï wejyatë wejtane ëmpamïja,,,"aunque está cerca de su casa, no aprende",,nan,ConvEstSJM,10.0,,
-convestsjm-011,yab, tawara chipëkë ta wïrë tase kwa chipëkë mokontomo wejyatë takï teijpojra,,,"por eso, yo digo, cómo, está en la casa de ustedes, cerca",,nan,ConvEstSJM,11.0,,
-convestsjm-012,yab, ejkwela tëwï yïwïtï wejtane mokontomo ëmpamïja tawara chipëkë,,,"la escuela pero ustedes no aprenden, por eso",,nan,ConvEstSJM,12.0,,
-convestsjm-013,yab, wïrë tanijpë,,,como yo digo,,nan,ConvEstSJM,13.0,,
-convestsjm-014,yab, mukutom pana uya'ratom pana,,,"a los niños, a los nietos mios",,nan,ConvEstSJM,14.0,,
-convestsjm-015,yab, wïrë taro,,,yo digo,,nan,ConvEstSJM,15.0,,
-convestsjm-016,yab, mënë,,,¿usted?,,nan,ConvEstSJM,16.0,,
-convestsjm-017,yab, wïrë,,,¿yo?,,nan,ConvEstSJM,17.0,,
-convestsjm-018,yab, tawarama wïrë taro uya'ra pëkë,,,así mismo digo sobre mi nieta,,nan,ConvEstSJM,18.0,,
-convestsjm-019,yab, ëmpampëjtëkë ta wïrë ya,,,aprendan’ digo yo,,nan,ConvEstSJM,19.0,,
-convestsjm-020,yab, enirë tajtojpe neke ne,,,"ahora, este...",,nan,ConvEstSJM,20.0,,
-convestsjm-021,yab, tatunemï moronkapojra mokontomo ya ëmpampëjtëkë ta wïrë ya,,,"para no llevar calor, aprendan, digo yo",,nan,ConvEstSJM,21.0,,
-convestsjm-022,yab, irë wejtane taropojra tajne ya uya'ratomo ya,,,así pero no quieren ellos mis nietos,,nan,ConvEstSJM,22.0,,
-convestsjm-023,yab, waraijtokomo pëkë ma chiri,,,sólo esta interesada en los hombres,,nan,ConvEstSJM,23.0,,
-convestsjm-024,yab, ijtëpëti mïjna,,,anda pa'lla y pa'cá,,nan,ConvEstSJM,24.0,,
-convestsjm-025,yab, papera pëkë këyaja,,,no le interesa los estudios,,nan,ConvEstSJM,25.0,,
-convestsjm-026,yab, ëmpamtoj marë pëkë,,,por el estudio,,nan,ConvEstSJM,26.0,,
-convestsjm-027,yab, tawaraij takï chikontomo,,,así son,,nan,ConvEstSJM,27.0,,
-convestsjm-028,yab, entë ma tajtojpe ne teijpojra wejtane,,,"aquí, o sea, cerca",,nan,ConvEstSJM,28.0,,
-convestsjm-029,yab, tawaraij pïni takï ejnë wejsapë,,,así no era para nosotros,,nan,ConvEstSJM,29.0,,
-convestsjm-030,yab, ejnë wepï wejtane teijpo intipijkë ejnë ëmpanse,,,"aunque veníamos de lejos, aprendimos poco",,nan,ConvEstSJM,30.0,,IPFV_past.interpretation.noH
-convestsjm-031,yab, mïntë sa ejnë ëmpamïja chipëkë tajne ya tajtojpe ejnë yenepeja chipëkë tajtojpe neke ne,,,,,nan,ConvEstSJM,31.0,,
-convestsjm-032,yab, teijpo wejsapë tajte kene ëmpantojpe mïntë sa,,,estaba muy lejos para aprender más,,nan,ConvEstSJM,32.0,,
-convestsjm-033,yab, tajtojpe neke ne,,,este...,,nan,ConvEstSJM,33.0,,
-convestsjm-034,yab, enirë takï tawarajra,,,no es así como ahora,,nan,ConvEstSJM,34.0,,
-convestsjm-035,yab, entë ma teijpojra wejtane,,,aunque está cerca de aquí,,nan,ConvEstSJM,35.0,,
-convestsjm-036,yab, ëmpamïjakontomo,,,no aprenden,,nan,ConvEstSJM,36.0,,
-convestsjm-037,yab, tajtojpe neke ne takune chikontomo tëwïsantomo mukutomo,,,los muchachos son flojos,,nan,ConvEstSJM,37.0,,
-convestsjm-038,yab, tawara wïrë,,,así digo yo,,nan,ConvEstSJM,38.0,,
-convestsjm-039,yab, tawara tanijpë takï wïrë tajtojpe enipëke wïrë tajtojpe neke ne wïrë këyajtë tajtojpe,,,"así digo yo, lo que pienso yo ahora",,nan,ConvEstSJM,39.0,,
-convestsjm-040,yab, mërë wa wïrë chi yawë chiri wïrë takï,,,si fuera yo así,,nan,ConvEstSJM,40.0,,
-convestsjm-041,yab, mïntë sa uyëmpatawë chiripo tase papera pëkë intojpe,,,yo supiera más ,,nan,ConvEstSJM,41.0,,
-convestsjm-042,yab, tawara chipëkë takï wïrë ëmpamïja wejsapë tase wïrë,,,"como era así yo no aprendí, digo",,nan,ConvEstSJM,42.0,,
-convestsjm-043,yab, enirë tajtojpe neke ne,,,hoy en día,,nan,ConvEstSJM,43.0,,
-convestsjm-044,yab, enirë tajtojpe neke ne pïrarë tajtojpe yapijtomo tajtojpe neke ne wïrë,,,"ahora ya no pienso más estudiar, estoy viejo",,nan,ConvEstSJM,44.0,,
-convestsjm-045,yab, warë mënë,,,ahora usted,,nan,ConvEstSJM,45.0,,
-convestsjm-046,yab, wïrë tawara rë wïrë tajpëtiri,,,yo también repito así,,nan,ConvEstSJM,46.0,,
-convestsjm-047,yab, wïrë ëmpansaj chiyawë chiri enirë wara chiyawë chiripo wïrë ëmpansaj chiripo,,,"si yo hubiera estudiado como ahora, yo hubiera aprendido",,nan,ConvEstSJM,47.0,,
-convestsjm-048,yab, wïrë ya yëmpanïkï chiripo mukutomo,,,yo estuviera enseñandole a los niños,,nan,ConvEstSJM,48.0,,
-convestsjm-049,yab, tatune iñawë rë tiyawë ma,,,"en el calor, ahí dentro",,nan,ConvEstSJM,49.0,,
-convestsjm-050,yab, wa chiripo ati yawë senejkaja,,,no estaría en el conuco,,nan,ConvEstSJM,50.0,,
-convestsjm-051,yab, tatune moronkaja chiripo wïrë ya,,,yo no estuviera llevando sol,,nan,ConvEstSJM,51.0,,
-convestsjm-052,yab, ta wïrë ya wïrë yawan këyajtëpëtïri ya,,,"así digo yo, lo que siento en mi corazón",,nan,ConvEstSJM,52.0,,
-convestsjm-053,yab, enirë wïrë taro tëwï pojtë ka mokontomo ya ta wïrë ya uya'ra pana,,,"ahora yo digo, ¿ustedes quieren eso? digo a mis nietos",,nan,ConvEstSJM,53.0,,
-convestsjm-054,yab, tatunemï moronkapo mokontomo ya,,,ustedes quieren aguantar dolor,,nan,ConvEstSJM,54.0,,
-convestsjm-055,yab, ati rë warai yawakaja ta wïrë ya uya'ra pana,,,"como no sembrar, le digo a mis nietos",,nan,ConvEstSJM,55.0,,
-convestsjm-056,yab, nope neke ne weretanësapë tijnëjken yawë ëmpanë,,,"bien, sentado dentro de lo frio, aprender",,nan,ConvEstSJM,56.0,,
-convestsjm-057,yab, papera pëkë ëmpanë nope wïrë pana ta wejsaj wïrë ya,,,"aprender en libros me parece bueno, digo yo",,nan,ConvEstSJM,57.0,,
-convestsjm-058,yab, tajtojpe neke ne iyawë takï mïntë sa ejnë ëmpamïja tajne ya tajtojpe neke,,,"así, no aprendimos más, así dicen ellos",,nan,ConvEstSJM,58.0,,
-convestsjm-059,yab, tajtojpe neke ne toto wejsapë,,,son los criollos,,nan,ConvEstSJM,59.0,,
-convestsjm-060,yab, kërë indigena tëwï maniki takï mïntë sa ëmpamïja tajtojpe neke ne indigena chipëkë,,,esos indígenas no pueden aprender más porque son indígenas,,nan,ConvEstSJM,60.0,,
-convestsjm-061,yab, ta wejsapë toto ya tototomo ya,,,"así decía el criollo, los criollos",,nan,ConvEstSJM,61.0,,
-convestsjm-062,yab, wa chipëkë takï onono takï ëmpamïjakontomo,,,por eso algunos no estudiaron,,nan,ConvEstSJM,62.0,,
-convestsjm-063,yab, ëmpamï wejpo wejtane tajne yarëja chipëkë,,,aunque ellos querían estudiar porque ellos no lo llevaron,,nan,ConvEstSJM,63.0,,
-convestsjm-064,yab, tawarama takï tajtojpe neke wejsapë penarë,,,así mismo era antes,,nan,ConvEstSJM,64.0,,
-convestsjm-065,yab, tawarajra takï enirë,,,ahora no es así,,nan,ConvEstSJM,65.0,,
-convestsjm-066,yab, enirë tajtojpe mïntë ëmpamïpëkë maniki takï,,,ahora los que quieren aprender allá,,nan,ConvEstSJM,66.0,,
-convestsjm-067,yab, tajtoj pïnika mïntë sa ëmpamïrï,,,aprenden más,,nan,ConvEstSJM,67.0,,
-convestsjm-068,yab, papera pëkë,,,en los libros,,nan,ConvEstSJM,68.0,,
-convestsjm-069,yab, tajtojpe neke ne nope enirë,,,ahora es fácil,,nan,ConvEstSJM,69.0,,
-convestsjm-070,yab, tawara wejsapë penarë takï tawarajra wejsapë,,,así era antes así no era,,nan,ConvEstSJM,70.0,,
-convestsjm-071,yab, tajne ya yëmpanïkïja wejsapë,,,ellos no enseñaban,,nan,ConvEstSJM,71.0,,
-convestsjm-072,yab, tajtojpe neke ëmpamïja kërë indigena chipëkë ta tajne ya,,,no aprenden porque son indígenas,,nan,ConvEstSJM,72.0,,
-convestsjm-073,yab, enirë takï tawarajra entë nope,,,"hoy en día no es así aquí, es bueno",,nan,ConvEstSJM,73.0,,
-convestsjm-074,yab, mënë kwa ta mërë,,,¿qué dice usted?,,nan,ConvEstSJM,74.0,,
-convestsjm-075,yab, irëjpë tawara rë wïrë ya taro sukase,,,después digo igual todo,,nan,ConvEstSJM,75.0,,
-convestsjm-076,yab, entë mëtë,,,aquí está,,nan,ConvEstSJM,76.0,,
-convestsjm-077,yab, ejnë kakajtësemï papera pëkë sukase,,,nosotros estudiamos todo en el libro,,nan,ConvEstSJM,77.0,,
-convestsjm-078,yab, sukase penarë wejsapë pïrarë,,,"todo, antes no había",,nan,ConvEstSJM,78.0,,
-convestsjm-079,yab, tajtojpe neke ne yepematopo,,,para pagar (estudios),,nan,ConvEstSJM,79.0,,
-convestsjm-080,yab, wïrë mukuru tawara rë wejsapë mïjna ijtëri,,,"mis hijos fue igual, se fueron para allá",,nan,ConvEstSJM,80.0,,
-convestsjm-081,yab, wïrë yepematopojna pëkë,,,como yo no tenía para pagar,,nan,ConvEstSJM,81.0,,
-convestsjm-082,yab, patakase wejsapë ëmpamïja ma,,,salió sin estudiar no más,,nan,ConvEstSJM,82.0,,
-convestsjm-083,yab, iritakërë ma patakase,,,se salió por la mitad,,nan,ConvEstSJM,83.0,,
-convestsjm-084,yab, irëjpë mïjna sa tajtojpe neke ne,,,después más allá,,nan,ConvEstSJM,84.0,,
-convestsjm-085,yab, mïjna wïrë ya yenepese,,,para allá lo mandé,,nan,ConvEstSJM,85.0,,
-convestsjm-086,yab, ijtëtojpe,,,para que fuera,,nan,ConvEstSJM,86.0,,
-convestsjm-087,yab, irëjpë ati ke ana yanakari,,,cómo íbamos a pagar,,nan,ConvEstSJM,87.0,,
-convestsjm-088,yab, enirë wara ana warotatopojra wejsapë,,,como ahora no teníamos trabajo,,nan,ConvEstSJM,88.0,,
-convestsjm-089,yab, pïrarë,,,no hay,,nan,ConvEstSJM,89.0,,
-convestsjm-090,yab, ana yanakatopojra wejsapë ëmpantojpe ëjpïna sa ëmpantojpe,,,no teníamos para pagar para que aprendieran más,,nan,ConvEstSJM,90.0,,
-convestsjm-091,yab, irë iritakërë ma apatakase,,,se salió a la mitad,,nan,ConvEstSJM,91.0,,
-convestsjm-092,yab, wïrë mukuru puri maniki,,,"el hijo mío, el mayor",,nan,ConvEstSJM,92.0,,
-convestsjm-093,yab, mïjna sa ëmpamïja wejsapë,,,no aprendió más,,nan,ConvEstSJM,93.0,,
-convestsjm-094,yab, pïrarë ana yepematopojra chipëkë,,,porque no teníamos para pagar,,nan,ConvEstSJM,94.0,,
-convestsjm-095,yab, ëmpantojpe,,,para estudiar,,nan,ConvEstSJM,95.0,,
-convestsjm-096,yab, sukase irëjpë ëjpënakase,,,después volvió,,nan,ConvEstSJM,96.0,,
-convestsjm-097,yab, tajtojpe neke ne inairi tajne ya tujnanpëjse irëjpë ëjpënakase sarë,,,"las cosas de él las robaron, y después tuvo que regresar acá",,nan,ConvEstSJM,97.0,,
-convestsjm-098,yab, ëmpamïja wejsapë tëwï ma,,,no estudió él,,nan,ConvEstSJM,98.0,,
-convestsjm-099,yab, tayïmïjse iritakërë ma,,,dejo el estudio la mitad,,nan,ConvEstSJM,99.0,,
-convestsjm-100,yab, mïjna sa ëmpamïja wejsapë wïrë mukuru maniki,,,no estudió mas el hijo mío,,nan,ConvEstSJM,100.0,,
-convestsjm-101,yab, mmm tawara takï wejsapë,,,así fue,,nan,ConvEstSJM,101.0,,
-convestsjm-102,yab, tawarajra takï enirë,,,así no es ahora,,nan,ConvEstSJM,102.0,,
-convestsjm-103,yab, enirë ëmpamïja maniki takï tapojtëja chipëkë,,,ahora el que no estudia es porque no quiere,,nan,ConvEstSJM,103.0,,
-convestsjm-104,yab, wïrë taro tajtojpe neke ne,,,yo digo así,,nan,ConvEstSJM,104.0,,
-convfemgrme-001,yab, najmo pano yakaramapëtiri,,,mi abuela contaba,,nan,ConvFemGrMe,1.0,,
-convfemgrme-002,yab, nwa wejsen ti kërë achi toto yënëni,,,"así se convierte ese Achi, come gente",,nan,ConvFemGrMe,2.0,,
-convfemgrme-003,yab, mëyewenkejra ka takono,,,¿tú no sabes otro?,,nan,ConvFemGrMe,3.0,,
-convfemgrme-004,yab, awata ati neke ne takono,,,yo no sé que será otro,,nan,ConvFemGrMe,4.0,,
-convfemgrme-005,yab, mëkï ta tawaru tajtoj maniki,,,"ese, el que llaman aguaitacaminos",,nan,ConvFemGrMe,5.0,,
-convfemgrme-006,yab, aaa tawaru ka tëwï ti muku yënënijpë pana yënëpëjnijpë tajtoj ti,,,"ah, tawaru? el que comió un niño? el que comió las orejas?",,nan,ConvFemGrMe,6.0,,
-convfemgrme-007,yab, enijpëtë wurijyam pïnika tëpëkëpene chi wejsapë,,,una mujer será que estaba sola,,nan,ConvFemGrMe,7.0,,
-convfemgrme-008,yab, waraijto ne,,,¿y su esposo?,,nan,ConvFemGrMe,8.0,,
-convfemgrme-009,yab, waraijtojra pïnika chi wejsapë,,,será que estaba sin marido,,nan,ConvFemGrMe,9.0,,
-convfemgrme-010,yab, yutu yawë senejka pïnika wejsapë,,,será que vivían en el monte,,nan,ConvFemGrMe,10.0,,
-convfemgrme-011,yab, ëkëjna neke waraijto ijtëse,,,dónde se fue su esposo?,,nan,ConvFemGrMe,11.0,,
-convfemgrme-012,yab, tëpëkëpene senejka ta wejsapë,,,vivía sola,,nan,ConvFemGrMe,12.0,,
-convfemgrme-013,yab, poo ta ti ta,,,"dijo, uy",,nan,ConvFemGrMe,13.0,,
-convfemgrme-014,yab, aniki yakërë wïrë tëtojpe,,,con quién voy a ir?,,nan,ConvFemGrMe,14.0,,
-convfemgrme-015,yab, surukupi yapëjse tuna yaka ta ti ta,,,"a agarrar machete de caño en el caño, dijo",,nan,ConvFemGrMe,15.0,,
-convfemgrme-016,yab, wïrë tëtojpe mëyakërë ta ti ta tawaru ya,,,"yo voy contigo, dijo el aguaitacaminos",,nan,ConvFemGrMe,16.0,,
-convfemgrme-017,yab, wïrë tëtojpe mëyakërë,,,,,nan,ConvFemGrMe,17.0,,
-convfemgrme-018,yab, ë'ë mai se ira chipëkë,,,"sí, vamos",,nan,ConvFemGrMe,18.0,,
-convfemgrme-019,yab, wïrë mukuru yapëjtojpe mërë ya wïrë surukupi yapëjtane,,,para que agarres a mi hijo mientras yo agarro machete de caño,,nan,ConvFemGrMe,19.0,,
-convfemgrme-020,yab, makuyupi yapëjpëjtane wïrë ya,,,voy a agarrar varios bagres,,nan,ConvFemGrMe,20.0,,
-convfemgrme-021,yab, tëjta yawë ta ta,,,"dentro de su hueco, decía",,nan,ConvFemGrMe,21.0,,
-convfemgrme-022,yab, warë tatuse imukuru,,,así le dió a su hijo,,nan,ConvFemGrMe,22.0,,
-convfemgrme-023,yab, mukupïjkë marë ne,,,¿todavía era bebé?,,nan,ConvFemGrMe,23.0,,
-convfemgrme-024,yab, mukujpë muku waraij pïnika,,,"un bebé, como un niño será",,nan,ConvFemGrMe,24.0,,
-convfemgrme-025,yab, mikerekë muku warai,,,como el hijo de Miguel,,nan,ConvFemGrMe,25.0,,
-convfemgrme-026,yab, aaa wichanorë,,,"ah, grandecito?",,nan,ConvFemGrMe,26.0,,
-convfemgrme-027,yab, wichanorë pïjkë warë tanëmëse,,,"grandecito, así lo dejo",,nan,ConvFemGrMe,27.0,,
-convfemgrme-028,yab, yapëjkë ira chipëkë wïrë ya,,,"agárralo entonces, yo...",,nan,ConvFemGrMe,28.0,,
-convfemgrme-029,yab, wïrë yapëjtane yënëtojpe tatase,,,"yo agarro para comer, dijo",,nan,ConvFemGrMe,29.0,,
-convfemgrme-030,yab, ë'ë nejkë sarë mëmukuru irë wa chipëkë ta chijpë,,,"sí, dame acá tu hijo, entonces, dijo",,nan,ConvFemGrMe,30.0,,
-convfemgrme-031,yab, wa irëjpë pïnika warë mïjna tuna pïjkë yaka ijtëpëjtane,,,"después, mientras iba al cañito allá,",,nan,ConvFemGrMe,31.0,,
-convfemgrme-032,yab, warë tayënë wejsapë panari,,,así se estaba comiendo su oreja,,nan,ConvFemGrMe,32.0,,
-convfemgrme-033,yab, pana poye ma,,,sólo por las orejas?,,nan,ConvFemGrMe,33.0,,
-convfemgrme-034,yab, irëjpë chapëti ti tarojpë yajyajyaj,,,"después, gritaba, diciendo así yaj-yaj-yaj",,nan,ConvFemGrMe,34.0,,
-convfemgrme-035,yab, këë kwa chipëkë samori,,,uy! por qué llora?,,nan,ConvFemGrMe,35.0,,
-convfemgrme-036,yab, awata tase ti tawaru ya,,,"no sé, decía el aguaitacaminos",,nan,ConvFemGrMe,36.0,,
-convfemgrme-037,yab, awata,,,no sé,,nan,ConvFemGrMe,37.0,,
-convfemgrme-038,yab, warë ëjpïna samopëkë warë yanë wejse,,,"así, porque lloraba mucho, así vino su mamá",,nan,ConvFemGrMe,38.0,,
-convfemgrme-039,yab, pëj tayënëpëjse panarijpë tarojpë rë sukase rë tëna parë,,,"uy! se comio las orejas completas, su nariz también",,nan,ConvFemGrMe,39.0,,
-convfemgrme-040,yab, këë wa chipëkën ti chapëti pïnika wejsapë imukuru,,,uy! por eso gritaba será su hijo,,nan,ConvFemGrMe,40.0,,
-convfemgrme-041,yab, mmm mesuku ijtë ti tarojpë rërë,,,"sí, salía mucha sangre",,nan,ConvFemGrMe,41.0,,
-convfemgrme-042,yab, kwatojpe mërë yënëjpë,,,¿por qué lo comiste?,,nan,ConvFemGrMe,42.0,,
-convfemgrme-043,yab, mërë warë mëyënëtojpano ka uyakërë mërë wepïrï,,,así para tú comer tu viniste conmigo?,,nan,ConvFemGrMe,43.0,,
-convfemgrme-044,yab, ta ti ta wejsaj ta tampapëti ti wejsapë,,,"dijo, se había enojado",,nan,ConvFemGrMe,44.0,,
-convfemgrme-045,yab, tayenëkase ijtëse,,,lo quitó de la mano y se fue,,nan,ConvFemGrMe,45.0,,
-convfemgrme-046,yab, tawaru ëjnëmëse ijtë ma,,,el aguaitacaminos se quedó ahí,,nan,ConvFemGrMe,46.0,,
-convfemgrme-047,yab, warë ti wejsen ti orojyan ti tajtoj ti kërë tawaru,,,"así se forma el máware, el que nombran aguaitacaminos",,nan,ConvFemGrMe,47.0,,
-convfemgrme-048,yab, muku pana yënënijpë ti,,,"el que comió la oreja de un niño, así dicen",,nan,ConvFemGrMe,48.0,,
-convfemgrme-049,yab, tajtoj ti kërë tanijpë anajmo pano ya,,,"así dice, ella, tu abuela",,nan,ConvFemGrMe,49.0,,
-convfemgrme-050,yab, tawaraij të kërë tawaru ta ta muku yënëni,,,"así es el aguiatacaminos, dicen, es come-niños",,nan,ConvFemGrMe,50.0,,
-convfemgrme-051,yab, ijtëse,,,se fue,,nan,ConvFemGrMe,51.0,,
-convfemgrme-052,yab, mërë wa ma atajpëpëti ta ti ta,,,"así no más se va a curar, decía",,nan,ConvFemGrMe,52.0,,
-convfemgrme-053,yab, kwase tajpëri,,,¿cómo se va a curar?,,nan,ConvFemGrMe,53.0,,
-convfemgrme-054,yab, tëwï ya tawaru ya taro,,,¿así dijo el aguaitacaminos?,,nan,ConvFemGrMe,54.0,,
-convfemgrme-055,yab, panarijpë ë'ë ti mërë wa ma tajpëpëtïi,,,"su oreja, sí, que se cure así mismo",,nan,ConvFemGrMe,55.0,,
-convfemgrme-056,yab, ta ti ta kwase atajpëri,,,"dijo, ¿cómo se va a curar?",,nan,ConvFemGrMe,56.0,,
-convfemgrme-057,yab, panarijpë yënëpëjsapë,,,la oreja ya estaba comida,,nan,ConvFemGrMe,57.0,,
-convfemgrme-058,yab, panakejra,,,sin orejas,,nan,ConvFemGrMe,58.0,,
-convfemgrme-059,yab, kwa ta tëwï tëna parë tayënëse,,,"claro, también se había comido su oreja",,nan,ConvFemGrMe,59.0,,
-convfemgrme-060,yab, kwase neke wejsapë tëwï ma anajmori ya yakarama wejsapë,,,"cómo era, eso nada más contaba tu abuela",,nan,ConvFemGrMe,60.0,,
-convfemgrme-061,yab, kwase neke sëmase pïnika mesukutu ijtë ti wejsapë tarojpë wïrë,,,"como será, tal vez se murió, estaba sangrando mucho, dije",,nan,ConvFemGrMe,61.0,,
-convfemgrme-062,yab, kwase ta tayëjtëri,,,???,,nan,ConvFemGrMe,62.0,,
-convfemgrme-063,yab, jm wa ti tajtoj ti tawaru,,,"así es el aguaitacaminos, dicen",,nan,ConvFemGrMe,63.0,,
-convfemgrme-064,yab, orojyan ti kërë tawaru tajtoj ti anajmo pano ya,,,"ese aguaitacaminos es un diablo, según la finada tu abuela",,nan,ConvFemGrMe,64.0,,
-convfemgrme-065,yab, wa chipokon ta teijpojra ëjtë pëkë chiri,,,por eso es que siempre está cerca de la casa?,,nan,ConvFemGrMe,65.0,,
-convfemgrme-066,yab, irë wa chipëkën ti onono parë tajromini mërë itaja ka kuruj kuruj kuruj kuruj,,,"por eso, a veces, es de mal augurio, tu no has escuchado, kuruj kuruj?",,nan,ConvFemGrMe,66.0,,
-convfemgrme-067,yab, kuruj kuruj kuruj kuruj ta ta muku tëwï takï tajromini tajtoj ti,,,"dice kuruj kuruj, hija, según que eso es de mal augurio",,nan,ConvFemGrMe,67.0,,
-convfemgrme-068,yab, wa wejsen takï kërë tawaru maniki,,,así pasa con aquel aguaitacaminos,,nan,ConvFemGrMe,68.0,,
-convfemgrme-069,yab, ta chipëkë wïrë wakïj pïnirë kërë takï tawaru,,,"por que dice, a mi no me gusta el aguaitacaminos",,nan,ConvFemGrMe,69.0,,
-convfemgrme-070,yab, warë muku pana yënënijpë ti tajtoj ti tëwï tawaru,,,así dice que comió la oreja del niño el aguaitacaminos,,nan,ConvFemGrMe,70.0,,
-convfemgrme-071,yab, nopam pïni ti kërë orojyamo,,,"ese es malo, es diablo",,nan,ConvFemGrMe,71.0,,
-convfemgrme-072,yab, muku pana yënëni,,,comedor de oreja de niño,,nan,ConvFemGrMe,72.0,,
-convfemgrme-073,yab, onono parë toto pe wïchikari tawara taji tajne ya,,,"algunas veces se transforma como gente, dicen ellos",,nan,ConvFemGrMe,73.0,,
-convfemgrme-074,yab, ëj pïnika,,,será,,nan,ConvFemGrMe,74.0,,
-convfemgrme-075,yab, ë'ë tëwï toto pe wïchikari tëwï,,,"sí, ese, ese se transforma como gente",,nan,ConvFemGrMe,75.0,,
-convfemgrme-076,yab, tawara taji ta,,,así dicen,,nan,ConvFemGrMe,76.0,,
-convfemgrme-077,yab, mjm,,,ah,,nan,ConvFemGrMe,77.0,,
-convfemgrme-078,yab, tajne yakaramari ma wïrë itajpë,,,yo escuché lo que ellos cuentan,,nan,ConvFemGrMe,78.0,,
-convfemgrme-079,yab, pïnika,,,será,,nan,ConvFemGrMe,79.0,,
-convfemgrme-080,yab, orojyamo tajtoj ti anajmo pano ya tëwï tawaru maniki,,,"es diablo decía tu abuela, ese aguaitacaminos",,nan,ConvFemGrMe,80.0,,
-convfemgrme-081,yab, tajromin kërë tawara rë rërë,,,ese es mala seña también,,nan,ConvFemGrMe,81.0,,
-convfemgrme-082,yab, tawarama takï mëkï ëjka,,,"igual es ese, verdad?",,nan,ConvFemGrMe,82.0,,
-convfemgrme-083,yab, aniki pinchi mono tigre tajtoj maniki,,,este... el que le dicen mono tigre,,nan,ConvFemGrMe,83.0,,
-convfemgrme-084,yab, anïkï,,,¿cuál?,,nan,ConvFemGrMe,84.0,,
-convfemgrme-085,yab, tëwï ma warakaru,,,"ese mismo, el mono blanco",,nan,ConvFemGrMe,85.0,,
-convfemgrme-086,yab, warakaru,,,,,nan,ConvFemGrMe,86.0,,
-convfemgrme-087,yab, mëkï ta mono tigre tajtoj maniki,,,"aquel pues, que le dicen mono tigre",,nan,ConvFemGrMe,87.0,,
-convfemgrme-088,yab, kwase ejnë sejtëri tëwï,,,¿cómo lo llamamos a ese?,,nan,ConvFemGrMe,88.0,,
-convfemgrme-089,yab, mono tigre takï aniki pinchi kwase neke ji,,,"mono tigre, este..., como és?",,nan,ConvFemGrMe,89.0,,
-convfemgrme-090,yab, makïrïkïrï,,,mono tigre,,nan,ConvFemGrMe,90.0,,
-convfemgrme-091,yab, ë'ë tëwï,,,"sí, ese",,nan,ConvFemGrMe,91.0,,
-convfemgrme-092,yab, tëwï parë nopam pïnirë ëjka,,,"ese es malo, verdad?",,nan,ConvFemGrMe,92.0,,
-convfemgrme-093,yab, tajromin ke n takï kërë,,,aquel es de mal augurio,,nan,ConvFemGrMe,93.0,,
-convfemgrme-094,yab, tajromin yaye takï wepïrï ejnë,,,viene cuando está anunciado la mala seña,,nan,ConvFemGrMe,94.0,,
-convfemgrme-095,yab, ïjïjï ïjïjï ta asamori,,,"grita ""ïjïjï""",,nan,ConvFemGrMe,95.0,,
-convfemgrme-096,yab, ïjïjï onono parë ti chapëti ti,,,algunas veces grita ïjïjï,,nan,ConvFemGrMe,96.0,,
-convfemgrme-097,yab, tajtoj tajne ya chapëtiri ne wïrë itaja,,,"así dicen, yo no he oído nunca su grito",,nan,ConvFemGrMe,97.0,,
-convfemgrme-098,yab, wa wejsemï tajromin ke n takï makïrïkïrï,,,así viene con mala seña el mono tigre,,nan,ConvFemGrMe,98.0,,
-convfemgrme-099,yab, tawara chijpë ta mïntë sawë të ana chi yawë mïntë,,,"así también fue allá cuando estabamos en el raudal, allá",,nan,ConvFemGrMe,99.0,,
-convfemgrme-100,yab, korore ijtëpëti wejsapë samopëti samopëti,,,"canda noche andaba, llorando, llorando",,nan,ConvFemGrMe,100.0,,
-convfemgrme-101,yab, ijtëpëti taji,,,se iba,,nan,ConvFemGrMe,101.0,,
-convfemgrme-102,yab, irëjpë ne aniki pinchi,,,"después, este...",,nan,ConvFemGrMe,102.0,,
-convfemgrme-103,yab, aniki karlo kastiyo sëmatojpe ma ji,,,será que andaba anunciando para que se muriera Carlos Castillo,,nan,ConvFemGrMe,103.0,,
-convfemgrme-104,yab, tajromini pïnika,,,será que era de mal augurio,,nan,ConvFemGrMe,104.0,,
-convfemgrme-105,yab, samopëti taji tej nopam pïnika kërë ta taji wïrë ya,,,"llorando ese no parece que sea bueno, digo yo",,nan,ConvFemGrMe,105.0,,
-convfemgrme-106,yab, teijpojra ëjtë pëkë teijpojra yëye chipëkë mïntë,,,porque estaba un palo cerca de la casa,,nan,ConvFemGrMe,106.0,,
-convfemgrme-107,yab, aaa tawara takï wepïrï sarë mërë ajti pin po manku po manku pana,,,"ah, así también viene aca, sobre el mango, al mango",,nan,ConvFemGrMe,107.0,,
-convfemgrme-108,yab, wejsemï taji,,,así viene,,nan,ConvFemGrMe,108.0,,
-convfemgrme-109,yab, wïrë yarachin ta iriyawë teijpojra ëjtë pëkë chipëkë,,,"yo sentí miedo en ese momento, porque estaba cerca de la casa",,nan,ConvFemGrMe,109.0,,
-convfemgrme-110,yab, aniki pinchi tawarai mïro,,,así también aquel mïro (que dice mïró de noche),,nan,ConvFemGrMe,110.0,,
-convfemgrme-111,yab, mïro takï tawarai rë tajrominkemï,,,mïro también da mal augurio,,nan,ConvFemGrMe,111.0,,
-convfemgrme-112,yab, mïro mïro mïro ta ti waaa mïro mïro waaa achapëtiri,,,"mïró, mïró, dice, waaa, grita",,nan,ConvFemGrMe,112.0,,
-convfemgrme-113,yab, ë'ë tawara takï chapëtiri tëwï,,,"sí, también grita ese",,nan,ConvFemGrMe,113.0,,
-convfemgrme-114,yab, tajrominiri,,,,,nan,ConvFemGrMe,114.0,,
-convfemgrme-115,yab, tajromin takï tëwï tëwï mërë parë tajromin takï,,,ese es de mal augurio ese también,,nan,ConvFemGrMe,115.0,,
-convfemgrme-116,yab, chiri,,,,,nan,ConvFemGrMe,116.0,,
-convfemgrme-117,yab, chapëti tajme,,,grita feo,,nan,ConvFemGrMe,117.0,,
-convfemgrme-118,yab, waraij kërë tajromin yawë,,,así es cuando anuncia,,nan,ConvFemGrMe,118.0,,
-convfemgrme-119,yab, irëjpë ne takï naaa sëmapëjsejne ti,,,"después, uuu, se murieron varios",,nan,ConvFemGrMe,119.0,,
-convfemgrme-120,yab, ta tajne ya,,,dijeron ellos,,nan,ConvFemGrMe,120.0,,
-convfemgrme-121,yab, sëmase,,,se murió,,nan,ConvFemGrMe,121.0,,
-convfemgrme-122,yab, ta tajne ya setari sarë,,,dicen ellos hasta aquí se oye,,nan,ConvFemGrMe,122.0,,
-convfemgrme-123,yab, waraij ta kërësantomo tajromin takï kërë,,,"así son ellos, es de mal augurio",,nan,ConvFemGrMe,123.0,,
-convfemgrme-124,yab, uyewenkejra mërë chapëti yawë,,,yo sé cuando ese grita,,nan,ConvFemGrMe,124.0,,
-convfemgrme-125,yab, nopejra chapëtiri,,,grita mal,,nan,ConvFemGrMe,125.0,,
-convfemgrme-126,yab, yawo kayupare sëma yawë ka tajrominiri tëwïsantomojne,,,"¿cuando mi tío cayupare se murió, ellos dieron mala seña?",,nan,ConvFemGrMe,126.0,,
-convfemgrme-127,yab, aniki sëma yawë,,,¿cuándo se murió quién?,,nan,ConvFemGrMe,127.0,,
-convfemgrme-128,yab, yawo kayupare sëma yawë,,,cuando se murió mi tío Cayupare,,nan,ConvFemGrMe,128.0,,
-convfemgrme-129,yab, anïkï,,,,,nan,ConvFemGrMe,129.0,,
-convfemgrme-130,yab, yawo kayupare sëmatojpe,,,para que se muriera mi tío Cayupare,,nan,ConvFemGrMe,130.0,,
-convfemgrme-131,yab, aaa tawara ma chapëti wejsapë,,,"ah, así mismo estaba gritando",,nan,ConvFemGrMe,131.0,,
-convfemgrme-132,yab, chi ta tajromin ta rë ejnë sëmatojpe takï,,,"así es, la mala seña, para que nos muramos",,nan,ConvFemGrMe,132.0,,
-convfemgrme-133,yab, tujnaka ejnchi yawë tajromin pe chapëtiri,,,"cuando tenemos mucha fiebre, llora de mala seña",,nan,ConvFemGrMe,133.0,,
-convfemgrme-134,yab, irëjpë taa& sëmase ta ne,,,"después, ay! se murió, dicen",,nan,ConvFemGrMe,134.0,,
-convfemgrme-135,yab, pëë ëjka taro,,,"ay, verdad? dicen",,nan,ConvFemGrMe,135.0,,
-convfemgrme-136,yab, aaa tawarama ta tajrominke n takï kërë mïrë,,,"ah, también  tiene mala seña ese bobo lechuzón",,nan,ConvFemGrMe,136.0,,
-convfemgrme-137,yab, tajme chapëtiri,,,grita feo,,nan,ConvFemGrMe,137.0,,
-convfemgrme-138,yab, wa chipëkë uyewenkejra sa chapëti pëkë,,,por eso yo sé porque grita,,nan,ConvFemGrMe,138.0,,
-convfemgrme-139,yab, eee aniki nakë sëmase,,,"epa, quién se murió",,nan,ConvFemGrMe,139.0,,
-convfemgrme-140,yab, enrike ya taro poo,,,"Enrique dice, ay!",,nan,ConvFemGrMe,140.0,,
-convfemgrme-141,yab, ejnë yakerej pïnika sëmari,,,será que nuestra familia se muere,,nan,ConvFemGrMe,141.0,,
-convfemgrme-142,yab, sëmase pïnika,,,será que se murió,,nan,ConvFemGrMe,142.0,,
-convfemgrme-143,yab, tawara chipëkën tajrominiri ta tanij takï kërë,,,"porque es así, el siempre dice mala seña",,nan,ConvFemGrMe,143.0,,
-convfemgrme-144,yab, pïnika ta wïrë wejsapë tajromin yawë takï sëmani yawë takï tayakaramari,,,"será decía yo, cuando alguien se muere, en la mala seña, lo avisa",,nan,ConvFemGrMe,144.0,,
-convfemgrme-145,yab, waraij takï kërë,,,así es ese,,nan,ConvFemGrMe,145.0,,
-convfemgrme-146,yab, tajrominke chikontomo,,,esos tienen mala seña,,nan,ConvFemGrMe,146.0,,
-convfemgrme-147,yab, uyewenkejra chapëti yawë aaa ësëmanë pokon ka ji ta wïrë ya,,,"cuando grita yo sé, ah, se va a morir, digo",,nan,ConvFemGrMe,147.0,,
-convfemgrme-148,yab, en waraij ta kërë tajrominke ta kërë kërë mïrë parë,,,"como eso es también aquel, ese tiene su mala seña, también el bobo lechuzón",,nan,ConvFemGrMe,148.0,,
-convfemgrme-149,yab, ati ma neke ne anajmo pano yakaramajpë ti wïrë wënkejpëjse,,,lo que contó la finada tu abuela yo me olvidé,,nan,ConvFemGrMe,149.0,,
-convfemgrme-150,yab, penarë chipokono mëwënkejse,,,"porque ya pasó mucho tiempo, usted se está olvidando",,nan,ConvFemGrMe,150.0,,
-convfemgrme-151,yab, wejtane marë rë mëchi yawë rë,,,"sin embargo, cuando usted estaba todavía pequeña",,nan,ConvFemGrMe,151.0,,
-convfemgrme-152,yab, wïrë wënkejse marë rë wïchi yawë rë yatampe wïrë chijpë wejtane,,,"yo me olvidé porque estaba pequeña, auqnque estaba jovencita",,nan,ConvFemGrMe,152.0,,
-convfemgrme-153,yab, uyatampe wïrë chi yawë anajmo pano sawankuise chi yawë,,,yo estaba jóvencita cuando tu abuela murió,,nan,ConvFemGrMe,153.0,,
-convfemgrme-154,yab, taji rë,,,###,,nan,ConvFemGrMe,154.0,,
-convfemgrme-155,yab, pipi santo pano ya,,,el finado mi hermano Santos,,nan,ConvFemGrMe,155.0,,
-convfemgrme-156,yab, ta wejsaj makë sepamïi,,,"decía, mamá, que se case",,nan,ConvFemGrMe,156.0,,
-convfemgrme-157,yab, mïntë manapiare ana chi yawë,,,cuando estuvimos en Manapiare,,nan,ConvFemGrMe,157.0,,
-convfemgrme-158,yab, kwase mërë sepankapori enekïrï,,,como tu quieres que tu la vas dejar casar a tu hermana,,nan,ConvFemGrMe,158.0,,
-convfemgrme-159,yab, tewenke kwase tayeremari waraijto,,,no sabe como alimentar a su marido,,nan,ConvFemGrMe,159.0,,
-convfemgrme-160,yab, wïrë mukuru aaa sepankë waraijtokon yakërë tarojra wïrë ya,,,"a mi hija yo no le digo, ah, cásate con un hombre’ ",,nan,ConvFemGrMe,160.0,,
-convfemgrme-161,yab, ta wejsaj anajmo pano atampapëti wejsapë,,,"decía tu abuela, se enojaba",,nan,ConvFemGrMe,161.0,,
-convfemgrme-162,yab, wïrë kintase wïrë,,,yo estoy cansado,,nan,ConvFemGrMe,162.0,,
-convfemgrme-163,yab, kuñawo kuñawo kuñawo kuñawo sukase waraijtokontomo taro wïrë pana,,,"cuñado, cuñado, todos los hombres me dicen a mí",,nan,ConvFemGrMe,163.0,,
-convfemgrme-164,yab, wïrë kintase,,,yo me cansé,,nan,ConvFemGrMe,164.0,,
-convfemgrme-165,yab, ejnë yakereti rë kërë,,,ese son la familia de nosotros,,nan,ConvFemGrMe,165.0,,
-convfemgrme-166,yab, kërë yakërë sepantojpe makë ta ta,,,"para que la cases con él, mamá, dijo",,nan,ConvFemGrMe,166.0,,
-convfemgrme-167,yab, anajmo pano atampapëti wejsapë,,,tu abuela se enojaba,,nan,ConvFemGrMe,167.0,,
-convfemgrme-168,yab, usepankarijra wïrë mukuru ta wejsaj ta,,,yo no caso a mi hija,,nan,ConvFemGrMe,168.0,,
-convfemgrme-169,yab, pedrito pan pëkë,,,hablando del finado Pedrito,,nan,ConvFemGrMe,169.0,,
-convfemgrme-170,yab, omo pan pëkë,,,sobre tu papá,,nan,ConvFemGrMe,170.0,,
-convfemgrme-171,yab, tapëkë chijpë ta anajmo pano,,,así decía tu abuela,,nan,ConvFemGrMe,171.0,,
-convfemgrme-172,yab, onono wurijyamo waraij pïnirë anajmo pan wejsapë weseichemï,,,"tu abuela no era como otras mujeres, era brava",,nan,ConvFemGrMe,172.0,,
-convfemgrme-173,yab, ë'ë sepamïi irë wa chipëkë tanijpë pïnirë,,,"por eso ella no fue la que dijo, sí que se case",,nan,ConvFemGrMe,173.0,,
-convfemgrme-174,yab, wïrë ya pojtëja rë waraijtokomo,,,yo no quería todavía hombre,,nan,ConvFemGrMe,174.0,,
-convfemgrme-175,yab, wïrë chiyawë wïrë pojtëja wejtane wïrë chijpë tanijpë,,,yo no quería pero yo estuve,,nan,ConvFemGrMe,175.0,,
-convfemgrme-176,yab, tajne ya wïrë sepankase tarine,,,ellos me casaron rápido,,nan,ConvFemGrMe,176.0,,
-convfemgrme-177,yab, irë wa chipëkë aaa wïrë waraijtori taja wïrë wejsapë,,,"por eso yo no decía ""mi marido",,nan,ConvFemGrMe,177.0,,
-convfemgrme-178,yab, wïrë pojtëja waraijtokomo,,,yo no quiero hombre,,nan,ConvFemGrMe,178.0,,
-convfemgrme-179,yab, waraijtokon ta ëjpïna wejtane wïrë yarë wïrë wïnïkïrï kërë,,,"aunque había muchísimos hombres, yo dormía sola",,nan,ConvFemGrMe,179.0,,
-convfemgrme-180,yab, wïrë yarë takï wïrë wïnïkïja,,,yo no dormía sola (en mi mosquitero),,nan,ConvFemGrMe,180.0,,
-convfemgrme-181,yab, wïrë makë yepeyakërë wïrë wïnïkïrï,,,yo dormía por encima de mi mamá,,nan,ConvFemGrMe,181.0,,
-convfemgrme-182,yab, makë yepeyakërë wïrë wïnïkïrï yatampe wïrë wejtane,,,yo dormía por encima de mi mamá a pesar de ser joven,,nan,ConvFemGrMe,182.0,,
-convfemgrme-183,yab, uyarë wïrë wïnïkïrïjra,,,yo no dormía aparte,,nan,ConvFemGrMe,183.0,,
-convfemgrme-184,yab, warë wïrë chijpë wïrë,,,así era yo,,nan,ConvFemGrMe,184.0,,
-convfemgrme-185,yab, aaa sepankë irë wa chipëkë sepamïi tarojra tapëkë makë pan chijpë pïnirë wïrë ta wïrë ya,,,"ah, cásate por eso, que se case no dijo mi mamá, digo yo",,nan,ConvFemGrMe,185.0,,
-convfemgrme-186,yab, sepamïja wïrë mukuru sepamïja ta wejsaj ta anajmo pano ya,,,"no se casa, mi hija no se casa, decía la finada tu abuela",,nan,ConvFemGrMe,186.0,,
-convfemgrme-187,yab, wïrë pojtëja rë waraijtokom rërë,,,yo no quería todavía hombre,,nan,ConvFemGrMe,187.0,,
-convfemgrme-188,yab, tawaraij pïnirë takï enirë mukutomojne,,,los niños no son así ahora,,nan,ConvFemGrMe,188.0,,
-convfemgrme-189,yab, intipijkë wejtane waraijtokom pëkë chi kontomo,,,"aunque están pequeñas, buscan a los hombres",,nan,ConvFemGrMe,189.0,,
-convfemgrme-190,yab, ta rërë,,,sí verdad,,nan,ConvFemGrMe,190.0,,
-convfemgrme-191,yab, marë rë wejtane kwase yerematojpano,,,"todavía tiernas, como lo va a alimentar",,nan,ConvFemGrMe,191.0,,
-convfemgrme-192,yab, wïrë chijpë pïnirë wïrë,,,yo no era así,,nan,ConvFemGrMe,192.0,,
-convfemgrme-193,yab, waraijtokomo wïrë ya pojtëja ta wejsaj wïrë ya,,,"yo no quiero hombre, decía yo",,nan,ConvFemGrMe,193.0,,
-convfemgrme-194,yab, yatampe wïrë wejtane,,,aunque yo estaba joven,,nan,ConvFemGrMe,194.0,,
-convfemgrme-195,yab, yatampe wïrë chi yawë wïrë makë pano ësëmase,,,"cuando yo estaba joven, mi mamá se murió",,nan,ConvFemGrMe,195.0,,
-convfemgrme-196,yab, mmm mërë ajti piji terepu marë yawankaja rë chiyawë mëtë chiripo najmo,,,si no la hubiera matado la enfermedad todavía existiría mi abuela,,nan,ConvFemGrMe,196.0,,
-convfemgrme-197,yab, ëjpïna ka enirë chiripo yapijtompe pïnika tajtoj wïrë ya,,,"estaría bastante vieja será, según yo",,nan,ConvFemGrMe,197.0,,
-convfemgrme-198,yab, ajti piji sarampion yawë sëmajpë ta anajmo pano,,,tu abuela se murió de sarampión,,nan,ConvFemGrMe,198.0,,
-convfemgrme-199,yab, sarampion ana pëkë atapëjse wejsapë iyajtëpe,,,el sarampión nos pegó primero a nostros (a los niños),,nan,ConvFemGrMe,199.0,,
-convfemgrme-200,yab, wïrë pëkë atapëjse pachi pan pëkë atapëjse pachi parë atapëjse tëpëkë atapëjse rë tawara rë,,,"me pegó a mi, le pegó a la finada mi hermana, también le pegó a mi hermana, también le pegó a ella",,nan,ConvFemGrMe,200.0,,
-convfemgrme-201,yab, sukase ana pëkë atapëjse wejsapë,,,a todos nosotros nos pegó,,nan,ConvFemGrMe,201.0,,
-convfemgrme-202,yab, poo muku ta wejsaj ta,,,"ay! hija, decía",,nan,ConvFemGrMe,202.0,,
-convfemgrme-203,yab, wïrë pëkë tapëjsaj yawë pïnika iyawë wïrë ya pïrïkarijra,,,"si me pega a mi esa enfermedad, depués no voy a aguantar",,nan,ConvFemGrMe,203.0,,
-convfemgrme-204,yab, wïrë sëma pïnika muku ta wejsaj ta,,,"será que me voy a morir, hija, dijo",,nan,ConvFemGrMe,204.0,,
-convfemgrme-205,yab, wïrë pïrïkaja wïrë,,,no lo aguanto,,nan,ConvFemGrMe,205.0,,
-convfemgrme-206,yab, wïrë pïrïkatojpan pïnirë wïrë,,,no aguantaré,,nan,ConvFemGrMe,206.0,,
-convfemgrme-207,yab, mëkontomo aijkërëntapëjsarë mëkontomo mukutomo ta wejsaj ta,,,"ya ustedes se están mejorando ustedes mis hijos, decía",,nan,ConvFemGrMe,207.0,,
-convfemgrme-208,yab, wïrë pëkë tapëjsaj yawë pïnika wïrë pïrïkaja ta wejsaj ta ta wejsaj ta makë pano wejsapë,,,"si me pega a mí, no aguantaré, decía, decía la finada mi mamá",,nan,ConvFemGrMe,208.0,,
-convfemgrme-209,yab, irëjpë ne ana aijkërëntase warë atapëjse tëpëkë,,,"después nosotros nos mejoramos, después le pegó a ella",,nan,ConvFemGrMe,209.0,,
-convfemgrme-210,yab, warë konopo sarara yaye,,,cuando estaba lloviznando,,nan,ConvFemGrMe,210.0,,
-convfemgrme-211,yab, yapimase pïnika ëjka,,,"se empeoró, ¿verdad?",,nan,ConvFemGrMe,211.0,,
-convfemgrme-212,yab, ë'ë ti konopo sarara yaye apatakase wejsapë sujtase sujtase pïnika wekase ëkëjna neke ijtëjpë,,,"sí pues, salió cuando estaba lloviznando, a orinar será, a defecar, no se sabe a cual fue",,nan,ConvFemGrMe,212.0,,
-convfemgrme-213,yab, irë wa chipëkë tëwï sarampion apatakaja wejsapë sarë,,,por eso el sarampión no salió para acá (del cuerpo),,nan,ConvFemGrMe,213.0,,
-convfemgrme-214,yab, sarë,,,hacia acá,,nan,ConvFemGrMe,214.0,,
-convfemgrme-215,yab, posej yawë ma ëjnëmëse,,,se quedó en las tripas,,nan,ConvFemGrMe,215.0,,
-convfemgrme-216,yab, posej yawë ma ëjnëmëse,,,se quedó adentro en la barriga,,nan,ConvFemGrMe,216.0,,
-convfemgrme-217,yab, iyawë chipëkë tayawankase,,,"por eso, la mató",,nan,ConvFemGrMe,217.0,,
-convfemgrme-218,yab, apatakaja chi yawë ta ejnë sëma ti ta tajne,,,"cuando no sale, nos morimos, dicen",,nan,ConvFemGrMe,218.0,,
-convfemgrme-219,yab, tatunejra chi pïni tatune pëkë,,,no es frío pero es caliente,,nan,ConvFemGrMe,219.0,,
-convfemgrme-220,yab, warë sawankuijpë tanijpë anajmo pan wejsapë,,,así murió la finada tu abuela,,nan,ConvFemGrMe,220.0,,
-convfemgrme-221,yab, sarampiojra wejsapë pïnika mëtë pïnika ijtërë tanijpë,,,"si no hubiera habido sarampión, estuvier ahí",,nan,ConvFemGrMe,221.0,,
-convfemgrme-222,yab, tawarajra chi yawë sawankuise pïnika chiripo pïnika tawara rë,,,"si no hubiera sido así, también se hubiera muerto",,nan,ConvFemGrMe,222.0,,
-convfemgrme-223,yab, wejtane ejnë inche,,,a pesar de eso la vimos,,nan,ConvFemGrMe,223.0,,
-convfemgrme-224,yab, mmm iyawë chiripo mokonton inche chiripo,,,"si así fuera, ustedes la hubieran visto",,nan,ConvFemGrMe,224.0,,
-convfemgrme-225,yab, aaa sawankuijpë ta anajmo pan wejsapë,,,"ah, así se murió tu abuela",,nan,ConvFemGrMe,225.0,,
-convfemgrme-226,yab, chapëtiri kojpayarë ta,,,gritaba toda la noche,,nan,ConvFemGrMe,226.0,,
-convfemgrme-227,yab, mëkontomo nëmë wïrë ya muku ta wejsaj ta mokontom nëmë wïrë,,,"hija, los voy a dejar a ustedes, decía, los voy a dejar a ustedes",,nan,ConvFemGrMe,227.0,,
-convfemgrme-228,yab, entë chijrama sejkë me,,,no esten aquí vayan,,nan,ConvFemGrMe,228.0,,
-convfemgrme-229,yab, entë ejnë pata pïnirë entë,,,"aqui no es nuestra tierra, aquí",,nan,ConvFemGrMe,229.0,,
-convfemgrme-230,yab, kaño awiyama pana maijtë me,,,Vayan para Caño Auyama,,nan,ConvFemGrMe,230.0,,
-convfemgrme-231,yab, entë mëinpojra wïrë ya,,,yo no los quiero ver aquí,,nan,ConvFemGrMe,231.0,,
-convfemgrme-232,yab, mëini wïrë ya,,,te voy a ver,,nan,ConvFemGrMe,232.0,,
-convfemgrme-233,yab, mërë ya wïrë inija wejtane,,,pero tu no me vas a ver,,nan,ConvFemGrMe,233.0,,
-convfemgrme-234,yab, tapëkë chijpë ta anajmo pan wejsapë,,,así decía la finada tu abuela,,nan,ConvFemGrMe,234.0,,
-convfemgrme-235,yab, entë chijrama,,,no estén aquí,,nan,ConvFemGrMe,235.0,,
-convfemgrme-236,yab, maijtë me,,,vaya,,nan,ConvFemGrMe,236.0,,
-convfemgrme-237,yab, kaño awiyama pana ijtë ejnë nonori,,,"hacia caño Auyama, allá está nuestra tierra",,nan,ConvFemGrMe,237.0,,
-convfemgrme-238,yab, tapëkë chijpë ti,,,decía,,nan,ConvFemGrMe,238.0,,
-convfemgrme-239,yab, kojpaye rë pi,,,en la mañanita piiii,,nan,ConvFemGrMe,239.0,,
-convfemgrme-240,yab, waimuru,,,habla?,,nan,ConvFemGrMe,240.0,,
-convfemgrme-241,yab, waimu taji jëjëjë,,,hablaba jë-jë-jë,,nan,ConvFemGrMe,241.0,,
-convfemgrme-242,yab, muku yaakapëkë mëwejtojpan mërë muku,,,"tu vas a estar pariendo hijos mucho, hija",,nan,ConvFemGrMe,242.0,,
-convfemgrme-243,yab, enijpëtë muku yaakapëkë mëwejtojpan ka mërë,,,usted no va a estar haciendo uno solo niño,,nan,ConvFemGrMe,243.0,,
-convfemgrme-244,yab, ejnë pi warai,,,como nuestro hermano,,nan,ConvFemGrMe,244.0,,
-convfemgrme-245,yab, ejnë wanëpïrï,,,y nuestro sobrino,,nan,ConvFemGrMe,245.0,,
-convfemgrme-246,yab, ejnë ya'rari,,,nuestro nieto,,nan,ConvFemGrMe,246.0,,
-convfemgrme-247,yab, takërë wejnëton pïnirë muku,,,"con ellos uno no puede casarse, hija",,nan,ConvFemGrMe,247.0,,
-convfemgrme-248,yab, mayawaka ya ejnë kajtigajtë ti tawara ne chi yawë tapëkë anajmo pan chi yawë tëwï,,,"Mayawaka nos castiga cuando es así, eso estaba diciendo la finada tu abuela",,nan,ConvFemGrMe,248.0,,
-convfemgrme-249,yab, mayawaka ya ejnë yenejka ti,,,Mayawaka nos está mirando,,nan,ConvFemGrMe,249.0,,
-convfemgrme-250,yab, ejnë pi waraij yakërë ejnë ya'ra waraij yakërë,,,"con nuestro hermano, con nuestro nieto",,nan,ConvFemGrMe,250.0,,
-convfemgrme-251,yab, ejnë yawo waraij yakërë ejnë chi yawë ejnë yenejka ta,,,cuando estamos con nuestro tío nos mira,,nan,ConvFemGrMe,251.0,,
-convfemgrme-252,yab, ejnë muku yakërë,,,con nuestro hijo,,nan,ConvFemGrMe,252.0,,
-convfemgrme-253,yab, mayawaka ya ejnë kajtigajtëtoj ti muku,,,"eso es para que nos castigue, hija",,nan,ConvFemGrMe,253.0,,
-convfemgrme-254,yab, nope ne sejkë me,,,sea buena,,nan,ConvFemGrMe,254.0,,
-convfemgrme-255,yab, kojpayarëpene waimuru jëjëjë,,,"toda la noche hablaba, jë-jë-jë (no dejaba de gemir)",,nan,ConvFemGrMe,255.0,,
-convfemgrme-256,yab, atawejpori rë sawijta yawë iyawë n takï ijtëse,,,"todavía estaba oscuro, cuando estaba aclarando, en ese momento se fue",,nan,ConvFemGrMe,256.0,,
-convfemgrme-257,yab, këë wïrë yapë ta warë takï wïrë weretasapë nwarë,,,"ay! mi brazo estaba así, yo estaba sentanda así",,nan,ConvFemGrMe,257.0,,
-convfemgrme-258,yab, warë tëwï chi weretasaj rë tejwej po,,,ahora así estaba sentada en el chinchorro ,,nan,ConvFemGrMe,258.0,,
-convfemgrme-259,yab, warë wïrë yapëjsapë,,,así yo la tenía agarrada,,nan,ConvFemGrMe,259.0,,APAS_sapëTR
-convfemgrme-260,yab, wïrë yapëri moronta chi taji,,,me duelen los brazos,,nan,ConvFemGrMe,260.0,,
-convfemgrme-261,yab, wïrë ta wejsapë pipi santo pan pano,,,"yo le dije, al finado mi hermano Santos",,nan,ConvFemGrMe,261.0,,
-convfemgrme-262,yab, pipi ta wejsaj wïrë uyanakase sejkë uyapë morone,,,"hermano, dije, ven a ayudarme me duelen los brazos",,nan,ConvFemGrMe,262.0,,
-convfemgrme-263,yab, mërë wa ma yapëjkë ta wejsaj ta,,,"agarrala igual, dijo",,nan,ConvFemGrMe,263.0,,
-convfemgrme-264,yab, tëwï ti wachori irma ijyajtëpëkë,,,él estaba cuidando a su mujer Irma,,nan,ConvFemGrMe,264.0,,
-convfemgrme-265,yab, sanawë,,,juntos,,nan,ConvFemGrMe,265.0,,
-convfemgrme-266,yab, wojtëja wejsapë ta wïrë ma wïrë ya yapëjtojpe senejkari wejsapë warë waijtë pëkë warë,,,"no bajó (del chichorro), yo la tenía agarrada, así en la cabeza",,nan,ConvFemGrMe,266.0,,
-convfemgrme-267,yab, weretasaj wejsapë tejwej po weretasapë tejwej po,,,"estaba sentada en el chinchorro,",,nan,ConvFemGrMe,267.0,,
-convfemgrme-268,yab, weretasapë ma,,,solamente sentada,,nan,ConvFemGrMe,268.0,,
-convfemgrme-269,yab, tawara ta waimu wejsapë jëjë tawejka yawë sawaijta yawë,,,"estaba hablando así: jë-jë, cuando estaba amaneciendo, estaba aclareciendo",,nan,ConvFemGrMe,269.0,,
-convfemgrme-270,yab, iyawë ijtëse wïrë të wïrë muku ta wejsaj ta,,,"en ese momento se fue, me voy hija, dijo",,nan,ConvFemGrMe,270.0,,
-convfemgrme-271,yab, wïrë të wïrë,,,me voy,,nan,ConvFemGrMe,271.0,,
-convfemgrme-272,yab, ta wïrë ya wïrë wejtojpan wara pïnika ta wejsapë,,,"así te digo, como decirte que voy a volver pero no voy a volver, dijo",,nan,ConvFemGrMe,272.0,,
-convfemgrme-273,yab, mërë takonope mërë wïrë intojpam pïnirë,,,usted otra vez no me va a ver,,nan,ConvFemGrMe,273.0,,
-convfemgrme-274,yab, enirë ma wïrë waimuru ita mërë ya ta wejsaj ta,,,"usted ahora no más me va a oir hablando, dijo",,nan,ConvFemGrMe,274.0,,
-convfemgrme-275,yab, wa chipëkë ta anajmo pan wejsapë ijtëse,,,y así se fue tu abuela,,nan,ConvFemGrMe,275.0,,
-convfemgrme-276,yab, irë ma takï puru,,,"así, se murió",,nan,ConvFemGrMe,276.0,,
-convfemgrme-277,yab, wïrë yejwetijtëse wëjkase tejwej pana,,,"yo la acosté en el chinchorro, se cayó hacia el chinchorro",,nan,ConvFemGrMe,277.0,,
-convfemgrme-278,yab, wa chijpë ta anajmo pan wejsapë,,,así era tu abuela,,nan,ConvFemGrMe,278.0,,
-convfemgrme-279,yab, poo makë samopëti wejsapë wïrë pëkëpene,,,"ay, mamá, yo estaba llorando sola",,nan,ConvFemGrMe,279.0,,
-convfemgrme-280,yab, wïrë yamanse,,,yo la acomodé,,nan,ConvFemGrMe,280.0,,
-convfemgrme-281,yab, enirë ma wïrë waimuru ita mërë ya ta wejsaj ta,,,,,nan,ConvFemGrMe,281.0,,
-convfemgrme-282,yab, irëjpë tajne yakase,,,después ellos cobaron,,nan,ConvFemGrMe,282.0,,
-convfemgrme-283,yab, tëjta nwa entë ma pïnika entë ma,,,el hueco era hasta aquí no más (de hondo),,nan,ConvFemGrMe,283.0,,
-convfemgrme-284,yab, mïntë tujnaka yakasempejra tuna rë wejsapë rërë mïntë,,,"allá no podían cobar hondo, había mucha agua allá",,nan,ConvFemGrMe,284.0,,
-convfemgrme-285,yab, aaa pepoye ma yakajpë pïnika,,,"ah, por encimita nada más será que cobaron",,nan,ConvFemGrMe,285.0,,
-convfemgrme-286,yab, pepoye ma tajne yakase wejsapë,,,por encima nada más cobaron ellos,,nan,ConvFemGrMe,286.0,,
-convfemgrme-287,yab, mïjna tajne mujnajtëse,,,allá ellos la enterraron,,nan,ConvFemGrMe,287.0,,
-convfemgrme-288,yab, aaa ijtë ne ta anajmo pan wejsapë wasaij të,,,"ah, ahí está tu abuela, en cucurito",,nan,ConvFemGrMe,288.0,,
-convfemgrme-289,yab, irëjpë ne yawo tamanako ka ijtësapë mokontom yakërë,,,"después, el tío Tamanaco se fue con ustedes?",,nan,ConvFemGrMe,289.0,,
-convfemgrme-290,yab, ijtë wejsapë intompïjkë marë rë entë ma,,,"ahí estaba, todavía era pequeño, como de este tamaño",,nan,ConvFemGrMe,290.0,,
-convfemgrme-291,yab, entë ma warai taji rë,,,como por aquí,,nan,ConvFemGrMe,291.0,,
-convfemgrme-292,yab, ijtë wejsapë wïrë yakërë wejsapë,,,"ahí estaba, estaba conmigo",,nan,ConvFemGrMe,292.0,,
-convfemgrme-293,yab, irëjpë ëkëjna neke ijtëse wejsapë irëjpë,,,"después, donde será que se fue después",,nan,ConvFemGrMe,293.0,,
-convfemgrme-294,yab, tajne yarëse ka,,,¿ellos se lo llevaron?,,nan,ConvFemGrMe,294.0,,
-convfemgrme-295,yab, tajne yarëse pïnika irëjpë wejsapë,,,será que ellos se lo llevaron después,,nan,ConvFemGrMe,295.0,,
-convfemgrme-296,yab, romana,,,¿río abajo?,,nan,ConvFemGrMe,296.0,,
-convfemgrme-297,yab, aniki yakërë neke n këyatase wejsapë irëjpë,,,con quién será que se crió después,,nan,ConvFemGrMe,297.0,,
-convfemgrme-298,yab, këyaja wïrë,,,no sé,,nan,ConvFemGrMe,298.0,,
-convfemgrme-299,yab, aniki irario yarëjpë pïnirë tëwï pïnirë,,,"quién, será que no lo llevo Hilario",,nan,ConvFemGrMe,299.0,,
-convfemgrme-300,yab, aniki aniki tëwï pïnika julieta julieta wejsapë,,,"quién, quién, esa tal vez, Julieta",,nan,ConvFemGrMe,300.0,,
-convfemgrme-301,yab, ë'ë wachori taji julieta,,,"sí, su esposa es Julieta",,nan,ConvFemGrMe,301.0,,
-convfemgrme-302,yab, tëwï yakërë ma ta këyetase wejsapë,,,con ese no más que se crió,,nan,ConvFemGrMe,302.0,,
-convfemgrme-303,yab, mëtë papa kampra pano warataro pano,,,"ahí, el finado mi padrastro, Guarataro",,nan,ConvFemGrMe,303.0,,
-convfemgrme-304,yab, mmm imukuru ma,,,"sí, su hijo",,nan,ConvFemGrMe,304.0,,
-convfemgrme-305,yab, tëwï takï imuku pïjkë rë wejsapë entëno ma taji waraijtokomo pïjkë rërë,,,"él también tenía un hijo pequeño, un varón pequeño como así",,nan,ConvFemGrMe,305.0,,
-convfemgrme-306,yab, tëwï sepantëpëkë tawejkase rë wejsapë tawara rë,,,él amaneció cuidando al niñito,,nan,ConvFemGrMe,306.0,,
-convfemgrme-307,yab, tëwï ka mati pokono chi wejsapë,,,ese todavía estaba tomando teta?,,nan,ConvFemGrMe,307.0,,
-convfemgrme-308,yab, ë'ë mati yëni wejsaj ta ijtë rë,,,"sí, todavía estaba tomando teta",,nan,ConvFemGrMe,308.0,,
-convfemgrme-309,yab, samo taji mati yënpo pe ta asamo wejsapë,,,"lloraba, lloraba para tenía ganas de tomar pecho",,nan,ConvFemGrMe,309.0,,"INTR_V,IF_samo-ri,;,TRsub_OV,subF_yëni-pori-pe_reason,;,,‎‎INTR_XVH,IF_samo-ri-H-sapë"
-convfemgrme-310,yab, wa chijpë ta anajmo pan wejsapë,,,,,nan,ConvFemGrMe,310.0,,
-convfemgrme-311,yab, tëwï neke n ti imukuru tayarëse warë taji rë,,,él sí lo llevo a su hijo,,nan,ConvFemGrMe,311.0,,
-convfemgrme-312,yab, aniki ya ka neke neke ne tatuse tëwï mukuru wejsapë,,,quién será que le entregó el hijo de él,,nan,ConvFemGrMe,312.0,,
-convfemgrme-313,yab, aniki ya tayarëse tëwïjpë imukurujpë,,,quién será que llevó a ese su hijo,,nan,ConvFemGrMe,313.0,,
-convfemgrme-314,yab, wurichi maniki tëwï ya rë këyemajpë ta,,,la hembrita la crio él mismo,,nan,ConvFemGrMe,314.0,,
-convfemgrme-315,yab, wurichi ken ka imukuru,,,su hija era hembra?,,nan,ConvFemGrMe,315.0,,
-convfemgrme-316,yab, rosa ta,,,Rosa,,nan,ConvFemGrMe,316.0,,
-convfemgrme-317,yab, rosarita,,,Rosarita,,nan,ConvFemGrMe,317.0,,
-convfemgrme-318,yab, asakë imukuru tajtoj maniki,,,"sus hijos son dos, dicen",,nan,ConvFemGrMe,318.0,,
-convfemgrme-319,yab, asakë imuku wejsapë,,,sus hijos eran dos,,nan,ConvFemGrMe,319.0,,
-convfemgrme-320,yab, wurichi waraijtokomo tawara taji rë,,,hembra y varón también,,nan,ConvFemGrMe,320.0,,
-convfemgrme-321,yab, tëwï takï papa kampra pano warataro takï onono waraijtokomo waraij pïnirë,,,"él, el finado mi padrastro, Guarataro, no era como otros hombres",,nan,ConvFemGrMe,321.0,,
-convfemgrme-322,yab, ejnë pëkë chija rë,,,no se metía con nosotros,,nan,ConvFemGrMe,322.0,,
-convfemgrme-323,yab, wïrë takï yatampe wïrë wejtane wïrë pëkë chija wejsapë,,,"a pesar de que yo estaba jovencita, no se metía conmigo",,nan,ConvFemGrMe,323.0,,
-convfemgrme-324,yab, muku ta wejsaj ta muku pe ma sejtë ta hija,,,"decía, hija, me llamaba hija, ""hija""",,nan,ConvFemGrMe,324.0,,
-convfemgrme-325,yab, pachi pano jeniya pan pëkë ne ti apasajtëpo wejsapë,,,"la finada mi hermana, con ella se quería pasar",,nan,ConvFemGrMe,325.0,,
-convfemgrme-326,yab, sere patakase ijtëjpë wejsapë mïjna teijpo rë,,,"había ido a solear el casabe, allá, lejos",,nan,ConvFemGrMe,326.0,,
-convfemgrme-327,yab, sere yekepëkë chi wejsapë tapatakase warë,,,estaba tendiendo casabe y lo sacó,,nan,ConvFemGrMe,327.0,,
-convfemgrme-328,yab, sere impanikase ijtë yawë tayapëjse ti wejsapë tarojpë,,,"cuando iba a voltear el casabe, la agarró, así",,nan,ConvFemGrMe,328.0,,
-convfemgrme-329,yab, warë ijtënojpë pïnika tayëmpëkase pïnika tapëkë,,,"después, de ahí lo regañó por eso",,nan,ConvFemGrMe,329.0,,
-convfemgrme-330,yab, wejtane warë ijtënojpë makë pan pana tayakaramase wejsapë,,,pero de ahí le contó a la finada mi mamá,,nan,ConvFemGrMe,330.0,,
-convfemgrme-331,yab, makë mëwaraijtori wïrë yapëjse tata,,,"mamá, tu espose me agarró, dijo",,nan,ConvFemGrMe,331.0,,
-convfemgrme-332,yab, makë pano yëmpëkapëti wejsapë,,,la finada mi mamá lo regañó,,nan,ConvFemGrMe,332.0,,
-convfemgrme-333,yab, irëjpë tërë chija wejsapë,,,"después de eso, ya  no pasó más",,nan,ConvFemGrMe,333.0,,
-convfemgrme-334,yab, mmm tanijpë,,,"sí, ### ### dije",,nan,ConvFemGrMe,334.0,,
-mape_pers2-01,yab, ïmparë,,,¿está listo?,,nan,Hist2MaPe,1.0,,
-mape_pers2-02,yab, aniki ya iyajtëri iyajtëpe,,,¿quién empieza primero?,,nan,Hist2MaPe,2.0,,
-mape_pers2-03,yab, kajkë iyajtëpe mërë,,,diga usted primero,,nan,Hist2MaPe,3.0,,
-mape_pers2-04,yab, wïrë patakajpë yakaramari iyajtëpe,,,voy a contar primero cuando nací,,nan,Hist2MaPe,4.0,,
-mape_pers2-05,yab, patakase mïntë kukurito të,,,,,nan,Hist2MaPe,5.0,,
-mape_pers2-06,yab, enijpëtë yëye wejtëyatë umakëri ya upatakase,,,"donde está un árbol, mi mamá dio a luz de mi",,nan,Hist2MaPe,6.0,,
-mape_pers2-07,yab, wïrë makëri ya unëmëse ta,,,mi mamá me dejó,,nan,Hist2MaPe,7.0,,
-mape_pers2-08,yab, yumpe kirimijkëtë ya uyënëse ti kërë tawara intompijkë uyewenke wejsapë,,,"muchas hormigas me comieron, no las conocía porque estaba muy pequeña",,nan,Hist2MaPe,8.0,,
-mape_pers2-09,yab, irëjpë makë kampra ijtëse tëwï wïrë inche ijtë rë makë kamprajpë,,,después mi primera mamá fue a verme,,nan,Hist2MaPe,9.0,,
-mape_pers2-10,yab, ukoyoweti tayajkëtëse uyarëse ta tïwïj yaka ukopise ta yajtëpe wïrë yarëse ta tïwïj yaka,,,"ella cortó mi ombligo, me lavó primero y me llevó a su casa",,nan,Hist2MaPe,10.0,,
-mape_pers2-11,yab, makë pano pana tase kwatojpe mërë mari michi mëmukuru,,,"A mi mamá le dijo, por qué vas a botar a esta, tu hija",,nan,Hist2MaPe,11.0,,
-mape_pers2-12,yab, itakë michi wurijyamo mëiyajtëtojpano ta tase ta makë pano pana,,,"escucha, esta mujer va a cuidar de tí, le dijo a la finada mi mamá",,nan,Hist2MaPe,12.0,,
-mape_pers2-13,yab, tëwï makë ta wïrë pojtëja imu pïrarë chipëkë,,,"mi mamá dijo, no la quiero porque no tiene papá",,nan,Hist2MaPe,13.0,,
-mape_pers2-14,yab, kwatojpe tawara ma yankë,,,"no importa, críala igual",,nan,Hist2MaPe,14.0,,
-mape_pers2-15,yab, umakë pano,,,la finada mi mamá,,nan,Hist2MaPe,15.0,,
-mape_pers2-16,yab, tayarëse makë ëjwatë pana taitopo,,,me llevó mi mamá al chinchorro donde me puso,,nan,Hist2MaPe,16.0,,
-mape_pers2-17,yab, wïrë makë tase ti,,,dijo mi mamá,,nan,Hist2MaPe,17.0,,
-mape_pers2-18,yab, wïrë pojtëja imu pïrarë chipëkë,,,no la quiero porque no tiene papá,,nan,Hist2MaPe,18.0,,
-mape_pers2-19,yab, irëjpë makampra tase,,,después mi primera mamá dijo,,nan,Hist2MaPe,19.0,,
-mape_pers2-20,yab, makë pana tase yankë yankë kërë mëmukuru,,,"a mi mamá le dijo, levanta a ese tu hijo",,nan,Hist2MaPe,20.0,,
-mape_pers2-21,yab, kërë wurijyamo,,,esa es una hembra,,nan,Hist2MaPe,21.0,,
-mape_pers2-22,yab, sere yawajni,,,esa es la que raya yuca,,nan,Hist2MaPe,22.0,,
-mape_pers2-23,yab, sukase mëtuna yanujni,,,"todo, la que busca tu agua",,nan,Hist2MaPe,23.0,,
-mape_pers2-24,yab, mëyoti ijmojkani,,,la que va a cocinar tu carne,,nan,Hist2MaPe,24.0,,
-mape_pers2-25,yab, sukase tase ta makampra pano ya,,,mi primera mamá dijo todo,,nan,Hist2MaPe,25.0,,
-mape_pers2-26,yab, makëri ya pïnika ëjwatë po,,,"mi mamá tal vez, en el chinchorro...",,nan,Hist2MaPe,26.0,,
-mape_pers2-27,yab, ëjwatë po usenejkasapë,,,yo ya estaba en el chinchorro,,nan,Hist2MaPe,27.0,,
-mape_pers2-28,yab, irëjpë pïnika makë pana tase,,,después tal vez le dijo a mi mamá,,nan,Hist2MaPe,28.0,,
-mape_pers2-29,yab, tawara ma yankë,,,levantala igual,,nan,Hist2MaPe,29.0,,
-mape_pers2-30,yab, imukejra wejtane yankë tase makampra,,,"aunque no tiene papá, lenvántala, dijo mi primera mamá",,nan,Hist2MaPe,30.0,,
-mape_pers2-31,yab, mëtë usenejkari irëjpë ukëyetase pïnika,,,"ahí estoy, me crié, será",,nan,Hist2MaPe,31.0,,
-mape_pers2-32,yab, makë pana tase,,,le dijo a mi mamá,,nan,Hist2MaPe,32.0,,
-mape_pers2-33,yab, makë tewenke kwase upatakajpë irë makëpïjkë pano ya tase,,,"mi mamá no sabía cómo nací, eso dijo mi segunda mamá",,nan,Hist2MaPe,33.0,,
-mape_pers2-34,yab, yajtëpe julio marë,,,el primero de Julio,,nan,Hist2MaPe,34.0,,
-mape_pers2-35,yab, tëwï yaye patakajpë mëmukuru,,,en ese día nació tu hijo,,nan,Hist2MaPe,35.0,,
-mape_pers2-36,yab, makë takï tewenke ejnë patakajpë sukase makë tewenke,,,mi mamá no sabía cuando nació ninguno,,nan,Hist2MaPe,36.0,,
-mape_pers2-37,yab, makëpïjkë pano ya sukase tase,,,la segunda mamá dijo todo,,nan,Hist2MaPe,37.0,,
-mape_pers2-38,yab, mukutomo patakajpë marë uyewenkejra wïrë tase makë pana,,,"el (día) de nacimiento de los niños, yo lo conozco, le dijo a mi mamá",,nan,Hist2MaPe,38.0,,
-mape_pers2-39,yab, nwa chipëkë makë pana tase,,,por eso le dijo a mi mamá,,nan,Hist2MaPe,39.0,,
-mape_pers2-40,yab, mërë mëyewenke mërë pachi tase ta,,,"tú no sabes hermana, dijo",,nan,Hist2MaPe,40.0,,
-mape_pers2-41,yab, wïrë wuyewenkejra wïrë tase ta makëpïjkë ya,,,"yo sí se, dijo mi segunda mamá",,nan,Hist2MaPe,41.0,,
-mape_pers2-42,yab, tawara chipëkë makë pana tase,,,así le dijo a mi mamá,,nan,Hist2MaPe,42.0,,
-mape_pers2-43,yab, tawara ma yewenke wïrë mëyewenke chi yawë mëyewenke,,,"yo tampoco sé, si no sabes, no sabes",,nan,Hist2MaPe,43.0,,
-mape_pers2-44,yab, mëmukutomo patakajpë marë,,,el (día) de nacimiento de tus hijos,,nan,Hist2MaPe,44.0,,
-mape_pers2-45,yab, irëjpë,,,después...,,nan,Hist2MaPe,45.0,,
-mape_pers2-46,yab, këyetase pïnika,,,Creo que crecí,,nan,Hist2MaPe,46.0,,
-mape_pers2-47,yab, inkë takï irëjpë makëpïjkë pano takï,,,"mira, después mi segunda mamá",,nan,Hist2MaPe,47.0,,
-mape_pers2-48,yab, inkë takï mërë mapo maniki mëmukuru,,,vea la hija que usted quería botar,,nan,Hist2MaPe,48.0,,REL_O
-mape_pers2-49,yab, nope ne mëyanaka ta sukase sere yawakï ta sukase tanairi nope,,,"te va a ayudar bien, va a rayar toda la yuca, hace todo bien",,nan,Hist2MaPe,49.0,,
-mape_pers2-50,yab, mërë ma ta chi yawë,,,si usted la botaba,,nan,Hist2MaPe,50.0,,
-mape_pers2-51,yab, mëmukuru mëyanakaja,,,tu hija no te ayuda,,nan,Hist2MaPe,51.0,,
-mape_pers2-52,yab, tawara tase ta makëpïjkë pano ya,,,así dijo la finada mi segunda mamá,,nan,Hist2MaPe,52.0,,
-mape_pers2-53,yab, wïrë mase chipëkë,,,si yo la hubiera botado,,nan,Hist2MaPe,53.0,,
-mape_pers2-54,yab, nopejra muku sarakatojpejra,,,es malo botar a los niños,,nan,Hist2MaPe,54.0,,
-mape_pers2-55,yab, muku yansemï,,,a los niños hay que recogerlos,,nan,Hist2MaPe,55.0,,
-mape_pers2-56,yab, onono yaka tusempïnirë tawara rë,,,tampoco se les da a otras personas,,nan,Hist2MaPe,56.0,,
-mape_pers2-57,yab, ejnë mukuru ejnë wenkajpë maniki yansemï,,,nuestros hijos que parimos hay que criarlos,,nan,Hist2MaPe,57.0,,
-mape_pers2-58,yab, tawara ma imukejra,,,tambien el que no tiene papá,,nan,Hist2MaPe,58.0,,
-mape_pers2-59,yab, tawara ma yankë,,,también críalos,,nan,Hist2MaPe,59.0,,
-mape_pers2-60,yab, imukejra maniki yansemï,,,los que no tienen papá hay que criarlos,,nan,Hist2MaPe,60.0,,
-mape_pers2-61,yab, tase ta makëpïjkë pano tawara rë,,,decía la finada mi segunda mamá,,nan,Hist2MaPe,61.0,,
-mape_pers2-62,yab, ati ta mërë ya mërë,,,,,nan,Hist2MaPe,62.0,,
-grme-1,yab, majawa jwawë wïrë patakase,,,nací en Majagua,,nan,HistGrMe,1.0,,
-grme-2,yab, wïrë yumu ësëmase mëntë majawa jwawë,,,Mi papá se murió en el río Majagua,,nan,HistGrMe,2.0,,
-grme-3,yab, mëntë torori,,,su tumba está allá,,nan,HistGrMe,3.0,,
-grme-4,yab, irëjpë ana wejse,,,después vinimos,,nan,HistGrMe,4.0,,
-grme-5,yab, ana wejse papa sëmase ana wejse mïjna ana tëse wasaij pana,,,"Vinimos. Mi papá se murió y nosotros vinimos. Fuimos allá, hacia cucurito",,nan,HistGrMe,5.0,,
-grme-6,yab, wasaij pana ana tëse,,,fuimos a Cucurito,,nan,HistGrMe,6.0,,
-grme-7,yab, mëntë ana wejse wasaij të umparëjra mïjna,,,"Nosotros vinimos alla, a Cucurito en mucho tiempo, allá",,nan,HistGrMe,7.0,,
-grme-8,yab, wabiarito jwaka tawara rë,,,También a Guabiarito,,nan,HistGrMe,8.0,,
-grme-9,yab, yawo pano yakërë ijtë ana wejsapë,,,con el finado mi tío fuimos allá,,nan,HistGrMe,9.0,,
-grme-10,yab, iwarë wïrë këyatase intipijkë wïrë,,,"ahora crecí, soy pequeña",,nan,HistGrMe,10.0,,
-grme-11,yab, iwarë wïrë këyatase wïrë këyatase wïrë këyatase,,,"ahí crecí, crecí, crecí",,nan,HistGrMe,11.0,,
-grme-12,yab, wa irëjpë ana tëse manapiare pana,,,entonces después fuimos a Manapiare,,nan,HistGrMe,12.0,,
-grme-13,yab, yatampe wïrë,,,yo estaba joven,,nan,HistGrMe,13.0,,
-grme-14,yab, manapiare pana,,,hacia Manapiare,,nan,HistGrMe,14.0,,
-grme-15,yab, mëtë wasai të,,,allá en Cucurito,,nan,HistGrMe,15.0,,
-grme-16,yab, pipi pano kayupare yum pano,,,"el difunto mi hermano, el papá del difunto Cayupare",,nan,HistGrMe,16.0,,
-grme-17,yab, takërë ana chi wejsapë mëntë wasai të,,,"con él estuvimos allá, en Cucurito",,nan,HistGrMe,17.0,,
-grme-18,yab, ana pëkëpene ana,,,estabamos solos,,nan,HistGrMe,18.0,,
-grme-19,yab, ijtë wïrë wejsapë,,,ahí estuve,,nan,HistGrMe,19.0,,
-grme-20,yab, warë wïrë wejsapë,,,allí estaba yo,,nan,HistGrMe,20.0,,
-grme-21,yab, sere yawakïpëkë,,,rallando yuca,,nan,HistGrMe,21.0,,
-grme-22,yab, yawajkë sere,,,ralla yuca,,nan,HistGrMe,22.0,,
-grme-23,yab, makë ya,,,mi mamá...,,nan,HistGrMe,23.0,,
-grme-24,yab, tapikatane,,,mientras ella estaba pelando (la yuca),,nan,HistGrMe,24.0,,
-grme-25,yab, wïrë yawakïrï,,,yo rayo,,nan,HistGrMe,25.0,,
-grme-26,yab, enijpëtërë wïrë yumukunu chuku chuku chuku,,,con una sola mano,,nan,HistGrMe,26.0,,
-grme-27,yab, mërë yumukunu enijpëtërë,,,tú con una sola mano,,nan,HistGrMe,27.0,,
-grme-28,yab, mëmati wëjkari enijpëtërë ma,,,se te va a caer un seno solamente,,nan,HistGrMe,28.0,,
-grme-29,yab, asakërërë mëyawajkë asakë mëyumukunu,,,"raya con la dos, las dos manos",,nan,HistGrMe,29.0,,
-grme-30,yab, nwarë asakërërë,,,"así, ambos",,nan,HistGrMe,30.0,,
-grme-31,yab, tajnomo yamanëri,,,los piaroa hacen,,nan,HistGrMe,31.0,,
-grme-32,yab, tëpu,,,la piedra,,nan,HistGrMe,32.0,,
-grme-33,yab, tawaye pe,,,para hacer rayo,,nan,HistGrMe,33.0,,
-grme-34,yab, tawara rë tajnomo yamanëri pata,,,los piaroas tambien hacen hacha,,nan,HistGrMe,34.0,,
-grme-35,yab, tawaye,,,rayo,,nan,HistGrMe,35.0,,
-grme-36,yab, sere yawajtopo,,,para rayar yuca,,nan,HistGrMe,36.0,,
-grme-37,yab, nwarë wïrë këyatasapë,,,así crecí,,nan,HistGrMe,37.0,,
-grme-38,yab, yunkejra,,,sin papá,,nan,HistGrMe,38.0,,
-grme-39,yab, wïrë yumujra pïrarë,,,no tenía papá,,nan,HistGrMe,39.0,,
-grme-40,yab, mëntë sëmase papa,,,allá se murió mi papá,,nan,HistGrMe,40.0,,
-grme-41,yab, sëmase,,,se murió,,nan,HistGrMe,41.0,,
-grme-42,yab, tarinë sëmase papa tata makë ya,,,"mi papá se murió rápido, dijo mi mamá",,nan,HistGrMe,42.0,,
-grme-43,yab, makë sëmase mëntë wasai të,,,mi mamá se murió en Cucurito,,nan,HistGrMe,43.0,,
-grme-44,yab, makë sëmase terepunu atipijin sarampion yawë,,,"mi mamá se murió de enfermedad, como es, sarapión",,nan,HistGrMe,44.0,,
-grme-45,yab, wïrë sëma pïnika tata makë ya wejsapë wïrë pëkë tapichi yawë,,,"creo que me voy a morir, así decía mi mamá, si se me pega",,nan,HistGrMe,45.0,,DTR_antipassive
-grme-46,yab, wïrë yerepunmajtëja,,,no voy a resistir,,nan,HistGrMe,46.0,,
-grme-47,yab, wïrë sanakase,,,me mejoré,,nan,HistGrMe,47.0,,
-grme-48,yab, sanakase wïrë pachi tawara rë sanakase,,,yo me mejoré y mi hermana también,,nan,HistGrMe,48.0,,
-grme-49,yab, makë pëkë atapëjse sarampion,,,el sarampión le pegó a mi mamá,,nan,HistGrMe,49.0,,
-grme-50,yab, tajropori ëjpïna,,,tiene mucha fiebre,,nan,HistGrMe,50.0,,
-grme-51,yab, tajropori tajropori tajropori,,,"fiebre, fiebre, fiebre",,nan,HistGrMe,51.0,,
-grme-52,yab, konopo sarara yaye apatakase,,,"cuando estaba lloviznando, salió",,nan,HistGrMe,52.0,,
-grme-53,yab, sujtase,,,a orinar,,nan,HistGrMe,53.0,,
-grme-54,yab, ana ya këyamajpë,,,los que nosotros criamos,,nan,HistGrMe,54.0,,
-grme-55,yab, kaimarë seremari,,,comía despacio,,nan,HistGrMe,55.0,,
-grme-56,yab, imu ya yojtëri totï,,,su papá pescaba su presa,,nan,HistGrMe,56.0,,
-grme-57,yab, irëjpë ana ya kunëri këyëtase,,,despúes nosotros cocinamos,,nan,HistGrMe,57.0,,
-grme-58,yab, këyëtase kamparake chi yawë kë,,,"crecí, cuando era grande, këë, a, ë, a",,nan,HistGrMe,58.0,,
-grme-59,yab, mëmukuru ëntari moronkapïkë mëwejtojpano ënwarë muku,,,"vas a sufrir por la boca de tu hija (te va a insultar), así hija",,nan,HistGrMe,59.0,,
-grme-60,yab, tamoronkapïkë mëwejtojpano mërë muku,,,te va a hacer sufrir tu hija,,nan,HistGrMe,60.0,,
-grme-61,yab, kwaraijyawë mërë ya wïrë iniri kwaraijyawë mërë ya wïrë iniri muku,,,"cuando me vas a ver, hija",,nan,HistGrMe,61.0,,
-grme-62,yab, mërë ya wïrë intojpam pïnirë mërë ya wïrë inirijra,,,no me vas a ver más,,nan,HistGrMe,62.0,,
-grme-63,yab, teijpo wïrë të wara pïnika të wïrë wïrë tëri muku ta wïrë ya,,,"parece que me voy a ir lejos, hija, yo digo eso",,nan,HistGrMe,63.0,,
-grme-64,yab, maijtë me muku mïjna,,,"vete hija, alla",,nan,HistGrMe,64.0,,
-grme-65,yab, kaño awïyama,,,Caño Auyama,,nan,HistGrMe,65.0,,
-grme-66,yab, entë chijrama sejkë me,,,"no puedes estar aquí, hasta que te puedas ir",,nan,HistGrMe,66.0,,
-grme-67,yab, mïjna mëtëri ejnë pata yaka wïrë patari mëtë kaño awïyama tënojpë wïrë wepïjpë wïrë,,,"vaya para allá, a nuestro pueblo, mi pueblo es allá, yo me vine desde Caño Auyama",,nan,HistGrMe,67.0,,
-grme-68,yab, ëmë ya wïrë nejse wejsapë ta ti ta,,,"tu papá me trajo, decía",,nan,HistGrMe,68.0,,
-grme-69,yab, kwaraijyawë mërë wïrë iniri,,,cuando me vas a ver?,,nan,HistGrMe,69.0,,no_ERG
-grmepers-071,yab, wïrë tëri,,,me voy,,nan,HistGrMe,70.0,,
-grmepers-072,yab, wïrë iche tejwej pana,,,la acosté en el chinchorro,,nan,HistGrMe,71.0,,
-grmepers-073,yab, ëjwatë pana puru mare,,,"en el chinchorro, pum! se quedo",,nan,HistGrMe,72.0,,
-grmepers-074,yab, kïse makë,,,se puso en silencio,,nan,HistGrMe,73.0,,
-grmepers-075,yab, tawejka yawë,,,cuando iba amaneciendo,,nan,HistGrMe,74.0,,
-grmepers-076,yab, mapararu këjta yawë,,,cuando canta el gallo,,nan,HistGrMe,75.0,,
-grmepers-077,yab, tuna paijche mïntë tapasajre,,,"alla hay agua hondo, charcos",,nan,HistGrMe,76.0,,
-grmepers-078,yab, ejnë yakase,,,nosotros cavamos,,nan,HistGrMe,77.0,,
-grmepers-079,yab, kujpa po,,,### ### encima de la macanilla,,nan,HistGrMe,78.0,,
-grmepers-080,yab, itopo,,,para acostarla,,nan,HistGrMe,79.0,,
-grmepers-081,yab, kujpa,,,macanilla,,nan,HistGrMe,80.0,,
-grmepers-082,yab, tajne iche,,,la acostaron,,nan,HistGrMe,81.0,,
-grmepers-083,yab, kwase ija,,,"cómo hacemos, la acostamos?",,nan,HistGrMe,82.0,,
-grmepers-084,yab, wepïrï makë,,,viene mi mamá,,nan,HistGrMe,83.0,,
-grmepers-085,yab, ijta ta muku,,,"va a decir, ""hija""",,nan,HistGrMe,84.0,,
-grmepers-086,yab, seremakë,,,come,,nan,HistGrMe,85.0,,
-grmepers-087,yab, entë tënësemï,,,aquí hay comida,,nan,HistGrMe,86.0,,
-grmepers-088,yab, wïrë seremaja makë ta,,,"no como mamá, dije",,nan,HistGrMe,87.0,,
-grmepers-089,yab, wïrë seremase pano,,,ya comí,,nan,HistGrMe,88.0,,
-grmepers-090,yab, aaa ëjpïna mëtë tënësemï seremakë,,,"ah, alla hay bastante comida, come",,nan,HistGrMe,89.0,,
-grmepers-091,yab, wïrë tarojra,,,no digo (nada),,nan,HistGrMe,90.0,,
-grmepers-092,yab, wïrë pëkëpene wïrë ya taro,,,yo digo yo estoy sola,,nan,HistGrMe,91.0,,
-grmepers-093,yab, ënwarë teijpo makë ijtëse,,,así se fue mi mamá lejos,,nan,HistGrMe,92.0,,
-grmepers-094,yab, kwase wïrë ya taro,,,cómo voy a decir,,nan,HistGrMe,93.0,,
-grmepers-095,yab, wasaij të,,,En Cucurito,,nan,HistGrMe,94.0,,
-grmepers-096,yab, irëjpë ana tëse,,,después nos fuimos,,nan,HistGrMe,95.0,,
-grmepers-097,yab, ana wejse,,,vinimos,,nan,HistGrMe,96.0,,
-grmepers-098,yab, makë sëmase wïrë wejse pachi pano yakërë,,,mi mamá se murió y yo me vine con la finada mi hermana,,nan,HistGrMe,97.0,,
-grmepers-099,yab, usamori makë pïkë,,,estoy llorando por mi mamá,,nan,HistGrMe,98.0,,
-grmepers-100,yab, makë neke n ti,,,mi mamá es la que sabe,,nan,HistGrMe,99.0,,
-grmepers-101,yab, wïrë ëjpïnï makë pïkë,,,pienso de mi mama',,nan,HistGrMe,100.0,,
-grmepers-102,yab, ëjpïna teretapiri,,,mucha siembra,,nan,HistGrMe,101.0,,
-grmepers-103,yab, aro yantopo,,,para recoger arroz,,nan,HistGrMe,102.0,,
-grmepers-104,yab, nachi yantopo,,,para recoger maíz,,nan,HistGrMe,103.0,,
-grmepers-105,yab, nachi ëjpïna,,,mucho maíz,,nan,HistGrMe,104.0,,
-grmepers-106,yab, sukase tinawë,,,todo tenía (el que sembraba),,nan,HistGrMe,105.0,,
-grmepers-107,yab, warotari,,,trabajando,,nan,HistGrMe,106.0,,
-grmepers-108,yab, ana chi wejsapë mëtë sawë të,,,nosotros estuvimos allí en el raudal,,nan,HistGrMe,107.0,,
-grmepers-109,yab, sawë të apatakase wïrë mukuru,,,en el raudal salió (nació) mi hijo,,nan,HistGrMe,108.0,,
-grmepers-110,yab, patakase mïntë,,,nació allá,,nan,HistGrMe,109.0,,
-grmepers-111,yab, wïrë pëkëpene,,,yo estaba sola,,nan,HistGrMe,110.0,,
-grmepers-112,yab, mukuru patakari wïrë pëkëpene,,,cuando nació mi hijo estaba solita,,nan,HistGrMe,111.0,,
-grmepers-113,yab, irëjpë patakase wïrë tuna pëkë,,,"salió después, cuando estaba (buscando) agua",,nan,HistGrMe,112.0,,
-grmepers-114,yab, najwataka,,,para el puerto,,nan,HistGrMe,113.0,,
-grmepers-115,yab, wïrë koyoweti yakëtëse wïrë kopiche,,,corté el ombligo y lo lavé,,nan,HistGrMe,114.0,,no_ERG
-grmepers-116,yab, warë irëjpë wïrë tëse ëjtë yaka wejse sarë colmena pana,,,"después fui a la casa, vine para acá, hacia colmena",,nan,HistGrMe,115.0,,
-grmepers-117,yab, yamatiri wëse wejse sarë,,,vino a matar el pauji hacia acá,,nan,HistGrMe,116.0,,
-grmepers-118,yab, coromena pana,,,hacia Colmena,,nan,HistGrMe,117.0,,
-grmepers-119,yab, nwarë,,,así,,nan,HistGrMe,118.0,,
-grmepers-120,yab, ijtëse apatakasapë rë,,,se fue después de que había nacido,,nan,HistGrMe,119.0,,
-grmepers-121,yab, wïrë wenkase morone wïrë poseti ijtërë,,,"yo di a luz, todavía tenía dolor en el vientre",,nan,HistGrMe,120.0,,
-grmepers-122,yab, tëwï ya rë yamanse,,,el mismo preparó (comida),,nan,HistGrMe,121.0,,
-grmepers-123,yab, pawichi pochi yamatiri,,,preparando pauji culo blanco,,nan,HistGrMe,122.0,,
-grmepers-124,yab, seremase,,,comió,,nan,HistGrMe,123.0,,
-grmepers-125,yab, muku,,,el niño,,nan,HistGrMe,124.0,,
-grmepers-126,yab, samori kojpaye ananan,,,"llora de noche, wa, wa, wa",,nan,HistGrMe,125.0,,
-grmepers-127,yab, ana tëse majawa jwaka,,,fuimos al caño Majagua,,nan,HistGrMe,126.0,,
-grmepers-128,yab, samori kojpaye,,,llora de noche,,nan,HistGrMe,127.0,,
-grmepers-129,yab, wïrë yarachini rokotase,,,"tenía miedo, se puso loco",,nan,HistGrMe,128.0,,
-grmepers-130,yab, samori,,,lloraba,,nan,HistGrMe,129.0,,
-grmepers-131,yab, tawara rë weroro parë,,,así los perros también,,nan,HistGrMe,130.0,,
-grmepers-132,yab, ënwarë tïrïkase,,,!así tronó,,nan,HistGrMe,131.0,,
-grmepers-133,yab, ana weretase papa pano patajpë të,,,llegamos donde era el pueblo del finado mi papá,,nan,HistGrMe,132.0,,
-grmepers-134,yab, wasai waro pëkë mare,,,lo de donde nacen las hojas del cucurita,,nan,HistGrMe,133.0,,
-grmepers-136,yab, yaijkotapïti wejsapë wïrë yïkïnï parë weroro,,,mis perros también estaban [[[ladrando]]],,nan,HistGrMe,134.0,,
-grmepers-137,yab, yamatiri yënëjpë tërë,,,después de haber comido paují amarillo,,nan,HistGrMe,135.0,,
-grmepers-138,yab, yamatiri yënëjpë tërë,,,después de haber comido paují amarillo,,nan,HistGrMe,136.0,,
-grmepers-139,yab, wïrë mukuru tawara rë,,,mi hijo igual,,nan,HistGrMe,137.0,,
-grmepers-140,yab, nopejra rokotapïti wejsapë,,,"`malo, se estaba volviendo loco",,nan,HistGrMe,138.0,,
-grmepers-141,yab, samori kojpaye kojpaye samori wan wan wan,,,"lloraba de noche, de noche lloraba",,nan,HistGrMe,139.0,,
-grmepers-142,yab, ana wejse sarë,,,vinimos para acá,,nan,HistGrMe,140.0,,
-grmepers-143,yab, miritaretomo wejsaj yawë,,,cuando llegaron los militares,,nan,HistGrMe,141.0,,
-anfoperso-01,yab, wïrë tawara rë entë,,,yo estaba aquí (en San Juan Manapiare),,nan,HistAnFo,1.0,,NVP_SXP
-anfoperso-02,yab, ana këyetajpë intipijkë ana chi yawë,,,nos criamos cuando estábamos chiquiticos nosotros,,nan,HistAnFo,2.0,,"INTR_SV,;,COP_PSV"
-anfoperso-03,yab, ana yïmï sëmajpë pe,,,cuando se murió mi papá,,nan,HistAnFo,3.0,,INTRsub_SV
-anfoperso-04,yab, ana këyetase papa kampra ya ana yoti wejsapë yojtë ta sukase aroma warai yakuri warai yojtë wejsaj ta,,,"nosotros crecimos, mi tio pescaba toda nuestra comida, lapa, picure",,nan,HistAnFo,4.0,,"INTR_SV,;,TR_AOHVX,ERG_NP,TF_yojtë-ri-H-sapë,;,TR_OVH,ERGØ,TF_yojtë-ri-H-sapë"
-anfoperso-05,yab, papa kampra ya makampra ya ta wejsaj ta maijtë kaimotata mukuton yomiri,,,"mi tía estaba diciendo para mi tío ""vaya a cazar que los niños tienen hambre""",,nan,HistAnFo,5.0,,"say_DAVHR,ERG_NP,TF_ta-ri-H-sapë,;,notERG_NPdat,;,IMP_,;,CONFUSING_"
-anfoperso-06,yab, asamori ta wejsaj ta irë makë ta wejsapë,,,"mi  tía dijo ""están llorando""",,nan,HistAnFo,6.0,,"INTR_V,;,say_RVH,ERGØ,TF_ta-ri-H-sapë,;,say_TAVH,noERG_NP,TF_ta-ri-H-sapë"
-anfoperso-07,yab, pachi kërë takï yëmi pïnirë,,,"dijo ""hermana, ese no tiene hambre""",,nan,HistAnFo,7.0,,CONFUSING_
-anfoperso-08,yab, asamorijra asamori muku,,,por llorar no más lloran los niños,,nan,HistAnFo,8.0,,"INTRsub_V,;,INTR_XVS"
-anfoperso-09,yab, tejetum pïnika ta wejsaj ta makë ya makë pano ya,,,"mi mamá decía ""no ese está enfermo será",,nan,HistAnFo,9.0,,"NVP_N,;,say_VHA,ERG_NP,TF_ta-ri-H-sapë"
-anfoperso-10,yab, sukase ta wejsaj ta irëjpë papa kampra ijtëri,,,"todo decía, después se iba mi tío",,nan,HistAnFo,10.0,,"say_XVH,ERGØ,TF_ta-ri-H-sapë,;,INTR_XSV"
-anfoperso-11,yab, ipakuri yakërë,,,con su flecha,,nan,HistAnFo,11.0,,PP_
-anfoperso-12,yab, irëjpë sakara nepï wejsaj ta irëjpë michi,,,"traía guabina, después (decía) aquí está",,nan,HistAnFo,12.0,,"TR_XOVH,ERGØ,TF_nepï-ri,;,PRES_"
-anfoperso-13,yab, yakono ijmojkakë mukuton yoti ta wejsaj ta,,,"después dice, hermana cocina para que coman los niños",,nan,HistAnFo,13.0,,"IMP_NVO,;,say_RVH,ERGØ,TF_ta-ri-H-sapë"
-anfoperso-14,yab, makampra ya makë pana,,,mi tía dijo pa mi mamá,,nan,HistAnFo,14.0,,"ERG_NP,DAT_NP"
-anfoperso-15,yab, irë makë ya ijmojka wejsapë,,,después mi mamá estaba cocinando,,nan,HistAnFo,15.0,,"TR_XAVH,ERG_NP,TF_ijmojla-ri-H-sapë"
-anfoperso-16,yab, ana yoti ana serematojpe,,,"nuestra comida, para comer",,nan,HistAnFo,16.0,,"NP_,;,INTRsub_SV"
-anfoperso-17,yab, tawara ma ana këyetajpë ana papa pan patajpë të,,,así nos criamos después de que se murió mi papá en su pueblo,,nan,HistAnFo,17.0,,INTR_XSVX
-anfoperso-18,yab, papa pano sëmasaj yawë,,,porque se murió mi papá,,nan,HistAnFo,18.0,,INTRsub_SV
-anfoperso-19,yab, irë ana këyetase tawara ma,,,nosotros nos críamos así mismo,,nan,HistAnFo,19.0,,INTR_XSVX
-anfoperso-20,yab, sukase ana këyetase pipi yakërë ana këyetase intipijkë ana chawë,,,con mi hermanito,,nan,HistAnFo,20.0,,"INTR_XSVW,;,INTR_SV,;,COP_PSC"
-anfoperso-21,yab, ana këyetase makampra ya,,,nosotros nos criamos con mi tía,,nan,HistAnFo,21.0,,"INTR_SVW,;,notERG_withNP"
-anfoperso-22,yab, tëwï ya papa kampra pana tase ta kaimotata,,,"pa mi tío dijo, vaya a cazar",,nan,HistAnFo,22.0,,"notERG_NPfragment,;,IMP_Vi"
-anfoperso-23,yab, yomiri mukutomo,,,tienen hambre los niños,,nan,HistAnFo,23.0,,CONFUSING_
-anfoperso-24,yab, asamo mare tapëkë ijtëri weroro yarë ta yakuri këjmatojpe,,,porque estaban llorando iba llevando los perros para que cazaran picure,,nan,HistAnFo,24.0,,CONFUSING_
-anfoperso-25,yab, irë yakuri,,,,,nan,HistAnFo,25.0,,NP_
-anfoperso-26,yab, taturu makampra ya ana yoti,,,mi tía lo da comida de nosotros,,nan,HistAnFo,26.0,,"TR_VAO,ERG_NPta,TF_tu-ri"
-anfoperso-27,yab, ijmokatojpe,,,para cocinar,,nan,HistAnFo,27.0,,TRsub_V
-anfoperso-28,yab, irëjpë makë ya ijmojka wejsapë,,,después mi mamá estaba cocinando,,nan,HistAnFo,28.0,,"TR_XAVH,ERG_NP,TF_ijmoka-ri-H-sapë"
-anfoperso-29,yab, ana yoti yakuri,,,"nuestra comida, el picure",,nan,HistAnFo,29.0,,NP_
-anfoperso-30,yab, makampra ya tujpë,,,lo que mi tía le dió,,nan,HistAnFo,30.0,,"TRsub_AV,ERG_NP,TF_tu-jpë"
-anfoperso-31,yab, sukase tawara ma ana këyatajpë onono pëkë,,,"toditos nos críamos así, de otra manera",,nan,HistAnFo,31.0,,INTR_XSV
-anfoperso-32,yab, kïmïi ma yeme ana ya,,,nosotros estábamos comiendo puro ají,,nan,HistAnFo,32.0,,"TR_OVA,ERG_ana,TF_yeme-ri"
-anfoperso-33,yab, sere yokïrï irëjpë sukutaka yeni ana ya,,,"comiendo casabe, después tomabamos yucuta",,nan,HistAnFo,33.0,,"no_AUX,@,TR_OV,ERGØ,TF_yokï-ri,;,TR_XOVA,ERG_ana,TF_yeni-ri"
-anfoperso-34,yab, tëwï kïmïi yemetïkene ana yeni wejsapë sukutaka ma,,,"después de que comemos ají, tomamos yucuta",,nan,HistAnFo,34.0,,"TRsub_OV,ERGØ,TF_yeme-tïkene,;,TR_AVHO,noERG_ana,TF_yeni-ri-H-sapë"
-anfoperso-35,yab, nwarë ana këyatajpë ana,,,así nos criamos nosotros,,nan,HistAnFo,35.0,,"REPEAT_ana,;,INTR_XSVR"
-anfoperso-36,yab, irëjpë rë neke n ti,,,después sí,,nan,HistAnFo,36.0,,ADV_
-anfoperso-37,yab, makë sepanse,,,mi mamá se casó,,nan,HistAnFo,37.0,,INTR_SV
-anfoperso-38,yab, rafa perez pan yakërë,,,con el finado Rafel Pérez,,nan,HistAnFo,38.0,,PP_W
-anfoperso-39,yab, irëjpë tëwï yakërë ana këyatase,,,despúes con él nos criamos,,nan,HistAnFo,39.0,,INTR_XWSV
-anfoperso-40,yab, yatampe ana tëse pipi tawara rë waraijtokompe ijtëse,,,"nos volvimos muchachos, mi hermano también se volvió hombre",,nan,HistAnFo,40.0,,"ESSIVE_become,;,INTR_XSV,;,INTR_SXV"
-anfoperso-41,yab, ana këyatase tëwï yakërë,,,nos criamos con él,,nan,HistAnFo,41.0,,INTR_SVW
-anfoperso-42,yab, ana padrastro yakërë,,,con nuestro padrastro,,nan,HistAnFo,42.0,,PP_with
-anfoperso-43,yab, tëwï ya ana këyamase,,,el nos crio,,nan,HistAnFo,43.0,,"TR_AOV,notERG_exclO,TF_këyama-se"
-anfoperso-44,yab, muku wëra ana këyamase ta,,,"como a sus hijos nos crió a nosotros, pues",,nan,HistAnFo,44.0,,"ESSIVE_wëra,;,TR_XOV,ERGØ,TF_këyama-se"
-anfoperso-45,yab, nopano wejsaj ta waraijtokomo,,,ese hombre era bueno,,nan,HistAnFo,45.0,,"COP_PVS,PCF_AdNzd"
-anfoperso-46,yab, ana tapaja ta ana këyatase nope,,,"ese no pegaba nada, nosotros nos criamos bien",,nan,HistAnFo,46.0,,"TR_OV,ERGØ,TF_tapa-ja,;,INTR_SVX"
-anfoperso-47,yab, tëwï waraijtokon yakërë ana këyamase ta wejsapë,,,con ese hombre nos crio,,nan,HistAnFo,47.0,,"TR_WOVH,ERGØ,TF_këyama-se-H-sapë"
-anfoperso-48,yab, takërë ana wejsapë ïmparëjra,,,estuvimos mucho tiempo con él,,nan,HistAnFo,48.0,,COP_WSCP
-anfoperso-49,yab, irëjpë rë warë tajtojpe pïnika wïrë sepanse,,,"después, mas ahora, yo me casé",,nan,HistAnFo,49.0,,INTR_XSV
-anfoperso-50,yab, irëjpë,,,después,,nan,HistAnFo,50.0,,ADV_
-anfoperso-51,yab, ana wejsapë,,,nosotros estábamos,,nan,HistAnFo,51.0,,CONFUSING_
-anfoperso-52,yab, makë yakërë ma wejtane tëijpë rë pïjkë ana yïwïtï,,,"aunque estaba con mi mamá, nuestra casa estaba un poquito lejos",,nan,HistAnFo,52.0,,"COPsub_PC,;,NVP_LS"
-anfoperso-53,yab, ana yïwïj yawë ana senejka wejsapë tawara ma ana këyatajpë ana,,,"nosotros estábamos en nuestra casa, así nos criamos",,nan,HistAnFo,53.0,,"INTR_LSVH,;,INTR_XSVR"
-anfoperso-54,yab, papa pano patajpë të,,,en lo que era el pueblo del finado mi papá,,nan,HistAnFo,54.0,,PP_
-anfoperso-55,yab, ëmpare,,,ya,,nan,HistAnFo,55.0,,ADV_
-ctoaragrme-01,yab, kajkë warë,,,diga ahora,,nan,CtoAraGrMe,1.0,,"say_VX,say_ta-kë,ERGØ_"
-ctoaragrme-02,yab, tëwï,,,aquel (que tu dijiste),,nan,CtoAraGrMe,2.0,,NP_
-ctoaragrme-03,yab, aniki,,,¿quién?,,nan,CtoAraGrMe,3.0,,NP_
-ctoaragrme-04,yab, tëwï ta mërë ya,,,aquel que tu dijiste,,nan,CtoAraGrMe,4.0,,"say_OVA,say_ta-ri,ERG_2"
-ctoaragrme-05,yab, mëyakarama mare,,,ese que tu estás diciendo,,nan,CtoAraGrMe,5.0,,"TRsub_V,TF_yakarama-ri,ERGØ_më"
-ctoaragrme-06,yab, aniki warai moyochi ka,,,¿como cuál? ¿la araña?,,nan,CtoAraGrMe,6.0,,"PP_,;,NP_"
-ctoaragrme-07,yab, moyochi,,,la araña,,nan,CtoAraGrMe,7.0,,NP_
-ctoaragrme-08,yab, moyochi ti ta ta,,,ese mismo de la araña,,nan,CtoAraGrMe,8.0,,"say_OV,sayF_ta-ri,ERGØ"
-ctoaragrme-09,yab, moyochi,,,la araña,,nan,CtoAraGrMe,9.0,,NP_
-ctoaragrme-10,yab, tëwï ti wurijyan yarënijpë tata moyochi,,,"aquel que se llevó una mujer, le dicen araña",,nan,CtoAraGrMe,10.0,,"say_OVQ,sayF_ta-ri,ERGØ_ta"
-ctoaragrme-11,yab, tayakëtëse ta yëye ke pïnika tatojpapëti wejsaj ta,,,le estaba tal vez dando con el palo,,nan,CtoAraGrMe,11.0,,"TR_V,TF_yakëtë-se,ERGØ_ta,;,TR_XVH,TF_tojpa-ri-H-sapë,ERGØ_ta"
-ctoaragrme-12,yab, ta tayakëpëti wejsapë,,,lo cortó,,nan,CtoAraGrMe,12.0,,"TR_VH,TF_yakëtë-ri-H-sapë,ERGØ_ta"
-ctoaragrme-13,yab, warë kwatojpe uyejweti yakëtëri mërë ya,,,¡ay! ¿para qué vas a cortar a mi chinchorro?,,nan,CtoAraGrMe,13.0,,"TR_XOVA,TF_yakëtë-ri,ERG_2"
-ctoaragrme-14,yab, wïrë yejweti yakëtëjrama mërë mërë wuyejweti,,,"no cortes mi chinchorro, ese es mi chinchorro",,nan,CtoAraGrMe,14.0,,"TR_OV,TF_yakëtë-jrama,ERGØ_,;,NVP_SP,PF_N"
-ctoaragrme-15,yab, warë takërë wejsapë takërë sëpanse,,,"así estuvo con él, se casó con él",,nan,CtoAraGrMe,15.0,,"COP_XPV,PCF_Pp,;,INTR_XV,IF_sëpamï-se"
-ctoaragrme-16,yab, tayarëse,,,¿lo llevó?,,nan,CtoAraGrMe,16.0,,"TR_V,TF_yarë-se,ERGØ_ta"
-ctoaragrme-17,yab, tayarëse,,, ‎‎TR_V TF_yarë-se ERGØ_ta,,nan,CtoAraGrMe,17.0,,
-ctoaragrme-18,yab, warë wïrë yakërë mëchiri warë,,,así ahora tú vas a estar conmigo,,nan,CtoAraGrMe,18.0,,"COP_XPV,"
-ctoaragrme-19,yab, wïrë yejweti mërë ya yakëtëjpë chipokono,,,porque tu picaste mi chinchorro ahora tu vas a vivir conmigo,,nan,CtoAraGrMe,19.0,,"TR_OAVH,TF_yakëtë-jpë-H-pëkë-no,ERG_2"
-ctoaragrme-20,yab, ta wejsaj ta,,,dijo,,nan,CtoAraGrMe,20.0,,"say_VH,sayF_ta-ri-H-sapë"
-ctoaragrme-21,yab, ë'ë ti tawara taji rë takërë chi wejsaj ta,,,"sí dice, estaba con él",,nan,CtoAraGrMe,21.0,,"Interj_,;,COP_PVH,CPF_Pp,@,Repetition_1"
-ctoaragrme-22,yab, takërë wejsapë,,,estuvo con él muchos días,,nan,CtoAraGrMe,22.0,,"COP_PV,CPF_Pp,@,Repetition_2"
-ctoaragrme-23,yab, warë onono rë waraijtokomo weseyuru wejsapë tëpëkë,,,así el otro hombre estaba bravo con ella,,nan,CtoAraGrMe,23.0,,INTR_SVHX
-ctoaragrme-24,yab, kojpayarëpëkë wejsapë ëjwatë yëjpëj chipëkë,,,porque pasó la noche hilando su chinchorro,,nan,CtoAraGrMe,24.0,,
-ctoaragrme-25,yab, moyochi tasarë moyochi chipokono kojpaye pïnika warotari,,,"le dicen araña, tal vez porque la araña trabaja de noche",,nan,CtoAraGrMe,25.0,,
-ctoaragrme-26,yab, yatun yawë warotaja,,,¿no trabaja de día?,,nan,CtoAraGrMe,26.0,,
-ctoaragrme-27,yab, warotaja ti yatun yawë,,,no trabaja de día,,nan,CtoAraGrMe,27.0,,
-ctoaragrme-28,yab, kojpaye ti warotari taro,,,trabaja en la noche pues dicen,,nan,CtoAraGrMe,28.0,,
-ctoaragrme-29,yab, kojpaye ti warotari,,,trabaja en la noche,,nan,CtoAraGrMe,29.0,,
-ctoaragrme-30,yab, kojpaye ti warotari,,,,,nan,CtoAraGrMe,30.0,,
-ctoaragrme-31,yab, nwa chipëkë wurijyan yarënijpë ti kërë moyochi tawara ta wurijyan yatanëri,,,"por eso se llevó a la mujer la araña, también era mujer joven",,nan,CtoAraGrMe,31.0,,
-ctoaragrme-32,yab, takërë chi wejsapë,,,estaba con ella,,nan,CtoAraGrMe,32.0,,
-ctoaragrme-33,yab, tawara rë waraijtokomo weseyuru wejsapë tëpëkë,,,también un hombre estaba brava con ella,,nan,CtoAraGrMe,33.0,,
-ctoaragrme-34,yab, kojpayarëpëkë ëjwatë yëjpëj chipëkë ta,,,porque hilaba su chinchorro durante la noche,,nan,CtoAraGrMe,34.0,,
-ctoaragrme-35,yab, nwa chijpë ti moyochi tawara taji rë,,,"así fue la araña, dicen",,nan,CtoAraGrMe,35.0,,
-ctoaragrme-36,yab, ta ti ta makë pano ya yakarama wejsapë tanijpë,,,así contaba mi mamá,,nan,CtoAraGrMe,36.0,,
-ctoaragrme-37,yab, wïrë yarënijpë ta ta,,,el que me lleva,,nan,CtoAraGrMe,37.0,,
-ctoaragrme-38,yab, irë wejtane mujyampe patakaja wejsapë,,,a pesar de eso no salió embarazada,,nan,CtoAraGrMe,38.0,,
-ctoaragrme-39,yab, apatakaja pïnïka wejsapë,,,tal vez no salió (embarazada),,nan,CtoAraGrMe,39.0,,
-ctoaragrme-40,yab, tayakïjtëja pïnika wejsapë,,,tal vez no se acostó con ella,,nan,CtoAraGrMe,40.0,,
-ctoaragrme-41,yab, nwa chijpë ti,,,por eso,,nan,CtoAraGrMe,41.0,,
-ctoaragrme-42,yab, moyochi,,,la araña,,nan,CtoAraGrMe,42.0,,
-desccasmaj-001,yab, irë wejtane ejnë waimuja mërë warë,,,,,nan,DescCasMAJ,1.0,,
-desccasmaj-002,yab, toto yaye ejnë waimu,,,,,nan,DescCasMAJ,2.0,,
-desccasmaj-003,yab, irëjpë rë,,,después,,nan,DescCasMAJ,3.0,,
-desccasmaj-004,yab, kajkë ti makë,,,diga pues mamá,,nan,DescCasMAJ,4.0,,IMP_
-desccasmaj-005,yab, sere ka,,,¿el casabe?,,nan,DescCasMAJ,5.0,,
-desccasmaj-006,yab, ë'ë,,,sí,,nan,DescCasMAJ,6.0,,
-desccasmaj-007,yab, ati yaka ejnë tëri,,,cuando vamos al conuco,,nan,DescCasMAJ,7.0,,
-desccasmaj-008,yab, sere mëkase,,,cuando uno va a arrancar yuca,,nan,DescCasMAJ,8.0,,
-desccasmaj-009,yab, irëjpë apo neke ne yajkapëkë,,,"después, primero se limpia",,nan,DescCasMAJ,9.0,,confusing_
-desccasmaj-010,yab, irëjpë yëjpë mapëti chipokono warë yutu yaka,,,después lo estaban botando hacia el monte,,nan,DescCasMAJ,10.0,,confusing_
-desccasmaj-011,yab, irëjpë yawakari,,,después sembrar,,nan,DescCasMAJ,11.0,,"TR_XV,ERGØ,TF_yawaka-ri"
-desccasmaj-012,yab, mëkari sukase ti ta ta,,,"arrancar, todo, así dijo",,nan,DescCasMAJ,12.0,,"TR_VQ,ERGØ,TF_mëka-ri,;,say_RV,ERGØ,TF_ta-ri"
-desccasmaj-013,yab, irëjpë nepïrï ëjtë yaka,,,después se trae para la casa,,nan,DescCasMAJ,13.0,,"TR_TVL,ERGØ,TF_nepï-ri"
-desccasmaj-014,yab, irëjpë pikari yawakïrï,,,después se raspa y se ralla,,nan,DescCasMAJ,14.0,,"TR_TV,ERGØ,TF_pika-ri,;,,‎‎TR_V,ERGØ,TF_yawakï-ri"
-desccasmaj-015,yab, irëjpë yamanëri,,,después se acomoda,,nan,DescCasMAJ,15.0,,"TR_XV,ERGØ,TF_yamanë-ri"
-desccasmaj-016,yab, takono yatun yawë ejnë,,,"al día siguiente, nosotros...",,nan,DescCasMAJ,16.0,,
-desccasmaj-017,yab, ejnë yasukatopo,,,para sebucanearlo,,nan,DescCasMAJ,17.0,,
-desccasmaj-018,yab, irëjpë yasukari,,,después se sebucanea,,nan,DescCasMAJ,18.0,,"TR_TV,ERGØ,TF_yasuka-ri"
-desccasmaj-019,yab, irëjpë yekeri,,,después se extiende,,nan,DescCasMAJ,19.0,,
-desccasmaj-020,yab, nwa ti,,,así pues,,nan,DescCasMAJ,20.0,,
-desccasmaj-021,yab, yekeri nwarë tari po yekeri,,,en budare se extiende,,nan,DescCasMAJ,21.0,,
-desccasmaj-022,yab, penarë umukupe wïrë chi yawë,,,antes cuando yo estaba muchacha,,nan,DescCasMAJ,22.0,,"ESSIVE_,REPEAT_SoC"
-desccasmaj-023,yab, entë ma wïrë yeke wejsapë wïrë sere pïjkë wïrë yewenke chipëkë,,,"así (chiquitico) yo extendía mi casabito, porque yo no sabía",,nan,DescCasMAJ,23.0,,"TR_XAVHO,noERG_1,TF_yeke-ri-H-sapë"
-desccasmaj-024,yab, irëjpë,,,,,nan,DescCasMAJ,24.0,,
-desccasmaj-025,yab, mënai wëjkase chijpë wararë,,,se cayó tu cosa,,nan,DescCasMAJ,25.0,,EXTERNALcomment
-desccasmaj-026,yab, wïrë nai wëjkase,,,se me cayó mi cosa (el microfono)?,,nan,DescCasMAJ,26.0,,EXTERNALcomment
-desccasmaj-027,yab, wïrë pojteja ta,,,no me quiere,,nan,DescCasMAJ,27.0,,"EXTERNALcomment,@,TR_AV,noERG_1,TF_pojtë-ja"
-desccasmaj-028,yab, waimujrama sejkë ta,,,no hables todavía,,nan,DescCasMAJ,28.0,,METAcomment
-desccasmaj-029,yab, nopejra mëwaimuru ta ta,,,estás hablando feo,,nan,DescCasMAJ,29.0,,"METAcomment,;,say_RV,ERGØ,TF_ta-ri"
-desccasmaj-030,yab, wa chipëkë takï wïrë takï,,,,,nan,DescCasMAJ,30.0,,
-desccasmaj-031,yab, tawanke wïrë chijpë pïnirë,,,yo no sabía nada antes,,nan,DescCasMAJ,31.0,,
-desccasmaj-032,yab, mukupe wïrë chi yawë wïrë yëwanëta wanene pano,,,cuando era chiquita me enseño la finada mi suegra,,nan,DescCasMAJ,32.0,,"TR_OVA,noERG_NP,TF_yëwanëta-ri"
-desccasmaj-033,yab, tari mukujpë pëkë wïrë yekepïti yawë tëpo ma wïrë yëwanëjtëse wïrë,,,"extendiendo en un budare chiquitico, en eso yo aprendí",,nan,DescCasMAJ,33.0,,"REPEAT_AorS,@,TRsub_LAV,TF_yeke-ri"
-desccasmaj-034,yab, wuriyampe wïrë wejtane ti warë uyemekun yaka wëjkase,,,"cuando ya me volví mujer, mi mano aprendió,",,nan,DescCasMAJ,34.0,,ESSIVE
-desccasmaj-035,yab, wïrë yewenke tarojra wïrë ya,,,no puedo decir que no sé,,nan,DescCasMAJ,35.0,,"say_RVA,ERG_1,TF_ta-ri"
-desccasmaj-036,yab, wïrë yasukari wïrë yekeri wajto inche wïtëri wïrë yasukari katara kunë wïrë ya kïmïi inche wïrë tëri wïrë katara yaka wïrë itojpe warë,,,"yo lo sebucaneo, yo lo tiendo, voy a buscar la leña,  lo sebucaneo, hiervo mi catara, voy a buscar mi ají, para echarle a mi catara, ok",,nan,DescCasMAJ,36.0,,"TR_AV,noERG_1,TF_yasuka-ri,;,TR_AV,noERG_1,TF_yeke-ri,;,TRsub_OV,ERGØ,TF_ini-sup,;,TR_AV,noERG_1,TF_yasuka-ri,;,TR_OVA,ERG_1,TF_kunë-ri,;,TRsub_OV,ERGØ,TF_ini-sup,;,TRsub_LAV,noERG_1,TF_i-purp"
-desccasmaj-037,yab, warë wïrë chijpë mukupïjkë marë inkë enirë marë wïrë,,,"así era cuando era chiquitica, mira ahora, todavía soy así",,nan,DescCasMAJ,37.0,,IMP_
-desccasmaj-038,yab, yapijtompe wïrë wejtane kë wïyapë moroni,,,"aunque soy vieja, ay me duelen mis brazos",,nan,DescCasMAJ,38.0,,
-desccasmaj-039,yab, uyemekun moroni kwase neke uyu yamanëri sere wejtane amarë wïrë nairi,,,"mis manos me duele, como será que voy a hacer mi casabe, así mismo hago casabe",,nan,DescCasMAJ,39.0,,"TR_OXAV,noERG_1,TF_nai-ri,;,TR_XOV,ERGØ,TF_yamanë-ri"
-desccasmaj-040,yab, warë ti tapojtëpori ti maniki,,,así lo quiere,,nan,DescCasMAJ,40.0,,"TR_XV_ERGØ_ta,TF_pojtë-ri"
-desccasmaj-041,yab, ejnë taro,,,lo que decimos,,nan,DescCasMAJ,41.0,,"TRsub_AV,noERG_1,TF_ta-orel"
-desccasmaj-042,yab, arokatë,,,difícil,,nan,DescCasMAJ,42.0,,
-desccasmaj-043,yab, sere arokatë ta ta,,,"el casabe, es dificil",,nan,DescCasMAJ,43.0,,"say_V,ERGØ,TF_ta-ri"
-desccasmaj-044,yab, arokatë sere yamanëri,,,es dificil hacer casabe,,nan,DescCasMAJ,44.0,,"NVP_,TAM_nonverbal"
-desccasmaj-045,yab, arokatë sere pikari,,,raspar yuca es dificil,,nan,DescCasMAJ,45.0,,"NVP_,TAM_noverbal"
-desccasmaj-046,yab, rokari,,,se lava,,nan,DescCasMAJ,46.0,,"IPFV_impersonal,@,TR_V,ERGØ,TF_roka-procedure"
-desccasmaj-047,yab, warë mëkari,,,"así, se arranca",,nan,DescCasMAJ,47.0,,"IPFV_impersonal,@,TR_V,ERGØ,TF_mëka-procedure"
-desccasmaj-048,yab, ejyapë morontamase,,,nuestros brazos duelen,,nan,DescCasMAJ,48.0,,
-desccasmaj-049,yab, pakara nepïrï,,,trayendo el catumare,,nan,DescCasMAJ,49.0,,"TR_OV,ERGØ,TF_nepï-ri"
-desccasmaj-050,yab, sere pikapëkë ejnë wënkepïrï warë arokatono,,,"raspando yuca, estamos distraidos, así, dificil",,nan,DescCasMAJ,50.0,,"TR_OV,ERGØ,TF_pika-ri=pëkë"
-desccasmaj-051,yab, arokaton takï ana tujtëri enirë,,,hoy en día nosotros preparamos nuestra comida difícil,,nan,DescCasMAJ,51.0,,"TR_OAVT,noERG_ana,TF_tujtë-ri"
-desccasmaj-052,yab, arokaton ejnë warotari,,,nuestro trabajo es dificil,,nan,DescCasMAJ,52.0,,NVP_
-desccasmaj-053,yab, sere mëkari,,,sacar yuca,,nan,DescCasMAJ,53.0,,"IPFV_impersonal,;TR_OV,ERGØ,TF_mëka-procedure"
-desccasmaj-054,yab, yajkari,,,limpiar,,nan,DescCasMAJ,54.0,,"IPFV_impersonal,@,TR_V,ERGØ,TF_yajka-procedure"
-desccasmaj-055,yab, mëkari,,,arrancar,,nan,DescCasMAJ,55.0,,"IPFV_impersonal,@,TR_V,ERGØ,TF_mëka-procedure"
-desccasmaj-056,yab, yëjpë yakëtëri,,,se cortan los tallos,,nan,DescCasMAJ,56.0,,"IPFV_impersonal,@,TR_OV,ERGØ,TF_yakëtë-procedure"
-desccasmaj-057,yab, irëjpë yawakari,,,después se siembra,,nan,DescCasMAJ,57.0,,"IPFV_impersonal,@,TR_TV,ERGØ,TF_yawaka-procedure"
-desccasmaj-058,yab, irëjpë pëmekïrï irëjpë pëmekïrï,,,después se barre,,nan,DescCasMAJ,58.0,,"IPFV_impersonal,@,TR_TV,ERGØ,TF_pëmekï-procedure"
-desccasmaj-059,yab, warë sukase tawara ejnë warotari ejnë sere pëkë warotasemï,,,"así trabajamos todo, trabajamos sobre nuestra yuca",,nan,DescCasMAJ,59.0,,
-desccasmaj-060,yab, tawarajra takï mokontomo toto chi nope mokontomo seremari,,,"ustedes los criollos no son así, ustedes comen bien",,nan,DescCasMAJ,60.0,,
-desccasmaj-061,yab, tawaja takï ana,,,nosotros no es así,,nan,DescCasMAJ,61.0,,
-desccasmaj-062,yab, pumanse ana tujtëri,,,"###, preparamos comida",,nan,DescCasMAJ,62.0,,"TR_AV,ERGØ,TF_tujtë-ri"
-desccasmaj-063,yab, sere yawakïrï,,,rallar yuca,,nan,DescCasMAJ,63.0,,"IPFV_impersonal,@,TR_OV,ERGØ,TF_yawakï-procedure"
-desccasmaj-064,yab, serere yawakïja chi yawë pïrarë serejra,,,"si no se ralla yuca, no hay yuca",,nan,DescCasMAJ,64.0,,"IPFV_impersonal,@,TRsub_OVH,ERGØ,TF_yawakï-ja-H=yawë"
-desccasmaj-065,yab, mañuku yamanëja chi yawë pïrarë mañukujra,,,"si no hace mañoco, no hay mañoco",,nan,DescCasMAJ,65.0,,"IPFV_impersonal,@,TRsub_OVH,ERGØ,TF_yamanë-ja-H=yawë"
-desccasmaj-066,yab, sere yamapo yawë,,,cuando quiere hacer yuca,,nan,DescCasMAJ,66.0,,
-desccasmaj-067,yab, mañuku neke ne arokatë,,,el mañoco es difícil,,nan,DescCasMAJ,67.0,,
-desccasmaj-068,yab, arokatë yawakïrï tëwï,,,es dificil rallar ese,,nan,DescCasMAJ,68.0,,TAM_nonverbal
-desccasmaj-069,yab, yojmari,,,mezclar,,nan,DescCasMAJ,69.0,,IPFV_impersonal
-desccasmaj-070,yab, yawakari,,,sembrar,,nan,DescCasMAJ,70.0,,"IPFV_impersonal,@,TR_V,ERGØ,TF_yawaka-procedure"
-desccasmaj-072,yab, arokatë,,,difícil,,nan,DescCasMAJ,72.0,,
-desccasmaj-073,yab, sere neke ne tarine,,,el casabe es rápido,,nan,DescCasMAJ,73.0,,
-desccasmaj-074,yab, arokatë ana warotari ana,,,nosotros trabajamos difícil,,nan,DescCasMAJ,74.0,,REPEAT_S
-desccasmaj-075,yab, ana poye rë,,,en nuestra manera,,nan,DescCasMAJ,75.0,,
-desccasmaj-076,yab, mañuku ma taji rë arokatë,,,el mañoco es mucho más difícil,,nan,DescCasMAJ,76.0,,COMPAR
-desccasmaj-077,yab, wa chijpë ti najmoton pano ya,,,así fueron las finadas mis abuelas,,nan,DescCasMAJ,77.0,,notERG_NPsoc
-desccasmaj-078,yab, arokatë mokontomo wejtojpano mokontomo,,,para ustedes va a ser muy dificil,,nan,DescCasMAJ,78.0,,REPEAT_SoC
-desccasmaj-079,yab, mokontomo sawankuitojpano wïrë patajpë të,,,ustedes van a sufrir después de mi muerte,,nan,DescCasMAJ,79.0,,
-desccasmaj-080,yab, mokontomo warota yawë sere pëkë mokontomo warota yawë,,,cuando ustedes trabajan con la yuca,,nan,DescCasMAJ,80.0,,
-desccasmaj-081,yab, mokontomo yeretapi pëkë mokontomo warota yawë mokontomo sawankuijtojpan pïnirë tarojpë tajne ya irë wa chipëkë tawarai ma takï ana,,,"si ustedes trabajan con sus sembrados no van a pasar trabajos, dijeron ellas, por eso somos así",,nan,DescCasMAJ,81.0,,"say_VA,ERG_3PL,TF_ta-jpë"
-desccasmaj-082,yab, ana warotari,,,nosotros trabajamos,,nan,DescCasMAJ,82.0,,
-desccasmaj-083,yab, inkë takï sarë wïrë wepïja wejsapë mëwejyaka,,,"mira, yo no vine donde usted",,nan,DescCasMAJ,83.0,,IMP_
-desccasmaj-084,yab, wïrë warotapëkë wïrë sererijra,,,"estaba trabajando (en otras cosas), no tengo casabe",,nan,DescCasMAJ,84.0,,
-desccasmaj-085,yab, irë pana rë warë yapijtom terepun rërë,,,pa completar el viejo el viejo está enfermo,,nan,DescCasMAJ,85.0,,
-desccasmaj-086,yab, irë wa chipëkë wïrë wepïrï tarine wïrë warotapëkë muku,,,"por eso vine rápido, estoy trabajando, hija",,nan,DescCasMAJ,86.0,,
-desccasmaj-087,yab, mïntë wïrë mëjtane pïnika tajtekene tarine wïrë naiche ta,,,"allá será que me está esperando, me vine rápido",,nan,DescCasMAJ,87.0,,"TR_XAV,noERG_1,TF_nai-se"
-desccasmaj-088,yab, nopejra mërë wa ma nope patakatojpan pïnirë mërë,,,así no más ese no va a salir bien,,nan,DescCasMAJ,88.0,,
-desccasmaj-089,yab, wïrë muku pëkë,,,con mis hijos,,nan,DescCasMAJ,89.0,,
-desccasmaj-090,yab, kwatojpe mërë surukuru,,,porque estás apurada?,,nan,DescCasMAJ,90.0,,
-desccasmaj-091,yab, enirë nopejra patakari warë sere mañuku,,,"ahorita, sale malo, el casabe, el mañoco",,nan,DescCasMAJ,91.0,,
-desccasmaj-092,yab, tasujre chipokono makë,,,porque está aguado,,nan,DescCasMAJ,92.0,,
-desccasmaj-093,yab, nopejra,,,está malo,,nan,DescCasMAJ,93.0,,NVP_attrib
-desccasmaj-094,yab, nopejra,,,,,nan,DescCasMAJ,94.0,,NVP_attrib
-desccasmaj-095,yab, tawara ma wïrë,,,,,nan,DescCasMAJ,95.0,,
-desccasmaj-096,yab, irëjpë neke ne warë yëjpë yëjpë rë,,,después las plantas,,nan,DescCasMAJ,96.0,,
-desccasmaj-097,yab, warë kamprake rë chi yawë neke ne,,,"así, cuando están más grandes",,nan,DescCasMAJ,97.0,,COMPAR
-desccasmaj-098,yab, nope,,,¿está bien?,,nan,DescCasMAJ,98.0,,NVP_attrib
-desccasmaj-099,yab, enirë marë intompijkë waretasapë,,,ahora todavía apenas están saliendo las hojas,,nan,DescCasMAJ,99.0,,
-desccasmaj-100,yab, marë ta ta wïrë,,,todavía digo yo,,nan,DescCasMAJ,100.0,,"say_RVA,noERG_1,TF_ta-ri"
-desccasmaj-101,yab, mërë wa chipokono tasujre,,,por eso está aguado,,nan,DescCasMAJ,101.0,,
-desccasmaj-102,yab, wa chipëkë wïrë taro,,,por eso digo,,nan,DescCasMAJ,102.0,,"say_XAV,noERG_1,TF_ta-ri"
-desccasmaj-103,yab, najmo sere kajra sejpëjtëkë,,,abuela no pregunten por casabe,,nan,DescCasMAJ,103.0,,
-desccasmaj-104,yab, wïrë yamanëja sere yapijtompe wïrë tejwetune wïrë,,,"yo no hago casabe, estoy vieja y enferma",,nan,DescCasMAJ,104.0,,"TR_AVO,noERG_1,TF_yamanë-ja"
-desccasmaj-105,yab, anajpïrï mërë inija ka terepunu maniki,,,¿ustedes no han visto que su abuelo está enfermo,,nan,DescCasMAJ,105.0,,"TR_OAV,noERG_2,TF_ini-ja"
-desccasmaj-106,yab, kwase wïrë warotari,,,¿cómo trabajo?,,nan,DescCasMAJ,106.0,,
-desccasmaj-107,yab, ta wïrë uyatïrïrï wïrë parurujne wïrë yawakarijra tarojra,,,"digo yo, mi conuco, no voy a sembrar platano, no digo",,nan,DescCasMAJ,107.0,,"POST_possessor,@,say_RVA,noERG_1,TF_ta-ri,;,TR_OAV,noERG_1,TF_yawaka-ri-jra,;,say_V,ERGØ,TF_ta-ri-jra"
-desccasmaj-108,yab, ëmo pokono uyënkano pëkë,,,estoy pensando de tu papá,,nan,DescCasMAJ,108.0,,
-desccasmaj-109,yab, mërë takï sere pëkë ana warotari,,,así trabajamos con la yuca,,nan,DescCasMAJ,109.0,,
-desccasmaj-110,yab, warotase tawarajra takï toto seremari,,,"trabajando (mucho), así no comen los criollos",,nan,DescCasMAJ,110.0,,PTCP_cvb
-desccasmaj-111,yab, arepa waraij yamanë ta temekun pëkë,,,"hace arepa, en su mano",,nan,DescCasMAJ,111.0,,"TR_OVL,ERGØ,TF_yamanë-ri"
-desccasmaj-112,yab, tujtëri nope,,,comen bien,,nan,DescCasMAJ,112.0,,"TR_VX,ERGØ,TF_tujtë-ri"
-desccasmaj-113,yab, irë wejtane ejnë,,,a pesar de eso nosotros,,nan,DescCasMAJ,113.0,,
-desccasmaj-114,yab, irë wejtane tawarajra ana warotase,,,sin embargo así no trabajamos nosotros,,nan,DescCasMAJ,114.0,,
-desccasmaj-115,yab, ejnë yemekunu tatune,,,nuestra mano es caliente,,nan,DescCasMAJ,115.0,,"NVP_SP,PF_Ad_attributive"
-desccasmaj-116,yab, eni morone sukase senijne,,,"esto duele, todo, estos",,nan,DescCasMAJ,116.0,,
-desccasmaj-117,yab, tatune sere chipëkë,,,porque el casabe es caliente,,nan,DescCasMAJ,117.0,,
-desccasmaj-118,yab, inkë wïrë yemekunu wïrë wïrë parankanari warë,,,"mira, mis manos, mi olla es así",,nan,DescCasMAJ,118.0,,"REPEAT_possessor,@,IMP_"
-desccasmaj-119,yab, taj wïrë naijtopo morone sënkase poijpë mjm,,,"taj! cuando yo hago duele, se acabaron mis uñas, aja",,nan,DescCasMAJ,119.0,,"TRsub_AV,noERG_1,TF_nai-topo"
-desccasmaj-120,yab, toto,,,los criollos ###,,nan,DescCasMAJ,120.0,,
-desccasmaj-121,yab, ejnë yajka yawë rë,,,cuando limpiamos,,nan,DescCasMAJ,121.0,,"TRsub_AV,noERG_ejnë,TF_yajka-ri=yawë"
-desccasmaj-122,yab, ejnë yemekun poijpë përëtëri sukase rë,,,por eso nuestras uñas de las manos se quiebran todo,,nan,DescCasMAJ,122.0,,"TR_OVQ,ERGØ,TF_përëtë-ri"
-desccasmaj-123,yab, mërë wa chipokono pïrarë,,,por eso no hay,,nan,DescCasMAJ,123.0,,
-desccasmaj-124,yab, yënkase achikïpe nwarë pemekï ke,,,tanto limpiar acaba el sucio,,nan,DescCasMAJ,124.0,,"TRsub_XV,ERGØ,TF_pëmekï-ri=ke"
-desccasmaj-125a,yab, pïrarë,,,no hay,,nan,DescCasMAJ,125.0,,Overlapping_
-desccasmaj-125b,yab, pïrarë,,,‎‘no hay,,nan,DescCasMAJ,126.0,,Overlapping_
-desccasmaj-126,yab, tawara ta ta wïrë ya,,,así digo yo,,nan,DescCasMAJ,127.0,,"say_XVA,ERG_1,TF_ta-ri"
-desccasmaj-127,yab, kwa ta yatun yawë chej chej chej chej,,,"así en el día, chas, chas, chas, arrancando",,nan,DescCasMAJ,128.0,,
-desccasmaj-128,yab, yatun pokono warotanë,,,trabajamos todos los día,,nan,DescCasMAJ,129.0,,
-desccasmaj-129,yab, warë ejnë chipokono,,,por eso estamos así,,nan,DescCasMAJ,130.0,,
-desccasmaj-130,yab, tarine ma,,,,,nan,DescCasMAJ,131.0,,
-desccasmaj-131,yab, ejnë yemekunu,,,la mano de uno,,nan,DescCasMAJ,132.0,,
-desccasmaj-132,yab, tarine ma ejnë tuma yemeri apo,,,entre tanto comemos la comida rápido,,nan,DescCasMAJ,133.0,,"REPEAT_A,@,TR_TAOVT,noERG_ejnë,TF_yeme-ri"
-desccasmaj-133,yab, pïrarë tawara,,,igual no hay,,nan,DescCasMAJ,134.0,,
-desccasmaj-134,yab, ati yaka ejnë tëtojpe tënsen yenipëkë,,,"para ir al conuco, tomamos la bebida",,nan,DescCasMAJ,135.0,,"inverted_tojpe,@,,TR_OV,ERGØ,TF_yeni-pëkë"
-desccasmaj-135,yab, arokatë,,,difícil,,nan,DescCasMAJ,136.0,,
-desccasmaj-136,yab, arokatono takï ana,,,es difícil para nosotros,,nan,DescCasMAJ,137.0,,
-desccasmaj-137,yab, arokatë ana,,,es dificil para nosotros,,nan,DescCasMAJ,138.0,,
-desccasmaj-138,yab, tëtumpe ana chiri,,,(el trabajo) es muy fuerte para nosotros,,nan,DescCasMAJ,139.0,,
-desccasmaj-139,yab, irë wa chipëkë sënkapëtijpë pïnika ejnë najmotom pano,,,por eso sera que nuestras abuelas se murieron,,nan,DescCasMAJ,140.0,,
-desccasmaj-140,yab, warotakem parë,,,y los trabajadores,,nan,DescCasMAJ,141.0,,
-desccasmaj-141,yab, mërë wa chipokon ta wïrë mukuton sëmpinuku yawë,,,"por eso, cuando se mueren mis hijos",,nan,DescCasMAJ,142.0,,
-desccasmaj-142,yab, cha wïrë mukuru warotase wïrë këyamajpë,,,,,nan,DescCasMAJ,143.0,,confusing_
-desccasmaj-143,yab, ta wïrë ya wïrë mukuton pëkë wïrë ëjpïnï wïrë sëmori,,,"así digo sobre mis hijos, yo me acuerdo y lloro",,nan,DescCasMAJ,144.0,,"say_RVA,ERG_1,TF_ta-ri"
-desccasmaj-144,yab, wïrë tajteke ne,,,así digo yo,,nan,DescCasMAJ,145.0,,
-desccasmaj-145,yab, makëton sënkapëjse papatom sënkapëjse najpïtom sënkapëjse,,,"mis madres, padres, abuelos se murieron",,nan,DescCasMAJ,146.0,,
-desccasmaj-146,yab, irë wa chipëkë wïrë ëjpïnï,,,,,nan,DescCasMAJ,147.0,,
-desccasmaj-147,yab, ëinjëi ëinjëi ëinjëi,,,,,nan,DescCasMAJ,148.0,,
-desccasmaj-148,yab, pa papa wejtano wëra wïrë ta wïrë,,,,,nan,DescCasMAJ,149.0,,
-desccasmaj-149,yab, papa serematano wëra wïrë seremari,,,parece que mi papá está comiendo y yo estoy comiendo,,nan,DescCasMAJ,150.0,,
-desccasmaj-150,yab, papa sukutaka yëntano wëra wïrë sukutaka yëni wïrë ya,,,"parece que  estuviera mi papá tomando yucuta, cuando yo tomo yucuta",,nan,DescCasMAJ,151.0,,"TRsub_AV,noERG_NP,TFyeni-tano=wëra,;,TR_OVA,ERG_1,TF_yeni-ri"
-desccasmaj-151,yab, warë wïrë waimuru wïrë wïrë samori kojpaye,,,"así digo yo, y lloro de noche",,nan,DescCasMAJ,152.0,,REPEAT_S
-desccasmaj-152,yab, nope ne wïrë wïnïkïja,,,no duermo bien,,nan,DescCasMAJ,153.0,,
-desccasmaj-153,yab, warë wïrë waraijtori terepunu rërë,,,ahora mi marido está enfermo,,nan,DescCasMAJ,154.0,,
-desccasmaj-154,yab, tëwï ma pïnika,,,hasta ahí no más,,nan,DescCasMAJ,155.0,,
-desccasmaj-155,yab, chi anïkï waraij kërë,,,que es ese animal,,nan,DescCasMAJ,156.0,,META_
-desccasmaj-156,yab, werewere,,,mosca,,nan,DescCasMAJ,157.0,,META_
-desccasmaj-157,yab, wïrë sëmaja rë wïrë,,,yo no estoy muerta todavía,,nan,DescCasMAJ,158.0,,REPEAT_S
-desccasmaj-158,yab, marë wïrë këtaja rë,,,todavía no me podrí,,nan,DescCasMAJ,159.0,,
-desccasmaj-159,yab, chiri ma pïnika enirë ka,,,"eso será, ahora?",,nan,DescCasMAJ,160.0,,
-histpajirdi-001,yab, kërë chijpë ma,,,era ese,,nan,HistPajIrDi,1.0,,
-histpajirdi-002,yab, seresaj pïnika kwase ne seresaj pïnika,,,"estaba asustado será, como sera que estaba asustado",,nan,HistPajIrDi,2.0,,
-histpajirdi-003,yab, warë tatojpase,,,así lo pegó,,nan,HistPajIrDi,3.0,,
-histpajirdi-004,yab, warë ti kajkë warë,,,"otra vez, diga otra vez",,nan,HistPajIrDi,4.0,,
-histpajirdi-005,yab, kajkë ti warë,,,diga otra vez,,nan,HistPajIrDi,5.0,,
-histpajirdi-006,yab, tawara wejsapë tawara iwanene yakërë,,,"así estaba, así estaba con su suegra",,nan,HistPajIrDi,6.0,,
-histpajirdi-007,yab, imuku sëmajpë të tëwï yakërë ma,,,"desde que murió su hijo, con ella",,nan,HistPajIrDi,7.0,,
-histpajirdi-008,yab, wachori ne wejtane ka awanenei pano juanita yakërë wejtane,,,"aunque tenía su mujer, la finada tu tía juanita",,nan,HistPajIrDi,8.0,,
-histpajirdi-009,yab, tëwï ne tapojtëja chijpë tëwï ya,,,él no la quería a ella,,nan,HistPajIrDi,9.0,,
-histpajirdi-010,yab, mëwë wïrë ya mërë yakaramasaj yawë,,,te voy a matar si lo cuentas,,nan,HistPajIrDi,10.0,,
-histpajirdi-011,yab, mëwë wïrë ya ta ti wejsaj ta,,,"te voy a matar, dijo",,nan,HistPajIrDi,11.0,,
-histpajirdi-012,yab, tëwï pajarito pano ya,,,el finado Pajarito,,nan,HistPajIrDi,12.0,,
-histpajirdi-013,yab, irë wa chipëkë tarachin pe,,,por eso de miedo (no lo contó lo que ella había visto),,nan,HistPajIrDi,13.0,,
-histpajirdi-014,yab, tëwï pëkë mëchiri,,,por que estás con eso,,nan,HistPajIrDi,14.0,,
-histpajirdi-015,yab, kwatojpe mëchiri awanenei takï kërë taropo wejtane,,,"porque eres (así), esa es tu suegra, aunque ella quería decir",,nan,HistPajIrDi,15.0,,
-histpajirdi-016,yab, tataja ti wejsapë tijyapamïkë,,,no contaba de pena,,nan,HistPajIrDi,16.0,,
-histpajirdi-017,yab, mëwë wïrë ya,,,te voy a matar,,nan,HistPajIrDi,17.0,,
-histpajirdi-018,yab, wïrë pëkë mëtampa yawë mëweseyu yawë mëyënsamï yawë,,,"cuando te enojas conmigo, cuando estás bravo, cuando estás celosa",,nan,HistPajIrDi,18.0,,
-histpajirdi-019,yab, mëwë wïrë ya ta ti wejsaj ta tëwï pano ya,,,"te voy a matar, decía el finado",,nan,HistPajIrDi,19.0,,
-histpajirdi-020,yab, irë wa chipëkë tëwï tarachin wejsapë,,,por eso ella tenía miedo,,nan,HistPajIrDi,20.0,,
-histpajirdi-021,yab, irë wa chipëkë sukuri jwama ta marë tejwejse senejkari,,,"por eso estaba callada así, ### estaba",,nan,HistPajIrDi,21.0,,
-histpajirdi-022,yab, asamo ti tejwej po wejtane asamo ti aaa wïrë waijtërijpë,,,"lloraba aunque estaba en su chichorro, lloraba, ay! mi cabeza",,nan,HistPajIrDi,22.0,,
-histpajirdi-023,yab, ejnë wanenei yakërë na ka panakanë,,,con la suegra de uno no se puede bromear,,nan,HistPajIrDi,23.0,,
-histpajirdi-024,yab, yawoton takï tawara wejsemï ta ti wejsaj ta,,,así será que son los espíritus,,nan,HistPajIrDi,24.0,,
-histpajirdi-025,yab, awanenei pano juanita pano ya,,,"la finada tu tía, Juanita",,nan,HistPajIrDi,25.0,,
-histpajirdi-026,yab, warë takï ta wejsaj ta asamo ti tëwï,,,"!‘así decía, lloraba",,nan,HistPajIrDi,26.0,,
-histpajirdi-027,yab, warë wanene wanita pan ka,,,"así, mi tía Juanita",,nan,HistPajIrDi,27.0,,
-histpajirdi-028,yab, mmm,,,,,nan,HistPajIrDi,28.0,,
-histpajirdi-029,yab, tanijpë wejsapë,,,decía,,nan,HistPajIrDi,29.0,,
-histpajirdi-030,yab, mmm,,,,,nan,HistPajIrDi,30.0,,
-histpajirdi-031,yab, aniki pana tanijpë wejsapë,,,a quien lo dijo?,,nan,HistPajIrDi,31.0,,
-histpajirdi-032,yab, aniki pano ta ta,,,!‘¿quién dijo?,,nan,HistPajIrDi,32.0,,
-histpajirdi-033,yab, tëwï pano aniki pinchi,,,"el finado, este",,nan,HistPajIrDi,33.0,,
-histpajirdi-034,yab, iwaraijto pano,,,el finado su esposo?,,nan,HistPajIrDi,34.0,,
-histpajirdi-035,yab, waraijto pana taropo wejtane iwanenei yakërë chipokon ta,,,aunque le quería decir a su marido porque estaba con su suegra,,nan,HistPajIrDi,35.0,,
-histpajirdi-036,yab, tataropo wejtane,,,aunque le quería decir,,nan,HistPajIrDi,36.0,,
-histpajirdi-037,yab, mëwaimu yawë mëyënsamï yawë mëwë wïrë ya ta ti wejsaj ta tëwï ya,,,"cuando hables, cuando estés celosa, te mato, dijo",,nan,HistPajIrDi,37.0,,
-histpajirdi-038,yab, irë wa chipëkë tarachini ti wejsaj ta,,,por eso tenía miedo,,nan,HistPajIrDi,38.0,,
-histpajirdi-039,yab, tejwej po ma ta asamo ti ta ta,,,en su chinchorro lloraba pues,,nan,HistPajIrDi,39.0,,
-histpajirdi-040,yab, tinaka ijtëja takërë wïnïkïja,,,"no iba donde ella, no dormía con ella",,nan,HistPajIrDi,40.0,,
-histpajirdi-041,yab, kwase wïrë wejtojpe,,,¿cómo voy a estar?,,nan,HistPajIrDi,41.0,,
-histpajirdi-042,yab, ëkëjna wïrë tëtojpe ta ti wejsaj ta tëwï ya,,,¿dónde voy? decía ella,,nan,HistPajIrDi,42.0,,
-histpajirdi-043,yab, wanene wanita pano,,,mi tía Juanita,,nan,HistPajIrDi,43.0,,
-histpajirdi-044,yab, tawara ta ti ta ta tajin ta,,,"así decía, decía",,nan,HistPajIrDi,44.0,,
-histpajirdi-045,yab, warë ta waimukontomo tëwïsantomo,,,así hablaban ellos,,nan,HistPajIrDi,45.0,,
-histpajirdi-046,yab, asamo ti asamori,,,lloraba y lloraba,,nan,HistPajIrDi,46.0,,
-histpajirdi-047,yab, mërë warë na ka,,,`¿será que así era?,,nan,HistPajIrDi,47.0,,
-histpajirdi-048,yab, kwase wïrë waraijtori wïrë pojtëni ne,,,¿cómo hago para que mi esposo me quiera?,,nan,HistPajIrDi,48.0,,
-histpajirdi-049,yab, takërë wïrë wïnïkïrï,,,con él voy a dormir,,nan,HistPajIrDi,49.0,,
-histpajirdi-050,yab, takërë wïrë seremari,,,con él voy a comer,,nan,HistPajIrDi,50.0,,
-histpajirdi-051,yab, tawara ne wïrë pojtë ta wïrë waraijtori aniki yantojpe,,,"así quiero mi marido, con quién me voy a casar",,nan,HistPajIrDi,51.0,,
-histpajirdi-052,yab, ta ti wejsaj ta awanenei pano ya,,,así decía tu tía,,nan,HistPajIrDi,52.0,,
-histpajirdi-053,yab, wa chipokon ti ta ta tawara,,,por eso decía así,,nan,HistPajIrDi,53.0,,
-histpajirdi-054,yab, tawara tëwïjpë sënkase tëwïjpë,,,así se acabo,,nan,HistPajIrDi,54.0,,
-histpajirdi-055,yab, dane tajtojpe neke ne,,,el que le dicen Dane,,nan,HistPajIrDi,55.0,,
-histpajirdi-056,yab, toto turu pe tase perdonajtëse tëwïjpë,,,"como dicen los criollos, lo perdonó",,nan,HistPajIrDi,56.0,,
-histpajirdi-057,yab, wa irëjpë chi tarë ati yaka wejsapë ati yaka wejpëjsejne,,,"después como eso, en el conuco, vinieron al conuco",,nan,HistPajIrDi,57.0,,
-histpajirdi-058,yab, tajne wejsapë yamankë,,,"después de que llegaron, (dijeron) componlo (los pescados)",,nan,HistPajIrDi,58.0,,
-histpajirdi-059,yab, yamankë tënësen warai enirë wepïkontomo ta ti wejsaj ta tëwï ya,,,"prepara como los pescados, van a venir ahora, dijo él",,nan,HistPajIrDi,59.0,,
-histpajirdi-060,yab, aniki,,,¿quién?,,nan,HistPajIrDi,60.0,,
-histpajirdi-061,yab, najtejpë,,,,,nan,HistPajIrDi,61.0,,
-histpajirdi-062,yab, pajarito pano ya,,,,,nan,HistPajIrDi,62.0,,
-histpajirdi-063,yab, wïrë yatïrï yakëtëkë me,,,tala mi conuco,,nan,HistPajIrDi,63.0,,
-histpajirdi-064,yab, wïrë yatïrï tojpatojpe mërë ya ta ta,,,para que tumbes mi conuco,,nan,HistPajIrDi,64.0,,
-histpajirdi-065,yab, tatïrïjpë pano anïkï pinchi,,,"el conuco del finado, este",,nan,HistPajIrDi,65.0,,
-histpajirdi-066,yab, korokoro pano tajtoj maniki,,,el que se llamaba Corocoro,,nan,HistPajIrDi,66.0,,
-histpajirdi-067,yab, waraijtokomo tëwï yatïrï ati kampra,,,"el hombre, su conuco, era conuco grande",,nan,HistPajIrDi,67.0,,
-histpajirdi-068,yab, ati kamprari sukase waraimo parë warai,,,"un conuco grande, y como ñame",,nan,HistPajIrDi,68.0,,
-histpajirdi-069,yab, waraimo warai sukase yawakase ta tëwï,,,"como ñame, sembró todo él",,nan,HistPajIrDi,69.0,,
-histpajirdi-070,yab, warë sëmase,,,así se  murió,,nan,HistPajIrDi,70.0,,
-histpajirdi-071,yab, wa tanëmëse,,,así lo dejó,,nan,HistPajIrDi,71.0,,
-histpajirdi-072,yab, irë wa chipëkë tëwï nëmëjpë ma tëwï teretajpë ma wejsapë tëwï,,,por eso lo que él dejó era ese sembrado de él,,nan,HistPajIrDi,72.0,,
-histpajirdi-073,yab, pajarito,,,Pajarito,,nan,HistPajIrDi,73.0,,
-histpajirdi-074,yab, wa ti ta tajne ya,,,así decían ellos,,nan,HistPajIrDi,74.0,,
-histpajirdi-075,yab, kïmïi kase ijtë ti,,,iba a sacar ají,,nan,HistPajIrDi,75.0,,
-histpajirdi-076,yab, iwanenei yojse ma ijtë ti ati yaka,,,iba nada más a fornicar a su suegra en el conuco,,nan,HistPajIrDi,76.0,,
-histpajirdi-077,yab, ijtë asamo ti wejsapë,,,ahí estaba llorando,,nan,HistPajIrDi,77.0,,
-histpajirdi-078,yab, tee nopejra ta wïrë waraijtori,,,ay! mi esposo es malo,,nan,HistPajIrDi,78.0,,
-histpajirdi-079,yab, kwase wïrë wejtojpe,,,¿cómo voy a estar?,,nan,HistPajIrDi,79.0,,
-histpajirdi-080,yab, ta ta mërë wa chipokon ka wïrë yakërë wïnïkïjnari,,,"decía, por eso será que no duerme conmigo",,nan,HistPajIrDi,80.0,,
-histpajirdi-081,yab, wïrë yakërë wïchirijnari wïrëjpë waraijtori,,,conmigo no está mi marido,,nan,HistPajIrDi,81.0,,
-histpajirdi-082,yab, tëwï ka wanene wanita,,,,,nan,HistPajIrDi,82.0,,
-histpajirdi-083,yab, yanë ka wejsapë tëwï,,,¿era la mamá de Juanita?,,nan,HistPajIrDi,83.0,,
-histpajirdi-084,yab, tëwï pïnirë,,,¿no es esa?,,nan,HistPajIrDi,84.0,,
-histpajirdi-085,yab, yanë pïnirë pipi toma yanë,,,"no era su mamá, era la mamá de mi hermano Tomás",,nan,HistPajIrDi,85.0,,
-histpajirdi-086,yab, onono rë tëwï,,,esa es otra,,nan,HistPajIrDi,86.0,,
-histpajirdi-087,yab, onono rë,,,otra,,nan,HistPajIrDi,87.0,,NVP_Pred
-histpajirdi-088,yab, wa chipëkë tëpëkë ma imuku neke n tarë kamere yawankase ta wïrë ya,,,"por eso, de eso su hijo lo mató un rayo",,nan,HistPajIrDi,88.0,,
-histpajirdi-089,yab, tëwïjpë wejse takërë wejse tawara taiche wa chipëkë wakïjpejra wejsapë,,,"el vino, con ese vino, así lo hizo, por eso no me gustaba",,nan,HistPajIrDi,89.0,,
-histpajirdi-090,yab, samo ti kojpaye,,,lloraba de noche,,nan,HistPajIrDi,90.0,,
-histpajirdi-091,yab, kwase ne ëkëtë wïrë waraijtori wïrë yopotojpe nopano ne wïrë pojtëni ne,,,"### dónde voy a buscar marido, yo quiero uno bueno",,nan,HistPajIrDi,91.0,,
-histpajirdi-092,yab, takërë wïrë wïnïjtojpe ne wïrë pojtëpori,,,"para yo dormir con él, yo quiero",,nan,HistPajIrDi,92.0,,
-histpajirdi-093,yab, ta ti ta wejsaj ta tëwï ya wanita ya,,,"decía ella, Juanita",,nan,HistPajIrDi,93.0,,
-histpajirdi-094,yab, samo ti wejsapë,,,lloraba,,nan,HistPajIrDi,94.0,,
-histpajirdi-095,yab, irë wejtane yajtëpe ka tewenke wejsapë,,,a pesar de eso al principio ella no sabía?,,nan,HistPajIrDi,95.0,,
-histpajirdi-096,yab, tewenke tarë wanene takërë ta chipëkë ta,,,"no sabía, la suegra estaba con él, porque lo decían.",,nan,HistPajIrDi,96.0,,
-histpajirdi-097,yab, wa chipëkë mërë warai tawara chijpëkonton ti ta ta,,,"por eso como eso así estaban, decía",,nan,HistPajIrDi,97.0,,
-histpajirdi-098,yab, chi ta wïrë tase ta tawara tëwïjpë takërë chijpë warai,,,parece que estuviera con ella,,nan,HistPajIrDi,98.0,,
-histpajirdi-099,yab, terepuntase ti warë,,,se enfermó así,,nan,HistPajIrDi,99.0,,
-histpajirdi-100,yab, picha yënëjpë tërë pëtase,,,"después de haber comido capuchino, se privó",,nan,HistPajIrDi,100.0,,
-histpajirdi-101,yab, warë tajropo wejsapë warë,,,así se enfermó,,nan,HistPajIrDi,101.0,,
-histpajirdi-102,yab, anoto ke tai,,,con onoto,,nan,HistPajIrDi,102.0,,
-histpajirdi-103,yab, anoto ke tayapimajpë,,,!con onoto ## empeoró,,nan,HistPajIrDi,103.0,,
-histpajirdi-104,yab, tatojpase pïmï poye,,,le pegó por el cuello,,nan,HistPajIrDi,104.0,,
-histpajirdi-105,yab, pa tuj warë iij,,,"le pegó pam! pum! así, dijo uy!",,nan,HistPajIrDi,105.0,,
-histpajirdi-106,yab, tëwï takï tajne ya yapïchija wejsapë iriyawë,,,ellos no lo agarraron en ese momento,,nan,HistPajIrDi,106.0,,
-histpajirdi-107,yab, yakaramaja,,,no contaron,,nan,HistPajIrDi,107.0,,
-histpajirdi-108,yab, wa irëjpë ne kërë tajnomo pikuwa tajtoj maniki ta ta wïrë ya,,,"así después, el piaroa que le dicen Picua, digo yo",,nan,HistPajIrDi,108.0,,
-histpajirdi-109,yab, tëwï tojpase ëjmiya poye,,,el le pegó cuando estaban en el barranco,,nan,HistPajIrDi,109.0,,
-histpajirdi-110,yab, mëyatïrïrï yakëtëja wïrë ya,,,yo no tumbo tu conuco,,nan,HistPajIrDi,110.0,,
-histpajirdi-111,yab, mërë wïrë yepemaja,,,tú no pagas,,nan,HistPajIrDi,111.0,,
-histpajirdi-112,yab, ta ti wejsaj ta tëwï waraijtokomo ya irë wa chipëkë ti,,,así dijo ese hombre por eso,,nan,HistPajIrDi,112.0,,
-histpajirdi-113,yab, tatojpase,,,le pegó,,nan,HistPajIrDi,113.0,,
-histpajirdi-114,yab, mëtojpa wïrë,,,te voy a matar a golpes,,nan,HistPajIrDi,114.0,,
-histpajirdi-115,yab, kwase mëwarotapojra wïrë yakërë,,,cómo no quieres trabajar conmigo?,,nan,HistPajIrDi,115.0,,
-histpajirdi-116,yab, waraijtokompe wejtane tëpëkëpene warotapojnari,,,"aunque es hombre, no quería trabajar solo",,nan,HistPajIrDi,116.0,,
-histpajirdi-117,yab, wa chijpë ti tëwï ta ta tajne yakaramari,,,por eso la gente cuenta,,nan,HistPajIrDi,117.0,,
-histpajirdi-118,yab, samo ti tuj,,,lloró y se fue corriendo,,nan,HistPajIrDi,118.0,,
-histpajirdi-119,yab, warë tëwï ti ijtë yawë tuj puj,,,"así cuando se iba, pum (se golpeó)",,nan,HistPajIrDi,119.0,,
-histpajirdi-120,yab, taa mïntë tëpu pïnika wejsapë warë,,,ta! allá será que había una piedra,,nan,HistPajIrDi,120.0,,
-histpajirdi-121,yab, taa senijpë përëtëse tichikimurujpë përëtëse,,,"ta! esto se quebró, su rodilla se quebró",,nan,HistPajIrDi,121.0,,
-histpajirdi-122,yab, ijtë ma supuj ïj,,,ahí se zambulló (pa salir más lejos),,nan,HistPajIrDi,122.0,,
-histpajirdi-123,yab, romona ijtëse,,,se fue río abajo,,nan,HistPajIrDi,123.0,,
-histpajirdi-124,yab, romona mërë ta inija,,,"río abajo! y tú, no has visto",,nan,HistPajIrDi,124.0,,
-histpajirdi-125,yab, mëyewenke ta tëwïjna paraiso ya mëyewenke,,,"tu no conoces por allá? Lo que llaman paraiso, no conoces?",,nan,HistPajIrDi,125.0,,
-histpajirdi-126,yab, uyewenkejra utëjpë taji rë tëwïjna,,,"yo conozco, yo he ido allá",,nan,HistPajIrDi,126.0,,
-histpajirdi-127,yab, ëjmiya inwape marë ta sakau takï,,,"abajito del barranco, hay playa",,nan,HistPajIrDi,127.0,,Comparative
-histpajirdi-128,yab, sakau pe tëwï poye ti kïrïrï,,,"la playa, por ahí se arrastraba (ideo)",,nan,HistPajIrDi,128.0,,
-histpajirdi-129,yab, kïrïrï kïrïrï warë ëjkïrïpase ijtëse mïjna pota pana,,,"chu, chu, así se iba arrastrando allá, hacia la orilla",,nan,HistPajIrDi,129.0,,
-histpajirdi-130,yab, aaa irëjpë takereti yawa ti wejse takërë rë warë,,,"ah, después ellos vinieron a buscarlo, así con él",,nan,HistPajIrDi,130.0,,
-histpajirdi-131,yab, tajne nankase takerejtomo ya,,,sus familiares lo encontraron,,nan,HistPajIrDi,131.0,,
-histpajirdi-132,yab, warë tajne kuyarari naiche tajne kojpaye,,,así ellos fueron a buscar su curiara de noche,,nan,HistPajIrDi,132.0,,
-histpajirdi-133,yab, tarachinkontom pe,,,por miedo,,nan,HistPajIrDi,133.0,,
-histpajirdi-134,yab, kojpaye tajne yanïjse tajne yarijtëri,,,"por la noche lo llamaron, lo embarcaron",,nan,HistPajIrDi,134.0,,
-histpajirdi-135,yab, uuu ta ti uuu tarë tayëwujse,,,cuando lo llamaron uuu! contestó uuu!,,nan,HistPajIrDi,135.0,,
-histpajirdi-136,yab, poo sëmaja rë ïmparë ta ti tajne ya,,,"uy! todavía no se murió, dijeron",,nan,HistPajIrDi,136.0,,
-histpajirdi-137,yab, tajne yarijtëse kuyara yaka,,,ellos lo embarcaron en la curiara,,nan,HistPajIrDi,137.0,,
-histpajirdi-138,yab, tajne yarëse kojpaye,,,ellos lo llevaron de noche,,nan,HistPajIrDi,138.0,,
-histpajirdi-139,yab, ijpu yaka,,,río arriba,,nan,HistPajIrDi,139.0,,
-histpajirdi-140,yab, mërë ajti pinchi wayawarito tajtoj poye,,,"ese, como se llama, por donde dicen Guayabalito",,nan,HistPajIrDi,140.0,,
-histpajirdi-141,yab, tëwïjna tajne yarëse tëwïjpë,,,allá lo llevaron a él,,nan,HistPajIrDi,141.0,,
-histpajirdi-142,yab, tëwï waraijtokomo,,,al hombre?,,nan,HistPajIrDi,142.0,,
-histpajirdi-143,yab, mmm tëwï waraijtokomo warë,,,sí al hombre así,,nan,HistPajIrDi,143.0,,
-histpajirdi-144,yab, yawo pano ya yakaramase tëwï,,,mi tió conto eso,,nan,HistPajIrDi,144.0,,
-histpajirdi-145,yab, tatojpase,,,le pegó,,nan,HistPajIrDi,145.0,,
-histpajirdi-146,yab, toto tojpase ta tëwï tarë,,,una persona lo mató,,nan,HistPajIrDi,146.0,,
-histpajirdi-147,yab, kërë maniki neke n ti,,,aquel,,nan,HistPajIrDi,147.0,,
-histpajirdi-148,yab, pipi toma rejandro pano,,,"mi hermano Tomás, el finado Alejandro",,nan,HistPajIrDi,148.0,,"NAME,@,NAME"
-histpajirdi-149,yab, warë tajne yarëse ta,,,así lo llevaron,,nan,HistPajIrDi,149.0,,
-histpajirdi-150,yab, sarë wejpëjsejne toto yanïjse,,,vinieron para acá a llamar al criollo (en este caso al comisario),,nan,HistPajIrDi,150.0,,
-histpajirdi-151,yab, irario taji iriyawë wejsapë komisario pe irario wejsapë,,,Hilario era en ese momento comisario,,nan,HistPajIrDi,151.0,,"NAME,@,NAME"
-histpajirdi-152,yab, tajne yapëjse wejsapë tëwï,,,ellos lo agarraron,,nan,HistPajIrDi,152.0,,
-histpajirdi-153,yab, tajne pompëjse wejsapë,,,ellos lo amarraron’ ,,nan,HistPajIrDi,153.0,,
-histpajirdi-154,yab, tajne yenïjtëse sarë romona,,,"ellos lo bajaron hacia acá, rio abajo",,nan,HistPajIrDi,154.0,,
-histpajirdi-155,yab, mmm wa chijpë takï tëwï,,,así fue eso,,nan,HistPajIrDi,155.0,,
-histpajirdi-156,yab, mërë wa chi yëmpataka,,,así se conoce,,nan,HistPajIrDi,156.0,,
-histpajirdi-157,yab, tëwï pajarito pan ta sëmase yakucho të,,,Pajarito se murió en Ayacucho,,nan,HistPajIrDi,157.0,,
-histpajirdi-158,yab, tëpëkëpene,,,solo,,nan,HistPajIrDi,158.0,,
-histpajirdi-159,yab, preso yawë wejsapë iyajtëpe,,,primero estuvo en la carcel,,nan,HistPajIrDi,159.0,,
-histpajirdi-160,yab, wa irëjpë tajne sojpase,,,y después lo sacaron,,nan,HistPajIrDi,160.0,,
-histpajirdi-161,yab, tëpëkëpene,,,solo,,nan,HistPajIrDi,161.0,,
-histpajirdi-162,yab, yapijtompe pïnika wejsapë,,,será que estaba viejito?,,nan,HistPajIrDi,162.0,,
-histpajirdi-163,yab, yapijtompejra muku yapijtompe wejtane wa narë ma,,,"no era tan viejo, hija, aunque era más o menos viejo",,nan,HistPajIrDi,163.0,,
-histpajirdi-164,yab, marë yatanë rë,,,todavía era jóven?,,nan,HistPajIrDi,164.0,,
-histpajirdi-165,yab, kwase tesekemï mënï,,,¿cómo se llama eso?,,nan,HistPajIrDi,165.0,,
-histpajirdi-166,yab, kwase tesekemï tëwï,,,¿como se llama eso?,,nan,HistPajIrDi,166.0,,
-histpajirdi-167,yab, karinawa ta ta tëwï tuna,,,le dicen Carinagua a ese río,,nan,HistPajIrDi,167.0,,
-histpajirdi-168,yab, karinawa tajtopo tëwï tuna,,,Se llama Carinagua ese caño,,nan,HistPajIrDi,168.0,,
-histpajirdi-169,yab, mïntë yakucho të,,,"allá, en Ayacucho",,nan,HistPajIrDi,169.0,,
-histpajirdi-170,yab, warë wïrë muku yerepunu,,,así la enfermedad de mi hijo,,nan,HistPajIrDi,170.0,,
-histpajirdi-171,yab, amore ti ta ta,,,parece que es chamán,,nan,HistPajIrDi,171.0,,PROSODY_secret
-histpajirdi-172,yab, wa irëjpë wïrë muku mëkï aniki pinchi manïkï,,,"después mi hijo, aquel",,nan,HistPajIrDi,172.0,,
-histpajirdi-173,yab, pipi neto ta,,,mi hermano Nestor,,nan,HistPajIrDi,173.0,,NAME
-histpajirdi-174,yab, kwase tesekemï kërë pejkaw,,,¿cómo se llama ese pescado?,,nan,HistPajIrDi,174.0,,
-histpajirdi-175,yab, parumeta,,,palometa,,nan,HistPajIrDi,175.0,,
-histpajirdi-176,yab, warenton tajtoj manïkï,,,que le dicen valentón,,nan,HistPajIrDi,176.0,,
-histpajirdi-177,yab, wïrë yënëse wejsapë wïrë muku pïjkë waputase wejsapë,,,yo comi (y) mi hijito se puso barrigón,,nan,HistPajIrDi,177.0,,
-histpajirdi-178,yab, warë wïrë tëse yakucho të,,,así fui a Ayacucho,,nan,HistPajIrDi,178.0,,
-histpajirdi-179,yab, wïrë wejsapë asakë nunë,,,yo estuve dos meses,,nan,HistPajIrDi,179.0,,
-histpajirdi-180,yab, ayakono,,,tu hermano menor,,nan,HistPajIrDi,180.0,,
-histpajirdi-181,yab, ayakono apachi pïnika,,,"tu hermano menor, tu hermana mayor será",,nan,HistPajIrDi,181.0,,
-histpajirdi-182,yab, kareme ta,,,Carmen pues,,nan,HistPajIrDi,182.0,,NAME
-histpajirdi-183,yab, wïrë pachiri,,,es mi hermana mayor,,nan,HistPajIrDi,183.0,,
-histpajirdi-184,yab, ë'ë apachiri,,,"sí, tu hermana mayor",,nan,HistPajIrDi,184.0,,
-histpajirdi-185,yab, wïrë tëse yakucho pana wejsapë tësaj yawë ta,,,"yo fui a Ayacucho, cuando fue a Ayaucho",,nan,HistPajIrDi,185.0,,
-histpajirdi-186,yab, tichikimuru peti warë patakasapë yakucho pana,,,"su rodilla, su pierna, salió (llaga) hacia Ayacucho",,nan,HistPajIrDi,186.0,,
-histpajirdi-187,yab, asakë nunë wïrë wejsapë yakucho të ojpital yawë wejtane,,,yo estuve dos meses en Puerto Ayacuho aunque estaba en el hospotal,,nan,HistPajIrDi,187.0,,
-histpajirdi-188,yab, iriyawë ana tësaj yawë,,,cuando nosotros nos fuimos,,nan,HistPajIrDi,188.0,,
-histpajirdi-189,yab, wa wïrë tëse tëwïjna,,,así fui para allá,,nan,HistPajIrDi,189.0,,
-histpajirdi-190,yab, enijpëtë semana wejtojpe wejsapë mëyakereti sëmase mëyakereti sëmase,,,"habiendo pasado una semana (se escuchó), se murió tu familiar, se murió tu familiar",,nan,HistPajIrDi,190.0,,
-histpajirdi-191,yab, mmm sëmari,,,"sí, se murió",,nan,HistPajIrDi,191.0,,
-histpajirdi-192,yab, toto yawankanijpë kërë ta wïrë,,,ese mato una persona,,nan,HistPajIrDi,192.0,,
-histpajirdi-193,yab, tase wïrë ya,,,así dije yo,,nan,HistPajIrDi,193.0,,
-histpajirdi-194,yab, pajarito pano,,,el finado Pajarito?,,nan,HistPajIrDi,194.0,,
-histpajirdi-195,yab, toto yawankanijpë kërë,,,el era asesino,,nan,HistPajIrDi,195.0,,
-histpajirdi-196,yab, iwanenei pano,,,la finada su suegra,,nan,HistPajIrDi,196.0,,
-histpajirdi-197,yab, iwanenei ti,,,su suegra,,nan,HistPajIrDi,197.0,,
-histpajirdi-198,yab, pënapïti,,,###,,nan,HistPajIrDi,198.0,,
-histpajirdi-199,yab, warë takono warë tajnontomo tojpase ta,,,"así otro, mató a Piaroas",,nan,HistPajIrDi,199.0,,
-histpajirdi-200,yab, wa chipokono tajne yarëri irë yëmpataka,,,"por eso se lo llevaron, !por fin",,nan,HistPajIrDi,200.0,,
-histpajirdi-201,yab, irario taji irario wara taji finado lencho pan pïnika tajne yarëse pompëjse yampëjse tajne yarëse wejsapë,,,"Hilario o el finado Lencho, se lo llevaron amarrado, agarrado se lo llevaron",,nan,HistPajIrDi,201.0,,NAME
-histpajirdi-202,yab, tëwï pano,,,ese el finado ###,,nan,HistPajIrDi,202.0,,
-histpajirdi-203,yab, kampra ka wejsapë tëwï waraijtokomo makë,,,"ese hombre era grande, mamá?",,nan,HistPajIrDi,203.0,,
-histpajirdi-204,yab, pajarito ka,,,Pajarito?,,nan,HistPajIrDi,204.0,,NAME
-histpajirdi-205,yab, kamprari mërë inija ka kërë ëpi adrian marë wëra irë wejtane intipijkë ma kawë,,,"grande, no has visto a tu hermano Adrián, pero un poquito más grande",,nan,HistPajIrDi,205.0,,NAME
-histpajirdi-206,yab, mmm kasoremï,,,"sí, gordo",,nan,HistPajIrDi,206.0,,
-histpajirdi-207,yab, wa chijpë ti takërë ta,,,así era con él,,nan,HistPajIrDi,207.0,,
-histpajirdi-208,yab, pipi waika wëra,,,Como mi hermano Guaica?,,nan,HistPajIrDi,208.0,,
-histpajirdi-209,yab, ma kampra pe sa,,,todavía más grande,,nan,HistPajIrDi,209.0,,
-histpajirdi-210,yab, kawë sa,,,un poquito alto,,nan,HistPajIrDi,210.0,,
-histpajirdi-211,yab, wa chijpë ti tëwï toto yawankanijpë toto tojpapëjnijpë përëjpëjse yëye ke ej,,,"así era él, mataba gente, le pegaba a la gente, los quebraba con palo, uy!",,nan,HistPajIrDi,211.0,,
-histpajirdi-212,yab, tëwï ne tëwï takï nopejra tawara,,,eso si no sirve así,,nan,HistPajIrDi,212.0,,
-histpajirdi-213,yab, wa chijpë tëwï ta wïrë ya,,,"así era él, digo yo",,nan,HistPajIrDi,213.0,,
-histpajirdi-214,yab, tëwï ësënkatojpe ta wïrë tajtojpe tewenkejra wejtojpe tëwï,,,"para terminar, para yo decir para que él sepa",,nan,HistPajIrDi,214.0,,
-histpajirdi-215,yab, wïrë waimuru tayapëjtojpe tase wïrë ya kërë pëkë irë wa chipëkë tanijpë tëri tase wïrë wejse,,,"para que graben mis palabras, dije yo, voy para decirle sobre él, vine a decir",,nan,HistPajIrDi,215.0,,
-histpajirdi-216,yab, wïrë yënkano tapëkë warë,,,para decir lo que pienso,,nan,HistPajIrDi,216.0,,
-histpajirdi-217,yab, wa chijpë takï tëwï,,,así era él,,nan,HistPajIrDi,217.0,,
-histpajirdi-218,yab, tajne yawanka yëmpataka,,,para ellos matar,,nan,HistPajIrDi,218.0,,
-histpajirdi-219,yab, ësëma turu pejra rë,,,aunque no quería morirse,,nan,HistPajIrDi,219.0,,
-histpajirdi-220,yab, pïrarë turu pïrarë toti,,,"no había comida (de no carne) frutas, casabe, no había comida de carne",,nan,HistPajIrDi,220.0,,
-histpajirdi-221,yab, tïkïnï ma tï weroro ma ti yokï ta,,,"su cria, el perro, lo cogía",,nan,HistPajIrDi,221.0,,
-histpajirdi-222,yab, tee,,,uy!,,nan,HistPajIrDi,222.0,,
-histpajirdi-223,yab, wa chijpë ti tëwï pano,,,así era el finado,,nan,HistPajIrDi,223.0,,
-histpajirdi-224,yab, pajarito pano,,,el finado Pajarito?,,nan,HistPajIrDi,224.0,,NAME
-histpajirdi-225,yab, tëwïjna wajiwoton ijtëri,,,"allá, iban los Guajibos",,nan,HistPajIrDi,225.0,,
-histpajirdi-226,yab, sere yarëse turu,,,"a llevar casabe, su comida",,nan,HistPajIrDi,226.0,,
-histpajirdi-227,yab, sere intompïjkë ma tajne turu mañuku pïjkë intipijkë ma tajne turu,,,"un casabe pequeño le daba, mañoquito un poquito le daban",,nan,HistPajIrDi,227.0,,
-histpajirdi-228,yab, anïkï pinchi kërë parumeta sapowara tajtoj manïkï kwase neke ne kururu wëra wejtane,,,"como es es ese, palometa, sapoara que le dicen, como es, aunque se parece como boca chico",,nan,HistPajIrDi,228.0,,
-histpajirdi-229,yab, kochari keremere manïkï tëwï,,,el del rabo pintadito ese,,nan,HistPajIrDi,229.0,,
-histpajirdi-230,yab, wa chijpë ti tëwï,,,así era ese,,nan,HistPajIrDi,230.0,,
-histpajirdi-231,yab, wa irëjpë tajne yakaramase sëmase ti sëmase sëmase,,,"después ellos avisaron, se murió, se murió, se murió",,nan,HistPajIrDi,231.0,,
-histpajirdi-232,yab, tajne nono yakase ijtë ma tajne mujnajtëse ti nono yaka,,,"ellos le hicieron hueco a la tierra, ahí mismo lo enterraron dentro de la tierra",,nan,HistPajIrDi,232.0,,
-histpajirdi-233,yab, tëwïsantomo wajiwotomo ya,,,"ellos, los Guajibos",,nan,HistPajIrDi,233.0,,
-histpajirdi-234,yab, tajne yanontëse pïnika mïntë onono,,,"será que otros lo mandaban (a hacer), allá",,nan,HistPajIrDi,234.0,,
-histpajirdi-235,yab, mmm,,,,,nan,HistPajIrDi,235.0,,
-histpajirdi-236,yab, wa sëmajpë ti tëwï tajne mujnajtëse tëwï ijtë ma,,,"así murió, lo enterraron ahí",,nan,HistPajIrDi,236.0,,
-histpajirdi-237,yab, aaa mëyakerej sëmase aj inche utërijra,,,"ah, tu familia se murió, aj! no voy a ver",,nan,HistPajIrDi,237.0,,
-histpajirdi-238,yab, wïrë mukuru intipijkë rë wïrë iñawë anïkï neke n ti anïkï pinchi wïrë inawë wïrë wenkejse,,,"mi hijo pequeño que está conmigo, quien era, se me olvido",,nan,HistPajIrDi,238.0,,
-histpajirdi-239,yab, ëpi pan pïnika ta wïrë ya,,,"tu hermano mayor, pienso",,nan,HistPajIrDi,239.0,,
-histpajirdi-240,yab, jesu pano,,,el finado Jesús,,nan,HistPajIrDi,240.0,,NAME
-histpajirdi-241,yab, warë wïrë wejse yakucho pana chijpë tëwï warë sëmajpë takï tëwï waraijtokomo,,,"así me vine después de que estaba en Puerto Ayacucho, él se murió así, así era ese hombre",,nan,HistPajIrDi,241.0,,
-histpajirdi-242,yab, tëwï ma wïrë ya yawano pe wejtojpe wïrë ya taro tanijpë wïrë ya,,,"eso nada más que me enteré digo, así digo yo",,nan,HistPajIrDi,242.0,,
-histpajirdi-243,yab, makë,,,,,nan,HistPajIrDi,243.0,,
-histpajirdi-244,yab, yawo tamanaku tawara,,,mi tío Tamanaco,,nan,HistPajIrDi,244.0,,NAME
-histpajirdi-245,yab, yanë ka,,,su mama,,nan,HistPajIrDi,245.0,,
-histpajirdi-246,yab, aniki wejsapë yanë ta wïrë,,,"quién fue su mamá?, digo",,nan,HistPajIrDi,246.0,,
-histpajirdi-247,yab, ëmo yan pan ta wanene pano tëwï muku takï kërë,,,"la finada mamá de tu papá, la finada mi suegra, ese es su hijo",,nan,HistPajIrDi,247.0,,
-histpajirdi-248,yab, jose negrito tajtoj kërëke imu,,,"su papá es José negrito, para decir kïrïki",,nan,HistPajIrDi,248.0,,NAME
-histpajirdi-249,yab, mïntë sopojpo mïjna paru jpu yaka ti ti chi yawë,,,,,nan,HistPajIrDi,249.0,,
-histpajirdi-250,yab, sepamïjpë ti takërë jose negrito tajtopo waraijtokomo kërëkemï,,,"se casó, con ese que dice José negrito, el negro",,nan,HistPajIrDi,250.0,,NAME
-histpajirdi-251,yab, tëwï mukurujpë takï kërë tamanaku,,,ese Tamanaco es hijo de él,,nan,HistPajIrDi,251.0,,NAME
-histpajirdi-252,yab, wa chipëkë wïrë papa yakino ka,,,"por eso, es el hermano menor de mi papá?",,nan,HistPajIrDi,252.0,,
-histpajirdi-253,yab, ë'ë takino taro,,,"sí,  su hermano menor, dice",,nan,HistPajIrDi,253.0,,
-histpajirdi-254,yab, takinori tëwï,,,ese es su hermano,,nan,HistPajIrDi,254.0,,
-histpajirdi-255,yab, wa chijpë ti tëwï tarë,,,por eso es así,,nan,HistPajIrDi,255.0,,
-histpajirdi-256,yab, tesej nï teseti pesemïne,,,"su nombre, su nombre propio",,nan,HistPajIrDi,256.0,,
-histpajirdi-257,yab, anïkï teseti,,,¿quien su nombre?,,nan,HistPajIrDi,257.0,,
-histpajirdi-258,yab, tëwï,,,él,,nan,HistPajIrDi,258.0,,
-histpajirdi-259,yab, tëwï yawo tamanaku,,,ese mi tío Tamanaco,,nan,HistPajIrDi,259.0,,NAME
-histpajirdi-260,yab, yïmu,,,su papá’?,,nan,HistPajIrDi,260.0,,
-histpajirdi-261,yab, teseti tawara ma ka tamanaku wa ma ka,,,¿su nombre es ese mismo Tamanaco así no más?,,nan,HistPajIrDi,261.0,,
-histpajirdi-262,yab, tamanaku pïnirë kwase neke teseti nope tane tesetijpë wïrë wenkejse teseti,,,"no es Tamanaco, como és, es bonito, se me olvido su nombre",,nan,HistPajIrDi,262.0,,
-histpajirdi-263,yab, awaneneij takï tewenkejra,,,tu tía si sabe,,nan,HistPajIrDi,263.0,,
-histpajirdi-264,yab, wa chipëkë tëwï,,,por qué él,,nan,HistPajIrDi,264.0,,
-histpajirdi-265,yab, mërë wa chipokono ta wïrë ya tëwï ka tamanaku ejnë yakerej pesemïnë ka makë ta wïrë ya,,,"por eso, el nuestra propia familia?",,nan,HistPajIrDi,265.0,,
-histpajirdi-266,yab, onono rë imu,,,su papá es otro,,nan,HistPajIrDi,266.0,,
-histpajirdi-267,yab, onono rë imu rë wejtane yanë,,,aunque su papá es otro,,nan,HistPajIrDi,267.0,,
-histpajirdi-268,yab, mmm anajmo pokono,,,"sí, viene de tu abuela",,nan,HistPajIrDi,268.0,,
-histpajirdi-269,yab, wa ta mërë wa chipokono wïrë taro,,,por eso es que yo digo,,nan,HistPajIrDi,269.0,,
-histpajirdi-270,yab, ë'ë mëyakereti,,,"sí, tu familia",,nan,HistPajIrDi,270.0,,
-histpajirdi-271,yab, enijpëtërë ma tëwï maniki,,,el es el único?,,nan,HistPajIrDi,271.0,,
-histpajirdi-272,yab, ësëmase mmm pamo pano rosarita,,,"se murió, mi cuñada, Rosarita",,nan,HistPajIrDi,272.0,,NAME
-histpajirdi-273,yab, yakucho të,,,en Ayacucho,,nan,HistPajIrDi,273.0,,
-histpajirdi-274,yab, sëmase tëwï,,,se murió ella,,nan,HistPajIrDi,274.0,,
-histpajirdi-275,yab, yakucho të sëmase,,,se murió en Ayacucho,,nan,HistPajIrDi,275.0,,
-histpajirdi-276,yab, warë sëmajpëkontomo tëwï ta ta wïrë ya,,,"así se murieron, digo",,nan,HistPajIrDi,276.0,,
-histpajirdi-277,yab, wa chipëkë tajne koñarë tawayunka wejsapë,,,por eso estaban preguntando ellos ayer,,nan,HistPajIrDi,277.0,,
-histpajirdi-278,yab, tëwï ne mëyakerej ka,,,el es tu familia?,,nan,HistPajIrDi,278.0,,
-histpajirdi-279,yab, awata tase wïrë makë,,,"no sé, dijo mi mamá",,nan,HistPajIrDi,279.0,,
-histpajirdi-280,yab, nope takï tëwï yeseti tamanaku yeseti,,,"!Su nombre es bonito, el nombre de Tamanaco",,nan,HistPajIrDi,280.0,,NAME
-histpajirdi-281,yab, wïrë papa yakerej ti ta wejsaj ta ipiri takinori,,,"es familia de mi papá, dije, su hermano mayor, su hemano menor",,nan,HistPajIrDi,281.0,,
-histpajirdi-282,yab, wa pïnika takino pïnika ta wejsaj wïrë ya,,,"así será, será su hermano menor, dije",,nan,HistPajIrDi,282.0,,
-histpajirdi-283,yab, takino rë ma iruij tarëya,,,su hermano menor de su hermano mayor,,nan,HistPajIrDi,283.0,,
-histpajirdi-284,yab, irë wejtane upapa terepun wejtane wepïja tarë,,,"a pesar de eso, a pesar de mi papa está enfermo, no viene",,nan,HistPajIrDi,284.0,,CRITICISM
-histpajirdi-285,yab, ijtë ma wejtane,,,aunque está ahí,,nan,HistPajIrDi,285.0,,
-histpajirdi-286,yab, entë ma ka sawë të,,,"aquí, en el chorro?",,nan,HistPajIrDi,286.0,,
+ctoaragrme-25,yab," moyochi tasarë, moyochi chipokono kojpaye pïnika warotari",moyochi\tta-sarë\tmoyochi\tchipokono\tkojpaye\tpïnika\twarotari,***\tsay-IMN\t***\t***\t***\tPROB\t***,"le dicen araña, tal vez porque la araña trabaja de noche",,,,25.0,,","
+ctoaragrme-07,yab, moyochi,moyochi,***,la araña,,,,7.0,,",NP_"
+desccasmaj-025,yab, mënai wëjkase chijpë wararë,më-nai-∅\twëjkase\tchi-jpë\twararë,2-do-IPFV\t***\tCOP-PST\t***,se cayó tu cosa,,,,25.0,,",EXTERNALcomment"
+desccasmaj-131,yab, ejnë yemekunu,ejnë\tyemekunu,1+2PRO\t***,la mano de uno,,,,132.0,,","
+histpajirdi-186,yab," tichikimuru, peti warë patakasapë Yakucho pana",tichikimuru\tpeti\twarë\tpatakasapë\tyakucho\tpana,***\t***\tthus\t***\t***\tDAT,"su rodilla, su pierna, salió (llaga) hacia Ayacucho",,,,186.0,,","
+ctorat-01,yab, makë ya ta taji rë,makë\tya\tta-∅\ttaji\trë,mother\tERG\tsay-IPFV\t?\tEMP,My mother told this (story).,,,CtoRat,1.0,,",say_AV,ERG_NP,TF_ta-ri"
+ctorat-02,yab, waijta,waijta,mouse,The mice.,,,CtoRat,2.0,,",NP_"
+ctorat-03,yab, enijpëtërë waraijtokomo ijtëse ti mïjna tëijpo wïnïjse,enijpëtërë\twaraijtokomo\tij-të-se\tti\tmïjna\ttëijpo\twïnïj-se,one\tman\t3-go-PST\tHSY\tthere.ALL\tfar\tsleep-PST,"A man went there, far, to sleep.",,,CtoRat,3.0,,",INTR_SVLX,@,INTRsub_XV"
+ctorat-04,yab, yutu yaka,yutu\tyaka,forest\tALL,To the woods.,,,CtoRat,4.0,,",fragment_"
+ctorat-05,yab, irëjpë ti ta ti ta,irëjpë\tti\tta-∅\tti\tta,then\tHSY\tsay-IPFV\tHSY\tlike,Then she said:,,,CtoRat,5.0,,",say_TV,ERGØ,TF_ta-ri"
+ctorat-06,yab, wïnïjse,wïnïj-se,sleep-PST,He slept.,,,CtoRat,6.0,,",INTR_V"
+ctorat-07,yab, tawani yawë senejka wejsapë irëjpë ënujse kawë,tawani\tyawë\tsenejka-∅\twej-sapë\tirëjpë\tënuj-se\tkawë,darkness\tLOC\tremain-IPFV\tCOP-PFV\tthen\tgo.up-PST\thigh,He was staying in the dark and then went up high (in the house).,,,CtoRat,7.0,,",INTR_LVH,@,INTR_TVL"
+ctorat-08,yab, kawë ënujse irëjpë,kawë\tënuj-se\tirëjpë,high\tgo.up-PST\tthen,He went up high and then...,,,CtoRat,8.0,,",INTR_LV"
+ctorat-09,yab, ti waijtaton nwajtë wejsapë,ti\twaijta-ton\tnwajtë-∅\twej-sapë,HSY\tmouse-PL\tdance-IPFV\tCOP-PFV,The mice were dancing.,,,CtoRat,9.0,,",INTR_SVH"
+ctorat-10,yab, sakunkai sakunkai,sakunkai\tsakunkai,sakunkai\tsakunkai,"Sakunkai, Sakunkai.",,,CtoRat,10.0,,","
+ctorat-11,yab,""" sakunkai"" ta ta irëjpë"" sakunkai""",sakunkai\tta-∅\tta\tirëjpë\tsakunkai,sakunkai\tsay-IPFV\tlike\tthen\tsakunkai,"“Sakunkai”, they said, and then “Sakunkai”.",,,CtoRat,11.0,,",say_RV,ERGØ,TF_ta-ri"
+ctorat-12,yab, wurijyampïjkë kantajnë tawara rë wejsapë,wurijyam-pïjkë\tkantajnë-∅\ttawara\trë\twej-sapë,woman-DIM\tsing-IPFV\ttoo\tEMP\tCOP-PFV,"The female was singing, too.",,,CtoRat,12.0,,",INTR_SVXH"
+ctorat-13,yab, tëwï naikonton ti tawara,tëwï\tnai-∅-konton\tti\ttawara,3PRO\tdo-IPFV-PL\tHSY\ttoo,They did like this.,,,CtoRat,13.0,,",TR_AVX,noERG_3,TF_nai-ri"
+ctorat-14,yab, okï yëni tajne ya soj soj soj,okï\tyëni-∅\tta-jne\tya\tsoj\tsoj\tsoj,chicha\tdrink-IPFV\t3-PL\tERG\tID:dabble\tID:dabble\tID:dabble,"They drank chicha, splash.",,,CtoRat,14.0,,",TR_OVA,ERG_3PL,TF_yeni-ri"
+ctorat-15,yab, tajne naijpëtiri warë,ta-jne\tnaij-pëti-ri\twarë,3-PL\tdo-PLUR-IPFV\tthus,They did like this.,,,CtoRat,15.0,,",TR_AVX,ERG_3PL,TF_nai-ri"
+ctorat-16,yab, irëjpë tëwï waijtatomo nwajtëri,irëjpë\ttëwï\twaijta-tomo\tnwajtë-ri,then\t3PRO\tmouse-PL\tdance-IPFV,Then the mice were dancing.,,,CtoRat,16.0,,",INTR_LSV"
+ctorat-17,yab, waijtatomo ëjwenakase,waijta-tomo\tëj-wenaka-se,mouse-PL\tDETRZ-vomit-PST,The mice vomited.,,,CtoRat,17.0,,",TR_AV,noERG_NP,TF_wenaka-se"
+ctorat-18,yab, irë wejtane ti,irë\twejtane\tti,DEM\t***\tHSY,But it was like this:,,,CtoRat,18.0,,",fragment"
+ctorat-19,yab, pïrarë ti iwenaru wejsapë,pïrarë\tti\ti-wena-ru\twej-sapë,nothing\tHSY\t3-vomit-PERT\tCOP-PFV,Their vomit was not there.,,,CtoRat,19.0,,",NVP_"
+ctorat-20,yab, wenaru pïrarë,wena-ru\tpïrarë,vomit-PERT\tnothing,There was no vomit.,,,CtoRat,20.0,,",NVP_"
+ctorat-21,yab, ta ti ta tëwï waraijtokomo ya,ta-∅\tti\tta\ttëwï\twaraijtokomo\tya,say-IPFV\tHSY\tlike\t3PRO\tman\tERG,said the man (?).,,,CtoRat,21.0,,",say_VA,ERG_NP,TF_ta-ri"
+ctorat-22,yab, sujtase ti wejsapë,suj-ta-se\tti\twej-sapë,urine-VBZ-PST\tHSY\tCOP-PFV,He urinated.,,,CtoRat,22.0,,",INTR_VH"
+ctorat-23,yab, aaa usukuru morone ta wïrë usujta ta ne,aaa\tu-suku-ru\tmorone\tta\twïrë\tu-suj-ta-∅\tta\tne,***\t1-urine-PERT\thurting\tlike\t1PRO\t1-urine-VBZ-IPFV\tlike\tINTS,"My urine hurts, I will urinate.",,,CtoRat,23.0,,",NVP_,@,INTR_VS"
+ctorat-24,yab, warë sujtase,warë\tsuj-ta-se,thus\turine-VBZ-PST,Then he urinated.,,,CtoRat,24.0,,",INTR_XV"
+ctorat-25,yab, irëjpë ta ti ta konopo wejsarë konopo wejsarë,irëjpë\tta-∅\tti\tta\tkonopo\twej-sarë\tkonopo\twej-sarë,then\tsay-IPFV\tHSY\tlike\train\tCOP-IMN\train\tCOP-IMN,"Then they said: “it’s raining, it’s raining”.",,,CtoRat,25.0,,",say_XVR,ERGØ,TF_ta-ri,;,INTR_SV"
+ctorat-26,yab, ta ti ta waijtatomo ya,ta-∅\tti\tta\twaijta-tomo\tya,say-IPFV\tHSY\tlike\tmouse-PL\tERG,...said the mice.,,,CtoRat,26.0,,","
+ctorat-27,yab, irëjpë pïrarë ti warë irëjpë warë,irëjpë\tpïrarë\tti\twarë\tirëjpë\twarë,then\tnothing\tHSY\tthus\tthen\tthus,Then there was nothing.,,,CtoRat,27.0,,",NVP_"
+ctorat-28,yab, irëjpë tawejka yawë,irëjpë\ttawejka-∅\tyawë,then\tto.daylight-IPFV\tLOC,"Then, in the morning...",,,CtoRat,28.0,,",fragment_"
+ctorat-29,yab, waijtatomojpë ijtëse ti,waijta-tomo-jpë\tij-të-se\tti,mouse-PL-PST\t3-go-PST\tHSY,the mice went away.,,,CtoRat,29.0,,",INTR_SV"
+ctorat-30,yab, tipasekontomo warë irëjpë pïrarë,tipa-se-kontomo\twarë\tirëjpë\tpïrarë,go.in.group-PST-PL\tthus\tthen\tnothing,They left and were gone.,,,CtoRat,30.0,,",INTR_V,@,NVP_"
+ctorat-31,yab, ëjwenakajpë tainpëtiri waraijtokomo tëwï,ëj-wenaka-jpë\tta-in-pëti-ri\twaraijtokomo\ttëwï,DETRZ-vomit-PST\t3P-see-PLUR-IPFV\tman\t3PRO,The man saw their vomit.,,,CtoRat,31.0,,",TR_OVA,noERG_ta,TF_ini-ri"
+ctorat-32,yab, waraijtokomo ya inpëti ti,waraijtokomo\tya\tin-pëti-∅\tti,man\tERG\tsee-PLUR-IPFV\tHSY,He saw it.,,,CtoRat,32.0,,",TR_AV,ERG_NP,TF_ini-ri"
+ctorat-33,yab, irëjpë ti wenakajpë mare pïrarë ti,irëjpë\tti\twenaka-jpë\tmare\tpïrarë\tti,then\tHSY\tvomit-PST\tstill\tnothing\tHSY,Then there was nothing of their vomit.,,,CtoRat,33.0,,",NVP_"
+ctorat-34,yab, ëkëtë mërë ëkï,ëkëtë\tmërë\tëkï,where\tMED.INAN\tmanioc.beer,Where is the chicha?,,,CtoRat,34.0,,",NVP_"
+ctorat-35,yab, ëkï ta rë pïrarë wenarujpë ta rë pïrarë,ëkï\tta\trë\tpïrarë\twena-ru-jpë\tta\trë\tpïrarë,manioc.beer\tlike\tEMP\tnothing\tvomit-PERT-PST\tlike\tEMP\tnothing,The chicha was gone and so was the vomit.,,,CtoRat,35.0,,",NVP_,@,NVP_"
+ctorat-36,yab, ta ti wejsaj ti tëwï,ta-∅\tti\twej-saj\tti\ttëwï,say-IPFV\tHSY\tCOP-PFV\tHSY\t3PRO,...he said.,,,CtoRat,36.0,,",say_VHA,noERG_3,TF_ta-ri"
+ctorat-37,yab, waijtatomo nwajtë mare,waijta-tomo\tnwajtë-∅\tmare,mouse-PL\tdance-IPFV\tstill,The mice were dancing.,,,CtoRat,37.0,,",INTR_SV"
+ctorat-38,yab, ëjtë kërëjpë yawë nwajtëkonton ti wejsapë waijta,ëjtë\tkërëjpë\tyawë\tnwajtë-∅-konton\tti\twej-sapë\twaijta,house\told\tLOC\tdance-IPFV-PL\tHSY\tCOP-PFV\tmouse,In the old house the mice were dancing.,,,CtoRat,38.0,,",INTR_LVHS"
+ctorat-39,yab, sukase nwajtëri irëjpë ti warë,sukase\tnwajtë-ri\tirëjpë\tti\twarë,all\tdance-IPFV\tthen\tHSY\tthus,"They were all dancing, then.",,,CtoRat,39.0,,",INTR_NVX"
+ctorat-40,yab, tipapëjsejne waijtajne,tipa-pëj-se-jne\twaijta-jne,go.in.group-PLUR-PST-PL\tmouse-PL,the mice went away.,,,CtoRat,40.0,,",INTR_VS"
+ctorat-41,yab, ajpachi yaka pïnika ëkëjna neke wonse,ajpachi\tyaka\tpïnika\tëkëjna\tneke\twon-se,undergrowth\tALL\tPROB\twhere.to\tCONTRAST\tenter-PST,"Probably to the woods, dunno where they went.",,,CtoRat,41.0,,",INTR_LV"
+ctorat-42,yab, tëwï ajpachi yaka wonse pïnika tëwï,tëwï\tajpachi\tyaka\twon-se\tpïnika\ttëwï,3PRO\tundergrowth\tALL\tenter-PST\tPROB\t3PRO,Maybe they went to the woods.,,,CtoRat,42.0,,",REPEAT_S,@,INTR_SLVS"
+ctorat-43,yab, tëwï ma tase makë ya,tëwï\tma\tta-se\tmakë\tya,3PRO\tRST\tsay-PST\tmother\tERG,That’s what my mother said.,,,CtoRat,43.0,,","
+ctorat-44,yab, tawara ma ta ti wejsapë tëwï waraijtokon maniki,tawara\tma\tta-∅\tti\twej-sapë\ttëwï\twaraijtokon\tmaniki,too\tRST\tsay-IPFV\tHSY\tCOP-PFV\t3PRO\tman\t?,That’s all she said.,,,CtoRat,44.0,,",say_XVHA,noERG_3,TF_ta-ri-H-sapë"
+ctorat-45,yab, irëjpë ijtëse,irëjpë\tij-të-se,then\t3-go-PST,Then the man went.,,,CtoRat,45.0,,",INTR_SXV"
+ctorat-46,yab, tïwïj yaka waraijtokomo manikijpë,t-ïwïj\tyaka\twaraijtokomo\tmaniki-jpë,3-house\tALL\tman\t?-PST,He went to his house.,,,CtoRat,46.0,,",fragment_"
+ctoaragrme-40,yab, tayakïjtëja pïnika wejsapë,tayakïjtëja\tpïnika\twej-sapë,***\tPROB\tCOP-PFV,tal vez no se acostó con ella,,,,40.0,,","
+convrisamaj-01,yab," ati rë warai mërë iniri, irëjpë mëyarika ti",ati\trë\twarai\tmërë\tini-ri\tirëjpë\tmë-yarika-∅\tti,what\tEMP\tlike\t2PRO\tsee-IPFV\tthen\t2-laugh-IPFV\tHSY,You see something and then you laugh.,,,ConvRisaMAJ,1.0,,","
+convrisamaj-02,yab," mëyaruwari, mëpëkëpene",më-yaruwa-ri\tmë-pëkëpene,2-laugh-IPFV\t2-alone,You just laugh.,,,ConvRisaMAJ,2.0,,","
+convrisamaj-03,yab," ejnë pëkëpene ejnë yaruwaja, ënka wanene",ejnë\tpëkëpene\tejnë\tyaruwa-∅-ja\tënka\twanene,1+2PRO\talone\t1+2PRO\tlaugh-IPFV-NEG\tright\taunt,"We don’t just laugh, right, aunt?",,,ConvRisaMAJ,3.0,,","
+convrisamaj-04,yab, wïrë yaruwarijra###,wïrë\tyaruwa-ri-jra,1PRO\tlaugh-IPFV-NEG,I don’t laugh.,,,ConvRisaMAJ,4.0,,","
+convrisamaj-05,yab," ejnë yaruwari tajne yakarama pëkë rë nwarë, nope esene mare, tawara neke ne, ënka",ejnë\tyaruwa-ri\tta-jne\tyakarama-∅\tpëkë\trë\tnwarë\tnope\tesene-∅\tmare\ttawara\tneke\tne\tënka,1+2PRO\tlaugh-IPFV\t3-PL\ttell-IPFV\ton.surface\tEMP\tthus\tgood\tsee.self-IPFV\tREL.INAN\ttoo\tCONTRAST\tINTS\tright,"We laugh when somebody tells (us) something, something you see well, like that, right.",,,ConvRisaMAJ,5.0,,","
+convrisamaj-06,yab,¿ kwase ejnë yaruwari?,kwase\tejnë\tyaruwa-ri,how\t1+2PRO\tlaugh-IPFV,How will we laugh?,,,ConvRisaMAJ,6.0,,","
+convrisamaj-07,yab," wïrë yaruwakempïnirë, mëkïsantomo a-ja-ja tajtane",wïrë\tyaruwakempïnirë\tmëkïsantomo\tajaja\ttaj-tane,1PRO\t***\tDIST.ANIM.PL\thahaha\tsay-CNCS,"I don’t laugh, but they are saying “hahaha”.",,,ConvRisaMAJ,7.0,,","
+convrisamaj-08,yab,"¡ kï%¡¿ mokontomo serekapojra ka mokontomo yaruwari%¿ wïrë yaruwarijra taro wïrë, ta ta wïrë ya",kï\tmokontomo\tsereka-po-jra\tka\tmokontomo\tyaruwa-ri\twïrë\tyaruwa-ri-jra\ttaro-∅\twïrë\tta-∅\tta\twïrë\tya,oh\t2PL.PRO\ttire-DES-NEG\tQ\t2PL.PRO\tlaugh-IPFV\t1PRO\tlaugh-IPFV-NEG\tsay-IPFV\t1PRO\tsay-IPFV\tlike\t1PRO\tERG,"Oh! You don’t get tired of laughing? I don’t laugh, is what I’m saying.",,,ConvRisaMAJ,8.0,,","
+convrisamaj-09,yab," tëwï neke ne, tajne yakarama pokono nwarë tajne iri mïntë, tunampe",tëwï\tneke\tne\tta-jne\tyakarama-∅\tpoko-no\tnwarë\tta-jne\ti-ri\tmïntë\ttunam-pe,3PRO\tCONTRAST\tINTS\t3-PL\ttell-IPFV\ton.surface-NMLZ\tthus\t3-PL\tdo-IPFV\tthere.LOC\thide-ESS,"Yes indeed, they tell what they are doing there on the down-low.",,,ConvRisaMAJ,9.0,,","
+convrisamaj-10,yab," tajne yarikari irëjpë, tajne yakarama pokono",ta-jne\tyarika-ri\tirëjpë\tta-jne\tyakarama-∅\tpoko-no,3-PL\tlaugh-IPFV\tthen\t3-PL\ttell-IPFV\ton.surface-NMLZ,They laugh because they tell it.,,,ConvRisaMAJ,10.0,,","
+convrisamaj-11,yab," tawaja ejnë, ejnë neke ne, ejnë pëkëpene ejnë yarikaja",tawa-ja\tejnë\tejnë\tneke\tne\tejnë\tpëkëpene\tejnë\tyarika-∅-ja,too-NEG\t1+2PRO\t1+2PRO\tCONTRAST\tINTS\t1+2PRO\talone\t1+2PRO\tlaugh-IPFV-NEG,"We’re not like that, we don’t just laugh.",,,ConvRisaMAJ,11.0,,","
+convrisamaj-12,yab,¿ ati ejnë yaruwari?,ati\tejnë\tyaruwa-ri,what\t1+2PRO\tlaugh-IPFV,What are we going to laugh about?,,,ConvRisaMAJ,12.0,,","
+convrisamaj-13,yab," pïrarë, seneja ejnë yarikatopo",pïrarë\tsene-∅-ja\tejnë\tyarika-topo,nothing\tsee.self-IPFV-NEG\t1+2PRO\tlaugh-CIRC.NMLZ,"Nothing, there’s nothing for us to laugh.",,,ConvRisaMAJ,13.0,,","
+convrisamaj-14,yab, nwarë ti ta ta,nwarë\tti\tta-∅\tta,thus\tHSY\tsay-IPFV\tlike,That’s what I say.,,,ConvRisaMAJ,14.0,,","
+convrisamaj-15,yab, taitapo ti,ta-ita-po\tti,3P-hear-DES\tHSY,I want to hear it.,,,ConvRisaMAJ,15.0,,","
+convrisamaj-16,yab,¿ ati ta ta?,ati\tta-∅\tta,what\tsay-IPFV\tlike,What are you saying?,,,ConvRisaMAJ,16.0,,","
+convrisamaj-17,yab, chiri ma wïrë taro,chi-ri\tma\twïrë\ttaro-∅,COP-IPFV\tRST\t1PRO\tsay-IPFV,That’s all I’m saying.,,,ConvRisaMAJ,17.0,,","
+convrisamaj-18,yab," tawarama taro wïrë, wïrë yewenke",tawara=ma\ttaro-∅\twïrë\twïrë\ty-ewenke,too=RESTR\tsay-IPFV\t1PRO\t1PRO\tLK-not.know,"That’s all I’m saying, too, I don’t know.",,,ConvRisaMAJ,18.0,,","
+convrisamaj-19,yab,¿ ati pëkë ejnë yaruwari?,ati\tpëkë\tejnë\tyaruwa-ri,what\ton.surface\t1+2PRO\tlaugh-IPFV,What are we going to laugh about?,,,ConvRisaMAJ,19.0,,","
+convrisamaj-20,yab,### yaruwakempïnirë wïrë,yaruwakempïnirë\twïrë,***\t1PRO,I don’t laugh.,,,ConvRisaMAJ,20.0,,","
+convrisamaj-21,yab," wïrë yaruwakempïnirë wïrë senejkarï uyïwïj yaka sukuri, jwama",wïrë\tyaruwakempïnirë\twïrë\tsenejka-rï\tu-y-ïwïj\tyaka\tsuku-ri\tjwama,1PRO\t***\t1PRO\tremain-IPFV\t1-LK-house\tALL\turine-PERT\t***,"I don’t laugh, I silently stay in my house.",,,ConvRisaMAJ,21.0,,","
+convrisamaj-22,yab, mëkïsantomo yaruwari wïrë itari,mëkïsantomo\tyaruwa-ri\twïrë\tita-ri,DIST.ANIM.PL\tlaugh-IPFV\t1PRO\thear-IPFV,They’re laughing and I’m listening.,,,ConvRisaMAJ,22.0,,","
+convrisamaj-23,yab," kï, serekapojra ka mokontomo yaruwari",kï\tsereka-po-jra\tka\tmokontomo\tyaruwa-ri,oh\ttire-DES-NEG\tQ\t2PL.PRO\tlaugh-IPFV,"Ugh, don’t you get tired from laughing so much?",,,ConvRisaMAJ,23.0,,","
+convrisamaj-24,yab, wïrë wajyakïtïjra taro wïrë ta wïrë ya,wïrë\twajyakïtï-jra\ttaro-∅\twïrë\tta-∅\twïrë\tya,1PRO\tvery.happy-PRIV\tsay-IPFV\t1PRO\tsay-IPFV\t1PRO\tERG,I’m saying I am not happy.,,,ConvRisaMAJ,24.0,,","
+convrisamaj-25,yab, kajkë,kaj-kë,say-IMP,You’re right.,,,ConvRisaMAJ,25.0,,","
+convrisamaj-26,yab,### ta wejsaj wïrë,ta-∅\twej-saj\twïrë,say-IPFV\tCOP-PFV\t1PRO,### I say.,,,ConvRisaMAJ,26.0,,","
+convrisamaj-27,yab," tawaraij wïrë, yaruwakempïnirë,",tawaraij\twïrë\tyaruwakempïnirë,too\t1PRO\t***,"I’m not like that, I don’t laugh.",,,ConvRisaMAJ,27.0,,","
+convrisamaj-28,yab, uyïwïj yawë usenejkari sukuri jwama,u-y-ïwïj\tyawë\tu-senejka-ri\tsuku-ri\tjwama,1-LK-house\tLOC\t1-remain-IPFV\turine-PERT\t***,I silently stay in my house.,,,ConvRisaMAJ,28.0,,","
+convrisamaj-29,yab, nope seneja chipokono ejnë pana nope seneja chipokono ejnë yaruwatopo pïrärë,nope\tsene-∅-ja\tchipokono\tejnë\tpana\tnope\tsene-∅-ja\tchipokono\tejnë\tyaruwa-topo\tpïrärë,good\tsee.self-IPFV-NEG\t***\t1+2PRO\tDAT\tgood\tsee.self-IPFV-NEG\t***\t1+2PRO\tlaugh-CIRC.NMLZ\t***,"We don’t see anything good, so we don’t laugh.",,,ConvRisaMAJ,29.0,,","
+convrisamaj-30,yab," inkë, irë nwa chipëkë",in-kë\tirë\tnwa\tchipëkë,see-IMP\tDEM\tdance\t***,"You see, that’s why.",,,ConvRisaMAJ,30.0,,","
+convrisamaj-31,yab, mërë nwa chipokono ejnë yarikaja,mërë\tnwa\tchipokono\tejnë\tyarika-∅-ja,MED.INAN\tdance\t***\t1+2PRO\tlaugh-IPFV-NEG,That’s why we don’t laugh.,,,ConvRisaMAJ,31.0,,","
+convrisamaj-32,yab, tëwïsantomo neke ne yaruwatëpëkë ma rë chikontomo,tëwïsantomo\tneke\tne\tyaruwa-tëpëkë\tma\trë\tchi-∅-kontomo,3PRO.PL\tCONTRAST\tINTS\tlaugh-PROG.INTR\tRST\tEMP\tCOP-IPFV-PL,But they’re constantly laughing.,,,ConvRisaMAJ,32.0,,","
+convrisamaj-33,yab, tajne ini pokono waimukontomo,ta-jne\tini-∅\tpoko-no\twaimu-∅-kontomo,3-PL\tsee-IPFV\ton.surface-NMLZ\ttalk-IPFV-PL,Because they see they laugh.,,,ConvRisaMAJ,33.0,,","
+convrisamaj-34,yab," tajne ya ijpë mare tëwï, tajne ya yekerema pïnika ta wïrë",ta-jne\tya\ti-jpë\tmare\ttëwï\tta-jne\tya\tyekerema\tpïnika\tta-∅\twïrë,3-PL\tERG\tdo-PST\tREL.INAN\t3PRO\t3-PL\tERG\t***\tPROB\tsay-IPFV\t1PRO,"What they did, they’re going to tell.",,,ConvRisaMAJ,34.0,,","
+convrisamaj-35,yab," pïnika, pïnika, tawara chipokon pïnika yaruwakontomo",pïnika\tpïnika\ttawara\tchipokon\tpïnika\tyaruwa-∅-kontomo,PROB\tPROB\ttoo\t***\tPROB\tlaugh-IPFV-PL,So that’s why they’re laughing.,,,ConvRisaMAJ,35.0,,","
+convrisamaj-36,yab, taro mare wïrë ya,taro-∅\tmare\twïrë\tya,say-IPFV\tstill\t1PRO\tERG,yo no sé nada pero digo así,,,ConvRisaMAJ,36.0,,","
+convrisamaj-37,yab, nwa ma pïnika ta wïrë ya,nwa\tma\tpïnika\tta-∅\twïrë\tya,dance\tRST\tPROB\tsay-IPFV\t1PRO\tERG,So I won’t say any more.,,,ConvRisaMAJ,37.0,,","
+convrisamaj-38,yab, tejpore sa ne yaruwakontomo,tejpore\tsa\tne\tyaruwa-∅-kontomo,tasty\tEVAL\tINTS\tlaugh-IPFV-PL,They like laughing.,,,ConvRisaMAJ,38.0,,","
+convrisamaj-40,yab, tawarama wïrë itari onono parë,tawara=ma\twïrë\tita-ri\tonono\tparë,too=RESTR\t1PRO\thear-IPFV\tanother\tand,I also listened some times.,,,ConvRisaMAJ,40.0,,","
+convrisamaj-42,yab, yaruwakontomo yatum ponoko,yaruwa-∅-kontomo\tyatum\tponoko,laugh-IPFV-PL\tsun\tevery,They laugh every day.,,,ConvRisaMAJ,42.0,,","
+convrisamaj-43,yab, ta takontomo,ta\tta-∅-kontomo,like\tsay-IPFV-PL,That’s what they say (?),,,ConvRisaMAJ,43.0,,","
+convrisamaj-44,yab, wïrë inija ta rë,wïrë\tini-∅-ja\tta\trë,1PRO\tsee-IPFV-NEG\tlike\tEMP,I haven’t seen.,,,ConvRisaMAJ,44.0,,","
+convrisamaj-45,yab,"¡ kë%¡ mokontomo wajyakïtï ta, wïrë wajyakïtïjra taro wïrë ta wïrë ya",kë\tmokontomo\twajyakïtï\tta-∅\twïrë\twajyakïtï-jra\ttaro-∅\twïrë\tta-∅\twïrë\tya,ouch\t2PL.PRO\tvery.happy\tsay-IPFV\t1PRO\tvery.happy-PRIV\tsay-IPFV\t1PRO\tsay-IPFV\t1PRO\tERG,"Ugh, you are happy but I am not, I say.",,,ConvRisaMAJ,45.0,,","
+convrisamaj-46,yab, uyarë wïrë përemekïrï,u-ya=rë\twïrë\tpëremekï-rï,1-ERG=EMP\t1PRO\ttalk-IPFV,I just talk.,,,ConvRisaMAJ,46.0,,","
+convrisamaj-47,yab," aniki narëpe yakërë ejnë përemekïrï, ejnë pëkëpene, wanene",aniki\tnarëpe\tyakërë\tejnë\tpëremekï-rï\tejnë\tpëkëpene\twanene,who\t***\t***\t1+2PRO\ttalk-IPFV\t1+2PRO\talone\taunt,"Who are we gonna talk to? We’re alone, aunt.",,,ConvRisaMAJ,47.0,,","
+convrisamaj-48,yab, pïrarë ejnë chiyakon chipokono ejnë yaruwatopo pïrarë,pïrarë\tejnë\tchiyakon\tchipokono\tejnë\tyaruwa-topo\tpïrarë,nothing\t1+2PRO\tfriend\t***\t1+2PRO\tlaugh-CIRC.NMLZ\tnothing,Because we don’t have friends we don’t have anything to laugh.,,,ConvRisaMAJ,48.0,,","
+convrisamaj-49,yab, inkë,in-kë,see-IMP,That’s right!,,,ConvRisaMAJ,49.0,,","
+convrisamaj-50,yab," ejnë pëkëpene ejnë chi yawë, ejnë yarikaja",ejnë\tpëkëpene\tejnë\tchi-∅\tyawë\tejnë\tyarika-∅-ja,1+2PRO\talone\t1+2PRO\tCOP-IPFV\tLOC\t1+2PRO\tlaugh-IPFV-NEG,"When we’re alone, we don’t laugh.",,,ConvRisaMAJ,50.0,,","
+convrisamaj-51,yab,¿ ati ejnë yarikari%¿ pïrarë,ati\tejnë\tyarika-ri\tpïrarë,what\t1+2PRO\tlaugh-IPFV\tnothing,What are we going to laugh about? Nothing.,,,ConvRisaMAJ,51.0,,","
+convrisamaj-52,yab,¡ tari%¡ yarikasemïjra,ta-ri\tyarikasemïjra,say-IPFV\t***,"Oh, there’s nothing to laugh about.",,,ConvRisaMAJ,52.0,,","
+convrisamaj-53,yab, nwa ma ta wïrë ya,nwa\tma\tta-∅\twïrë\tya,thus\tRST\tsay-IPFV\t1PRO\tERG,That’s all I’m saying.,,,ConvRisaMAJ,53.0,,","
+convrisamaj-54,yab, pïrarë,pïrarë,nothing,Nothing.,,,ConvRisaMAJ,54.0,,","
+ctoaragrme-38,yab, irë wejtane mujyampe patakaja wejsapë,irë\twej-tane\tmujyampe\tpatakaja\twej-sapë,DEM\tCOP-CNCS\t***\t***\tCOP-PFV,a pesar de eso no salió embarazada,,,,38.0,,","
+ctoaragrme-39,yab, apatakaja pïnïka wejsapë,apatakaja\tpïnïka\twej-sapë,***\tPROB\tCOP-PFV,tal vez no salió (embarazada),,,,39.0,,","
+676f9d00-be36-4f53-9745-4fe5460acd82-0-1,yab,anajmori,a-najmo-ri,2-grandmother-PERT,tu abuela,,,,,muller2021yawarana,","
+ff077ddb-2933-477b-9470-5ba443b72fdf-0-1,yab,anajpïri,a-najpï-ri,2-grandfather-PERT,tu abuelo,,,,,muller2021yawarana,","
+676f9d00-be36-4f53-9745-4fe5460acd82-0-0,yab,unajmori,u-najmo-ri,1-grandmother-PERT,mi abuela,,,,,muller2021yawarana,","
+ff077ddb-2933-477b-9470-5ba443b72fdf-0-0,yab,unajpïri,u-najpï-ri,1-grandfather-PERT,mi abuelo,,,,,muller2021yawarana,","
+anfoperso-01,yab, wïrë tawara rë entë,wïrë\ttawara\trë\tentë,1PRO\ttoo\tEMP\there.LOC,I was here (in San Juan Manapiare).,,,HistAnFo,1.0,,",NVP_SXP"
+anfoperso-02,yab," ana këyetajpë, intipijkë ana chi yawë",ana\tkëyeta-jpë\tintipijkë\tana\tchi-∅\tyawë,1+3PRO\tgrow.up-PST\tsmall\t1+3PRO\tCOP-IPFV\tLOC,We grew up when we were small.,,,HistAnFo,2.0,,",INTR_SV,;,COP_PSV"
+anfoperso-03,yab, ana yïmï sëmajpë pe,ana\ty-ïmï\tsëmajpë\tpe,1+3PRO\tLK-father\t***\tESS,When my father died.,,,HistAnFo,3.0,,",INTRsub_SV"
+anfoperso-04,yab," ana këyetase papa kampra ya, ana yoti wejsapë yojtë ta sukase aroma warai, yakuri warai yojtë wejsaj ta",ana\tkëyeta-se\tpapa\tkampra\tya\tana\ty-oti\twej-sapë\tyojtë-∅\tta\tsukase\taroma\twarai\tyakuri\twarai\tyojtë-∅\twej-saj\tta,1+3PRO\tgrow.up-PST\tfather\tbig\tERG\t1+3PRO\tLK-game.food\tCOP-PFV\tfish.with.hook-IPFV\tlike\tall\tlimpet\tlike\tagouti\tlike\tfish.with.hook-IPFV\tCOP-PFV\tlike,"We grew up, my uncle fished all of our food, lapa, picure.",,,HistAnFo,4.0,,",INTR_SV,;,TR_AOHVX,ERG_NP,TF_yojtë-ri-H-sapë,;,TR_OVH,ERGØ,TF_yojtë-ri-H-sapë"
+anfoperso-05,yab," papa kampra ya, makampra ya ta wejsaj ta, maijtë kaimotata, mukuton yomiri",papa\tkampra\tya\tmakampra\tya\tta-∅\twej-saj\tta\tmaijtë\tkaimo-ta-ta\tmuku-ton\tyomiri,father\tbig\tOBL\tolder.sister.of.mother\tERG\tsay-IPFV\tCOP-PFV\tlike\tgo.IMP\tgame-VBZ-MOTIMP\tchild-PL\t***,"My aunt was saying to my uncle: “go hunt, the children are hungry”.",,,HistAnFo,5.0,,",say_DAVHR,ERG_NP,TF_ta-ri-H-sapë,;,notERG_NPdat,;,IMP_,;,CONFUSING_"
+anfoperso-06,yab," asamori ta wejsaj ta, irë makë ta wejsapë",asamo-ri\tta-∅\twej-saj\tta-∅\tirë\tmakë\tta\twej-sapë,cry-IPFV\tsay-IPFV\tCOP-PFV\tsay-IPFV\tDEM\tmother\tlike\tCOP-PFV,My aunt said “they are crying”.,,,HistAnFo,6.0,,",INTR_V,;,say_RVH,ERGØ,TF_ta-ri-H-sapë,;,say_TAVH,noERG_NP,TF_ta-ri-H-sapë"
+anfoperso-07,yab," pachi, kërë takï yëmi pïnirë",pachi\tkërë\ttakï\tyëmi\tpïnirë,older.sister.of.woman\tPROX.ANIM\tCONF\t***\tnothing,"“Sister, she’s not hungry”",,,HistAnFo,7.0,,",CONFUSING_"
+anfoperso-08,yab, asamorijra asamori muku,asamo-ri-jra\tasamo-ri\tmuku,cry-IPFV-NEG\tcry-IPFV\tchild,So the children don’t cry anymore.,,,HistAnFo,8.0,,"rijrari,INTRsub_V,;,INTR_XVS"
+anfoperso-09,yab," tejetum pïnika, ta wejsaj ta makë ya, makë pano ya",tejetum\tpïnika\tta-∅\twej-saj\tta\tmakë\tya\tmakë\tpano\tya,sick\tPROB\tsay-IPFV\tCOP-PFV\tlike\tmother\tERG\tmother\tdeceased\tERG,My mother said “maybe (s)he’s ill” (?),,,HistAnFo,9.0,,",NVP_N,;,say_VHA,ERG_NP,TF_ta-ri-H-sapë"
+anfoperso-10,yab," sukase ta wejsaj ta, irëjpë papa kampra ijtëri",sukase\tta-∅\twej-saj\tta\tirëjpë\tpapa\tkampra\tij-të-ri,all\tsay-IPFV\tCOP-PFV\tlike\tthen\tfather\tbig\t3-go-IPFV,"All said, then my uncle went.",,,HistAnFo,10.0,,",say_XVH,ERGØ,TF_ta-ri-H-sapë,;,INTR_XSV"
+anfoperso-11,yab, ipakuri yakërë,i-pakuri\ty-akërë,3-arrow.tip\tLK-with,con su flecha,,,HistAnFo,11.0,,",PP_"
+anfoperso-12,yab," irëjpë sakara nepï wejsaj ta, irëjpë michi",irëjpë\tsakara\tnepï\twej-saj\tta\tirëjpë\tmichi,then\thoplias.malabaricus\t***\tCOP-PFV\tlike\tthen\tMED.ANIM,"traía guabina, después (decía) aquí está",,,HistAnFo,12.0,,",TR_XOVH,ERGØ,TF_nepï-ri,;,PRES_"
+anfoperso-13,yab, yakono ijmojkakë mukuton yoti ta wejsaj ta,yakono\tijmojka-kë\tmuku-ton\ty-oti\tta-∅\twej-saj\tta,younger.sister.of.woman\tcook-IMP\tchild-PL\tLK-game.food\tsay-IPFV\tCOP-PFV\tlike,"después dice, hermana cocina para que coman los niños",,,HistAnFo,13.0,,",IMP_NVO,;,say_RVH,ERGØ,TF_ta-ri-H-sapë"
+anfoperso-14,yab," makampra ya, makë pana",makampra\tya\tmakë\tpana,older.sister.of.mother\tERG\tmother\tDAT,mi tía dijo pa mi mamá,,,HistAnFo,14.0,,",ERG_NP,DAT_NP"
+anfoperso-15,yab, irë makë ya ijmojka wejsapë,irë\tmakë\tya\tijmojka-∅\twej-sapë,DEM\tmother\tERG\tcook-IPFV\tCOP-PFV,después mi mamá estaba cocinando,,,HistAnFo,15.0,,",TR_XAVH,ERG_NP,TF_ijmojla-ri-H-sapë"
+anfoperso-16,yab," ana yoti, ana serematojpe",ana\ty-oti\tana\ts-erema-tojpe,1+3PRO\tLK-game.food\t1+3PRO\tDETRZ-feed-FUT,"nuestra comida, para comer",,,HistAnFo,16.0,,",NP_,;,INTRsub_SV"
+anfoperso-17,yab," tawara ma ana këyetajpë, ana papa pan patajpë të",tawara\tma\tana\tkëyeta-jpë\tana\tpapa\tpan\tpata-jpë\ttë,too\tRST\t1+3PRO\tgrow.up-PST\t1+3PRO\tfather\tdeceased\tvillage-PST\tLOC,así nos criamos después de que se murió mi papá en su pueblo,,,HistAnFo,17.0,,",INTR_XSVX"
+anfoperso-18,yab, papa pano sëmasaj yawë,papa\tpano\tsëmasaj\tyawë,father\tdeceased\t***\tLOC,porque se murió mi papá,,,HistAnFo,18.0,,",INTRsub_SV"
+anfoperso-19,yab, irë ana këyetase tawara ma,irë\tana\tkëyeta-se\ttawara\tma,DEM\t1+3PRO\tgrow.up-PST\ttoo\tRST,nosotros nos críamos así mismo,,,HistAnFo,19.0,,",INTR_XSVX"
+anfoperso-20,yab," sukase ana këyetase pipi yakërë, ana këyetase intipijkë ana chawë",sukase\tana\tkëyeta-se\tpipi\ty-akërë\tana\tkëyeta-se\tintipijkë\tana\tchawë,all\t1+3PRO\tgrow.up-PST\tyounger.brother.of.woman\tLK-with\t1+3PRO\tgrow.up-PST\tsmall\t1+3PRO\t***,con mi hermanito,,,HistAnFo,20.0,,",INTR_XSVW,;,INTR_SV,;,COP_PSC"
+anfoperso-21,yab, ana këyetase makampra ya,ana\tkëyeta-se\tmakampra\tya,1+3PRO\tgrow.up-PST\tolder.sister.of.mother\tOBL,nosotros nos criamos con mi tía,,,HistAnFo,21.0,,",INTR_SVW,;,notERG_withNP"
+anfoperso-22,yab," tëwï ya papa kampra pana tase ta, kaimotata",tëwï\tya\tpapa\tkampra\tpana\tta-se\tta\tkaimo-ta-ta,3PRO\tERG\tfather\tbig\tDAT\tsay-PST\tlike\tgame-VBZ-MOTIMP,"pa mi tío dijo, vaya a cazar",,,HistAnFo,22.0,,",notERG_NPfragment,;,IMP_Vi"
+anfoperso-23,yab, yomiri mukutomo,yomiri\tmuku-tomo,***\tchild-PL,tienen hambre los niños,,,HistAnFo,23.0,,",CONFUSING_"
+anfoperso-24,yab, asamo mare tapëkë ijtëri weroro yarë ta yakuri këjmatojpe,asamo-∅\tmare\ttapëkë\tij-të-ri\tweroro\tya=rë\tta\tyakuri\tkëjma-tojpe,cry-IPFV\tstill\t***\t3-go-IPFV\tdog\tERG=EMP\tlike\tagouti\thunt-FUT,porque estaban llorando iba llevando los perros para que cazaran picure,,,HistAnFo,24.0,,",CONFUSING_"
+anfoperso-25,yab, irë yakuri,irë\tyakuri,DEM\tagouti,,,,HistAnFo,25.0,,",NP_"
+anfoperso-26,yab, taturu makampra ya ana yoti,ta-tu-ru\tmakampra\tya\tana\ty-oti,3P-give-IPFV\tolder.sister.of.mother\tERG\t1+3PRO\tLK-game.food,mi tía lo da comida de nosotros,,,HistAnFo,26.0,,",TR_VAO,ERG_NPta,TF_tu-ri"
+anfoperso-27,yab, ijmokatojpe,ijmoka-tojpe,cook-FUT,para cocinar,,,HistAnFo,27.0,,",TRsub_V"
+anfoperso-28,yab, irëjpë makë ya ijmojka wejsapë,irëjpë\tmakë\tya\tijmojka-∅\twej-sapë,then\tmother\tERG\tcook-IPFV\tCOP-PFV,después mi mamá estaba cocinando,,,HistAnFo,28.0,,",TR_XAVH,ERG_NP,TF_ijmoka-ri-H-sapë"
+anfoperso-29,yab," ana yoti, yakuri",ana\ty-oti\tyakuri,1+3PRO\tLK-game.food\tagouti,"nuestra comida, el picure",,,HistAnFo,29.0,,",NP_"
+anfoperso-30,yab, makampra ya tujpë,makampra\tya\ttu-jpë,older.sister.of.mother\tERG\tgive-PST,lo que mi tía le dió,,,HistAnFo,30.0,,",TRsub_AV,ERG_NP,TF_tu-jpë"
+anfoperso-31,yab," sukase tawara ma ana këyatajpë, onono pëkë",sukase\ttawara\tma\tana\tkëyata-jpë\tonono\tpëkë,all\ttoo\tRST\t1+3PRO\tgrow.up-PST\tanother\ton.surface,"toditos nos críamos así, de otra manera",,,HistAnFo,31.0,,",INTR_XSV"
+anfoperso-32,yab, kïmïi ma yeme ana ya,kïmïi\tma\tyeme-∅\tana\tya,"chili\tRST\teat.(fruits,.eggs,.soup)-IPFV\t1+3PRO\tERG",nosotros estábamos comiendo puro ají,,,HistAnFo,32.0,,",TR_OVA,ERG_ana,TF_yeme-ri"
+anfoperso-33,yab," sere yokïrï, irëjpë sukutaka yeni ana ya",s-ere-∅\tyokï-rï\tirëjpë\tsukutaka\tyeni-∅\tana\tya,DETRZ-scare-IPFV\teat.(starch)-IPFV\tthen\tyucuta\tdrink-IPFV\t1+3PRO\tERG,"comiendo casabe, después tomabamos yucuta",,,HistAnFo,33.0,,",no_AUX,@,TR_OV,ERGØ,TF_yokï-ri,;,TR_XOVA,ERG_ana,TF_yeni-ri"
+anfoperso-34,yab," tëwï kïmïi yemetïkene, ana yeni wejsapë sukutaka ma",tëwï\tkïmïi\tyeme-tïkene\tana\tyeni-∅\twej-sapë\tsukutaka\tma,"3PRO\tchili\teat.(fruits,.eggs,.soup)-POST\t1+3PRO\tdrink-IPFV\tCOP-PFV\tyucuta\tRST","después de que comemos ají, tomamos yucuta",,,HistAnFo,34.0,,",TRsub_OV,ERGØ,TF_yeme-tïkene,;,TR_AVHO,noERG_ana,TF_yeni-ri-H-sapë"
+anfoperso-35,yab, nwarë ana këyatajpë ana,nwarë\tana\tkëyata-jpë\tana,thus\t1+3PRO\tgrow.up-PST\t1+3PRO,así nos criamos nosotros,,,HistAnFo,35.0,,",REPEAT_ana,;,INTR_XSVR"
+anfoperso-36,yab, irëjpë rë neke n ti,irëjpë\trë\tneke\tn\tti,then\tEMP\tCONTRAST\tINTS\tHSY,después sí,,,HistAnFo,36.0,,",ADV_"
+anfoperso-37,yab, makë sepanse,makë\tsepan-se,mother\tmarry-PST,mi mamá se casó,,,HistAnFo,37.0,,",INTR_SV"
+anfoperso-38,yab, Rafa Perez pan yakërë,rafa\tperez\tpan\ty-akërë,Rafel\tPérez\tdeceased\tLK-with,con el finado Rafel Pérez,,,HistAnFo,38.0,,",PP_W"
+anfoperso-39,yab," irëjpë, tëwï yakërë, ana këyatase",irëjpë\ttëwï\ty-akërë\tana\tkëyata-se,then\t3PRO\tLK-with\t1+3PRO\tgrow.up-PST,despúes con él nos criamos,,,HistAnFo,39.0,,",INTR_XWSV"
+anfoperso-40,yab," yatampe ana tëse, pipi tawara rë waraijtokompe ijtëse",yatampe\tana\ttë-se\tpipi\ttawara\trë\twaraijtokompe\tij-të-se,***\t1+3PRO\tgo-PST\tyounger.brother.of.woman\ttoo\tEMP\t***\t3-go-PST,"nos volvimos muchachos, mi hermano también se volvió hombre",,,HistAnFo,40.0,,",ESSIVE_become,;,INTR_XSV,;,INTR_SXV"
+anfoperso-41,yab, ana këyatase tëwï yakërë,ana\tkëyata-se\ttëwï\ty-akërë,1+3PRO\tgrow.up-PST\t3PRO\tLK-with,nos criamos con él,,,HistAnFo,41.0,,",INTR_SVW"
+anfoperso-42,yab, ana padrastro yakërë,ana\tpadrastro\ty-akërë,1+3PRO\tpadrastro\tLK-with,con nuestro padrastro,,,HistAnFo,42.0,,",PP_with"
+anfoperso-43,yab, tëwï ya ana këyamase,tëwï\tya\tana\tkëyama-se,3PRO\tERG\t1+3PRO\tcreate-PST,el nos crio,,,HistAnFo,43.0,,",TR_AOV,notERG_exclO,TF_këyama-se"
+anfoperso-44,yab, muku wëra ana këyamase ta,muku\twëra\tana\tkëyama-se\tta,child\tlike\t1+3PRO\tcreate-PST\tlike,"como a sus hijos nos crió a nosotros, pues",,,HistAnFo,44.0,,",ESSIVE_wëra,;,TR_XOV,ERGØ,TF_këyama-se"
+anfoperso-45,yab, nopano wejsaj ta waraijtokomo,nopano\twej-saj\tta\twaraijtokomo,***\tCOP-PFV\tlike\tman,ese hombre era bueno,,,HistAnFo,45.0,,",COP_PVS,PCF_AdNzd"
+anfoperso-46,yab," ana tapaja ta, ana këyatase nope",ana\ttapa-∅-ja\tta\tana\tkëyata-se\tnope,1+3PRO\tbeat-IPFV-NEG\tlike\t1+3PRO\tgrow.up-PST\tgood,"ese no pegaba nada, nosotros nos criamos bien",,,HistAnFo,46.0,,",TR_OV,ERGØ,TF_tapa-ja,;,INTR_SVX"
+anfoperso-47,yab," tëwï waraijtokon yakërë, ana këyamase ta wejsapë",tëwï\twaraijtokon\ty-akërë\tana\tkëyama-se\tta\twej-sapë,3PRO\tman\tLK-with\t1+3PRO\tcreate-PST\tlike\tCOP-PFV,con ese hombre nos crio,,,HistAnFo,47.0,,",TR_WOVH,ERGØ,TF_këyama-se-H-sapë"
+anfoperso-48,yab, takërë ana wejsapë ïmparëjra,ta-kë=rë\tana\twej-sapë\tïmparëjra,say-IMP=EMP\t1+3PRO\tCOP-PFV\tlong.time,estuvimos mucho tiempo con él,,,HistAnFo,48.0,,",COP_WSCP"
+anfoperso-49,yab, irëjpë rë warë tajtojpe pïnika wïrë sepanse,irëjpë\trë\twarë\ttaj-tojpe\tpïnika\twïrë\tsepan-se,then\tEMP\tthus\tsay-FUT\tPROB\t1PRO\tmarry-PST,"después, mas ahora, yo me casé",,,HistAnFo,49.0,,",INTR_XSV"
+anfoperso-50,yab, irëjpë,irëjpë,then,después,,,HistAnFo,50.0,,",ADV_"
+anfoperso-51,yab, ana wejsapë,ana\twej-sapë,1+3PRO\tCOP-PFV,nosotros estábamos,,,HistAnFo,51.0,,",CONFUSING_"
+anfoperso-52,yab," makë yakërë ma wejtane, tëijpë rë pïjkë ana yïwïtï",makë\ty-akërë\tma\twejtane\ttëijpë\trë\tpïjkë\tana\ty-ïwïtï,mother\tLK-with\tRST\t***\tfar\tEMP\tDIM\t1+3PRO\tLK-house,"aunque estaba con mi mamá, nuestra casa estaba un poquito lejos",,,HistAnFo,52.0,,",COPsub_PC,;,NVP_LS"
+anfoperso-53,yab," ana yïwïj yawë ana senejka wejsapë, tawara ma ana këyatajpë ana",ana\ty-ïwïj\tyawë\tana\tsenejka-∅\twej-sapë\ttawara\tma\tana\tkëyata-jpë\tana,1+3PRO\tLK-house\tLOC\t1+3PRO\tremain-IPFV\tCOP-PFV\ttoo\tRST\t1+3PRO\tgrow.up-PST\t1+3PRO,"nosotros estábamos en nuestra casa, así nos criamos",,,HistAnFo,53.0,,",INTR_LSVH,;,INTR_XSVR"
+anfoperso-54,yab, papa pano patajpë të,papa\tpano\tpata-jpë\ttë,father\tdeceased\tvillage-PST\tLOC,en lo que era el pueblo del finado mi papá,,,HistAnFo,54.0,,",PP_"
+anfoperso-55,yab, ëmpare,ëmpare,already,ya,,,HistAnFo,55.0,,",ADV_"

@@ -5,13 +5,13 @@
             "@language": "en"
         }
     ],
-    "dc:bibliographicCitation": "Matter F., C\u00e1ceres Arandia N., Gildea S. (2022). A digital sketch grammar of Yawarana (version 0.0.2.draft). URL: https://github.com/fmatter/yawarana-sketch-cldf/tree/0.0.2.draft",
+    "dc:bibliographicCitation": "Matter F., C\u00e1ceres Arandia N., Gildea S. (2022). A digital sketch grammar of Yawarana (version 0.0.3.draft). URL: https://github.com/fmatter/yawarana-sketch-cldf/tree/0.0.3.draft",
     "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#Generic",
     "dc:description": "This is a digital description of Yawarana.",
     "dc:identifier": "https://fl.mt/yawarana-sketch",
     "dc:license": "https://creativecommons.org/licenses/by-sa/4.0/",
     "dc:source": "sources.bib",
-    "dc:title": "A digital sketch grammar of Yawarana (v0.0.2.draft)",
+    "dc:title": "A digital sketch grammar of Yawarana (v0.0.3.draft)",
     "prov:wasGeneratedBy": [
         {
             "dc:title": "python",
@@ -29,7 +29,7 @@
     },
     "tables": [
         {
-            "dc:extent": 20,
+            "dc:extent": 11,
             "tableSchema": {
                 "columns": [
                     {
@@ -100,7 +100,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ExampleTable",
-            "dc:extent": 1441,
+            "dc:extent": 165,
             "tableSchema": {
                 "columns": [
                     {
@@ -236,7 +236,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#FormTable",
-            "dc:extent": 172,
+            "dc:extent": 271,
             "tableSchema": {
                 "columns": [
                     {
@@ -343,7 +343,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ParameterTable",
-            "dc:extent": 253,
+            "dc:extent": 315,
             "tableSchema": {
                 "columns": [
                     {
@@ -376,7 +376,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#MediaTable",
-            "dc:extent": 407,
+            "dc:extent": 196,
             "tableSchema": {
                 "columns": [
                     {
@@ -492,7 +492,7 @@
             "url": "languages.csv"
         },
         {
-            "dc:extent": 279,
+            "dc:extent": 405,
             "tableSchema": {
                 "columns": [
                     {
@@ -621,7 +621,7 @@
             "url": "POSTable"
         },
         {
-            "dc:extent": 459,
+            "dc:extent": 802,
             "tableSchema": {
                 "columns": [
                     {
@@ -715,7 +715,7 @@
             "url": "ExampleSlices"
         },
         {
-            "dc:extent": 278,
+            "dc:extent": 322,
             "tableSchema": {
                 "columns": [
                     {
@@ -812,7 +812,7 @@
             "url": "MorphTable"
         },
         {
-            "dc:extent": 202,
+            "dc:extent": 236,
             "tableSchema": {
                 "columns": [
                     {
@@ -922,7 +922,7 @@
             "url": "PhonemeTable"
         },
         {
-            "dc:extent": 11,
+            "dc:extent": 3,
             "tableSchema": {
                 "columns": [
                     {

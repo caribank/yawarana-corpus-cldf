@@ -1,7 +1,6 @@
 <a id='phono'></a>
 ## Segmental phonetics and phonemes {#sec:segmental}
 The consonant phonemes of Yawarana are shown in <a href='#tab:consonants' class='crossref' id='tab:consonants'>crossref</a>, and the vowels in <a href='#tab:vowels' class='crossref' id='tab:vowels'>crossref</a>.
-This is a fairly standard Cariban phoneme inventory, only departing from the mainstream by the addition of [Phoneme ch](PhonemeTable?#cldf:ch).
 
 
 <a id='tab:consonants'></a><div class='caption table' id='tab:consonants'>Consonant phonemes</div>

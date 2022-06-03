@@ -1,12 +1,10 @@
 <a id='adverbs'></a>
-* [POS adv](POSTable?#cldf:adv)
+[POS adv](POSTable?#cldf:adv)
 
 ## Inflection
 
 * presumably no prefixation
-* negation:
-
-[Example convrisamaj-52](ExampleTable?example_no=24#cldf:convrisamaj-52)
+* <span title='negation?'>❓</span>
 
 ## Simple adverbs {#sec:simpleadv}
 

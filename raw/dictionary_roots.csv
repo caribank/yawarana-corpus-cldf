@@ -2,25 +2,31 @@ ID,Form,Language_ID,Gloss_es,Translation,Variants,Comment,POS,Paradigm,Gramm,Ety
 achi-wilderness,achi; asi,yar,Salvaje,wilderness,,,n,,,,wilderness
 ajpachi-undergrowth,ajpachi,yar,"maleza, monte, lugar donde crecen plantas de pequeño y mediano tamaño",undergrowth,,,n,,,,undergrowth
 ana-1-3pro,ana,yar,"Nosotros (exclusivo), nos, nuestro, a",1+3PRO,,,pn,,,,1+3PRO
+aroma-limpet,aroma,yar,lapa,limpet,,,n,,,,limpet
 chika-bite,chika,yar,Morder,bite,,,vt,,,,bite
 chiyakono-friend,chiyakono; chiyakon; chiyakom,yar,"Amigo, compañero",friend,chiyakon; chiyakom,,n,,,,friend
 ejne-1-2pro,ejnë,yar,"Nosotros, nos (inclusivo). Nuestro, a (inclusivo)",1+2PRO,,,pn,,,,1+2PRO
 eni-prox-inan,eni; seni,yar,"Este, esta; ese, esa (inanimado)",PROX.INAN,seni,Are these actually allomorphs?,det,,,,PROX.INAN
 enijne-prox-inan-pl,enijne,yar,"estos, estas",PROX.INAN.PL,,Also *enisantomo*?,det,,,,PROX.INAN.PL
+ente-here-loc,entë,yar,"Aquí, acá (sin movimiento)",here.LOC,,,adv,,,,here.LOC
 ini-see,ini; yini; in,yar,Ver,see,in,,vt,,,,see
+intipijke-small,intipijkë,yar,"Poco, poquito",small,,? + [](MorphsetTable#cldf:pijkedim),adv,,,,small
 irejpe-then,irëjpë,yar,"luego, después",then,,,adv,,,,then
 ita-hear,ita,yar,Oir; escuchar,hear,,,vt,,,,hear
 ka-q,ka,yar,Partícula interrogativa,Q,,,part,,,,Q
 kawe-high,kawë,yar,"Alto, arriba",high,,,adv,,,,high
 konopo-rain,konopo,yar,Lluvia; temporada de lluvia; aguacero,rain,,,n,,,,rain
+kejma-hunt,këjma,yar,ladrar persiguiendo animal,hunt,,,vt,,,,hunt
 kere-prox-anim,kërë,yar,"Este, esta (animado)",PROX.ANIM,,,det,,,,PROX.ANIM
 keresantomo-prox-anim-pl,kërësantomo,yar,"estos, estas (animado)",PROX.ANIM.PL,,,det,,,,PROX.ANIM.PL
+kimiy-chili,kïmïy; kïmïi,yar,Aji,chili,kïmïi,,n,,,,chili
 michisantomo-med-inan-pl,michisantomo,yar,"estos, estas (animado)",MED.INAN.PL,,,det,,,,MED.INAN.PL
 michitomo-med-inan-pl,michitomo,yar,"estos, estas (animado)",MED.INAN.PL,,,det,,,,MED.INAN.PL
-michi-med-anim,michí,yar,"Este, esta, éste , ésta (animado)",MED.ANIM,,,det,,,,MED.ANIM
+michi-med-anim,michi,yar,"Este, esta, éste , ésta (animado)",MED.ANIM,,,det,,,,MED.ANIM
 misi-med-inan,misi,yar,"Este, esta, éste, ésta (objeto inanimado)",MED.INAN,,,det,,,,MED.INAN
 monkontomo-2pl-pro,monkontomo; mokontomo,yar,"Vosotros, vosotras, ustedes",2PL.PRO,mokontomo,,pn,,,,2PL.PRO
 morone-hurting,morone,yar,Doloroso,hurting,,,adv,,,,hurting
+muku-child,muku,yar,"niño, niña; Hija de un hombre o de una mujer; espíritu del muerto",child,,,n,,,,child
 mejnijne-dist-inan-pl,mëjnijne,yar,"aquellos, aquellas (inanimado)",DIST.INAN.PL,,,det,,,,DIST.INAN.PL
 mejni-dist-inan,mëjnï,yar,"Aquel, aquella, áquel (inanimado)",DIST.INAN,,,det,,,,DIST.INAN
 mekisantomo-dist-anim-pl,mëkïsantomo; mejkïsantomo,yar,"aquellos, aquellas",DIST.ANIM.PL,,,det,,,,DIST.ANIM.PL
@@ -30,15 +36,27 @@ mijna-there-all,mïjna,yar,Por allá (con movimiento),there.ALL,,,adv,,,,there.A
 minte-there-loc,mïntë; mintë,yar,Allá (locativo),there.LOC,,,adv,,,,there.LOC
 najmo-grandmother,najmo; najmu,yar,abuela (materna o paterna),grandmother,,,n,,,,grandmother
 najpi-grandfather,najpï,yar,Abuelo paterno o materno,grandfather,,,n,,,,grandfather
+nepi-bring,nepï,yar,Traer; ir a buscar,bring,,,vt,,,,bring
 nope-good,nope,yar,"Bueno, bonito, bien",good,,,adv,,,,good
 noti-potential-partner,noti,yar,"esposa potencial de un hombre, prima cruzada, amante de un hombre",potential partner; cross cousin,,,n,,,,potential.partner
 oki-chicha,okï,yar,Bebida fermentada llamado yarake fuerte; clasificador en el sistema de posesión para referir a jugos de frutas,chicha,,,n,,,,chicha
 onono-another,onono,yar,"diferente; disitnto;otra cosa, otra persona, otro lugar, algo o alguien diferente",another,,,n,,,,another
+pachi-older-sister-of-woman,pachi,yar,"Hermana mayor de una mujer, prima paralela.",older sister of woman,,,n,,,,older.sister.of.woman
+pakuri-arrow-tip,pakuri,yar,"Punta de metal, flecha con punta de metal",arrow tip,,,n,,,,arrow.tip
+papa-father,papa,yar,padre,father,,,n,,,,father
+pata-axe,pata,yar,hacha,axe,,,n,,,,axe
+pata-village,pata,yar,"asentamiento, lugar habitado, Fundo, campamento; pueblo",village,,,n,,,,village
+pipi-younger-brother-of-woman,pipi,yar,"Hermano menor de una mujer,",younger brother of woman,,,n,,,,younger.brother.of.woman
+sakara-hoplias-malabaricus,sakara,yar,Guabina,hoplias malabaricus,,,n,,,,hoplias.malabaricus
 sukase-all,sukase; sokase,yar,"Todo, todos",all,,,adv,,,,all
+sukutaka-yucuta,sukutaka,yar,Yucuta,yucuta,,,n,,,,yucuta
+tapa-beat,tapa,yar,bofetear; pegar (persona o animal); sobar (niño),beat,,,vt,,,,beat
 taro-say,taro; taj; ta,yar,"Decir, preguntar",say,taj; ta,,vt,,,,say
 tejpore-tasty,tejpore,yar,"Sabroso, gustoso",tasty,,,adv,,,,tasty
+tejwetunu-sick,tejwetunu; tejetum,yar,enfermito,sick,tejetum,,n,,,,sick
 tunami-hide,tunamï; tunam,yar,esconder,hide,tunam,,vt,,,,hide
 tu-give,tu,yar,Dar,give,,,vt,,,,give
+teijpo-far,tëijpo; tëijpë,yar,largo. lejos,far; long,tëijpë,,adv,,,,far
 tewi-3pro,tëwï,yar,el o ella,3PRO,,,pn,,,,3PRO
 tewisantomo-3pro-pl,tëwïsantomo,yar,ellos o ellas,3PRO.PL,,,pn,,,,3PRO.PL
 waijta-mouse,waijta,yar,"raton, rata",mouse,,,n,,,,mouse
@@ -49,14 +67,22 @@ wanene-aunt,wanene,yar,Suegra real o potencial; Tía paterna para una mujer; tia
 waraijtokomo-man,waraijtokomo,yar,"Hombre, varón, macho",man,,,n,,,,man
 ware-thus,warë; enwarë; nwarë; nwa,yar,asi,thus,nwarë; nwa,,adv,,,,thus
 wenaka-vomit,wenaka,yar,Vomitar,vomit,,,vt,,,,vomit
+weroro-dog,weroro,yar,Perro (término genérico),dog,,,n,,,,dog
 wiriyamo-woman,wiriyamo; wirijyamo; uriyamo; wurijyam,yar,mujer,woman,wurijyam,,n,,,,woman
 wire-1pro,wïrë; urë,yar,"primera pers. singular yo; me; mi, mio",1PRO,,,pn,,,,1PRO
 yakarama-tell,yakarama,yar,"Contar, mostrar, indicar, informar, avisar",tell,,,vt,,,,tell
+yakono-younger-sister-of-woman,yakono,yar,Hermana menor o prima paralela de una mujer,younger sister of woman,,,n,,,,younger.sister.of.woman
+yakuri-agouti,yakuri,yar,picure,agouti,,,n,,,,agouti
 yarika-laugh,yarika,yar,reirse de alguien; burlarse,laugh,,,vi,,,,laugh
 yaruwa-laugh,yaruwa,yar,reir(se),laugh,,,vi,,,,laugh
+yeme-eat-fruits-eggs-soup,yeme,yar,"Comer (frutas, huevos, sopa)","eat (fruits, eggs, soup)",,,vt,,,,"eat.(fruits,.eggs,.soup)"
+yojte-fish-with-hook,yojtë,yar,"Pescar con anzuelo , buscar comida de carne",fish with hook,,,vt,,,,fish.with.hook
+yoki-eat-starch,yokï,yar,"Comer (alimentos blandos, casabe, fécula, tubérculos) , beber??; copular, tener relación sexual (hombre)",eat (starch),,,vt,,,,eat.(starch)
 yutu-forest,yutu,yar,Selva ; bosque ; conjunto de plantas de la misma especie,forest,,,n,,,,forest
 ye-tooth,yë,yar,diente,tooth,,,n,,,,tooth
+yeni-drink,yëni; yeni,yar,Beber; tomar,drink,yeni,,vt,,,,drink
 ejte-house,ëjtë,yar,"Casa, Churuata",house,,,n,,,,house
+empare-already,ëmpare; umparë,yar,"ya, está bien, está lisro",already,,,adv,,,,already
 etipa-go-in-group,ëtïpa; tïpa; tipa,yar,irse en grupo,go in group,tipari,,vi,,,,go.in.group
 eni-drink,ëni; ën,,Beber; tomar,drink,,,vt,,,,drink
 ese-name,ese,,nombre,name,,,n,,,,name

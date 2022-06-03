@@ -22,7 +22,7 @@ tamotimp,yab,-ta,,,tamotimp,motimp
 tanecns,yab,-tane,,,tanecncs,cncs
 tepeke,yab,-tëpëkë,,,tepeke,prog-intr
 tikenepost,yab,-tïkene,,,tikenepost,post
-tojpefut,yab,-tojpe,,,tojpefut,fut; purp
+tojpefut,yab,-tojpe,,,tojpefut,fut
 tomopl,yab,-tomo,,,tomopl,pl
 tonpl,yab,-ton,,,tomopl,pl
 toponmlz,yab,-topo,,,toponmlz,circ-nmlz
@@ -39,6 +39,12 @@ ri,yab,-ri,,,riipfv,ipfv
 ri-ri,yab,-rï,,,riipfv,ipfv
 ri-ru,yab,-ru,,,riipfv,ipfv
 sepst,yab,-se,,,sepst,pst
+jpepst1,yab,-jpë,,,jpepst,pst
+sapepfv,yab,-sapë,,,sapepfv,pfv
+sajpfv,yab,-saj,,,sapepfv,pfv
+ipert,yab,-i,,Uncertain analysis.,rupert,pert
+ripert,yab,-ri,,,rupert,pert
+rupert,yab,-ru,,,rupert,pert
 dt2,yab,s-,,,dt2,detrz
 tavbz,yab,-ta,,,tavbz,vbz
 dt1,yab,ëj-,,,dt1,detrz
@@ -46,24 +52,24 @@ nonmlz,yab,-no,,,anonmlz,nmlz
 nnmlz,yab,-n,,,anonmlz,nmlz
 anonmlz,yab,-ano,,,anonmlz,nmlz
 jtevbz,yab,-jtë,,,jtevbz,vbz-tr
-pstjpe1,yab,-jpë,,,jpepst,pst; pst-acnmlz
+jpenmlz,yab,-jpë,,,jpenmlz,pst-acnmlz
 plur1,yab,-pëti,,,petiplur,plur
 plur2,yab,-pëj,,Syllable reduction,petiplur,plur
-rupert,yab,-ru,,,rupert,pert
-sapepfv,yab,-sapë,,,sapepfv,pfv; nmlz
-sajpfv,yab,-saj,,,sapepfv,pfv; nmlz
-septcp,yab,-se,,,septcp,pst; ptcp; sup
+sapenmlz,yab,-sapë,,,sapenmlz,nmlz
+sajnmlz,yab,-saj,,,sapenmlz,nmlz
+septcp,yab,-se,,,septcp,ptcp; sup
 minmlz,yab,-mï,,,minmlz,nmlz
-ipert,yab,-i,,Uncertain analysis.,rupert,pert
-ripert,yab,-ri,,,rupert,pert
 ninmlz,yab,-ni,,,ninmlz,nmlz
-cheptcp,yab,-che,,,septcp,pst; ptcp; sup
+cheptcp,yab,-che,,,septcp,ptcp; sup
 pininmlz,yab,‑pïnï,,,pininmlz,priv-nmlz
 nnmlzpre,yab,n-,,,nnmlzpre,p-nmlz
+tojpepurp,yab,-tojpe,,,tojpepurp,purp
+imifather-1,yab,ïmï,,1,imifather,father
+imifather-2,yab,më,,2,imifather,father
+imifather-3,yab,mu,,3,imifather,father
 enijpetere-one-0,yab,enijpëtërë,,,enijpetere-one,one
 imparejra-long-time-0,yab,ïmparëjra,,,imparejra-long-time,long-time
 ponoko-every-0,yab,ponoko,,,ponoko-every,every
-teijpo-far-0,yab,tëijpo,,,teijpo-far,far; long
 chi-cop-0,yab,chi,,,chi-cop,cop
 chi-cop-1,yab,ch,,,chi-cop,cop
 chi-cop-2,yab,chij,,,chi-cop,cop
@@ -123,10 +129,9 @@ maijte-go-imp-0,yab,maijtë,,,maijte-go-imp,go-imp
 nai-do-0,yab,nai,,,nai-do,do
 nai-do-1,yab,naij,,,nai-do,do
 wejyaka-open-0,yab,wejyaka,,,wejyaka-open,open
-yeni-drink-0,yab,yëni,,,yeni-drink,drink
 yerema-0,yab,yerema,,,yerema,feed
 yerema-1,yab,erema,,,yerema,feed
-marestr-0,yab,ma,,,marestr,restr
+marestr-0,yab,ma,,,marestr,rst
 teloc-0,yab,të,,,teloc,loc
 erepiscare-0,yab,erepï,,,erepiscare,scare
 erepiscare-1,yab,erej,,,erepiscare,scare
@@ -156,10 +161,19 @@ iwiti-house-1,yab,ïwïj,,,iwiti-house,house
 waimu-language-0,yab,waimu,,,waimu-language,language
 i-do-0,yab,i,,,i-do,do
 waimu-talk-0,yab,waimu,,,waimu-talk,talk
+yajte-begin-0,yab,yajtë,,,yajte-begin,begin
+makampra-older-sister-of-mother-0,yab,makampra,,,makampra-older-sister-of-mother,older-sister-of-mother
+taki-conf-0,yab,takï,,,taki-conf,conf
+akere-with-0,yab,akërë,,,akere-with,with
+apeke-thats-why-0,yab,apëkë,,,apeke-thats-why,thats-why
+wera-like-0,yab,wëra,,,wera-like,like
+wera-like-1,yab,wora,,,wera-like,like
+wera-like-2,yab,wara,,,wera-like,like
 achi-wilderness-0,yab,achi,,,achi-wilderness,wilderness
 achi-wilderness-1,yab,asi,,,achi-wilderness,wilderness
 ajpachi-undergrowth-0,yab,ajpachi,,,ajpachi-undergrowth,undergrowth
 ana-1-3pro-0,yab,ana,,,ana-1-3pro,1-3pro
+aroma-limpet-0,yab,aroma,,,aroma-limpet,limpet
 chika-bite-0,yab,chika,,,chika-bite,bite
 chiyakono-friend-0,yab,chiyakono,,,chiyakono-friend,friend
 chiyakono-friend-1,yab,chiyakon,,,chiyakono-friend,friend
@@ -168,23 +182,29 @@ ejne-1-2pro-0,yab,ejnë,,,ejne-1-2pro,1-2pro
 eni-prox-inan-0,yab,eni,,,eni-prox-inan,prox-inan
 eni-prox-inan-1,yab,seni,,,eni-prox-inan,prox-inan
 enijne-prox-inan-pl-0,yab,enijne,,,enijne-prox-inan-pl,prox-inan-pl
+ente-here-loc-0,yab,entë,,,ente-here-loc,here-loc
 ini-see-0,yab,ini,,,ini-see,see
 ini-see-1,yab,yini,,,ini-see,see
 ini-see-2,yab,in,,,ini-see,see
+intipijke-small-0,yab,intipijkë,,,intipijke-small,small
 irejpe-then-0,yab,irëjpë,,,irejpe-then,then
 ita-hear-0,yab,ita,,,ita-hear,hear
 ka-q-0,yab,ka,,,ka-q,q
 kawe-high-0,yab,kawë,,,kawe-high,high
 konopo-rain-0,yab,konopo,,,konopo-rain,rain
+kejma-hunt-0,yab,këjma,,,kejma-hunt,hunt
 kere-prox-anim-0,yab,kërë,,,kere-prox-anim,prox-anim
 keresantomo-prox-anim-pl-0,yab,kërësantomo,,,keresantomo-prox-anim-pl,prox-anim-pl
+kimiy-chili-0,yab,kïmïy,,,kimiy-chili,chili
+kimiy-chili-1,yab,kïmïi,,,kimiy-chili,chili
 michisantomo-med-inan-pl-0,yab,michisantomo,,,michisantomo-med-inan-pl,med-inan-pl
 michitomo-med-inan-pl-0,yab,michitomo,,,michitomo-med-inan-pl,med-inan-pl
-michi-med-anim-0,yab,michí,,,michi-med-anim,med-anim
+michi-med-anim-0,yab,michi,,,michi-med-anim,med-anim
 misi-med-inan-0,yab,misi,,,misi-med-inan,med-inan
 monkontomo-2pl-pro-0,yab,monkontomo,,,monkontomo-2pl-pro,2pl-pro
 monkontomo-2pl-pro-1,yab,mokontomo,,,monkontomo-2pl-pro,2pl-pro
 morone-hurting-0,yab,morone,,,morone-hurting,hurting
+muku-child-0,yab,muku,,,muku-child,child
 mejnijne-dist-inan-pl-0,yab,mëjnijne,,,mejnijne-dist-inan-pl,dist-inan-pl
 mejni-dist-inan-0,yab,mëjnï,,,mejni-dist-inan,dist-inan
 mekisantomo-dist-anim-pl-0,yab,mëkïsantomo,,,mekisantomo-dist-anim-pl,dist-anim-pl
@@ -197,19 +217,33 @@ minte-there-loc-1,yab,mintë,,,minte-there-loc,there-loc
 najmo-grandmother-0,yab,najmo,,,najmo-grandmother,grandmother
 najmo-grandmother-1,yab,najmu,,,najmo-grandmother,grandmother
 najpi-grandfather-0,yab,najpï,,,najpi-grandfather,grandfather
+nepi-bring-0,yab,nepï,,,nepi-bring,bring
 nope-good-0,yab,nope,,,nope-good,good
 noti-potential-partner-0,yab,noti,,,noti-potential-partner,potential-partner
 oki-chicha-0,yab,okï,,,oki-chicha,chicha
 onono-another-0,yab,onono,,,onono-another,another
+pachi-older-sister-of-woman-0,yab,pachi,,,pachi-older-sister-of-woman,older-sister-of-woman
+pakuri-arrow-tip-0,yab,pakuri,,,pakuri-arrow-tip,arrow-tip
+papa-father-0,yab,papa,,,papa-father,father
+pata-axe-0,yab,pata,,,pata-axe,axe
+pata-village-0,yab,pata,,,pata-village,village
+pipi-younger-brother-of-woman-0,yab,pipi,,,pipi-younger-brother-of-woman,younger-brother-of-woman
+sakara-hoplias-malabaricus-0,yab,sakara,,,sakara-hoplias-malabaricus,hoplias-malabaricus
 sukase-all-0,yab,sukase,,,sukase-all,all
 sukase-all-1,yab,sokase,,,sukase-all,all
+sukutaka-yucuta-0,yab,sukutaka,,,sukutaka-yucuta,yucuta
+tapa-beat-0,yab,tapa,,,tapa-beat,beat
 taro-say-0,yab,taro,,,taro-say,say
 taro-say-1,yab,taj,,,taro-say,say
 taro-say-2,yab,ta,,,taro-say,say
 tejpore-tasty-0,yab,tejpore,,,tejpore-tasty,tasty
+tejwetunu-sick-0,yab,tejwetunu,,,tejwetunu-sick,sick
+tejwetunu-sick-1,yab,tejetum,,,tejwetunu-sick,sick
 tunami-hide-0,yab,tunamï,,,tunami-hide,hide
 tunami-hide-1,yab,tunam,,,tunami-hide,hide
 tu-give-0,yab,tu,,,tu-give,give
+teijpo-far-0,yab,tëijpo,,,teijpo-far,far
+teijpo-far-1,yab,tëijpë,,,teijpo-far,far
 tewi-3pro-0,yab,tëwï,,,tewi-3pro,3pro
 tewisantomo-3pro-pl-0,yab,tëwïsantomo,,,tewisantomo-3pro-pl,3pro-pl
 waijta-mouse-0,yab,waijta,,,waijta-mouse,mouse
@@ -223,6 +257,7 @@ ware-thus-1,yab,enwarë,,,ware-thus,thus
 ware-thus-2,yab,nwarë,,,ware-thus,thus
 ware-thus-3,yab,nwa,,,ware-thus,thus
 wenaka-vomit-0,yab,wenaka,,,wenaka-vomit,vomit
+weroro-dog-0,yab,weroro,,,weroro-dog,dog
 wiriyamo-woman-0,yab,wiriyamo,,,wiriyamo-woman,woman
 wiriyamo-woman-1,yab,wirijyamo,,,wiriyamo-woman,woman
 wiriyamo-woman-2,yab,uriyamo,,,wiriyamo-woman,woman
@@ -230,11 +265,20 @@ wiriyamo-woman-3,yab,wurijyam,,,wiriyamo-woman,woman
 wire-1pro-0,yab,wïrë,,,wire-1pro,1pro
 wire-1pro-1,yab,urë,,,wire-1pro,1pro
 yakarama-tell-0,yab,yakarama,,,yakarama-tell,tell
+yakono-younger-sister-of-woman-0,yab,yakono,,,yakono-younger-sister-of-woman,younger-sister-of-woman
+yakuri-agouti-0,yab,yakuri,,,yakuri-agouti,agouti
 yarika-laugh-0,yab,yarika,,,yarika-laugh,laugh
 yaruwa-laugh-0,yab,yaruwa,,,yaruwa-laugh,laugh
+yeme-eat-fruits-eggs-soup-0,yab,yeme,,,yeme-eat-fruits-eggs-soup,eat-fruits-eggs-soup
+yojte-fish-with-hook-0,yab,yojtë,,,yojte-fish-with-hook,fish-with-hook
+yoki-eat-starch-0,yab,yokï,,,yoki-eat-starch,eat-starch
 yutu-forest-0,yab,yutu,,,yutu-forest,forest
 ye-tooth-0,yab,yë,,,ye-tooth,tooth
+yeni-drink-0,yab,yëni,,,yeni-drink,drink
+yeni-drink-1,yab,yeni,,,yeni-drink,drink
 ejte-house-0,yab,ëjtë,,,ejte-house,house
+empare-already-0,yab,ëmpare,,,empare-already,already
+empare-already-1,yab,umparë,,,empare-already,already
 etipa-go-in-group-0,yab,ëtïpa,,,etipa-go-in-group,go-in-group
 etipa-go-in-group-1,yab,tïpa,,,etipa-go-in-group,go-in-group
 etipa-go-in-group-2,yab,tipa,,,etipa-go-in-group,go-in-group

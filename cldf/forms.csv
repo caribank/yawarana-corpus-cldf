@@ -1,10 +1,28 @@
 ID,Language_ID,Form,Segments,Comment,Source,Parameter_ID,POS
 o2-noti-potential-partner-0,yab,o-noti,o n o t i,,,2-potential-partner,n
+moyochi,yab,moyochi,m o j o t͡ʃ i,,,unknown,
+taro-say-2-sareimn,yab,ta-sarë,t a s a r ə,,,say-imn,vt
+chipokono,yab,chipokono,t͡ʃ i p o k o n o,,,unknown,
+kojpaye,yab,kojpaye,k o h p a j e,,,unknown,
+97376aaf-48ae-4848-b0b5-80e15dcc0f640,yab,pïnika,p ɨ n i k a,,,prob,part
+warotari,yab,warotari,w a r o t a r i,,,unknown,
+me2-nai-do-0-ri-zero,yab,më-nai-∅,m ə n a i,,,2-do-ipfv,vt
+wejkase,yab,wëjkase,w ə h k a s e,,,unknown,
+chi-cop-0-jpepst1,yab,chi-jpë,t͡ʃ i h p ə,,,cop-pst,vi
+warare,yab,wararë,w a r a r ə,,,unknown,
+ejne-1-2pro-0,yab,ejnë,e h n ə,,,1-2pro,pn
+yemekunu,yab,yemekunu,j e m e k u n u,,,unknown,
+tichikimuru,yab,tichikimuru,t i t͡ʃ i k i m u r u,,,unknown,
+peti,yab,peti,p e t i,,,unknown,
+ware-thus-0,yab,warë,w a r ə,,,thus,adv
+patakasape,yab,patakasapë,p a t a k a s a p ə,,,unknown,
+yakucho,yab,yakucho,j a k u t͡ʃ o,,,unknown,
+panadat-0,yab,pana,p a n a,,,dat,postp
 make-mother-0,yab,makë,m a k ə,,,mother,n
 yaerg-0,yab,ya,j a,,,erg,postp
 taro-say-2-ri-zero,yab,ta-∅,t a,,,say-ipfv,vt
 taji-0,yab,taji,t a h i,,,slug-1,
-reemp-0,yab,rë,r ə,,,emp,postp
+reemp-0,yab,rë,r ə,,,emp,part
 waijta-mouse-0,yab,waijta,w a i h t a,,,mouse,n
 enijpetere-one-0,yab,enijpëtërë,e n i h p ə t ə r ə,,,one,adv
 waraijtokomo-man-0,yab,waraijtokomo,w a r a i h t o k o m o,,,man,n
@@ -35,11 +53,11 @@ oki-chicha-0,yab,okï,o k ɨ,,,chicha,n
 yeni-drink-0-ri-zero,yab,yëni-∅,j ə n i,,,drink-ipfv,vt
 b88eb9d8-3039-47c5-b822-a13e422aeb480,yab,soj,s o h,,,id-dabble,ideo
 nai-do-1-plur1-ri,yab,naij-pëti-ri,n a i h p ə t i r i,,,do-plur-ipfv,vt
-ware-thus-0,yab,warë,w a r ə,,,thus,adv
 waijta-mouse-0-tomopl,yab,waijta-tomo,w a i h t a t o m o,,,mouse-pl,n
 nwajtedance-0-ri,yab,nwajtë-ri,n w a h t ə r i,,,dance-ipfv,vi
 dt1-wenaka-vomit-0-sepst,yab,ëj-wenaka-se,ə h w e n a k a s e,,,detrz-vomit-pst,vi
-wej-cop-0-tanecns,yab,wej-tane,w e h t a n e,,,cop-cncs,vi
+ire-dem-0,yab,irë,i r ə,,,dem,pn
+wejtane,yab,wejtane,w e h t a n e,,,unknown,
 b97a0ed7-7ceb-4cab-83d8-5b30b45d9a590,yab,pïrarë,p ɨ r a r ə,,,nothing,part
 i31-79766ee2-3962-4bcd-ae1b-bcc332d75e880-rupert,yab,i-wena-ru,i w e n a r u,,,3-vomit-pert,n
 79766ee2-3962-4bcd-ae1b-bcc332d75e880-rupert,yab,wena-ru,w e n a r u,,,vomit-pert,n
@@ -53,17 +71,17 @@ intsne-0,yab,ne,n e,,,ints,postp
 konopo-rain-0,yab,konopo,k o n o p o,,,rain,n
 wej-cop-0-sareimn,yab,wej-sarë,w e h s a r ə,,,cop-imn,vi
 efec7abd-f480-462a-9648-e2434e3bee0d0-ri-zero,yab,tawejka-∅,t a w e h k a,,,to-daylight-ipfv,vi
-waijta-mouse-0-tomopl-pstjpe1,yab,waijta-tomo-jpë,w a i h t a t o m o h p ə,,,mouse-pl-pst,n
+waijta-mouse-0-tomopl-jpepst1,yab,waijta-tomo-jpë,w a i h t a t o m o h p ə,,,mouse-pl-pst,n
 etipa-go-in-group-2-sepst-kontomopl,yab,tipa-se-kontomo,t i p a s e k o n t o m o,,,go-in-group-pst-pl,vi
-dt1-wenaka-vomit-0-pstjpe1,yab,ëj-wenaka-jpë,ə h w e n a k a h p ə,,,detrz-vomit-pst,vi
+dt1-wenaka-vomit-0-jpepst1,yab,ëj-wenaka-jpë,ə h w e n a k a h p ə,,,detrz-vomit-pst,vi
 ta3-ini-see-2-plur1-ri,yab,ta-in-pëti-ri,t a i n p ə t i r i,,,3p-see-plur-ipfv,vt
 ini-see-2-plur1-ri-zero,yab,in-pëti-∅,i n p ə t i,,,see-plur-ipfv,vt
-wenaka-vomit-0-pstjpe1,yab,wenaka-jpë,w e n a k a h p ə,,,vomit-pst,vt
+wenaka-vomit-0-jpepst1,yab,wenaka-jpë,w e n a k a h p ə,,,vomit-pst,vt
 mare-still-1,yab,mare,m a r e,,,still,part
 07bd51f6-fb85-483e-b0cf-b27e244f61b40,yab,ëkëtë,ə k ə t ə,,,where,adv
 mere-med-inan-0,yab,mërë,m ə r ə,,,med-inan,det
 58bf6d86-1230-4458-997c-15f94ad6fbd60,yab,ëkï,ə k ɨ,,,manioc-beer,n
-79766ee2-3962-4bcd-ae1b-bcc332d75e880-rupert-pstjpe1,yab,wena-ru-jpë,w e n a r u h p ə,,,vomit-pert-pst,n
+79766ee2-3962-4bcd-ae1b-bcc332d75e880-rupert-jpepst1,yab,wena-ru-jpë,w e n a r u h p ə,,,vomit-pert-pst,n
 wej-cop-0-sajpfv,yab,wej-saj,w e h s a h,,,cop-pfv,vi
 ejte-house-0,yab,ëjtë,ə h t ə,,,house,n
 02c99f34-5b27-4ff8-819a-dc4a34dca14e0,yab,kërëjpë,k ə r ə h p ə,,,old,n
@@ -72,16 +90,16 @@ sukase-all-0,yab,sukase,s u k a s e,,,all-1,adv
 etipa-go-in-group-2-plur2-sepst-pljne1,yab,tipa-pëj-se-jne,t i p a p ə h s e h n e,,,go-in-group-plur-pst-pl,vi
 waijta-mouse-0-pljne1,yab,waijta-jne,w a i h t a h n e,,,mouse-pl,n
 ajpachi-undergrowth-0,yab,ajpachi,a h p a t͡ʃ i,,,undergrowth,n
-97376aaf-48ae-4848-b0b5-80e15dcc0f640,yab,pïnika,p ɨ n i k a,,,prob,part
 a992b4b6-c478-4e4b-9814-670e196825430,yab,ëkëjna,ə k ə h n a,,,where-to,adv
 36d6a83f-058a-449a-987f-1cd71d8d37cc0,yab,neke,n e k e,,,contrast,part
 bcfb197f-800e-48bd-8ec6-664e658aff041-sepst,yab,won-se,w o n s e,,,enter-pst,vi
-marestr-0,yab,ma,m a,,,restr,part
+marestr-0,yab,ma,m a,,,rst,part
 taro-say-2-sepst,yab,ta-se,t a s e,,,say-pst,vt
 waraijtokon-man-0,yab,waraijtokon,w a r a i h t o k o n,,,man,n
 maniki-0,yab,maniki,m a n i k i,,,slug-1,n
 it3-iwiti-house-1,yab,t-ïwïj,t ɨ w ɨ h,,,3-house,n
-maniki-0-pstjpe1,yab,maniki-jpë,m a n i k i h p ə,,,pst,n
+maniki-0-jpepst1,yab,maniki-jpë,m a n i k i h p ə,,,pst,n
+tayakijteja,yab,tayakïjtëja,t a j a k ɨ h t ə h a,,,unknown,
 ati-what-0,yab,ati,a t i,,,what,qpro
 warai-like-0,yab,warai,w a r a i,,,like,adv
 mere-2pro-0,yab,mërë,m ə r ə,,,2pro,pn
@@ -89,7 +107,6 @@ ini-see-0-ri,yab,ini-ri,i n i r i,,,see-ipfv,vt
 me2-yarika-laugh-0-ri-zero,yab,më-yarika-∅,m ə j a r i k a,,,2-laugh-ipfv,vi
 me2-yaruwa-laugh-0-ri,yab,më-yaruwa-ri,m ə j a r u w a r i,,,2-laugh-ipfv,vi
 me2-pekepene-alone-0,yab,më-pëkëpene,m ə p ə k ə p e n e,,,2-alone,postp
-ejne-1-2pro-0,yab,ejnë,e h n ə,,,1-2pro,pn
 pekepene-alone-0,yab,pëkëpene,p ə k ə p e n e,,,alone,postp
 yaruwa-laugh-0-ri-zero-janeg,yab,yaruwa-∅-ja,j a r u w a h a,,,laugh-ipfv-neg,vi
 ejka-right-1,yab,ënka,ə n k a,,,right,part
@@ -106,7 +123,7 @@ mare-rel-inan-0,yab,mare,m a r e,,,rel-inan,
 yaruwakempinire,yab,yaruwakempïnirë,j a r u w a k e m p ɨ n i r ə,,,unknown,
 mekisantomo-dist-anim-pl-0,yab,mëkïsantomo,m ə k ɨ s a n t o m o,,,dist-anim-pl,det
 ajaja-hahaha-0,yab,ajaja,a h a h a,,,hahaha,intj
-taro-say-1-tanecns,yab,taj-tane,t a h t a n e,,,say-cncs,vt
+taro-say-1-tanecns,yab,taj-tane,t a h t a n e,,,say-cncs,adv
 ki-oh-0,yab,kï,k ɨ,,,oh,intj
 monkontomo-2pl-pro-1,yab,mokontomo,m o k o n t o m o,,,2pl-pro,pn
 sereka-tire-0-podes-jraneg,yab,sereka-po-jra,s e r e k a p o h r a,,,tire-des-neg,vi
@@ -115,14 +132,15 @@ taro-say-0-ri-zero,yab,taro-∅,t a r o,,,say-ipfv,vt
 pekeon-1-nonmlz,yab,poko-no,p o k o n o,,,on-surface-nmlz,n
 i-do-0-ri,yab,i-ri,i r i,,,do-ipfv,vt
 minte-there-loc-0,yab,mïntë,m ɨ n t ə,,,there-loc,adv
-tunampe,yab,tunampe,t u n a m p e,,,unknown,
+tunami-hide-1-peess,yab,tunam-pe,t u n a m p e,,,hide-ess,adv
 yarika-laugh-0-ri,yab,yarika-ri,j a r i k a r i,,,laugh-ipfv,vi
 tawara-too-3-janeg,yab,tawa-ja,t a w a h a,,,too-neg,adv
 yarika-laugh-0-ri-zero-janeg,yab,yarika-∅-ja,j a r i k a h a,,,laugh-ipfv-neg,vi
 esene-see-self-1-ri-zero-janeg,yab,sene-∅-ja,s e n e h a,,,see-self-ipfv-neg,vi
-yarikatopo,yab,yarikatopo,j a r i k a t o p o,,,unknown,
+yarika-laugh-0-toponmlz,yab,yarika-topo,j a r i k a t o p o,,,laugh-circ-nmlz,n
 ta3-ita-hear-0-podes,yab,ta-ita-po,t a i t a p o,,,3p-hear-des,vt
 chi-cop-0-ri,yab,chi-ri,t͡ʃ i r i,,,cop-ipfv,vi
+ma,yab,ma,m a,,,restr,vt
 senejkastay-0-ri-ri,yab,senejka-rï,s e n e h k a r ɨ,,,remain-ipfv,vi
 u1-ylk-iwiti-house-1,yab,u-y-ïwïj,u j ɨ w ɨ h,,,1-lk-house,n
 suku-0-ripert,yab,suku-ri,s u k u r i,,,urine-pert,n
@@ -131,12 +149,9 @@ ita-hear-0-ri,yab,ita-ri,i t a r i,,,hear-ipfv,vt
 wajyakiti-very-happy-0-jraneg,yab,wajyakïtï-jra,w a h j a k ɨ t ɨ h r a,,,very-happy-priv,n
 tawara-too-1,yab,tawaraij,t a w a r a i h,,,too,adv
 u1-senejkastay-0-ri,yab,u-senejka-ri,u s e n e h k a r i,,,1-remain-ipfv,vi
-chipokono,yab,chipokono,t͡ʃ i p o k o n o,,,unknown,
-panadat-0,yab,pana,p a n a,,,dat,postp
-yaruwatopo,yab,yaruwatopo,j a r u w a t o p o,,,unknown,
+yaruwa-laugh-0-toponmlz,yab,yaruwa-topo,j a r u w a t o p o,,,laugh-circ-nmlz,n
 pirare,yab,pïrärë,p ɨ r � r ə,,,unknown,
 ini-see-2-keimp,yab,in-kë,i n k ə,,,see-imp,vt
-ire-dem-0,yab,irë,i r ə,,,dem,pn
 nwadance-0,yab,nwa,n w a,,,dance,n
 chipeke,yab,chipëkë,t͡ʃ i p ə k ə,,,unknown,
 tewisantomo-3pro-pl-0,yab,tëwïsantomo,t ə w ɨ s a n t o m o,,,3pro-pl,pn
@@ -144,7 +159,7 @@ yaruwa-laugh-0-tepeke,yab,yaruwa-tëpëkë,j a r u w a t ə p ə k ə,,,laugh-pr
 chi-cop-0-ri-zero-kontomopl,yab,chi-∅-kontomo,t͡ʃ i k o n t o m o,,,cop-ipfv-pl,vi
 ini-see-0-ri-zero,yab,ini-∅,i n i,,,see-ipfv,vt
 waimu-talk-0-ri-zero-kontomopl,yab,waimu-∅-kontomo,w a i m u k o n t o m o,,,talk-ipfv-pl,vi
-i-do-0-pstjpe1,yab,i-jpë,i h p ə,,,do-pst,vt
+i-do-0-jpepst1,yab,i-jpë,i h p ə,,,do-pst,vt
 yekerema,yab,yekerema,j e k e r e m a,,,unknown,
 chipokon,yab,chipokon,t͡ʃ i p o k o n,,,unknown,
 yaruwa-laugh-0-ri-zero-kontomopl,yab,yaruwa-∅-kontomo,j a r u w a k o n t o m o,,,laugh-ipfv-pl,vi
@@ -167,7 +182,91 @@ chi-cop-0-ri-zero,yab,chi-∅,t͡ʃ i,,,cop-ipfv,vi
 taro-say-2-ri,yab,ta-ri,t a r i,,,say-ipfv,vt
 yarikasemijra,yab,yarikasemïjra,j a r i k a s e m ɨ h r a,,,unknown,
 ware-thus-3,yab,nwa,n w a,,,thus,adv
+wej-cop-0-tanecns,yab,wej-tane,w e h t a n e,,,cop-cncs,adv
+mujyampe,yab,mujyampe,m u h j a m p e,,,unknown,
+patakaja,yab,patakaja,p a t a k a h a,,,unknown,
+apatakaja,yab,apatakaja,a p a t a k a h a,,,unknown,
 a2-najmo-grandmother-0-ripert,yab,a-najmo-ri,a n a h m o r i,,,2-grandmother-pert,n
 a2-najpi-grandfather-0-ripert,yab,a-najpï-ri,a n a h p ɨ r i,,,2-grandfather-pert,n
 u1-najmo-grandmother-0-ripert,yab,u-najmo-ri,u n a h m o r i,,,1-grandmother-pert,n
 u1-najpi-grandfather-0-ripert,yab,u-najpï-ri,u n a h p ɨ r i,,,1-grandfather-pert,n
+ente-here-loc-0,yab,entë,e n t ə,,,here-loc,adv
+ana-1-3pro-0,yab,ana,a n a,,,1-3pro,pn
+keyata-grow-up-1-jpepst1,yab,këyeta-jpë,k ə j e t a h p ə,,,grow-up-pst,vi
+intipijke-small-0,yab,intipijkë,i n t i p i h k ə,,,small,adv
+ylk-imifather-1,yab,y-ïmï,j ɨ m ɨ,,,lk-father,n
+semajpe,yab,sëmajpë,s ə m a h p ə,,,unknown,
+esspe-0,yab,pe,p e,,,ess,postp
+keyata-grow-up-1-sepst,yab,këyeta-se,k ə j e t a s e,,,grow-up-pst,vi
+papa-father-0,yab,papa,p a p a,,,father,n
+kampra-big-0,yab,kampra,k a m p r a,,,big,n
+ylk-oti-game-food-0,yab,y-oti,j o t i,,,lk-game-food,n
+yojte-fish-with-hook-0-ri-zero,yab,yojtë-∅,j o h t ə,,,fish-with-hook-ipfv,vt
+aroma-limpet-0,yab,aroma,a r o m a,,,limpet,n
+yakuri-agouti-0,yab,yakuri,j a k u r i,,,agouti,n
+yaobl-0,yab,ya,j a,,,obl,postp
+makampra-older-sister-of-mother-0,yab,makampra,m a k a m p r a,,,older-sister-of-mother,n
+maijte-go-imp-0,yab,maijtë,m a i h t ə,,,go-imp,vt
+kaimo-0-tavbz-tamotimp,yab,kaimo-ta-ta,k a i m o t a t a,,,game-vbz-motimp,vi
+muku-child-0-tonpl,yab,muku-ton,m u k u t o n,,,child-pl,n
+yomiri,yab,yomiri,j o m i r i,,,unknown,
+asamo-0-ri,yab,asamo-ri,a s a m o r i,,,cry-ipfv,vi
+pachi-older-sister-of-woman-0,yab,pachi,p a t͡ʃ i,,,older-sister-of-woman,n
+kere-prox-anim-0,yab,kërë,k ə r ə,,,prox-anim,det
+taki-conf-0,yab,takï,t a k ɨ,,,conf,part
+yemi,yab,yëmi,j ə m i,,,unknown,
+pinire-nothing-0,yab,pïnirë,p ɨ n i r ə,,,nothing,part
+asamo-0-ri-jraneg,yab,asamo-ri-jra,a s a m o r i h r a,,,cry-ipfv-neg,vi
+muku-child-0,yab,muku,m u k u,,,child,n
+tejwetunu-sick-1,yab,tejetum,t e h e t u m,,,sick,n
+pano-0,yab,pano,p a n o,,,deceased,postp
+i32-te-go-0-ri,yab,ij-të-ri,i h t ə r i,,,3-go-ipfv,vi
+i31-pakuri-arrow-tip-0,yab,i-pakuri,i p a k u r i,,,3-arrow-tip,n
+ylk-akere-with-0,yab,y-akërë,j a k ə r ə,,,lk-with,postp
+sakara-hoplias-malabaricus-0,yab,sakara,s a k a r a,,,hoplias-malabaricus,n
+nepi,yab,nepï,n e p ɨ,,,unknown,
+michi-med-anim-0,yab,michi,m i t͡ʃ i,,,med-anim,det
+yakono-younger-sister-of-woman-0,yab,yakono,j a k o n o,,,younger-sister-of-woman,n
+ijmoka-cook-1-keimp,yab,ijmojka-kë,i h m o h k a k ə,,,cook-imp,vt
+ijmoka-cook-1-ri-zero,yab,ijmojka-∅,i h m o h k a,,,cook-ipfv,vt
+dt2-yerema-1-tojpefut,yab,s-erema-tojpe,s e r e m a t o h p e,,,detrz-feed-fut,vi
+pano-1,yab,pan,p a n,,,deceased,postp
+pata-village-0-jpepst1,yab,pata-jpë,p a t a h p ə,,,village-pst,n
+teloc-0,yab,të,t ə,,,loc,postp
+semasaj,yab,sëmasaj,s ə m a s a h,,,unknown,
+pipi-younger-brother-of-woman-0,yab,pipi,p i p i,,,younger-brother-of-woman,n
+chawe,yab,chawë,t͡ʃ a w ə,,,unknown,
+muku-child-0-tomopl,yab,muku-tomo,m u k u t o m o,,,child-pl,n
+asamo-0-ri-zero,yab,asamo-∅,a s a m o,,,cry-ipfv,vi
+tapeke,yab,tapëkë,t a p ə k ə,,,unknown,
+weroro-dog-0,yab,weroro,w e r o r o,,,dog,n
+ta3-tu-give-0-ri-ru,yab,ta-tu-ru,t a t u r u,,,3p-give-ipfv,vt
+ijmoka-cook-0-tojpefut,yab,ijmoka-tojpe,i h m o k a t o h p e,,,cook-fut,vt
+tu-give-0-jpepst1,yab,tu-jpë,t u h p ə,,,give-pst,vt
+keyata-grow-up-0-jpepst1,yab,këyata-jpë,k ə j a t a h p ə,,,grow-up-pst,vi
+kimiy-chili-1,yab,kïmïi,k ɨ m ɨ i,,,chili,n
+yeme-eat-fruits-eggs-soup-0-ri-zero,yab,yeme-∅,j e m e,,,eat-fruits-eggs-soup-ipfv,vt
+dt2-erepiscare-2-ri-zero,yab,s-ere-∅,s e r e,,,detrz-scare-ipfv,vi
+yoki-eat-starch-0-ri-ri,yab,yokï-rï,j o k ɨ r ɨ,,,eat-starch-ipfv,vt
+sukutaka-yucuta-0,yab,sukutaka,s u k u t a k a,,,yucuta,n
+yeme-eat-fruits-eggs-soup-0-tikenepost,yab,yeme-tïkene,j e m e t ɨ k e n e,,,eat-fruits-eggs-soup-post,vt
+intsne-1,yab,n,n,,,ints,postp
+sepami-marry-1-sepst,yab,sepan-se,s e p a n s e,,,marry-pst,vi
+rafa-rafel-0,yab,rafa,r a f a,,,rafel,n
+perez-perez-0,yab,perez,p e r e s,,,perez,n
+keyata-grow-up-0-sepst,yab,këyata-se,k ə j a t a s e,,,grow-up-pst,vi
+yatampe,yab,yatampe,j a t a m p e,,,unknown,
+te-go-0-sepst,yab,të-se,t ə s e,,,go-pst,vi
+waraijtokompe,yab,waraijtokompe,w a r a i h t o k o m p e,,,unknown,
+padrastro-padrastro-0,yab,padrastro,p a d r a s t r o,,,padrastro,n
+keyama-create-0-sepst,yab,këyama-se,k ə j a m a s e,,,create-pst,vt
+wera-like-0,yab,wëra,w ə r a,,,like,postp
+nopano,yab,nopano,n o p a n o,,,unknown,
+tapa-beat-0-ri-zero-janeg,yab,tapa-∅-ja,t a p a h a,,,beat-ipfv-neg,vt
+taro-say-2-keimp,yab,ta-kë,t a k ə,,,say-imp,vt
+taro-say-1-tojpefut,yab,taj-tojpe,t a h t o h p e,,,say-fut,vt
+teijpo-far-1,yab,tëijpë,t ə i h p ə,,,far,adv
+pijke-dim-0,yab,pïjkë,p ɨ h k ə,,,dim,ideo
+ylk-iwiti-house-0,yab,y-ïwïtï,j ɨ w ɨ t ɨ,,,lk-house,n
+ylk-iwiti-house-1,yab,y-ïwïj,j ɨ w ɨ h,,,lk-house,n
+empare-already-0,yab,ëmpare,ə m p a r e,,,already,adv

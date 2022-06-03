@@ -1,10 +1,10 @@
 <a id='postp'></a>
-* [POS postp](POSTable?#cldf:postp)
+[POS postp](POSTable?#cldf:postp)
 
 ## Defining the category
 
 ## Inflectional morphology {#sec:postinfl}
-Postpositions take the same inflectional prefixes as nouns ([crossref](ChapterTable?_anchor=sec:nounposssuf#cldf:nouns)). <span title='are there any examples of postpositions inflected for third person?'>❓</span>
+Postpositions take the same inflectional prefixes as nouns ([crossref](ChapterTable?_anchor=sec:nounposssuf#cldf:nouns)). <span title='are there postpositions with third person i-?'>❓</span>
 
 
 |                                  |                                         |
@@ -14,9 +14,9 @@ Postpositions take the same inflectional prefixes as nouns ([crossref](ChapterTa
 | <span class="smallcaps">3</span> | [Morpheme i3](MorphsetTable?#cldf:i3)?  |
 
 ## Locative Postpositions
-* Clear bipartite Ground+Path
-* Unproductive Bipartite X+Path?
-* Other forms
+* clear bipartite Ground+Path
+* unproductive Bipartite X+Path?
+* other forms
 
 
 <a id='tab:locpost'></a><div class='caption table' id='tab:locpost'>Locative postpositions</div>
@@ -28,19 +28,24 @@ Postpositions take the same inflectional prefixes as nouns ([crossref](ChapterTa
 
 <span title='how do these fit in?'>❓</span>
 
-* *poye* <!-- (poye-above) -->
-* *po* <!-- (po-on-in) -->
-* *yatë* <!-- (yate-loc) -->
-* *yapo* <!-- (yapo-neg) -->
+* *poye* 'above'
+* *po* 'locative'
+* *yatë* 'locative'
+* *yapo* 'negation'?
 
-[Example histpajirdi-186](ExampleTable?example_no=25#cldf:histpajirdi-186)
+* allative: 
+
+[Example histpajirdi-186](ExampleTable?example_no=23#cldf:histpajirdi-186)
 
 ## Nonlocative Oblique Postpositions 
-* [Morpheme yaerg](MorphsetTable?#cldf:yaerg) ya ‘erg’ <span title='is this a different morpheme from [Morpheme yaobl'>❗️</span>](MorphsetTable?#cldf:yaobl'>❗️</span>)
-* *ke* ‘instr’
+* [Morpheme yaerg](MorphsetTable?#cldf:yaerg) ‘<span class="smallcaps">erg</span>’
+* *ke* '<span class="smallcaps">ins</span>'
 * _wanai_
 
 
 ## Propositional Postpositions
-* =se ‘desiderative’
-* others?
+* =se '<span class="smallcaps">des</span>'
+
+## Misc
+
+* copular [Morpheme chi-cop](MorphsetTable?#cldf:chi-cop) combines with [Morpheme yaweloc](MorphsetTable?#cldf:yaweloc), sometimes spelled *chi yawë*, sometimes *chawë*.

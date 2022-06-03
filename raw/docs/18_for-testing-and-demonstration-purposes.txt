@@ -1,5 +1,5 @@
 <a id='for-testing-and-demonstration-purposes'></a>
-## here's what an ignorant parser couldn't handle:
+## Some unparsable forms with derivational morphology
 
 * combination of verb with [Morpheme kempinire](MorphsetTable?#cldf:kempinire) results in what? always used as predicate
 
@@ -9,41 +9,67 @@
 
 [Example convrisamaj-09](ExampleTable?example_no=27#cldf:convrisamaj-09)
 
+* two more [Morpheme esspe](MorphsetTable?#cldf:esspe):
+
+[Example anfoperso-40](ExampleTable?example_no=28#cldf:anfoperso-40)
+
 * deverbal nominalizer:
 
-[Example convrisamaj-13](ExampleTable?example_no=28#cldf:convrisamaj-13)
+[Example convrisamaj-13](ExampleTable?example_no=29#cldf:convrisamaj-13)
+
+* [Morpheme nope-good](MorphsetTable?#cldf:nope-good) + [Morpheme anonmlz](MorphsetTable?#cldf:anonmlz):
+
+[Example anfoperso-45](ExampleTable?example_no=30#cldf:anfoperso-45)
 
 * probably special handling needed (copula + [Morpheme pekeon](MorphsetTable?#cldf:pekeon) + ? 'because of that') 
 
-[Example convrisamaj-29](ExampleTable?example_no=29#cldf:convrisamaj-29)
+[Example convrisamaj-29](ExampleTable?example_no=31#cldf:convrisamaj-29)
+
+* how productive are verbalizers?
+
+[Example anfoperso-22](ExampleTable?example_no=32#cldf:anfoperso-22)
+
+* what does [Morpheme tanecncs](MorphsetTable?#cldf:tanecncs) do?
+
+[Example anfoperso-52](ExampleTable?example_no=33#cldf:anfoperso-52)
 
 * MCMM has *narë* as emphatic particle... is this a adverbialization?
 
-[Example convrisamaj-47](ExampleTable?example_no=30#cldf:convrisamaj-47)
+[Example convrisamaj-47](ExampleTable?example_no=34#cldf:convrisamaj-47)
+
+
 
 ## Inline linked entities
 
 ### Single
-1. morph: [Morph pljne1](MorphTable?#cldf:pljne1)
+1. morph: [Morph pljne1](MorphTable?#cldf:pljne1)[^2]
 1. morpheme: [Morpheme jnepl](MorphsetTable?#cldf:jnepl)
 1. wordform: (asamo-0-ri-jraneg)
-1. text: [Text HistAnFo](TextTable?#cldf:HistAnFo)
+1. text: [Text ConvRisaMAJ](TextTable?#cldf:ConvRisaMAJ)
+
+[^2]: This is what a footnote looks like.
 
 ### Multiple
 1. morph: [Morph pljne1,ipert](MorphTable?ids=pljne1,ipert#cldf:__all__)
 1. morpheme: [Morpheme jnepl,rupert](MorphsetTable?ids=jnepl,rupert#cldf:__all__)
 1. wordform: (asamo-0-ri-jraneg,asamo-0-ri-zero)
-1. text: [Text HistAnFo,CtoRat](TextTable?ids=HistAnFo,CtoRat#cldf:__all__)
+1. text: [Text ConvRisaMAJ,CtoRat](TextTable?ids=ConvRisaMAJ,CtoRat#cldf:__all__)
 
 ## Examples
 
 ### Interlinear
 
-[Example ctorat-34](ExampleTable?example_no=31#cldf:ctorat-34)
+single:
 
-[Example ctorat-35,ctorat-36](ExampleTable?example_id=multiigt&ids=ctorat-35,ctorat-36&example_no=32#cldf:__all__)
+[Example ctorat-34](ExampleTable?example_no=35#cldf:ctorat-34)
+
+multiple:
+
+[Example ctorat-35,ctorat-36](ExampleTable?example_id=multiigt&ids=ctorat-35,ctorat-36&example_no=36#cldf:__all__)
 
 ### Other
+
+single:
 
 <ol markdown="block" class="example">
 <li class="example" markdown="block" id="test1"><div markdown="block"> 
@@ -54,6 +80,8 @@
 | [Morpheme septcp](MorphsetTable?#cldf:septcp)     | suffix |</div>
 </li>
 </ol>
+
+double:
 
 <ol markdown="block" class="example">
 <li class="example" markdown="block" id="multiparttest">
@@ -67,6 +95,21 @@
 
 *and* more</div>
 </li>
+
+</ol>
+</li>
+</ol>
+
+You can even mix them:
+
+<ol markdown="block" class="example">
+<li class="example" markdown="block" id="multiparttest2">
+<ol markdown="block" class="subexample">
+
+<li class="subexample" markdown="block" id="test4">
+<div markdown="block">Some random text in combination with an example from the corpus.</div>
+</li>
+[Example ctorat-20](ExampleTable?format=subexample&example_no=37#cldf:ctorat-20)
 
 </ol>
 </li>

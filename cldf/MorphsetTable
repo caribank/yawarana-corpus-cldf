@@ -1,7 +1,7 @@
 ID,Language_ID,Name,Comment,Parameter_ID
 i3,yab,i-/t-,The old *_-it_.,3
 jnepl,yab,-jnë,,pl
-tojpefut,yab,-tojpe,,fut; purp
+tojpefut,yab,-tojpe,From [](MorphsetTable#cldf:tojpepurp),fut
 me2,yab,më-,,2
 jraneg,yab,-jra,Is this really a privative? Or a cessative? [ex](anfoperso-08),neg; priv
 janeg,yab,-ja,,neg
@@ -30,25 +30,28 @@ tenpert,yab,-të,,npert
 tipert,yab,-ti,,pert
 riipfv,yab,-ri,From [](MorphsetTable#cldf:rinmlz),ipfv
 sepst,yab,-se,From [](MorphsetTable#cldf:septcp),pst
+jpepst,yab,-jpë,From [](MorphsetTable#cldf:jpenmlz),pst
+rupert,yab,-ru,From [](MorphsetTable#cldf:sapenmlz),pert
+sapepfv,yab,-sapë,,pfv
 dt2,yab,s-,,detrz
 tavbz,yab,-ta,,vbz
 anonmlz,yab,-ano,,nmlz
 jtevbz,yab,-jtë,,vbz-tr
 dt1,yab,ëj-,,detrz
 petiplur,yab,-pëti,,plur
-septcp,yab,-se,,pst; ptcp; sup
-jpepst,yab,-jpë,,pst; pst-acnmlz
+septcp,yab,-se,,ptcp; sup
+jpenmlz,yab,-jpë,,pst-acnmlz
 rinmlz,yab,-ri,Gave rise to [](MorphsetTable#cldf:riipfv),nmlz
 minmlz,yab,-mï,,nmlz
-rupert,yab,-ru,,pert
-sapepfv,yab,-sapë,,pfv; nmlz
+sapenmlz,yab,-sapë,,nmlz
 ninmlz,yab,-ni,,nmlz
 pininmlz,yab,‑pïnï,,priv-nmlz
 nnmlzpre,yab,n-,,p-nmlz
+tojpepurp,yab,-tojpe,Gave rise to [](MorphsetTable#cldf:tojpefut),purp
+imifather,yab,nan,Irregularly inflected.,father
 enijpetere-one,yab,enijpëtërë,,one
 imparejra-long-time,yab,ïmparëjra,,long-time
 ponoko-every,yab,ponoko,,every
-teijpo-far,yab,tëijpo,,far; long
 chi-cop,yab,chi,,cop
 perez-perez,yab,perez,,perez
 pijke-dim,yab,pïjkë,,dim
@@ -94,9 +97,8 @@ keyama-create,yab,këyama,,create
 maijte-go-imp,yab,maijtë,,go-imp
 nai-do,yab,nai,,do
 wejyaka-open,yab,wejyaka,,open
-yeni-drink,yab,yëni,,drink
 yerema,yab,yerema,,feed
-marestr,yab,ma,,restr
+marestr,yab,ma,,rst
 teloc,yab,të,,loc
 erepiscare,yab,erepï,,scare
 tojpahit,yab,tojpa,,hit
@@ -118,28 +120,40 @@ iwiti-house,yab,ïwïtï,,house
 waimu-language,yab,waimu,,language
 i-do,yab,i,,do
 waimu-talk,yab,waimu,,talk
+yajte-begin,yab,yajtë,,begin
+makampra-older-sister-of-mother,yab,makampra,,older-sister-of-mother
+taki-conf,yab,takï,,conf
+akere-with,yab,akërë,,with
+apeke-thats-why,yab,apëkë,,thats-why
+wera-like,yab,wëra,,like
 achi-wilderness,yab,achi,,wilderness
 ajpachi-undergrowth,yab,ajpachi,,undergrowth
 ana-1-3pro,yab,ana,,1-3pro
+aroma-limpet,yab,aroma,,limpet
 chika-bite,yab,chika,,bite
 chiyakono-friend,yab,chiyakono,,friend
 ejne-1-2pro,yab,ejnë,,1-2pro
 eni-prox-inan,yab,eni,,prox-inan
 enijne-prox-inan-pl,yab,enijne,,prox-inan-pl
+ente-here-loc,yab,entë,,here-loc
 ini-see,yab,ini,,see
+intipijke-small,yab,intipijkë,,small
 irejpe-then,yab,irëjpë,,then
 ita-hear,yab,ita,,hear
 ka-q,yab,ka,,q
 kawe-high,yab,kawë,,high
 konopo-rain,yab,konopo,,rain
+kejma-hunt,yab,këjma,,hunt
 kere-prox-anim,yab,kërë,,prox-anim
 keresantomo-prox-anim-pl,yab,kërësantomo,,prox-anim-pl
+kimiy-chili,yab,kïmïy,,chili
 michisantomo-med-inan-pl,yab,michisantomo,,med-inan-pl
 michitomo-med-inan-pl,yab,michitomo,,med-inan-pl
-michi-med-anim,yab,michí,,med-anim
+michi-med-anim,yab,michi,,med-anim
 misi-med-inan,yab,misi,,med-inan
 monkontomo-2pl-pro,yab,monkontomo,,2pl-pro
 morone-hurting,yab,morone,,hurting
+muku-child,yab,muku,,child
 mejnijne-dist-inan-pl,yab,mëjnijne,,dist-inan-pl
 mejni-dist-inan,yab,mëjnï,,dist-inan
 mekisantomo-dist-anim-pl,yab,mëkïsantomo,,dist-anim-pl
@@ -149,15 +163,27 @@ mijna-there-all,yab,mïjna,,there-all
 minte-there-loc,yab,mïntë,,there-loc
 najmo-grandmother,yab,najmo,,grandmother
 najpi-grandfather,yab,najpï,,grandfather
+nepi-bring,yab,nepï,,bring
 nope-good,yab,nope,,good
 noti-potential-partner,yab,noti,,potential-partner
 oki-chicha,yab,okï,,chicha
 onono-another,yab,onono,,another
+pachi-older-sister-of-woman,yab,pachi,,older-sister-of-woman
+pakuri-arrow-tip,yab,pakuri,,arrow-tip
+papa-father,yab,papa,,father
+pata-axe,yab,pata,,axe
+pata-village,yab,pata,,village
+pipi-younger-brother-of-woman,yab,pipi,,younger-brother-of-woman
+sakara-hoplias-malabaricus,yab,sakara,,hoplias-malabaricus
 sukase-all,yab,sukase,,all
+sukutaka-yucuta,yab,sukutaka,,yucuta
+tapa-beat,yab,tapa,,beat
 taro-say,yab,taro,,say
 tejpore-tasty,yab,tejpore,,tasty
+tejwetunu-sick,yab,tejwetunu,,sick
 tunami-hide,yab,tunamï,,hide
 tu-give,yab,tu,,give
+teijpo-far,yab,tëijpo,,far
 tewi-3pro,yab,tëwï,,3pro
 tewisantomo-3pro-pl,yab,tëwïsantomo,,3pro-pl
 waijta-mouse,yab,waijta,,mouse
@@ -168,14 +194,22 @@ wanene-aunt,yab,wanene,,aunt
 waraijtokomo-man,yab,waraijtokomo,,man
 ware-thus,yab,warë,,thus
 wenaka-vomit,yab,wenaka,,vomit
+weroro-dog,yab,weroro,,dog
 wiriyamo-woman,yab,wiriyamo,,woman
 wire-1pro,yab,wïrë,,1pro
 yakarama-tell,yab,yakarama,,tell
+yakono-younger-sister-of-woman,yab,yakono,,younger-sister-of-woman
+yakuri-agouti,yab,yakuri,,agouti
 yarika-laugh,yab,yarika,,laugh
 yaruwa-laugh,yab,yaruwa,,laugh
+yeme-eat-fruits-eggs-soup,yab,yeme,,eat-fruits-eggs-soup
+yojte-fish-with-hook,yab,yojtë,,fish-with-hook
+yoki-eat-starch,yab,yokï,,eat-starch
 yutu-forest,yab,yutu,,forest
 ye-tooth,yab,yë,,tooth
+yeni-drink,yab,yëni,,drink
 ejte-house,yab,ëjtë,,house
+empare-already,yab,ëmpare,,already
 etipa-go-in-group,yab,ëtïpa,,go-in-group
 eni-drink,yab,ëni,,drink
 ese-name,yab,ese,,name

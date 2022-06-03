@@ -1,4 +1,6 @@
 <a id='verbinfl'></a>
+TBD: An introduction to this chapter.
+
 ## Person prefixes {#sec:verbperson}
 
 
@@ -12,22 +14,23 @@
 
 * Absolutive proclitics 
     * <span title='Check: appears that they are reduced forms, with long vowel? FM: i noticed a long vowel in convrisamaj-02'>❓</span>
-    * [Morpheme u1](MorphsetTable?#cldf:u1) ‘1S/O’ <span title='is this ever actually *wï-*?'>❓</span>
-    * [Morpheme me2](MorphsetTable?#cldf:me2) ‘2S/O’
-        * one example of (më=) ‘2A’ on imperative verb <span title='where?'>❓</span>
+    * [Morpheme u1](MorphsetTable?#cldf:u1) ‘<span class="smallcaps">1s/p</span>’ <span title='is this ever actually *wï-*?'>❓</span>
+    * [Morpheme me2](MorphsetTable?#cldf:me2) ‘<span class="smallcaps">2s/p</span>’
+        * one example of ([Morpheme me2](MorphsetTable?#cldf:me2)) ‘<span class="smallcaps">2A</span>’ on imperative verb <span title='where?'>❓</span>
 * Third person
-    * Ø‑ ‘3S’ with intransitive verbs
+    * Ø‑ '<span class="smallcaps">3s</span>' with intransitive verbs
     *   • exception: *ij‑të‑ri* ‘he goes’ plus 2 more <span title='which ones?'>❓</span>
-    * Ø‑ ‘3O’ with transitive verbs with 1A or 2A; also sometimes 3A
-    * [Morpheme t3](MorphsetTable?#cldf:t3) ‘3A3O’
+    * Ø‑ ‘<span class="smallcaps">3p</span>’ with transitive verbs with <span class="smallcaps">1a</span> or <span class="smallcaps">2a</span>; also sometimes <span class="smallcaps">3a</span>
+    * [Morpheme t3](MorphsetTable?#cldf:t3) ‘<span class="smallcaps">3>3</span>’
         * Not required, but possible
             * Check: not in alternation with preceding O NP?
-        * [Morpheme t3](MorphsetTable?#cldf:t3) ‘3O’ attested on one V in the pan‑Cariban “progressive” construction w/ 2nd person A <span title='which one?'>❓</span>
+        * [Morpheme t3](MorphsetTable?#cldf:t3) ‘<span class="smallcaps">3p</span>’ attested on one V in the pan‑Cariban “progressive” construction w/ 2nd person <span class="smallcaps">a</span> <span title='which one?'>❓</span>
 * Note that all transitive verbs are consonant‑initial, whether etymologically or not because [Morpheme ylk](MorphsetTable?#cldf:ylk) ‘rel’ is added to all vowel‑initial roots
     * the _y‑_ disappears when preceded by the detransitivizer <span title='examples for detransitivized verbs'>❗️</span>
 
-## Non‑personal inflectional prefixation — is there any? Probably not?
-* t‑V‑se is no more — the t‑ is gone (except with tënëse ‘eat’ and tenise ‘drink’)
+## Non‑personal inflectional prefixation
+<span title='is there any?'>❓</span>
+* \*_t‑V‑se_ is no more — the t‑ is gone (except with _t-ënë-se_ ‘eat’ and _t-eni-se_ ‘drink’) <span title='or are these t-verbs?'>❓</span>
   * Any divergent forms with the negative?
     * _i‑_ with intransitive negatives?
     * _an‑_ with transitive negatives?
@@ -46,7 +49,6 @@
 | [Morpheme sareimn](MorphsetTable?#cldf:sareimn) | imminent future                          |
 | [Morpheme tepeke](MorphsetTable?#cldf:tepeke)   | <span class="smallcaps">prog.intr</span> |
 | [Morpheme pekeon](MorphsetTable?#cldf:pekeon)   | <span class="smallcaps">prog.tr</span>   |
-| [Morpheme sareimn](MorphsetTable?#cldf:sareimn) | imminent future                          |
 
 <span title='how do the following ones fit in?'>❓</span>
 
@@ -69,55 +71,58 @@
     * [Morph ri-zero](MorphTable?#cldf:ri-zero), phonetic loss
     * [Morph ri-ru](MorphTable?#cldf:ri-ru), assimilation
     * what about [Morph ri-ri](MorphTable?#cldf:ri-ri)? Looks like the original one...
-* diachrony: related to other *-ri*
+* diachrony: from the nominalizer [Morpheme rinmlz](MorphsetTable?#cldf:rinmlz)
 * combines with [Morpheme jraneg](MorphsetTable?#cldf:jraneg):
 
 [Example convrisamaj-04](ExampleTable?example_no=13#cldf:convrisamaj-04)
 
 #### Semantics
-not specified for tense, just imperfective aspect:
+* not specified for tense, just imperfective aspect:
+    * past <a class="exref" example_id="ctorat-16"></a>
+    * future <a class="exref" example_id="convrisamaj-06"></a>
+    * gnomic/present? <a class="exref" example_id="gnomicri"></a>
 
 [Example ctorat-16](ExampleTable?example_no=14#cldf:ctorat-16)
 [Example convrisamaj-06](ExampleTable?example_no=15#cldf:convrisamaj-06)
-[Example convrisamaj-04](ExampleTable?example_no=16#cldf:convrisamaj-04)
-[Example convrisamaj-28](ExampleTable?example_no=17#cldf:convrisamaj-28)
+[Example convrisamaj-04,convrisamaj-28](ExampleTable?example_id=gnomicri&ids=convrisamaj-04,convrisamaj-28&example_no=16#cldf:__all__)
 
 ### [Morpheme jpepst](MorphsetTable?#cldf:jpepst)
 
 * allomorphy: none?
-* diachrony: from other *-jpë*
-<span title='negation?'>❓</span>
-<span title='semantics?'>❓</span>
+* diachrony: from nominalizer [Morpheme jpenmlz](MorphsetTable?#cldf:jpenmlz)
+<span title='negation?'>❓</span> <span title='semantics?'>❓</span>
 
 ### [Morpheme sepst](MorphsetTable?#cldf:sepst)
 * allomorphy: [Morph septcp](MorphTable?#cldf:septcp)/[Morph cheptcp](MorphTable?#cldf:cheptcp)
-* diachrony: from participle
+* diachrony: from participle [Morpheme septcp](MorphsetTable?#cldf:septcp)
 <span title='negation?'>❓</span>
 <span title='semantics?'>❓</span>
 
 ### [Morpheme sapepfv](MorphsetTable?#cldf:sapepfv)
-* diachrony and distribution:  only occurs on the copula?
+* diachrony: from nominalizer [Morpheme sapenmlz](MorphsetTable?#cldf:sapenmlz)
+* distribution: only occurs on the copula?
 * allomorphy: [Morph sapepfv](MorphTable?#cldf:sapepfv) and [Morph sajpfv](MorphTable?#cldf:sajpfv)
 * negation: with [Morpheme janeg](MorphsetTable?#cldf:janeg) on lexical verb <a class="exref" example_id="ctoaragrme-38"end="ctoaragrme-40" ></a>
 <span title='semantics?'>❓</span>
 
-[Example ctoaragrme-38](ExampleTable?example_no=18#cldf:ctoaragrme-38)
-[Example ctoaragrme-39](ExampleTable?example_no=19#cldf:ctoaragrme-39)
-[Example ctoaragrme-40](ExampleTable?example_no=20#cldf:ctoaragrme-40)
+[Example ctoaragrme-38](ExampleTable?example_no=17#cldf:ctoaragrme-38)
+[Example ctoaragrme-39](ExampleTable?example_no=18#cldf:ctoaragrme-39)
+[Example ctoaragrme-40](ExampleTable?example_no=19#cldf:ctoaragrme-40)
 
 * what about <a class="exref" example_id="ctorat-19"></a>? is that existential negation?
 
-[Example ctorat-19](ExampleTable?example_no=21#cldf:ctorat-19)
+[Example ctorat-19](ExampleTable?example_no=20#cldf:ctorat-19)
 
 ### [Morpheme sareimn](MorphsetTable?#cldf:sareimn)
+* once a converb, now 'imminent future'
 
-[Example ctorat-25](ExampleTable?example_no=22#cldf:ctorat-25)
-[Example ctoaragrme-25](ExampleTable?example_no=23#cldf:ctoaragrme-25)
+[Example ctorat-25](ExampleTable?example_no=21#cldf:ctorat-25)
+[Example ctoaragrme-25](ExampleTable?example_no=22#cldf:ctoaragrme-25)
 
 
 
 ## Subordinate Clause markers
-<span title='are these not derivational? wrong section?'>❓</span>
+<span title='these should maybe go to another section'>❗️</span>
 
 * Nominalizations
 * Adverbial Clauses
@@ -130,7 +135,7 @@ not specified for tense, just imperfective aspect:
     * *‑yapo* ‘neg.purp’
     * others?
 
-What about [Morpheme podes](MorphsetTable?#cldf:podes)?
+What about desiderative [Morpheme podes](MorphsetTable?#cldf:podes)?
 
 ## Number
 * _‑rï=kontomo_
@@ -138,8 +143,8 @@ What about [Morpheme podes](MorphsetTable?#cldf:podes)?
 * _‑se=jne=pano_ (_‑se=jne=kontom=pano_?)
 
 ## Copula / Auxiliary
-* Paradigm
-* Any particles? Man, wai, manai, etc?
-* Past/Perfect particles? nahkë, etc.
-* chijpë, wejsapë 
+<span title='paradigm'>❗️</span>
+<span title='did any particles develop from inflected forms?  Man, wai, manai, etc'>❓</span>
+<span title='are there irregular pat/perfect participles? nahkë, etc'>❓</span>
 
+* there is stem allomorphy: [Morpheme chi-cop](MorphsetTable?#cldf:chi-cop), [Morpheme wej-cop](MorphsetTable?#cldf:wej-cop) <span title='should these be the same morpheme?'>❓</span>
