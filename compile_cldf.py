@@ -168,6 +168,13 @@ with CLDFWriter(spec) as writer:
             "datatype": {"base": "string"},
             "separator": ";",
         },
+        {
+            "name": "Original_Translation",
+            "required": False,
+            "dc:extent": "singlevalued",
+            "dc:description": "The original translation of the example text.",
+            "datatype": "string",
+        },
         {"name": "Tags", "required": False, "datatype": "string", "separator": ","},
     )
     writer.cldf.add_component("FormTable")
@@ -224,12 +231,16 @@ with CLDFWriter(spec) as writer:
     examples = examples.merge(example_add, on="ID", how="left")
     examples = examples.fillna("")
     examples["Tags"] = examples.apply(lambda x: x["Tags_y"] + " " + x["Tags_x"], axis=1)
-    examples["Translated_Text"] = examples.apply(
-        lambda x: x["Translation_en"]
-        if not (pd.isnull(x["Translation_en"]) or x["Translation_en"] == "")
-        else x["Translated_Text"],
-        axis=1,
-    )
+
+    def sort_translations(row):
+        if row["Translation_en"] != "":
+            row["Original_Translation"] = row["Translated_Text"]
+            row["Translated_Text"] = row["Translation_en"]
+        else:
+            row["Original_Translation"] = ""
+        return row
+
+    examples = examples.apply(lambda x: sort_translations(x), axis=1)
 
     texts = {}
     good_texts = open("raw/good_texts.txt", "r", encoding="utf8").read().split("\n")
