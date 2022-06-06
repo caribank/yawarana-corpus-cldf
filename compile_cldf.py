@@ -310,8 +310,15 @@ with CLDFWriter(spec) as writer:
     flexemes = flexemes[(flexemes["ID"].isin(include))]
 
     manual_lexemes = cread("raw/lexemes.csv")
+    manual_lexemes["ID"] = manual_lexemes.apply(
+        lambda x: slugify(
+            f'{x["Form"].split("; ")[0]}-{x["Gloss_en"].split("; ")[0]}'
+            if x["ID"] == ""
+            else x["ID"]
+        ),
+        axis=1,
+    )
     roots = cread("raw/dictionary_roots.csv")
-    misc = cread("etc/misc_morphs.csv")
     manual_lexemes = pd.concat([manual_lexemes, roots])
     infl_morphs = cread("etc/inflection_morphs.csv")
     infl_morphemes = cread("etc/inflection_morphemes.csv")
@@ -355,10 +362,10 @@ with CLDFWriter(spec) as writer:
     # the distinct meanings
     meanings = {"unknown": "***"}
 
-    for mp in pd.concat([infl_morphemes, deriv_morphemes, misc_morphemes]).to_dict(
-        orient="records"
-    ):
-        morpheme_id = mp["ID"]
+    all_morphemes = pd.concat([infl_morphemes, deriv_morphemes, misc_morphemes])
+    all_morphemes.set_index("ID", inplace=True)
+    for morpheme_id, mp in all_morphemes.iterrows():
+        mp["ID"] = morpheme_id
         if morpheme_id in id_dict:
             log.error(morpheme_id)
             raise ValueError
@@ -386,12 +393,7 @@ with CLDFWriter(spec) as writer:
         writer.objects["MorphTable"].append(morph)
 
     for i, lexeme in enumerate(manual_lexemes.to_dict(orient="records")):
-        if lexeme["ID"] == "":
-            morpheme_id = slugify(
-                f'{lexeme["Form"].split("; ")[0]}-{lexeme["Gloss_en"].split("; ")[0]}'
-            )
-        else:
-            morpheme_id = lexeme["ID"]
+        morpheme_id = lexeme["ID"]
         if morpheme_id in id_dict:
             log.error(f"{morpheme_id} is already in id_dict")
             raise ValueError
@@ -713,11 +715,70 @@ with CLDFWriter(spec) as writer:
                 }
             )
 
+    all_lexemes = pd.concat([manual_lexemes, flexemes])
+    all_lexemes.set_index("ID", inplace=True)
+    derivations = cread("raw/derivations.csv")
     log.info("Lexemes")
     for key, name in lexemes.items():
-        writer.objects["LexemeTable"].append(
-            {"ID": key, "Language_ID": "yab", "Name": name}
-        )
+        if key in all_lexemes.index:
+            record = all_lexemes.loc[key]
+            writer.objects["LexemeTable"].append(
+                {
+                    "ID": key,
+                    "Language_ID": "yab",
+                    "Name": record["Form"].split("; ")[0],
+                    "Description": record["Gloss_en"],
+                }
+            )
+        elif "+" in name:
+            unparsable = False
+            translation_bits = []
+            deriv_cands = derivations[derivations["Structure"] == name]
+            if len(deriv_cands) > 0:
+                translation = deriv_cands.iloc[0]["Translation"]
+            else:
+                translation = None
+            new_name = []
+            for xid in name.split("+"):
+                xid = slugify(xid)
+                if xid in all_morphemes.index:
+                    new_name.append(all_morphemes.loc[xid]["Name"])
+                    translation_bits.append(all_morphemes.loc[xid]["Parameter_ID"])
+                elif xid in all_lexemes.index:
+                    new_name.append(all_lexemes.loc[xid]["Form"].split("; ")[0])
+                    translation_bits.append(all_lexemes.loc[xid]["Gloss_en"])
+                else:
+                    unparsable = True
+            new_name = "+".join(new_name).replace("-", "")
+            if not translation:
+                translation = "+".join(translation_bits)
+            if unparsable:
+                writer.objects["LexemeTable"].append(
+                    {
+                        "ID": key,
+                        "Language_ID": "yab",
+                        "Name": name,
+                        "Description": "Unparsable complex lexeme",
+                    }
+                )
+            else:
+                writer.objects["LexemeTable"].append(
+                    {
+                        "ID": key,
+                        "Language_ID": "yab",
+                        "Name": new_name,
+                        "Description": translation
+                    }
+                )
+        else:
+            writer.objects["LexemeTable"].append(
+                {
+                    "ID": key,
+                    "Language_ID": "yab",
+                    "Name": name,
+                    "Description": "Not found",
+                }
+            )
 
     writer.objects["LanguageTable"].append(
         {
