@@ -10,7 +10,14 @@ import pybtex
 from pycldf.sources import Source
 from pylingdocs.models import Morpheme, Morph, Text
 from pylingdocs.cldf import metadata as cldf_md
-from clld_morphology_plugin.cldf import MorphTable, MorphsetTable, FormSlices, POSTable
+from clld_morphology_plugin.cldf import (
+    MorphTable,
+    MorphsetTable,
+    FormSlices,
+    POSTable,
+    LexemeTable,
+    InflectionTable,
+)
 from pylacoan.helpers import ortho_strip, get_pos
 from cffconvert.cli.create_citation import create_citation
 from cffconvert.cli.validate_or_write_output import validate_or_write_output
@@ -183,6 +190,8 @@ with CLDFWriter(spec) as writer:
     writer.cldf.add_component("LanguageTable")
     writer.cldf.add_component(FormSlices)
     writer.cldf.add_component(POSTable)
+    writer.cldf.add_component(LexemeTable)
+    writer.cldf.add_component(InflectionTable)
     writer.cldf.add_component(cldf_md("ExampleSlices"))
     writer.cldf.remove_columns("FormTable", "Parameter_ID")
     writer.cldf.add_columns(
@@ -215,6 +224,8 @@ with CLDFWriter(spec) as writer:
     writer.cldf.add_foreign_key("ExampleSlices", "Example_ID", "ExampleTable", "ID")
     writer.cldf.add_foreign_key("ExampleSlices", "Parameter_ID", "ParameterTable", "ID")
     writer.cldf.add_foreign_key("ExampleTable", "Text_ID", "TextTable", "ID")
+    writer.cldf.add_foreign_key("InflectionTable", "Form_ID", "FormTable", "ID")
+    writer.cldf.add_foreign_key("InflectionTable", "Lexeme_ID", "LexemeTable", "ID")
 
     log.info("Reading data")
 
@@ -475,6 +486,8 @@ with CLDFWriter(spec) as writer:
     form_meanings = {}
     # the actual word forms, which can have different meanings
     forms = {}
+    # lexemes
+    lexemes = {}
 
     dangerous_glosses = ["all"]
     # these are some wordforms collected for the dictionary, parsed with uniparser
@@ -556,8 +569,11 @@ with CLDFWriter(spec) as writer:
                 if "=" in word:
                     ex["Morpheme_IDs"].insert(wc, ex["Morpheme_IDs"][wc])
         word_count = -1
-        for morpheme_ids, word, gramm in zip(
-            ex["Morpheme_IDs"], igt.morphosyntactic_words, ex["Gramm"].split(" ")
+        for morpheme_ids, word, gramm, lexeme in zip(
+            ex["Morpheme_IDs"],
+            igt.morphosyntactic_words,
+            ex["Gramm"].split(" "),
+            ex["Lemmata"].split(" "),
         ):
             word_count += 1
             form_slug = slugify(word.word + ":" + word.gloss)
@@ -606,11 +622,19 @@ with CLDFWriter(spec) as writer:
                 if " " in gramm:
                     print(ex["Gramm"], "eeek", gramm)
                 if slug not in forms:
+                    lexemes.setdefault(slugify(lexeme), lexeme)
                     forms[slug] = {
                         "Form": word.word,
                         "Parameter_ID": [meaning_slug],
                         "POS": get_pos(gramm, pos_list=pos_list),
                     }
+                    writer.objects["InflectionTable"].append(
+                        {
+                            "ID": f"{form_slug}-{slugify(lexeme)}",
+                            "Form_ID": slug,
+                            "Lexeme_ID": slugify(lexeme),
+                        }
+                    )
                 elif word.gloss not in forms[slug]["Parameter_ID"]:
                     forms[slug]["Parameter_ID"].append(meaning_slug)
                 for morph_count, (morph_id, glossed_morph) in enumerate(
@@ -688,6 +712,12 @@ with CLDFWriter(spec) as writer:
                     "Name": word_audios[form_slug][0].stem,
                 }
             )
+
+    log.info("Lexemes")
+    for key, name in lexemes.items():
+        writer.objects["LexemeTable"].append(
+            {"ID": key, "Language_ID": "yab", "Name": name}
+        )
 
     writer.objects["LanguageTable"].append(
         {
