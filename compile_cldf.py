@@ -17,6 +17,8 @@ from clld_morphology_plugin.cldf import (
     FormSlices,
     POSTable,
     LexemeTable,
+    LexemeLexemeParts,
+    LexemeMorphemeParts,
     InflectionTable,
 )
 from pylacoan.helpers import ortho_strip, get_pos
@@ -189,6 +191,8 @@ with CLDFWriter(spec) as writer:
     writer.cldf.add_component("ParameterTable")
     writer.cldf.add_component("MediaTable")
     writer.cldf.add_component("LanguageTable")
+    writer.cldf.add_component(LexemeMorphemeParts)
+    writer.cldf.add_component(LexemeLexemeParts)
     writer.cldf.add_component(FormSlices)
     writer.cldf.add_component(POSTable)
     writer.cldf.add_component(LexemeTable)
@@ -227,6 +231,12 @@ with CLDFWriter(spec) as writer:
     writer.cldf.add_foreign_key("ExampleTable", "Text_ID", "TextTable", "ID")
     writer.cldf.add_foreign_key("InflectionTable", "Form_ID", "FormTable", "ID")
     writer.cldf.add_foreign_key("InflectionTable", "Lexeme_ID", "LexemeTable", "ID")
+    writer.cldf.add_foreign_key(
+        "LexemeMorphemeParts", "Morpheme_ID", "MorphsetTable", "ID"
+    )
+    writer.cldf.add_foreign_key("LexemeMorphemeParts", "Lexeme_ID", "LexemeTable", "ID")
+    writer.cldf.add_foreign_key("LexemeLexemeParts", "Base_ID", "LexemeTable", "ID")
+    writer.cldf.add_foreign_key("LexemeLexemeParts", "Lexeme_ID", "LexemeTable", "ID")
 
     log.info("Reading data")
 
@@ -241,9 +251,12 @@ with CLDFWriter(spec) as writer:
     example_add = cread("etc/example_additions.csv")
     examples = examples.merge(example_add, on="ID", how="left")
     examples = examples.fillna("")
-    examples["Tags"] = examples.apply(lambda x: " ".join([x["Tags_y"], x["Tags_x"]]), axis=1)
-    examples["Comment"] = examples.apply(lambda x: " ".join([x["Comment_y"], x["Comment_x"]]).strip(), axis=1)
-    print(examples)
+    examples["Tags"] = examples.apply(
+        lambda x: " ".join([x["Tags_y"], x["Tags_x"]]), axis=1
+    )
+    examples["Comment"] = examples.apply(
+        lambda x: " ".join([x["Comment_y"], x["Comment_x"]]).strip(), axis=1
+    )
 
     def sort_translations(row):
         if row["Translation_en"] != "":
@@ -365,8 +378,10 @@ with CLDFWriter(spec) as writer:
     meanings = {"unknown": "***"}
 
     all_morphemes = pd.concat([infl_morphemes, deriv_morphemes, misc_morphemes])
-    all_morphemes.set_index("ID", inplace=True)
-    all_morphemes["Comment"] = all_morphemes["Comment"].apply(lambda x: "".join(preprocess_cldfviz(x)))
+    all_morphemes.set_index("ID", inplace=True, drop=False)
+    all_morphemes["Comment"] = all_morphemes["Comment"].apply(
+        lambda x: "".join(preprocess_cldfviz(x))
+    )
     for morpheme_id, mp in all_morphemes.iterrows():
         mp["ID"] = morpheme_id
         if morpheme_id in id_dict:
@@ -480,19 +495,40 @@ with CLDFWriter(spec) as writer:
             }
         )
 
+    log.info("Lexemes")
+    all_lexemes = pd.concat([manual_lexemes, flexemes])
+    all_lexemes["Language_ID"] = "yab"
+    all_lexemes["Form"] = all_lexemes["Form"].apply(lambda x: x.split("; "))
+    all_lexemes["Name"] = all_lexemes["Form"].apply(lambda x: x[0])
+    all_lexemes["Description"] = all_lexemes["Gloss_en"].apply(
+        lambda x: x.split("; ")[0].replace(".", " ")
+    )
+    all_lexemes.set_index("ID", inplace=True, drop=False)
+
+    derivations = cread("raw/derivations.csv")
+    derivations["ID"] = derivations["Structure"].apply(slugify)
+    derivations["Language_ID"] = "yab"
+    derivations["Description"] = derivations["Translation"]
+    derivations["Gloss_en"] = derivations["Translation"]
+    derivations["Name"] = derivations["Form"].apply(lambda x: x.replace("-", "+"))
+    derivations["Form"] = derivations["Form"].apply(
+        lambda x: x.replace("-", "").split("; ")
+    )
+    derivations.set_index("Structure", inplace=True, drop=False)
+
+    for lex in derivations.to_dict("records"):
+        writer.objects["LexemeTable"].append(lex)
+
+    for lex in all_lexemes.to_dict("records"):
+        writer.objects["LexemeTable"].append(lex)
+
     log.info("Wordforms")
-
-    # print(id_dict)
-    # store all word forms in the corpus
-    # word forms are treated as identical based on their morphological makeup
-    # i.e., one form can have different meanings, depending on the context
-
     # different form-meaning pairs, to avoid sorting IDs every time (slow)
     form_meanings = {}
     # the actual word forms, which can have different meanings
     forms = {}
-    # lexemes
-    lexemes = {}
+    # lexemes occurring in the corpus
+    corpus_lexemes = {}
 
     dangerous_glosses = ["all"]
     # these are some wordforms collected for the dictionary, parsed with uniparser
@@ -627,7 +663,9 @@ with CLDFWriter(spec) as writer:
                 if " " in gramm:
                     print(ex["Gramm"], "eeek", gramm)
                 if slug not in forms:
-                    lexemes.setdefault(slugify(lexeme), lexeme)
+                    corpus_lexemes.setdefault(
+                        slugify(lexeme), {"name": lexeme, "gloss": word.gloss}
+                    )
                     forms[slug] = {
                         "Form": word.word,
                         "Parameter_ID": [meaning_slug],
@@ -668,6 +706,118 @@ with CLDFWriter(spec) as writer:
                 }
             )
         writer.objects["ExampleTable"].append(ex)
+
+    all_lexemes = pd.concat([all_lexemes, derivations])
+    all_morphemes["Gloss_en"] = all_morphemes["Parameter_ID"].apply(
+        lambda x: meanings[slugify(x[0])]
+    )
+    for deriv in derivations.to_dict("records"):
+        for c_count, constituent in enumerate(deriv["Structure"].split("+")):
+            if constituent in all_lexemes.index:
+                print(deriv, constituent)
+                writer.objects["LexemeLexemeParts"].append(
+                    {
+                        "ID": f"{deriv['ID']}-{c_count}",
+                        "Lexeme_ID": deriv["ID"],
+                        "Base_ID": constituent,
+                    }
+                )
+            elif constituent in all_morphemes.index:
+                writer.objects["LexemeMorphemeParts"].append(
+                    {
+                        "ID": f"{deriv['ID']}-{c_count}",
+                        "Lexeme_ID": deriv["ID"],
+                        "Morpheme_ID": constituent,
+                    }
+                )
+            else:
+                log.error(constituent)
+                sys.exit()
+
+    # some lexemes are created on the fly by uniparser
+    generated_lexemes = {}
+    for key, data in corpus_lexemes.items():
+        name = data["name"]
+        if key in all_lexemes.index:  # monomorphemic lexemes (like 'wenaka-vomit')
+            pass
+        elif (
+            name in derivations.index
+        ):  # manually defined derivations (like 'dt1+wenaka-vomit')
+            pass
+        else:
+            log.debug(f"Processing lexeme {key}: {name}")
+            constituents = []
+            for constituent in name.split("+"):
+                if constituent in all_lexemes.index:
+                    constituents.append(
+                        {**dict(all_lexemes.loc[constituent]), **{"type": "lexeme"}}
+                    )
+                    pass
+                else:
+                    candidate_lexemes = all_lexemes[
+                        all_lexemes["Form"].apply(lambda x: constituent in x)
+                    ]
+                    if len(candidate_lexemes) == 1:
+                        constituents.append(
+                            {**dict(candidate_lexemes.iloc[0]), **{"type": "lexeme"}}
+                        )
+                    elif len(candidate_lexemes) > 1:
+                        identified = False
+                        for g in data["gloss"].split("-"):
+                            narrow_cands = candidate_lexemes[
+                                candidate_lexemes["Gloss_en"].str.contains(g)
+                            ]
+                            if len(narrow_cands) == 1:
+                                constituents.append(
+                                    {**dict(narrow_cands.iloc[0]), **{"type": "lexeme"}}
+                                )
+                                identified = True
+                        if not identified:
+                            log.warning(f"Ambiguity alert for lexeme {key}: {name}")
+                            print(data)
+                            print(candidate_lexemes)
+                    else:
+                        if slugify(constituent) in all_morphemes.index:
+                            constituents.append(
+                                {
+                                    **dict(all_morphemes.loc[slugify(constituent)]),
+                                    **{"type": "morpheme"},
+                                }
+                            )
+                            pass
+                        else:
+                            log.warning(constituent)
+                            print(data)
+            for c_count, constituent in enumerate(constituents):
+                if constituent["type"] == "lexeme":
+                    writer.objects["LexemeLexemeParts"].append(
+                        {
+                            "ID": f"{key}-{c_count}",
+                            "Lexeme_ID": key,
+                            "Base_ID": constituent["ID"],
+                        }
+                    )
+                elif constituent["type"] == "morpheme":
+                    writer.objects["LexemeMorphemeParts"].append(
+                        {
+                            "ID": f"{key}-{c_count}",
+                            "Lexeme_ID": key,
+                            "Morpheme_ID": constituent["ID"],
+                        }
+                    )
+            lexeme_name = "+".join([x["Name"] for x in constituents]).replace("-", "")
+            lexeme_description = "-".join([x["Gloss_en"] for x in constituents])
+            if key in generated_lexemes:
+                log.warning(f"Lexeme ID {key} has already been generated.")
+            generated_lexemes[key] = {
+                "ID": key,
+                "Name": lexeme_name,
+                "Description": lexeme_description,
+                "Language_ID": "yab",
+            }
+
+    for lex in generated_lexemes.values():
+        writer.objects["LexemeTable"].append(lex)
 
     log.info("Audio")
 
@@ -715,71 +865,6 @@ with CLDFWriter(spec) as writer:
                     "ID": form_id,
                     "Media_Type": "wav",
                     "Name": word_audios[form_slug][0].stem,
-                }
-            )
-
-    all_lexemes = pd.concat([manual_lexemes, flexemes])
-    all_lexemes.set_index("ID", inplace=True)
-    derivations = cread("raw/derivations.csv")
-    log.info("Lexemes")
-    for key, name in lexemes.items():
-        if key in all_lexemes.index:
-            record = all_lexemes.loc[key]
-            writer.objects["LexemeTable"].append(
-                {
-                    "ID": key,
-                    "Language_ID": "yab",
-                    "Name": record["Form"].split("; ")[0],
-                    "Description": record["Gloss_en"],
-                }
-            )
-        elif "+" in name:
-            unparsable = False
-            translation_bits = []
-            deriv_cands = derivations[derivations["Structure"] == name]
-            if len(deriv_cands) > 0:
-                translation = deriv_cands.iloc[0]["Translation"]
-            else:
-                translation = None
-            new_name = []
-            for xid in name.split("+"):
-                xid = slugify(xid)
-                if xid in all_morphemes.index:
-                    new_name.append(all_morphemes.loc[xid]["Name"])
-                    translation_bits.append(all_morphemes.loc[xid]["Parameter_ID"])
-                elif xid in all_lexemes.index:
-                    new_name.append(all_lexemes.loc[xid]["Form"].split("; ")[0])
-                    translation_bits.append(all_lexemes.loc[xid]["Gloss_en"])
-                else:
-                    unparsable = True
-            new_name = "+".join(new_name).replace("-", "")
-            if not translation:
-                translation = "+".join(translation_bits)
-            if unparsable:
-                writer.objects["LexemeTable"].append(
-                    {
-                        "ID": key,
-                        "Language_ID": "yab",
-                        "Name": name,
-                        "Description": "Unparsable complex lexeme",
-                    }
-                )
-            else:
-                writer.objects["LexemeTable"].append(
-                    {
-                        "ID": key,
-                        "Language_ID": "yab",
-                        "Name": new_name,
-                        "Description": translation
-                    }
-                )
-        else:
-            writer.objects["LexemeTable"].append(
-                {
-                    "ID": key,
-                    "Language_ID": "yab",
-                    "Name": name,
-                    "Description": "Not found",
                 }
             )
 
