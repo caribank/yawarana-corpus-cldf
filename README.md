@@ -1,5 +1,6 @@
 # A digital sketch grammar of Yawarana
 
+For a breakdown of the structure of the dataset, check the [cldf folder](cldf).
 The most recent release of this dataset is served [here](https://fl.mt/yawarana-sketch).
 The [`pylingdocs`](https://github.com/fmatter/pylingdocs/) source is available [here](https://github.com/fmatter/yawarana-sketch/releases/tag/0.0.3.draft).
 Released versions of this dataset can be found under [releases](https://github.com/fmatter/yawarana-sketch-cldf/releases/), the latest version is [0.0.3.draft](https://github.com/fmatter/yawarana-sketch-cldf/releases/tag/0.0.3.draft).
