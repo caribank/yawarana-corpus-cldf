@@ -8,8 +8,9 @@ import sys
 from clldutils import jsonlib
 import pybtex
 from pycldf.sources import Source
-from pylingdocs.models import Morpheme, Morph, Text
+from pylingdocs.models import Text
 from pylingdocs.cldf import metadata as cldf_md
+from pylingdocs.preprocessing import preprocess_cldfviz
 from clld_morphology_plugin.cldf import (
     MorphTable,
     MorphsetTable,
@@ -237,11 +238,12 @@ with CLDFWriter(spec) as writer:
     examples.rename(columns={"Sentence": "Primary_Text"}, inplace=True)
     examples["Language_ID"] = "yab"
     examples["Source"] = examples["Source"].str.split("; ")
-
     example_add = cread("etc/example_additions.csv")
     examples = examples.merge(example_add, on="ID", how="left")
     examples = examples.fillna("")
-    examples["Tags"] = examples.apply(lambda x: x["Tags_y"] + " " + x["Tags_x"], axis=1)
+    examples["Tags"] = examples.apply(lambda x: " ".join([x["Tags_y"], x["Tags_x"]]), axis=1)
+    examples["Comment"] = examples.apply(lambda x: " ".join([x["Comment_y"], x["Comment_x"]]).strip(), axis=1)
+    print(examples)
 
     def sort_translations(row):
         if row["Translation_en"] != "":
@@ -364,6 +366,7 @@ with CLDFWriter(spec) as writer:
 
     all_morphemes = pd.concat([infl_morphemes, deriv_morphemes, misc_morphemes])
     all_morphemes.set_index("ID", inplace=True)
+    all_morphemes["Comment"] = all_morphemes["Comment"].apply(lambda x: "".join(preprocess_cldfviz(x)))
     for morpheme_id, mp in all_morphemes.iterrows():
         mp["ID"] = morpheme_id
         if morpheme_id in id_dict:
