@@ -1,11 +1,13 @@
-Form,Translation,Comment,POS,Gloss,Structure
-ëj-nai,make self,,vi,DETRZ-do,dt1+nai-do
-ëj-wenaka,vomit,,vi,DETRZ-vomit,dt1+wenaka-vomit
-s-erema,eat,,vi,DETRZ-feed,dt2+yerema
-s-ere,become scared,,vi,DETRZ-scare,dt2+erepiscare
-s-ënka,finish,,vi,DETRZ-finish,dt2+enkafinish
-ëj-nëmë,remain,Interesting semantics?,vi,DETRZ-leave,dt1+neme-leave
-tawa-ja,not like that,,adv,too-NEG,tawara-too+janeg
-suj-ta,urinate,,vi,urine-VBZ,suku+tavbz
-kaimo-ta,hunt,,vi,game-VBZ,kaimo+tavbz
-poko-no,because,,n,on.surface-NMLZ,pekeon+anonmlz
+Form,Translation,Comment,POS,Gloss,Structure,Translation_es
+ëj-nai,make self,,vi,DETRZ-do,dt1+nai-do,
+ëj-wenaka,vomit,,vi,DETRZ-vomit,dt1+wenaka-vomit,
+s-erema,eat,,vi,DETRZ-feed,dt2+yerema,
+s-ere,become scared,,vi,DETRZ-scare,dt2+erepiscare,
+s-ënka,finish,,vi,DETRZ-finish,dt2+enkafinish,
+ëj-nëmë,remain,Interesting semantics?,vi,DETRZ-leave,dt1+neme-leave,
+tawa-ja,not like that,,adv,too-NEG,tawara-too+janeg,
+suj-ta,urinate,,vi,urine-VBZ,suku+tavbz,
+kaimo-ta,hunt,,vi,game-VBZ,kaimo+tavbz,
+poko-no,because,,n,on.surface-NMLZ,pekeon+anonmlz,
+mëtëj-ye,thin,,adv,thin-ADVZ,metej-thin+readvz,flaco
+mëtë-ta,thin,,vi,thin-VBZ,metej-thin+tavbz,enflaquecer

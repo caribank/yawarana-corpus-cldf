@@ -540,60 +540,70 @@ with CLDFWriter(spec) as writer:
     # these are some wordforms collected for the dictionary, parsed with uniparser
     dic_wordforms = cread("raw/parsed_forms.csv")
     for wf in dic_wordforms.to_dict("records"):
-        form_slug = slugify(wf["Segmented"] + ":" + wf["Gloss"])
-        if wf["Gloss"] in dangerous_glosses:
-            meaning_slug = slugify(wf["Gloss"]) + "-1"
-        else:
-            meaning_slug = slugify(wf["Gloss"])
-        if meaning_slug not in meanings:
-            meanings[meaning_slug] = wf["Translation"]
-        if form_slug not in form_meanings:
-            morpheme_ids = sort_uniparser_ids(
-                id_list=wf["Morpheme_IDs"].split(","),
-                obj=wf["Segmented"],
-                gloss=wf["Gloss"],
-                id_dic=id_dict,
-                mode="morphemes",
-            )
-            morph_ids = sort_uniparser_ids(
-                id_list=wf["Morpheme_IDs"].split(","),
-                obj=wf["Segmented"],
-                gloss=wf["Gloss"],
-                id_dic=id_dict,
-            )
-            if None in morph_ids:
-                msg = f"Unidentified morphs in {wf['ID']}!"
-                log.error(msg)
-                continue
-            slug = slugify("-".join(morph_ids))
-            form_meanings[form_slug] = slug
-            if slug not in forms:
-                forms[slug] = {
-                    "Form": wf["Segmented"],
-                    "Parameter_ID": [meaning_slug],
-                    "POS": get_pos(wf["Gramm"], pos_list=pos_list),
-                }
-            elif wf["Gloss"] not in forms[slug]["Parameter_ID"]:
-                forms[slug]["Parameter_ID"].append(meaning_slug)
-            igt = pyigt.IGT(wf["Segmented"], wf["Gloss"])
-            for morpheme_ids, word in zip(
-                wf["Morpheme_IDs"], igt.morphosyntactic_words
-            ):
-                for morph_count, (morph_id, glossed_morph) in enumerate(
-                    zip(morph_ids, word.glossed_morphemes)
+        # there are unparsed wordforms in here
+        if wf["Gloss"] == "":
+            if wf["Parameter_ID"] not in meanings:
+                meanings[wf["Parameter_ID"]] = wf["Translation"]
+            wf["Parameter_ID"] = [wf["Parameter_ID"]]
+            forms[wf["ID"]] = wf
+        else:  
+            form_slug = slugify(wf["Segmented"] + ":" + wf["Gloss"])
+            if wf["Gloss"] in dangerous_glosses:
+                meaning_slug = slugify(wf["Gloss"]) + "-1"
+            else:
+                meaning_slug = slugify(wf["Gloss"])
+            if meaning_slug not in meanings:
+                meanings[meaning_slug] = wf["Translation"]
+            if form_slug not in form_meanings:
+                morpheme_ids = sort_uniparser_ids(
+                    id_list=wf["Morpheme_IDs"].split(","),
+                    obj=wf["Segmented"],
+                    gloss=wf["Gloss"],
+                    id_dic=id_dict,
+                    mode="morphemes",
+                )
+                morph_ids = sort_uniparser_ids(
+                    id_list=wf["Morpheme_IDs"].split(","),
+                    obj=wf["Segmented"],
+                    gloss=wf["Gloss"],
+                    id_dic=id_dict,
+                )
+                if None in morph_ids:
+                    msg = f"Unidentified morphs in {wf['ID']}!"
+                    log.error(msg)
+                    log.error(morph_ids)
+                    log.error(morpheme_ids)
+                    log.error(wf)
+                    continue
+                slug = slugify("-".join(morph_ids))
+                form_meanings[form_slug] = slug
+                if slug not in forms:
+                    forms[slug] = {
+                        "Form": wf["Segmented"],
+                        "Parameter_ID": [meaning_slug],
+                        "POS": get_pos(wf["Gramm"], pos_list=pos_list),
+                    }
+                elif wf["Gloss"] not in forms[slug]["Parameter_ID"]:
+                    forms[slug]["Parameter_ID"].append(meaning_slug)
+                igt = pyigt.IGT(wf["Segmented"], wf["Gloss"])
+                for morpheme_ids, word in zip(
+                    wf["Morpheme_IDs"], igt.morphosyntactic_words
                 ):
-                    writer.objects["FormSlices"].append(
-                        {
-                            "ID": f"{form_slug}-{morph_count}",
-                            "Form_ID": slug,
-                            "Morph_ID": morph_id,
-                            "Index": str(morph_count),
-                            "Morpheme_Meaning": slugify(glossed_morph.gloss),
-                            "Form_Meaning": meaning_slug,
-                        }
-                    )
-        else:
-            slug = form_meanings[form_slug]
+                    for morph_count, (morph_id, glossed_morph) in enumerate(
+                        zip(morph_ids, word.glossed_morphemes)
+                    ):
+                        writer.objects["FormSlices"].append(
+                            {
+                                "ID": f"{form_slug}-{morph_count}",
+                                "Form_ID": slug,
+                                "Morph_ID": morph_id,
+                                "Index": str(morph_count),
+                                "Morpheme_Meaning": slugify(glossed_morph.gloss),
+                                "Form_Meaning": meaning_slug,
+                            }
+                        )
+            else:
+                slug = form_meanings[form_slug]
     # print(dic_wordforms)
 
     log.info("Examples")
