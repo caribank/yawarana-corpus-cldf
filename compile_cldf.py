@@ -582,6 +582,7 @@ with CLDFWriter(spec) as writer:
                         "Form": wf["Segmented"],
                         "Parameter_ID": [meaning_slug],
                         "POS": get_pos(wf["Gramm"], pos_list=pos_list),
+                        "Source": wf["Source"]
                     }
                 elif wf["Gloss"] not in forms[slug]["Parameter_ID"]:
                     forms[slug]["Parameter_ID"].append(meaning_slug)
@@ -869,15 +870,14 @@ with CLDFWriter(spec) as writer:
 
     log.info("Forms")
     for form_id, form in forms.items():
+        if "Source" in form:
+            form["Source"] = [form["Source"]]
+        form["ID"] = form_id
+        form["POS"] = form.get("POS", "")
+        form["Segments"] = segmentizer.parse_string(form["Form"]).split(" ")
+        form["Language_ID"] = "yab"
         writer.objects["FormTable"].append(
-            {
-                "ID": form_id,
-                "Language_ID": "yab",
-                "Parameter_ID": form["Parameter_ID"],
-                "Form": form["Form"],
-                "POS": form.get("POS", ""),
-                "Segments": segmentizer.parse_string(form["Form"]).split(" "),
-            }
+            form
         )
         form_slug = slugify(form["Form"].replace("-", "").replace("∅", ""))
         if form_slug in word_audios:
