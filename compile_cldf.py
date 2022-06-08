@@ -243,6 +243,17 @@ with CLDFWriter(spec) as writer:
     pos = cread("etc/pos.csv")
     pos_list = list(pos["ID"])
 
+
+    bad_ids = ["GrMe", "grme"]
+
+    def get_id(row):
+        if row["ID"] not in bad_ids:
+            return row["ID"].replace(".", "-").replace("​", "").lower()
+        else:
+            return row["ID"].lower() + "-" + str(int(float(row["Part"])))
+
+    bad_texts = ["CtoOroAnPe"]
+
     examples = cread("../yawarana_corpus/yawarana_pylacoan/output/parsed.csv")
     examples["Sentence"] = examples["Sentence"].replace("", "***")
     examples.rename(columns={"Sentence": "Primary_Text"}, inplace=True)
@@ -257,6 +268,9 @@ with CLDFWriter(spec) as writer:
     examples["Comment"] = examples.apply(
         lambda x: " ".join([x["Comment_y"], x["Comment_x"]]).strip(), axis=1
     )
+
+    examples["ID"] = examples.apply(get_id, axis=1)
+    examples = examples[~(examples["Text_ID"].isin(bad_texts))]
 
     def sort_translations(row):
         if row["Translation_en"] != "":
@@ -279,14 +293,6 @@ with CLDFWriter(spec) as writer:
                     texts[text_id] = text_data
             else:
                 texts[text_id] = text_data
-
-    bad_ids = ["GrMe"]
-
-    def get_id(row):
-        if row["ID"] not in bad_ids:
-            return row["ID"].replace(".", "-").replace("​", "").lower()
-        else:
-            return row["ID"].lower() + "-" + str(int(row["Part"]))
 
     if release:
         bare_examples = pd.DataFrame()
@@ -593,6 +599,8 @@ with CLDFWriter(spec) as writer:
     log.info("Examples")
 
     for ex in examples.to_dict("records"):
+        if ex["Analyzed_Word"] == "":
+            continue
         ex["Tags"] = ex["Tags"].split(" ")
         audio_path = example_audios / f'{ex["ID"]}.wav'
         if audio_path.is_file():
@@ -663,14 +671,18 @@ with CLDFWriter(spec) as writer:
                 if " " in gramm:
                     print(ex["Gramm"], "eeek", gramm)
                 if slug not in forms:
-                    corpus_lexemes.setdefault(
-                        slugify(lexeme), {"name": lexeme, "gloss": word.gloss}
-                    )
                     forms[slug] = {
                         "Form": word.word,
                         "Parameter_ID": [meaning_slug],
                         "POS": get_pos(gramm, pos_list=pos_list),
                     }
+                    if lexeme in ["***", "?"]:
+                        continue
+                    corpus_lexemes.setdefault(
+                        slugify(lexeme), {"name": lexeme, "gloss": word.gloss}
+                    )
+                    if "slug" in slugify(lexeme):
+                        print(slug, "word: ", word.word, "parameter:", meaning_slug, "gramm:", gramm, "lexeme:", lexeme)
                     writer.objects["InflectionTable"].append(
                         {
                             "ID": f"{form_slug}-{slugify(lexeme)}",
@@ -714,7 +726,6 @@ with CLDFWriter(spec) as writer:
     for deriv in derivations.to_dict("records"):
         for c_count, constituent in enumerate(deriv["Structure"].split("+")):
             if constituent in all_lexemes.index:
-                print(deriv, constituent)
                 writer.objects["LexemeLexemeParts"].append(
                     {
                         "ID": f"{deriv['ID']}-{c_count}",
@@ -878,3 +889,4 @@ with CLDFWriter(spec) as writer:
         }
     )
     writer.write()
+
