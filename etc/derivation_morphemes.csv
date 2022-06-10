@@ -1,8 +1,9 @@
 ID,Name,Gloss,Comment
 dt2,s-,DETRZ,
-tavbz,-ta,VBZ,
+kavbz,-ka,VBZ.TR,'deprive P of N’
+tavbz,-ta,VBZ.INTR,n>vi ‘S characterized by N’
 anonmlz,-ano,NMLZ,
-jtevbz,-jtë,VBZ.TR,
+jtevbz,-jtë,VBZ.TR,"n>vt, ‘provide P with N’ or ‘make P characterized by N’"
 dt1,ëj-,DETRZ,
 petiplur,-pëti,PLUR,
 septcp,-se,PTCP; SUP,
@@ -18,3 +19,4 @@ sarecvb,-sarë,CVB,Gave rise to [mp](sareimn).
 dt3,at-,DETRZ,
 toponmlz,-topo,CIRC.NMLZ,
 readvz,-re,ADVZ,
+pamivbz,-pamï,VBZ,n>vi ‘S characterized by N’

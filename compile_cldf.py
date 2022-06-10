@@ -1,42 +1,44 @@
-import pandas as pd
-from cldfbench.cldf import CLDFWriter
-from cldfbench import CLDFSpec
-from clldutils.loglib import get_colorlog
-from pathlib import Path
+import json
 import logging
 import sys
-from clldutils import jsonlib
+from pathlib import Path
+import pandas as pd
 import pybtex
-from pycldf.sources import Source
-from pylingdocs.models import Text
-from pylingdocs.cldf import metadata as cldf_md
-from pylingdocs.preprocessing import preprocess_cldfviz
-from clld_morphology_plugin.cldf import (
-    MorphTable,
-    MorphsetTable,
-    FormSlices,
-    POSTable,
-    LexemeTable,
-    LexemeLexemeParts,
-    LexemeMorphemeParts,
-    InflectionTable,
-)
-from pylacoan.helpers import ortho_strip, get_pos
+import pycldf
+import pyigt
+import yaml
 from cffconvert.cli.create_citation import create_citation
 from cffconvert.cli.validate_or_write_output import validate_or_write_output
-
-from slugify import slugify as sslug
-import pyigt
-from pylacoan.helpers import sort_uniparser_ids
+from cldfbench import CLDFSpec
+from cldfbench.cldf import CLDFWriter
+from clld_morphology_plugin.cldf import (
+    FormSlices,
+    InflectionTable,
+    LexemeLexemeParts,
+    LexemeMorphemeParts,
+    LexemeTable,
+    MorphsetTable,
+    MorphTable,
+    POSTable,
+)
+from clldutils import jsonlib
+from clldutils.loglib import get_colorlog
+from pycldf.sources import Source
 from pylacoan.annotator import Segmentizer
-import yaml
-import pycldf
-import json
+from pylacoan.helpers import get_pos, ortho_strip, sort_uniparser_ids
+from pylingdocs.cldf import metadata as cldf_md
+from pylingdocs.models import Text
+from pylingdocs.preprocessing import preprocess_cldfviz
+from slugify import slugify as sslug
+from yawarana_helpers import add_gloss, generate_id, generate_if_empty
+
+log = get_colorlog(__name__, sys.stdout, level=logging.INFO)
+
 
 bare_slugs = 0
 zero_slugged = {}
 
-
+# for generating IDs for stuff that would just get ""
 def slugify(input_str):
     global bare_slugs
     global zero_slugged
@@ -50,7 +52,8 @@ def slugify(input_str):
         return slug
 
 
-def custom_spec(component, column, separator):
+# easily modify an existing CLDF table column specification to add a separator
+def custom_spec(component, column, separator="; "):
     path = (
         Path(pycldf.__file__)
         .resolve()
@@ -66,31 +69,36 @@ def custom_spec(component, column, separator):
             return col
 
 
-log = get_colorlog(__name__, sys.stdout, level=logging.INFO)
-example_audios = Path(
-    "/home/florianm/Dropbox/research/cariban/yawarana/yawarana_corpus/audio"
-)
+# only well-glossed texts and presentable documents make it into release versions
+release = len(sys.argv) > 1 and sys.argv[1] == "release"
 
-
+## use pandas to read csvs and not add np.nan
 def cread(filename):
     df = pd.read_csv(filename, keep_default_na=False)
     return df
 
 
-spec = CLDFSpec(dir="cldf", module="Generic", metadata_fname="metadata.json")
+##location where all audio is stored
+audio_path = Path(
+    "/home/florianm/Dropbox/research/cariban/yawarana/yawarana_corpus/audio"
+)
 
+# used for tokenizing words
 segmentizer = Segmentizer(
     segments=cread("etc/phonemes.csv").to_dict(orient="records"), delete=["-", "∅"]
 )
 
+# audio files potentially matching word forms
 word_audios = {}
 for filename in Path("/home/florianm/Downloads/New_Dictionary_Clippings").iterdir():
     leggo = filename.stem.split("_")[3].split("-")[0]
     word_audios.setdefault(leggo, [])
     word_audios[leggo].append(filename)
 
+# version of the dataset is loaded from the pylingdocs metadata
 version = yaml.load(open("raw/metadata.yaml"), Loader=yaml.SafeLoader)["version"]
 
+# using cffconvert to easily create citation string for CLDF metadata
 citation = create_citation(infile="CITATION.cff", url=None)
 validate_or_write_output(
     outputformat="apalike",
@@ -100,24 +108,34 @@ validate_or_write_output(
 )
 citation = open("/tmp/citation.txt", "r", encoding="utf8").read().strip()
 
-release = len(sys.argv) > 1 and sys.argv[1] == "release"
-
+# main part
+spec = CLDFSpec(dir="cldf", module="Generic", metadata_fname="metadata.json")
 with CLDFWriter(spec) as writer:
-    log.info("Dataset properties")
+    log.info("Setting up dataset properties")
     writer.cldf.properties.setdefault("rdf:ID", "yawarana-sketch")
     writer.cldf.properties.setdefault(
         "dc:title", f"A digital sketch grammar of Yawarana (v{version})"
     )
     writer.cldf.properties.setdefault("dc:bibliographicCitation", citation)
     writer.cldf.properties.setdefault(
-        "dc:description", "This is a digital description of Yawarana."
+        "dc:description",
+        """This is a CLDF dataset containing a digital description of Yawarana.
+The following linguistic entities and properties are encoded:
+* sentences
+* word forms
+* lexemes
+* morphemes
+* morphs
+* parts of speech
+
+It also contains descriptive texts with references to the data.""",
     )
     writer.cldf.properties[
         "dc:license"
     ] = "https://creativecommons.org/licenses/by-sa/4.0/"
     writer.cldf.properties["dc:identifier"] = "https://fl.mt/yawarana-sketch"
 
-    log.info("Chapters and authors")
+    log.info("Adding chapters and authors")
     doc_path = Path("raw/docs")
     writer.cldf.add_component(cldf_md("ChapterTable"))
     chapters = pd.read_csv(doc_path / "chapters.csv")
@@ -153,24 +171,25 @@ with CLDFWriter(spec) as writer:
         contributor["Name"] = contributor["First"] + " " + contributor["Given"]
         writer.objects["ContributorTable"].append(contributor)
 
-    log.info("Components")
-    # set up components
+    log.info("Adding linguistic components")
     writer.cldf.add_component("ExampleTable")
-    # examples can refer to texts
     writer.cldf.add_columns(
         "ExampleTable",
+        # examples can refer to texts
         {
             "name": "Text_ID",
             "dc:extent": "singlevalued",
             "dc:description": "The text to which this record belongs",
             "datatype": "string",
         },
+        # if they do, they have a number inside that text
         {
             "name": "Part",
             "dc:extent": "singlevalued",
             "dc:description": "Position in the text",
             "datatype": "integer",
         },
+        # alternatively, they can come from a source
         {
             "name": "Source",
             "required": False,
@@ -178,6 +197,7 @@ with CLDFWriter(spec) as writer:
             "datatype": {"base": "string"},
             "separator": ";",
         },
+        # contact language was spanish, we are keeping the translations
         {
             "name": "Original_Translation",
             "required": False,
@@ -185,20 +205,31 @@ with CLDFWriter(spec) as writer:
             "dc:description": "The original translation of the example text.",
             "datatype": "string",
         },
+        # a bunch of comma-separated sentence tags
         {"name": "Tags", "required": False, "datatype": "string", "separator": ","},
     )
-    writer.cldf.add_component("FormTable")
-    writer.cldf.add_component("ParameterTable")
-    writer.cldf.add_component("MediaTable")
+    writer.cldf.add_component("FormTable")  # word forms
+    writer.cldf.add_component("ParameterTable")  # meanings
+    writer.cldf.add_component("MediaTable")  # audio files
     writer.cldf.add_component("LanguageTable")
-    writer.cldf.add_component(LexemeMorphemeParts)
-    writer.cldf.add_component(LexemeLexemeParts)
-    writer.cldf.add_component(FormSlices)
-    writer.cldf.add_component(POSTable)
+    writer.cldf.add_component(
+        LexemeMorphemeParts
+    )  # what derivational morpheme creates a lexeme?
+    writer.cldf.add_component(
+        LexemeLexemeParts
+    )  # what lexeme is a complex lexeme based on?
+    writer.cldf.add_component(FormSlices)  # what morphs are part of a wordform?
+    writer.cldf.add_component(POSTable)  # parts of speech
     writer.cldf.add_component(LexemeTable)
-    writer.cldf.add_component(InflectionTable)
-    writer.cldf.add_component(cldf_md("ExampleSlices"))
-    writer.cldf.remove_columns("FormTable", "Parameter_ID")
+    writer.cldf.add_component(
+        InflectionTable
+    )  # what wordforms belong to what lexemes? no actual inflection yet
+    writer.cldf.add_component(
+        cldf_md("ExampleSlices")
+    )  # what wordforms occur in what examples?
+    writer.cldf.remove_columns(
+        "FormTable", "Parameter_ID"
+    )  # forms can have different translations / meanings
     writer.cldf.add_columns(
         "FormTable",
         custom_spec("FormTable", "Parameter_ID", separator="; "),
@@ -207,12 +238,17 @@ with CLDFWriter(spec) as writer:
             "dc:extent": "singlevalued",
             "dc:description": "Part of speech",
             "datatype": "string",
-        },
+        },  # and a part of speech
+        {
+            "name": "Translation",
+            "required": False,
+            "dc:extent": "singlevalued",
+            "dc:description": "A human-friendly translation",
+            "datatype": "string",
+        },  # ...and a free translation not tied to the ParameterTable. this is only used by pylingdocs
     )
-
-    # custom metadata from pylingdocs models
-    writer.cldf.add_component(MorphTable)
-    writer.cldf.add_component(MorphsetTable)
+    writer.cldf.add_component(MorphTable)  # morphs (AKA 'allomorphs')
+    writer.cldf.add_component(MorphsetTable)  # morphemes
     writer.cldf.add_component(jsonlib.load("etc/PhonemeTable-metadata.json"))
     writer.cldf.add_component(Text.cldf_metadata())
 
@@ -239,11 +275,10 @@ with CLDFWriter(spec) as writer:
     writer.cldf.add_foreign_key("LexemeLexemeParts", "Lexeme_ID", "LexemeTable", "ID")
 
     log.info("Reading data")
-
     pos = cread("etc/pos.csv")
     pos_list = list(pos["ID"])
 
-
+    # there are some texts that have no proper record IDs; we generate new ones for these
     bad_ids = ["GrMe", "grme"]
 
     def get_id(row):
@@ -252,26 +287,33 @@ with CLDFWriter(spec) as writer:
         else:
             return row["ID"].lower() + "-" + str(int(float(row["Part"])))
 
-    bad_texts = ["CtoOroAnPe"]
+    bad_texts = [
+        "CtoOroAnPe"
+    ]  # texts that should never ever make it into the corpus (as one piece)
 
+    log.info("Corpus")
     examples = cread("../yawarana_corpus/yawarana_pylacoan/output/parsed.csv")
-    examples["Sentence"] = examples["Sentence"].replace("", "***")
+    # examples["Sentence"] = examples["Sentence"].replace("", "***") #don't know if this is necessary
     examples.rename(columns={"Sentence": "Primary_Text"}, inplace=True)
     examples["Language_ID"] = "yab"
     examples["Source"] = examples["Source"].str.split("; ")
-    example_add = cread("etc/example_additions.csv")
+    example_add = cread("etc/example_additions.csv")  # additional example data
     examples = examples.merge(example_add, on="ID", how="left")
     examples = examples.fillna("")
-    examples["Tags"] = examples.apply(
-        lambda x: " ".join([x["Tags_y"], x["Tags_x"]]), axis=1
-    )
-    examples["Comment"] = examples.apply(
-        lambda x: " ".join([x["Comment_y"], x["Comment_x"]]).strip(), axis=1
-    )
-
+    for combine_col in [
+        "Tags",
+        "Comment",
+    ]:  # these can come from either source, so we combine them
+        examples[combine_col] = examples.apply(
+            lambda x: " ".join([x[f"{combine_col}_y"], x[f"{combine_col}_x"]]).strip(),
+            axis=1,
+        )
     examples["ID"] = examples.apply(get_id, axis=1)
     examples = examples[~(examples["Text_ID"].isin(bad_texts))]
 
+    # not all examples have english translations
+    # those that don't will get the spanish translation
+    # as the main one
     def sort_translations(row):
         if row["Translation_en"] != "":
             row["Original_Translation"] = row["Translated_Text"]
@@ -298,6 +340,7 @@ with CLDFWriter(spec) as writer:
         bare_examples = pd.DataFrame()
     else:
         bare_examples = cread("../yawarana_corpus/flexports/yab_texts.csv")
+        bare_examples = bare_examples[(bare_examples["Text_ID"]).isin(texts.keys())]
         bare_examples["ID"] = bare_examples.apply(get_id, axis=1)
         bare_examples = bare_examples.merge(example_add, on="ID", how="left")
         bare_examples["Translated_Text"] = bare_examples.apply(
@@ -315,8 +358,8 @@ with CLDFWriter(spec) as writer:
             lambda x: ortho_strip(x, additions=["%", "¿", "###", "#"])
         )
         bare_examples.drop(columns=["Segmentation", "Gloss"], inplace=True)
-        bare_examples = bare_examples[(bare_examples["Text_ID"]).isin(texts.keys())]
 
+    log.info("Morphemes and lexemes")
     # keys: morpheme IDs
     # values: different (allo)morph forms and associated morph IDs
     # used for converting uniparser's morpheme IDs into morph IDs
@@ -325,20 +368,29 @@ with CLDFWriter(spec) as writer:
     flexemes = cread("../yawarana_corpus/flexports/flexports.csv")
     flexemes = flexemes[~(flexemes["Form"].str.contains("-"))]
     flexemes = flexemes[~(flexemes["Form"].str.contains("="))]
+    flexemes.rename(columns={"Gloss_en": "Gloss"}, inplace=True)
     flexemes["Language_ID"] = "yab"
     include = open("raw/include_flex.txt", "r").read().split("\n")
     include = [x.split(" #")[0] for x in include]
     flexemes = flexemes[(flexemes["ID"].isin(include))]
 
     manual_lexemes = cread("raw/lexemes.csv")
-    manual_lexemes["ID"] = manual_lexemes.apply(
-        lambda x: slugify(
-            f'{x["Form"].split("; ")[0]}-{x["Gloss_en"].split("; ")[0]}'
-            if x["ID"] == ""
-            else x["ID"]
-        ),
-        axis=1,
+    generate_if_empty(manual_lexemes, "ID", lambda x: generate_id(x))
+    manual_lexemes = manual_lexemes.apply(add_gloss, axis=1)
+
+    etym_lexemes = cread("raw/etym_lexemes.csv")
+    etym_lexemes["Language_ID"] = "yab"
+    etym_lexemes["Name"] = etym_lexemes["Form"].apply(lambda x: x.split("; ")[0])
+    etym_lexemes["ID"] = ""
+    etym_lexemes["Comment"] = etym_lexemes["Comment"].apply(
+        lambda x: (
+            x + " " + "Etymological lexeme, only attested in derived lexemes."
+        ).strip()
     )
+    generate_if_empty(etym_lexemes, "ID", lambda x: generate_id(x))
+    etym_lexemes = etym_lexemes.apply(add_gloss, axis=1)
+    etym_lexemes["Description"] = etym_lexemes["Translation"]
+
     roots = cread("raw/dictionary_roots.csv")
     manual_lexemes = pd.concat([manual_lexemes, roots])
     infl_morphs = cread("etc/inflection_morphs.csv")
@@ -423,10 +475,10 @@ with CLDFWriter(spec) as writer:
             raise ValueError
         id_dict[morpheme_id] = {}
         forms = lexeme["Form"].split("; ")
-        lexeme["Parameter_ID"] = [slugify(y) for y in lexeme["Gloss_en"].split("; ")]
+        lexeme["Parameter_ID"] = [slugify(y) for y in lexeme["Gloss"].split("; ")]
         for j, form in enumerate(forms):
             morph_id = f"{morpheme_id}-{j}"
-            for g in lexeme["Gloss_en"].split("; "):
+            for g in lexeme["Gloss"].split("; "):
                 id_dict[morpheme_id][form + ":" + g.replace(" ", ".")] = morph_id
                 if slugify(g) not in meanings:
                     meanings[slugify(g)] = g
@@ -451,7 +503,7 @@ with CLDFWriter(spec) as writer:
         )
 
     for flexeme in flexemes.to_dict(orient="records"):
-        if flexeme["Gloss_en"] == "":
+        if flexeme["Gloss"] == "":
             continue
         forms = flexeme["Form"].split("; ")
         forms = sorted(forms, key=lambda x: len(x), reverse=True)
@@ -460,10 +512,10 @@ with CLDFWriter(spec) as writer:
             log.error(morpheme_id)
             raise ValueError
         id_dict[morpheme_id] = {}
-        flexeme["Parameter_ID"] = [slugify(y) for y in flexeme["Gloss_en"].split("; ")]
+        flexeme["Parameter_ID"] = [slugify(y) for y in flexeme["Gloss"].split("; ")]
         for i, form in enumerate(forms):
             morph_id = f"{morpheme_id}{i}"
-            for g in flexeme["Gloss_en"].split("; "):
+            for g in flexeme["Gloss"].split("; "):
                 if slugify(g) not in meanings:
                     meanings[slugify(g)] = g
                 id_dict[morpheme_id][form + ":" + g] = morph_id
@@ -506,21 +558,18 @@ with CLDFWriter(spec) as writer:
     all_lexemes["Language_ID"] = "yab"
     all_lexemes["Form"] = all_lexemes["Form"].apply(lambda x: x.split("; "))
     all_lexemes["Name"] = all_lexemes["Form"].apply(lambda x: x[0])
-    all_lexemes["Description"] = all_lexemes["Gloss_en"].apply(
+    all_lexemes["Description"] = all_lexemes["Gloss"].apply(
         lambda x: x.split("; ")[0].replace(".", " ")
     )
     all_lexemes.set_index("ID", inplace=True, drop=False)
-
     derivations = cread("raw/derivations.csv")
-    derivations["ID"] = derivations["Structure"].apply(slugify)
     derivations["Language_ID"] = "yab"
     derivations["Description"] = derivations["Translation"]
-    derivations["Gloss_en"] = derivations["Translation"]
     derivations["Name"] = derivations["Form"].apply(lambda x: x.replace("-", "+"))
     derivations["Form"] = derivations["Form"].apply(
         lambda x: x.replace("-", "").split("; ")
     )
-    derivations.set_index("Structure", inplace=True, drop=False)
+    derivations.set_index("ID", inplace=True, drop=False)
 
     for lex in derivations.to_dict("records"):
         writer.objects["LexemeTable"].append(lex)
@@ -546,7 +595,7 @@ with CLDFWriter(spec) as writer:
                 meanings[wf["Parameter_ID"]] = wf["Translation"]
             wf["Parameter_ID"] = [wf["Parameter_ID"]]
             forms[wf["ID"]] = wf
-        else:  
+        else:
             form_slug = slugify(wf["Segmented"] + ":" + wf["Gloss"])
             if wf["Gloss"] in dangerous_glosses:
                 meaning_slug = slugify(wf["Gloss"]) + "-1"
@@ -569,21 +618,29 @@ with CLDFWriter(spec) as writer:
                     id_dic=id_dict,
                 )
                 if None in morph_ids:
-                    msg = f"Unidentified morphs in {wf['ID']}!"
-                    log.error(msg)
-                    log.error(morph_ids)
-                    log.error(morpheme_ids)
-                    log.error(wf)
-                    continue
-                slug = slugify("-".join(morph_ids))
+                    slug = wf["ID"]
+                else:
+                    slug = slugify("-".join(morph_ids))
                 form_meanings[form_slug] = slug
                 if slug not in forms:
                     forms[slug] = {
                         "Form": wf["Segmented"],
                         "Parameter_ID": [meaning_slug],
                         "POS": get_pos(wf["Gramm"], pos_list=pos_list),
-                        "Source": wf["Source"]
+                        "Source": wf["Source"],
+                        "Translation": wf["Translation"],
                     }
+                    writer.objects["InflectionTable"].append(
+                        {
+                            "ID": slug,
+                            "Form_ID": slug,
+                            "Lexeme_ID": slugify(wf["Lexeme_ID"]),
+                        }
+                    )
+                    corpus_lexemes.setdefault(
+                        slugify(wf["Lexeme_ID"]),
+                        {"name": wf["Lexeme_ID"], "gloss": wf["Gloss"]},
+                    )
                 elif wf["Gloss"] not in forms[slug]["Parameter_ID"]:
                     forms[slug]["Parameter_ID"].append(meaning_slug)
                 igt = pyigt.IGT(wf["Segmented"], wf["Gloss"])
@@ -593,16 +650,17 @@ with CLDFWriter(spec) as writer:
                     for morph_count, (morph_id, glossed_morph) in enumerate(
                         zip(morph_ids, word.glossed_morphemes)
                     ):
-                        writer.objects["FormSlices"].append(
-                            {
-                                "ID": f"{form_slug}-{morph_count}",
-                                "Form_ID": slug,
-                                "Morph_ID": morph_id,
-                                "Index": str(morph_count),
-                                "Morpheme_Meaning": slugify(glossed_morph.gloss),
-                                "Form_Meaning": meaning_slug,
-                            }
-                        )
+                        if morph_id:
+                            writer.objects["FormSlices"].append(
+                                {
+                                    "ID": f"{form_slug}-{morph_count}",
+                                    "Form_ID": slug,
+                                    "Morph_ID": morph_id,
+                                    "Index": str(morph_count),
+                                    "Morpheme_Meaning": slugify(glossed_morph.gloss),
+                                    "Form_Meaning": meaning_slug,
+                                }
+                            )
             else:
                 slug = form_meanings[form_slug]
     # print(dic_wordforms)
@@ -613,7 +671,7 @@ with CLDFWriter(spec) as writer:
         if ex["Analyzed_Word"] == "":
             continue
         ex["Tags"] = ex["Tags"].split(" ")
-        audio_path = example_audios / f'{ex["ID"]}.wav'
+        audio_path = audio_path / f'{ex["ID"]}.wav'
         if audio_path.is_file():
             writer.objects["MediaTable"].append({"ID": ex["ID"], "Media_Type": "wav"})
         ex["Analyzed_Word"] = ex["Analyzed_Word"].split(" ")
@@ -674,10 +732,11 @@ with CLDFWriter(spec) as writer:
                     id_dic=id_dict,
                 )
                 if None in morph_ids:
-                    msg = f"Unidentified morphs in {ex['ID']} {word.word} '{word.gloss}': {morpheme_ids} > {morph_ids}"
+                    msg = f"Unidentified morphs in {ex['ID']} {word.word} '{word.gloss}': {morpheme_ids} > {morph_ids}, using {lexeme} for ID"
                     log.error(msg)
-                    continue
-                slug = slugify("-".join(morph_ids))
+                    slug = slugify("-".join([x if x else lexeme for x in morph_ids]))
+                else:
+                    slug = slugify("-".join(morph_ids))
                 form_meanings[form_slug] = slug
                 if " " in gramm:
                     print(ex["Gramm"], "eeek", gramm)
@@ -686,6 +745,7 @@ with CLDFWriter(spec) as writer:
                         "Form": word.word,
                         "Parameter_ID": [meaning_slug],
                         "POS": get_pos(gramm, pos_list=pos_list),
+                        "Translation": word.gloss,
                     }
                     if lexeme in ["***", "?"]:
                         continue
@@ -693,7 +753,17 @@ with CLDFWriter(spec) as writer:
                         slugify(lexeme), {"name": lexeme, "gloss": word.gloss}
                     )
                     if "slug" in slugify(lexeme):
-                        print(slug, "word: ", word.word, "parameter:", meaning_slug, "gramm:", gramm, "lexeme:", lexeme)
+                        print(
+                            slug,
+                            "word: ",
+                            word.word,
+                            "parameter:",
+                            meaning_slug,
+                            "gramm:",
+                            gramm,
+                            "lexeme:",
+                            lexeme,
+                        )
                     writer.objects["InflectionTable"].append(
                         {
                             "ID": f"{form_slug}-{slugify(lexeme)}",
@@ -706,16 +776,17 @@ with CLDFWriter(spec) as writer:
                 for morph_count, (morph_id, glossed_morph) in enumerate(
                     zip(morph_ids, word.glossed_morphemes)
                 ):
-                    writer.objects["FormSlices"].append(
-                        {
-                            "ID": f"{form_slug}-{morph_count}",
-                            "Form_ID": slug,
-                            "Morph_ID": morph_id,
-                            "Index": str(morph_count),
-                            "Morpheme_Meaning": slugify(glossed_morph.gloss),
-                            "Form_Meaning": meaning_slug,
-                        }
-                    )
+                    if morph_id:
+                        writer.objects["FormSlices"].append(
+                            {
+                                "ID": f"{form_slug}-{morph_count}",
+                                "Form_ID": slug,
+                                "Morph_ID": morph_id,
+                                "Index": str(morph_count),
+                                "Morpheme_Meaning": slugify(glossed_morph.gloss),
+                                "Form_Meaning": meaning_slug,
+                            }
+                        )
             else:
                 slug = form_meanings[form_slug]
 
@@ -731,30 +802,24 @@ with CLDFWriter(spec) as writer:
         writer.objects["ExampleTable"].append(ex)
 
     all_lexemes = pd.concat([all_lexemes, derivations])
-    all_morphemes["Gloss_en"] = all_morphemes["Parameter_ID"].apply(
+    all_morphemes["Gloss"] = all_morphemes["Parameter_ID"].apply(
         lambda x: meanings[slugify(x[0])]
     )
     for deriv in derivations.to_dict("records"):
-        for c_count, constituent in enumerate(deriv["Structure"].split("+")):
-            if constituent in all_lexemes.index:
-                writer.objects["LexemeLexemeParts"].append(
-                    {
-                        "ID": f"{deriv['ID']}-{c_count}",
-                        "Lexeme_ID": deriv["ID"],
-                        "Base_ID": constituent,
-                    }
-                )
-            elif constituent in all_morphemes.index:
-                writer.objects["LexemeMorphemeParts"].append(
-                    {
-                        "ID": f"{deriv['ID']}-{c_count}",
-                        "Lexeme_ID": deriv["ID"],
-                        "Morpheme_ID": constituent,
-                    }
-                )
-            else:
-                log.error(constituent)
-                sys.exit()
+        writer.objects["LexemeLexemeParts"].append(
+            {
+                "ID": f"{deriv['ID']}-base",
+                "Lexeme_ID": deriv["ID"],
+                "Base_ID": deriv["Base_Lexeme"],
+            }
+        )
+        writer.objects["LexemeMorphemeParts"].append(
+            {
+                "ID": f"{deriv['ID']}-affix",
+                "Lexeme_ID": deriv["ID"],
+                "Morpheme_ID": deriv["Affix_ID"],
+            }
+        )
 
     # some lexemes are created on the fly by uniparser
     generated_lexemes = {}
@@ -787,7 +852,7 @@ with CLDFWriter(spec) as writer:
                         identified = False
                         for g in data["gloss"].split("-"):
                             narrow_cands = candidate_lexemes[
-                                candidate_lexemes["Gloss_en"].str.contains(g)
+                                candidate_lexemes["Gloss"].str.contains(g)
                             ]
                             if len(narrow_cands) == 1:
                                 constituents.append(
@@ -828,7 +893,8 @@ with CLDFWriter(spec) as writer:
                         }
                     )
             lexeme_name = "+".join([x["Name"] for x in constituents]).replace("-", "")
-            lexeme_description = "-".join([x["Gloss_en"] for x in constituents])
+            # print(constituents)
+            lexeme_description = "-".join([x["Gloss"] for x in constituents])
             if key in generated_lexemes:
                 log.warning(f"Lexeme ID {key} has already been generated.")
             generated_lexemes[key] = {
@@ -841,12 +907,14 @@ with CLDFWriter(spec) as writer:
     for lex in generated_lexemes.values():
         writer.objects["LexemeTable"].append(lex)
 
+    for lex in etym_lexemes.to_dict("records"):
+        writer.objects["LexemeTable"].append(lex)
     log.info("Audio")
 
     for ex in bare_examples.to_dict("records"):
         ex["Tags"] = ex["Tags"].split(" ")
-        audio_path = example_audios / f'{ex["ID"]}.wav'
-        if audio_path.is_file():
+        file_path = audio_path / f'{ex["ID"]}.wav'
+        if file_path.is_file():
             writer.objects["MediaTable"].append({"ID": ex["ID"], "Media_Type": "wav"})
         if ex["Primary_Text"] == "":
             continue
@@ -876,16 +944,14 @@ with CLDFWriter(spec) as writer:
         form["POS"] = form.get("POS", "")
         form["Segments"] = segmentizer.parse_string(form["Form"]).split(" ")
         form["Language_ID"] = "yab"
-        writer.objects["FormTable"].append(
-            form
-        )
+        writer.objects["FormTable"].append(form)
         form_slug = slugify(form["Form"].replace("-", "").replace("∅", ""))
         if form_slug in word_audios:
             writer.objects["MediaTable"].append(
                 {
                     "ID": form_id,
                     "Media_Type": "wav",
-                    "Name": word_audios[form_slug][0].stem,
+                    "Name": word_audios.pop(form_slug)[0].stem,
                 }
             )
 
@@ -900,3 +966,5 @@ with CLDFWriter(spec) as writer:
     )
     writer.write()
 
+# for k in word_audios.keys():
+#     print(k)

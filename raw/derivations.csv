@@ -1,13 +1,15 @@
-Form,Translation,Comment,POS,Gloss,Structure,Translation_es
-ëj-nai,make self,,vi,DETRZ-do,dt1+nai-do,
-ëj-wenaka,vomit,,vi,DETRZ-vomit,dt1+wenaka-vomit,
-s-erema,eat,,vi,DETRZ-feed,dt2+yerema,
-s-ere,become scared,,vi,DETRZ-scare,dt2+erepiscare,
-s-ënka,finish,,vi,DETRZ-finish,dt2+enkafinish,
-ëj-nëmë,remain,Interesting semantics?,vi,DETRZ-leave,dt1+neme-leave,
-tawa-ja,not like that,,adv,too-NEG,tawara-too+janeg,
-suj-ta,urinate,,vi,urine-VBZ,suku+tavbz,
-kaimo-ta,hunt,,vi,game-VBZ,kaimo+tavbz,
-poko-no,because,,n,on.surface-NMLZ,pekeon+anonmlz,
-mëtëj-ye,thin,,adv,thin-ADVZ,metej-thin+readvz,flaco
-mëtë-ta,thin,,vi,thin-VBZ,metej-thin+tavbz,enflaquecer
+ID,Form,Translation,Base_Lexeme,Translation_es,Affix_ID,POS,Gloss,Morph_IDs,Comment
+sujta-urinate,suj-ta,urinate,suku-urine,orinar,tavbz,vi,urine-VBZ.INTR,tavbz,
+kaimota-hunt,kaimo-ta,hunt,kaimo-game,cazar,tavbz,vi,game-VBZ.INTR,"tavbz,kaimo-game",
+meteta-thin,mëtë-ta,thin,metej-thin,enflaquecer,tavbz,vi,thin-VBZ.INTR,tavbz,
+wenaka-vomit,wena-ka,vomit,wena-vomit,vomitar,kavbz,vi,vomit-VBZ.TR,"kavbz,wena-vomit",
+ajpachika-weed,ajpachi-ka,weed,ajpachi-undergrowth,desherbar,kavbz,vi,undergrowth-VBZ.TR,"kavbz,ajpachi-undergrowth",
+ej-nai-make-self,ëj-nai,make self,nai-do,,dt1,vi,DETRZ-do,dt1,
+ej-wenaka-vomit,ëj-wena-ka,vomit,wenaka-vomit,,dt1,vi,DETRZ-vomit-VBZ.TR,"dt1,kavbz,wena-vomit",
+s-erema-eat,s-erema,eat,yerema,,dt2,vi,DETRZ-feed,"dt2,yerema",
+s-ere-become-scared,s-ere,become scared,erepi-scare,,dt2,vi,DETRZ-scare,"dt2,erepi-scare",
+s-enka-finish,s-ënka,finish,enka-finish,,dt2,vi,DETRZ-finish,"dt2,enka-finish",
+ej-neme-remain,ëj-nëmë,remain,neme-leave,,dt1,vi,DETRZ-leave,"dt1,neme-leave",Interesting semantics?
+senejka-stay,s-enejka,stay,enejka-watch,quedarse,dt2,vi,DETRZ-watch,dt2,
+tawa-ja-not-like-that,tawa-ja,not like that,tawara-too,,janeg,adv,too-NEG,janeg,
+poko-no-because,poko-no,because,pekeon,,anonmlz,n,on.surface-NMLZ,"anonmlz,pekeon",
