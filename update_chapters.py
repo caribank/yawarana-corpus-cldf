@@ -32,6 +32,4 @@ chapterlist.append(
     }
 )
 
-ds.write(
-    ChapterTable=chapterlist
-)
+ds.write(ChapterTable=chapterlist)

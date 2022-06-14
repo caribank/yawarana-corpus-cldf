@@ -239,16 +239,29 @@ It also contains descriptive texts with references to the data.""",
             "dc:description": "Part of speech",
             "datatype": "string",
         },  # and a part of speech
+    )
+    writer.cldf.add_component(MorphTable)  # morphs (AKA 'allomorphs')
+    writer.cldf.add_columns(
+        "MorphTable",
         {
             "name": "Translation",
             "required": False,
             "dc:extent": "singlevalued",
             "dc:description": "A human-friendly translation",
             "datatype": "string",
-        },  # ...and a free translation not tied to the ParameterTable. this is only used by pylingdocs
+        },  # a free translation not tied to the ParameterTable. this is only used by pylingdocs
     )
-    writer.cldf.add_component(MorphTable)  # morphs (AKA 'allomorphs')
     writer.cldf.add_component(MorphsetTable)  # morphemes
+    writer.cldf.add_columns(
+        "MorphsetTable",
+        {
+            "name": "Translation",
+            "required": False,
+            "dc:extent": "singlevalued",
+            "dc:description": "A human-friendly translation",
+            "datatype": "string",
+        },  # a free translation not tied to the ParameterTable. this is only used by pylingdocs
+    )
     writer.cldf.add_component(jsonlib.load("etc/PhonemeTable-metadata.json"))
     writer.cldf.add_component(Text.cldf_metadata())
 
@@ -409,13 +422,15 @@ It also contains descriptive texts with references to the data.""",
     ]:
         cdf["Language_ID"] = "yab"
     for cdf in [infl_morphemes, deriv_morphemes, misc_morphemes]:
-        cdf.rename(columns={"Gloss": "Parameter_ID"}, inplace=True)
+        cdf.rename(columns={"Gloss": "Translation"}, inplace=True)
+        cdf["Parameter_ID"] = cdf["Translation"]
     for a, b in [
         (infl_morphemes, infl_morphs),
         (deriv_morphemes, deriv_morphs),
         (misc_morphemes, misc_morphs),
     ]:
         morph_meanings = dict(zip(a["ID"], a["Parameter_ID"]))
+        b["Translation"] = b["Morpheme_ID"].map(morph_meanings)
         b["Parameter_ID"] = b["Morpheme_ID"].map(morph_meanings)
 
     log.info("Sources")
@@ -489,6 +504,7 @@ It also contains descriptive texts with references to the data.""",
                     "Morpheme_ID": morpheme_id,
                     "Parameter_ID": lexeme["Parameter_ID"],
                     "Language_ID": "yab",
+                    "Translation": lexeme["Translation"],
                 }
             )
 
@@ -499,6 +515,7 @@ It also contains descriptive texts with references to the data.""",
                 "Name": forms[0],
                 "Parameter_ID": lexeme["Parameter_ID"],
                 "Language_ID": "yab",
+                "Translation": lexeme["Translation"],
             }
         )
 
@@ -526,6 +543,7 @@ It also contains descriptive texts with references to the data.""",
                     "Morpheme_ID": morpheme_id,
                     "Parameter_ID": flexeme["Parameter_ID"],
                     "Language_ID": flexeme["Language_ID"],
+                    "Translation": flexeme["Gloss"],
                 }
             )
 
@@ -535,6 +553,7 @@ It also contains descriptive texts with references to the data.""",
                 "Name": forms[0],
                 "Parameter_ID": flexeme["Parameter_ID"],
                 "Language_ID": flexeme["Language_ID"],
+                "Translation": flexeme["Gloss"],
             }
         )
 
@@ -671,8 +690,8 @@ It also contains descriptive texts with references to the data.""",
         if ex["Analyzed_Word"] == "":
             continue
         ex["Tags"] = ex["Tags"].split(" ")
-        audio_path = audio_path / f'{ex["ID"]}.wav'
-        if audio_path.is_file():
+        file_path = audio_path / f'{ex["ID"]}.wav'
+        if file_path.is_file():
             writer.objects["MediaTable"].append({"ID": ex["ID"], "Media_Type": "wav"})
         ex["Analyzed_Word"] = ex["Analyzed_Word"].split(" ")
         ex["Gloss"] = ex["Gloss"].split(" ")
