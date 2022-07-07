@@ -133,8 +133,6 @@ def create_dataset(mode, release):
         for contributor in pd.read_csv("etc/contributors.csv").to_dict("records"):
             contributor["Name"] = contributor["First"] + " " + contributor["Given"]
             writer.objects["ContributorTable"].append(contributor)
-        
-        print(writer.cldf.properties)
 
         if mode == "full":
             writer.cldf.properties.setdefault("rdf:ID", "yawarana-sketch")
@@ -159,13 +157,7 @@ def create_dataset(mode, release):
                 "dc:license"
             ] = "https://creativecommons.org/licenses/by-sa/4.0/"
             writer.cldf.properties["dc:identifier"] = "https://fl.mt/yawarana-sketch"
-            # writer.cldf.properties["ChapterTable"].append(
-            #     {
-            #         "ID": "landingpage",
-            #         "Name": "Landing page",
-            #         "Description": open("raw/landingpage.txt", "r").read(),
-            #     }
-            # )
+
 
             log.info("Adding chapters and authors")
             doc_path = Path("raw/docs")
@@ -180,6 +172,13 @@ def create_dataset(mode, release):
                         "Description": open(doc_path / chapter["Filename"], "r").read(),
                     }
                 )
+            writer.objects["ChapterTable"].append(
+                {
+                    "ID": "landingpage",
+                    "Name": "Landing page",
+                    "Description": open("raw/landingpage.txt", "r").read(),
+                }
+            )
 
             if not release:
                 writer.objects["ChapterTable"].append(
@@ -355,10 +354,16 @@ def create_dataset(mode, release):
         ]  # texts that should never ever make it into the corpus (as one piece; individual sentences can appear in documents)
 
         log.info("Corpus")
-        examples = cread("../yawarana_corpus/yawarana_pylacoan/output/parsed.csv")
+        if mode == "full":
+            examples = cread("../yawarana_corpus/yawarana_pylacoan/output/parsed.csv")
+        elif mode == "corpus":
+            examples = cread(
+                "../yawarana_corpus/yawarana_pylacoan/output/parsed_all.csv"
+            )
         examples.rename(columns={"Sentence": "Primary_Text"}, inplace=True)
         examples["Language_ID"] = "yab"
-        examples["Source"] = examples["Source"].str.split("; ")
+        if "Source" in examples.columns:
+            examples["Source"] = examples["Source"].str.split("; ")
         example_add = cread("etc/example_additions.csv")  # additional example data
         examples = examples.merge(example_add, on="ID", how="left")
         examples = examples.fillna("")
@@ -366,12 +371,13 @@ def create_dataset(mode, release):
             "Tags",
             "Comment",
         ]:  # these can come from either source, so we combine them
-            examples[combine_col] = examples.apply(
-                lambda x: " ".join(
-                    [x[f"{combine_col}_y"], x[f"{combine_col}_x"]]
-                ).strip(),
-                axis=1,
-            )
+            if f"{combine_col}_y" in examples:
+                examples[combine_col] = examples.apply(
+                    lambda x: " ".join(
+                        [x[f"{combine_col}_y"], x[f"{combine_col}_x"]]
+                    ).strip(),
+                    axis=1,
+                )
         examples["ID"] = examples.apply(get_id, axis=1)
         examples = examples[~(examples["Text_ID"].isin(bad_texts))]
 
@@ -402,7 +408,7 @@ def create_dataset(mode, release):
 
         # releases only contain fully glossed examples
         # unreleased versions may have unglossed texts
-        if release:
+        if release or mode == "corpus":
             bare_examples = pd.DataFrame()
         else:
             bare_examples = cread("../yawarana_corpus/flexports/yab_texts.csv")
