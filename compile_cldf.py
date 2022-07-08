@@ -396,10 +396,10 @@ def create_dataset(mode, release):
 
         texts = {}
         good_texts = open("raw/good_texts.txt", "r", encoding="utf8").read().split("\n")
-        for f in Path("../yawarana_corpus/text_notes/").glob("*.yaml"):
+        for f in Path("../yawarana_corpus/text_metadata/").glob("*.yaml"):
             with open(f) as file:
                 text_data = yaml.load(file, Loader=yaml.SafeLoader)
-                text_id = text_data.pop("id")
+                text_id = slugify(text_data.pop("id"))
                 if release:
                     if text_id in good_texts:
                         texts[text_id] = text_data
@@ -426,10 +426,10 @@ def create_dataset(mode, release):
                 lambda x: x["Tags_y"] + " " + x["Tags_x"], axis=1
             )
             bare_examples = bare_examples[~(bare_examples["ID"].isin(examples["ID"]))]
-            bare_examples["Primary_Text"] = bare_examples["Sentence"].apply(
+            bare_examples["Primary_Text"] = bare_examples["Primary_Text"].apply(
                 lambda x: ortho_strip(x, additions=["%", "¿", "###", "#"])
             )
-            bare_examples.drop(columns=["Segmentation", "Gloss"], inplace=True)
+            bare_examples.drop(columns=["Analyzed_Word", "Gloss"], inplace=True)
 
         log.info("Morphemes and lexemes")
         # keys: morpheme IDs
@@ -438,15 +438,12 @@ def create_dataset(mode, release):
         id_dict = {}
 
         # some lexicon entries exported from FLEx
-        flexemes = cread("../yawarana_corpus/flexports/flexports.csv")
-        flexemes = flexemes[~(flexemes["Form"].str.contains("-"))]
-        flexemes = flexemes[~(flexemes["Form"].str.contains("="))]
+        flexemes = cread("../yawarana_corpus/flexports/flextracts.csv")
         flexemes.rename(columns={"Gloss_en": "Gloss"}, inplace=True)
         flexemes["Language_ID"] = "yab"
-        include = open("raw/include_flex.txt", "r").read().split("\n")
-        include = [x.split(" #")[0] for x in include]
-        flexemes = flexemes[(flexemes["ID"].isin(include))]
-
+        # human-readable IDs
+        flexemes["ID"] = flexemes.apply(lambda x: generate_id(x, g="Gloss"), axis=1)
+        
         manual_lexemes = cread("raw/lexemes.csv")
         generate_if_empty(manual_lexemes, "ID", lambda x: generate_id(x))
         manual_lexemes = manual_lexemes.apply(add_gloss, axis=1)
@@ -651,7 +648,7 @@ def create_dataset(mode, release):
         derivations = cread("raw/derivations.csv")
         derivations["Language_ID"] = "yab"
         derivations["Description"] = derivations["Translation"]
-        derivations["Name"] = derivations["Form"].apply(lambda x: x.replace("-", "+"))
+        derivations["Name"] = derivations["Form"].apply(lambda x: x.replace("-", "&"))
         derivations["Form"] = derivations["Form"].apply(
             lambda x: x.replace("-", "").split("; ")
         )
@@ -753,7 +750,6 @@ def create_dataset(mode, release):
                     slug = form_meanings[form_slug]
 
         log.info("Examples")
-
         for ex in examples.to_dict("records"):
             if ex["Analyzed_Word"] == "":
                 continue
@@ -920,7 +916,7 @@ def create_dataset(mode, release):
             else:
                 log.debug(f"Processing lexeme {key}: {name}")
                 constituents = []
-                for constituent in name.split("+"):
+                for constituent in name.split("&"):
                     if constituent in all_lexemes.index:
                         constituents.append(
                             {**dict(all_lexemes.loc[constituent]), **{"type": "lexeme"}}
@@ -965,7 +961,8 @@ def create_dataset(mode, release):
                                 )
                                 pass
                             else:
-                                log.warning(constituent)
+                                log.warning(f"Did not find morpheme")
+                                print(constituent)
                                 print(data)
                 for c_count, constituent in enumerate(constituents):
                     if constituent["type"] == "lexeme":
@@ -984,7 +981,7 @@ def create_dataset(mode, release):
                                 "Morpheme_ID": constituent["ID"],
                             }
                         )
-                lexeme_name = "+".join([x["Name"] for x in constituents]).replace(
+                lexeme_name = "&".join([x["Name"] for x in constituents]).replace(
                     "-", ""
                 )
                 lexeme_description = "-".join([x["Gloss"] for x in constituents])
