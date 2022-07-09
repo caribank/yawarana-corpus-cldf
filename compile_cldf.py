@@ -393,7 +393,7 @@ def create_dataset(mode, release):
             return row
 
         examples = examples.apply(lambda x: sort_translations(x), axis=1)
-
+        examples["Text_ID"] = examples["Text_ID"].apply(slugify)
         texts = {}
         good_texts = open("raw/good_texts.txt", "r", encoding="utf8").read().split("\n")
         for f in Path("../yawarana_corpus/text_metadata/").glob("*.yaml"):
