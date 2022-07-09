@@ -774,12 +774,6 @@ def create_dataset(mode, release):
             ):
                 if "+" in lexemes:
                     sorted_word = {"Morpheme_IDs": [], "Gramm": [], "Lexemes": []}
-                    morph_ids = sort_uniparser_ids(
-                        id_list=morpheme_ids.split(","),
-                        obj=pword.word,
-                        gloss=pword.gloss,
-                        id_dic=id_dict,
-                    )
                     lexeme_list = lexemes.split("+")
                     lex_cands = all_lexemes.loc[lexeme_list]
                     for g_word, g_gloss in zip(
@@ -796,9 +790,9 @@ def create_dataset(mode, release):
                             lex_cands["ID"].apply(lambda x: x in lex_morpheme_ids)
                         ]
                         if len(lex_cand) == 0:
-                            raise ValueError
+                            g_lexeme = "***"
                         elif len(lex_cand) > 1:
-                            raise ValueError
+                            raise ValueError(lex_cand)
                         else:
                             g_lexeme = lexeme_list.pop(
                                 lexeme_list.index(lex_cand.iloc[0]["ID"])
