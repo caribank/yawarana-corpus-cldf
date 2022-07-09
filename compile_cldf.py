@@ -158,7 +158,6 @@ def create_dataset(mode, release):
             ] = "https://creativecommons.org/licenses/by-sa/4.0/"
             writer.cldf.properties["dc:identifier"] = "https://fl.mt/yawarana-sketch"
 
-
             log.info("Adding chapters and authors")
             doc_path = Path("raw/docs")
             writer.cldf.add_component(cldf_md("ChapterTable"))
@@ -443,7 +442,7 @@ def create_dataset(mode, release):
         flexemes["Language_ID"] = "yab"
         # human-readable IDs
         flexemes["ID"] = flexemes.apply(lambda x: generate_id(x, g="Gloss"), axis=1)
-        
+
         manual_lexemes = cread("raw/lexemes.csv")
         generate_if_empty(manual_lexemes, "ID", lambda x: generate_id(x))
         manual_lexemes = manual_lexemes.apply(add_gloss, axis=1)
@@ -765,122 +764,175 @@ def create_dataset(mode, release):
             if ex["Primary_Text"] in ["***", "###"]:
                 continue
             igt = pyigt.IGT(ex["Analyzed_Word"], ex["Gloss"])
-            if len(ex["Morpheme_IDs"]) != len(igt.morphosyntactic_words):
-                for wc, word in enumerate(ex["Analyzed_Word"]):
-                    if "=" in word:
-                        ex["Morpheme_IDs"].insert(wc, ex["Morpheme_IDs"][wc])
             word_count = -1
-            for morpheme_ids, word, gramm, lexeme in zip(
+            sorted_ex = {"Morpheme_IDs": [], "Gramm": [], "Lexemes": []}
+            for morpheme_ids, pword, gramms, lexemes in zip(
                 ex["Morpheme_IDs"],
-                igt.morphosyntactic_words,
+                igt.prosodic_words,
                 ex["Gramm"].split(" "),
                 ex["Lemmata"].split(" "),
             ):
-                word_count += 1
-                form_slug = slugify(word.word + ":" + word.gloss)
-                if word.gloss in dangerous_glosses:
-                    meaning_slug = slugify(word.gloss) + "-1"
+                if "+" in lexemes:
+                    sorted_word = {"Morpheme_IDs": [], "Gramm": [], "Lexemes": []}
+                    morph_ids = sort_uniparser_ids(
+                        id_list=morpheme_ids.split(","),
+                        obj=pword.word,
+                        gloss=pword.gloss,
+                        id_dic=id_dict,
+                    )
+                    lexeme_list = lexemes.split("+")
+                    lex_cands = all_lexemes.loc[lexeme_list]
+                    for g_word, g_gloss in zip(
+                        pword.word.split("="), pword.gloss.split("=")
+                    ):
+                        lex_morpheme_ids = sort_uniparser_ids(
+                            id_list=morpheme_ids.split(","),
+                            obj=g_word,
+                            gloss=g_gloss,
+                            id_dic=id_dict,
+                            mode="morphemes",
+                        )
+                        lex_cand = lex_cands[
+                            lex_cands["ID"].apply(lambda x: x in lex_morpheme_ids)
+                        ]
+                        if len(lex_cand) == 0:
+                            raise ValueError
+                        elif len(lex_cand) > 1:
+                            raise ValueError
+                        else:
+                            g_lexeme = lexeme_list.pop(
+                                lexeme_list.index(lex_cand.iloc[0]["ID"])
+                            )
+                        sorted_word["Morpheme_IDs"].append(",".join(lex_morpheme_ids))
+                        sorted_word["Gramm"].append(gramms)
+                        sorted_word["Lexemes"].append(g_lexeme)
+                    for col in ["Morpheme_IDs", "Gramm", "Lexemes"]:
+                        sorted_ex[col].append("=".join(sorted_word[col]))
                 else:
-                    meaning_slug = slugify(word.gloss)
-                if meaning_slug not in meanings:
-                    meanings[meaning_slug] = word.gloss
-                if form_slug not in form_meanings:
-                    if "***" in morpheme_ids:
-                        slug = slugify(word.word)
+                    sorted_ex["Morpheme_IDs"].append(morpheme_ids)
+                    sorted_ex["Gramm"].append(gramms)
+                    sorted_ex["Lexemes"].append(lexemes)
+            for p_word_morpheme_ids, pword, gramms, lexemes in zip(
+                sorted_ex["Morpheme_IDs"],
+                igt.prosodic_words,
+                sorted_ex["Gramm"],
+                sorted_ex["Lexemes"],
+            ):
+                for morpheme_ids, g_obj, g_gloss, gramm, lexeme in zip(
+                    p_word_morpheme_ids.split("="),
+                    pword.word.split("="),
+                    pword.gloss.split("="),
+                    gramms.split("="),
+                    lexemes.split("="),
+                ):
+                    word_count += 1
+                    word = pyigt.IGT(g_obj, g_gloss).morphosyntactic_words[0]
+                    form_slug = slugify(word.word + ":" + word.gloss)
+                    if word.gloss in dangerous_glosses:
+                        meaning_slug = slugify(word.gloss) + "-1"
+                    else:
+                        meaning_slug = slugify(word.gloss)
+                    if meaning_slug not in meanings:
+                        meanings[meaning_slug] = word.gloss
+                    if form_slug not in form_meanings:
+                        if "***" in morpheme_ids:
+                            slug = slugify(word.word)
+                            if slug not in forms:
+                                forms[slug] = {
+                                    "Form": word.word,
+                                    "Parameter_ID": ["unknown"],
+                                }
+                            writer.objects["ExampleSlices"].append(
+                                {
+                                    "ID": ex["ID"] + "-" + str(word_count),
+                                    "Form_ID": slug,
+                                    "Example_ID": ex["ID"],
+                                    "Slice": str(word_count),
+                                    "Parameter_ID": "unknown",
+                                }
+                            )
+                            continue
+                        if morpheme_ids == "":
+                            continue
+                        morph_ids = sort_uniparser_ids(
+                            id_list=morpheme_ids.split(","),
+                            obj=word.word,
+                            gloss=word.gloss,
+                            id_dic=id_dict,
+                        )
+                        if None in morph_ids:
+                            msg = f"Unidentified morphs in {ex['ID']} {word.word} '{word.gloss}': {morpheme_ids} > {morph_ids}, using {lexeme} for ID"
+                            log.error(msg)
+                            slug = slugify(
+                                "-".join([x if x else lexeme for x in morph_ids])
+                            )
+                        else:
+                            slug = slugify("-".join(morph_ids))
+                        form_meanings[form_slug] = slug
+                        if " " in gramm:
+                            log.warning("Empty grammatical information")
+                            log.warning(gramm)
                         if slug not in forms:
                             forms[slug] = {
                                 "Form": word.word,
-                                "Parameter_ID": ["unknown"],
+                                "Parameter_ID": [meaning_slug],
+                                "POS": get_pos(gramm, pos_list=pos_list),
+                                "Translation": word.gloss,
                             }
-                        writer.objects["ExampleSlices"].append(
-                            {
-                                "ID": ex["ID"] + "-" + str(word_count),
-                                "Form_ID": slug,
-                                "Example_ID": ex["ID"],
-                                "Slice": str(word_count),
-                                "Parameter_ID": "unknown",
-                            }
-                        )
-                        continue
-                    if morpheme_ids == "":
-                        continue
-                    morph_ids = sort_uniparser_ids(
-                        id_list=morpheme_ids.split(","),
-                        obj=word.word,
-                        gloss=word.gloss,
-                        id_dic=id_dict,
-                    )
-                    if None in morph_ids:
-                        msg = f"Unidentified morphs in {ex['ID']} {word.word} '{word.gloss}': {morpheme_ids} > {morph_ids}, using {lexeme} for ID"
-                        log.error(msg)
-                        slug = slugify(
-                            "-".join([x if x else lexeme for x in morph_ids])
-                        )
-                    else:
-                        slug = slugify("-".join(morph_ids))
-                    form_meanings[form_slug] = slug
-                    if " " in gramm:
-                        log.warning("Empty grammatical information")
-                        log.warning(gramm)
-                    if slug not in forms:
-                        forms[slug] = {
-                            "Form": word.word,
-                            "Parameter_ID": [meaning_slug],
-                            "POS": get_pos(gramm, pos_list=pos_list),
-                            "Translation": word.gloss,
-                        }
-                        if lexeme in ["***", "?"]:
-                            continue
-                        corpus_lexemes.setdefault(
-                            slugify(lexeme), {"name": lexeme, "gloss": word.gloss}
-                        )
-                        if "slug" in slugify(lexeme):
-                            print(
-                                slug,
-                                "word: ",
-                                word.word,
-                                "parameter:",
-                                meaning_slug,
-                                "gramm:",
-                                gramm,
-                                "lexeme:",
-                                lexeme,
+                            if lexeme in ["***", "?"]:
+                                continue
+                            corpus_lexemes.setdefault(
+                                slugify(lexeme), {"name": lexeme, "gloss": word.gloss}
                             )
-                        writer.objects["InflectionTable"].append(
-                            {
-                                "ID": f"{form_slug}-{slugify(lexeme)}",
-                                "Form_ID": slug,
-                                "Lexeme_ID": slugify(lexeme),
-                            }
-                        )
-                    elif word.gloss not in forms[slug]["Parameter_ID"]:
-                        forms[slug]["Parameter_ID"].append(meaning_slug)
-                    for morph_count, (morph_id, glossed_morph) in enumerate(
-                        zip(morph_ids, word.glossed_morphemes)
-                    ):
-                        if morph_id:
-                            writer.objects["FormSlices"].append(
+                            if "slug" in slugify(lexeme):
+                                print(
+                                    slug,
+                                    "word: ",
+                                    word.word,
+                                    "parameter:",
+                                    meaning_slug,
+                                    "gramm:",
+                                    gramm,
+                                    "lexeme:",
+                                    lexeme,
+                                )
+                            writer.objects["InflectionTable"].append(
                                 {
-                                    "ID": f"{form_slug}-{morph_count}",
+                                    "ID": f"{form_slug}-{slugify(lexeme)}",
                                     "Form_ID": slug,
-                                    "Morph_ID": morph_id,
-                                    "Index": str(morph_count),
-                                    "Morpheme_Meaning": slugify(glossed_morph.gloss),
-                                    "Form_Meaning": meaning_slug,
+                                    "Lexeme_ID": slugify(lexeme),
                                 }
                             )
-                else:
-                    slug = form_meanings[form_slug]
+                        elif word.gloss not in forms[slug]["Parameter_ID"]:
+                            forms[slug]["Parameter_ID"].append(meaning_slug)
+                        for morph_count, (morph_id, glossed_morph) in enumerate(
+                            zip(morph_ids, word.glossed_morphemes)
+                        ):
+                            if morph_id:
+                                writer.objects["FormSlices"].append(
+                                    {
+                                        "ID": f"{form_slug}-{morph_count}",
+                                        "Form_ID": slug,
+                                        "Morph_ID": morph_id,
+                                        "Index": str(morph_count),
+                                        "Morpheme_Meaning": slugify(
+                                            glossed_morph.gloss
+                                        ),
+                                        "Form_Meaning": meaning_slug,
+                                    }
+                                )
+                    else:
+                        slug = form_meanings[form_slug]
 
-                writer.objects["ExampleSlices"].append(
-                    {
-                        "ID": ex["ID"] + "-" + str(word_count),
-                        "Form_ID": slug,
-                        "Example_ID": ex["ID"],
-                        "Slice": str(word_count),
-                        "Parameter_ID": meaning_slug,
-                    }
-                )
+                    writer.objects["ExampleSlices"].append(
+                        {
+                            "ID": ex["ID"] + "-" + str(word_count),
+                            "Form_ID": slug,
+                            "Example_ID": ex["ID"],
+                            "Slice": str(word_count),
+                            "Parameter_ID": meaning_slug,
+                        }
+                    )
             writer.objects["ExampleTable"].append(ex)
 
         all_lexemes = pd.concat([all_lexemes, derivations])
