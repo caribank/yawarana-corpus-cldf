@@ -359,7 +359,6 @@ def create_dataset(mode, release):
             examples = cread(
                 "../yawarana_corpus/yawarana_pylacoan/output/parsed_all.csv"
             )
-        examples.rename(columns={"Sentence": "Primary_Text"}, inplace=True)
         examples["Language_ID"] = "yab"
         if "Source" in examples.columns:
             examples["Source"] = examples["Source"].str.split("; ")
@@ -934,7 +933,8 @@ def create_dataset(mode, release):
             lambda x: meanings[slugify(x[0])]
         )
         for deriv in derivations.to_dict("records"):
-            writer.objects["LexemeLexemeParts"].append(
+            if deriv["Base_Lexeme"] != "":
+                writer.objects["LexemeLexemeParts"].append(
                 {
                     "ID": f"{deriv['ID']}-base",
                     "Lexeme_ID": deriv["ID"],
