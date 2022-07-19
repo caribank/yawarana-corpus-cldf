@@ -404,31 +404,6 @@ def create_dataset(mode, release):
                 else:
                     texts[text_id] = text_data
 
-        # releases only contain fully glossed examples
-        # unreleased versions may have unglossed texts
-        if release or mode == "corpus":
-            bare_examples = pd.DataFrame()
-        else:
-            bare_examples = cread("../yawarana_corpus/flexports/yab_texts.csv")
-            bare_examples = bare_examples[(bare_examples["Text_ID"]).isin(texts.keys())]
-            bare_examples["ID"] = bare_examples.apply(get_id, axis=1)
-            bare_examples = bare_examples.merge(example_add, on="ID", how="left")
-            bare_examples["Translated_Text"] = bare_examples.apply(
-                lambda x: x["Translation_en"]
-                if not (pd.isnull(x["Translation_en"]) or x["Translation_en"] == "")
-                else x["Translated_Text"],
-                axis=1,
-            )
-            bare_examples = bare_examples.fillna("")
-            bare_examples["Tags"] = bare_examples.apply(
-                lambda x: x["Tags_y"] + " " + x["Tags_x"], axis=1
-            )
-            bare_examples = bare_examples[~(bare_examples["ID"].isin(examples["ID"]))]
-            bare_examples["Primary_Text"] = bare_examples["Primary_Text"].apply(
-                lambda x: ortho_strip(x, additions=["%", "¿", "###", "#"])
-            )
-            bare_examples.drop(columns=["Analyzed_Word", "Gloss"], inplace=True)
-
         log.info("Morphemes and lexemes")
         # keys: morpheme IDs
         # values: different (allo)morph forms and associated morph IDs
@@ -444,7 +419,7 @@ def create_dataset(mode, release):
 
         manual_lexemes = cread("raw/lexemes.csv")
         generate_if_empty(manual_lexemes, "ID", lambda x: generate_id(x))
-        manual_lexemes = manual_lexemes.apply(add_gloss, axis=1)
+        manual_lexemes = manual_lexemes.apply(add_gloss, combine=True, axis=1)
 
         etym_lexemes = cread("raw/etym_lexemes.csv")
         etym_lexemes["Language_ID"] = "yab"
@@ -677,7 +652,8 @@ def create_dataset(mode, release):
                 wf["Parameter_ID"] = [wf["Parameter_ID"]]
                 forms[wf["ID"]] = wf
             else:
-                form_slug = slugify(wf["Segmented"] + ":" + wf["Gloss"])
+                form_slug = wf["ID"]
+                # form_slug = slugify(wf["Segmented"] + ":" + wf["Gloss"])
                 if wf["Gloss"] in dangerous_glosses:
                     meaning_slug = slugify(wf["Gloss"]) + "-1"
                 else:
@@ -698,7 +674,7 @@ def create_dataset(mode, release):
                         gloss=wf["Gloss"],
                         id_dic=id_dict,
                     )
-                    if None in morph_ids:
+                    if None in morph_ids or morph_ids == []:
                         slug = wf["ID"]
                     else:
                         slug = slugify("-".join(morph_ids))
@@ -769,12 +745,13 @@ def create_dataset(mode, release):
                 ex["Morpheme_IDs"],
                 igt.prosodic_words,
                 ex["Gramm"].split(" "),
-                ex["Lemmata"].split(" "),
+                ex["Lexeme_IDs"].split(" "),
             ):
                 if "+" in lexemes:
                     sorted_word = {"Morpheme_IDs": [], "Gramm": [], "Lexemes": []}
                     lexeme_list = lexemes.split("+")
-                    lex_cands = all_lexemes.loc[lexeme_list]
+                    good_lex_list = all_lexemes.index.intersection(lexeme_list)
+                    lex_cands = all_lexemes.loc[good_lex_list]
                     for g_word, g_gloss in zip(
                         pword.word.split("="), pword.gloss.split("=")
                     ):
@@ -796,7 +773,8 @@ def create_dataset(mode, release):
                             g_lexeme = lexeme_list.pop(
                                 lexeme_list.index(lex_cand.iloc[0]["ID"])
                             )
-                        sorted_word["Morpheme_IDs"].append(",".join(lex_morpheme_ids))
+                        if None not in lex_morpheme_ids:
+                            sorted_word["Morpheme_IDs"].append(",".join(lex_morpheme_ids))
                         sorted_word["Gramm"].append(gramms)
                         sorted_word["Lexemes"].append(g_lexeme)
                     for col in ["Morpheme_IDs", "Gramm", "Lexemes"]:
@@ -1045,18 +1023,6 @@ def create_dataset(mode, release):
 
         for lex in etym_lexemes.to_dict("records"):
             writer.objects["LexemeTable"].append(lex)
-
-        log.info("Audio")
-        for ex in bare_examples.to_dict("records"):
-            ex["Tags"] = ex["Tags"].split(" ")
-            file_path = audio_path / f'{ex["ID"]}.wav'
-            if file_path.is_file():
-                writer.objects["MediaTable"].append(
-                    {"ID": ex["ID"], "Media_Type": "wav"}
-                )
-            if ex["Primary_Text"] == "":
-                continue
-            writer.objects["ExampleTable"].append(ex)
 
         log.info("Phonemes")
         phonemes = cread("etc/phonemes.csv")
