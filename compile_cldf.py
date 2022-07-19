@@ -646,7 +646,7 @@ def create_dataset(mode, release):
         derivations = cread("raw/derivations.csv")
         derivations["Language_ID"] = "yab"
         derivations["Description"] = derivations["Translation"]
-        derivations["Name"] = derivations["Form"].apply(lambda x: x.replace("-", "&"))
+        derivations["Name"] = derivations.apply(lambda x: x["Form"].replace("-", "")+x["Lemma_Suffix"], axis=1)
         derivations["Form"] = derivations["Form"].apply(
             lambda x: x.replace("-", "").split("; ")
         )
@@ -1027,7 +1027,7 @@ def create_dataset(mode, release):
                                 "Morpheme_ID": constituent["ID"],
                             }
                         )
-                lexeme_name = "&".join([x["Name"] for x in constituents]).replace(
+                lexeme_name = "".join([x["Name"] for x in constituents]).replace(
                     "-", ""
                 )
                 lexeme_description = "-".join([x["Gloss"] for x in constituents])
@@ -1081,15 +1081,15 @@ def create_dataset(mode, release):
             form["Segments"] = segmentizer.parse_string(form["Form"]).split(" ")
             form["Language_ID"] = "yab"
             writer.objects["FormTable"].append(form)
-            form_slug = slugify(form["Form"].replace("-", "").replace("∅", ""))
-            if form_slug in word_audios:
-                writer.objects["MediaTable"].append(
-                    {
-                        "ID": form_id,
-                        "Media_Type": "wav",
-                        "Name": word_audios.pop(form_slug)[0].stem,
-                    }
-                )
+            # form_slug = slugify(form["Form"].replace("-", "").replace("∅", ""))
+            # if form_slug in word_audios:
+            #     writer.objects["MediaTable"].append(
+            #         {
+            #             "ID": form_id,
+            #             "Media_Type": "wav",
+            #             "Name": word_audios.pop(form_slug)[0].stem,
+            #         }
+            #     )
 
         writer.objects["LanguageTable"].append(
             {
