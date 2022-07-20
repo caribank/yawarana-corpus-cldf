@@ -420,7 +420,19 @@ def create_dataset(mode, release):
         manual_lexemes = cread("raw/lexemes.csv")
         generate_if_empty(manual_lexemes, "ID", lambda x: generate_id(x))
         manual_lexemes = manual_lexemes.apply(add_gloss, combine=True, axis=1)
-
+        manual_lexemes = (
+            manual_lexemes.groupby(["ID", "Form", "POS", "Paradigm", "Source"])
+            .agg(
+                {
+                    "Gloss": "; ".join,
+                    "Translation_es": "; ".join,
+                    "Translation": "; ".join,
+                    "Gramm": "; ".join,
+                    "Comment": "\n".join,
+                }
+            )
+            .reset_index()
+        )
         etym_lexemes = cread("raw/etym_lexemes.csv")
         etym_lexemes["Language_ID"] = "yab"
         etym_lexemes["Name"] = etym_lexemes["Form"].apply(lambda x: x.split("; ")[0])
@@ -621,7 +633,9 @@ def create_dataset(mode, release):
         derivations = cread("raw/derivations.csv")
         derivations["Language_ID"] = "yab"
         derivations["Description"] = derivations["Translation"]
-        derivations["Name"] = derivations.apply(lambda x: x["Form"].replace("-", "")+x["Lemma_Suffix"], axis=1)
+        derivations["Name"] = derivations.apply(
+            lambda x: x["Form"].replace("-", "") + x["Lemma_Suffix"], axis=1
+        )
         derivations["Form"] = derivations["Form"].apply(
             lambda x: x.replace("-", "").split("; ")
         )
@@ -686,6 +700,7 @@ def create_dataset(mode, release):
                             "POS": get_pos(wf["Gramm"], pos_list=pos_list),
                             "Source": wf["Source"],
                             "Translation": wf["Translation"],
+                            "Audio": wf["Audio"],
                         }
                         writer.objects["InflectionTable"].append(
                             {
@@ -774,7 +789,9 @@ def create_dataset(mode, release):
                                 lexeme_list.index(lex_cand.iloc[0]["ID"])
                             )
                         if None not in lex_morpheme_ids:
-                            sorted_word["Morpheme_IDs"].append(",".join(lex_morpheme_ids))
+                            sorted_word["Morpheme_IDs"].append(
+                                ",".join(lex_morpheme_ids)
+                            )
                         sorted_word["Gramm"].append(gramms)
                         sorted_word["Lexemes"].append(g_lexeme)
                     for col in ["Morpheme_IDs", "Gramm", "Lexemes"]:
@@ -913,12 +930,12 @@ def create_dataset(mode, release):
         for deriv in derivations.to_dict("records"):
             if deriv["Base_Lexeme"] != "":
                 writer.objects["LexemeLexemeParts"].append(
-                {
-                    "ID": f"{deriv['ID']}-base",
-                    "Lexeme_ID": deriv["ID"],
-                    "Base_ID": deriv["Base_Lexeme"],
-                }
-            )
+                    {
+                        "ID": f"{deriv['ID']}-base",
+                        "Lexeme_ID": deriv["ID"],
+                        "Base_ID": deriv["Base_Lexeme"],
+                    }
+                )
             writer.objects["LexemeMorphemeParts"].append(
                 {
                     "ID": f"{deriv['ID']}-affix",
@@ -1047,15 +1064,17 @@ def create_dataset(mode, release):
             form["Segments"] = segmentizer.parse_string(form["Form"]).split(" ")
             form["Language_ID"] = "yab"
             writer.objects["FormTable"].append(form)
-            # form_slug = slugify(form["Form"].replace("-", "").replace("∅", ""))
-            # if form_slug in word_audios:
-            #     writer.objects["MediaTable"].append(
-            #         {
-            #             "ID": form_id,
-            #             "Media_Type": "wav",
-            #             "Name": word_audios.pop(form_slug)[0].stem,
-            #         }
-            #     )
+            if "Audio" in form and form["Audio"] != "":
+                if form["Audio"] == "NOT RECORDED":
+                    continue
+                else:
+                    writer.objects["MediaTable"].append(
+                        {
+                            "ID": form_id,
+                            "Media_Type": "wav",
+                            "Name": Path(form["Audio"]).stem,
+                        }
+                    )
 
         writer.objects["LanguageTable"].append(
             {
