@@ -11,6 +11,7 @@ from cffconvert.cli.create_citation import create_citation
 from cffconvert.cli.validate_or_write_output import validate_or_write_output
 from cldfbench import CLDFSpec
 from cldfbench.cldf import CLDFWriter
+from clld_corpus_plugin.cldf import TextTable
 from clld_morphology_plugin.cldf import (
     FormSlices,
     InflectionTable,
@@ -303,7 +304,7 @@ def create_dataset(mode, release):
             },  # a free translation not tied to the ParameterTable. this is needed by pylingdocs, for now
         )
         writer.cldf.add_component(jsonlib.load("etc/PhonemeTable-metadata.json"))
-        writer.cldf.add_component(Text.cldf_metadata())
+        writer.cldf.add_component(TextTable)
 
         # various foreign keys
         writer.cldf.add_foreign_key("FormTable", "POS", "POSTable", "ID")
