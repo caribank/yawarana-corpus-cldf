@@ -11,7 +11,7 @@ from cffconvert.cli.create_citation import create_citation
 from cffconvert.cli.validate_or_write_output import validate_or_write_output
 from cldfbench import CLDFSpec
 from cldfbench.cldf import CLDFWriter
-from clld_corpus_plugin.cldf import TextTable
+from clld_corpus_plugin.cldf import TextTable, SpeakerTable
 from clld_morphology_plugin.cldf import (
     FormSlices,
     InflectionTable,
@@ -26,9 +26,8 @@ from clldutils import jsonlib
 from clldutils.loglib import get_colorlog
 from pycldf.sources import Source
 from pylacoan.annotator import Segmentizer
-from pylacoan.helpers import get_pos, ortho_strip, sort_uniparser_ids
+from pylacoan.helpers import get_pos, sort_uniparser_ids
 from pylingdocs.cldf import metadata as cldf_md
-from pylingdocs.models import Text
 from pylingdocs.preprocessing import preprocess_cldfviz
 from slugify import slugify as sslug
 from yawarana_helpers import add_gloss, generate_id, generate_if_empty
@@ -248,7 +247,10 @@ def create_dataset(mode, release):
             },
             # a bunch of comma-separated sentence tags
             {"name": "Tags", "required": False, "datatype": "string", "separator": ","},
+            # speaker uttering the example
+            {"name": "Speaker_ID", "required": False, "datatype": "string"},
         )
+        writer.cldf.add_component(SpeakerTable)  # speakers
         writer.cldf.add_component("FormTable")  # word forms
         writer.cldf.add_component("ParameterTable")  # meanings
         writer.cldf.add_component("MediaTable")  # audio files
@@ -323,6 +325,7 @@ def create_dataset(mode, release):
             "ExampleSlices", "Parameter_ID", "ParameterTable", "ID"
         )
         writer.cldf.add_foreign_key("ExampleTable", "Text_ID", "TextTable", "ID")
+        writer.cldf.add_foreign_key("ExampleTable", "Speaker_ID", "SpeakerTable", "ID")
         writer.cldf.add_foreign_key("InflectionTable", "Form_ID", "FormTable", "ID")
         writer.cldf.add_foreign_key("InflectionTable", "Lexeme_ID", "LexemeTable", "ID")
         writer.cldf.add_foreign_key(
@@ -1086,6 +1089,9 @@ def create_dataset(mode, release):
                 "Glottocode": "yaba1248",
             }
         )
+
+        for s in ["AnFo", "ElPe", "GrMe"]:
+            writer.objects["SpeakerTable"].append({"ID": s, "Abbreviation": s})
         writer.write()
 
 
