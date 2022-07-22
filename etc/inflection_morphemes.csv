@@ -30,8 +30,8 @@ tipert,-ti,PERT,
 riipfv,-ri,IPFV,From [mp](rinmlz).
 sepst,-se,PST,From [mp](septcp).
 jpepst,-jpë,PST,From [mp](jpenmlz).
-rupert,-ru,PERT,From [mp](sapenmlz).
-sapepfv,-sapë,PFV,Only occurs on the copula.
+rupert,-ri,PERT,
+sapepfv,-sapë,PFV,From [mp](sapenmlz). Only occurs on the copula.
 pekeprog,-pëkë,PROG.TR,
 jramaproh,-jrama,PROH,
 ripocntf,-ripo,CNTF,
