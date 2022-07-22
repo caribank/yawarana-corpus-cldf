@@ -484,10 +484,13 @@ def create_dataset(mode, release):
         # what references should be included?
         found_refs = jsonlib.load("etc/refs.json")
         bib = pybtex.database.parse_file("etc/car.bib", bib_format="bibtex")
-        sources = [
+        car_sources = [
             Source.from_entry(k, e) for k, e in bib.entries.items() if k in found_refs
         ]
-        writer.cldf.add_sources(*sources)
+        bib2 = pybtex.database.parse_file("etc/misc.bib", bib_format="bibtex")
+        misc_sources = [Source.from_entry(k, e) for k, e in bib2.entries.items()]
+        writer.cldf.add_sources(*car_sources)
+        writer.cldf.add_sources(*misc_sources)
 
         log.info("POS")
         for p in pos.to_dict("records"):
