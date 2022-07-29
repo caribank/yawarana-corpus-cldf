@@ -5,7 +5,7 @@ tavbz,-ta,VBZ.INTR,n>vi ‘S characterized by N’
 anonmlz,-ano,NMLZ,
 jtevbz,-jtë,VBZ.TR,"n>vt, ‘provide P with N’ or ‘make P characterized by N’"
 dt1,ëj-,DETRZ,
-petiplur,-pëti,PLUR,
+petiplur,-pëti,PLUR,Lexicalized with some verbs.
 septcp,-se,PTCP; SUP,
 jpenmlz,-jpë,PST.ACNMLZ,
 rinmlz,-ri,ACNNMLZ,Gave rise to [mp](riipfv).
@@ -17,6 +17,11 @@ nnmlzpre,n-,P.NMLZ,
 tojpepurp,-tojpe,PURP,From [mp](toponmlz) and [mp](esspe). Gave rise to [mp](tojpefut).
 sarecvb,-sarë,CVB,Gave rise to [mp](sareimn).
 dt3,at-,DETRZ,
-toponmlz,-topo,CIRC.NMLZ,Contained in [mp](tojpepurp). Marginally occurs in predicative uses; can combine with [mp](neinf).
+toponmlz,-topo,CIRC.NMLZ,"Contained in [mp](tojpepurp). Marginally occurs in predicative uses (histyarirdi-0542, histyarirdi-0091); can combine with [mp](neinf)."
 readvz,-re,ADVZ,
 pamivbz,-pamï,VBZ,n>vi ‘S characterized by N’
+neinf,-në,INF,Lexically characterized: v.n. in FLEx.
+pecaus,-po,CAUS,"Occurs marginally, causee w/ =pana."
+neadvz,-ne,ADVZ,Not productive.
+yeadvz,-ye,ADVZ,
+keadvz,-ke,ADVZ,Etymologically 'have N’.
