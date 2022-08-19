@@ -348,7 +348,7 @@ def create_dataset(mode, release):
 
         def get_id(row):
             if row["ID"] not in bad_ids:
-                return row["ID"].replace(".", "-").replace("​", "").lower()
+                return row["ID"].replace(".", "-").lower()
             else:
                 return row["ID"].lower() + "-" + str(int(float(row["Part"])))
 
@@ -364,6 +364,15 @@ def create_dataset(mode, release):
                 "../yawarana_corpus/yawarana_pylacoan/output/parsed_all.csv"
             )
         examples["Language_ID"] = "yab"
+        speaker_fix = {
+            "IrDI": "IrDi",
+            "MaFlo": "MaFl",
+            "IrDi x": "IrDi",
+            "AmGu’": "AmGu",
+            "CaME": "CaMe",
+            "GrME": "GrMe",
+        }
+        examples["Speaker_ID"] = examples["Speaker_ID"].replace(speaker_fix)
         if "Source" in examples.columns:
             examples["Source"] = examples["Source"].str.split("; ")
         example_add = cread("etc/example_additions.csv")  # additional example data
@@ -396,14 +405,14 @@ def create_dataset(mode, release):
 
         examples = examples.apply(lambda x: sort_translations(x), axis=1)
         examples["Text_ID"] = examples["Text_ID"].apply(slugify)
+        found_texts = set(list(examples["Text_ID"]))
         texts = {}
-        good_texts = open("raw/good_texts.txt", "r", encoding="utf8").read().split("\n")
         for f in Path("../yawarana_corpus/text_metadata/").glob("*.yaml"):
             with open(f) as file:
                 text_data = yaml.load(file, Loader=yaml.SafeLoader)
                 text_id = slugify(text_data.pop("id"))
                 if release:
-                    if text_id in good_texts:
+                    if text_id in found_texts:
                         texts[text_id] = text_data
                 else:
                     texts[text_id] = text_data
@@ -1093,7 +1102,19 @@ def create_dataset(mode, release):
             }
         )
 
-        for s in ["AnFo", "ElPe", "GrMe"]:
+        for s in [
+            "AnFo",
+            "ElPe",
+            "GrMe",
+            "CaMe",
+            "IrDi",
+            "AnPe",
+            "MaFl",
+            "PaPe",
+            "AmGu",
+            "MaPe",
+            "NCA",
+        ]:
             writer.objects["SpeakerTable"].append({"ID": s, "Abbreviation": s})
         writer.write()
 
