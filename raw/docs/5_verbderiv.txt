@@ -1,0 +1,108 @@
+<a id='verbderiv'></a>
+
+## Classes of verbs
+
+[Language yab](LanguageTable?#cldf:yab) verb roots can be divided into those yielding an intransitive stem, and those yielding a transitive stem.
+The only inflectional criterion distinguishing the two classes is the third person prefix [Morpheme t3](MorphsetTable?no_translation#cldf:t3), which can only occur on transitive stems.
+Thus, transitive [Morpheme yawanka-kill](MorphsetTable?#cldf:yawanka-kill) can take [Morpheme t3](MorphsetTable?no_translation#cldf:t3) <a class="exref" example_id="convfemgrme-217"release="True" ></a>, but intransitive [Morpheme yaruwa-laugh](MorphsetTable?#cldf:yaruwa-laugh) does not <a class="exref" example_id="convrisamaj-42"release="True" ></a>.
+
+[Example convfemgrme-217,convrisamaj-42](ExampleTable?ids=convfemgrme-217,convrisamaj-42&example_counter=13#cldf:__all__)
+
+: -nëpëkë and -tëpëkë)
+
+* detransitive
+* ditransitive
+* "n-adding"
+* accidental lability
+* ijtëri
+
+* Note that all transitive verbs are consonant‑initial, whether etymologically or not because [Morpheme ylk](MorphsetTable?#cldf:ylk) is added to all vowel‑initial roots
+* the _y‑_ disappears when preceded by the detransitivizer  
+
+## Verbalizing suffixes {#sec:vbz}
+None of these are productive, although there are many lexemes derived with them.
+
+### Intransitive
+
+#### -ta / -na
+[Morpheme tavbz](MorphsetTable?#cldf:tavbz) derives intransitive verbs.
+
+
+<a id='tab:tavbz'></a><div class='caption table' id='tab:tavbz'>Lexemes derived with *-ta*</div>
+
+| Base                                                                  | Derivation                                                                                    |
+|:----------------------------------------------------------------------|:----------------------------------------------------------------------------------------------|
+| [Lexeme suku-urine](LexemeTable?#cldf:suku-urine)                     | [Lexeme sujta-urinate](LexemeTable?#cldf:sujta-urinate)                                       |
+| [Lexeme kaimo-game](LexemeTable?#cldf:kaimo-game)                     | [Lexeme kaimota-hunt](LexemeTable?#cldf:kaimota-hunt)                                         |
+| [Lexeme metej-thin](LexemeTable?#cldf:metej-thin)                     | [Lexeme meteta-thin](LexemeTable?#cldf:meteta-thin)                                           |
+| [Lexeme yoko-pimple](LexemeTable?#cldf:yoko-pimple)                   | [Lexeme yokota-grow-pimple](LexemeTable?#cldf:yokota-grow-pimple)                             |
+| [Lexeme yerepunu-sick](LexemeTable?#cldf:yerepunu-sick)               | [Lexeme yerepunta-become-sick](LexemeTable?#cldf:yerepunta-become-sick)                       |
+| [Lexeme wereyi-cloud](LexemeTable?#cldf:wereyi-cloud)                 | [Lexeme wereyta-cloud-over](LexemeTable?#cldf:wereyta-cloud-over)                             |
+| [Lexeme wanapu-savannah](LexemeTable?#cldf:wanapu-savannah)           | [Lexeme wanaputa-grow-savannah-grass](LexemeTable?#cldf:wanaputa-grow-savannah-grass)         |
+| [Lexeme sakau-sand](LexemeTable?#cldf:sakau-sand)                     | [Lexeme sakauta-get-sandy](LexemeTable?#cldf:sakauta-get-sandy)                               |
+| [Lexeme roko-crazy](LexemeTable?#cldf:roko-crazy)                     | [Lexeme rokota-become-crazy](LexemeTable?#cldf:rokota-become-crazy)                           |
+| [Lexeme punu-flesh](LexemeTable?#cldf:punu-flesh)                     | [Lexeme punta-form-pulp](LexemeTable?#cldf:punta-form-pulp)                                   |
+| [Lexeme pike-fart](LexemeTable?#cldf:pike-fart)                       | [Lexeme piketa-fart](LexemeTable?#cldf:piketa-fart)                                           |
+| [Lexeme pichipichi-whitebait](LexemeTable?#cldf:pichipichi-whitebait) | [Lexeme pichipichita-form-whitebait](LexemeTable?#cldf:pichipichita-form-whitebait)           |
+| [Lexeme naki-thirst](LexemeTable?#cldf:naki-thirst)                   | [Lexeme nakita-be-thirsty](LexemeTable?#cldf:nakita-be-thirsty)                               |
+| [Lexeme muku-child](LexemeTable?#cldf:muku-child)                     | [Lexeme mukuta-have-son](LexemeTable?#cldf:mukuta-have-son)                                   |
+| [Lexeme moto-worm](LexemeTable?#cldf:moto-worm)                       | [Lexeme motota-fill-with-worms](LexemeTable?#cldf:motota-fill-with-worms)                     |
+| [Lexeme moroni-pain](LexemeTable?#cldf:moroni-pain)                   | [Lexeme moronta-hurt](LexemeTable?#cldf:moronta-hurt)                                         |
+| [Lexeme mesuku-blood](LexemeTable?#cldf:mesuku-blood)                 | [Lexeme mesujta-bleed](LexemeTable?#cldf:mesujta-bleed)                                       |
+| [Lexeme kere-ripe](LexemeTable?#cldf:kere-ripe)                       | [Lexeme kereta-ripen](LexemeTable?#cldf:kereta-ripen)                                         |
+| [Lexeme kemu-pus](LexemeTable?#cldf:kemu-pus)                         | [Lexeme kemuta-emit-pus](LexemeTable?#cldf:kemuta-emit-pus)                                   |
+| [Lexeme konopo-rain](LexemeTable?#cldf:konopo-rain)                   | [Lexeme konopota-start-rainy-season](LexemeTable?#cldf:konopota-start-rainy-season)           |
+| [Lexeme kawono-high](LexemeTable?#cldf:kawono-high)                   | [Lexeme kawonota-get-high](LexemeTable?#cldf:kawonota-get-high)                               |
+| [Lexeme kampara-big](LexemeTable?#cldf:kampara-big)                   | [Lexeme kamparata-grow](LexemeTable?#cldf:kamparata-grow)                                     |
+| [Lexeme chekey-nit](LexemeTable?#cldf:chekey-nit)                     | [Lexeme chekeyta-fill-with-nits](LexemeTable?#cldf:chekeyta-fill-with-nits)                   |
+| [Lexeme chimichimi-worm-dog](LexemeTable?#cldf:chimichimi-worm-dog)   | [Lexeme chimichimita-fill-with-worms-dog](LexemeTable?#cldf:chimichimita-fill-with-worms-dog) |
+| [Lexeme chike-chigger](LexemeTable?#cldf:chike-chigger)               | [Lexeme chiketa-get-chiggers](LexemeTable?#cldf:chiketa-get-chiggers)                         |
+| [Lexeme awochi-tumor](LexemeTable?#cldf:awochi-tumor)                 | [Lexeme awochita-form-tumor](LexemeTable?#cldf:awochita-form-tumor)                           |
+| [Lexeme asere-dry-cough](LexemeTable?#cldf:asere-dry-cough)           | [Lexeme asereta-have-dry-cough](LexemeTable?#cldf:asereta-have-dry-cough)                     |
+| [Lexeme aijkorono-recovered](LexemeTable?#cldf:aijkorono-recovered)   | [Lexeme aijkoronota-recover](LexemeTable?#cldf:aijkoronota-recover)                           |
+| [Lexeme ajpachi-undergrowth](LexemeTable?#cldf:ajpachi-undergrowth)   | [Lexeme ajpachita-overgrows](LexemeTable?#cldf:ajpachita-overgrows)                           |
+| [Lexeme aki-worm](LexemeTable?#cldf:aki-worm)                         | [Lexeme akita-fill-with-worms](LexemeTable?#cldf:akita-fill-with-worms)                       |
+
+#### _-pamï_ / _-mamï_
+
+
+
+### Transitive
+
+#### -ka
+[Morpheme kavbz](MorphsetTable?#cldf:kavbz) derives transitive verbs.
+
+#### _-jtë_ / _-të_
+* benefactive
+
+#### _-ma_ / _-pa_ 
+* causative
+
+
+
+## Valency-changing affixes
+
+### Detransitivizing prefixes {#sec:detrz}
+
+
+
+1. [Morpheme dt2](MorphsetTable?no_translation#cldf:dt2)
+1. [Morpheme dt1](MorphsetTable?no_translation#cldf:dt1)
+1. [Morpheme dt3](MorphsetTable?no_translation#cldf:dt3)
+
+
+### Transitivizing suffixes
+* _-ma_ 
+* 
+* does [Morpheme kavbz](MorphsetTable?#cldf:kavbz) go on intransitive verb stems?
+
+### Ditransitivizing suffixes
+* _-po_
+
+## Meaning-changing suffixes
+
+* <span class='smallcaps'>DES</span> 
+* <span class='smallcaps'>PLUR</span>
+* <span class='smallcaps'>CESS</span>
+
+

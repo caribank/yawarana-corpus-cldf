@@ -1,0 +1,7 @@
+<a id='simpleverb'></a>
+
+
+* order of arguments re: the verb (and each other)
+* case marking patterns
+* indexation
+* clausal particles

@@ -1,0 +1,18 @@
+<a id='nonverbal'></a>
+
+
+Spike for PC:
+
+* Nsubj + Npred: nominal (juxtaposition) predication. Limited in functional domains.
+* Nsubj + <span class='smallcaps'>cop</span> + Adverbial (adverbs/postpositional phrases). Fairly unlimited.
+
+Innovations:
+
+* Nsubj + <span class='smallcaps'>cop</span> + Npred (S&M 2009)
+* Nsubj + Adverbial
+
+* Take functional approach, go through kinds of NVP & find constructions
+    * Interrogation
+    * Negation
+* What are particles doing?
+* What is word order doing?

@@ -1,0 +1,17 @@
+<a id='voice'></a>
+* functions of <span class='smallcaps'>detrz</span>
+    * antipassive
+    * passive
+    * reflexive
+    * reciprocal
+    * anticausative
+
+* other strategies for removing participant:
+    * _-se-mï_ 'gnomic'
+    * [Morpheme neinf](MorphsetTable?#cldf:neinf)
+
+* what is not used for voice?
+    * _-sapë_
+    * participle
+
+
