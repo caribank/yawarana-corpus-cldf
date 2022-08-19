@@ -3,15 +3,24 @@
 
 ## Defining the category
 
+* monomorphemic vs bipartite (vs 'stacked')
+
 ## Inflectional morphology {#sec:postinfl}
 Postpositions take the same inflectional prefixes as nouns ([crossref](ChapterTable?_anchor=sec:nounposssuf#cldf:nouns)). <span title='are there postpositions with third person i-?'>❓</span>
 
 
-|                                  |                                         |
-|:---------------------------------|:----------------------------------------|
-| <span class="smallcaps">1</span> | [Morpheme u1](MorphsetTable?#cldf:u1)   |
-| <span class="smallcaps">2</span> | [Morpheme me2](MorphsetTable?#cldf:me2) |
-| <span class="smallcaps">3</span> | [Morpheme i3](MorphsetTable?#cldf:i3)?  |
+<a id='tab:postpprefixes'></a><div class='caption table' id='tab:postpprefixes'>Person marking prefixes on postpositions</div>
+
+|                                  |                                                       |
+|:---------------------------------|:------------------------------------------------------|
+| <span class='smallcaps'>1</span> | [Morpheme u1](MorphsetTable?no_translation#cldf:u1)   |
+| <span class='smallcaps'>2</span> | [Morpheme me2](MorphsetTable?no_translation#cldf:me2) |
+| <span class='smallcaps'>3</span> | [Morpheme i3](MorphsetTable?no_translation#cldf:i3)   |
+
+Also:
+
+* [Morpheme kontomopl](MorphsetTable?#cldf:kontomopl)
+* _ësë-_
 
 ## Locative Postpositions
 * clear bipartite Ground+Path
@@ -21,10 +30,10 @@ Postpositions take the same inflectional prefixes as nouns ([crossref](ChapterTa
 
 <a id='tab:locpost'></a><div class='caption table' id='tab:locpost'>Locative postpositions</div>
 
-|         | <span class="smallcaps">all</span>              | <span class="smallcaps">loc</span>              |
-|:--------|:------------------------------------------------|:------------------------------------------------|
-| inside  | [Morpheme yakaall](MorphsetTable?#cldf:yakaall) | [Morpheme yaweloc](MorphsetTable?#cldf:yaweloc) |
-| aquatic | ?                                               | ?                                               |
+|         | <span class='smallcaps'>all</span>                            | <span class='smallcaps'>loc</span>                            |
+|:--------|:--------------------------------------------------------------|:--------------------------------------------------------------|
+| inside  | [Morpheme yakaall](MorphsetTable?no_translation#cldf:yakaall) | [Morpheme yaweloc](MorphsetTable?no_translation#cldf:yaweloc) |
+| aquatic | ?                                                             | ?                                                             |
 
 <span title='how do these fit in?'>❓</span>
 
@@ -35,17 +44,15 @@ Postpositions take the same inflectional prefixes as nouns ([crossref](ChapterTa
 
 * allative: 
 
-[Example histpajirdi-186](ExampleTable?example_no=23#cldf:histpajirdi-186)
+[Example histpajirdi-186](ExampleTable?example_counter=24#cldf:histpajirdi-186)
 
 ## Nonlocative Oblique Postpositions 
-* [Morpheme yaerg](MorphsetTable?#cldf:yaerg) ‘<span class="smallcaps">erg</span>’
-* *ke* '<span class="smallcaps">ins</span>'
+* [Morpheme panadat](MorphsetTable?#cldf:panadat)
+* [Morpheme ke-ins](MorphsetTable?#cldf:ke-ins)
 * _wanai_
-
-
-## Propositional Postpositions
-* =se '<span class="smallcaps">des</span>'
 
 ## Misc
 
-* copular [Morpheme chi-cop](MorphsetTable?#cldf:chi-cop) combines with [Morpheme yaweloc](MorphsetTable?#cldf:yaweloc), sometimes spelled *chi yawë*, sometimes *chawë*.
+* [Morpheme chi-cop](MorphsetTable?#cldf:chi-cop) combines with [Morpheme yaweloc](MorphsetTable?#cldf:yaweloc), sometimes spelled *chi yawë*, sometimes *chawë*.
+* syllable reduction
+* postpositions on bare verbs? (e.g. _wejtawë_)

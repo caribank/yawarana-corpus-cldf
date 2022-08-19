@@ -7,11 +7,11 @@
     ],
     "dc:bibliographicCitation": "Matter F., C\u00e1ceres Arandia N., Gildea S. (2022). A digital sketch grammar of Yawarana (version 0.0.3.draft). URL: https://github.com/fmatter/yawarana-sketch-cldf/tree/0.0.3.draft",
     "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#Generic",
-    "dc:description": "This is a digital description of Yawarana.",
+    "dc:description": "This is a CLDF dataset containing a digital description of Yawarana.\n    The following linguistic entities and properties are encoded:\n    * sentences\n    * word forms\n    * lexemes\n    * morphemes\n    * morphs\n    * parts of speech\n    \n    It also contains descriptive texts with references to the data.",
     "dc:identifier": "https://fl.mt/yawarana-sketch",
     "dc:license": "https://creativecommons.org/licenses/by-sa/4.0/",
     "dc:source": "sources.bib",
-    "dc:title": "A digital sketch grammar of Yawarana (v0.0.3.draft)",
+    "dc:title": "A digital sketch grammar of Yawarana (v0.0.3.draft2)",
     "prov:wasGeneratedBy": [
         {
             "dc:title": "python",
@@ -29,7 +29,39 @@
     },
     "tables": [
         {
-            "dc:extent": 11,
+            "dc:conformsTo": null,
+            "dc:extent": 3,
+            "tableSchema": {
+                "columns": [
+                    {
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#id",
+                        "required": true,
+                        "name": "ID"
+                    },
+                    {
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#name",
+                        "required": true,
+                        "name": "Name"
+                    },
+                    {
+                        "name": "Email"
+                    },
+                    {
+                        "name": "Url"
+                    },
+                    {
+                        "datatype": "integer",
+                        "name": "Order"
+                    }
+                ],
+                "primaryKey": [
+                    "ID"
+                ]
+            },
+            "url": "ContributorTable"
+        },
+        {
+            "dc:extent": 20,
             "tableSchema": {
                 "columns": [
                     {
@@ -67,40 +99,8 @@
             "url": "ChapterTable"
         },
         {
-            "dc:conformsTo": null,
-            "dc:extent": 3,
-            "tableSchema": {
-                "columns": [
-                    {
-                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#id",
-                        "required": true,
-                        "name": "ID"
-                    },
-                    {
-                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#name",
-                        "required": true,
-                        "name": "Name"
-                    },
-                    {
-                        "name": "Email"
-                    },
-                    {
-                        "name": "Url"
-                    },
-                    {
-                        "datatype": "integer",
-                        "name": "Order"
-                    }
-                ],
-                "primaryKey": [
-                    "ID"
-                ]
-            },
-            "url": "ContributorTable"
-        },
-        {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ExampleTable",
-            "dc:extent": 165,
+            "dc:extent": 62,
             "tableSchema": {
                 "columns": [
                     {
@@ -187,10 +187,22 @@
                         "name": "Source"
                     },
                     {
+                        "dc:description": "The original translation of the example text.",
+                        "dc:extent": "singlevalued",
+                        "datatype": "string",
+                        "required": false,
+                        "name": "Original_Translation"
+                    },
+                    {
                         "datatype": "string",
                         "required": false,
                         "separator": ",",
                         "name": "Tags"
+                    },
+                    {
+                        "datatype": "string",
+                        "required": false,
+                        "name": "Speaker_ID"
                     }
                 ],
                 "foreignKeys": [
@@ -226,6 +238,17 @@
                                 "ID"
                             ]
                         }
+                    },
+                    {
+                        "columnReference": [
+                            "Speaker_ID"
+                        ],
+                        "reference": {
+                            "resource": "SpeakerTable",
+                            "columnReference": [
+                                "ID"
+                            ]
+                        }
                     }
                 ],
                 "primaryKey": [
@@ -235,8 +258,34 @@
             "url": "examples.csv"
         },
         {
+            "dc:extent": 11,
+            "tableSchema": {
+                "columns": [
+                    {
+                        "datatype": {
+                            "base": "string",
+                            "format": "[a-zA-Z0-9_\\-]+"
+                        },
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#id",
+                        "required": true,
+                        "name": "ID"
+                    },
+                    {
+                        "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#name",
+                        "required": true,
+                        "name": "Abbreviation"
+                    }
+                ],
+                "primaryKey": [
+                    "ID"
+                ]
+            },
+            "url": "SpeakerTable"
+        },
+        {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#FormTable",
-            "dc:extent": 271,
+            "dc:extent": 302,
             "tableSchema": {
                 "columns": [
                     {
@@ -343,7 +392,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ParameterTable",
-            "dc:extent": 315,
+            "dc:extent": 687,
             "tableSchema": {
                 "columns": [
                     {
@@ -376,7 +425,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#MediaTable",
-            "dc:extent": 196,
+            "dc:extent": 192,
             "tableSchema": {
                 "columns": [
                     {
@@ -492,7 +541,119 @@
             "url": "languages.csv"
         },
         {
-            "dc:extent": 405,
+            "dc:extent": 76,
+            "tableSchema": {
+                "columns": [
+                    {
+                        "datatype": {
+                            "base": "string",
+                            "format": "[a-zA-Z0-9_\\-]+"
+                        },
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#id",
+                        "required": true,
+                        "name": "ID"
+                    },
+                    {
+                        "dc:extent": "singlevalued",
+                        "datatype": "string",
+                        "required": true,
+                        "name": "Lexeme_ID"
+                    },
+                    {
+                        "dc:extent": "singlevalued",
+                        "datatype": "string",
+                        "required": true,
+                        "name": "Morpheme_ID"
+                    }
+                ],
+                "foreignKeys": [
+                    {
+                        "columnReference": [
+                            "Morpheme_ID"
+                        ],
+                        "reference": {
+                            "resource": "MorphsetTable",
+                            "columnReference": [
+                                "ID"
+                            ]
+                        }
+                    },
+                    {
+                        "columnReference": [
+                            "Lexeme_ID"
+                        ],
+                        "reference": {
+                            "resource": "LexemeTable",
+                            "columnReference": [
+                                "ID"
+                            ]
+                        }
+                    }
+                ],
+                "primaryKey": [
+                    "ID"
+                ]
+            },
+            "url": "LexemeMorphemeParts"
+        },
+        {
+            "dc:extent": 67,
+            "tableSchema": {
+                "columns": [
+                    {
+                        "datatype": {
+                            "base": "string",
+                            "format": "[a-zA-Z0-9_\\-]+"
+                        },
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#id",
+                        "required": true,
+                        "name": "ID"
+                    },
+                    {
+                        "dc:extent": "singlevalued",
+                        "datatype": "string",
+                        "required": true,
+                        "name": "Lexeme_ID"
+                    },
+                    {
+                        "dc:extent": "singlevalued",
+                        "datatype": "string",
+                        "required": false,
+                        "name": "Base_ID"
+                    }
+                ],
+                "foreignKeys": [
+                    {
+                        "columnReference": [
+                            "Base_ID"
+                        ],
+                        "reference": {
+                            "resource": "LexemeTable",
+                            "columnReference": [
+                                "ID"
+                            ]
+                        }
+                    },
+                    {
+                        "columnReference": [
+                            "Lexeme_ID"
+                        ],
+                        "reference": {
+                            "resource": "LexemeTable",
+                            "columnReference": [
+                                "ID"
+                            ]
+                        }
+                    }
+                ],
+                "primaryKey": [
+                    "ID"
+                ]
+            },
+            "url": "LexemeLexemeParts"
+        },
+        {
+            "dc:extent": 236,
             "tableSchema": {
                 "columns": [
                     {
@@ -621,7 +782,141 @@
             "url": "POSTable"
         },
         {
-            "dc:extent": 802,
+            "dc:extent": 570,
+            "tableSchema": {
+                "columns": [
+                    {
+                        "datatype": {
+                            "base": "string",
+                            "format": "[a-zA-Z0-9_\\-]+"
+                        },
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#id",
+                        "required": true,
+                        "name": "ID"
+                    },
+                    {
+                        "dc:description": "A reference to a language (or variety) the form belongs to",
+                        "dc:extent": "singlevalued",
+                        "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#languageReference",
+                        "required": true,
+                        "name": "Language_ID"
+                    },
+                    {
+                        "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#name",
+                        "required": true,
+                        "name": "Name"
+                    },
+                    {
+                        "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#description",
+                        "required": false,
+                        "name": "Description"
+                    },
+                    {
+                        "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#comment",
+                        "required": false,
+                        "name": "Comment"
+                    },
+                    {
+                        "dc:description": "A reference to the meaning denoted by the form",
+                        "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#parameterReference",
+                        "required": false,
+                        "separator": "; ",
+                        "name": "Parameter_ID"
+                    }
+                ],
+                "foreignKeys": [
+                    {
+                        "columnReference": [
+                            "Parameter_ID"
+                        ],
+                        "reference": {
+                            "resource": "parameters.csv",
+                            "columnReference": [
+                                "ID"
+                            ]
+                        }
+                    },
+                    {
+                        "columnReference": [
+                            "Language_ID"
+                        ],
+                        "reference": {
+                            "resource": "languages.csv",
+                            "columnReference": [
+                                "ID"
+                            ]
+                        }
+                    }
+                ],
+                "primaryKey": [
+                    "ID"
+                ]
+            },
+            "url": "LexemeTable"
+        },
+        {
+            "dc:extent": 156,
+            "tableSchema": {
+                "columns": [
+                    {
+                        "datatype": {
+                            "base": "string",
+                            "format": "[a-zA-Z0-9_\\-]+"
+                        },
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#id",
+                        "required": true,
+                        "name": "ID"
+                    },
+                    {
+                        "dc:extent": "singlevalued",
+                        "datatype": "string",
+                        "required": true,
+                        "name": "Form_ID"
+                    },
+                    {
+                        "dc:extent": "singlevalued",
+                        "datatype": "string",
+                        "required": true,
+                        "name": "Lexeme_ID"
+                    }
+                ],
+                "foreignKeys": [
+                    {
+                        "columnReference": [
+                            "Form_ID"
+                        ],
+                        "reference": {
+                            "resource": "forms.csv",
+                            "columnReference": [
+                                "ID"
+                            ]
+                        }
+                    },
+                    {
+                        "columnReference": [
+                            "Lexeme_ID"
+                        ],
+                        "reference": {
+                            "resource": "LexemeTable",
+                            "columnReference": [
+                                "ID"
+                            ]
+                        }
+                    }
+                ],
+                "primaryKey": [
+                    "ID"
+                ]
+            },
+            "url": "InflectionTable"
+        },
+        {
+            "dc:extent": 255,
             "tableSchema": {
                 "columns": [
                     {
@@ -715,7 +1010,7 @@
             "url": "ExampleSlices"
         },
         {
-            "dc:extent": 322,
+            "dc:extent": 748,
             "tableSchema": {
                 "columns": [
                     {
@@ -768,6 +1063,20 @@
                         "required": false,
                         "separator": "; ",
                         "name": "Parameter_ID"
+                    },
+                    {
+                        "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#source",
+                        "required": false,
+                        "separator": "; ",
+                        "name": "Source"
+                    },
+                    {
+                        "dc:description": "A human-friendly translation",
+                        "dc:extent": "singlevalued",
+                        "datatype": "string",
+                        "required": false,
+                        "name": "Translation"
                     }
                 ],
                 "foreignKeys": [
@@ -812,7 +1121,7 @@
             "url": "MorphTable"
         },
         {
-            "dc:extent": 236,
+            "dc:extent": 557,
             "tableSchema": {
                 "columns": [
                     {
@@ -851,6 +1160,20 @@
                         "required": false,
                         "separator": "; ",
                         "name": "Parameter_ID"
+                    },
+                    {
+                        "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#source",
+                        "required": false,
+                        "separator": "; ",
+                        "name": "Source"
+                    },
+                    {
+                        "dc:description": "A human-friendly translation",
+                        "dc:extent": "singlevalued",
+                        "datatype": "string",
+                        "required": false,
+                        "name": "Translation"
                     }
                 ],
                 "foreignKeys": [
@@ -922,7 +1245,7 @@
             "url": "PhonemeTable"
         },
         {
-            "dc:extent": 3,
+            "dc:extent": 9,
             "tableSchema": {
                 "columns": [
                     {

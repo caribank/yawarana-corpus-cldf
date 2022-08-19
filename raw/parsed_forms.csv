@@ -1,2 +1,184 @@
-ID,Form,Segmented,Gloss,Translation,Parameter_ID,Morpheme_IDs,Gramm
-onoti-your-cousin,onoti,o-noti,2-potential.partner,your cousin,your-cousin,"a2,noti-potential-partner","n,2,poss"
+ID,Form,Segmented,Gloss,Translation,Parameter_ID,Lexeme_ID,Morpheme_IDs,Gramm,Source,Audio,POS
+apuni-soap,apuni,apuni,soap,soap,soap,apuni-soap,apuni-soap,n,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0071_AnFo_apuni.wav,
+arina-trembler,arina,arina,trembler,trembler,trembler,arina-trembler,arina-trembler,n,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0089_PaPe_arina.wav,
+aro-rice,aro,aro,rice,rice,rice,aro-rice,aro-rice,n,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0090_AnFo_aro.wav,
+aropoko-ball-game,aropoko,aropoko,ball.game,ball game,ball-game,aropoko-ball-game,aropoko-ball-game,n,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0096_PaPe_aropoko.wav,
+asakontompene-four,asakontompene,asakontompene,four,four,four,asakontompene-four,asakontompene-four,adv,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0110_AnFo_asakontompene.wav,
+asere-dry-cough,asere,asere,dry.cough,dry cough,dry-cough,asere-dry-cough,asere-dry-cough,n,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0125_AnFo_asere.wav,
+asere-ke-dry-cough-prep,asereke,asere-ke,dry.cough-PREP,tuberculous,tuberculous,asere&keprop,"asere-dry-cough,keprop","adv,prop",muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0126_AnFo_asereke.wav,
+asereta-ri-have-dry-cough-acnnmlz,aseretari,asereta-ri,have.dry.cough-ACNNMLZ,have a dry cough,have-a-dry-cough,asereta&rinmlz,rinmlz,n,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0127_AnFo_aseretari.wav,
+asuka-sugar,asuka,asuka,sugar,sugar,sugar,asuka-sugar,asuka-sugar,n,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0131_AnFo_asuka.wav,
+awochi-tumor,awochi,awochi,tumor,big tumor,big-tumor,awochi-tumor,awochi-tumor,n,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0174_AnFo_awochi.wav,
+chika-ri-bite-acnnmlz,chikari,chika-ri,bite-ACNNMLZ,bite,bite,chika&rinmlz,"chika-bite,rinmlz",n,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0195_PaPe_chikari.wav,
+chimichimi-worm-dog,chimichimi,chimichimi,worm.(dog),worm (dog),worm-dog,chimichimi-worm-dog,chimichimi-worm-dog,n,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0210_PaPe_chimichimi.wav,
+chimichimita-ri-fill-with-worms-dog-acnnmlz,chimichimitari,chimichimita-ri,fill.with.worms.(dog)-ACNNMLZ,become infected with worms,become-infected-with-worms,chimichimita&rinmlz,rinmlz,n,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0213_AnFo_chimichimitari.wav,
+chipiyu-fungus-sp,chipiyu,chipiyu,fungus.sp,mushroom (sp.),mushroom-sp,chipiyu-fungus-sp,chipiyu-fungus-sp,n,muller2021yawarana,NOT RECORDED,
+chiri-ri-wild-pineapple-pert,chiriri,chiri-ri,wild.pineapple-PERT,titi monkey,titi-monkey,chiri-wild-pineapple,"chiri-wild-pineapple,rupert","n,pert",muller2021yawarana,NOT RECORDED,
+chiri-ri-titi-monkey-pert,chiriri,chiri-ri,titi.monkey-PERT,titi monkey,titi-monkey,chiri-titi-monkey,"chiri-titi-monkey,rupert","n,pert",muller2021yawarana,NOT RECORDED,
+chiyakono-friend,chiyakono,chiyakono,friend,friend,friend,chiyakono-friend,chiyakono-friend,n,muller2021yawarana,NOT RECORDED,
+eniro-no-now-nmlz,enirono,eniro-no,now-NMLZ,new,new,enirë&anonmlz,"anonmlz,enire-now",n,muller2021yawarana,/home/florianm/Downloads/Dictionary_Clippings/180320/YarLex_0368_PaPe_enirono-02.wav,
+ijmoka-ni-cook-agtnmlz,ijmokani,ijmoka-ni,cook-AGTNMLZ,cook,cook,ijmoka&ninmlz,"ijmoka-cook,ninmlz",n,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0466_AnFo_ijmokani.wav,
+ijmoka-ri-cook-acnnmlz,ijmokari,ijmoka-ri,cook-ACNNMLZ,cook,cook,ijmoka&rinmlz,"ijmoka-cook,rinmlz",n,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0465_AnFo_ijmokari.wav,
+ijpu-summit,ijpu,ijpu,summit,summit,summit,ijpu-summit,ijpu-summit,n,muller2021yawarana,,
+iyajtepe-before,iyajtëpe,iyajtëpe,before,before,before,iyajtepe-before,iyajtepe-before,adv,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0510_PaPe_iyajtepe.wav,
+kampara-ke-big-prep,kamparake,kampara-ke,big-PREP,large,large,kampara&keprop,"kampara-big,keprop","adv,prop",muller2021yawarana,,
+kejkepe-salamander,kejkepe,kejkepe,salamander,salamander,salamander,kejkepe-salamander,kejkepe-salamander,n,muller2021yawarana,,
+kojpa-night,kojpa,kojpa,night,night,night,kojpa-night,kojpa-night,n,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0765_AnFo_kojpa .wav,
+kojpaye-night-advz,kojpaye,kojpaye,night.ADVZ,at night,at-night,kojpa-ye-at-night,,adv,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0767_AnFo_kojpaye.wav,
+kwatojpe-how,kwatojpe,kwatojpe,how,what for,what-for,kwa-tojpe-how,,adv,muller2021yawarana,/home/florianm/Downloads/Dictionary_Clippings/180324/YarLex_0850_AnFo_kwatojpe.wav,
+kere-ke-ripe-prep,kërëke,kërë-ke,ripe-PREP,black,black,kërë&keprop,"keprop,kere-ripe","adv,prop",muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0719_AnFo_kereke.wav,
+moroni-pain,moroni,moroni,pain,pain,pain,moroni-pain,moroni-pain,n,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_1023_PaPe_moroni.wav,
+meteta-ri-thin-acnnmlz,mëtëtari,mëtëta-ri,thin-ACNNMLZ,thin,thin,mëtëta&rinmlz,rinmlz,n,muller2021yawarana,NOT RECORDED,
+nop-ano-good-nmlz,nopano,nop-ano,good-NMLZ,good,good,nope&anonmlz,"anonmlz,nope-good",n,muller2021yawarana,/home/florianm/Downloads/Dictionary_Clippings/180328/YarLex_1125_PaPe_nopano-02.wav,
+pakara-basket,pakara,pakara,basket,basket,basket,pakara-basket,pakara-basket,n,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_1231_AnFo_pakara.wav,
+pakura-coix-lacryma-jobi,pakura,pakura,Coix.lacryma.jobi,Coix lacryma-jobi,coix-lacryma-jobi,pakura-coix-lacryma-jobi,pakura-coix-lacryma-jobi,n,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_1236_PaPe_pakura.wav,
+rokota-ri-become-crazy-acnnmlz,rokotari,rokota-ri,become.crazy-ACNNMLZ,become crazy,become-crazy,rokota&rinmlz,rinmlz,n,muller2021yawarana,/home/florianm/Downloads/Dictionary_Clippings/180402/YarLex_1566_PaPe_rokotari-02.wav,
+romoye-downriver,romoye,romoye,downriver,downriver,downriver,romoye-downriver,romoye-downriver,adv,muller2021yawarana,/home/florianm/Downloads/Dictionary_Clippings/180402/YarLex_1568_AnFo_romoye-02.wav,
+takono-pe-other-ess,takonope,takono-pe,other-ESS,again,again,takono&peess,"peess,takono-other","adv,ess",muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_1834_AnFo_takonope.wav,
+tapire-red,tapire,tapire,red,red,red,tapi-re-red,,adv,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_1864_AnFo_tapiire.wav,
+teijpo-jra-far-neg,teijpojra,teijpo-jra,far-NEG,close,close,teijpo-far,"jraneg,teijpo-far","adv,neg",muller2021yawarana,/home/florianm/Downloads/Dictionary_Clippings/180406/YarLex_1946_PaPe_teijpojra-02.wav,
+teijpo-no-far-nmlz,teijpono,teijpo-no,far-NMLZ,long; far,long-far,teijpo&anonmlz,"anonmlz,teijpo-far",n,muller2021yawarana,/home/florianm/Downloads/Dictionary_Clippings/180406/YarLex_1948_PaPe_teijpono.wav,
+tejpore-tasty,tejpore,tejpore,tasty,tasty,tasty,tejpo-re-tasty,,adv,muller2021yawarana,/home/florianm/Downloads/Dictionary_Clippings/180406/YarLex_1957_AnFo_tejpore.wav,
+tejpore-mi-tasty-nmlz,tejporemï,tejpore-mï,tasty-NMLZ,tasty,tasty,tejpore&minmlz,minmlz,n,muller2021yawarana,,
+wenaka-ri-vomit-acnnmlz,wenakari,wenaka-ri,vomit-ACNNMLZ,vomit,vomit,wenaka&rinmlz,rinmlz,n,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_2376_AnFo_wenakari.wav,
+weseyu-pe-become-mad-ess,weseyupe,weseyu-pe,become.mad-ESS,brave,brave,weseyu&peess,"peess,weseyu","adv,ess",muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_2406_AnFo_wesepoya.wav,
+yokota-ri-grow-pimple-acnnmlz,yokotari,yokota-ri,grow.pimple-ACNNMLZ,grow pimple,grow-pimple,yokota&rinmlz,rinmlz,n,muller2021yawarana,/home/florianm/Downloads/Dictionary_Clippings/180414/YarLex_2802_AnFo_yokotari-02.wav,
+ekere-jaguar,ëkërë,ëkërë,jaguar,jaguar,jaguar,ekere-jaguar,ekere-jaguar,n,muller2021yawarana,/home/florianm/Downloads/Dictionary_Clippings/180320/YarLex_0335_PaPe_ekere-02.wav,
+achikipe-dirty,achikipe,,,dirty,dirty,,,,muller2021yawarana,/home/florianm/Downloads/Dictionary_Clippings/180316/YarLex_0005_PaPe_achikipe-02.wav,adv
+ajpachikejra-clean,ajpachikejra,,,clean,clean,,,,muller2021yawarana,,adv
+anepe-cold,anepe,,,cold,cold,,,,muller2021yawarana,/home/florianm/Downloads/Dictionary_Clippings/180316/YarLex_0043_AnFo_anepe.wav,adv
+apijmano-thin-thing,apijmano,,,thin thing,thin-thing,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0065_PaPe_apijmano.wav,n
+aponore-narrowly,aponore,,,narrowly,narrowly,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0069_AnFo_aponore-02.wav,adv
+arawata-mycetes-ursinus,arawata,,,Mycetes ursinus,mycetes-ursinus,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0081_AnFo_arawata.wav,n
+arawejkari-flash,arawejkari,,,flash,flash,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0083_PaPe_arawejkari.wav,vi
+arekana-bird-catcher,arekana,,,bird catcher,bird-catcher,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0085_AnFo_arekana.wav,n
+arekowa-lighting-wick,arekowa,,,lighting wick,lighting-wick,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0086_AnFo_arekowa.wav,n
+arokatono-difficult-thing,arokatono,,,difficult thing,difficult-thing,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0093_PaPe_arokatono.wav,n
+aruru-porcupine,aruru,,,porcupine,porcupine,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0097_AnFo_aruru.wav,n
+asakepene-twice,asakëpene,,,twice,twice,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0102_PaPe_asakepene.wav,adv
+asarane-same,asarane,,,same,same,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0116_AnFo_asarane.wav,adv
+asatakukari-spit,asatakukari,,,spit,spit,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0119_AnFo_asatakukari.wav,
+asorompe-clean,asorompe,,,clean,clean,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0130_AnFo_asorompe.wav,adv
+atajmari-become-pregnant,atajmari,,,become pregnant,become-pregnant,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0136_PaPe_atajmari.wav,vi
+atiri-plot-of-cultivated-land,atiri,,,plot of cultivated land,plot-of-cultivated-land,,,,muller2021yawarana,,n
+atirijpe-old-field,atirijpë,,,old field,old-field,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0155_PaPe_atirijpe.wav,n
+atono-cold,atono,,,cold,cold,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0157_AnFo_atono.wav,n
+awampuritari-grow-up,awampuritari,,,grow up,grow-up,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0161_AnFo_awampuritari.wav,vi
+aware-opossum,aware,,,opossum,opossum,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0168_PaPe_aware.wav,n
+chijchipuru-move-body,chijchipuru,,,move (body),move-body,,,,muller2021yawarana,,vi
+chijchipuru-body-movement,chijchipuru,,,body movement,body-movement,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0188_AnFo_chijchipuru.wav,n
+chijchiputari-move-body,chijchiputari,,,move (body),move-body,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0189_AnFo_chijchiputari.wav,vi
+chikimu-knee,chikimu,,,knee,knee,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0199_PaPe_chikimu.wav,n
+chikipari-step-on,chikipari,,,step on,step-on,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0201_PaPe_chikipari.wav,vt
+chikirijtari-ripple,chikirijtari,,,ripple,ripple,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0204_PaPe_chikirijtari.wav,vi
+chipotari-grow-hair,chipotari,,,grow hair,grow-hair,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0226_AnFo_chipotari.wav,vi
+chipoti-hair-fur-skin,chipoti,,,hair; fur; skin,hair-fur-skin,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0227_PaPe_chipoti.wav,n
+chipotikemi-hairy,chipotikemï,,,hairy,hairy,,,,muller2021yawarana,,n
+chipire-yellow,chipire,,,yellow,yellow,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0217_AnFo_chipiire.wav,adv
+chiramujye-mangy,chiramujye,,,mangy,mangy,,,,muller2021yawarana,,adv
+chirijke-small-bitter-manioc-leaf,chirijke,,,small (bitter manioc leaf),small-bitter-manioc-leaf,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0236_AnFo_chirijke.wav,adv
+chirimujmari-make-dirty,chirimujmari,,,make dirty,make-dirty,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0245_AnFo_chirimujmari.wav,vt
+chirimujtari-become-dirty,chirimujtari,,,become dirty,become-dirty,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0243_PaPe_chirimujtari.wav,vi
+chirimujye-moldy,chirimujye,,,moldy,moldy,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0244_AnFo_chirimujye.wav,adv
+chirontari-become-dirty,chirontari,,,become dirty,become-dirty,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0251_PaPe_chirontari.wav,vi
+chitenore-whole,chitënore,,,whole,whole,,,,muller2021yawarana,,adv
+chiwa-rope,chiwa,,,rope,rope,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0252_AnFo_chiwa.wav,n
+chiwiyuru-canna-indica,chiwiyuru,,,Canna indica,canna-indica,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0259_AnFo_chiwiyuru.wav,n
+chuwiyuri-canna-indica,chuwiyuri,,,Canna indica,canna-indica,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0259_AnFo_chiwiyuru.wav,n
+enijpetompene-once,enijpëtompene,,,once,once,,,,muller2021yawarana,/home/florianm/Downloads/Dictionary_Clippings/180320/YarLex_0364_PaPe_enijpetompene.wav,adv
+ijnetari-cool-down-food,ijnëtari,,,cool down (food),cool-down-food,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0443_AnFo_ijnetari.wav,vi
+ijtari-foot,ijtari,,,foot,foot,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0449_AnFo_ijtari.wav,n
+ijyapantari-grieve,ijyapantari,,,grieve,grieve,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0460_AnFo_ijyapantari.wav,vi
+imori-break,imori,,,break,break,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0467_AnFo_imori.wav,vt
+inaijtepe-after,inaijtëpe,,,after,after,,,,muller2021yawarana,/home/florianm/Downloads/Dictionary_Clippings/180416/YarLex_2896_PaPe_inaijtere-02.wav,adv
+inamu-cassava-starch,inamu,,,cassava starch,cassava-starch,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0478_AnFo_inamu.wav,n
+inamo-cassava-starch,inamo,,,cassava starch,cassava-starch,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0478_AnFo_inamu.wav,n
+intompijkano-small-thing-person,intompijkano,,,small thing/person,small-thing-person,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0488_PaPe_intompijkano.wav,n
+itajkari-listen,itajkari,,,listen,listen,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0502_AnFo_itajkari.wav,vt
+iwari-rear,iwari,,,rear,rear,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0507_PaPe_iwari.wav,n
+iyakari-begin,iyakari,,,begin,begin,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_2901_PaPe_iyakari.wav,vi
+iyakari-begin,iyakari,,,begin,begin,,,,muller2021yawarana,,vt
+kachunajteri-put-on-pants,kachunajtëri,,,put on pants,put-on-pants,,,,muller2021yawarana,/home/florianm/Downloads/Dictionary_Clippings/180322/YarLex_0533_PaPe_kachunajteri-02.wav,vt
+kasunajteri-put-on-pants,kasunajtëri,,,put on pants,put-on-pants,,,,muller2021yawarana,/home/florianm/Downloads/Dictionary_Clippings/180322/YarLex_0533_PaPe_kachunajteri-02.wav,vt
+kaimari-lick,kaimari,,,lick,lick,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_2904_PaPe_kaimari.wav,vt
+kaimokejra-unsuccessfully-hunted,kaimokejra,,,unsuccessfully hunted,unsuccessfully-hunted,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_2905_AnFo_kaimokejra.wav,adv
+kaimosejra-not-hunting,kaimosejra,,,not hunting,not-hunting,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_2907_PaPe_kaimosejra.wav,adv
+kamichakejra-naked,kamichakejra,,,naked,naked,,,,muller2021yawarana,/home/florianm/Downloads/Dictionary_Clippings/180322/YarLex_0575_AnFo_kamichakejra-02.wav,adv
+kamisakejra-naked,kamisakejra,,,naked,naked,,,,muller2021yawarana,/home/florianm/Downloads/Dictionary_Clippings/180322/YarLex_0575_AnFo_kamichakejra-02.wav,adv
+karasumpe-with-discomfort,karasumpe,,,with discomfort,with-discomfort,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_2912_PaPe_karasumpe.wav,adv
+katupumari-accumulate,katupumari,,,accumulate,accumulate,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_2917_PaPe_katupumari.wav,vt
+katepumari-accumulate,katëpumari,,,accumulate,accumulate,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_2917_PaPe_katupumari.wav,vt
+kojpae-at-night,kojpae,,,at night,at-night,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0767_AnFo_kojpaye.wav,adv
+kojpayere-early-in-the-morning,kojpayere,,,early in the morning,early-in-the-morning,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0768_PaPe_kojpayere.wav,adv
+korore-always,korore,,,always,always,,,,muller2021yawarana,/home/florianm/Downloads/Dictionary_Clippings/180324/YarLex_0799_AnFo_korore.wav,adv
+kwatope-what-for,kwatope,,,what for,what-for,,,,muller2021yawarana,/home/florianm/Downloads/Dictionary_Clippings/180324/YarLex_0850_AnFo_kwatojpe.wav,
+kemure-purulent,këmure,,,purulent,purulent,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0703_PaPe_kemure.wav,adv
+kerekemi-black,kërëkemï,,,black,black,,,,muller2021yawarana,,n
+keyape-cautious,këyape,,,cautious,cautious,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0736_AnFo_keyape.wav,adv
+keyare-alive,këyare,,,alive,alive,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0690_PaPe_keyare.wav,adv
+mari-throw,mari,,,throw,throw,,,,muller2021yawarana,/home/florianm/Downloads/Dictionary_Clippings/180326/YarLex_0905_PaPe_mari-02.wav,vt
+mesujre-bloody,mesujre,,,bloody,bloody,,,,muller2021yawarana,/home/florianm/Downloads/Dictionary_Clippings/180326/YarLex_0964_PaPe_mesujre-02.wav,adv
+mesure-bloody,mesure,,,bloody,bloody,,,,muller2021yawarana,/home/florianm/Downloads/Dictionary_Clippings/180326/YarLex_0964_PaPe_mesujre-02.wav,adv
+moronkari-make-suffer,moronkari,,,make suffer,make-suffer,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_1024_PaPe_moronkari.wav,vt
+motari-shoulder,motari,,,shoulder,shoulder,,,,muller2021yawarana,NOT RECORDED,n
+metejye-thin,mëtëjye,,,thin,thin,,,,muller2021yawarana,NOT RECORDED,adv
+nakire-thirsty,nakire,,,thirsty,thirsty,,,,muller2021yawarana,,adv
+nonokemi-landowner,nonokemï,,,landowner,landowner,,,,muller2021yawarana,/home/florianm/Downloads/Dictionary_Clippings/180328/YarLex_1121_AnFo_nonokemi.wav,n
+onoti-your-cousin,onoti,,,your cousin,your-cousin,,,,muller2021yawarana,,n
+panaimari-give-advice,panaimari,,,give advice,give-advice,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_1244_AnFo_panaimari.wav,vt
+panakejra-disobedient-deaf,panakejra,,,disobedient; deaf,disobedient-deaf,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_1249_PaPe_panakejra.wav,adv
+pejmani-shaman,pejmani,,,shaman,shaman,,,,muller2021yawarana,/home/florianm/Downloads/Dictionary_Clippings/180330/YarLex_1302_AnFo_pejmari-02.wav,n
+pekuye-full,pekuye,,,full,full,,,,muller2021yawarana,/home/florianm/Downloads/Dictionary_Clippings/180330/YarLex_1317_PaPe_pekuye.wav,adv
+pijye-fat,pijye,,,fat,fat,,,,muller2021yawarana,/home/florianm/Downloads/Dictionary_Clippings/180330/YarLex_1400_PaPe_pijye.wav,adv
+potijye-smelly,potijye,,,smelly,smelly,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_1505_PaPe_potijye.wav,adv
+punemi-pulp,punemï,,,pulp,pulp,,,,muller2021yawarana,NOT RECORDED,n
+pejre-bent,pëjre,,,bent,bent,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_2967_PaPe_pejre.wav,adv
+pejye-bent,pëjye,,,bent,bent,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_2971_AnFo_pejye.wav,adv
+penakari-return,pënakari,,,return,return,,,,muller2021yawarana,NOT RECORDED,vt
+pereteri-break,përëtëri,,,break,break,,,,muller2021yawarana,/home/florianm/Downloads/Dictionary_Clippings/180330/YarLex_1346_PaPe_pereteri.wav,vt
+pereteteri-break,përëtëtëri,,,break,break,,,,muller2021yawarana,/home/florianm/Downloads/Dictionary_Clippings/180330/YarLex_1346_PaPe_pereteri.wav,vt
+rajye-sour,rajye,,,sour,sour,,,,muller2021yawarana,/home/florianm/Downloads/Dictionary_Clippings/180402/YarLex_1541_AnFo_rajye-02.wav,adv
+lajye-sour,lajye,,,sour,sour,,,,muller2021yawarana,/home/florianm/Downloads/Dictionary_Clippings/180402/YarLex_1541_AnFo_rajye-02.wav,adv
+sakaijpe-slippery,sakaijpe,,,slippery,slippery,,,,muller2021yawarana,/home/florianm/Downloads/Dictionary_Clippings/180402/YarLex_1589_AnFo_sakaijtari-02.wav,adv
+sarupe-well-toasted,sarupe,,,well toasted,well-toasted,,,,muller2021yawarana,,adv
+senemari-menstruate,senemari,,,menstruate,menstruate,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_1672_AnFo_senemari.wav,
+setari-hear-intr,setari,,,hear (INTR),hear-intr,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_1703_PaPe_setari.wav,
+susujtari-become-soft,susujtari,,,become soft,become-soft,,,,muller2021yawarana,/home/florianm/Downloads/Dictionary_Clippings/180404/YarLex_1785_PaPe_susujtari-02.wav,vi
+tajchiwere-tangled-up,tajchiwëre,,,tangled up,tangled-up,,,,muller2021yawarana,/home/florianm/Downloads/Dictionary_Clippings/180418/YarLex_3037_PaPe_tajchiwere.wav,adv
+tajwere-sweet,tajwere,,,sweet,sweet,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_1820_PaPe_tajwere.wav,adv
+tajweremi-sweet,tajweremï,,,sweet,sweet,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_1821_PaPe_tajweremi.wav,n
+takiye-full,takiye,,,full,full,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_1829_PaPe_takiye.wav,adv
+tapasajre-muddy,tapasajre,,,muddy,muddy,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_1857_AnFo_tapasajre.wav,adv
+tasujre-wet,tasujre,,,wet,wet,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_1896_AnFo_tasujre .wav,adv
+tatune-hot,tatune,,,hot,hot,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_1906_PaPe_tatune.wav,adv
+tatunemi-hot,tatunemï,,,hot,hot,,,,muller2021yawarana,,n
+tawanke-knowledgeable,tawanke,,,knowledgeable,knowledgeable,,,,muller2021yawarana,,adv
+tayojtesemi-good-fisher,tayojtësemï,,,good fisher,good-fisher,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_1928_AnFo_ta_yojtesemi.wav,n
+tayurake-blue-green,tayurake,,,blue; green,blue-green,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_1930_PaPe_tayurake.wav,adv
+tejweti-hammock,tejweti,,,hammock,hammock,,,,muller2021yawarana,NOT RECORDED,n
+tejwetune-sick,tejwetune,,,sick,sick,,,,muller2021yawarana,,adv
+tejetune-sick,tejetune,,,sick,sick,,,,muller2021yawarana,,adv
+tepese-expensive,tepese,,,expensive,expensive,,,,muller2021yawarana,/home/florianm/Downloads/Dictionary_Clippings/180406/YarLex_2004_PaPe_tepese.wav,adv
+terepune-sick,terepune,,,sick,sick,,,,muller2021yawarana,/home/florianm/Downloads/Dictionary_Clippings/180406/YarLex_2019_AnFo_terepune-02.wav,adv
+terepunu-sick,terepunu,,,sick,sick,,,,muller2021yawarana,/home/florianm/Downloads/Dictionary_Clippings/180406/YarLex_2020_AnFo_terepunu.wav,n
+tesekemi-named,tesekemï,,,named,named,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_2030_PaPe_teseke.wav,adv
+tokoke-deep,tokoke,,,deep,deep,,,,muller2021yawarana,,adv
+toromake-one-who-prays,toromake,,,one who prays,one-who-prays,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_2110_AnFo_toromake.wav,adv
+turupore-voluntarily,turupore,,,voluntarily,voluntarily,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_2155_AnFo_turupore.wav,adv
+tenkeyare-competent,tënkëyare,,,competent,competent,,,,muller2021yawarana,/home/florianm/Downloads/Dictionary_Clippings/180406/YarLex_1983_PaPe_tenkeyare.wav,adv
+tensamire-jealous,tënsamire,,,jealous,jealous,,,,muller2021yawarana,,adv
+tenuyaye-sensible,tënuyaye,,,sensible,sensible,,,,muller2021yawarana,,adv
+tepujre-clingy,tëpujre,,,clingy,clingy,,,,muller2021yawarana,/home/florianm/Downloads/Dictionary_Clippings/180406/YarLex_2014_PaPe_tepujre.wav,adv
+tepire-flowery,tëpîre,,,flowery,flowery,,,,muller2021yawarana,,adv
+tipire-flowery,tïpîre,,,flowery,flowery,,,,muller2021yawarana,,adv
+waimure-speaking,waimure,,,speaking,speaking,,,,muller2021yawarana,/home/florianm/Downloads/Dictionary_Clippings/180418/YarLex_3097_PaPe_waimure.wav,adv
+wajyare-happy,wajyare,,,happy,happy,,,,muller2021yawarana,NOT RECORDED,adv
+wanemojye-round,wanëmojye,,,round,round,,,,muller2021yawarana,NOT RECORDED,adv
+wanamojye-round,wanamojye,,,round,round,,,,muller2021yawarana,NOT RECORDED,adv
+wentari-fill-up-on-food,wentari,,,fill up on food,fill-up-on-food,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_2383_AnFo_wentari.wav,vi
+weseyupe-brave,wëseyupe,,,brave,brave,,,,muller2021yawarana,,adv
+yajrape-unripe,yajrape,,,unripe,unripe,,,,muller2021yawarana,/home/florianm/Downloads/Dictionary_Clippings/180412/YarLex_2470_AnFo_yajrape.wav,adv
+yasujmari-moisten,yasujmari,,,moisten,moisten,,,,muller2021yawarana,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_2585_PaPe_yasujmari.wav,vt
+yurape-new,yurape,,,new,new,,,,muller2021yawarana,NOT RECORDED,adv
+yemire-hungry,yëmïre,,,hungry,hungry,,,,muller2021yawarana,,adv
+yesajye-sour,yësajye,,,sour,sour,,,,muller2021yawarana,/home/florianm/Downloads/Dictionary_Clippings/180414/YarLex_2744_PaPe_yesajye-02.wav,adv

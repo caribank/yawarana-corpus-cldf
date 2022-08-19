@@ -1,10 +1,10 @@
 <a id='auxiliarized-constructions'></a>
 claim: everything can take an auxiliary, except [Morpheme keimp](MorphsetTable?#cldf:keimp)
 
-
-
-
-
+<span title='look at frequency and distributional possibilities for various forms with auxiliaries'>❗️</span>
+<span title='are there limits on what form of AUX can occur?'>❓</span>
+<span title='conventionalized meanings of combinations?'>❓</span>
+<span title='where is person marking? also alignment'>❓</span>
 
 ## Defining auxiliaries
 

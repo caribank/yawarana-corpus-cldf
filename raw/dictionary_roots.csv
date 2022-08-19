@@ -1,88 +1,240 @@
-ID,Form,Language_ID,Gloss_es,Translation,Variants,Comment,POS,Paradigm,Gramm,Etymology,Gloss_en
-achi-wilderness,achi; asi,yar,Salvaje,wilderness,,,n,,,,wilderness
-ajpachi-undergrowth,ajpachi,yar,"maleza, monte, lugar donde crecen plantas de pequeño y mediano tamaño",undergrowth,,,n,,,,undergrowth
-ana-1-3pro,ana,yar,"Nosotros (exclusivo), nos, nuestro, a",1+3PRO,,,pn,,,,1+3PRO
-aroma-limpet,aroma,yar,lapa,limpet,,,n,,,,limpet
-chika-bite,chika,yar,Morder,bite,,,vt,,,,bite
-chiyakono-friend,chiyakono; chiyakon; chiyakom,yar,"Amigo, compañero",friend,chiyakon; chiyakom,,n,,,,friend
-ejne-1-2pro,ejnë,yar,"Nosotros, nos (inclusivo). Nuestro, a (inclusivo)",1+2PRO,,,pn,,,,1+2PRO
-eni-prox-inan,eni; seni,yar,"Este, esta; ese, esa (inanimado)",PROX.INAN,seni,Are these actually allomorphs?,det,,,,PROX.INAN
-enijne-prox-inan-pl,enijne,yar,"estos, estas",PROX.INAN.PL,,Also *enisantomo*?,det,,,,PROX.INAN.PL
-ente-here-loc,entë,yar,"Aquí, acá (sin movimiento)",here.LOC,,,adv,,,,here.LOC
-ini-see,ini; yini; in,yar,Ver,see,in,,vt,,,,see
-intipijke-small,intipijkë,yar,"Poco, poquito",small,,? + [](MorphsetTable#cldf:pijkedim),adv,,,,small
-irejpe-then,irëjpë,yar,"luego, después",then,,,adv,,,,then
-ita-hear,ita,yar,Oir; escuchar,hear,,,vt,,,,hear
-ka-q,ka,yar,Partícula interrogativa,Q,,,part,,,,Q
-kawe-high,kawë,yar,"Alto, arriba",high,,,adv,,,,high
-konopo-rain,konopo,yar,Lluvia; temporada de lluvia; aguacero,rain,,,n,,,,rain
-kejma-hunt,këjma,yar,ladrar persiguiendo animal,hunt,,,vt,,,,hunt
-kere-prox-anim,kërë,yar,"Este, esta (animado)",PROX.ANIM,,,det,,,,PROX.ANIM
-keresantomo-prox-anim-pl,kërësantomo,yar,"estos, estas (animado)",PROX.ANIM.PL,,,det,,,,PROX.ANIM.PL
-kimiy-chili,kïmïy; kïmïi,yar,Aji,chili,kïmïi,,n,,,,chili
-michisantomo-med-inan-pl,michisantomo,yar,"estos, estas (animado)",MED.INAN.PL,,,det,,,,MED.INAN.PL
-michitomo-med-inan-pl,michitomo,yar,"estos, estas (animado)",MED.INAN.PL,,,det,,,,MED.INAN.PL
-michi-med-anim,michi,yar,"Este, esta, éste , ésta (animado)",MED.ANIM,,,det,,,,MED.ANIM
-misi-med-inan,misi,yar,"Este, esta, éste, ésta (objeto inanimado)",MED.INAN,,,det,,,,MED.INAN
-monkontomo-2pl-pro,monkontomo; mokontomo,yar,"Vosotros, vosotras, ustedes",2PL.PRO,mokontomo,,pn,,,,2PL.PRO
-morone-hurting,morone,yar,Doloroso,hurting,,,adv,,,,hurting
-muku-child,muku,yar,"niño, niña; Hija de un hombre o de una mujer; espíritu del muerto",child,,,n,,,,child
-mejnijne-dist-inan-pl,mëjnijne,yar,"aquellos, aquellas (inanimado)",DIST.INAN.PL,,,det,,,,DIST.INAN.PL
-mejni-dist-inan,mëjnï,yar,"Aquel, aquella, áquel (inanimado)",DIST.INAN,,,det,,,,DIST.INAN
-mekisantomo-dist-anim-pl,mëkïsantomo; mejkïsantomo,yar,"aquellos, aquellas",DIST.ANIM.PL,,,det,,,,DIST.ANIM.PL
-mere-2pro,mërë,yar,"Tú, tu, te, ti",2PRO,,,pn,,,,2PRO
-mere-med-inan,mërë,yar,"Ese, esa, eso (inanimado cerca del otro)",MED.INAN,,,det,,,,MED.INAN
-mijna-there-all,mïjna,yar,Por allá (con movimiento),there.ALL,,,adv,,,,there.ALL
-minte-there-loc,mïntë; mintë,yar,Allá (locativo),there.LOC,,,adv,,,,there.LOC
-najmo-grandmother,najmo; najmu,yar,abuela (materna o paterna),grandmother,,,n,,,,grandmother
-najpi-grandfather,najpï,yar,Abuelo paterno o materno,grandfather,,,n,,,,grandfather
-nepi-bring,nepï,yar,Traer; ir a buscar,bring,,,vt,,,,bring
-nope-good,nope,yar,"Bueno, bonito, bien",good,,,adv,,,,good
-noti-potential-partner,noti,yar,"esposa potencial de un hombre, prima cruzada, amante de un hombre",potential partner; cross cousin,,,n,,,,potential.partner
-oki-chicha,okï,yar,Bebida fermentada llamado yarake fuerte; clasificador en el sistema de posesión para referir a jugos de frutas,chicha,,,n,,,,chicha
-onono-another,onono,yar,"diferente; disitnto;otra cosa, otra persona, otro lugar, algo o alguien diferente",another,,,n,,,,another
-pachi-older-sister-of-woman,pachi,yar,"Hermana mayor de una mujer, prima paralela.",older sister of woman,,,n,,,,older.sister.of.woman
-pakuri-arrow-tip,pakuri,yar,"Punta de metal, flecha con punta de metal",arrow tip,,,n,,,,arrow.tip
-papa-father,papa,yar,padre,father,,,n,,,,father
-pata-axe,pata,yar,hacha,axe,,,n,,,,axe
-pata-village,pata,yar,"asentamiento, lugar habitado, Fundo, campamento; pueblo",village,,,n,,,,village
-pipi-younger-brother-of-woman,pipi,yar,"Hermano menor de una mujer,",younger brother of woman,,,n,,,,younger.brother.of.woman
-sakara-hoplias-malabaricus,sakara,yar,Guabina,hoplias malabaricus,,,n,,,,hoplias.malabaricus
-sukase-all,sukase; sokase,yar,"Todo, todos",all,,,adv,,,,all
-sukutaka-yucuta,sukutaka,yar,Yucuta,yucuta,,,n,,,,yucuta
-tapa-beat,tapa,yar,bofetear; pegar (persona o animal); sobar (niño),beat,,,vt,,,,beat
-taro-say,taro; taj; ta,yar,"Decir, preguntar",say,taj; ta,,vt,,,,say
-tejpore-tasty,tejpore,yar,"Sabroso, gustoso",tasty,,,adv,,,,tasty
-tejwetunu-sick,tejwetunu; tejetum,yar,enfermito,sick,tejetum,,n,,,,sick
-tunami-hide,tunamï; tunam,yar,esconder,hide,tunam,,vt,,,,hide
-tu-give,tu,yar,Dar,give,,,vt,,,,give
-teijpo-far,tëijpo; tëijpë,yar,largo. lejos,far; long,tëijpë,,adv,,,,far
-tewi-3pro,tëwï,yar,el o ella,3PRO,,,pn,,,,3PRO
-tewisantomo-3pro-pl,tëwïsantomo,yar,ellos o ellas,3PRO.PL,,,pn,,,,3PRO.PL
-waijta-mouse,waijta,yar,"raton, rata",mouse,,,n,,,,mouse
-wajyaki-happy,wajyakï,yar,alegre,happy,,,n,,,,happy
-wajyaki-be-happy,wajyakï,yar,estar alegre,be happy,,,vi,,,,be.happy
-wajyakiti-very-happy,wajyakïtï,yar,muy alegre,very happy,,,n,,,,very.happy
-wanene-aunt,wanene,yar,Suegra real o potencial; Tía paterna para una mujer; tia materna para un hombre,aunt,,,n,,,,aunt
-waraijtokomo-man,waraijtokomo,yar,"Hombre, varón, macho",man,,,n,,,,man
-ware-thus,warë; enwarë; nwarë; nwa,yar,asi,thus,nwarë; nwa,,adv,,,,thus
-wenaka-vomit,wenaka,yar,Vomitar,vomit,,,vt,,,,vomit
-weroro-dog,weroro,yar,Perro (término genérico),dog,,,n,,,,dog
-wiriyamo-woman,wiriyamo; wirijyamo; uriyamo; wurijyam,yar,mujer,woman,wurijyam,,n,,,,woman
-wire-1pro,wïrë; urë,yar,"primera pers. singular yo; me; mi, mio",1PRO,,,pn,,,,1PRO
-yakarama-tell,yakarama,yar,"Contar, mostrar, indicar, informar, avisar",tell,,,vt,,,,tell
-yakono-younger-sister-of-woman,yakono,yar,Hermana menor o prima paralela de una mujer,younger sister of woman,,,n,,,,younger.sister.of.woman
-yakuri-agouti,yakuri,yar,picure,agouti,,,n,,,,agouti
-yarika-laugh,yarika,yar,reirse de alguien; burlarse,laugh,,,vi,,,,laugh
-yaruwa-laugh,yaruwa,yar,reir(se),laugh,,,vi,,,,laugh
-yeme-eat-fruits-eggs-soup,yeme,yar,"Comer (frutas, huevos, sopa)","eat (fruits, eggs, soup)",,,vt,,,,"eat.(fruits,.eggs,.soup)"
-yojte-fish-with-hook,yojtë,yar,"Pescar con anzuelo , buscar comida de carne",fish with hook,,,vt,,,,fish.with.hook
-yoki-eat-starch,yokï,yar,"Comer (alimentos blandos, casabe, fécula, tubérculos) , beber??; copular, tener relación sexual (hombre)",eat (starch),,,vt,,,,eat.(starch)
-yutu-forest,yutu,yar,Selva ; bosque ; conjunto de plantas de la misma especie,forest,,,n,,,,forest
-ye-tooth,yë,yar,diente,tooth,,,n,,,,tooth
-yeni-drink,yëni; yeni,yar,Beber; tomar,drink,yeni,,vt,,,,drink
-ejte-house,ëjtë,yar,"Casa, Churuata",house,,,n,,,,house
-empare-already,ëmpare; umparë,yar,"ya, está bien, está lisro",already,,,adv,,,,already
-etipa-go-in-group,ëtïpa; tïpa; tipa,yar,irse en grupo,go in group,tipari,,vi,,,,go.in.group
-eni-drink,ëni; ën,,Beber; tomar,drink,,,vt,,,,drink
-ese-name,ese,,nombre,name,,,n,,,,name
+ID,Form,Gloss_es,Recording_Nr,Audio,Translation,Comment,PERT,NPERT,2_Prefix,POS,Paradigm,Gramm,Gloss
+achi-wilderness,achi; asi,Salvaje,3,/home/florianm/Downloads/Dictionary_Clippings/180316/YarLex_0003_PaPe_achi-02.wav,wilderness,,,,,n,,,wilderness
+aijkorono-recovered,aijkorono,persona mejor de salud,9,NOT RECORDED,recovered,,,,,n,,,recovered
+ajpachi-undergrowth,ajpachi; apachi,"maleza, monte, lugar donde crecen plantas de pequeño y mediano tamaño",51,NOT RECORDED,undergrowth,,,,,n,,,undergrowth
+aki-worm,akï,"gusano, miasis",21,/home/florianm/Downloads/Dictionary_Clippings/180316/YarLex_0021_PaPe_aki-02.wav,worm; maggot,,,,,n,,,worm
+ami-unidentified-plant,amï; amë,Planta no identificada,33,/home/florianm/Downloads/Dictionary_Clippings/180316/YarLex_0033_AnFo_ami-02.wav,unidentified plant,,,,,n,,,unidentified.plant
+ana-1-3pro,ana,"Nosotros (exclusivo), nos, nuestro, a",,,1+3PRO,,,,,pn,,,1+3PRO
+anoto-annatto,anoto,Onoto,46,/home/florianm/Downloads/Dictionary_Clippings/180316/YarLex_0046_PaPe_anoto.wav,annatto,,,,,n,,,annatto
+anta-island,anta,Isla,47,/home/florianm/Downloads/Dictionary_Clippings/180316/YarLex_0047_PaPe_anta.wav,island,,,,,n,,,island
+ante-fish-hook,antë,Anzuelo,48,/home/florianm/Downloads/Dictionary_Clippings/180316/YarLex_0048_AnFo_ante.wav,fish hook,,,,,n,,,fish.hook
+apataka-come-out,apataka,Salir;  nacer,57,/home/florianm/Downloads/Dictionary_Clippings/180316/YarLex_0057_AnFo_apatakari-02.wav,come out,,,,,vi,,,come.out
+apo-later,apo,Espera! Un momento,68,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0068_AnFo_apo.wav,later; meanwhile,,,,,adv,,,later
+apuni-soap,apuni,jabón,71,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0071_AnFo_apuni.wav,soap,,,,,n,,,soap
+arajmate-dangerous,arajmatë,Peligroso,74,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0074_AnFo_arajmate-02.wav,dangerous,,,,,adv,,,dangerous
+arina-trembler,arina,Temblador,89,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0089_PaPe_arina.wav,trembler,,,,,n,,,trembler
+aro-rice,aro,arroz,90,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0090_AnFo_aro.wav,rice,,,,,n,,,rice
+aroma-limpet,aroma,lapa,94,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0094_PaPe_aroma.wav,limpet,,,,,n,,,limpet
+aropoko-ball-game,aropoko,juego de pelota,96,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0096_PaPe_aropoko.wav,ball game,,,,,n,,,ball.game
+asakontompene-four,asakontompene,Cuatro (número cardinal),110,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0110_AnFo_asakontompene.wav,four,,,,,adv,,,four
+asake-two,asakë,Dos,101,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0101_AnFo_asake.wav,two,,,,,adv,,,two
+asere-dry-cough,asere,tos seca; tuberculosis,125,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0125_AnFo_asere.wav,dry cough,,,,,n,,,dry.cough
+asuka-sugar,asuka,Azúcar,131,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0131_AnFo_asuka.wav,sugar,,,,,n,,,sugar
+awochi-tumor,awochi,Tumor grande,174,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0174_AnFo_awochi.wav,tumor,,,,,n,,,tumor
+chika-bite,chika,Morder,195,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0195_PaPe_chikari.wav,bite,,,,,vt,,,bite
+chike-chigger,chikë,Nigua,187,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0187_AnFo_chike.wav,chigger,,,,,n,,,chigger
+chima-path,chima,"Camino, pica, sendera, ruta",206,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0206_PaPe_chima.wav,path,,,,,n,,,path
+chimichimi-worm-dog,chimichimi,Gusano (perro),210,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0210_PaPe_chimichimi.wav,worm (dog),,,,,n,,,worm.(dog)
+chipiyu-fungus-sp,chipiyu,Hongo sp.,221,NOT RECORDED,fungus.sp,,,,,n,,,fungus.sp
+chiramu-mange,chiramu; chirimu,sarna,240,NOT RECORDED,mange,,,,,n,,,mange
+chiri-wild-pineapple,chiri,piña silvestre,247,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0247_AnFo_chiriri.wav,wild pineapple,,,,,n,,,wild.pineapple
+chiri-titi-monkey,chiri,Mono tití,248,NOT RECORDED,titi monkey,,,,,n,,,titi.monkey
+chiyakono-friend,chiyakono; chiyakon; chiyakom,"Amigo, compañero",186,NOT RECORDED,friend,,,,,n,,,friend
+chekey-nit,chëkëy,"liendre, larva de piojo",184,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0184_AnFo_chekey.wav,nit,,,,,n,,,nit
+ejne-1-2pro,ejnë; ej,"Nosotros, nos (inclusivo). Nuestro, a (inclusivo)",291,/home/florianm/Downloads/Dictionary_Clippings/180320/YarLex_0291_AnFo_ejne-02.wav,1+2PRO,,,,,pn,,,1+2PRO
+eni-prox-inan,eni; seni; en,"Este, esta; ese, esa (inanimado)",358,/home/florianm/Downloads/Dictionary_Clippings/180320/YarLex_0358_AnFo_eni-02.wav,PROX.INAN,Are these actually allomorphs?,,,,det,,,PROX.INAN
+enijne-prox-inan-pl,enijne,"estos, estas",,,PROX.INAN.PL,Also *enisantomo*?,,,,det,,,PROX.INAN.PL
+entono-from-here,entono,algo o alguien de aquí; desde aquí,377,/home/florianm/Downloads/Dictionary_Clippings/180320/YarLex_0377_PaPe_entono-02.wav,from here,,,,,n,,,from.here
+ente-here-loc,entë,"Aquí, acá (sin movimiento)",376,/home/florianm/Downloads/Dictionary_Clippings/180320/YarLex_0376_PaPe_ente.wav,here.LOC,,,,,adv,,,here.LOC
+enire-now,enirë; eniro,Hoy,366,/home/florianm/Downloads/Dictionary_Clippings/180320/YarLex_0366_AnFo_enire-02.wav,now; today,,,,,adv,,,now
+epe-escape,epe,"Escapar, huir a escondite",394,/home/florianm/Downloads/Dictionary_Clippings/180320/YarLex_0394_AnFo_eperi-02.wav,escape; hide and seek,,,,,vi,,,escape
+eretapi-cultivated-plant,eretapi,planta cultivada; cultivo,401,/home/florianm/Downloads/Dictionary_Clippings/180320/YarLex_0401_AnFo_ereta.wav,cultivated plant,,,,,n,,,cultivated.plant
+ewine-here-all,ewinë,"Por aquí, acá",434,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0434_PaPe_ewine.wav,here.ALL,,,,,adv,,,here.ALL
+ijpu-summit,ijpu,cumbre,,,summit,,,,,n,,,summit
+inawe-have,inawë,tener,479,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0479_PaPe_inawe.wav,have,,,,,postp,,,have
+ini-see,ini; yini; in,Ver,485,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0485_AnFo_iniri.wav,see,,,,,vt,,,see
+intipijke-small,intipijkë,"Poco, poquito",486,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0486_AnFo_intipijke.wav,small,? + [](MorphsetTable#cldf:pijkedim),,,,adv,,,small
+iriyawe-then,iriyawë,entonces,500,NOT RECORDED,then,,,,,adv,,,then
+irejpe-then,irëjpë,"luego, después",494,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0494_PaPe_irejpe.wav,then,,,,,adv,,,then
+ita-hear,ita,Oir; escuchar,503,NOT RECORDED,hear,,,,,vt,,,hear
+iyajtepe-before,iyajtëpe,"primero, al inicio",510,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0510_PaPe_iyajtepe.wav,before,,,,,adv,,,before
+jwaka-ill-aq,jwaka; jwoka,hacia,525,NOT RECORDED,ILL.AQ; LOC.AQ,,,,,postp,,,ILL.AQ
+ka-q,ka,Partícula interrogativa,530,NOT RECORDED,Q,,,,,part,,,Q
+kaimo-game,kaimo,presa de caceria o de pesca,,,game,,,,,n,,,game
+kamere-lightning,kamere,Relámpago; rayo,569,/home/florianm/Downloads/Dictionary_Clippings/180322/YarLex_0569_PaPe_kamere.wav,lightning,,,,,n,,,lightning
+kamwiyajka-change,kamwiyajka,cambiar,581,NOT RECORDED,change,,,,,vt,,,change
+kapau-dasypus-novemcinctus,kapau,Cachicamo montañero,597,/home/florianm/Downloads/Dictionary_Clippings/180322/YarLex_0597_AnFo_kapau.wav,dasypus novemcinctus,,,,,n,,,dasypus.novemcinctus
+ka-take-out,ka,sacar; quitar,626,/home/florianm/Downloads/Dictionary_Clippings/180322/YarLex_0626_PaPe_kari-02.wav,take out,,,,,vt,,,take.out
+kasajpe-fruit-pit,kasajpë,almendra de cualquier fruta,2914,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_2914_PaPe_kasajpe.wav,fruit pit,,,,,n,,,fruit.pit
+kawono-high,kawono; kawon,Alto,669,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0669_PaPe_kawono.wav,high,,,,,n,,,high
+kawe-high,kawë,"Alto, arriba",666,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0666_AnFo_kawe.wav,high,,,,,adv,,,high
+kaya-gourd,kaya,"Tapara, taparo (árbol)",681,NOT RECORDED,gourd,,,,,n,,,gourd
+kaya-barbasco,kaya,Barbasco de monte,680,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0680_AnFo_kayari .wav,barbasco,,,,,n,,,barbasco
+kejkepe-salamander,kejkepe,"salamandra, tuqueque ; limpiacasas",,,salamander,,,,,n,,,salamander
+kojpa-night,kojpa,noche,765,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0765_AnFo_kojpa .wav,night,,,,,n,,,night
+konopo-rain,konopo; kënëpo,Lluvia; temporada de lluvia; aguacero,778,/home/florianm/Downloads/Dictionary_Clippings/180324/YarLex_0778_PaPe_konopo-02.wav,rain,,,,,n,,,rain
+ko-brassolis-sophorae,ko; korï,Gusano de las palmas sp.,787,/home/florianm/Downloads/Dictionary_Clippings/180324/YarLex_0787_AnFo_kori-02.wav,brassolis sophorae,,,,,n,,,brassolis.sophorae
+korokoro-c,korokoro,Corocoro,796,/home/florianm/Downloads/Dictionary_Clippings/180324/YarLex_0796_PaPe_korokoro-02.wav,C.,,,,,n,,,C.
+kuru-prochilodus-mariae,kuru,Coporo,832,/home/florianm/Downloads/Dictionary_Clippings/180324/YarLex_0832_PaPe_kururu.wav,prochilodus mariae,,,,,n,,,prochilodus.mariae
+kuruwa-coroba-palm,kuruwa,Palma coroba,833,/home/florianm/Downloads/Dictionary_Clippings/180324/YarLex_0833_PaPe_kuruwa.wav,coroba palm,,,,,n,,,coroba.palm
+kuya-tree-sp,kuya,Guayabita sp.,839,/home/florianm/Downloads/Dictionary_Clippings/180324/YarLex_0839_PaPe_kuyari-02.wav,tree.sp,,,,,n,,,tree.sp
+kuyuwi-bird-sp,kuyuwi,Pava rajadora,840,/home/florianm/Downloads/Dictionary_Clippings/180324/YarLex_0840_PaPe_kuyuwi-02.wav,bird.sp,,,,,n,,,bird.sp
+kejma-hunt,këjma,ladrar persiguiendo animal,694,NOT RECORDED,hunt,,,,,vt,,,hunt
+kere-prox-anim,kërë,"Este, esta (animado)",711,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0711_PaPe_kere.wav,PROX.ANIM,,,,,det,,,PROX.ANIM
+keresantomo-prox-anim-pl,kërësantomo,"estos, estas (animado)",,,PROX.ANIM.PL,,,,,det,,,PROX.ANIM.PL
+keta-stink,këta,"Heder; Podrirse, tomar mal olor",687,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0687_PaPe_ketari.wav,stink,,,,,vi,,,stink
+ketejwate-cotton,këtëjwatë,Algodón,731,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0731_AnFo_ketejwate.wav,cotton,,,,,n,,,cotton
+kimiy-chili,kïmïy; kïmïi,Aji,747,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0747_PaPe_kimiy.wav,chili,,,,,n,,,chili
+kiripi-go-out,kïrïpï,apagarse,760,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0760_AnFo_kiripiri.wav,go out,,,,,vi,,,go.out
+majawa-m,majawa,Majagua,857,/home/florianm/Downloads/Dictionary_Clippings/180324/YarLex_0857_PaPe_majawa-02.wav,M.,,,,,n,,,M.
+majpe-m,majpë,Nombre de un caño,860,/home/florianm/Downloads/Dictionary_Clippings/180324/YarLex_0860_AnFo_majpe-02.wav,M.,,,,,n,,,M.
+maka-ceiba-pentandra,maka,"Ceiba, Árbol del kapok.",863,/home/florianm/Downloads/Dictionary_Clippings/180324/YarLex_0863_AnFo_maka-02.wav,ceiba pentandra,,,,,n,,,ceiba.pentandra
+makarike-cayman,makarikë,"Baba , babo",864,/home/florianm/Downloads/Dictionary_Clippings/180324/YarLex_0864_AnFo_makarike.wav,cayman,,,,,n,,,cayman
+makuyupi-catfish-sp,makuyupi,Bagre sp.,873,/home/florianm/Downloads/Dictionary_Clippings/180326/YarLex_0873_AnFo_makuyupi-02.wav,catfish.sp,,,,,n,,,catfish.sp
+mapara-chicken,mapara,"Gallina, gallo",880,/home/florianm/Downloads/Dictionary_Clippings/180326/YarLex_0880_PaPe_mapararu.wav,chicken,,,,,n,,,chicken
+mayawaka-m,mayawaka; mayowaka,Nombre del demiurgo creador del pueblo y la cultura yawarana,926,/home/florianm/Downloads/Dictionary_Clippings/180326/YarLex_0926_AnFo_mayawaka-02.wav,M.,,,,,n,,,M.
+mayi-lets-go,mayi; mae; mai,Vaya!,,,let’s go,,,,,intj,,,let’s.go
+michisantomo-med-inan-pl,michisantomo,"estos, estas (animado)",,,MED.INAN.PL,,,,,det,,,MED.INAN.PL
+michitomo-med-inan-pl,michitomo,"estos, estas (animado)",,,MED.INAN.PL,,,,,det,,,MED.INAN.PL
+michi-med-anim,michi,"Este, esta, éste , ésta (animado)",978,/home/florianm/Downloads/Dictionary_Clippings/180326/YarLex_0978_AnFo_michi-02.wav,MED.ANIM,,,,,det,,,MED.ANIM
+misi-med-inan,misi,"Este, esta, éste, ésta (objeto inanimado)",995,NOT RECORDED,MED.INAN,,,,,det,,,MED.INAN
+mone-vagina,mone,sexo de mujer; vagina,1010,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_1010_PaPe_mone.wav,vagina,,,,,n,,,vagina
+moneka-girl-voc,moneka,término vocativo para llamar a una niña,1011,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_1011_PaPe_moneka.wav,girl.VOC,,,,,n,,,girl.VOC
+monkontomo-2pl-pro,monkontomo; mokontomo; mëkontomo; montomo; mokontom,"Vosotros, vosotras, ustedes",1012,NOT RECORDED,2PL.PRO,,,,,pn,,,2PL.PRO
+morone-hurting,morone,Doloroso,1021,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_1021_PaPe_morone.wav,hurting,,,,,adv,,,hurting
+moroni-pain,moroni; moron,Dolor,1023,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_1023_PaPe_moroni.wav,pain,,,,,n,,,pain
+morono-poison,morono,Veneno,1028,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_1028_PaPe_morono.wav,poison,,,,,n,,,poison
+moto-worm,moto,lombriz de tierra; lombriz intestinal,1043,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_1043_PaPe_moto.wav,worm,,,,,n,,,worm
+moyochi-spider-sp,moyochi,araña sp.,1048,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_1048_AnFo_moyochi.wav,spider (sp.),,,,,n,,,spider.(sp.)
+mujyane-pregnancy,mujyanë; mujyam,"Embarrazada, encinta, preñada, grávida",1057,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_1057_AnFo_mujyane.wav,pregnancy,,,,,n,,,pregnancy
+muku-child,muku,"niño, niña; Hija de un hombre o de una mujer; espíritu del muerto",1061,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_1061_AnFo_muku.wav,child,,,,,n,,,child
+mune-bulbous,mune,Bulboso,1073,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_1073_AnFo_mune.wav,bulbous,,,,,adv,,,bulbous
+munta-budding,munta,Formarse bulbo,1075,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_1075_AnFo_muntari.wav,budding,,,,,vi,,,budding
+mejki-dist-anim,mëjkï; mëkï,"aquel, aquella (ser animado)",941,/home/florianm/Downloads/Dictionary_Clippings/180326/YarLex_0941_PaPe_mejki-02.wav,DIST.ANIM,,,,,pn,,,DIST.ANIM
+mejnijne-dist-inan-pl,mëjnijne,"aquellos, aquellas (inanimado)",,,DIST.INAN.PL,,,,,det,,,DIST.INAN.PL
+mejni-dist-inan,mëjnï; mëni; monï; munï; mënï,"Aquel, aquella, áquel (inanimado)",936,NOT RECORDED,DIST.INAN,,,,,det,,,DIST.INAN
+mekisantomo-dist-anim-pl,mëkïsantomo; mejkïsantomo,"aquellos, aquellas",,,DIST.ANIM.PL,,,,,det,,,DIST.ANIM.PL
+mere-2pro,mërë,"Tú, tu, te, ti",956,/home/florianm/Downloads/Dictionary_Clippings/180326/YarLex_0956_PaPe_mere.wav,2PRO,,,,,pn,,,2PRO
+mere-med-inan,mërë,"Ese, esa, eso (inanimado cerca del otro)",957,/home/florianm/Downloads/Dictionary_Clippings/180326/YarLex_0957_PaPe_mere.wav,MED.INAN,,,,,det,,,MED.INAN
+mijna-there-all,mïjna,Por allá (con movimiento),986,/home/florianm/Downloads/Dictionary_Clippings/180326/YarLex_0986_AnFo_mijna.wav,there.ALL,,,,,adv,,,there.ALL
+minte-there-loc,mïntë; mintë,Allá (locativo),950,NOT RECORDED,there.LOC,,,,,adv,,,there.LOC
+mira-priodontes-maximus,mïra,"Cuspa, cuspon, cachicamo gigante",991,/home/florianm/Downloads/Dictionary_Clippings/180326/YarLex_0991_AnFo_mira-02.wav,priodontes maximus,,,,,n,,,priodontes.maximus
+najmo-grandmother,najmo; najmu,abuela (materna o paterna),1096,/home/florianm/Downloads/Dictionary_Clippings/180328/YarLex_1096_AnFo_najmo.wav,grandmother,,,,old,n,,,grandmother
+najpi-grandfather,najpï,Abuelo paterno o materno,1097,/home/florianm/Downloads/Dictionary_Clippings/180328/YarLex_1097_PaPe_najpi.wav,grandfather,,,,,n,,,grandfather
+nata-door,nata,puerta,1087,/home/florianm/Downloads/Dictionary_Clippings/180328/YarLex_1087_AnFo_naata-02.wav,door,,,,,n,,,door
+nepi-bring,nepï; nej,Traer; ir a buscar,1110,/home/florianm/Downloads/Dictionary_Clippings/180328/YarLex_1110_AnFo_nepiri.wav,bring,,,,,vt,,,bring
+nono-earth,nono,"Tierra, barro, arcilla, suelo, piso; fundo , hacienda, territorio",1120,/home/florianm/Downloads/Dictionary_Clippings/180328/YarLex_1120_AnFo_nono-02.wav,earth,,,,,n,,,earth
+nope-good,nope; nop,"Bueno, bonito, bien",1128,/home/florianm/Downloads/Dictionary_Clippings/180328/YarLex_1128_PaPe_nope.wav,good,,,,,adv,,,good
+noro-parrot-sp,noro,Loro sp.,1132,/home/florianm/Downloads/Dictionary_Clippings/180328/YarLex_1132_PaPe_noro.wav,parrot.sp,,,,,n,,,parrot.sp
+noti-potential-partner,noti,"esposa potencial de un hombre, prima cruzada, amante de un hombre",1133,/home/florianm/Downloads/Dictionary_Clippings/180328/YarLex_1133_AnFo_noti-02.wav,potential partner; cross cousin,,,,,n,,,potential.partner
+neme-leave,nëmë,"Dejar (casa, lugar, persona)",1109,/home/florianm/Downloads/Dictionary_Clippings/180328/YarLex_1109_AnFo_nemeri-02.wav,leave,,,,,vt,,,leave
+ochi-o,ochi,Ochi,1145,/home/florianm/Downloads/Dictionary_Clippings/180328/YarLex_1145_AnFo_ochi-02.wav,O.,,,,,n,,,O.
+ojpa-give-drink,ojpa,dar de beber,1152,/home/florianm/Downloads/Dictionary_Clippings/180328/YarLex_1152_AnFo_ojopari-02.wav,give drink,,,,,vt,,,give.drink
+oki-chicha,okï,Bebida fermentada llamado yarake fuerte; clasificador en el sistema de posesión para referir a jugos de frutas,1162,/home/florianm/Downloads/Dictionary_Clippings/180328/YarLex_1162_AnFo_oki.wav,chicha,,,,,n,,,chicha
+onono-another,onono,"diferente; disitnto;otra cosa, otra persona, otro lugar, algo o alguien diferente",1179,/home/florianm/Downloads/Dictionary_Clippings/180328/YarLex_1179_PaPe_onono.wav,another,,,,,n,,,another
+orojyamo-evil-being,orojyamo,nombre de una especie de demonio o de diablo; espíritu del muerto,1190,/home/florianm/Downloads/Dictionary_Clippings/180328/YarLex_1190_PaPe_orojyamo.wav,evil being,,,,,n,,,evil.being
+pachi-older-sister-of-woman,pachi,"Hermana mayor de una mujer, prima paralela.",1222,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_1222_PaPe_pachi.wav,older sister of woman,,,,,n,,,older.sister.of.woman
+paijku-p,paijku,Nombre proprio de un cerro,1226,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_1226_PaPe_paijkuri.wav,P.,,,,,n,,,P.
+paka-cow,paka,"vaca, res, bufalo, ganado",1207,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_1207_PaPe_paaka.wav,cow,,,,,n,,,cow
+pakara-basket,pakara,"Catumare, cesto",1231,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_1231_AnFo_pakara.wav,basket,,,,,n,,,basket
+pakura-coix-lacryma-jobi,pakura,lágrima de San Pedro; bandolera,1236,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_1236_PaPe_pakura.wav,Coix lacryma-jobi,,,,,n,,,Coix.lacryma.jobi
+paku-arrow-tip,paku,"Punta de metal, flecha con punta de metal",1237,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_1237_AnFo_pakuri.wav,arrow tip,,,,,n,,,arrow.tip
+pana-ear,pana,Oreja,1243,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_1243_PaPe_pana.wav,ear,,,,,n,,,ear
+papa-father,papa,padre,2774,NOT RECORDED,father,,,,,n,,,father
+parujpe-broth,parujpë,caldo,1276,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_1276_AnFo_parujpe.wav,broth,,,,,n,,,broth
+pata-village,pata,"asentamiento, lugar habitado, Fundo, campamento; pueblo",1281,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_1281_PaPe_pata.wav,village,,,,,n,,,village
+pata-axe,pata,hacha,1280,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_1280_PaPe_pata.wav,axe,,,,,n,,,axe
+pataka-take-out,pataka,"sacar (afuera de la casa, de la barriga)",1285,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_1285_PaPe_patakari.wav,take out,,,,,vt,,,take.out
+pene-piranha,pene,Pez caribe,1331,/home/florianm/Downloads/Dictionary_Clippings/180330/YarLex_1331_AnFo_pene-02.wav,piranha,,,,,n,,,piranha
+pepoye-above-perl,pepoye,Por encima de algo (con movimiento),2976,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_2976_PaPe_pepoye .wav,above.PERL,,,,,postp,,,above.PERL
+pe-palm-sp,pe,Seje pequeño,1347,/home/florianm/Downloads/Dictionary_Clippings/180330/YarLex_1347_PaPe_peri.wav,palm.sp,,,,,n,,,palm.sp
+peti-leg,peti,"pierna, muslo",1370,/home/florianm/Downloads/Dictionary_Clippings/180330/YarLex_1370_AnFo_peti-02.wav,leg,,,,,n,,,leg
+peye-turtle-sp,peye,Terecay,1380,/home/florianm/Downloads/Dictionary_Clippings/180330/YarLex_1380_AnFo_peye.wav,turtle.sp,,,,,n,,,turtle.sp
+picha-capuchin-monkey,picha; pisa,Mono capuchino,1381,/home/florianm/Downloads/Dictionary_Clippings/180330/YarLex_1381_AnFo_picha-02.wav,capuchin monkey,,,,,n,,,capuchin.monkey
+pichipichi-whitebait,pichipichi,Moralla,1383,/home/florianm/Downloads/Dictionary_Clippings/180330/YarLex_1383_PaPe_pichipichi.wav,whitebait,,,,,n,,,whitebait
+pika-peel,pika,"Pelar (tuberculo, verdura, fruta)",1402,/home/florianm/Downloads/Dictionary_Clippings/180330/YarLex_1402_AnFo_pikari-02.wav,peel,,,,,vt,,,peel
+pike-fart,pikë,Pedo,1403,/home/florianm/Downloads/Dictionary_Clippings/180330/YarLex_1403_PaPe_pike.wav,fart,,,,,n,,,fart
+pinchi-hes,pinchi,particula suspensiva,,,HES,,,,,part,,,HES
+pipi-younger-brother-of-woman,pipi,"Hermano menor de una mujer,",1413,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_1413_AnFo_pipi .wav,younger brother of woman,,,,,n,,,younger.brother.of.woman
+poroko-basket-sp,poroko,tipo de cesta,1492,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_1492_AnFo_poroko.wav,basket.sp,,,,,n,,,basket.sp
+poye-above,poye; poe; poy,"por encima de; para, por",1444 1507,NOT RECORDED,above,,,,,postp,,,above
+pimi-neck,pïmï,Cuello; nuca,1405,/home/florianm/Downloads/Dictionary_Clippings/180330/YarLex_1405_PaPe_pimiri-02.wav,neck,,,,,n,,,neck
+pirika-endure,pïrïka,Aguantar (dolor),1426,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_1426_AnFo_pirikari.wav,endure,,,,,vt,,,endure
+roko-crazy,roko,loco,,,crazy,,,,,n,,,crazy
+romoye-downriver,romoye; romo yaye,Rio abajo (estar),1568,/home/florianm/Downloads/Dictionary_Clippings/180402/YarLex_1568_AnFo_romoye-02.wav,downriver,,,,,adv,,,downriver
+rotoro-doctor,rotoro,Doctor,1571,/home/florianm/Downloads/Dictionary_Clippings/180402/YarLex_1571_PaPe_rotoro-02.wav,doctor,,,,,n,,,doctor
+sakara-hoplias-malabaricus,sakara,Guabina,1593,/home/florianm/Downloads/Dictionary_Clippings/180402/YarLex_1593_PaPe_sakara-02.wav,hoplias malabaricus,,,,,n,,,hoplias.malabaricus
+sakau-sand,sakau,Arena,1596,/home/florianm/Downloads/Dictionary_Clippings/180402/YarLex_1596_AnFo_sakau.wav,sand,,,,,n,,,sand
+saku-sweet-potato,saku,Batata,1600,/home/florianm/Downloads/Dictionary_Clippings/180402/YarLex_1600_PaPe_saku.wav,sweet potato,,,,,n,,,sweet.potato
+samo-cry,samo; asamo,llorar,1605,NOT RECORDED,cry,,,,,vi,,,cry
+sampu-black-piranha,sampu,Pez caribe negro,1606,/home/florianm/Downloads/Dictionary_Clippings/180402/YarLex_1606_PaPe_sampu.wav,black piranha,,,,,n,,,black.piranha
+sapara-heavy-pot,sapara,Sarten: paila; olla de metal pesada,1612,/home/florianm/Downloads/Dictionary_Clippings/180402/YarLex_1612_AnFo_saparari.wav,heavy pot,,,,,n,,,heavy.pot
+sawo-rapids,sawo; sawë,Raudal,1641,NOT RECORDED,rapids,,,,,n,,,rapids
+sere-bitter-manioc,sere,"yuca amarga, Casabe",3022,/home/florianm/Downloads/Dictionary_Clippings/180418/YarLex_3022_PaPe_sere.wav,bitter manioc,,,,,n,,,bitter.manioc
+sukase-all,sukase; sokase,"Todo, todos",1757,/home/florianm/Downloads/Dictionary_Clippings/180404/YarLex_1757_AnFo_sukase-02.wav,all,,,,,adv,,,all
+sukutaka-yucuta,sukutaka,Yucuta,1762,/home/florianm/Downloads/Dictionary_Clippings/180404/YarLex_1762_AnFo_sukutaka.wav,yucuta,,,,,n,,,yucuta
+surukupi-fish-sp,surukupi,Machete de caño,1775,/home/florianm/Downloads/Dictionary_Clippings/180404/YarLex_1775_PaPe_surukupi-02.wav,fish.sp,,,,,n,,,fish.sp
+sema-die,sëma; ësëma,"Morir(se), fallecer",1660,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_1660_AnFo_semari.wav,die,,,,,vi,,,die
+tajme-ugly,tajme,"feisimo,horrible, hacer cosa prohibida",1803,/home/florianm/Downloads/Dictionary_Clippings/180404/YarLex_1803_AnFo_tajme.wav,ugly,,,,,adv,,,ugly
+tajnomo-piaroa,tajnomo,Piaroa,1807,/home/florianm/Downloads/Dictionary_Clippings/180404/YarLex_1807_PaPe_tajnomo.wav,Piaroa,,,,,n,,,Piaroa
+tajropo-have-fever,tajropo,tener fiebre,1816,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_1816_PaPe_tajropori.wav,have fever,,,,,vi,,,have.fever
+takono-other,takono; takon,"otro, otra persona, otra cosa",1832,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_1832_PaPe_takono.wav,other,,,,,n,,,other
+tapa-beat,tapa,bofetear; pegar (persona o animal); sobar (niño),1856,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_1856_AnFo_tapari.wav,beat,,,,,vt,,,beat
+taro-say,taro; taj; ta,"Decir, preguntar",1791,/home/florianm/Downloads/Dictionary_Clippings/180404/YarLex_1791_PaPe_taro-02.wav,say,,,,,vt,,,say
+tawa-nyctidromus-albicollis,tawa,Aguaitacamino,1920,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_1920_PaPe_tawaru.wav,nyctidromus albicollis,,,,,n,,,nyctidromus.albicollis
+teijpo-far,teijpo,"lejos, lejano; largo",,,far; long,,,,,adv,,,far
+tejwetunu-sick,tejwetunu; tejetunu; tejetum,enfermito,1951,/home/florianm/Downloads/Dictionary_Clippings/180406/YarLex_1951_AnFo_tejetunu.wav,sick,,,,,n,,,sick
+tonko-play,tonko,Jugar,2101,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_2101_AnFo_tonkori.wav,play,,,,,vi,,,play
+torote-cemetery,torotë,Cementerio (no posesivado),2117,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_2117_AnFo_torote.wav,cemetery,,,,,n,,,cemetery
+toto-non-indian,toto,Gente; No indio; criollo,2118,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_2118_AnFo_toto.wav,non-Indian,,,,,n,,,non.Indian
+tuj-fall,tuj,ideofono ruido de la caída,2121,NOT RECORDED,fall,,,,,ideo,,,fall
+tujnaka-iller,tujnaka,Peor de salud; grave,2123,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_2123_AnFo_tujnaka.wav,iller,,,,,adv,,,iller
+tuna-water,tuna,"Agua, río, caño",2136,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_2136_PaPe_tuna.wav,water,,,,,n,,,water
+tunami-hide,tunamï; tunam,esconder,1973,/home/florianm/Downloads/Dictionary_Clippings/180406/YarLex_1973_AnFo_tunamiri-02.wav,hide,,,,,vt,,,hide
+tu-give,tu,Dar,2152,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_2152_PaPe_turu.wav,give,,,,,vt,,,give
+tejta-hollow,tëjta,Hueco; madriguera; guarida; cueva,1959,/home/florianm/Downloads/Dictionary_Clippings/180406/YarLex_1959_PaPe_tejta.wav,hollow,,,,,n,,,hollow
+tewi-3pro,tëwï,el o ella,2046,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_2046_PaPe_tewi.wav,3PRO,,,,,pn,,,3PRO
+tewisantomo-3pro-pl,tëwïsantomo; tëwïsanton,ellos o ellas,2048,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_2048_AnFo_tewisantomo.wav,3PRO.PL,,,,,pn,,,3PRO.PL
+waijta-mouse,waijta,"raton, rata",2197,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_2197_PaPe_waijta.wav,mouse,,,,,n,,,mouse
+waijte-head,waijtë,Cabeza; ovillo (de algodón),2198,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_2198_PaPe_waijte.wav,head,,,,,n,,,head
+wajyaki-happy,wajyakï,alegre,,,happy,,,,,n,,,happy
+wajyaki-be-happy,wajyakï,estar alegre,3099,/home/florianm/Downloads/Dictionary_Clippings/180418/YarLex_3099_AnFo_wajyakiri-02.wav,be happy,,,,,vi,,,be.happy
+wajyakiti-very-happy,wajyakïtï,muy alegre,2228,/home/florianm/Downloads/Dictionary_Clippings/180410/YarLex_2228_PaPe_wajyakiti.wav,very happy,,,,,n,,,very.happy
+wanapu-savannah,wanapu,"Sabana, hierba de la savana, paja",2247,/home/florianm/Downloads/Dictionary_Clippings/180410/YarLex_2247_PaPe_wanapu-02.wav,savannah,,,,,n,,,savannah
+wanene-aunt,wanene; wanëne,Suegra real o potencial; Tía paterna para una mujer; tia materna para un hombre,2263,/home/florianm/Downloads/Dictionary_Clippings/180410/YarLex_2263_AnFo_wanene-02.wav,aunt,,,,,n,,,aunt
+waraijtokomo-man,waraijtokomo; waraijtokom,"Hombre, varón, macho",2288,/home/florianm/Downloads/Dictionary_Clippings/180410/YarLex_2288_PaPe_warijtokomo.wav,man,,,,,n,,,man
+warota-work,warota,Trabajar,2329,NOT RECORDED,work,,,,,vi,,,work
+ware-thus,warë; enwarë; nwarë; nwa; wa; ënwarë; uwarë,asi,385,/home/florianm/Downloads/Dictionary_Clippings/180320/YarLex_0385_PaPe_ware-02.wav,thus,,,,,adv,,,thus
+wasayi-attalea-maripa,wasayi; wasay; wasai,Palma cucurito,2336,/home/florianm/Downloads/Dictionary_Clippings/180410/YarLex_2336_AnFo_wasayi-02.wav,attalea maripa,,,,,n,,,attalea.maripa
+wena-vomit,wena,Vomito,2377,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_2377_AnFo_wenaru.wav,vomit,,,,,n,,,vomit
+wepi-come,wepï; wej,Venir,2389,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_2389_AnFo_wepiri.wav,come,,,,,vi,,,come
+wereyi-cloud,wereyi; werey,Niebla; Neblina; Nube,2397,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_2397_PaPe_wereyi.wav,cloud,,,,,n,,,cloud
+weroro-dog,weroro,Perro (término genérico),2402,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_2402_PaPe_weroro.wav,dog,,,,,n,,,dog
+wiriyamo-woman,wiriyamo; uriyamo; wirijyamo; wurijyam; wurijyamo; wurijyan,mujer,2431,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_2431_AnFo_wiriyamo.wav,woman,,,,,n,,,woman
+wejka-fall,wëjka; wojka,Caerse; desembocar,2365,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_2365_PaPe_wejkari.wav,fall,,,,,vi,,,fall
+wire-1pro,wïrë; urë; wërë,"primera pers. singular yo; me; mi, mio",2428,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_2428_AnFo_wire.wav,1PRO,,,,,pn,,,1PRO
+yajno-brother-in-law-man,yajno,"Cuñado de un hombre, marido de la hermana de un hombre",2464,/home/florianm/Downloads/Dictionary_Clippings/180412/YarLex_2464_PaPe_yajno.wav,brother in law (man),,,,,n,,,brother.in.law.(man)
+yakarama-tell,yakarama,"Contar, mostrar, indicar, informar, avisar",2482,/home/florianm/Downloads/Dictionary_Clippings/180412/YarLex_2482_AnFo_yakaramari.wav,tell,,,,,vt,,,tell
+yakono-younger-sister-of-woman,yakono,Hermana menor o prima paralela de una mujer,2501,/home/florianm/Downloads/Dictionary_Clippings/180412/YarLex_2501_PaPe_yakono.wav,younger sister of woman,,,,,n,,,younger.sister.of.woman
+yaku-agouti,yaku,picure,2508,/home/florianm/Downloads/Dictionary_Clippings/180412/YarLex_2508_PaPe_yakuri-02.wav,agouti,,,,,n,,,agouti
+yamane-make,yamanë; yaman,"Hacer, construir , fabricar, arreglar, acomodar",2512,/home/florianm/Downloads/Dictionary_Clippings/180412/YarLex_2512_PaPe_yamaneri-02.wav,make,,,,,vt,,,make
+yami-pick-up,yamï,"recoger, agarrar, cosechar",2516,NOT RECORDED,pick up,,,,,vt,,,pick.up
+yane-mother,yanë,Madre,2531,/home/florianm/Downloads/Dictionary_Clippings/180412/YarLex_2531_AnFo_yane.wav,mother,,,,,n,,,mother
+yapechi-grab,yapëchi,"Agarrar, asir",2545,NOT RECORDED,grab,,,,,vt,,,grab
+yarika-laugh,yarika,reirse de alguien; burlarse,3131,NOT RECORDED,laugh,,,,,vi,,,laugh
+yaruwa-laugh,yaruwa,reir(se),2581,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_2581_PaPe_yaruwari.wav,laugh,,,,,vi,,,laugh
+yare-bring,yarë,"cargar , llevar",2575,/home/florianm/Downloads/Dictionary_Clippings/180412/YarLex_2575_AnFo_yareri-02.wav,bring,,,,,vt,,,bring
+yatane-adolescent,yatanë; yatam; yatan,"Joven (hombre o mujer, muchacha que tuve su primera menstruacion",2593,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_2593_PaPe_yatane.wav,adolescent,,,,,n,,,adolescent
+yawanka-kill,yawanka,matar,2612,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_2612_AnFo_yawankari.wav,kill,,,,,vt,,,kill
+yeme-eat-fruits-eggs-soup,yeme,"Comer (frutas, huevos, sopa)",2673,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_2673_PaPe_yemeri.wav,"eat (fruits, eggs, soup)",,,,,vt,,,"eat.(fruits,.eggs,.soup)"
+yerepunu-sick,yerepunu; yerepun,estar enfermo,,,sick,,,,,n,,,sick
+yojte-fish-with-hook,yojtë,"Pescar con anzuelo , buscar comida de carne",2789,/home/florianm/Downloads/Dictionary_Clippings/180414/YarLex_2789_PaPe_yojteri-02.wav,fish with hook,,,,,vt,,,fish.with.hook
+yoko-pimple,yoko,Espinilla,2797,/home/florianm/Downloads/Dictionary_Clippings/180414/YarLex_2797_AnFo_yoko.wav,pimple,,,,,n,,,pimple
+yoki-eat-starch,yokï; yojse,"Comer (alimentos blandos, casabe, fécula, tubérculos) , beber??; copular, tener relación sexual (hombre)",2794,/home/florianm/Downloads/Dictionary_Clippings/180414/YarLex_2794_PaPe_yokiri-02.wav,eat (starch),,,,,vt,,,eat.(starch)
+yumpe-fairly,yumpe,"Bastante, mucho",2821,/home/florianm/Downloads/Dictionary_Clippings/180416/YarLex_2821_AnFo_yumpe.wav,fairly; much,,,,,adv,,,fairly
+yutu-forest,yutu,Selva ; bosque ; conjunto de plantas de la misma especie,2836,/home/florianm/Downloads/Dictionary_Clippings/180416/YarLex_2836_PaPe_yutu-02.wav,forest,,,,,n,,,forest
+ye-tooth,yë; ye,diente,,,tooth,,,,,n,,,tooth
+yeni-drink,yëni; yeni,Beber; tomar,2695,/home/florianm/Downloads/Dictionary_Clippings/180414/YarLex_2695_AnFo_yeniri-02.wav,drink,,,,,vt,,,drink
+yene-eat-meat,yënë,"Comer (carne, pescado)",2691,/home/florianm/Downloads/Dictionary_Clippings/180414/YarLex_2691_AnFo_yeneri.wav,eat (meat),,,,,vt,,,eat.(meat)
+yeye-tree,yëye,"Árbol, palo",2763,/home/florianm/Downloads/Dictionary_Clippings/180414/YarLex_2763_AnFo_yeeye.wav,tree,,,,,n,,,tree
+yipi-mountain,yïpï,"Cerro, montaña",2777,/home/florianm/Downloads/Dictionary_Clippings/180414/YarLex_2777_PaPe_yipi.wav,mountain,,,,,n,,,mountain
+ejpina-often,ëjpïna,"Mucho, bastante",298,/home/florianm/Downloads/Dictionary_Clippings/180320/YarLex_0298_AnFo_ejpina-02.wav,often,,,,,adv,,,often
+ejte-house,ëjtë,"Casa, Churuata",308,/home/florianm/Downloads/Dictionary_Clippings/180320/YarLex_0308_AnFo_ejte.wav,house,,,,,n,,,house
+ejwate-hammock,ëjwatë,Chinchorro,320,/home/florianm/Downloads/Dictionary_Clippings/180320/YarLex_0320_AnFo_ejwate-02.wav,hammock,,,,,n,,,hammock
+eke-which,ëkë; ëjkë,"Cuál, qué",271,/home/florianm/Downloads/Dictionary_Clippings/180320/YarLex_0271_PaPe_eke-02.wav,which,,,,,intj,,,which
+ekere-jaguar,ëkërë,"Jaguar, tigre americano.",335,/home/florianm/Downloads/Dictionary_Clippings/180320/YarLex_0335_PaPe_ekere-02.wav,jaguar,,,,,n,,,jaguar
+empare-already,ëmpare; parë; umparë,"ya, está bien, está lisro",356,/home/florianm/Downloads/Dictionary_Clippings/180320/YarLex_0356_AnFo_empare-02.wav,already,,,,,adv,,,already
+erine-cooking-pot,ërinë,Olla,407,/home/florianm/Downloads/Dictionary_Clippings/180320/YarLex_0407_PaPe_erine.wav,cooking pot,,,,,n,,,cooking.pot
+etipa-go-in-group,ëtïpa; tïpa; tipa,irse en grupo,428,/home/florianm/Downloads/New_Dictionary_Clippings/YarLex_0428_PaPe_etipari.wav,go in group,,,,,vi,,,go.in.group
+eni-drink,ëni; ën,Beber; tomar,,,drink,,,,,vt,,,drink
+ese-name,ese,nombre,,,name,,ti,,,n,,,name

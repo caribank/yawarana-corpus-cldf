@@ -1,21 +1,28 @@
 appdirs==1.4.4
 attrs==21.4.0
+binaryornot==0.4.4
 certifi==2021.10.8
 cffconvert==2.0.0
+cffi==1.15.0
 chardet==4.0.0
-cldfbench==1.10.0
-cldfcatalog==1.4.0
+cldfbench==1.11.0
+cldfcatalog==1.5.1
+cldfviz==0.9.0
 click==8.1.3
 clld==9.0.2
--e git+ssh://git@github.com/fmatter/clld-morphology-plugin.git@a6e757d3d6a6c03c11d84b55113cadec4b68814b#egg=clld_morphology_plugin
+-e git+ssh://git@github.com/fmatter/clld-corpus-plugin.git@b1d60262bbd75c53f556dc14d171619e158a7f7a#egg=clld_corpus_plugin
+-e git+ssh://git@github.com/fmatter/clld-morphology-plugin.git@f27a424bdefc9d440ca1b0c750a0a0b5704c66e2#egg=clld_morphology_plugin
 clldutils==3.11.1
 colorlog==6.6.0
+cookiecutter==1.7.3
 csvw==2.0.0
 DateTime==4.4
 gitdb==4.0.9
 greenlet==1.1.2
 idna==3.3
 isodate==0.6.1
+Jinja2==3.1.1
+jmespath==1.0.0
 jsonschema==3.2.0
 lingpy==2.6.9
 Markdown==3.3.6
@@ -24,16 +31,19 @@ nameparser==1.1.1
 networkx==2.6.3
 newick==1.3.2
 numpy==1.21.6
+openpyxl==3.0.10
 pandas==1.3.5
+panflute==2.1.3
+poyo==0.5.0
 purl==1.6
 pybtex==0.24.0
-pycldf==1.25.1
+pycldf==1.26.1
 pycountry==22.3.5
 pyglottolog==3.7.0
 pyigt==1.2.0
 pykwalify==1.8.0
--e git+ssh://git@github.com/fmatter/pylacoan.git@315a42cb0430b72ced8e2d0c7d662c490ec3f462#egg=pylacoan
--e git+ssh://git@github.com/fmatter/pylingdocs.git@3073834711746f0a5359ad5528223bd8291adcb4#egg=pylingdocs
+-e git+ssh://git@github.com/fmatter/pylacoan.git@e5f3bd9057d066e2c6a0b87c88c34fdafeabd445#egg=pylacoan
+-e git+ssh://git@github.com/fmatter/pylingdocs.git@c40ee4e95e099ba853f5e11a2b833f91083727e7#egg=pylingdocs
 pyramid==2.0
 pyrsistent==0.18.1
 python-dateutil==2.8.2
@@ -54,7 +64,7 @@ termcolor==1.1.0
 tqdm==4.64.0
 transaction==3.0.1
 typing_extensions==4.2.0
--e git+ssh://git@github.com/fmatter/uniparser-morph.git@b6ab2254617e98847039644f9aee45a116dc053c#egg=uniparser_morph
+-e git+ssh://git@github.com/fmatter/uniparser-morph.git@0e8de27243c74f4fa93de8f9bc89e8b2c8d8cd46#egg=uniparser_morph
 uritemplate==4.1.1
 urllib3==1.26.9
 venusian==3.0.0

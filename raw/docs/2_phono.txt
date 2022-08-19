@@ -1,6 +1,7 @@
 <a id='phono'></a>
 ## Segmental phonetics and phonemes {#sec:segmental}
-The consonant phonemes of Yawarana are shown in <a href='#tab:consonants' class='crossref' id='tab:consonants'>crossref</a>, and the vowels in <a href='#tab:vowels' class='crossref' id='tab:vowels'>crossref</a>.
+The consonant phonemes of Yawarana are shown in <a href='#tab:consonants' class='crossref' name='tab:consonants' release="False" >ref</a>, vowel phonemes in <a href='#tab:vowels' class='crossref' name='tab:vowels' release="False" >ref</a>.
+
 
 
 <a id='tab:consonants'></a><div class='caption table' id='tab:consonants'>Consonant phonemes</div>
@@ -24,19 +25,62 @@ The consonant phonemes of Yawarana are shown in <a href='#tab:consonants' class=
 
 ### Consonants {#sec:consonants}
 
+* minimal pairs
+
+
+#### /h/
+
+* glottal fricative insertion after dipththongs
+* glottal fricative insertion before occlusives
+
+
 ### Vowels {#sec:vowels}
+
+* minimal pairs
+* vowel plots
+* what about vowel length?
+* variation in _ë_/_o_/_e_ and _ï_/_i_/_u_
+
+* dipththongs
+    * /ai/, /aw/, /ei/... test combinations
 
 ## Morphophonological Processes {#sec:morphophono}
 
 ### Syllable Reduction {#sec:sylred}
 
-### Vowel harmony? {#sec:vowelharm}
+* V1rV2 to V1:
+* nasal assimilation
+
+
+#### Contexts
+
+* <span class='smallcaps'>postp</span>
+* verbal suffixes
+* no final nominal reduction
+
+
+#### Non-alternating reduced syllables
+
+e.g. [Morpheme wajto-fire](MorphsetTable?#cldf:wajto-fire)
+
+
+### Vowel harmony {#sec:vowelharm}
+
+* progressive [Morpheme rupert](MorphsetTable?#cldf:rupert)
+* regressive /ë/ > /o/ 
+
+### Palatalization {#sec:palatalization}
+
+* [Morpheme sapepfv](MorphsetTable?#cldf:sapepfv)
+* [Morpheme sepst](MorphsetTable?#cldf:sepst)
 
 ## Prosody {#sec:prosody}
 
 ### Lexical stress {#sec:stress}
 
 ### Intonational Phrases {#sec:intphrases}
+
+<span title='f0 increase associated w/ pitch reset, clause boundaries?'>❓</span>
 
 ### Intonational Melodies {#sec:intmelodies}
 

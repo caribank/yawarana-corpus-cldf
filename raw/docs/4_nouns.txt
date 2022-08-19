@@ -1,62 +1,75 @@
 <a id='nouns'></a>
 ## Pronouns {#sec:pronouns}
-The personal pronouns of [Language yab](LanguageTable?#cldf:yab) are shown in <a href='#tab:pronouns' class='crossref' id='tab:pronouns'>crossref</a>.
-It shows the usual Cariban inclusive/exclusive (<span class="smallcaps">1+2</span> and <span class="smallcaps">1+3</span>) distinction. <span title='is the 1+2 form cognate with apina? do we know something about its etymology?'>❓</span>
-Note that the plural marker [Morpheme kontomopl](MorphsetTable?#cldf:kontomopl) appears to usually be restricted to verbs, while *-santomo* is found with third person pronouns and demonstratives.
+The personal pronouns of [Language yab](LanguageTable?#cldf:yab) are shown in <a href='#tab:pronouns' class='crossref' name='tab:pronouns' release="False" >ref</a>.
+The system shows the usual Cariban inclusive/exclusive (<span class='smallcaps'>1+2</span> and <span class='smallcaps'>1+3</span>) distinction, although [Morpheme ejne-1-2pro](MorphsetTable?#cldf:ejne-1-2pro) does not have the /k/ found elsewhere in the family.
+Note that [Morpheme kontomopl](MorphsetTable?#cldf:kontomopl) appears to usually be restricted to verbs, while *-santomo* is found with third person pronouns and demonstratives.
 
 
 <a id='tab:pronouns'></a><div class='caption table' id='tab:pronouns'>Pronouns</div>
 
-|                                    | <span class="smallcaps">sg</span>                   | <span class="smallcaps">pl</span>                                       |
-|:-----------------------------------|:----------------------------------------------------|:------------------------------------------------------------------------|
-| <span class="smallcaps">1</span>   | [Morpheme wire-1pro](MorphsetTable?#cldf:wire-1pro) |                                                                         |
-| <span class="smallcaps">1+2</span> |                                                     | [Morpheme ejne-1-2pro](MorphsetTable?#cldf:ejne-1-2pro)                 |
-| <span class="smallcaps">1+3</span> |                                                     | [Morpheme ana-1-3pro](MorphsetTable?#cldf:ana-1-3pro)                   |
-| <span class="smallcaps">2</span>   | [Morpheme mere-2pro](MorphsetTable?#cldf:mere-2pro) | [Morpheme monkontomo-2pl-pro](MorphsetTable?#cldf:monkontomo-2pl-pro)   |
-| <span class="smallcaps">3</span>   | [Morpheme tewi-3pro](MorphsetTable?#cldf:tewi-3pro) | [Morpheme tewisantomo-3pro-pl](MorphsetTable?#cldf:tewisantomo-3pro-pl) |
+|                                    | <span class='smallcaps'>sg</span>                                 | <span class='smallcaps'>pl</span>                                                     |
+|:-----------------------------------|:------------------------------------------------------------------|:--------------------------------------------------------------------------------------|
+| <span class='smallcaps'>1</span>   | [Morpheme wire-1pro](MorphsetTable?no_translation#cldf:wire-1pro) |                                                                                       |
+| <span class='smallcaps'>1+2</span> |                                                                   | [Morpheme ejne-1-2pro](MorphsetTable?no_translation#cldf:ejne-1-2pro)                 |
+| <span class='smallcaps'>1+3</span> |                                                                   | [Morpheme ana-1-3pro](MorphsetTable?no_translation#cldf:ana-1-3pro)                   |
+| <span class='smallcaps'>2</span>   | [Morpheme mere-2pro](MorphsetTable?no_translation#cldf:mere-2pro) | [Morpheme monkontomo-2pl-pro](MorphsetTable?no_translation#cldf:monkontomo-2pl-pro)   |
+| <span class='smallcaps'>3</span>   | [Morpheme tewi-3pro](MorphsetTable?no_translation#cldf:tewi-3pro) | [Morpheme tewisantomo-3pro-pl](MorphsetTable?no_translation#cldf:tewisantomo-3pro-pl) |
 
-Short forms of the first and second person pronouns can occur as proclitics attaching to nouns to indicate possessor (<a href='#sec:nominalperson' class='crossref' id='sec:nominalperson'>crossref</a>), attached to verbs to indicate subject or object (described in [crossref](ChapterTable?_anchor=verbinfl#cldf:verbinfl)), or attached to postpositions to indicate object of the postposition (described in [crossref](ChapterTable?_anchor=sec:postinfl#cldf:postp)):
+<span title='tajne, but not attested as an article'>❗️</span>
 
-[Example convrisamaj-28](ExampleTable?example_no=1#cldf:convrisamaj-28)
+Reduced forms of the first and second person pronouns occur as proclitics <span title='proclitics or prefixes?'>❓</span> attaching to nouns to indicate possessor (<a href='#sec:nominalperson' class='crossref' name='sec:nominalperson' release="False" >ref</a>), attached to verbs to indicate subject or object (described in [crossref](ChapterTable?_anchor=verbinfl#cldf:verbinfl)), or attached to postpositions to indicate the object of the postposition (described in [crossref](ChapterTable?_anchor=sec:postinfl#cldf:postp)):
 
-[Example desccasmaj-025](ExampleTable?example_no=2#cldf:desccasmaj-025)
+[Example convrisamaj-28](ExampleTable?example_counter=1#cldf:convrisamaj-28)
 
-[Example convrisamaj-02](ExampleTable?example_no=3#cldf:convrisamaj-02)
-[Example ctoaragrme-07](ExampleTable?example_no=4#cldf:ctoaragrme-07)
-An open question is whether [Morpheme t3](MorphsetTable?#cldf:t3) on verbs is a reduction of [Morpheme tewi-3pro](MorphsetTable?#cldf:tewi-3pro). <span title='or is there a clear yes/no answer?'>❓</span>
+[Example desccasmaj-025](ExampleTable?example_counter=2#cldf:desccasmaj-025)
 
-The third person demonstrative pronouns or articles are shown in <a href='#tab:pronouns3' class='crossref' id='tab:pronouns3'>crossref</a>.
+[Example convrisamaj-02](ExampleTable?example_counter=3#cldf:convrisamaj-02)
+[Example ctoaragrme-07](ExampleTable?example_counter=4#cldf:ctoaragrme-07)
+
+The third person demonstrative pronouns or articles are shown in <a href='#tab:pronouns3' class='crossref' name='tab:pronouns3' release="False" >ref</a>.
 <span title='is there a 4‑way distinction? [cf. Ye’kwana?]'>❓</span>
+None of them have shortened, phonologically bound counterparts.
 
 
 <a id='tab:pronouns3'></a><div class='caption table' id='tab:pronouns3'>Demonstrative pronouns / articles</div>
 
-|                                     | <span class="smallcaps">anim</span>                           |                                                                                   | <span class="smallcaps">inan</span>                                                                                       |                                                                                                                                                                 |
-|:------------------------------------|:--------------------------------------------------------------|:----------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                                     | <span class="smallcaps">sg</span>                             | <span class="smallcaps">pl</span>                                                 | <span class="smallcaps">sg</span>                                                                                         | <span class="smallcaps">pl</span>                                                                                                                               |
-| <span class="smallcaps">prox</span> | [Morpheme kere-prox-anim](MorphsetTable?#cldf:kere-prox-anim) | [Morpheme keresantomo-prox-anim-pl](MorphsetTable?#cldf:keresantomo-prox-anim-pl) | [Morpheme eni-prox-inan](MorphsetTable?#cldf:eni-prox-inan)                                                               | [Morpheme enijne-prox-inan-pl](MorphsetTable?#cldf:enijne-prox-inan-pl)                                                                                         |
-| medial? near?                       | [Morpheme michi-med-anim](MorphsetTable?#cldf:michi-med-anim) |                                                                                   | [Morpheme misi-med-inan](MorphsetTable?#cldf:misi-med-inan) / [Morpheme mere-med-inan](MorphsetTable?#cldf:mere-med-inan) | [Morpheme michisantomo-med-inan-pl](MorphsetTable?#cldf:michisantomo-med-inan-pl) / [Morpheme michitomo-med-inan-pl](MorphsetTable?#cldf:michitomo-med-inan-pl) |
-| <span class="smallcaps">dist</span> | *mëkï*?                                                       | [Morpheme mekisantomo-dist-anim-pl](MorphsetTable?#cldf:mekisantomo-dist-anim-pl) | [Morpheme mejni-dist-inan](MorphsetTable?#cldf:mejni-dist-inan)                                                           | [Morpheme mejnijne-dist-inan-pl](MorphsetTable?#cldf:mejnijne-dist-inan-pl)                                                                                     |
+|                                     | <span class='smallcaps'>anim</span>                                                                                                                     |                                                                                                                                                                                             | <span class='smallcaps'>inan</span>                                           |                                                                                           |
+|:------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------|
+|                                     | <span class='smallcaps'>sg</span>                                                                                                                       | <span class='smallcaps'>pl</span>                                                                                                                                                           | <span class='smallcaps'>sg</span>                                             | <span class='smallcaps'>pl</span>                                                         |
+| <span class='smallcaps'>prox</span> | [Morpheme kere-prox-anim](MorphsetTable?no_translation#cldf:kere-prox-anim)                                                                             | [Morpheme keresantomo-prox-anim-pl](MorphsetTable?no_translation#cldf:keresantomo-prox-anim-pl)                                                                                             | [Morpheme eni-prox-inan](MorphsetTable?no_translation#cldf:eni-prox-inan)     | [Morpheme enijne-prox-inan-pl](MorphsetTable?no_translation#cldf:enijne-prox-inan-pl)     |
+| medial? near?                       | [Morpheme michi-med-anim](MorphsetTable?no_translation#cldf:michi-med-anim) / [Morpheme misi-med-inan](MorphsetTable?no_translation#cldf:misi-med-inan) | [Morpheme michisantomo-med-inan-pl](MorphsetTable?no_translation#cldf:michisantomo-med-inan-pl) / [Morpheme michitomo-med-inan-pl](MorphsetTable?no_translation#cldf:michitomo-med-inan-pl) | [Morpheme mere-med-inan](MorphsetTable?no_translation#cldf:mere-med-inan)     |                                                                                           |
+| <span class='smallcaps'>dist</span> | [Morpheme mejki-dist-anim](MorphsetTable?no_translation#cldf:mejki-dist-anim)                                                                           | [Morpheme mekisantomo-dist-anim-pl](MorphsetTable?no_translation#cldf:mekisantomo-dist-anim-pl)                                                                                             | [Morpheme mejni-dist-inan](MorphsetTable?no_translation#cldf:mejni-dist-inan) | [Morpheme mejnijne-dist-inan-pl](MorphsetTable?no_translation#cldf:mejnijne-dist-inan-pl) |
 
-None of the demonstrative pronouns have shortened, phonologically bound counterparts.
+* nominal interrogative pronouns:
+    * [Morpheme aniki-who](MorphsetTable?#cldf:aniki-who) (with _-santomo_)
+    * [Morpheme ati-what](MorphsetTable?#cldf:ati-what) (no plural)
+    * _ëjkë_ 'which? (<span class='smallcaps'>inan</span>)'
 
-* Nominal Interrogative pronouns:
-    * [Morpheme aniki-who](MorphsetTable?#cldf:aniki-who) 'who?'
-    * [Morpheme ati-what](MorphsetTable?#cldf:ati-what) 'what?'
-    * _ëjkë_ 'which? inan'
-<span title='No plural forms for any of these?'>❓</span>
+<span title='Are there plural forms of any of these?'>❓</span>
 
 
 ## Nominal inflection {#sec:nouninfl}
 
-Nouns in Yawarana may bear suffixes for possession (<a href='#sec:nounposssuf' class='crossref' id='sec:nounposssuf'>crossref</a>) and number (<a href='#sec:nominalnumber' class='crossref' id='sec:nominalnumber'>crossref</a>), and possessed nouns may bear a third person prefix, indexing a third person possessor, or a first or second proclitic (a reduced form of the free pronoun), indexing a first or second person possessor (<a href='#sec:nominalperson' class='crossref' id='sec:nominalperson'>crossref</a>). 
+Nouns in Yawarana may bear suffixes marking their possession status (<a href='#sec:nounposssuf' class='crossref' name='sec:nounposssuf' release="False" >ref</a>), number (<a href='#sec:nominalnumber' class='crossref' name='sec:nominalnumber' release="False" >ref</a>), and nominal past tense (<a href='#sec:nominaltense' class='crossref' name='sec:nominaltense' release="False" >ref</a>).
+Possessed nouns may bear a person prefix, or the linker [Morpheme ylk](MorphsetTable?no_translation#cldf:ylk) (<a href='#sec:nominalperson' class='crossref' name='sec:nominalperson' release="False" >ref</a>). 
+
+<span title='noun classes re: possession'>❗️</span>
+
 
 ### Suffixes for possessed and non-possessed nouns {#sec:nounposssuf}
 
-In the possession construction in Yawarana, the possessor noun occurs immediately preceding the possessed noun, which is the head of the possession phrase. Alternatively, the possessor can appear as a bound pronominal clitic (first & second person) or a prefix (third person) on the possessed noun. The possessor noun is never marked (for instance, with genitive case), but the possessed noun (the head) is often marked by a lexically specified ‘possessed’ suffix, either [Morpheme rupert](MorphsetTable?#cldf:rupert) '<span class="smallcaps">pert</span>' or [Morpheme tipert](MorphsetTable?#cldf:tipert) ‘pos’. Unpossessed nouns generally are unmarked, but some 15 nouns bear the suffix [Morpheme tenpert](MorphsetTable?#cldf:tenpert) ‘<span class="smallcaps">npert</span>’ when they appear without a possessor. 
-Examples <a class="exref" example_id="onlypossessed"end="unsuffixednouns" ></a> illustrate the possible patterns of markedness for nouns when possessed and unpossessed. In the first category, which contains the vast majority of nouns in our corpus, the unpossessed noun is unmarked, but when possessed the suffix -ri ‘pos’ occurs <a class="exref" example_id="onlypossessed"></a>. A handful of nouns is marked with -ri/-ti ‘pos’ when possessed and with -të ‘npos’ when not possessed <a class="exref" example_id="diffpossessed"></a>. Another handful is unmarked when possessed and marked with -të when not possessed <a class="exref" example_id="suffunpossessed"></a>. The fourth logical possibility, in which the noun bears no marker of possession (or non-possession) whether possessed or unpossessed, contains very few members (only one attested so far); in this case, the difference is marked only by the presence or absence of a possessive prefix or free-form possessor <a class="exref" example_id="unsuffixednouns"></a>. 
+In the possession construction in Yawarana, the possessor noun occurs immediately preceding the possessed noun, which is the head of the possession phrase. <span title='crossref to phrase structure'>❗️</span>
+Alternatively, the possessor can appear as a prefix on the possessed noun.
+The possessor noun is never marked (for instance, with genitive case), but the possessed noun (the head) is often marked for being possessed by a suffix; an unambiguous label for this counterpart of the genitive is pertensive ([dixon2010basic](sources.bib?with_internal_ref_link&ref#cldf:dixon2010basic)).
+The choice of suffix is lexically conditioned; while most nouns take [Morpheme rupert](MorphsetTable?#cldf:rupert), some take [Morpheme tipert](MorphsetTable?no_translation#cldf:tipert).
+Unpossessed nouns generally are unmarked, but some 15 nouns <span title='which? list nouns'>❓</span> bear the suffix [Morpheme tenpert](MorphsetTable?#cldf:tenpert) when they appear without a possessor. 
 
-<span title='where did these come from? elicitation? is there a record?'>❓</span>
+Examples <a class="exref" example_id="onlypossessed"release="False"  end="unsuffixednouns" ></a> illustrate the possible patterns of markedness for nouns when possessed and unpossessed.
+The vast majority of nouns in our corpus are unmarked when unpossessed, but when possessed the suffix [Morpheme rupert](MorphsetTable?#cldf:rupert) occurs <a class="exref" example_id="onlypossessed"release="False" ></a>.
+A handful of nouns <span title='i.e., the 15?'>❓</span> is marked with [Morpheme rupert](MorphsetTable?no_translation#cldf:rupert)/[Morpheme tipert](MorphsetTable?#cldf:tipert) when possessed and with [Morpheme tenpert](MorphsetTable?#cldf:tenpert) when not possessed <a class="exref" example_id="diffpossessed"release="False" ></a>.
+Another handful is unmarked when possessed and marked with [Morpheme tenpert](MorphsetTable?#cldf:tenpert) when not possessed <a class="exref" example_id="suffunpossessed"release="False" ></a>.
+The fourth logical category, where neither possession or non-possession is marked, contains very few members (only one attested so far).
+For these nouns, the difference is marked only by the presence or absence of a possessive prefix or free-form possessor <a class="exref" example_id="unsuffixednouns"release="False" ></a>.
 
 <ol markdown="block" class="example">
 <li class="example" markdown="block" id="onlypossessed"><div markdown="block">Nouns that take a suffix only when possessed:
@@ -72,7 +85,7 @@ Examples <a class="exref" example_id="onlypossessed"end="unsuffixednouns" ></a> 
 </ol>
 
 <ol markdown="block" class="example">
-<li class="example" markdown="block" id="diffpossessed"><div markdown="block">Nouns that take one suffix when possessed and another when unpossessed
+<li class="example" markdown="block" id="diffpossessed"><div markdown="block">Nouns that take one suffix when possessed and another when unpossessed:
 
 | *yë-ri*      | ‘X’s tooth’   | *yë-të*   | ‘tooth’                                |
 |:-------------|:--------------|:----------|:---------------------------------------|
@@ -103,57 +116,64 @@ Examples <a class="exref" example_id="onlypossessed"end="unsuffixednouns" ></a> 
 </ol>
 
 ### Number suffixes {#sec:nominalnumber}
-There are two plural suffixes that can occur on nouns, apparently freely interchangeable.
+There are three plural suffixes that can occur on nouns, apparently freely interchangeable.
 What conditions the choice of suffix is not clear as of yet.
 
-[Example ctorat-17](ExampleTable?example_no=5#cldf:ctorat-17)
+* _-kontomo_
 
-[Example ctorat-40](ExampleTable?example_no=6#cldf:ctorat-40)
+[Example ctorat-17](ExampleTable?example_counter=5#cldf:ctorat-17)
+
+[Example ctorat-40](ExampleTable?example_counter=6#cldf:ctorat-40)
+
+
+### Nominal tense {#sec:nominaltense}
+
+* [Morpheme jpepst](MorphsetTable?#cldf:jpepst)
 
 ### Argument prefixes {#sec:nominalperson}
-Person prefixes on nouns are conditioned by the initial segment (<a href='#tab:possprefixes' class='crossref' id='tab:possprefixes'>crossref</a>).
-C-initial nouns take third person [Morph i31](MorphTable?#cldf:i31), and first and second person are bare [Morph u1](MorphTable?#cldf:u1) and [Morph me2](MorphTable?#cldf:me2).
-On V-initial nouns, third person is marked by [Morph it3](MorphTable?#cldf:it3), and first and second person combine with the linker [Morpheme ylk](MorphsetTable?#cldf:ylk).
-Some examples are shown in <a class="exref" example_id="ctorat-23"end="lastex" ></a>.
+Person prefixes on nouns are conditioned by the initial segment (<a href='#tab:possprefixes' class='crossref' name='tab:possprefixes' release="False" >ref</a>).
+C-initial nouns take [Morph i31](MorphTable?#cldf:i31), and first and second person are bare [Morph u1](MorphTable?#cldf:u1) and [Morph me2](MorphTable?#cldf:me2).
+On V-initial nouns, third person is marked with [Morph it3](MorphTable?#cldf:it3), and the first and second person prefixes combine with the linker [Morpheme ylk](MorphsetTable?#cldf:ylk).
+Some examples are shown in <a class="exref" example_id="ctorat-23"release="False"  end="lastex" ></a>.
 
 
 <a id='tab:possprefixes'></a><div class='caption table' id='tab:possprefixes'>Possessive prefixes on nouns</div>
 
-|                                  | _C                                | _V                                                                 |
-|:---------------------------------|:----------------------------------|:-------------------------------------------------------------------|
-| <span class="smallcaps">1</span> | [Morph u1](MorphTable?#cldf:u1)   | [Morph u1](MorphTable?#cldf:u1)[Morph ylk](MorphTable?#cldf:ylk)   |
-| <span class="smallcaps">2</span> | [Morph me2](MorphTable?#cldf:me2) | [Morph me2](MorphTable?#cldf:me2)[Morph ylk](MorphTable?#cldf:ylk) |
-| <span class="smallcaps">3</span> | [Morph i31](MorphTable?#cldf:i31) | [Morph it3](MorphTable?#cldf:it3)                                  |
+|                                  | _C                                              | _V                                                                                             |
+|:---------------------------------|:------------------------------------------------|:-----------------------------------------------------------------------------------------------|
+| <span class='smallcaps'>1</span> | [Morph u1](MorphTable?no_translation#cldf:u1)   | [Morph u1](MorphTable?no_translation#cldf:u1)[Morph ylk](MorphTable?no_translation#cldf:ylk)   |
+| <span class='smallcaps'>2</span> | [Morph me2](MorphTable?no_translation#cldf:me2) | [Morph me2](MorphTable?no_translation#cldf:me2)[Morph ylk](MorphTable?no_translation#cldf:ylk) |
+| <span class='smallcaps'>3</span> | [Morph i31](MorphTable?no_translation#cldf:i31) | [Morph it3](MorphTable?no_translation#cldf:it3)                                                |
 
-[Example ctorat-23](ExampleTable?example_no=7#cldf:ctorat-23)
+[Example ctorat-23](ExampleTable?example_counter=7#cldf:ctorat-23)
 
-[Example convrisamaj-28](ExampleTable?example_no=8#cldf:convrisamaj-28)
+[Example convrisamaj-28](ExampleTable?example_counter=8#cldf:convrisamaj-28)
 
-[Example desccasmaj-025](ExampleTable?example_no=9#cldf:desccasmaj-025)
+[Example desccasmaj-025](ExampleTable?example_counter=9#cldf:desccasmaj-025)
 
-[Example ctorat-46](ExampleTable?example_no=10#cldf:ctorat-46)
+[Example ctorat-46](ExampleTable?example_counter=10#cldf:ctorat-46)
 
-[Example ctorat-19](ExampleTable?example_id=lastex&example_no=11#cldf:ctorat-19)
+[Example ctorat-19](ExampleTable?example_id=lastex&example_counter=11#cldf:ctorat-19)
 
 
 The linker also occurs with (pro-)nominal possessors:
 
-[Example desccasmaj-131](ExampleTable?example_no=12#cldf:desccasmaj-131)
+[Example desccasmaj-131](ExampleTable?example_counter=12#cldf:desccasmaj-131)
 
-There are some nouns (kinship terms?) that take an apparently older old second person [Morpheme a2](MorphsetTable?#cldf:a2) (<a href='#tab:oldpossprefixes' class='crossref' id='tab:oldpossprefixes'>crossref</a>).
+There are some nouns <span title='presumably kinship terms'>❗️</span> that take an apparently older old second person [Morpheme a2](MorphsetTable?#cldf:a2) (<a href='#tab:oldpossprefixes' class='crossref' name='tab:oldpossprefixes' release="False" >ref</a>).
 
 
 <a id='tab:oldpossprefixes'></a><div class='caption table' id='tab:oldpossprefixes'>Archaic possessive prefixes on nouns</div>
 
-|                                  | _C                                | _V                                                               |
-|:---------------------------------|:----------------------------------|:-----------------------------------------------------------------|
-| <span class="smallcaps">1</span> | [Morph u1](MorphTable?#cldf:u1)   | [Morph u1](MorphTable?#cldf:u1)[Morph ylk](MorphTable?#cldf:ylk) |
-| <span class="smallcaps">2</span> | [Morph a2](MorphTable?#cldf:a2)   | [Morph a2](MorphTable?#cldf:a2)[Morph ylk](MorphTable?#cldf:ylk) |
-| <span class="smallcaps">3</span> | [Morph i31](MorphTable?#cldf:i31) | [Morph it3](MorphTable?#cldf:it3)                                |
+|                                  | _C                                              | _V                                                                                           |
+|:---------------------------------|:------------------------------------------------|:---------------------------------------------------------------------------------------------|
+| <span class='smallcaps'>1</span> | [Morph u1](MorphTable?no_translation#cldf:u1)   | [Morph u1](MorphTable?no_translation#cldf:u1)[Morph ylk](MorphTable?no_translation#cldf:ylk) |
+| <span class='smallcaps'>2</span> | [Morph a2](MorphTable?no_translation#cldf:a2)   | [Morph a2](MorphTable?no_translation#cldf:a2)[Morph ylk](MorphTable?no_translation#cldf:ylk) |
+| <span class='smallcaps'>3</span> | [Morph i31](MorphTable?no_translation#cldf:i31) | [Morph it3](MorphTable?no_translation#cldf:it3)                                              |
 
 <span title='find examples for these'>❗️</span>
 
-#### irregularly inflected nouns:
+### Root suppletion in nominal possession {#sec:irregnouns}
 
 * 'father':
     * 1 *papa*
@@ -161,25 +181,36 @@ There are some nouns (kinship terms?) that take an apparently older old second p
     * 3 _imu_
     * NP _yïmï_
 
+candidates:
+
+* 'arrow'
+* 'house'
+* 'poop'
+* 'mother'
+* 'hammock string'
+
 
 ## Nominal Derivational Morphology {#sec:nounderiv}
 
 * V → N
-    * [Morpheme rinmlz](MorphsetTable?#cldf:rinmlz) ‘action <span class="smallcaps">nmlz</span>’
-    * [Morpheme jpenmlz](MorphsetTable?#cldf:jpenmlz)
-        * ‘<span class="smallcaps">PST.ABS.nmlz</span>’
-        * ‘<span class="smallcaps">PST</span>.ACT.<span class="smallcaps">nmlz</span>?’ 
-    * ?[Morpheme neinf](MorphsetTable?#cldf:neinf) ‘<span class="smallcaps">inf</span> / generic action nominalizer’
-        * Not only on intransitive verbs? see *wanumanë* 'gossip, lie' and *wajtënë* 'dance' 
-    * [Morpheme ninmlz](MorphsetTable?#cldf:ninmlz) ‘<span class="smallcaps">a.nmlz</span>’
-    * [Morpheme nnmlzpre](MorphsetTable?#cldf:nnmlzpre) ‘<span class="smallcaps">p.nmlz</span>’
-        * [Morpheme nnmlzpre](MorphsetTable?#cldf:nnmlzpre)V[Morpheme rinmlz](MorphsetTable?#cldf:rinmlz)    ‘nonpast?’
-        * ?? [Morpheme nnmlzpre](MorphsetTable?#cldf:nnmlzpre)V[Morpheme jpepst](MorphsetTable?#cldf:jpepst)    ‘past?’
-    * [Morpheme sapenmlz](MorphsetTable?#cldf:sapenmlz) ‘<span class="smallcaps">ABS.nmlz</span>’ (contrast with ‑jpë )
-    * [Morpheme toponmlz](MorphsetTable?#cldf:toponmlz) ‘<span class="smallcaps">circ.nmlz</span>’
-    * [Morpheme pininmlz](MorphsetTable?#cldf:pininmlz) ‘<span class="smallcaps">priv.nmlz</span>’ ?
+    * [Morpheme rinmlz](MorphsetTable?translation=action NMLZ#cldf:rinmlz) <span title='potentially A.NMLZ'>❗️</span>
+    * [Morpheme jpenmlz](MorphsetTable?#cldf:jpenmlz) 
+        * also ‘<span class='smallcaps'>PST.ABS.nmlz</span>’ <span title='convsuenmaj-47'>❗️</span>
+    * [Morpheme neinf](MorphsetTable?#cldf:neinf) or ‘generic action nominalizer’ <span title='this probably only occurs on intransitive verbs'>❗️</span>
+        * _wënkej-në_ from transitive _wënkepï_ 'forget'
+    * [Morpheme ninmlz](MorphsetTable?#cldf:ninmlz) <span title='ctoyucairdi-4, descokigrme-53 for predicative use'>❗️</span>
+    * [Morpheme nnmlzpre](MorphsetTable?no_translation#cldf:nnmlzpre)V[Morpheme rinmlz](MorphsetTable?no_translation#cldf:rinmlz) only with [Morpheme yeme-eat-fruits-eggs-soup](MorphsetTable?#cldf:yeme-eat-fruits-eggs-soup)
+    * [Morpheme sapenmlz](MorphsetTable?#cldf:sapenmlz) (contrast with [Morpheme jpenmlz](MorphsetTable?#cldf:jpenmlz)) 
+    * [Morpheme toponmlz](MorphsetTable?#cldf:toponmlz) 
+    * [Morpheme pininmlz](MorphsetTable?#cldf:pininmlz) <span title='only found with -se-mï, not attested as nominalizer'>❗️</span>
 * Adv → N 
-    * [Morpheme minmlz](MorphsetTable?#cldf:minmlz) '<span class="smallcaps">nmlz</span>'
+    * [Morpheme minmlz](MorphsetTable?#cldf:minmlz)
+    * [Morpheme anonmlz](MorphsetTable?#cldf:anonmlz)
+    * absence of _-ato_ '<span class='smallcaps'>nmlz</span>'
 * Postp → N
-    * [Morpheme anonmlz](MorphsetTable?#cldf:anonmlz) ‘<span class="smallcaps">nmlz</span>’
-* What about [Morpheme jpenmlz](MorphsetTable?#cldf:jpenmlz) on AD forms? Does it derive a noun?
+    * [Morpheme anonmlz](MorphsetTable?#cldf:anonmlz)
+* N → N
+    * discuss _pïjkë_ and _sere-kë_ 'manioc-DIM' , reference sections
+    * _-imë_: e.g., _wara_ 'woman' _waraimë_ 'married woman' (dictionary)
+* What about [Morpheme jpenmlz](MorphsetTable?#cldf:jpenmlz) on <span class='smallcaps'>ad</span> forms? Does it derive a noun?
+    * histyarirdi-0592 _pata penarëjpë_

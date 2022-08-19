@@ -1,14 +1,23 @@
-# A digital sketch grammar of Yawarana (v0.0.3.draft)
+# A digital sketch grammar of Yawarana (v0.0.3.draft2)
 
 **CLDF Metadata**: [metadata.json](./metadata.json)
 
 **Sources**: [sources.bib](./sources.bib)
 
-This is a digital description of Yawarana.
+This is a CLDF dataset containing a digital description of Yawarana.
+    The following linguistic entities and properties are encoded:
+    * sentences
+    * word forms
+    * lexemes
+    * morphemes
+    * morphs
+    * parts of speech
+    
+    It also contains descriptive texts with references to the data.
 
 property | value
  --- | ---
-[dc:bibliographicCitation](http://purl.org/dc/terms/bibliographicCitation) | Matter F., Cáceres Arandia N., Gildea S. (2022). A digital sketch grammar of Yawarana (version 0.0.2.draft). URL: https://github.com/fmatter/yawarana-sketch-cldf/tree/0.0.2.draft
+[dc:bibliographicCitation](http://purl.org/dc/terms/bibliographicCitation) | Matter F., Cáceres Arandia N., Gildea S. (2022). A digital sketch grammar of Yawarana (version 0.0.3.draft). URL: https://github.com/fmatter/yawarana-sketch-cldf/tree/0.0.3.draft
 [dc:conformsTo](http://purl.org/dc/terms/conformsTo) | [CLDF Generic](http://cldf.clld.org/v1.0/terms.rdf#Generic)
 [dc:identifier](http://purl.org/dc/terms/identifier) | https://fl.mt/yawarana-sketch
 [dc:license](http://purl.org/dc/terms/license) | https://creativecommons.org/licenses/by-sa/4.0/
@@ -16,22 +25,6 @@ property | value
 [rdf:ID](http://www.w3.org/1999/02/22-rdf-syntax-ns#ID) | yawarana-sketch
 [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | http://www.w3.org/ns/dcat#Distribution
 
-
-## <a name="table-chaptertable"></a>Table [ChapterTable](./ChapterTable)
-
-property | value
- --- | ---
-[dc:extent](http://purl.org/dc/terms/extent) | 11
-
-
-### Columns
-
-Name/Property | Datatype | Description
- --- | --- | --- 
-[ID](http://cldf.clld.org/v1.0/terms.rdf#id) | `string` | Primary key
-[Name](http://cldf.clld.org/v1.0/terms.rdf#name) | `string` | 
-[Description](http://cldf.clld.org/v1.0/terms.rdf#description) | `string` | 
-`Number` | `integer` | Chapter number (optional)
 
 ## <a name="table-contributortable"></a>Table [ContributorTable](./ContributorTable)
 
@@ -50,12 +43,28 @@ Name/Property | Datatype | Description
 `Url` | `string` | 
 `Order` | `integer` | 
 
+## <a name="table-chaptertable"></a>Table [ChapterTable](./ChapterTable)
+
+property | value
+ --- | ---
+[dc:extent](http://purl.org/dc/terms/extent) | 20
+
+
+### Columns
+
+Name/Property | Datatype | Description
+ --- | --- | --- 
+[ID](http://cldf.clld.org/v1.0/terms.rdf#id) | `string` | Primary key
+[Name](http://cldf.clld.org/v1.0/terms.rdf#name) | `string` | 
+[Description](http://cldf.clld.org/v1.0/terms.rdf#description) | `string` | 
+`Number` | `integer` | Chapter number (optional)
+
 ## <a name="table-examplescsv"></a>Table [examples.csv](./examples.csv)
 
 property | value
  --- | ---
 [dc:conformsTo](http://purl.org/dc/terms/conformsTo) | [CLDF ExampleTable](http://cldf.clld.org/v1.0/terms.rdf#ExampleTable)
-[dc:extent](http://purl.org/dc/terms/extent) | 165
+[dc:extent](http://purl.org/dc/terms/extent) | 62
 
 
 ### Columns
@@ -73,14 +82,30 @@ Name/Property | Datatype | Description
 `Text_ID` | `string` | The text to which this record belongs<br>References [TextTable::ID](#table-texttable)
 `Part` | `integer` | Position in the text
 [Source](http://cldf.clld.org/v1.0/terms.rdf#source) | list of `string` (separated by `;`) | References [sources.bib::BibTeX-key](./sources.bib)
+`Original_Translation` | `string` | The original translation of the example text.
 `Tags` | list of `string` (separated by `,`) | 
+`Speaker_ID` | `string` | References [SpeakerTable::ID](#table-speakertable)
+
+## <a name="table-speakertable"></a>Table [SpeakerTable](./SpeakerTable)
+
+property | value
+ --- | ---
+[dc:extent](http://purl.org/dc/terms/extent) | 11
+
+
+### Columns
+
+Name/Property | Datatype | Description
+ --- | --- | --- 
+[ID](http://cldf.clld.org/v1.0/terms.rdf#id) | `string` | Primary key
+[Abbreviation](http://cldf.clld.org/v1.0/terms.rdf#name) | `string` | 
 
 ## <a name="table-formscsv"></a>Table [forms.csv](./forms.csv)
 
 property | value
  --- | ---
 [dc:conformsTo](http://purl.org/dc/terms/conformsTo) | [CLDF FormTable](http://cldf.clld.org/v1.0/terms.rdf#FormTable)
-[dc:extent](http://purl.org/dc/terms/extent) | 271
+[dc:extent](http://purl.org/dc/terms/extent) | 302
 
 
 ### Columns
@@ -101,7 +126,7 @@ Name/Property | Datatype | Description
 property | value
  --- | ---
 [dc:conformsTo](http://purl.org/dc/terms/conformsTo) | [CLDF ParameterTable](http://cldf.clld.org/v1.0/terms.rdf#ParameterTable)
-[dc:extent](http://purl.org/dc/terms/extent) | 315
+[dc:extent](http://purl.org/dc/terms/extent) | 687
 
 
 ### Columns
@@ -117,7 +142,7 @@ Name/Property | Datatype | Description
 property | value
  --- | ---
 [dc:conformsTo](http://purl.org/dc/terms/conformsTo) | [CLDF MediaTable](http://cldf.clld.org/v1.0/terms.rdf#MediaTable)
-[dc:extent](http://purl.org/dc/terms/extent) | 196
+[dc:extent](http://purl.org/dc/terms/extent) | 192
 
 
 ### Columns
@@ -150,11 +175,41 @@ Name/Property | Datatype | Description
 [Glottocode](http://cldf.clld.org/v1.0/terms.rdf#glottocode) | `string` | 
 [ISO639P3code](http://cldf.clld.org/v1.0/terms.rdf#iso639P3code) | `string` | 
 
+## <a name="table-lexememorphemeparts"></a>Table [LexemeMorphemeParts](./LexemeMorphemeParts)
+
+property | value
+ --- | ---
+[dc:extent](http://purl.org/dc/terms/extent) | 76
+
+
+### Columns
+
+Name/Property | Datatype | Description
+ --- | --- | --- 
+[ID](http://cldf.clld.org/v1.0/terms.rdf#id) | `string` | Primary key
+`Lexeme_ID` | `string` | References [LexemeTable::ID](#table-lexemetable)
+`Morpheme_ID` | `string` | References [MorphsetTable::ID](#table-morphsettable)
+
+## <a name="table-lexemelexemeparts"></a>Table [LexemeLexemeParts](./LexemeLexemeParts)
+
+property | value
+ --- | ---
+[dc:extent](http://purl.org/dc/terms/extent) | 67
+
+
+### Columns
+
+Name/Property | Datatype | Description
+ --- | --- | --- 
+[ID](http://cldf.clld.org/v1.0/terms.rdf#id) | `string` | Primary key
+`Lexeme_ID` | `string` | References [LexemeTable::ID](#table-lexemetable)
+`Base_ID` | `string` | References [LexemeTable::ID](#table-lexemetable)
+
 ## <a name="table-formslices"></a>Table [FormSlices](./FormSlices)
 
 property | value
  --- | ---
-[dc:extent](http://purl.org/dc/terms/extent) | 405
+[dc:extent](http://purl.org/dc/terms/extent) | 236
 
 
 ### Columns
@@ -183,11 +238,44 @@ Name/Property | Datatype | Description
 [Name](http://cldf.clld.org/v1.0/terms.rdf#name) | `string` | 
 [Description](http://cldf.clld.org/v1.0/terms.rdf#description) | `string` | 
 
+## <a name="table-lexemetable"></a>Table [LexemeTable](./LexemeTable)
+
+property | value
+ --- | ---
+[dc:extent](http://purl.org/dc/terms/extent) | 570
+
+
+### Columns
+
+Name/Property | Datatype | Description
+ --- | --- | --- 
+[ID](http://cldf.clld.org/v1.0/terms.rdf#id) | `string` | Primary key
+[Language_ID](http://cldf.clld.org/v1.0/terms.rdf#languageReference) | `string` | A reference to a language (or variety) the form belongs to<br>References [languages.csv::ID](#table-languagescsv)
+[Name](http://cldf.clld.org/v1.0/terms.rdf#name) | `string` | 
+[Description](http://cldf.clld.org/v1.0/terms.rdf#description) | `string` | 
+[Comment](http://cldf.clld.org/v1.0/terms.rdf#comment) | `string` | 
+[Parameter_ID](http://cldf.clld.org/v1.0/terms.rdf#parameterReference) | list of `string` (separated by `; `) | A reference to the meaning denoted by the form<br>References [parameters.csv::ID](#table-parameterscsv)
+
+## <a name="table-inflectiontable"></a>Table [InflectionTable](./InflectionTable)
+
+property | value
+ --- | ---
+[dc:extent](http://purl.org/dc/terms/extent) | 156
+
+
+### Columns
+
+Name/Property | Datatype | Description
+ --- | --- | --- 
+[ID](http://cldf.clld.org/v1.0/terms.rdf#id) | `string` | Primary key
+`Form_ID` | `string` | References [forms.csv::ID](#table-formscsv)
+`Lexeme_ID` | `string` | References [LexemeTable::ID](#table-lexemetable)
+
 ## <a name="table-exampleslices"></a>Table [ExampleSlices](./ExampleSlices)
 
 property | value
  --- | ---
-[dc:extent](http://purl.org/dc/terms/extent) | 802
+[dc:extent](http://purl.org/dc/terms/extent) | 255
 
 
 ### Columns
@@ -204,7 +292,7 @@ Name/Property | Datatype | Description
 
 property | value
  --- | ---
-[dc:extent](http://purl.org/dc/terms/extent) | 322
+[dc:extent](http://purl.org/dc/terms/extent) | 748
 
 
 ### Columns
@@ -218,12 +306,14 @@ Name/Property | Datatype | Description
 [Comment](http://cldf.clld.org/v1.0/terms.rdf#comment) | `string` | 
 `Morpheme_ID` | `string` | The morpheme this form belongs to<br>References [MorphsetTable::ID](#table-morphsettable)
 [Parameter_ID](http://cldf.clld.org/v1.0/terms.rdf#parameterReference) | list of `string` (separated by `; `) | A reference to the meaning denoted by the form<br>References [parameters.csv::ID](#table-parameterscsv)
+[Source](http://cldf.clld.org/v1.0/terms.rdf#source) | list of `string` (separated by `; `) | References [sources.bib::BibTeX-key](./sources.bib)
+`Translation` | `string` | A human-friendly translation
 
 ## <a name="table-morphsettable"></a>Table [MorphsetTable](./MorphsetTable)
 
 property | value
  --- | ---
-[dc:extent](http://purl.org/dc/terms/extent) | 236
+[dc:extent](http://purl.org/dc/terms/extent) | 557
 
 
 ### Columns
@@ -235,6 +325,8 @@ Name/Property | Datatype | Description
 [Name](http://cldf.clld.org/v1.0/terms.rdf#name) | `string` | 
 [Comment](http://cldf.clld.org/v1.0/terms.rdf#comment) | `string` | 
 [Parameter_ID](http://cldf.clld.org/v1.0/terms.rdf#parameterReference) | list of `string` (separated by `; `) | A reference to the meaning denoted by the form<br>References [parameters.csv::ID](#table-parameterscsv)
+[Source](http://cldf.clld.org/v1.0/terms.rdf#source) | list of `string` (separated by `; `) | References [sources.bib::BibTeX-key](./sources.bib)
+`Translation` | `string` | A human-friendly translation
 
 ## <a name="table-phonemetable"></a>Table [PhonemeTable](./PhonemeTable)
 
@@ -256,7 +348,7 @@ Name/Property | Datatype | Description
 
 property | value
  --- | ---
-[dc:extent](http://purl.org/dc/terms/extent) | 3
+[dc:extent](http://purl.org/dc/terms/extent) | 9
 
 
 ### Columns

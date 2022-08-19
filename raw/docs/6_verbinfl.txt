@@ -1,10 +1,10 @@
 <a id='verbinfl'></a>
-
+<span title='write an introduction'>❗️</span>
 
 ## Person prefixes {#sec:verbperson}
-Verbs are inflected for person with a set of prefixes, shown in <a href='#tab:verbprefixes' class='crossref' name='tab:verbprefixes' release="True" >ref</a>.
-First and second person prefixes show ergative alignment, expressing <span class='smallcaps'>s</span> and <span class='smallcaps'>p</span>. 
-Intransitive verbs are not overtly inflected for third person, while transitive verbs show an optional [Morpheme t3](MorphsetTable?no_translation#cldf:t3) in <span class='smallcaps'>3</span>><span class='smallcaps'>3</span> scenarios.
+Verbs are inflected for person with a set of prefixes, shown in <a href='#tab:verbprefixes' class='crossref' name='tab:verbprefixes' release="False" >ref</a>.
+First and second person prefixes show ergative alignment, expressing <span class='smallcaps'>s</span> and <span class='smallcaps'>p</span>. <span title='count cases of expressing A'>❗️</span>
+Intransitive verbs are not overtly inflected for third person, while transitive verbs show an optional [Morpheme t3](MorphsetTable?no_translation#cldf:t3) in <span class='smallcaps'>3</span>><span class='smallcaps'>3</span> scenarios.<span title='mentionworthy that this is not in alternation with preceding NPs'>❗️</span>
 
 
 <a id='tab:verbprefixes'></a><div class='caption table' id='tab:verbprefixes'>Person marking prefixes on verbs</div>
@@ -16,20 +16,20 @@ Intransitive verbs are not overtly inflected for third person, while transitive 
 | <span class='smallcaps'>1+2</span> | _ej(n)-_                                              | _ej(n)-_                                              |
 | <span class='smallcaps'>3</span>   | ∅                                                     | [Morpheme t3](MorphsetTable?no_translation#cldf:t3)   |
 
-* one attested case of [Morpheme t3](MorphsetTable?translation=3>3#cldf:t3) on the lexical verb of a _-pëkë_ construction w/ 2nd person <span class='smallcaps'>a</span> on <span class='smallcaps'>aux</span> 
+* one attested case of [Morpheme t3](MorphsetTable?translation=3>3#cldf:t3) on the lexical verb of a _-pëkë_ construction w/ 2nd person <span class='smallcaps'>a</span> on <span class='smallcaps'>aux</span> <span title='which one?'>❓</span>
     * Ø‑ ‘<span class='smallcaps'>3p</span>’ with transitive verbs with <span class='smallcaps'>1a</span> or <span class='smallcaps'>2a</span>
-* one example of [Morpheme me2](MorphsetTable?#cldf:me2) ‘<span class='smallcaps'>2A</span>’ on imperative verb 
+* one example of [Morpheme me2](MorphsetTable?#cldf:me2) ‘<span class='smallcaps'>2A</span>’ on imperative verb <span title='GrMePers.029'>❗️</span>
+<span title='FM: u- is sometimes wï-, but usually not transcribed & distribution unclear'>❗️</span>
 
 
-
-
+<span title='Check: appears that first and second person are reduced forms, with long vowel? wait for leila'>❓</span>
 
 * \*_t‑V‑se_ is no more — the _t‑_ is gone, except in lexicalized items
 
 
 ## Main clause tense‑aspect‑mood‑polarity suffixes {#sec:tam}
-Verbs in main clauses are inflected for TAMP with a set of suffixes, shown in <a href='#tab:verbtam' class='crossref' name='tab:verbtam' release="True" >ref</a>.
-They are discussed in <a href='#sec:riipfv' class='crossref' name='sec:riipfv' release="True"  end="sec:sareimn" >ref</a>.
+Verbs in main clauses are inflected for TAMP with a set of suffixes, shown in <a href='#tab:verbtam' class='crossref' name='tab:verbtam' release="False" >ref</a>.
+They are discussed in <a href='#sec:riipfv' class='crossref' name='sec:riipfv' release="False"  end="sec:sareimn" >ref</a>.
 
 
 <a id='tab:verbtam'></a><div class='caption table' id='tab:verbtam'>Verbal TAM suffixes</div>
@@ -83,9 +83,9 @@ Misc:
 
 #### Semantics
 * not specified for tense, just imperfective aspect:
-    * past <a class="exref" example_id="ctorat-16"release="True" ></a>
-    * future <a class="exref" example_id="convrisamaj-06"release="True" ></a>
-    * gnomic/present? <a class="exref" example_id="gnomicri"release="True" ></a>
+    * past <a class="exref" example_id="ctorat-16"release="False" ></a>
+    * future <a class="exref" example_id="convrisamaj-06"release="False" ></a>
+    * gnomic/present? <a class="exref" example_id="gnomicri"release="False" ></a>
 
 [Example ctorat-16](ExampleTable?example_counter=15#cldf:ctorat-16)
 [Example convrisamaj-06](ExampleTable?example_counter=16#cldf:convrisamaj-06)
@@ -95,28 +95,28 @@ Misc:
 
 * allomorphy: none?
 * diachrony: from [Morpheme jpenmlz](MorphsetTable?#cldf:jpenmlz)
- 
+<span title='negation?'>❓</span> <span title='semantics?'>❓</span>
 
 ### [Morpheme sepst](MorphsetTable?no_translation#cldf:sepst)
 
 * allomorphy: [Morph septcp](MorphTable?no_translation#cldf:septcp)/[Morph cheptcp](MorphTable?#cldf:cheptcp)
 * diachrony: from [Morpheme septcp](MorphsetTable?#cldf:septcp)
-
-
+<span title='negation?'>❓</span>
+<span title='semantics?'>❓</span>
 
 ### [Morpheme sapepfv](MorphsetTable?no_translation#cldf:sapepfv)
 
 * diachrony: from [Morpheme sapenmlz](MorphsetTable?#cldf:sapenmlz)
 * distribution: only occurs on the copula?
 * allomorphy: [Morph sapepfv](MorphTable?no_translation#cldf:sapepfv) and [Morph sajpfv](MorphTable?no_translation#cldf:sajpfv)
-* negation: with [Morpheme janeg](MorphsetTable?#cldf:janeg) on lexical verb <a class="exref" example_id="ctoaragrme-38"release="True"  end="ctoaragrme-40" ></a>
-
+* negation: with [Morpheme janeg](MorphsetTable?#cldf:janeg) on lexical verb <a class="exref" example_id="ctoaragrme-38"release="False"  end="ctoaragrme-40" ></a>
+<span title='semantics?'>❓</span>
 
 [Example ctoaragrme-38](ExampleTable?example_counter=18#cldf:ctoaragrme-38)
 [Example ctoaragrme-39](ExampleTable?example_counter=19#cldf:ctoaragrme-39)
 [Example ctoaragrme-40](ExampleTable?example_counter=20#cldf:ctoaragrme-40)
 
-* what about <a class="exref" example_id="ctorat-19"release="True" ></a>? is that existential negation?
+* what about <a class="exref" example_id="ctorat-19"release="False" ></a>? is that existential negation?
 
 [Example ctorat-19](ExampleTable?example_counter=21#cldf:ctorat-19)
 
@@ -130,7 +130,7 @@ Misc:
 
 
 ## Subordinate Clause markers
-
+<span title='these should maybe go to another section'>❗️</span>
 
 <!-- probably all productive, right? -->
 * Nominalizations
@@ -166,10 +166,10 @@ Misc:
 
 
 ## Copula / Auxiliary
+<span title='paradigm'>❗️</span>
+<span title='did any particles develop from inflected forms?  Man, wai, manai, etc'>❓</span>
+<span title='are there irregular pat/perfect participles? nahkë, etc'>❓</span>
+<span title='ejnë may come from an inflected form of the copula'>❗️</span>
 
-
-
-
-
-* there is stem allomorphy: [Morpheme chi-cop](MorphsetTable?no_translation#cldf:chi-cop), [Morpheme wej-cop](MorphsetTable?no_translation#cldf:wej-cop) 
+* there is stem allomorphy: [Morpheme chi-cop](MorphsetTable?no_translation#cldf:chi-cop), [Morpheme wej-cop](MorphsetTable?no_translation#cldf:wej-cop) <span title='should these be the same morpheme?'>❓</span>
 * [Morpheme mare-rel-inan](MorphsetTable?#cldf:mare-rel-inan) and [Morpheme maniki-rel-anim](MorphsetTable?#cldf:maniki-rel-anim)

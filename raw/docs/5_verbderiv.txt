@@ -4,11 +4,11 @@
 
 [Language yab](LanguageTable?#cldf:yab) verb roots can be divided into those yielding an intransitive stem, and those yielding a transitive stem.
 The only inflectional criterion distinguishing the two classes is the third person prefix [Morpheme t3](MorphsetTable?no_translation#cldf:t3), which can only occur on transitive stems.
-Thus, transitive [Morpheme yawanka-kill](MorphsetTable?#cldf:yawanka-kill) can take [Morpheme t3](MorphsetTable?no_translation#cldf:t3) <a class="exref" example_id="convfemgrme-217"release="True" ></a>, but intransitive [Morpheme yaruwa-laugh](MorphsetTable?#cldf:yaruwa-laugh) does not <a class="exref" example_id="convrisamaj-42"release="True" ></a>.
+Thus, transitive [Morpheme yawanka-kill](MorphsetTable?#cldf:yawanka-kill) can take [Morpheme t3](MorphsetTable?no_translation#cldf:t3) <a class="exref" example_id="convfemgrme-217"release="False" ></a>, but intransitive [Morpheme yaruwa-laugh](MorphsetTable?#cldf:yaruwa-laugh) does not <a class="exref" example_id="convrisamaj-42"release="False" ></a>.
 
 [Example convfemgrme-217,convrisamaj-42](ExampleTable?ids=convfemgrme-217,convrisamaj-42&example_counter=13#cldf:__all__)
 
-: -nëpëkë and -tëpëkë)
+<span title='subclass of intransitive (?'>❓</span>: -nëpëkë and -tëpëkë)
 
 * detransitive
 * ditransitive
@@ -17,7 +17,7 @@ Thus, transitive [Morpheme yawanka-kill](MorphsetTable?#cldf:yawanka-kill) can t
 * ijtëri
 
 * Note that all transitive verbs are consonant‑initial, whether etymologically or not because [Morpheme ylk](MorphsetTable?#cldf:ylk) is added to all vowel‑initial roots
-* the _y‑_ disappears when preceded by the detransitivizer  
+* the _y‑_ disappears when preceded by the detransitivizer <span title='examples for detransitivized verbs'>❗️</span> <span title='what about V-initial intransitive verbs? how are they inflected?'>❓</span>
 
 ## Verbalizing suffixes {#sec:vbz}
 None of these are productive, although there are many lexemes derived with them.
@@ -64,8 +64,8 @@ None of these are productive, although there are many lexemes derived with them.
 | [Lexeme aki-worm](LexemeTable?#cldf:aki-worm)                         | [Lexeme akita-fill-with-worms](LexemeTable?#cldf:akita-fill-with-worms)                       |
 
 #### _-pamï_ / _-mamï_
-
-
+<span title='check for _-pantari_'>❗️</span>
+<span title='check tri and way'>❗️</span>
 
 ### Transitive
 
@@ -84,7 +84,7 @@ None of these are productive, although there are many lexemes derived with them.
 
 ### Detransitivizing prefixes {#sec:detrz}
 
-
+<span title='distribution? morphemic analysis?'>❓</span>
 
 1. [Morpheme dt2](MorphsetTable?no_translation#cldf:dt2)
 1. [Morpheme dt1](MorphsetTable?no_translation#cldf:dt1)
@@ -92,8 +92,8 @@ None of these are productive, although there are many lexemes derived with them.
 
 
 ### Transitivizing suffixes
-* _-ma_ 
-* 
+* _-ma_ <span title='from verbs or only nouns?'>❓</span>
+* <span title='_-nïkï_ / _-nïpï_ / _-nëpï_'>❗️</span>
 * does [Morpheme kavbz](MorphsetTable?#cldf:kavbz) go on intransitive verb stems?
 
 ### Ditransitivizing suffixes
@@ -101,7 +101,7 @@ None of these are productive, although there are many lexemes derived with them.
 
 ## Meaning-changing suffixes
 
-* <span class='smallcaps'>DES</span> 
+* <span class='smallcaps'>DES</span> <span title='only occurs with -ri and -jra'>❗️</span>
 * <span class='smallcaps'>PLUR</span>
 * <span class='smallcaps'>CESS</span>
 
