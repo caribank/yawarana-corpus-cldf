@@ -50,15 +50,13 @@ zero_slugged = {}
 
 def slugify(input_str):
     global zero_slug_counter
-    global zero_slugged
     slug = sslug(input_str)
     if slug == "":
         if input_str not in zero_slugged:
             zero_slug_counter += 1
             zero_slugged[input_str] = f"slug-{zero_slug_counter}"
         return zero_slugged[input_str]
-    else:
-        return slug
+    return slug
 
 
 # easily modify an existing CLDF table column specification to add a separator
@@ -68,7 +66,8 @@ def custom_spec(component, column, separator="; "):
         .resolve()
         .parent.joinpath("components", f"{component}-metadata.json")
     )
-    metadata = json.load(open(path, "r"))
+    with open(path, "r", encoding="utf-8") as f:
+        metadata = json.load(f)
     for col in metadata["tableSchema"]["columns"]:
         if col["name"] == column:
             if separator:
@@ -76,6 +75,7 @@ def custom_spec(component, column, separator="; "):
             elif "separator" in column:
                 del col["separator"]
             return col
+    return None
 
 
 # use pandas to read csvs and not use NaN
@@ -104,7 +104,8 @@ segmentizer = Segmentizer(
 def create_dataset(mode, release):
 
     # load dataset version from the pylingdocs metadata
-    version = yaml.load(open("raw/metadata.yaml"), Loader=yaml.SafeLoader)["version"]
+    with open("raw/metadata.yaml", "r", encoding="utf-8") as f:
+        version = yaml.load(f, Loader=yaml.SafeLoader)["version"]
 
     # use cffconvert to easily create citation string for CLDF metadata
     citation = create_citation(infile="CITATION.cff", url=None)
@@ -114,7 +115,8 @@ def create_dataset(mode, release):
         outfile="/tmp/citation.txt",
         validate_only=False,
     )
-    citation = open("/tmp/citation.txt", "r", encoding="utf8").read().strip()
+    with open("/tmp/citation.txt", "r", encoding="utf-8") as f:
+        citation = f.read().strip()
     log.info(f"Citation: {citation}")
 
     # gather audio files potentially matching word forms
@@ -151,15 +153,15 @@ def create_dataset(mode, release):
             writer.cldf.properties.setdefault(
                 "dc:description",
                 """This is a CLDF dataset containing a digital description of Yawarana.
-    The following linguistic entities and properties are encoded:
-    * sentences
-    * word forms
-    * lexemes
-    * morphemes
-    * morphs
-    * parts of speech
-    
-    It also contains descriptive text referencing the data.""",
+The following linguistic entities and properties are encoded:
+* sentences
+* word forms
+* lexemes
+* morphemes
+* morphs
+* parts of speech
+
+It also contains descriptive text referencing the data.""",
             )
             writer.cldf.properties[
                 "dc:license"
@@ -171,34 +173,37 @@ def create_dataset(mode, release):
             writer.cldf.add_component(cldf_md("ChapterTable"))
             chapters = pd.read_csv(doc_path / "chapters.csv")
             for chapter in chapters.to_dict("records"):
+                with open(doc_path / chapter["Filename"], "r", encoding="utf-8") as f:
+                    writer.objects["ChapterTable"].append(
+                        {
+                            "ID": chapter["ID"],
+                            "Name": chapter["title"],
+                            "Number": chapter["Number"],
+                            "Description": f.read(),
+                        }
+                    )
+            with open("raw/landingpage.txt", "r", encoding="utf-8") as f:
                 writer.objects["ChapterTable"].append(
                     {
-                        "ID": chapter["ID"],
-                        "Name": chapter["title"],
-                        "Number": chapter["Number"],
-                        "Description": open(doc_path / chapter["Filename"], "r").read(),
+                        "ID": "landingpage",
+                        "Name": "Landing page",
+                        "Description": f.read(),
                     }
                 )
-            writer.objects["ChapterTable"].append(
-                {
-                    "ID": "landingpage",
-                    "Name": "Landing page",
-                    "Description": open("raw/landingpage.txt", "r").read(),
-                }
-            )
 
             if not release:
-                writer.objects["ChapterTable"].append(
-                    {
-                        "ID": "ambiguity",
-                        "Name": "Manuscript: Parsing ambiguity",
-                        "Description": open("raw/ambiguity.txt", "r").read(),
-                    }
-                )
+                with open("raw/ambiguity.txt", "r", encoding="utf-8") as f:
+                    writer.objects["ChapterTable"].append(
+                        {
+                            "ID": "ambiguity",
+                            "Name": "Manuscript: Parsing ambiguity",
+                            "Description": f.read(),
+                        }
+                    )
 
         elif mode == "corpus":
             writer.cldf.properties.setdefault("rdf:ID", "yawarana-corpus")
-            writer.cldf.properties.setdefault("dc:title", f"Yawarana text corpus")
+            writer.cldf.properties.setdefault("dc:title", "Yawarana text corpus")
             writer.cldf.properties[
                 "dc:license"
             ] = "https://creativecommons.org/licenses/by-sa/4.0/"
@@ -209,14 +214,13 @@ def create_dataset(mode, release):
             writer.cldf.properties.setdefault(
                 "dc:description",
                 """This is a CLDF dataset containing a text corpus of Yawarana speech.
-    The following linguistic entities and properties are encoded:
-    * sentences
-    * word forms
-    * lexemes
-    * morphemes
-    * morphs
-    * parts of speech
-    """,
+The following linguistic entities and properties are encoded:
+* sentences
+* word forms
+* lexemes
+* morphemes
+* morphs
+* parts of speech""",
             )
 
         log.info("Adding linguistic components")
@@ -329,14 +333,9 @@ def create_dataset(mode, release):
 
         log.info("Reading data")
         pos = cread("etc/pos.csv")
+        for p in pos.to_dict("records"):
+            writer.objects["POSTable"].append(p)
         pos_list = list(pos["ID"])
-
-        def get_id(row):
-            return row["ID"].lower() + "-" + str(int(float(row["Part"])))
-
-        bad_texts = [
-            "CtoOroAnPe"
-        ]  # texts that should never ever make it into the corpus (as one piece; individual sentences can appear in documents)
 
         if mode == "full":
             examples = cread("../yawarana_corpus/yawarana_pylacoan/output/parsed.csv")
@@ -362,7 +361,7 @@ def create_dataset(mode, release):
         for combine_col in [
             "Tags",
             "Comment",
-        ]:  # these can come from either source, so we combine them
+        ]:  # these can come from the flexports or from the additional data, so we combine them
             if f"{combine_col}_y" in examples:
                 examples[combine_col] = examples.apply(
                     lambda x: " ".join(
@@ -370,7 +369,10 @@ def create_dataset(mode, release):
                     ).strip(),
                     axis=1,
                 )
-        examples["ID"] = examples.apply(get_id, axis=1)
+
+        bad_texts = [
+            "CtoOroAnPe"
+        ]  # texts that should never ever make it into the corpus (as one piece; individual sentences can appear in documents)
         examples = examples[~(examples["Text_ID"].isin(bad_texts))]
 
         # not all examples have english translations
@@ -389,7 +391,7 @@ def create_dataset(mode, release):
         found_texts = set(list(examples["Text_ID"]))
         texts = {}
         for f in Path("../yawarana_corpus/text_metadata/").glob("*.yaml"):
-            with open(f) as file:
+            with open(f, "r", encoding="utf-8") as file:
                 text_data = yaml.load(file, Loader=yaml.SafeLoader)
                 text_id = slugify(text_data.pop("id"))
                 if release:
@@ -410,6 +412,7 @@ def create_dataset(mode, release):
         # human-readable IDs
         flexemes["ID"] = flexemes.apply(lambda x: generate_id(x, g="Gloss"), axis=1)
 
+        # from uniparser-yawarana
         manual_lexemes = cread("raw/lexemes.csv")
         generate_if_empty(manual_lexemes, "ID", lambda x: generate_id(x))
         manual_lexemes = manual_lexemes.apply(add_gloss, combine=True, axis=1)
@@ -426,6 +429,7 @@ def create_dataset(mode, release):
             )
             .reset_index()
         )
+
         etym_lexemes = cread("raw/etym_lexemes.csv")
         etym_lexemes["Language_ID"] = "yab"
         etym_lexemes["Name"] = etym_lexemes["Form"].apply(lambda x: x.split("; ")[0])
@@ -441,7 +445,8 @@ def create_dataset(mode, release):
 
         roots = cread("raw/dictionary_roots.csv")
         manual_lexemes = pd.concat([manual_lexemes, roots])
-        # various morph(emes), adding meanings to morphs
+
+        # various sets of morph(emes)
         infl_morphs = cread("etc/inflection_morphs.csv")
         infl_morphemes = cread("etc/inflection_morphemes.csv")
         deriv_morphs = cread("etc/derivation_morphs.csv")
@@ -460,6 +465,7 @@ def create_dataset(mode, release):
         for cdf in [infl_morphemes, deriv_morphemes, misc_morphemes]:
             cdf.rename(columns={"Gloss": "Translation"}, inplace=True)
             cdf["Parameter_ID"] = cdf["Translation"]
+        # morphs don't have meanings in the source, add them
         for a, b in [
             (infl_morphemes, infl_morphs),
             (deriv_morphemes, deriv_morphs),
@@ -479,9 +485,6 @@ def create_dataset(mode, release):
         misc_sources = [Source.from_entry(k, e) for k, e in bib2.entries.items()]
         writer.cldf.add_sources(*car_sources)
         writer.cldf.add_sources(*misc_sources)
-
-        for p in pos.to_dict("records"):
-            writer.objects["POSTable"].append(p)
 
         # the distinct meanings
         meanings = {"unknown": "***"}
@@ -597,7 +600,6 @@ def create_dataset(mode, release):
                 }
             )
 
-
         for text_id, text_data in texts.items():
             metadata = {x: text_data[x] for x in ["genre", "tags"] if x in text_data}
             writer.objects["TextTable"].append(
@@ -677,7 +679,7 @@ def create_dataset(mode, release):
                         gloss=wf["Gloss"],
                         id_dic=id_dict,
                     )
-                    if None in morph_ids or morph_ids == []:
+                    if None in morph_ids or not morph_ids:
                         slug = wf["ID"]
                     else:
                         slug = slugify("-".join(morph_ids))
@@ -950,7 +952,6 @@ def create_dataset(mode, release):
                         constituents.append(
                             {**dict(all_lexemes.loc[constituent]), **{"type": "lexeme"}}
                         )
-                        pass
                     else:
                         candidate_lexemes = all_lexemes[
                             all_lexemes["Form"].apply(lambda x: constituent in x)
@@ -988,9 +989,8 @@ def create_dataset(mode, release):
                                         **{"type": "morpheme"},
                                     }
                                 )
-                                pass
                             else:
-                                log.warning(f"Did not find morpheme")
+                                log.warning("Did not find morpheme")
                                 print(constituent)
                                 print(data)
                 for c_count, constituent in enumerate(constituents):
@@ -1052,14 +1052,13 @@ def create_dataset(mode, release):
             if "Audio" in form and form["Audio"] != "":
                 if form["Audio"] == "NOT RECORDED":
                     continue
-                else:
-                    writer.objects["MediaTable"].append(
-                        {
-                            "ID": form_id,
-                            "Media_Type": "wav",
-                            "Name": Path(form["Audio"]).stem,
-                        }
-                    )
+                writer.objects["MediaTable"].append(
+                    {
+                        "ID": form_id,
+                        "Media_Type": "wav",
+                        "Name": Path(form["Audio"]).stem,
+                    }
+                )
 
         writer.objects["LanguageTable"].append(
             {
