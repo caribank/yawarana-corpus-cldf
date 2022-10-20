@@ -172,16 +172,19 @@ It also contains descriptive text referencing the data.""",
             doc_path = Path("raw/docs")
             writer.cldf.add_component(cldf_md("ChapterTable"))
             chapters = pd.read_csv(doc_path / "chapters.csv")
+            full_text = ""
             for chapter in chapters.to_dict("records"):
                 with open(doc_path / chapter["Filename"], "r", encoding="utf-8") as f:
+                    chapter_content = f.read()
                     writer.objects["ChapterTable"].append(
                         {
                             "ID": chapter["ID"],
                             "Name": chapter["title"],
                             "Number": chapter["Number"],
-                            "Description": f.read(),
+                            "Description": chapter_content,
                         }
                     )
+                    full_text += chapter_content
             with open("raw/landingpage.txt", "r", encoding="utf-8") as f:
                 writer.objects["ChapterTable"].append(
                     {
@@ -912,6 +915,33 @@ The following linguistic entities and properties are encoded:
                         }
                     )
             writer.objects["ExampleTable"].append(ex)
+
+        # glossed examples from FLEx database
+        flexamples = cread("raw/flex_sentences.csv")
+        flexamples = flexamples[~(flexamples["ID"].isin(examples["ID"]))]
+        flexamples.rename(columns={"Speaker_ID_2": "Speaker_ID"}, inplace=True)
+        for col in ["Analyzed_Word", "Gloss"]:
+            flexamples[col] = flexamples[col].apply(lambda x: x.replace("==", "="))
+            flexamples[col] = flexamples[col].apply(lambda x: x.split("\t"))
+        flexamples = flexamples[
+            [
+                "ID",
+                "Language_ID",
+                "Primary_Text",
+                "Analyzed_Word",
+                "Gloss",
+                "Translated_Text",
+                # "Text_ID",
+                "Part",
+            ]
+        ]
+        if not release:
+            for flex in flexamples.to_dict("records"):
+                writer.objects["ExampleTable"].append(flex)
+        else:
+            for flex in flexamples.to_dict("records"):
+                if flex["ID"] in full_text:
+                    writer.objects["ExampleTable"].append(flex)
 
         all_lexemes = pd.concat([all_lexemes, derivations])
         all_morphemes["Gloss"] = all_morphemes["Parameter_ID"].apply(
