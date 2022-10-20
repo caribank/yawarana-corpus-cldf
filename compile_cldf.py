@@ -35,15 +35,66 @@ import click
 
 log = get_colorlog(__name__, sys.stdout, level=logging.INFO)
 
-bare_slugs = 0
+
+# location where all audio is stored
+AUDIO_PATH = Path(
+    "/home/florianm/Dropbox/research/cariban/yawarana/yawarana_corpus/audio"
+)
+
+WORD_AUDIO_PATH = Path("/home/florianm/Downloads/New_Dictionary_Clippings")
+
+# generating IDs for stuff that slugifies as ""
+zero_slug_counter = 0
 zero_slugged = {}
+
+
+def slugify(input_str):
+    global zero_slug_counter
+    global zero_slugged
+    slug = sslug(input_str)
+    if slug == "":
+        if input_str not in zero_slugged:
+            zero_slug_counter += 1
+            zero_slugged[input_str] = f"slug-{zero_slug_counter}"
+        return zero_slugged[input_str]
+    else:
+        return slug
+
+
+# easily modify an existing CLDF table column specification to add a separator
+def custom_spec(component, column, separator="; "):
+    path = (
+        Path(pycldf.__file__)
+        .resolve()
+        .parent.joinpath("components", f"{component}-metadata.json")
+    )
+    metadata = json.load(open(path, "r"))
+    for col in metadata["tableSchema"]["columns"]:
+        if col["name"] == column:
+            if separator:
+                col["separator"] = separator
+            elif "separator" in column:
+                del col["separator"]
+            return col
+
+
+# use pandas to read csvs and not use NaN
+def cread(filename):
+    df = pd.read_csv(filename, keep_default_na=False)
+    return df
+
+
+# used for tokenizing words into segments
+segmentizer = Segmentizer(
+    segments=cread("etc/phonemes.csv").to_dict(orient="records"), delete=["-", "∅"]
+)
 
 
 @click.command()
 @click.option(
     "--mode",
     default="full",
-    help="Create the full grammar CLDF or only the corpus one.",
+    help="Create the full dataset (including the grammatical description) or only the corpus dataset.",
 )
 @click.option(
     "--release/--no-release",
@@ -52,61 +103,10 @@ zero_slugged = {}
 )
 def create_dataset(mode, release):
 
-    # generating IDs for stuff that slugifies as ""
-    def slugify(input_str):
-        global bare_slugs
-        global zero_slugged
-        slug = sslug(input_str)
-        if slug == "":
-            if input_str not in zero_slugged:
-                bare_slugs += 1
-                zero_slugged[input_str] = f"slug-{bare_slugs}"
-            return zero_slugged[input_str]
-        else:
-            return slug
-
-    # easily modify an existing CLDF table column specification to add a separator
-    def custom_spec(component, column, separator="; "):
-        path = (
-            Path(pycldf.__file__)
-            .resolve()
-            .parent.joinpath("components", f"{component}-metadata.json")
-        )
-        metadata = json.load(open(path, "r"))
-        for col in metadata["tableSchema"]["columns"]:
-            if col["name"] == column:
-                if separator:
-                    col["separator"] = separator
-                elif "separator" in column:
-                    del col["separator"]
-                return col
-
-    ## use pandas to read csvs and not add np.nan
-    def cread(filename):
-        df = pd.read_csv(filename, keep_default_na=False)
-        return df
-
-    # used for tokenizing words
-    segmentizer = Segmentizer(
-        segments=cread("etc/phonemes.csv").to_dict(orient="records"), delete=["-", "∅"]
-    )
-
-    ##location where all audio is stored
-    audio_path = Path(
-        "/home/florianm/Dropbox/research/cariban/yawarana/yawarana_corpus/audio"
-    )
-
-    # audio files potentially matching word forms
-    word_audios = {}
-    for filename in Path("/home/florianm/Downloads/New_Dictionary_Clippings").iterdir():
-        leggo = filename.stem.split("_")[3].split("-")[0]
-        word_audios.setdefault(leggo, [])
-        word_audios[leggo].append(filename)
-
-    # version of the dataset is loaded from the pylingdocs metadata
+    # load dataset version from the pylingdocs metadata
     version = yaml.load(open("raw/metadata.yaml"), Loader=yaml.SafeLoader)["version"]
 
-    # using cffconvert to easily create citation string for CLDF metadata
+    # use cffconvert to easily create citation string for CLDF metadata
     citation = create_citation(infile="CITATION.cff", url=None)
     validate_or_write_output(
         outputformat="apalike",
@@ -115,6 +115,14 @@ def create_dataset(mode, release):
         validate_only=False,
     )
     citation = open("/tmp/citation.txt", "r", encoding="utf8").read().strip()
+    log.info(f"Citation: {citation}")
+
+    # gather audio files potentially matching word forms
+    word_audios = {}
+    for filename in WORD_AUDIO_PATH.iterdir():
+        leggo = filename.stem.split("_")[3].split("-")[0]
+        word_audios.setdefault(leggo, [])
+        word_audios[leggo].append(filename)
 
     # main part
     if mode == "full":
@@ -151,7 +159,7 @@ def create_dataset(mode, release):
     * morphs
     * parts of speech
     
-    It also contains descriptive texts with references to the data.""",
+    It also contains descriptive text referencing the data.""",
             )
             writer.cldf.properties[
                 "dc:license"
@@ -305,58 +313,31 @@ def create_dataset(mode, release):
                 "datatype": "string",
             },  # a free translation not tied to the ParameterTable. this is needed by pylingdocs, for now
         )
-        writer.cldf.add_component(jsonlib.load("etc/PhonemeTable-metadata.json"))
-        writer.cldf.add_component(TextTable)
+        writer.cldf.add_component(
+            jsonlib.load("etc/PhonemeTable-metadata.json")
+        )  # phonemes
+        writer.cldf.add_component(TextTable)  # texts in the corpus
 
         # various foreign keys
-        writer.cldf.add_foreign_key("FormTable", "POS", "POSTable", "ID")
-        writer.cldf.add_foreign_key("MorphTable", "Morpheme_ID", "MorphsetTable", "ID")
-        writer.cldf.add_foreign_key("FormSlices", "Form_ID", "FormTable", "ID")
-        writer.cldf.add_foreign_key("FormSlices", "Morph_ID", "MorphTable", "ID")
-        writer.cldf.add_foreign_key(
-            "FormSlices", "Form_Meaning", "ParameterTable", "ID"
-        )
-        writer.cldf.add_foreign_key(
-            "FormSlices", "Morpheme_Meaning", "ParameterTable", "ID"
-        )
-        writer.cldf.add_foreign_key("ExampleSlices", "Form_ID", "FormTable", "ID")
-        writer.cldf.add_foreign_key("ExampleSlices", "Example_ID", "ExampleTable", "ID")
-        writer.cldf.add_foreign_key(
-            "ExampleSlices", "Parameter_ID", "ParameterTable", "ID"
-        )
-        writer.cldf.add_foreign_key("ExampleTable", "Text_ID", "TextTable", "ID")
-        writer.cldf.add_foreign_key("ExampleTable", "Speaker_ID", "SpeakerTable", "ID")
-        writer.cldf.add_foreign_key("InflectionTable", "Form_ID", "FormTable", "ID")
-        writer.cldf.add_foreign_key("InflectionTable", "Lexeme_ID", "LexemeTable", "ID")
-        writer.cldf.add_foreign_key(
-            "LexemeMorphemeParts", "Morpheme_ID", "MorphsetTable", "ID"
-        )
-        writer.cldf.add_foreign_key(
-            "LexemeMorphemeParts", "Lexeme_ID", "LexemeTable", "ID"
-        )
-        writer.cldf.add_foreign_key("LexemeLexemeParts", "Base_ID", "LexemeTable", "ID")
-        writer.cldf.add_foreign_key(
-            "LexemeLexemeParts", "Lexeme_ID", "LexemeTable", "ID"
-        )
+        for keyset in pd.read_csv("etc/foreign_keys.csv").to_dict("records"):
+            writer.cldf.add_foreign_key(
+                keyset["source_table"],
+                keyset["source_key"],
+                keyset["target_table"],
+                keyset["target_key"],
+            )
 
         log.info("Reading data")
         pos = cread("etc/pos.csv")
         pos_list = list(pos["ID"])
 
-        # there are some texts that have no proper record IDs; we generate new ones for these
-        bad_ids = ["GrMe", "grme"]
-
         def get_id(row):
-            if row["ID"] not in bad_ids:
-                return row["ID"].replace(".", "-").lower()
-            else:
-                return row["ID"].lower() + "-" + str(int(float(row["Part"])))
+            return row["ID"].lower() + "-" + str(int(float(row["Part"])))
 
         bad_texts = [
             "CtoOroAnPe"
         ]  # texts that should never ever make it into the corpus (as one piece; individual sentences can appear in documents)
 
-        log.info("Corpus")
         if mode == "full":
             examples = cread("../yawarana_corpus/yawarana_pylacoan/output/parsed.csv")
         elif mode == "corpus":
@@ -417,7 +398,6 @@ def create_dataset(mode, release):
                 else:
                     texts[text_id] = text_data
 
-        log.info("Morphemes and lexemes")
         # keys: morpheme IDs
         # values: different (allo)morph forms and associated morph IDs
         # used for converting uniparser's morpheme IDs into morph IDs
@@ -489,7 +469,6 @@ def create_dataset(mode, release):
             b["Translation"] = b["Morpheme_ID"].map(morph_meanings)
             b["Parameter_ID"] = b["Morpheme_ID"].map(morph_meanings)
 
-        log.info("Sources")
         # what references should be included?
         found_refs = jsonlib.load("etc/refs.json")
         bib = pybtex.database.parse_file("etc/car.bib", bib_format="bibtex")
@@ -501,11 +480,8 @@ def create_dataset(mode, release):
         writer.cldf.add_sources(*car_sources)
         writer.cldf.add_sources(*misc_sources)
 
-        log.info("POS")
         for p in pos.to_dict("records"):
             writer.objects["POSTable"].append(p)
-
-        log.info("Morphemes")
 
         # the distinct meanings
         meanings = {"unknown": "***"}
@@ -621,7 +597,6 @@ def create_dataset(mode, release):
                 }
             )
 
-        log.info("Texts")
 
         for text_id, text_data in texts.items():
             metadata = {x: text_data[x] for x in ["genre", "tags"] if x in text_data}
@@ -636,7 +611,6 @@ def create_dataset(mode, release):
                 }
             )
 
-        log.info("Lexemes")
         all_lexemes = pd.concat([manual_lexemes, flexemes])
         all_lexemes["Language_ID"] = "yab"
         all_lexemes["Form"] = all_lexemes["Form"].apply(lambda x: x.split("; "))
@@ -663,7 +637,6 @@ def create_dataset(mode, release):
         for lex in all_lexemes.to_dict("records"):
             writer.objects["LexemeTable"].append(lex)
 
-        log.info("Wordforms")
         # different form-meaning pairs, to avoid sorting IDs every time (slow)
         form_meanings = {}
         # the actual word forms, which can have different meanings
@@ -754,12 +727,11 @@ def create_dataset(mode, release):
                 else:
                     slug = form_meanings[form_slug]
 
-        log.info("Examples")
         for ex in examples.to_dict("records"):
             if ex["Analyzed_Word"] == "":
                 continue
             ex["Tags"] = ex["Tags"].split(" ")
-            file_path = audio_path / f'{ex["ID"]}.wav'
+            file_path = AUDIO_PATH / f'{ex["ID"]}.wav'
             if file_path.is_file():
                 writer.objects["MediaTable"].append(
                     {"ID": ex["ID"], "Media_Type": "wav"}
@@ -1057,7 +1029,6 @@ def create_dataset(mode, release):
         for lex in etym_lexemes.to_dict("records"):
             writer.objects["LexemeTable"].append(lex)
 
-        log.info("Phonemes")
         phonemes = cread("etc/phonemes.csv")
         done_phonemes = []
         for phoneme in phonemes.to_dict(orient="records"):
@@ -1067,11 +1038,9 @@ def create_dataset(mode, release):
                     {"ID": phoneme["ID"], "Name": phoneme["IPA"]}
                 )
 
-        log.info("Meanings")
         for meaning_id, meaning in meanings.items():
             writer.objects["ParameterTable"].append({"ID": meaning_id, "Name": meaning})
 
-        log.info("Forms")
         for form_id, form in forms.items():
             if "Source" in form:
                 form["Source"] = [form["Source"]]
@@ -1116,6 +1085,8 @@ def create_dataset(mode, release):
             "NCA",
         ]:
             writer.objects["SpeakerTable"].append({"ID": s, "Abbreviation": s})
+
+        log.info("Writing data")
         writer.write()
 
 
