@@ -374,7 +374,7 @@ The following linguistic entities and properties are encoded:
                 )
 
         bad_texts = [
-            "CtoOroAnPe"
+            "ctooroanpe"
         ]  # texts that should never ever make it into the corpus (as one piece; individual sentences can appear in documents)
         examples = examples[~(examples["Text_ID"].isin(bad_texts))]
 
@@ -393,15 +393,19 @@ The following linguistic entities and properties are encoded:
         examples["Text_ID"] = examples["Text_ID"].apply(slugify)
         found_texts = set(list(examples["Text_ID"]))
         texts = {}
-        for f in Path("../yawarana_corpus/text_metadata/").glob("*.yaml"):
-            with open(f, "r", encoding="utf-8") as file:
-                text_data = yaml.load(file, Loader=yaml.SafeLoader)
-                text_id = slugify(text_data.pop("id"))
-                if release:
-                    if text_id in found_texts:
-                        texts[text_id] = text_data
-                else:
-                    texts[text_id] = text_data
+        text_list = cread("../yawarana_corpus/text_metadata.csv")
+        with open(
+            "../yawarana_corpus/text_metadata.yaml", "r", encoding="utf-8"
+        ) as file:
+            text_metadata = yaml.load(file, Loader=yaml.SafeLoader)
+        for text in text_list.to_dict("records"):
+            if text["id"] in text_metadata:
+                text.update(**text_metadata[text["id"]])
+            if release:
+                if text["id"] in found_texts:
+                    texts[text["id"]] = text
+            else:
+                texts[text["id"]] = text
 
         # keys: morpheme IDs
         # values: different (allo)morph forms and associated morph IDs
@@ -931,16 +935,26 @@ The following linguistic entities and properties are encoded:
                 "Analyzed_Word",
                 "Gloss",
                 "Translated_Text",
-                # "Text_ID",
+                "Text_ID",
                 "Part",
             ]
         ]
+
         if not release:
             for flex in flexamples.to_dict("records"):
+                file_path = AUDIO_PATH / f'{flex["ID"]}.wav'
+                if file_path.is_file():
+                    writer.objects["MediaTable"].append(
+                        {"ID": flex["ID"], "Media_Type": "wav"}
+                    )
                 writer.objects["ExampleTable"].append(flex)
         else:
             for flex in flexamples.to_dict("records"):
                 if flex["ID"] in full_text:
+                    if file_path.is_file():
+                        writer.objects["MediaTable"].append(
+                            {"ID": flex["ID"], "Media_Type": "wav"}
+                        )
                     writer.objects["ExampleTable"].append(flex)
 
         all_lexemes = pd.concat([all_lexemes, derivations])
