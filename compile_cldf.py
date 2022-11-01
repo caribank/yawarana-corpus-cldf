@@ -341,10 +341,10 @@ The following linguistic entities and properties are encoded:
         pos_list = list(pos["ID"])
 
         if mode == "full":
-            examples = cread("../yawarana_corpus/yawarana_pylacoan/output/parsed.csv")
+            examples = cread("../yawarana_corpus/pylacoan_pipeline/output/parsed.csv")
         elif mode == "corpus":
             examples = cread(
-                "../yawarana_corpus/yawarana_pylacoan/output/parsed_all.csv"
+                "../yawarana_corpus/pylacoan_pipeline/output/parsed_all.csv"
             )
         examples["Language_ID"] = "yab"
         speaker_fix = {
@@ -486,7 +486,7 @@ The following linguistic entities and properties are encoded:
         found_refs = jsonlib.load("etc/refs.json")
         bib = pybtex.database.parse_file("etc/car.bib", bib_format="bibtex")
         car_sources = [
-            Source.from_entry(k, e) for k, e in bib.entries.items() if k in found_refs
+            Source.from_entry(k, e) for k, e in bib.entries.items() if k in full_text or k in found_refs
         ]
         bib2 = pybtex.database.parse_file("etc/misc.bib", bib_format="bibtex")
         misc_sources = [Source.from_entry(k, e) for k, e in bib2.entries.items()]
