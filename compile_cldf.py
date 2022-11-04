@@ -923,7 +923,9 @@ The following linguistic entities and properties are encoded:
         # glossed examples from FLEx database
         flexamples = cread("raw/flex_sentences.csv")
         flexamples = flexamples[~(flexamples["ID"].isin(examples["ID"]))]
-        flexamples.rename(columns={"Speaker_ID_2": "Speaker_ID"}, inplace=True)
+        flexamples["Speaker_ID"] = flexamples["Speaker_ID"].replace(speaker_fix)
+        # flexamples.drop(columns=["Speaker_ID"], inplace=True)
+        # flexamples.rename(columns={"Speaker_ID_2": "Speaker_ID"}, inplace=True)
         for col in ["Analyzed_Word", "Gloss"]:
             flexamples[col] = flexamples[col].apply(lambda x: x.replace("==", "="))
             flexamples[col] = flexamples[col].apply(lambda x: x.split("\t"))
@@ -937,6 +939,7 @@ The following linguistic entities and properties are encoded:
                 "Translated_Text",
                 "Text_ID",
                 "Part",
+                "Speaker_ID"
             ]
         ]
 
