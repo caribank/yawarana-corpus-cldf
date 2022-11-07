@@ -941,7 +941,7 @@ The following linguistic entities and properties are encoded:
                             "ID": ex["ID"] + "-" + str(word_count),
                             "Form_ID": slug,
                             "Example_ID": ex["ID"],
-                            "Slice": str(word_count),
+                            "Index": str(word_count),
                             "Parameter_ID": meaning_slug,
                         }
                     )
