@@ -2,6 +2,9 @@ import json
 import logging
 import sys
 from pathlib import Path
+
+import click
+import numpy as np
 import pandas as pd
 import pybtex
 import pycldf
@@ -11,7 +14,7 @@ from cffconvert.cli.create_citation import create_citation
 from cffconvert.cli.validate_or_write_output import validate_or_write_output
 from cldfbench import CLDFSpec
 from cldfbench.cldf import CLDFWriter
-from clld_corpus_plugin.cldf import TextTable, SpeakerTable
+from clld_corpus_plugin.cldf import SpeakerTable, TextTable
 from clld_morphology_plugin.cldf import (
     FormSlices,
     InflectionTable,
@@ -30,8 +33,6 @@ from pylacoan.helpers import get_pos, sort_uniparser_ids
 from pylingdocs.cldf import metadata as cldf_md
 from pylingdocs.preprocessing import preprocess_cldfviz
 from slugify import slugify as sslug
-from yawarana_helpers import add_gloss, generate_id, generate_if_empty
-import click
 
 log = get_colorlog(__name__, sys.stdout, level=logging.INFO)
 
@@ -46,6 +47,30 @@ WORD_AUDIO_PATH = Path("/home/florianm/Downloads/New_Dictionary_Clippings")
 # generating IDs for stuff that slugifies as ""
 zero_slug_counter = 0
 zero_slugged = {}
+
+
+def generate_id(rec, f="Form", g="Translation", sep="; "):
+    return slugify(rec[f].split(sep)[0] + "-" + rec[g].split(sep)[0])
+
+
+def glossify(s, sep="; ", combine=False):
+    if not combine:
+        return s.split(sep)[0].replace("-", ".").replace(" ", ".")
+    else:
+        return sep.join([x.replace("-", ".").replace(" ", ".") for x in s.split(sep)])
+
+
+def add_gloss(rec, suffix="", **kwargs):
+    if suffix != "":
+        suffix = "_" + suffix
+    rec[f"Gloss{suffix}"] = glossify(rec[f"Translation{suffix}"], **kwargs)
+    return rec
+
+
+def generate_if_empty(df, target_col, method, bad=[np.nan, None, ""]):
+    df[target_col] = df.apply(
+        lambda x: method(x) if x[target_col] in bad else x[target_col], axis=1
+    )
 
 
 def slugify(input_str):
@@ -486,7 +511,9 @@ The following linguistic entities and properties are encoded:
         found_refs = jsonlib.load("etc/refs.json")
         bib = pybtex.database.parse_file("etc/car.bib", bib_format="bibtex")
         car_sources = [
-            Source.from_entry(k, e) for k, e in bib.entries.items() if k in full_text or k in found_refs
+            Source.from_entry(k, e)
+            for k, e in bib.entries.items()
+            if k in full_text or k in found_refs
         ]
         bib2 = pybtex.database.parse_file("etc/misc.bib", bib_format="bibtex")
         misc_sources = [Source.from_entry(k, e) for k, e in bib2.entries.items()]
@@ -832,7 +859,7 @@ The following linguistic entities and properties are encoded:
                                     "ID": ex["ID"] + "-" + str(word_count),
                                     "Form_ID": slug,
                                     "Example_ID": ex["ID"],
-                                    "Slice": str(word_count),
+                                    "Index": str(word_count),
                                     "Parameter_ID": "unknown",
                                 }
                             )
@@ -939,7 +966,7 @@ The following linguistic entities and properties are encoded:
                 "Translated_Text",
                 "Text_ID",
                 "Part",
-                "Speaker_ID"
+                "Speaker_ID",
             ]
         ]
 
