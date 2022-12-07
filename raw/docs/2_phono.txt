@@ -1,6 +1,6 @@
 <a id='phono'></a>
 ## Segmental phonetics and phonemes {#sec:segmental}
-The consonant phonemes of Yawarana are shown in <a href='#tab:consonants' class='crossref' name='tab:consonants' release="False" >ref</a>, vowel phonemes in <a href='#tab:vowels' class='crossref' name='tab:vowels' release="False" >ref</a>.
+The consonant phonemes of Yawarana are shown in <a href='#tab:consonants' class='crossref' name='tab:consonants' cldf="../yawarana-sketch-cldf/cldf/metadata.json" >ref</a>, vowel phonemes in <a href='#tab:vowels' class='crossref' name='tab:vowels' cldf="../yawarana-sketch-cldf/cldf/metadata.json" >ref</a>.
 
 
 
@@ -48,7 +48,7 @@ The consonant phonemes of Yawarana are shown in <a href='#tab:consonants' class=
 
 ### Syllable Reduction {#sec:sylred}
 
-* V1rV2 to V1:
+* V<sub>1</sub>rV2 to V1:
 * nasal assimilation
 
 

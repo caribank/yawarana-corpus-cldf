@@ -44,7 +44,7 @@ Also:
 
 * allative: 
 
-[Example histpajirdi-186](ExampleTable?example_counter=24#cldf:histpajirdi-186)
+[Example histpajirdi-186](ExampleTable?example_counter=25#cldf:histpajirdi-186)
 
 ## Nonlocative Oblique Postpositions 
 * [Morpheme panadat](MorphsetTable?#cldf:panadat)

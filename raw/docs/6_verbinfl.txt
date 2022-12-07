@@ -2,7 +2,7 @@
 <span title='write an introduction'>❗️</span>
 
 ## Person prefixes {#sec:verbperson}
-Verbs are inflected for person with a set of prefixes, shown in <a href='#tab:verbprefixes' class='crossref' name='tab:verbprefixes' release="False" >ref</a>.
+Verbs are inflected for person with a set of prefixes, shown in <a href='#tab:verbprefixes' class='crossref' name='tab:verbprefixes' cldf="../yawarana-sketch-cldf/cldf/metadata.json" >ref</a>.
 First and second person prefixes show ergative alignment, expressing <span class='smallcaps'>s</span> and <span class='smallcaps'>p</span>. <span title='count cases of expressing A'>❗️</span>
 Intransitive verbs are not overtly inflected for third person, while transitive verbs show an optional [Morpheme t3](MorphsetTable?no_translation#cldf:t3) in <span class='smallcaps'>3</span>><span class='smallcaps'>3</span> scenarios.<span title='mentionworthy that this is not in alternation with preceding NPs'>❗️</span>
 
@@ -28,8 +28,8 @@ Intransitive verbs are not overtly inflected for third person, while transitive 
 
 
 ## Main clause tense‑aspect‑mood‑polarity suffixes {#sec:tam}
-Verbs in main clauses are inflected for TAMP with a set of suffixes, shown in <a href='#tab:verbtam' class='crossref' name='tab:verbtam' release="False" >ref</a>.
-They are discussed in <a href='#sec:riipfv' class='crossref' name='sec:riipfv' release="False"  end="sec:sareimn" >ref</a>.
+Verbs in main clauses are inflected for TAMP with a set of suffixes, shown in <a href='#tab:verbtam' class='crossref' name='tab:verbtam' cldf="../yawarana-sketch-cldf/cldf/metadata.json" >ref</a>.
+They are discussed in <a href='#sec:riipfv' class='crossref' name='sec:riipfv' cldf="../yawarana-sketch-cldf/cldf/metadata.json"  end="sec:sareimn" >ref</a>.
 
 
 <a id='tab:verbtam'></a><div class='caption table' id='tab:verbtam'>Verbal TAM suffixes</div>
@@ -79,17 +79,17 @@ Misc:
 * pluralization?
 * combines with [Morpheme jraneg](MorphsetTable?#cldf:jraneg):
 
-[Example convrisamaj-04](ExampleTable?example_counter=14#cldf:convrisamaj-04)
+[Example convrisamaj-4](ExampleTable?example_counter=15#cldf:convrisamaj-4)
 
 #### Semantics
 * not specified for tense, just imperfective aspect:
-    * past <a class="exref" example_id="ctorat-16"release="False" ></a>
-    * future <a class="exref" example_id="convrisamaj-06"release="False" ></a>
-    * gnomic/present? <a class="exref" example_id="gnomicri"release="False" ></a>
+    * past <a class="exref" example_id="ctorat-16"cldf="../yawarana-sketch-cldf/cldf/metadata.json" ></a>
+    * future <a class="exref" example_id="convrisamaj-6"cldf="../yawarana-sketch-cldf/cldf/metadata.json" ></a>
+    * gnomic/present? <a class="exref" example_id="gnomicri"cldf="../yawarana-sketch-cldf/cldf/metadata.json" ></a>
 
-[Example ctorat-16](ExampleTable?example_counter=15#cldf:ctorat-16)
-[Example convrisamaj-06](ExampleTable?example_counter=16#cldf:convrisamaj-06)
-[Example convrisamaj-04,convrisamaj-28](ExampleTable?example_id=gnomicri&ids=convrisamaj-04,convrisamaj-28&example_counter=17#cldf:__all__)
+[Example ctorat-16](ExampleTable?example_counter=16#cldf:ctorat-16)
+[Example convrisamaj-6](ExampleTable?example_counter=17#cldf:convrisamaj-6)
+[Example convrisamaj-4,convrisamaj-28](ExampleTable?example_id=gnomicri&ids=convrisamaj-4,convrisamaj-28&example_counter=18#cldf:__all__)
 
 ### [Morpheme jpepst](MorphsetTable?no_translation#cldf:jpepst)
 
@@ -109,23 +109,23 @@ Misc:
 * diachrony: from [Morpheme sapenmlz](MorphsetTable?#cldf:sapenmlz)
 * distribution: only occurs on the copula?
 * allomorphy: [Morph sapepfv](MorphTable?no_translation#cldf:sapepfv) and [Morph sajpfv](MorphTable?no_translation#cldf:sajpfv)
-* negation: with [Morpheme janeg](MorphsetTable?#cldf:janeg) on lexical verb <a class="exref" example_id="ctoaragrme-38"release="False"  end="ctoaragrme-40" ></a>
+* negation: with [Morpheme janeg](MorphsetTable?#cldf:janeg) on lexical verb <a class="exref" example_id="ctoaragrme-38"cldf="../yawarana-sketch-cldf/cldf/metadata.json"  end="ctoaragrme-40" ></a>
 <span title='semantics?'>❓</span>
 
-[Example ctoaragrme-38](ExampleTable?example_counter=18#cldf:ctoaragrme-38)
-[Example ctoaragrme-39](ExampleTable?example_counter=19#cldf:ctoaragrme-39)
-[Example ctoaragrme-40](ExampleTable?example_counter=20#cldf:ctoaragrme-40)
+[Example ctoaragrme-38](ExampleTable?example_counter=19#cldf:ctoaragrme-38)
+[Example ctoaragrme-39](ExampleTable?example_counter=20#cldf:ctoaragrme-39)
+[Example ctoaragrme-40](ExampleTable?example_counter=21#cldf:ctoaragrme-40)
 
-* what about <a class="exref" example_id="ctorat-19"release="False" ></a>? is that existential negation?
+* what about <a class="exref" example_id="ctorat-19"cldf="../yawarana-sketch-cldf/cldf/metadata.json" ></a>? is that existential negation?
 
-[Example ctorat-19](ExampleTable?example_counter=21#cldf:ctorat-19)
+[Example ctorat-19](ExampleTable?example_counter=22#cldf:ctorat-19)
 
 ### [Morpheme sareimn](MorphsetTable?no_translation#cldf:sareimn) {#sec:sareimn}
 
 * once a converb, now 'imminent future'
 
-[Example ctorat-25](ExampleTable?example_counter=22#cldf:ctorat-25)
-[Example ctoaragrme-25](ExampleTable?example_counter=23#cldf:ctoaragrme-25)
+[Example ctorat-25](ExampleTable?example_counter=23#cldf:ctorat-25)
+[Example ctoaragrme-25](ExampleTable?example_counter=24#cldf:ctoaragrme-25)
 
 
 

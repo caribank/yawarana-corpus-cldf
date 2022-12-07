@@ -5,9 +5,9 @@
             "@language": "en"
         }
     ],
-    "dc:bibliographicCitation": "Matter F., C\u00e1ceres Arandia N., Gildea S. (2022). A digital sketch grammar of Yawarana (version 0.0.3.draft). URL: https://github.com/fmatter/yawarana-sketch-cldf/tree/0.0.3.draft",
+    "dc:bibliographicCitation": "Matter F., C\u00e1ceres Arandia N., Gildea S. (2022). A digital sketch grammar of Yawarana (version 0.0.3.draft2). URL: https://github.com/fmatter/yawarana-sketch-cldf/tree/0.0.3.draft2",
     "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#Generic",
-    "dc:description": "This is a CLDF dataset containing a digital description of Yawarana.\n    The following linguistic entities and properties are encoded:\n    * sentences\n    * word forms\n    * lexemes\n    * morphemes\n    * morphs\n    * parts of speech\n    \n    It also contains descriptive texts with references to the data.",
+    "dc:description": "This is a CLDF dataset containing a digital description of Yawarana.\nThe following linguistic entities and properties are encoded:\n* sentences\n* word forms\n* lexemes\n* morphemes\n* morphs\n* parts of speech\n\nIt also contains descriptive text referencing the data.",
     "dc:identifier": "https://fl.mt/yawarana-sketch",
     "dc:license": "https://creativecommons.org/licenses/by-sa/4.0/",
     "dc:source": "sources.bib",
@@ -24,9 +24,6 @@
     ],
     "rdf:ID": "yawarana-sketch",
     "rdf:type": "http://www.w3.org/ns/dcat#Distribution",
-    "dialect": {
-        "commentPrefix": null
-    },
     "tables": [
         {
             "dc:conformsTo": null,
@@ -47,6 +44,9 @@
                         "name": "Email"
                     },
                     {
+                        "name": "Orcid"
+                    },
+                    {
                         "name": "Url"
                     },
                     {
@@ -61,7 +61,7 @@
             "url": "ContributorTable"
         },
         {
-            "dc:extent": 20,
+            "dc:extent": 21,
             "tableSchema": {
                 "columns": [
                     {
@@ -80,6 +80,8 @@
                         "name": "Name"
                     },
                     {
+                        "dc:conformsTo": "CLDF Markdown",
+                        "dc:format": "text/markdown",
                         "datatype": "string",
                         "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#description",
                         "required": false,
@@ -100,7 +102,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ExampleTable",
-            "dc:extent": 62,
+            "dc:extent": 5345,
             "tableSchema": {
                 "columns": [
                     {
@@ -133,7 +135,7 @@
                         "datatype": "string",
                         "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#analyzedWord",
                         "required": false,
-                        "separator": "\\t",
+                        "separator": "\t",
                         "name": "Analyzed_Word"
                     },
                     {
@@ -142,7 +144,7 @@
                         "datatype": "string",
                         "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#gloss",
                         "required": false,
-                        "separator": "\\t",
+                        "separator": "\t",
                         "name": "Gloss"
                     },
                     {
@@ -177,7 +179,7 @@
                         "dc:description": "Position in the text",
                         "dc:extent": "singlevalued",
                         "datatype": "integer",
-                        "name": "Part"
+                        "name": "Record_Number"
                     },
                     {
                         "datatype": "string",
@@ -285,7 +287,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#FormTable",
-            "dc:extent": 302,
+            "dc:extent": 320,
             "tableSchema": {
                 "columns": [
                     {
@@ -392,7 +394,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ParameterTable",
-            "dc:extent": 687,
+            "dc:extent": 689,
             "tableSchema": {
                 "columns": [
                     {
@@ -425,7 +427,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#MediaTable",
-            "dc:extent": 192,
+            "dc:extent": 3749,
             "tableSchema": {
                 "columns": [
                     {
@@ -521,7 +523,7 @@
                         },
                         "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#glottocode",
                         "required": false,
-                        "valueUrl": "http://glottolog.org/resource/languoid/id/{glottocode}",
+                        "valueUrl": "http://glottolog.org/resource/languoid/id/{Glottocode}",
                         "name": "Glottocode"
                     },
                     {
@@ -541,7 +543,7 @@
             "url": "languages.csv"
         },
         {
-            "dc:extent": 76,
+            "dc:extent": 81,
             "tableSchema": {
                 "columns": [
                     {
@@ -597,7 +599,7 @@
             "url": "LexemeMorphemeParts"
         },
         {
-            "dc:extent": 67,
+            "dc:extent": 72,
             "tableSchema": {
                 "columns": [
                     {
@@ -653,7 +655,7 @@
             "url": "LexemeLexemeParts"
         },
         {
-            "dc:extent": 236,
+            "dc:extent": 244,
             "tableSchema": {
                 "columns": [
                     {
@@ -782,7 +784,7 @@
             "url": "POSTable"
         },
         {
-            "dc:extent": 570,
+            "dc:extent": 575,
             "tableSchema": {
                 "columns": [
                     {
@@ -860,7 +862,7 @@
             "url": "LexemeTable"
         },
         {
-            "dc:extent": 156,
+            "dc:extent": 172,
             "tableSchema": {
                 "columns": [
                     {
@@ -916,7 +918,7 @@
             "url": "InflectionTable"
         },
         {
-            "dc:extent": 255,
+            "dc:extent": 382,
             "tableSchema": {
                 "columns": [
                     {
@@ -941,13 +943,13 @@
                         "name": "Example_ID"
                     },
                     {
-                        "dc:description": "Specifies the slice of forms.",
+                        "dc:description": "Specifies the position of a form in a sentence.",
                         "datatype": {
                             "base": "string",
                             "format": "\\d+(:\\d+)?"
                         },
-                        "required": false,
-                        "name": "Slice"
+                        "required": true,
+                        "name": "Index"
                     },
                     {
                         "dc:description": "A reference to the meaning denoted by the form",
@@ -1245,7 +1247,7 @@
             "url": "PhonemeTable"
         },
         {
-            "dc:extent": 9,
+            "dc:extent": 31,
             "tableSchema": {
                 "columns": [
                     {

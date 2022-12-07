@@ -264,7 +264,7 @@ The following linguistic entities and properties are encoded:
             },
             # if they do, they have a number inside that text
             {
-                "name": "Part",
+                "name": "Record_Number",
                 "dc:extent": "singlevalued",
                 "dc:description": "Position in the text",
                 "datatype": "integer",
@@ -372,6 +372,7 @@ The following linguistic entities and properties are encoded:
                 "../yawarana_corpus/pylacoan_pipeline/output/parsed_all.csv"
             )
         examples["Language_ID"] = "yab"
+        examples["Record_Number"] = examples["Part"] # todo remove this at some point
         speaker_fix = {
             "IrDI": "IrDi",
             "MaFlo": "MaFl",
@@ -952,7 +953,7 @@ The following linguistic entities and properties are encoded:
         flexamples = flexamples[~(flexamples["ID"].isin(examples["ID"]))]
         flexamples["Speaker_ID"] = flexamples["Speaker_ID"].replace(speaker_fix)
         # flexamples.drop(columns=["Speaker_ID"], inplace=True)
-        # flexamples.rename(columns={"Speaker_ID_2": "Speaker_ID"}, inplace=True)
+        flexamples.rename(columns={"Part": "Record_Number"}, inplace=True)
         for col in ["Analyzed_Word", "Gloss"]:
             flexamples[col] = flexamples[col].apply(lambda x: x.replace("==", "="))
             flexamples[col] = flexamples[col].apply(lambda x: x.split("\t"))
@@ -965,7 +966,7 @@ The following linguistic entities and properties are encoded:
                 "Gloss",
                 "Translated_Text",
                 "Text_ID",
-                "Part",
+                "Record_Number",
                 "Speaker_ID",
             ]
         ]

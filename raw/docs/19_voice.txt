@@ -1,5 +1,6 @@
 <a id='voice'></a>
-* functions of <span class='smallcaps'>detrz</span>
+
+* functions of <span class='smallcaps'>detrz</span>:
     * antipassive
     * passive
     * reflexive

@@ -4,9 +4,9 @@
 
 [Language yab](LanguageTable?#cldf:yab) verb roots can be divided into those yielding an intransitive stem, and those yielding a transitive stem.
 The only inflectional criterion distinguishing the two classes is the third person prefix [Morpheme t3](MorphsetTable?no_translation#cldf:t3), which can only occur on transitive stems.
-Thus, transitive [Morpheme yawanka-kill](MorphsetTable?#cldf:yawanka-kill) can take [Morpheme t3](MorphsetTable?no_translation#cldf:t3) <a class="exref" example_id="convfemgrme-217"release="False" ></a>, but intransitive [Morpheme yaruwa-laugh](MorphsetTable?#cldf:yaruwa-laugh) does not <a class="exref" example_id="convrisamaj-42"release="False" ></a>.
+Thus, transitive [Morpheme yawanka-kill](MorphsetTable?#cldf:yawanka-kill) can take [Morpheme t3](MorphsetTable?no_translation#cldf:t3) <a class="exref" example_id="convfemgrme-217"cldf="../yawarana-sketch-cldf/cldf/metadata.json" ></a>, but intransitive [Morpheme yaruwa-laugh](MorphsetTable?#cldf:yaruwa-laugh) does not <a class="exref" example_id="convrisamaj-42"cldf="../yawarana-sketch-cldf/cldf/metadata.json" ></a>.
 
-[Example convfemgrme-217,convrisamaj-42](ExampleTable?ids=convfemgrme-217,convrisamaj-42&example_counter=13#cldf:__all__)
+[Example convfemgrme-217,convrisamaj-42](ExampleTable?ids=convfemgrme-217,convrisamaj-42&example_counter=14#cldf:__all__)
 
 <span title='subclass of intransitive (?'>❓</span>: -nëpëkë and -tëpëkë)
 
@@ -64,7 +64,7 @@ None of these are productive, although there are many lexemes derived with them.
 | [Lexeme aki-worm](LexemeTable?#cldf:aki-worm)                         | [Lexeme akita-fill-with-worms](LexemeTable?#cldf:akita-fill-with-worms)                       |
 
 #### _-pamï_ / _-mamï_
-<span title='check for _-pantari_'>❗️</span>
+<span title='check for -pantari'>❗️</span>
 <span title='check tri and way'>❗️</span>
 
 ### Transitive
@@ -93,7 +93,7 @@ None of these are productive, although there are many lexemes derived with them.
 
 ### Transitivizing suffixes
 * _-ma_ <span title='from verbs or only nouns?'>❓</span>
-* <span title='_-nïkï_ / _-nïpï_ / _-nëpï_'>❗️</span>
+* <span title='-nïkï / -nïpï / -nëpï'>❗️</span>
 * does [Morpheme kavbz](MorphsetTable?#cldf:kavbz) go on intransitive verb stems?
 
 ### Ditransitivizing suffixes
