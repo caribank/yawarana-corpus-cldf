@@ -1,0 +1,17 @@
+ID,Name,Category_ID,Gloss_ID
+1,first,person,1
+2,second,person,2
+3,third,person,3
+ipfv,imperfective,aspect,ipfv
+pst,past,tense,pst
+pl,plural,number,pl
+prog,progressive,aspect,prog
+pfv,perfective,aspect,pfv
+pert,pertensive,possession,pert
+npert,nonpertensive,possession,npert
+neg,negative,polarity,neg
+fut,future,tense,fut
+12,first inclusive,person,1-2
+13,first exclusive,person,1-3
+imp,imperative,mood,imp
+hort,hortative,mood,hort
