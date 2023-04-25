@@ -1,4 +1,4 @@
-ID,Name,Gloss,Comment
+ID,Name,Translation,Comment
 dt2,s-,DETRZ,
 kavbz,-ka,VBZ.TR,'deprive P of N’
 tavbz,-ta,VBZ.INTR,n>vi ‘S characterized by N’
@@ -7,7 +7,7 @@ jtevbz,-jtë,VBZ.TR,"n>vt, ‘provide P with N’ or ‘make P characterized by 
 dt1,ëj-,DETRZ,
 petiplur,-pëti,PLUR,Lexicalized with some verbs.
 septcp,-se,PTCP; SUP,
-jpenmlz,-jpë,PST.ACNMLZ,
+jpenmlz,-jpë,PST.ACNNMLZ,
 rinmlz,-ri,ACNNMLZ,Gave rise to [mp](riipfv).
 minmlz,-mï,NMLZ,
 sapenmlz,-sapë,ABS.NMLZ,Gave rise to [mp](sapepfv).
@@ -24,4 +24,10 @@ neinf,-në,INF,Lexically characterized: v.n. in FLEx.
 pecaus,-po,CAUS,"Occurs marginally, causee w/ =pana."
 neadvz,-ne,ADVZ,Not productive.
 yeadvz,-ye,ADVZ,
-keadvz,-ke,ADVZ,Etymologically 'have N’.
+keprop,-ke,PROP,Etymologically 'have N’.
+macaus,-ma,CAUS,
+pijkedim,-pïjkë,DIM,
+tanecncs,-tane,CNCS,
+podes,-po,DES,
+jrapriv,-jra,PRIV,Is this really a privative? Or a cessative? [ex](anfoperso-08).
+tprop,t-,PROP,"Fossilized, but still looks like a morpheme."

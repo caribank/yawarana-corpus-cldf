@@ -1,7 +1,0 @@
-<a id='simpleverb'></a>
-<span title='examples of [non]declarative w/ [in]transitive verbs'>❗️</span>
-
-* order of arguments re: the verb (and each other)
-* case marking patterns
-* indexation
-* clausal particles

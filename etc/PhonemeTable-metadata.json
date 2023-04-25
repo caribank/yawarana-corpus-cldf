@@ -1,5 +1,5 @@
 {
-    "url": "PhonemeTable",
+    "url": "phonemes.csv",
     "tableSchema": {
         "columns": [
             {

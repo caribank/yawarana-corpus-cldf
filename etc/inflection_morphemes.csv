@@ -1,38 +1,36 @@
-ID,Name,Gloss,Comment
-i3,i-/t-,3,The old *_-it_.
-jnepl,-jnë,PL,
-tojpefut,-tojpe,FUT,From [mp](tojpepurp).
-me2,më-,2,
-jraneg,-jra,NEG; PRIV,Is this really a privative? Or a cessative? [ex](anfoperso-08).
-janeg,-ja,NEG,
-kempinire,-kempïnirë,PTCP.NZR.GNO:NEG,?
-tanecncs,-tane,CNCS,
-podes,-po,DES,
-t3,ta-,3P; 3,
-ylk,y-,LK,
-u1,u-,1,
-keimp,-kë,IMP,
-pokobecause,poko,because,
-kontomopl,-kontomo,PL,
-tomopl,-tomo,PL,
-tamotimp,-ta,MOTIMP,
-tikenepost,-tïkene,POST,Main clause inflection?
-peess,-pe,ESS,
-pijkedim,-pïjkë,DIM,
-sareimn,-sarë,IMN,
-ma,ma,RESTR,
-nepeke,-nëpëkë,PROG.INTR,
-a2,a-,2,Conservative _ë-_.
-jnarineg,-jnari,NEG,
-tenpert,-të,NPERT,Only occurs on a few nouns.
-tipert,-ti,PERT,
-riipfv,-ri,IPFV,From [mp](rinmlz).
-sepst,-se,PST,From [mp](septcp).
-jpepst,-jpë,PST,From [mp](jpenmlz).
-rupert,-ri,PERT,
-sapepfv,-sapë,PFV,From [mp](sapenmlz). Only occurs on the copula.
-pekeprog,-pëkë,PROG.TR,
-jramaproh,-jrama,PROH,
-ripocntf,-ripo,CNTF,
-keprop,-ke,PROP,
-yeperl,-ye,ADVZ,Not productive.
+ID,Name,Translation,Comment,Value
+i3,i-/t-,3,The old *_-it_.,3
+jnepl,-jnë,PL,,pl
+tojpefut,-tojpe,FUT,From [mp](tojpepurp).,fut
+me2,më-,2,,2
+jraneg,-jra,NEG,,neg
+janeg,-ja,NEG,,neg
+kempinire,-kempïnirë,PTCP.NZR.GNO:NEG,?,
+ta-3,ta-,3P; 3,,3
+ylk,y-,LK,,
+u1,u-,1,,1
+keimp,-kë,IMP,,imp
+pokobecause,poko,because,,
+kontomopl,-kontomo,PL,,pl
+tomopl,-tomo,PL,,pl
+tamotimp,-ta,MOTIMP,,
+tikenepost,-tïkene,POST,Main clause inflection?,
+sareimn,-sarë,IMN,,
+ma,ma,RESTR,,
+nepeke,-nëpëkë,PROG.INTR,,prog
+a2,a-,2,Conservative _ë-_.,2
+jnarineg,-jnari,NEG,,neg
+tenpert,-të,NPERT,Only occurs on a few nouns.,npert
+tipert,-ti,PERT,,pert
+riipfv,-ri,IPFV,From [mp](rinmlz).,ipfv
+sepst,-se,PST,From [mp](septcp).,pst
+jpepst,-jpë,PST,From [mp](jpenmlz).,pst
+rupert,-ri,PERT,,pert
+sapepfv,-sapë,PFV,From [mp](sapenmlz). Only occurs on the copula.,pfv
+pekeprog,-pëkë,PROG.TR,,prog
+jramaproh,-jrama,PROH,,
+ripocntf,-ripo,CNTF,,
+yeperl,-ye,ADVZ,Not productive.,
+tojpanofut,-tojpano,FUT.CONCL,From -tojpe + -ano ‘PURP + NMLZ’,fut
+tepl,-të,PL,Occurs with [mp](keimp).,pl
+ihort,-i,HORT,An old Set I?,hort
