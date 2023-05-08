@@ -1,33 +1,33 @@
 ID,Name,Translation,Comment
-dt2,s-,DETRZ,
-kavbz,-ka,VBZ.TR,'deprive P of N’
-tavbz,-ta,VBZ.INTR,n>vi ‘S characterized by N’
-anonmlz,-ano,NMLZ,
-jtevbz,-jtë,VBZ.TR,"n>vt, ‘provide P with N’ or ‘make P characterized by N’"
-dt1,ëj-,DETRZ,
-petiplur,-pëti,PLUR,Lexicalized with some verbs.
-septcp,-se,PTCP; SUP,
-jpenmlz,-jpë,PST.ACNNMLZ,
-rinmlz,-ri,ACNNMLZ,Gave rise to [mp](riipfv).
-minmlz,-mï,NMLZ,
 sapenmlz,-sapë,ABS.NMLZ,Gave rise to [mp](sapepfv).
-ninmlz,-ni,AGTNMLZ,Has developed predicative uses.
-pininmlz,‑pïnï,PRIV.NMLZ,
-nnmlzpre,n-,P.NMLZ,
-tojpepurp,-tojpe,PURP,From [mp](toponmlz) and [mp](esspe). Gave rise to [mp](tojpefut).
-sarecvb,-sarë,CVB,Gave rise to [mp](sareimn).
-dt3,at-,DETRZ,
-toponmlz,-topo,CIRC.NMLZ,"Contained in [mp](tojpepurp). Marginally occurs in predicative uses (histyarirdi-0542, histyarirdi-0091); can combine with [mp](neinf)."
+rinmlz,-ri,ACNNMLZ,Gave rise to [mp](riipfv).
 readvz,-re,ADVZ,
-pamivbz,-pamï,VBZ,n>vi ‘S characterized by N’
-neinf,-në,INF,Lexically characterized: v.n. in FLEx.
-pecaus,-po,CAUS,"Occurs marginally, causee w/ =pana."
 neadvz,-ne,ADVZ,Not productive.
 yeadvz,-ye,ADVZ,
-keprop,-ke,PROP,Etymologically 'have N’.
+ninmlz,-ni,AGTNMLZ,Has developed predicative uses.
+pocaus,-po,CAUS,"Occurs marginally, causee w/ =pana."
 macaus,-ma,CAUS,
-pijkedim,-pïjkë,DIM,
+toponmlz,-topo,CIRC.NMLZ,"Contained in [mp](tojpepurp). Marginally occurs in predicative uses (histyarirdi-0542, histyarirdi-0091); can combine with [mp](neinf)."
 tanecncs,-tane,CNCS,
+sarecvb,-sarë,CVB,Gave rise to [mp](sareimn).
 podes,-po,DES,
+dt2,s-,DETRZ,
+dt1,ëj-,DETRZ,
+dt3,at-,DETRZ,
+pijkedim,-pïjkë,DIM,
+neinf,-në,INF,Lexically characterized: v.n. in FLEx.
+anonmlz,-ano,NMLZ,
+minmlz,-mï,NMLZ,
+nnmlzpre,n-,P.NMLZ,
+petiplur,-pëti,PLUR,Lexicalized with some verbs.
 jrapriv,-jra,PRIV,Is this really a privative? Or a cessative? [ex](anfoperso-08).
+pininmlz,‑pïnï,PRIV.NMLZ,
+keprop,-ke,PROP,Etymologically 'have N’.
 tprop,t-,PROP,"Fossilized, but still looks like a morpheme."
+jpenmlz,-jpë,PST.ACNNMLZ,
+septcp,-se,PTCP; SUP,
+tojpepurp,-tojpe,PURP,From [mp](toponmlz) and [mp](esspe). Gave rise to [mp](tojpefut).
+pamivbz,-pamï,VBZ,n>vi ‘S characterized by N’
+tavbz,-ta,VBZ.INTR,n>vi ‘S characterized by N’
+kavbz,-ka,VBZ.TR,'deprive P of N’
+jtevbz,-jtë,VBZ.TR,"n>vt, ‘provide P with N’ or ‘make P characterized by N’"

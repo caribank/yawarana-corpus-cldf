@@ -5,6 +5,7 @@ import logging
 import re
 import sys
 import time
+from writio import load
 from pathlib import Path
 from types import SimpleNamespace
 
@@ -944,6 +945,7 @@ if args.full:
         cache.wordforms = {}
 
     def process_flexample(ex):
+        print(ex)
         g_shift = 0  # to keep up to date with how many g-words there are in total
         for idx, obj in enumerate(ex["Analyzed_Word"]):
             if obj == "":
@@ -1006,7 +1008,7 @@ if args.full:
     print(f"Parsed examples in {toc - tic:0.4f} seconds")
     join_dfs("examples", "examples", "flexamples")
 else:
-    doc_ex = []
+    doc_ex = load("manex.txt").split("\n")
     for mdfile in Path(
         "/home/florianm/Dropbox/research/cariban/yawarana/yawarana-pld-sketch/content"
     ).glob("*.md"):
@@ -1093,8 +1095,8 @@ def add_formparts(rec):
         )
 
 
-pn_v_forms.apply(add_formparts, axis=1)
-df.formparts = formparts
+# pn_v_forms.apply(add_formparts, axis=1)
+# df.formparts = formparts
 df.forms = pn_v_forms
 
 pn_v_infl = cread(
