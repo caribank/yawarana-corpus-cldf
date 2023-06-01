@@ -267,7 +267,7 @@ df.roots = df.roots[keep_cols]
 stem_pos_list = ["vt", "vi", "n", "postp", "pn", "adv"]
 df.root_lex = df.roots[df.roots["POS"].isin(stem_pos_list)].copy()
 df.stems = df.root_lex.explode("Form")
-df.stems["Lexeme_ID"] = df.stems["ID"]
+df.stems["Lexeme_IDs"] = df.stems["ID"]
 df.stems["ID"] = df.stems.apply(
     lambda x: humidify(f"{x.Form}-{x.Gloss[0]}", unique=True, key="stems"), axis=1
 )
@@ -424,7 +424,7 @@ miscderiv = miscderiv.apply(lambda x: process_stem(x, None), axis=1)
 
 df.derived_lex = pd.concat([tavbz, kavbz, detrz, macaus, miscderiv])
 df.derived_lex["Language_ID"] = "yab"
-df.derived_lex["Lexeme_ID"] = df.derived_lex["ID"]
+df.derived_lex["Lexeme_IDs"] = df.derived_lex["ID"]
 df.derived_lex["Parameter_ID"] = df.derived_lex["Translation"]
 
 for iii, (stem, idx) in enumerate(complicated_stems):
@@ -437,15 +437,15 @@ for iii, (stem, idx) in enumerate(complicated_stems):
 df.derived_stems = df.derived_lex.explode(["Form", "Morpho_Segments"])
 
 df.derived_lex["Name"] = df.derived_lex["Form"].apply(lambda x: strip_form(x[0]))
-df.derived_stems["Lexeme_ID"] = df.derived_stems["ID"]
+df.derived_stems["Lexeme_IDs"] = df.derived_stems["ID"]
 df.derived_stems["ID"] = df.derived_stems.apply(
     lambda x: humidify(f"{strip_form(x.Form)}-{x.Gloss[0]}", unique=True, key="stems"),
     axis=1,
 )
 df.derived_lex["Main_Stem"] = df.derived_lex["ID"]
 
-# print(df.derived_stems[["ID", "Form", "Translation", "Lexeme_ID", "Base_Stem", "Base_Root", "Morpho_Segments", "Lexeme_ID"]].to_string())
-# print(df.derived_lex[["ID", "Form", "Translation", "Lexeme_ID", "Base_Stem", "Base_Root"]].to_string())
+# print(df.derived_stems[["ID", "Form", "Translation", "Lexeme_IDs", "Base_Stem", "Base_Root", "Morpho_Segments", "Lexeme_IDs"]].to_string())
+# print(df.derived_lex[["ID", "Form", "Translation", "Lexeme_IDs", "Base_Stem", "Base_Root"]].to_string())
 
 # print(df.derived_lex[["ID", "Form", "Translation", "Main_Stem"]].to_string())
 
@@ -466,7 +466,7 @@ def add_to_stem_dict(stem):
     for g in stem["Gloss"]:
         stem_tuple = (f'{stem["Name"].strip("-")}', g)
         stem_dic.setdefault(stem_tuple, {})
-        stem_dic[stem_tuple][stem["Lexeme_ID"]] = stem["ID"]
+        stem_dic[stem_tuple][stem["Lexeme_IDs"]] = stem["ID"]
 
 
 df.stems.apply(add_to_stem_dict, axis=1)
@@ -539,7 +539,7 @@ def resolve_productive_stem(lex, process, obj, gloss, pos):
         log.warning(f"Found no candidates for stem {lex}")
         log.warning(lex)
         return None, None
-    stem_cands = df.stems[df.stems["Lexeme_ID"] == source_lex.name]
+    stem_cands = df.stems[df.stems["Lexeme_IDs"] == source_lex.name]
     if len(stem_cands) > 1:
         stem_cands = stem_cands[stem_cands["Form"].isin(obj.split("-"))]
     if len(stem_cands) > 1:
@@ -581,9 +581,9 @@ def resolve_productive_stem(lex, process, obj, gloss, pos):
         parsed_stem["Parameter_ID"] = parsed_stem["Translation"]
         parsed_stem["Name"] = parsed_stem["Form"][0]
         productive_lexemes[new_stem_id] = parsed_stem
-        parsed_stem["Lexeme_ID"] = new_stem_id
+        parsed_stem["Lexeme_IDs"] = new_stem_id
         productive_stems[new_stem_id] = parsed_stem
-    return new_stem_id, source_stem.Lexeme_ID
+    return new_stem_id, source_stem.Lexeme_IDs
 
 
 lex_stem_dic = {}
@@ -592,7 +592,7 @@ lex_stem_dic = {}
 def lexeme2stem(lex, obj, pos):
     if (lex, obj) in lex_stem_dic:
         return lex_stem_dic[(lex, obj)]
-    cands = df.stems[df.stems["Lexeme_ID"] == lex]
+    cands = df.stems[df.stems["Lexeme_IDs"] == lex]
     if len(cands) > 1:
         cands = cands[cands["Form"].isin(splitform(obj))]
     if len(cands) == 0:
@@ -641,7 +641,7 @@ def identify_part(obj, gloss, ids):
 
 # todo: this should only add inflectional values if they are in the gramm argument
 def process_wordform(obj, gloss, lex_id, gramm, morpheme_ids, **kwargs):
-    if gloss == "***":
+    if gloss in ["***", "?", ""]:
         return None
     wf_id = humidify(f"{strip_form(obj)}-{gloss}", unique=False, key="wordforms")
     if wf_id in wf_dict:
@@ -739,6 +739,7 @@ f_audios = []
 dic_forms = []
 ## Out-of-context wordforms
 dic_wordforms = cread(UP_DIR / "../annotation/parsed_dictionary_wordforms.csv")
+dic_wordforms.rename(columns={"Lexeme_ID": "Lexeme_IDs"}, inplace=True)
 for wf in dic_wordforms.to_dict("records"):
     kwargs = {}
     if wf["Audio"]:
@@ -778,7 +779,7 @@ for wf in dic_wordforms.to_dict("records"):
             process_wordform(
                 gwf["Analysis"],
                 gwf["Gloss"],
-                gwf["Lexeme_ID"],
+                gwf["Lexeme_IDs"],
                 gwf["Gramm"],
                 gwf["Morpheme_IDs"],
                 Source=["muller2021yawarana"],
@@ -793,7 +794,7 @@ for wf in dic_wordforms.to_dict("records"):
         process_wordform(
             wf["Analysis"],
             wf["Gloss"],
-            wf["Lexeme_ID"],
+            wf["Lexeme_IDs"],
             wf["Gramm"],
             wf["Morpheme_IDs"],
             Source=["muller2021yawarana"],
@@ -804,8 +805,6 @@ for wf in dic_wordforms.to_dict("records"):
 
 ## In-context wordforms
 
-print(pd.DataFrame.from_dict(dic_forms))
-
 ex_audios = []
 exampleparts = []
 split_cols = ["Analyzed_Word", "Gloss", "Lexeme_IDs", "Gramm", "Morpheme_IDs"]
@@ -813,19 +812,7 @@ split_cols = ["Analyzed_Word", "Gloss", "Lexeme_IDs", "Gramm", "Morpheme_IDs"]
 df.examples = cread("raw/examples.csv")
 df.examples["Language_ID"] = "yab"
 
-# not all examples have english translations
-# those that don't will get the spanish translation
-# as the main one
-def fix_translations(row):
-    if row["Translation_en"] != "":
-        row["Original_Translation"] = row["Translated_Text"]
-        row["Translated_Text"] = row["Translation_en"]
-    else:
-        row["Original_Translation"] = ""
-    return row
 
-
-df.examples = df.examples.apply(fix_translations, axis=1)
 df.examples["Part_Of_Speech"] = df.examples["Gramm"].apply(
     lambda y: "\t".join([get_pos(x) if get_pos(x) else "?" for x in y.split("\t")])
 )
@@ -847,7 +834,7 @@ for ex in df.examples.to_dict("records"):
                     "Gramm": gramm,
                     "Analysis": obj,
                     "Gloss": gloss,
-                    "Lexeme_ID": stem_id,
+                    "Lexeme_IDs": stem_id,
                     "Morpheme_IDs": morpheme_ids,
                 }
             )
@@ -855,14 +842,13 @@ for ex in df.examples.to_dict("records"):
                 process_wordform(
                     gwf["Analysis"],
                     gwf["Gloss"],
-                    gwf["Lexeme_ID"],
+                    gwf["Lexeme_IDs"],
                     gwf["Gramm"],
                     gwf["Morpheme_IDs"],
                     Part_Of_Speech=get_pos(gwf["Gramm"]),
                 ): gwf
                 for gwf in res
             }
-            print(wf_ids)
             for wf_id, form in wf_ids.items():
                 if wf_id and gloss != "?":
                     exampleparts.append(
@@ -937,7 +923,7 @@ if args.full:
     ]
 
     cache = SimpleNamespace()
-    a = YawaranaAnalyzer(etymologize=False)
+    a = YawaranaAnalyzer()
     a.load_grammar()
     if Path("wf_cache.json").is_file():
         cache.wordforms = jsonlib.load("wf_cache.json")
@@ -945,7 +931,6 @@ if args.full:
         cache.wordforms = {}
 
     def process_flexample(ex):
-        print(ex)
         g_shift = 0  # to keep up to date with how many g-words there are in total
         for idx, obj in enumerate(ex["Analyzed_Word"]):
             if obj == "":
@@ -1071,13 +1056,14 @@ df.wordformparts = pd.DataFrame.from_dict(wf_morphs)
 df.inflections = inflections
 df.exampleparts = exampleparts
 
-# Multiword forms
-pn_v_forms = cread(
-    "/home/florianm/Dropbox/research/cariban/yawarana/yawarana_corpus/annotation/output/multiword.csv"
-)
-pn_v_forms.rename(columns={"Gloss": "Parameter_ID"}, inplace=True)
+# # Multiword forms
+# pn_v_forms = cread(
+#     "/home/florianm/Dropbox/research/cariban/yawarana/yawarana_corpus/annotation/output/multiword.csv"
+# )
+# pn_v_forms.rename(columns={"Gloss": "Parameter_ID"}, inplace=True)
+# pn_v_forms = pd.concat([pn_v_forms, pd.DataFrame.from_dict(dic_forms)])
 
-pn_v_forms = pd.concat([pn_v_forms, pd.DataFrame.from_dict(dic_forms)])
+pn_v_forms = pd.DataFrame.from_dict(dic_forms)
 pn_v_forms["Language_ID"] = "yab"
 pn_v_forms = pn_v_forms.fillna("")
 formparts = []
@@ -1099,9 +1085,9 @@ def add_formparts(rec):
 # df.formparts = formparts
 df.forms = pn_v_forms
 
-pn_v_infl = cread(
-    "/home/florianm/Dropbox/research/cariban/yawarana/yawarana_corpus/annotation/output/inflections.csv"
-)
+# pn_v_infl = cread(
+#     "/home/florianm/Dropbox/research/cariban/yawarana/yawarana_corpus/annotation/output/inflections.csv"
+# )
 
 
 def resolve_wf_data(rec):
@@ -1128,8 +1114,8 @@ def resolve_wf_data(rec):
     return rec
 
 
-df.pnvinfl = pn_v_infl.apply(resolve_wf_data, axis=1)
-df.pnvinfl = df.pnvinfl[df.pnvinfl["Stem_ID"] != ""]
+# df.pnvinfl = pn_v_infl.apply(resolve_wf_data, axis=1)
+# df.pnvinfl = df.pnvinfl[df.pnvinfl["Stem_ID"] != ""]
 df.inflections = pd.DataFrame.from_dict(df.inflections)
 
 # combine dataframes
@@ -1141,7 +1127,7 @@ df.stemparts["Gloss_ID"] = df.stemparts["Gloss"].apply(id_glosses)
 splitcol(df.derivations, "Stempart_IDs")
 join_dfs("morphs", "morphs", "bound_root_morphs")
 join_dfs("morphemes", "morphemes", "bound_roots")
-join_dfs("inflections", "inflections", "pnvinfl")
+# join_dfs("inflections", "inflections", "pnvinfl")
 
 df.productive_lexemes = pd.DataFrame.from_dict(productive_lexemes.values())
 df.productive_lexemes["Language_ID"] = "yab"
