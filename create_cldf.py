@@ -809,10 +809,14 @@ ex_audios = []
 exampleparts = []
 split_cols = ["Analyzed_Word", "Gloss", "Lexeme_IDs", "Gramm", "Morpheme_IDs"]
 
-df.examples = cread("raw/examples.csv")
+
+if args.full:
+    df.examples = cread("raw/full_examples.csv")
+else:
+    df.examples = cread("raw/examples.csv")
 df.examples["Language_ID"] = "yab"
-
-
+df.examples["Primary_Text"] = df.examples["Primary_Text"].apply(lambda x: x.replace("#", ""))
+df.examples = df.examples[~(df.examples["Primary_Text"] == "")]
 df.examples["Part_Of_Speech"] = df.examples["Gramm"].apply(
     lambda y: "\t".join([get_pos(x) if get_pos(x) else "?" for x in y.split("\t")])
 )
@@ -838,6 +842,7 @@ for ex in df.examples.to_dict("records"):
                     "Morpheme_IDs": morpheme_ids,
                 }
             )
+            print(obj, gloss)
             wf_ids = {
                 process_wordform(
                     gwf["Analysis"],
@@ -897,115 +902,116 @@ for ex in df.examples.to_dict("records"):
         )
         examples_with_audio.append(ex["ID"])
 
-# glossed examples from FLEx database
-df.flexamples = cread("raw/flexamples.csv")
-df.flexamples["Language_ID"] = "yab"
-df.flexamples = df.flexamples[~(df.flexamples["ID"].isin(df.examples["ID"]))]
-df.flexamples.rename(columns={"gls_nl_phrase": "Speaker_ID"}, inplace=True)
-for col in ["Analyzed_Word", "Gloss"]:
-    df.flexamples[col] = df.flexamples[col].apply(lambda x: x.replace("\t=", "\t"))
-    df.flexamples[col] = df.flexamples[col].apply(lambda x: x.replace("\t=", "\t"))
-    df.flexamples[col] = df.flexamples[col].apply(lambda x: x.replace("==", "="))
-    df.flexamples[col] = df.flexamples[col].apply(lambda x: x.split("\t"))
-if args.full:
-    df.flexamples = df.flexamples[
-        [
-            "ID",
-            "Language_ID",
-            "Primary_Text",
-            "Analyzed_Word",
-            "Gloss",
-            "Translated_Text",
-            "Text_ID",
-            "Record_Number",
-            "Speaker_ID",
-        ]
-    ]
+# # glossed examples from FLEx database
+# df.flexamples = cread("raw/flexamples.csv")
+# df.flexamples["Language_ID"] = "yab"
+# df.flexamples = df.flexamples[~(df.flexamples["ID"].isin(df.examples["ID"]))]
+# df.flexamples.rename(columns={"gls_nl_phrase": "Speaker_ID"}, inplace=True)
+# for col in ["Analyzed_Word", "Gloss"]:
+#     df.flexamples[col] = df.flexamples[col].apply(lambda x: x.replace("\t=", "\t"))
+#     df.flexamples[col] = df.flexamples[col].apply(lambda x: x.replace("\t=", "\t"))
+#     df.flexamples[col] = df.flexamples[col].apply(lambda x: x.replace("==", "="))
+#     df.flexamples[col] = df.flexamples[col].apply(lambda x: x.split("\t"))
 
-    cache = SimpleNamespace()
-    a = YawaranaAnalyzer()
-    a.load_grammar()
-    if Path("wf_cache.json").is_file():
-        cache.wordforms = jsonlib.load("wf_cache.json")
-    else:
-        cache.wordforms = {}
+# if args.full:
+#     df.flexamples = df.flexamples[
+#         [
+#             "ID",
+#             "Language_ID",
+#             "Primary_Text",
+#             "Analyzed_Word",
+#             "Gloss",
+#             "Translated_Text",
+#             "Text_ID",
+#             "Record_Number",
+#             "Speaker_ID",
+#         ]
+#     ]
 
-    def process_flexample(ex):
-        g_shift = 0  # to keep up to date with how many g-words there are in total
-        for idx, obj in enumerate(ex["Analyzed_Word"]):
-            if obj == "":
-                continue
-            if obj in cache.wordforms:
-                wf = cache.wordforms[obj]
-            else:
-                anas = a.analyze_words(strip_form(obj))
-                if len(anas) > 1 or anas[0].wfGlossed == "":
-                    continue
-                wf = anas[0].to_json()
-                cache.wordforms[obj] = wf
-            for g_word_idx, (real_obj, real_gloss) in enumerate(
-                zip(wf["wfGlossed"].split("="), wf["gloss"].split("="))
-            ):
-                real_idx = idx + g_word_idx + g_shift
-                wf_id = process_wordform(
-                    real_obj,
-                    real_gloss,
-                    wf["lemma"],
-                    wf["gramm"],
-                    wf["id"],
-                    Part_Of_Speech=get_pos(wf["gramm"]),
-                )
-                if wf_id:
-                    exampleparts.append(
-                        {
-                            "ID": f'{ex["ID"]}-{real_idx}',
-                            "Example_ID": ex["ID"],
-                            "Wordform_ID": wf_id,
-                            "Index": real_idx,
-                        }
-                    )
-                else:
-                    print(real_obj, real_gloss)
-                    exit()
+#     cache = SimpleNamespace()
+#     a = YawaranaAnalyzer()
+#     a.load_grammar()
+#     if Path("wf_cache.json").is_file():
+#         cache.wordforms = jsonlib.load("wf_cache.json")
+#     else:
+#         cache.wordforms = {}
 
-            g_shift += g_word_idx
-        file_path = AUDIO_PATH / f'{ex["ID"]}.wav'
-        if file_path.is_file():
-            ex_audios.append(
-                {
-                    "ID": ex["ID"],
-                    "Name": ex["ID"],
-                    "Media_Type": "audio/wav",
-                    "Download_URL": "audio/" + ex["ID"] + ".wav",
-                }
-            )
-            examples_with_audio.append(ex["ID"])
+#     def process_flexample(ex):
+#         g_shift = 0  # to keep up to date with how many g-words there are in total
+#         for idx, obj in enumerate(ex["Analyzed_Word"]):
+#             if obj == "":
+#                 continue
+#             if obj in cache.wordforms:
+#                 wf = cache.wordforms[obj]
+#             else:
+#                 anas = a.analyze_words(strip_form(obj))
+#                 if len(anas) > 1 or anas[0].wfGlossed == "":
+#                     continue
+#                 wf = anas[0].to_json()
+#                 cache.wordforms[obj] = wf
+#             for g_word_idx, (real_obj, real_gloss) in enumerate(
+#                 zip(wf["wfGlossed"].split("="), wf["gloss"].split("="))
+#             ):
+#                 real_idx = idx + g_word_idx + g_shift
+#                 wf_id = process_wordform(
+#                     real_obj,
+#                     real_gloss,
+#                     wf["lemma"],
+#                     wf["gramm"],
+#                     wf["id"],
+#                     Part_Of_Speech=get_pos(wf["gramm"]),
+#                 )
+#                 if wf_id:
+#                     exampleparts.append(
+#                         {
+#                             "ID": f'{ex["ID"]}-{real_idx}',
+#                             "Example_ID": ex["ID"],
+#                             "Wordform_ID": wf_id,
+#                             "Index": real_idx,
+#                         }
+#                     )
+#                 else:
+#                     print(real_obj, real_gloss)
+#                     exit()
 
-    tic = time.perf_counter()
+#             g_shift += g_word_idx
+#         file_path = AUDIO_PATH / f'{ex["ID"]}.wav'
+#         if file_path.is_file():
+#             ex_audios.append(
+#                 {
+#                     "ID": ex["ID"],
+#                     "Name": ex["ID"],
+#                     "Media_Type": "audio/wav",
+#                     "Download_URL": "audio/" + ex["ID"] + ".wav",
+#                 }
+#             )
+#             examples_with_audio.append(ex["ID"])
 
-    df.flexamples.apply(process_flexample, axis=1)
-    jsonlib.dump(cache.wordforms, "wf_cache.json")
+#     tic = time.perf_counter()
 
-    toc = time.perf_counter()
-    df.flexamples.rename(
-        columns={"Part": "Record_Number", "gls_nl_phrase": "Speaker_ID"}, inplace=True
-    )
-    print(f"Parsed examples in {toc - tic:0.4f} seconds")
-    join_dfs("examples", "examples", "flexamples")
-else:
-    doc_ex = load("manex.txt").split("\n")
-    for mdfile in Path(
-        "/home/florianm/Dropbox/research/cariban/yawarana/yawarana-pld-sketch/content"
-    ).glob("*.md"):
-        with open(mdfile, "r", encoding="utf-8") as f:
-            for ex_ids in re.findall(r"\[ex\]\((.*?)\)", f.read()):
-                for hit in ex_ids.split(","):
-                    doc_ex.extend(hit.split("?"))
-    df.flexamples = df.flexamples[df.flexamples["ID"].isin(doc_ex)]
-    df.flexamples.rename(
-        columns={"Part": "Record_Number", "gls_nl_phrase": "Speaker_ID"}, inplace=True
-    )
-    join_dfs("examples", "examples", "flexamples")
+#     df.flexamples.apply(process_flexample, axis=1)
+#     jsonlib.dump(cache.wordforms, "wf_cache.json")
+
+#     toc = time.perf_counter()
+#     df.flexamples.rename(
+#         columns={"Part": "Record_Number", "gls_nl_phrase": "Speaker_ID"}, inplace=True
+#     )
+#     print(f"Parsed examples in {toc - tic:0.4f} seconds")
+#     join_dfs("examples", "examples", "flexamples")
+# else:
+#     doc_ex = load("manex.txt").split("\n")
+#     for mdfile in Path(
+#         "/home/florianm/Dropbox/research/cariban/yawarana/yawarana-pld-sketch/content"
+#     ).glob("*.md"):
+#         with open(mdfile, "r", encoding="utf-8") as f:
+#             for ex_ids in re.findall(r"\[ex\]\((.*?)\)", f.read()):
+#                 for hit in ex_ids.split(","):
+#                     doc_ex.extend(hit.split("?"))
+#     df.flexamples = df.flexamples[df.flexamples["ID"].isin(doc_ex)]
+#     df.flexamples.rename(
+#         columns={"Part": "Record_Number", "gls_nl_phrase": "Speaker_ID"}, inplace=True
+#     )
+#     join_dfs("examples", "examples", "flexamples")
 
 
 # todo: remove this at some point
