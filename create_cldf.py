@@ -495,7 +495,7 @@ deriv_source_pos = {"anonmlz": ["adv", "postp"], "keprop": ["n"], "ninmlz": ["vt
 
 def build_productive_stem(source_stem, process, obj):
     if process not in deriv_proc_dic:
-        log.warning(process)
+        log.warning(f"Unidentifiable process: {process}")
         return None, None, None
     suff_form = deriv_proc_dic[process]["Form"]
     for part in splitform(obj):
@@ -528,12 +528,10 @@ def resolve_productive_stem(lex, process, obj, gloss, pos):
     if len(cands) == 1:
         source_lex = cands.iloc[0]
     elif len(cands) > 1:
-        log.warning(f"Could not disambiguate stem {lex}")
-        log.warning(cands)
+        log.warning(f"Could not disambiguate stem {lex}\n{cands.to_string()}")
         exit()
     elif len(cands) == 0:
         log.warning(f"Found no candidates for stem {lex}")
-        log.warning(lex)
         return None, None
     stem_cands = df.stems[df.stems["Lexeme_IDs"] == source_lex.name]
     if len(stem_cands) > 1:
@@ -673,7 +671,7 @@ def process_wordform(obj, gloss, lex_id, gramm, morpheme_ids, **kwargs):
             if source_id:
                 morpheme_ids.append(source_id)
             else:
-                log.warning(f"{obj} '{gloss}'")
+                log.warning(f"Unable to find derivational source for {obj} '{gloss}'")
         else:
             stem_id = lexeme2stem(lex_id, obj, get_pos(gramm))
         # print(obj, gloss)
