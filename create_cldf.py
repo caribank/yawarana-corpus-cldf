@@ -273,9 +273,6 @@ df.stems["ID"] = df.stems.apply(
 )
 df.root_lex["Main_Stem"] = df.root_lex["ID"]
 
-df.stems["Morpho_Segments"] = df.stems["Form"].apply(
-    lambda x: x.split(" ")
-)  # todo does this do what it should?
 
 
 df.root_morphs = df.roots.explode("Form")
@@ -359,7 +356,6 @@ def get_stempart_cands(rec, part, process):
 
 
 def process_stem(rec, process):
-    rec["Form"] = rec["Form"]
     rec["Form"] = rec["Form"].split(SEP)
     rec["ID"] = humidify(f'{strip_form(rec["Form"][0])}-{rec["Translation"][0]}')
     if (
@@ -410,7 +406,7 @@ def process_stem(rec, process):
             elif len(cands) > 1:
                 log.warning(f"Unable to disambiguate stem parts for {rec['Form']}")
                 print(cands)
-        rec["Morpho_Segments"].append(parts)
+        rec["Morpho_Segments"].append(" ".join(parts))
     rec["Gloss"] = glossify(rec["Translation"])
     rec["Form"] = [x.replace("+", "") for x in rec["Form"]]
     return rec
@@ -842,7 +838,7 @@ for ex in df.examples.to_dict("records"):
                     "Morpheme_IDs": morpheme_ids,
                 }
             )
-            print(obj, gloss)
+            # print(obj, gloss)
             wf_ids = {
                 process_wordform(
                     gwf["Analysis"],
@@ -864,7 +860,7 @@ for ex in df.examples.to_dict("records"):
                             "Index": idx + g_shift,
                         }
                     )
-                elif gloss != "***":
+                elif gloss not in ["***", "?"]:
                     log.warning(
                         f"Unidentifiable wordform {obj} '{gloss}' in {ex['ID']}"
                     )
@@ -888,7 +884,7 @@ for ex in df.examples.to_dict("records"):
                         "Index": idx + g_shift,
                     }
                 )
-            elif gloss != "***":
+            elif gloss not in ["***", "?"]:
                 log.warning(f"Unidentifiable wordform {obj} '{gloss}' in {ex['ID']}")
     file_path = AUDIO_PATH / f'{ex["ID"]}.wav'
     if file_path.is_file():
@@ -1142,8 +1138,13 @@ join_dfs("lexemes", "lexemes", "productive_lexemes")
 df.productive_stems = pd.DataFrame.from_dict(productive_stems.values())
 df.productive_stems["Language_ID"] = "yab"
 
+df.stems["Morpho_Segments"] = df.stems["Form"].apply(
+    lambda x: x.split(" ")
+)  # todo does this do what it should?
+
 
 join_dfs("stems", "stems", "productive_stems")
+
 
 
 df.examples["Media_ID"] = df.examples.apply(
