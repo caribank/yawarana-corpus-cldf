@@ -274,7 +274,6 @@ df.stems["ID"] = df.stems.apply(
 df.root_lex["Main_Stem"] = df.root_lex["ID"]
 
 
-
 df.root_morphs = df.roots.explode("Form")
 df.root_morphs["Morpheme_ID"] = df.root_morphs["ID"]
 df.root_morphs["ID"] = df.root_morphs.apply(
@@ -633,6 +632,16 @@ def identify_part(obj, gloss, ids):
     raise ValueError(f"Could not find any morph or stem {obj} '{gloss}'. IDs: {ids}")
 
 
+def identify_complex_stem_position(obj, stem):
+    indices = []
+    objs = obj.split("-")
+    stems = stem.split("-")
+    for st in stems:
+        if st in objs:
+            indices.append(objs.index(st))
+    return indices
+
+
 # todo: this should only add inflectional values if they are in the gramm argument
 def process_wordform(obj, gloss, lex_id, gramm, morpheme_ids, **kwargs):
     if gloss in ["***", "?", ""]:
@@ -665,9 +674,21 @@ def process_wordform(obj, gloss, lex_id, gramm, morpheme_ids, **kwargs):
                         }
                     )
                 else:
-                    log.warning(
-                        f"The form {obj} '{gloss}' contains the stem {productive_stems[stem_id]['Form']} '{', '.join(productive_stems[stem_id]['Gloss'])}'; can it know about its wordformstem?"
+                    stemform = productive_stems[stem_id]["Form"][0]
+                    if stemform in obj:
+                        wf_stems.append(
+                            {
+                                "ID": f"{wf_id}-deriv-stem",
+                                "Index": identify_complex_stem_position(obj, stemform),
+                                "Stem_ID": stem_id,
+                                "Wordform_ID": wf_id,
+                            }
+                        )
+                    else:
+                        log.warning(
+                        f"The form {obj} '{gloss}' contains the stem {stemform} '{', '.join(productive_stems[stem_id]['Gloss'])}'; can it know about its wordformstem?"
                     )
+
             if source_id:
                 morpheme_ids.append(source_id)
             else:
@@ -809,7 +830,9 @@ if args.full:
 else:
     df.examples = cread("raw/examples.csv")
 df.examples["Language_ID"] = "yab"
-df.examples["Primary_Text"] = df.examples["Primary_Text"].apply(lambda x: x.replace("#", ""))
+df.examples["Primary_Text"] = df.examples["Primary_Text"].apply(
+    lambda x: x.replace("#", "")
+)
 df.examples = df.examples[~(df.examples["Primary_Text"] == "")]
 df.examples["Part_Of_Speech"] = df.examples["Gramm"].apply(
     lambda y: "\t".join([get_pos(x) if get_pos(x) else "?" for x in y.split("\t")])
@@ -1142,7 +1165,6 @@ df.stems["Morpho_Segments"] = df.stems["Form"].apply(
 
 
 join_dfs("stems", "stems", "productive_stems")
-
 
 
 df.examples["Media_ID"] = df.examples.apply(
