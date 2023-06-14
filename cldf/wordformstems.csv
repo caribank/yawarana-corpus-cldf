@@ -1,4 +1,5 @@
 ID,Wordform_ID,Stem_ID,Index
+ajpachikejra-undergrowth-prop-neg-deriv-stem,ajpachikejra-undergrowth-prop-neg,ajpachike-undergrowth-prop,"0,1"
 ajpachikejra-undergrowth-prop-neg-0,ajpachikejra-undergrowth-prop-neg,ajpachi-undergrowth,0
 asakontompene-four-0,asakontompene-four,asakontompene-four,0
 asereke-dry-cough-prop-deriv-stem,asereke-dry-cough-prop,asereke-dry-cough-prop,"0,1"
@@ -11,6 +12,7 @@ enirono-now-nmlz-deriv-stem,enirono-now-nmlz,enirono-now-nmlz,"0,1"
 enirono-now-nmlz-0,enirono-now-nmlz,eniro-now,0
 ijmokani-cook-agtnmlz-acnnmlz-0,ijmokani-cook-agtnmlz-acnnmlz,ijmoka-cook,0
 ijtari-3-foot-pert-1,ijtari-3-foot-pert,jta-foot,1
+kaimokejra-game-prop-neg-deriv-stem,kaimokejra-game-prop-neg,kaimoke-game-prop,"0,1"
 kaimokejra-game-prop-neg-0,kaimokejra-game-prop-neg,kaimo-game,0
 kamparake-big-prop-deriv-stem,kamparake-big-prop,kamparake-big-prop,"0,1"
 kamparake-big-prop-0,kamparake-big-prop,kampara-big,0
@@ -26,6 +28,7 @@ nonokemi-earth-prop-nmlz-0,nonokemi-earth-prop-nmlz,nono-earth,0
 nopano-good-nmlz-deriv-stem,nopano-good-nmlz,nopano-good-nmlz,"0,1"
 nopano-good-nmlz-0,nopano-good-nmlz,nop-good,0
 ntate-mouth-npert-0,ntate-mouth-npert,nta-mouth,0
+panakejra-ear-prop-neg-deriv-stem,panakejra-ear-prop-neg,panake-ear-prop,"0,1"
 panakejra-ear-prop-neg-0,panakejra-ear-prop-neg,pana-ear,0
 pejmani-bewitch-agtnmlz-acnnmlz-0,pejmani-bewitch-agtnmlz-acnnmlz,pejma-bewitch,0
 pekepene-alone-0,pekepene-alone,pekepene-alone,0
@@ -73,6 +76,7 @@ yaruwakem-laugh-acnnmlz-prop-nmlz-0,yaruwakem-laugh-acnnmlz-prop-nmlz,yaruwa-lau
 tajtane-say-cncs-deriv-stem,tajtane-say-cncs,tajtane-say-cncs,"0,1"
 tajtane-say-cncs-0,tajtane-say-cncs,taj-say,0
 mokontomo-2pl-pro-0,mokontomo-2pl-pro,mokontomo-2pl-pro,0
+serekapojra-become-tired-des-ipfv-neg-deriv-stem,serekapojra-become-tired-des-ipfv-neg,serekapo-become-tired-des,"0,1"
 serekapojra-become-tired-des-ipfv-neg-0,serekapojra-become-tired-des-ipfv-neg,sereka-become-tired,0
 taro-say-ipfv-0,taro-say-ipfv,taro-say,0
 ta-say-ipfv-0,ta-say-ipfv,ta-say,0
@@ -90,6 +94,7 @@ yarikaja-laugh-neg-0,yarikaja-laugh-neg,yarika-laugh,0
 seneja-see-self-neg-0,seneja-see-self-neg,sene-see-self,0
 yarikatopo-laugh-circ-nmlz-deriv-stem,yarikatopo-laugh-circ-nmlz,yarikatopo-laugh-circ-nmlz,"0,1"
 yarikatopo-laugh-circ-nmlz-0,yarikatopo-laugh-circ-nmlz,yarika-laugh,0
+taitapo-3p-hear-des-ipfv-deriv-stem,taitapo-3p-hear-des-ipfv,itapo-hear-des,"1,2"
 taitapo-3p-hear-des-ipfv-1,taitapo-3p-hear-des-ipfv,ita-hear,1
 chiri-cop-acnnmlz-deriv-stem,chiri-cop-acnnmlz,chiri-cop-acnnmlz,"0,1"
 chiri-cop-acnnmlz-0,chiri-cop-acnnmlz,chi-cop,0
@@ -306,6 +311,7 @@ taitaja-3p-hear-neg-1,taitaja-3p-hear-neg,ita-hear,1
 enire-now-0,enire-now,enire-now,0
 winijse-sleep-pst-0,winijse-sleep-pst,winij-sleep,0
 yatun-day-0,yatun-day,yatun-day,0
+empampori-learn-des-ipfv-deriv-stem,empampori-learn-des-ipfv,empampo-learn-des,"0,1"
 empampori-learn-des-ipfv-0,empampori-learn-des-ipfv,empam-learn,0
 intojpe-see-purp-deriv-stem,intojpe-see-purp,intojpe-see-purp,"0,1"
 intojpe-see-purp-0,intojpe-see-purp,in-see,0
@@ -313,8 +319,10 @@ winikija-sleep-neg-0,winikija-sleep-neg,winiki-sleep,0
 iche-put-pst-0,iche-put-pst,i-put,0
 ekete-where-0,ekete-where,ekete-where,0
 ya-ra-grandchild-0,ya-ra-grandchild,ya-ra-grandchild,0
+pojtepori-want-des-ipfv-deriv-stem,pojtepori-want-des-ipfv,pojtepo-want-des,"0,1"
 pojtepori-want-des-ipfv-0,pojtepori-want-des-ipfv,pojte-want,0
 tarine-fast-0,tarine-fast,tarine-fast,0
+winijpojra-sleep-des-ipfv-neg-deriv-stem,winijpojra-sleep-des-ipfv-neg,winijpo-sleep-des,"0,1"
 winijpojra-sleep-des-ipfv-neg-0,winijpojra-sleep-des-ipfv-neg,winij-sleep,0
 asamopeke-cry-prog-tr-0,asamopeke-cry-prog-tr,asamo-cry,0
 moroni-pain-0,moroni-pain,moroni-pain,0
@@ -344,6 +352,7 @@ kantajne-sing-ipfv-pl-0,kantajne-sing-ipfv-pl,kanta-sing,0
 naikonton-do-ipfv-pl-0,naikonton-do-ipfv-pl,nai-do,0
 oki-chicha-0,oki-chicha,oki-chicha,0
 yeni-drink-ipfv-1-0,yeni-drink-ipfv-1,yeni-drink,0
+naijpetiri-do-plur-ipfv-deriv-stem,naijpetiri-do-plur-ipfv,naijpeti-do-plur,"0,1"
 naijpetiri-do-plur-ipfv-0,naijpetiri-do-plur-ipfv,naij-do,0
 waijtatomo-mouse-pl-0,waijtatomo-mouse-pl,waijta-mouse,0
 nwajteri-dance-ipfv-0,nwajteri-dance-ipfv,nwajte-dance,0
@@ -362,13 +371,16 @@ waijtatomojpe-mouse-pl-pst-0,waijtatomojpe-mouse-pl-pst,waijta-mouse,0
 tipasekontomo-go-in-group-pst-pl-0,tipasekontomo-go-in-group-pst-pl,tipa-go-in-group,0
 ejwenakajpe-vomit-pst-acnnmlz-deriv-stem,ejwenakajpe-vomit-pst-acnnmlz,ejwenakajpe-vomit-pst-acnnmlz,"0,1"
 ejwenakajpe-vomit-pst-acnnmlz-0,ejwenakajpe-vomit-pst-acnnmlz,ejwenaka-vomit,0
+tainpetiri-3p-see-plur-ipfv-deriv-stem,tainpetiri-3p-see-plur-ipfv,inpeti-see-plur,"1,2"
 tainpetiri-3p-see-plur-ipfv-1,tainpetiri-3p-see-plur-ipfv,in-see,1
+inpeti-see-plur-ipfv-deriv-stem,inpeti-see-plur-ipfv,inpeti-see-plur,"0,1"
 inpeti-see-plur-ipfv-0,inpeti-see-plur-ipfv,in-see,0
 wenakajpe-vomit-pst-0,wenakajpe-vomit-pst,wenaka-vomit,0
 eki-chicha-0,eki-chicha,eki-chicha,0
 wenarujpe-vomit-pert-pst-0,wenarujpe-vomit-pert-pst,wena-vomit,0
 kerejpe-old-0,kerejpe-old,kerejpe-old,0
 nwajtekonton-dance-ipfv-pl-0,nwajtekonton-dance-ipfv-pl,nwajte-dance,0
+tipapejsejne-go-in-group-plur-pst-pl-deriv-stem,tipapejsejne-go-in-group-plur-pst-pl,tipapej-go-in-group-plur,"0,1"
 tipapejsejne-go-in-group-plur-pst-pl-0,tipapejsejne-go-in-group-plur-pst-pl,tipa-go-in-group,0
 waijtajne-mouse-pl-0,waijtajne-mouse-pl,waijta-mouse,0
 ajpachi-undergrowth-0,ajpachi-undergrowth,ajpachi-undergrowth,0

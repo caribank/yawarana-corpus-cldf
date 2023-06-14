@@ -1004,7 +1004,7 @@
             "url": "wordformparts.csv"
         },
         {
-            "dc:extent": 377,
+            "dc:extent": 389,
             "tableSchema": {
                 "columns": [
                     {

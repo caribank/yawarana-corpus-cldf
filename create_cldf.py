@@ -439,11 +439,13 @@ df.derived_stems["ID"] = df.derived_stems.apply(
 )
 df.derived_lex["Main_Stem"] = df.derived_lex["ID"]
 
-# print(df.derived_stems[["ID", "Form", "Translation", "Lexeme_IDs", "Base_Stem", "Base_Root", "Morpho_Segments", "Lexeme_IDs"]].to_string())
+print(df.derived_stems[["ID", "Form", "Translation", "Lexeme_IDs", "Base_Stem", "Base_Root", "Morpho_Segments", "Lexeme_IDs"]].to_string())
 # print(df.derived_lex[["ID", "Form", "Translation", "Lexeme_IDs", "Base_Stem", "Base_Root"]].to_string())
 
 # print(df.derived_lex[["ID", "Form", "Translation", "Main_Stem"]].to_string())
 
+
+df.stems["Morpho_Segments"] = df.stems["Form"]
 join_dfs("stems", "stems", "derived_stems")
 join_dfs("lexemes", "root_lex", "derived_lex")
 df.lexemes = df.lexemes.set_index("ID", drop=False)
@@ -452,6 +454,13 @@ df.stems["Name"] = df.stems["Form"].apply(strip_form)
 df.stems["Description"] = df.stems["Translation"]
 df.stems["Language_ID"] = "yab"
 df.stems["Segments"] = df.stems["Name"].apply(tokenize)
+
+
+df.stems["Morpho_Segments"] = df.stems["Morpho_Segments"].apply(
+    lambda x: x.split(" ")
+)
+
+
 
 # a dict mapping object-gloss tuples to stem IDs
 stem_dic = {}
@@ -1079,6 +1088,7 @@ df.wordformparts = pd.DataFrame.from_dict(wf_morphs)
 df.inflections = inflections
 df.exampleparts = exampleparts
 
+
 # # Multiword forms
 # pn_v_forms = cread(
 #     "/home/florianm/Dropbox/research/cariban/yawarana/yawarana_corpus/annotation/output/multiword.csv"
@@ -1159,9 +1169,7 @@ join_dfs("lexemes", "lexemes", "productive_lexemes")
 df.productive_stems = pd.DataFrame.from_dict(productive_stems.values())
 df.productive_stems["Language_ID"] = "yab"
 
-df.stems["Morpho_Segments"] = df.stems["Form"].apply(
-    lambda x: x.split(" ")
-)  # todo does this do what it should?
+
 
 
 join_dfs("stems", "stems", "productive_stems")
