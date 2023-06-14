@@ -5,11 +5,10 @@ import logging
 import re
 import sys
 import time
-from writio import load
+from itertools import product
 from pathlib import Path
 from types import SimpleNamespace
 
-from yawarana_helpers import split_cliticized
 import pandas as pd
 import pybtex
 import yaml
@@ -28,15 +27,10 @@ from pycldf.util import pkg_path
 from pylingdocs.cldf import tables as pld_tables
 from pylingdocs.preprocessing import preprocess_cldfviz
 from segments import Profile, Tokenizer
-from itertools import product
 from uniparser_yawarana import YawaranaAnalyzer
-from yawarana_helpers import (
-    find_detransitivizer,
-    glossify,
-    trim_dic_suff,
-    get_pos,
-    strip_form,
-)
+from writio import load
+from yawarana_helpers import (find_detransitivizer, get_pos, glossify,
+                              split_cliticized, strip_form, trim_dic_suff)
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-f", "--full", action="store_true")
@@ -267,7 +261,7 @@ df.roots = df.roots[keep_cols]
 stem_pos_list = ["vt", "vi", "n", "postp", "pn", "adv"]
 df.root_lex = df.roots[df.roots["POS"].isin(stem_pos_list)].copy()
 df.stems = df.root_lex.explode("Form")
-df.stems["Lexeme_IDs"] = df.stems["ID"]
+df.stems["Lexeme_ID"] = df.stems["ID"]
 df.stems["ID"] = df.stems.apply(
     lambda x: humidify(f"{x.Form}-{x.Gloss[0]}", unique=True, key="stems"), axis=1
 )
@@ -419,9 +413,8 @@ miscderiv = miscderiv.apply(lambda x: process_stem(x, None), axis=1)
 
 df.derived_lex = pd.concat([tavbz, kavbz, detrz, macaus, miscderiv])
 df.derived_lex["Language_ID"] = "yab"
-df.derived_lex["Lexeme_IDs"] = df.derived_lex["ID"]
+df.derived_lex["Lexeme_ID"] = df.derived_lex["ID"]
 df.derived_lex["Parameter_ID"] = df.derived_lex["Translation"]
-
 for iii, (stem, idx) in enumerate(complicated_stems):
     if stem["Base_Stem"] in derivations:
         log.warning(
@@ -431,18 +424,15 @@ for iii, (stem, idx) in enumerate(complicated_stems):
         log.warning(f"Cannot identify source of derived stem {stem['Form']}")
 df.derived_stems = df.derived_lex.explode(["Form", "Morpho_Segments"])
 
+
 df.derived_lex["Name"] = df.derived_lex["Form"].apply(lambda x: strip_form(x[0]))
-df.derived_stems["Lexeme_IDs"] = df.derived_stems["ID"]
+df.derived_stems["Lexeme_ID"] = df.derived_stems["ID"]
 df.derived_stems["ID"] = df.derived_stems.apply(
     lambda x: humidify(f"{strip_form(x.Form)}-{x.Gloss[0]}", unique=True, key="stems"),
     axis=1,
 )
 df.derived_lex["Main_Stem"] = df.derived_lex["ID"]
 
-print(df.derived_stems[["ID", "Form", "Translation", "Lexeme_IDs", "Base_Stem", "Base_Root", "Morpho_Segments", "Lexeme_IDs"]].to_string())
-# print(df.derived_lex[["ID", "Form", "Translation", "Lexeme_IDs", "Base_Stem", "Base_Root"]].to_string())
-
-# print(df.derived_lex[["ID", "Form", "Translation", "Main_Stem"]].to_string())
 
 
 df.stems["Morpho_Segments"] = df.stems["Form"]
@@ -456,10 +446,7 @@ df.stems["Language_ID"] = "yab"
 df.stems["Segments"] = df.stems["Name"].apply(tokenize)
 
 
-df.stems["Morpho_Segments"] = df.stems["Morpho_Segments"].apply(
-    lambda x: x.split(" ")
-)
-
+df.stems["Morpho_Segments"] = df.stems["Morpho_Segments"].apply(lambda x: x.split(" "))
 
 
 # a dict mapping object-gloss tuples to stem IDs
@@ -470,7 +457,7 @@ def add_to_stem_dict(stem):
     for g in stem["Gloss"]:
         stem_tuple = (f'{stem["Name"].strip("-")}', g)
         stem_dic.setdefault(stem_tuple, {})
-        stem_dic[stem_tuple][stem["Lexeme_IDs"]] = stem["ID"]
+        stem_dic[stem_tuple][stem["Lexeme_ID"]] = stem["ID"]
 
 
 df.stems.apply(add_to_stem_dict, axis=1)
@@ -541,7 +528,7 @@ def resolve_productive_stem(lex, process, obj, gloss, pos):
     elif len(cands) == 0:
         log.warning(f"Found no candidates for stem {lex}")
         return None, None
-    stem_cands = df.stems[df.stems["Lexeme_IDs"] == source_lex.name]
+    stem_cands = df.stems[df.stems["Lexeme_ID"] == source_lex.name]
     if len(stem_cands) > 1:
         stem_cands = stem_cands[stem_cands["Form"].isin(obj.split("-"))]
     if len(stem_cands) > 1:
@@ -583,9 +570,9 @@ def resolve_productive_stem(lex, process, obj, gloss, pos):
         parsed_stem["Parameter_ID"] = parsed_stem["Translation"]
         parsed_stem["Name"] = parsed_stem["Form"][0]
         productive_lexemes[new_stem_id] = parsed_stem
-        parsed_stem["Lexeme_IDs"] = new_stem_id
+        parsed_stem["Lexeme_ID"] = new_stem_id
         productive_stems[new_stem_id] = parsed_stem
-    return new_stem_id, source_stem.Lexeme_IDs
+    return new_stem_id, source_stem.Lexeme_ID
 
 
 lex_stem_dic = {}
@@ -594,7 +581,7 @@ lex_stem_dic = {}
 def lexeme2stem(lex, obj, pos):
     if (lex, obj) in lex_stem_dic:
         return lex_stem_dic[(lex, obj)]
-    cands = df.stems[df.stems["Lexeme_IDs"] == lex]
+    cands = df.stems[df.stems["Lexeme_ID"] == lex]
     if len(cands) > 1:
         cands = cands[cands["Form"].isin(splitform(obj))]
     if len(cands) == 0:
@@ -695,13 +682,16 @@ def process_wordform(obj, gloss, lex_id, gramm, morpheme_ids, **kwargs):
                         )
                     else:
                         log.warning(
-                        f"The form {obj} '{gloss}' contains the stem {stemform} '{', '.join(productive_stems[stem_id]['Gloss'])}'; can it know about its wordformstem?"
-                    )
+                            f"The form {obj} '{gloss}' contains the stem {stemform} '{', '.join(productive_stems[stem_id]['Gloss'])}'; can it know about its wordformstem?"
+                        )
 
             if source_id:
                 morpheme_ids.append(source_id)
             else:
                 log.warning(f"Unable to find derivational source for {obj} '{gloss}'")
+        elif "+" in lex_id:
+            print("UH OH", "lex_id", lex_id, "obj", obj, "gloss", gloss, get_pos(gramm))
+            exit()
         else:
             stem_id = lexeme2stem(lex_id, obj, get_pos(gramm))
         # print(obj, gloss)
@@ -857,6 +847,7 @@ for ex in df.examples.to_dict("records"):
         zip(*[ex[col] for col in split_cols])
     ):
         if "=" in gloss:
+            print("OK")
             f_id = humidify(strip_form(obj) + "-" + gloss)
             res = split_cliticized(
                 {
@@ -1168,8 +1159,6 @@ join_dfs("lexemes", "lexemes", "productive_lexemes")
 
 df.productive_stems = pd.DataFrame.from_dict(productive_stems.values())
 df.productive_stems["Language_ID"] = "yab"
-
-
 
 
 join_dfs("stems", "stems", "productive_stems")
