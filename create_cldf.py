@@ -29,8 +29,14 @@ from pylingdocs.preprocessing import preprocess_cldfviz
 from segments import Profile, Tokenizer
 from uniparser_yawarana import YawaranaAnalyzer
 from writio import load
-from yawarana_helpers import (find_detransitivizer, get_pos, glossify,
-                              split_cliticized, strip_form, trim_dic_suff)
+from yawarana_helpers import (
+    find_detransitivizer,
+    get_pos,
+    glossify,
+    split_cliticized,
+    strip_form,
+    trim_dic_suff,
+)
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-f", "--full", action="store_true")
@@ -179,7 +185,11 @@ deriv_proc_dic = {}
 
 
 def add_to_proc_dict(x):
-    deriv_proc_dic[x["ID"]] = {"Form": x["Name"], "Gloss": x["Translation"]}
+    if x["Parameter_ID"] == ["DETRZ"]:
+        process = "detrz"
+    else:
+        process = x["ID"]
+    deriv_proc_dic[x["ID"]] = {"Form": x["Name"], "Gloss": x["Translation"], "Process": process}
 
 
 df.derivation_morphemes.apply(add_to_proc_dict, axis=1)
@@ -321,6 +331,7 @@ kavbz["POS"] = "vt"
 macaus["POS"] = "vt"
 
 complicated_stems = []
+derived_parts = {}
 
 
 def get_stempart_cands(rec, part, process):
@@ -331,12 +342,16 @@ def get_stempart_cands(rec, part, process):
         cands = cands[cands["ID"] == "tavbz"]
     elif len(cands) > 2 and process == "macaus":
         cands = cands[cands["ID"] == "macaus"]
-    elif len(cands) > 1 and process == "detrz":
+    elif len(cands) > 1 and process == "detrz" and "DETRZ" in list(cands["Parameter_ID"].apply(lambda x: x[0])):
+        cands = cands[cands["Parameter_ID"].apply(lambda x: x == ["DETRZ"])]
+    elif "DETRZ" in list(cands["Parameter_ID"].apply(lambda x: x[0])):
         cands = cands[cands["Parameter_ID"].apply(lambda x: x == ["DETRZ"])]
     if len(cands) == 0:
         # is the base a bound root?
         bound_root_base = df.bound_root_morphs[
-            df.bound_root_morphs["ID"] == rec["Base_Stem"]
+            (df.bound_root_morphs["ID"] == rec["Base_Stem"])
+            | (df.bound_root_morphs["ID"] == rec.get("Base_Root"))
+            | (df.bound_root_morphs["Form"] == part)
         ]
         if len(bound_root_base) == 1:
             cands = bound_root_base
@@ -346,7 +361,6 @@ def get_stempart_cands(rec, part, process):
     elif len(cands) > 1 and process in deriv_proc_dic:
         cands = cands[cands["ID"] == process]
     return cands
-
 
 def process_stem(rec, process):
     rec["Form"] = rec["Form"].split(SEP)
@@ -365,11 +379,27 @@ def process_stem(rec, process):
         process = rec["Affix_ID"]
     rec["Morpho_Segments"] = []
     for form in rec["Form"]:
+        stem_id = humidify(strip_form(form) + "-" + rec["Translation"][0])
+        parts = re.split(r"-|\+", form)
+        new_form = []
+        processes = []
+        for part in parts:
+            if part in derived_parts:
+                for subpart in derived_parts[part]:
+                    new_form.append(subpart["Part"])
+                    if subpart["Morph_ID"] in deriv_proc_dic:
+                        processes.append(subpart["Morph_ID"])
+                    else:
+                        processes.append(process)
+            else:
+                new_form.append(part)
+                processes.append(process)
+        form = "+".join(new_form)
         parts = re.split(r"-|\+", form)
         form = strip_form(form)
-        stem_id = humidify(strip_form(form) + "-" + rec["Translation"][0])
+        derived_parts[form] = []
         for idx, part in enumerate(parts):
-            cands = get_stempart_cands(rec, part, process)
+            cands = get_stempart_cands(rec, part, processes[idx])
             if len(cands) == 1:
                 hit = cands.iloc[0]
                 stemparts.append(
@@ -380,6 +410,9 @@ def process_stem(rec, process):
                         "Index": idx,
                         "Gloss": hit["Gloss"][0],
                     }
+                )
+                derived_parts[form].append(
+                    {"Morph_ID": hit["ID"], "Index": idx, "Part": part}
                 )
                 if hit["ID"] == rec["Affix_ID"]:
                     derivations[rec["ID"]] = {
@@ -395,10 +428,13 @@ def process_stem(rec, process):
                     else:
                         derivations[rec["ID"]]["Source_ID"] = rec["Base_Stem"]
             elif len(cands) == 0:
-                complicated_stems.append([rec.copy(), idx])
+                complicated_stems.append(rec.copy())
+                log.warning(f"Could not find stempart {part} for stem {form}")
+                exit()
             elif len(cands) > 1:
                 log.warning(f"Unable to disambiguate stem parts for {rec['Form']}")
                 print(cands)
+                # exit()
         rec["Morpho_Segments"].append(" ".join(parts))
     rec["Gloss"] = glossify(rec["Translation"])
     rec["Form"] = [x.replace("+", "") for x in rec["Form"]]
@@ -415,13 +451,6 @@ df.derived_lex = pd.concat([tavbz, kavbz, detrz, macaus, miscderiv])
 df.derived_lex["Language_ID"] = "yab"
 df.derived_lex["Lexeme_ID"] = df.derived_lex["ID"]
 df.derived_lex["Parameter_ID"] = df.derived_lex["Translation"]
-for iii, (stem, idx) in enumerate(complicated_stems):
-    if stem["Base_Stem"] in derivations:
-        log.warning(
-            f"Stem {stem['Form']} is derived from {derivations[stem['Base_Stem']]['Target_ID']}; can it know its stemparts?"
-        )
-    else:
-        log.warning(f"Cannot identify source of derived stem {stem['Form']}")
 df.derived_stems = df.derived_lex.explode(["Form", "Morpho_Segments"])
 
 
@@ -432,7 +461,6 @@ df.derived_stems["ID"] = df.derived_stems.apply(
     axis=1,
 )
 df.derived_lex["Main_Stem"] = df.derived_lex["ID"]
-
 
 
 df.stems["Morpho_Segments"] = df.stems["Form"]
@@ -654,7 +682,6 @@ def process_wordform(obj, gloss, lex_id, gramm, morpheme_ids, **kwargs):
             morpheme_ids = morpheme_ids.split(",")
         if "&" in lex_id:
             source_lex, process = lex_id.rsplit("&", 1)
-            # print(source_lex, process)
             stem_id, source_id = resolve_productive_stem(
                 source_lex, process, obj, gloss, get_pos(gramm)
             )
@@ -694,7 +721,6 @@ def process_wordform(obj, gloss, lex_id, gramm, morpheme_ids, **kwargs):
             exit()
         else:
             stem_id = lexeme2stem(lex_id, obj, get_pos(gramm))
-        # print(obj, gloss)
         for idx, (part, partgloss) in enumerate(zip(obj.split("-"), gloss.split("-"))):
             if partgloss == "***":
                 continue
@@ -847,7 +873,6 @@ for ex in df.examples.to_dict("records"):
         zip(*[ex[col] for col in split_cols])
     ):
         if "=" in gloss:
-            print("OK")
             f_id = humidify(strip_form(obj) + "-" + gloss)
             res = split_cliticized(
                 {
@@ -859,7 +884,6 @@ for ex in df.examples.to_dict("records"):
                     "Morpheme_IDs": morpheme_ids,
                 }
             )
-            # print(obj, gloss)
             wf_ids = {
                 process_wordform(
                     gwf["Analysis"],
