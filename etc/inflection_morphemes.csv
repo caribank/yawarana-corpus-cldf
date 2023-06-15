@@ -1,37 +1,36 @@
-ID,Name,Translation,Comment,Value,Cognacy
-i3,i-/t-,3,The old *_-it_.,3,it-
-jnepl,-jnë,PL,,pl,-CVnë
-tojpefut,-tojpe,FUT,From [mp](tojpepurp).,fut,-topo pe
-me2,më-,2,,2,amërë
-jraneg,-jra,NEG,,neg,pïra
-janeg,-ja,NEG,,neg,
-kempinire,-kempïnirë,PTCP.NZR.GNO:NEG,?,,-ke-mï pïnï rë
-ta-3,ta-,3P; 3,,3,
-ylk,y-,LK,,,y-
-u1,u-,1,,1,u-
-keimp,-kë,IMP,,imp,-kë
-pokobecause,poko,because,,,pëkë
-kontomopl,-kontomo,PL,,pl,komo tomo
-tomopl,-tomo,PL,,pl,tomo
-tamotimp,-ta,MOTIMP,,,-ta
-tikenepost,-tïkene,POST,Main clause inflection?,,
-sareimn,-sarë,IMN,,,
-ma,ma,RESTR,,,
-nepeke,-nëpëkë,PROG.INTR,,prog,-në pëkë
-a2,a-,2,Conservative _ë-_.,2,ë-
-jnarineg,-jnari,NEG,,neg,???
-tenpert,-të,NPERT,Only occurs on a few nouns.,npert,-të
-tipert,-ti,PERT,,pert,-tï
-riipfv,-ri,IPFV,From [mp](rinmlz).,ipfv,-rï
-sepst,-se,PST,From [mp](septcp).,pst,t-V-se
-jpepst,-jpë,PST,From [mp](jpenmlz).,pst,-tïpë
-rupert,-ri,PERT,,pert,-rï
-sapepfv,-sapë,PFV,From [mp](sapenmlz). Only occurs on the copula.,pfv,-tyapë
-pekeprog,-pëkë,PROG.TR,,prog,-rï pëkë
-jramaproh,-jrama,PROH,,,???
-ripocntf,-ripo,CNTF,,,
-yeperl,-ye,ADVZ,Not productive.,,-ye
-tojpanofut,-tojpano,FUT.CONCL,From -tojpe + -ano ‘PURP + NMLZ’,fut,-topo p+ano
-tepl,-të,PL,Occurs with [mp](keimp).,pl,-të
-ihort,-i,HORT,An old Set I?,hort,-i
-ej12,ej-,1+2,,12,ejnë
+"ID","Name","Translation","Comment","Value","Cognacy"
+"i3","i-/t-",3,"The old *_-it_.",3,"it-"
+"jnepl","-jnë","PL",,"pl","-CVnë"
+"tojpefut","-tojpe","FUT","From [mp](tojpepurp).","fut","-topo pe"
+"me2","më-",2,,2,"amërë"
+"janeg","-ja","NEG",,"neg",
+"kempinire","-kempïnirë","PTCP.NZR.GNO:NEG","?",,"-ke-mï pïnï rë"
+"ta-3","ta-","3P; 3",,3,
+"ylk","y-","LK",,,"y-"
+"u1","u-",1,,1,"u-"
+"keimp","-kë","IMP",,"imp","-kë"
+"pokobecause","poko","because",,,"pëkë"
+"kontomopl","-kontomo","PL",,"pl","komo tomo"
+"tomopl","-tomo","PL",,"pl","tomo"
+"tamotimp","-ta","MOTIMP",,,"-ta"
+"tikenepost","-tïkene","POST","Main clause inflection?",,
+"sareimn","-sarë","IMN",,,
+"ma","ma","RESTR",,,
+"nepeke","-nëpëkë","PROG.INTR",,"prog","-në pëkë"
+"a2","a-",2,"Conservative _ë-_.",2,"ë-"
+"jnarineg","-jnari","NEG",,"neg","???"
+"tenpert","-të","NPERT","Only occurs on a few nouns.","npert","-të"
+"tipert","-ti","PERT",,"pert","-tï"
+"riipfv","-ri","IPFV","From [mp](rinmlz).","ipfv","-rï"
+"sepst","-se","PST","From [mp](septcp).","pst","t-V-se"
+"jpepst","-jpë","PST","From [mp](jpenmlz).","pst","-tïpë"
+"rupert","-ri","PERT",,"pert","-rï"
+"sapepfv","-sapë","PFV","From [mp](sapenmlz). Only occurs on the copula.","pfv","-tyapë"
+"pekeprog","-pëkë","PROG.TR",,"prog","-rï pëkë"
+"jramaproh","-jrama","PROH",,,"???"
+"ripocntf","-ripo","CNTF",,,
+"yeperl","-ye","ADVZ","Not productive.",,"-ye"
+"tojpanofut","-tojpano","FUT.CONCL","From -tojpe + -ano ‘PURP + NMLZ’","fut","-topo p+ano"
+"tepl","-të","PL","Occurs with [mp](keimp).","pl","-të"
+"ihort","-i","HORT","An old Set I?","hort","-i"
+"ej12","ej-","1+2",,12,"ejnë"

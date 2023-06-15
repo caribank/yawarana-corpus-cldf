@@ -1,7 +1,7 @@
 ID,Wordform_ID,Morph_ID,Index,Gloss_ID
 ajpachikejra-undergrowth-prop-neg-0,ajpachikejra-undergrowth-prop-neg,ajpachi-undergrowth,0,undergrowth
 ajpachikejra-undergrowth-prop-neg-1,ajpachikejra-undergrowth-prop-neg,keprop,1,prop
-ajpachikejra-undergrowth-prop-neg-2,ajpachikejra-undergrowth-prop-neg,jraneg,2,neg
+ajpachikejra-undergrowth-prop-neg-2,ajpachikejra-undergrowth-prop-neg,jra-neg,2,neg
 asakontompene-four-0,asakontompene-four,asakontompene-four,0,four
 asereke-dry-cough-prop-0,asereke-dry-cough-prop,asere-dry-cough,0,dry-cough
 asereke-dry-cough-prop-1,asereke-dry-cough-prop,keprop,1,prop
@@ -25,7 +25,7 @@ ijtari-3-foot-pert-1,ijtari-3-foot-pert,jta-foot,1,foot
 ijtari-3-foot-pert-2,ijtari-3-foot-pert,ripert,2,pert
 kaimokejra-game-prop-neg-0,kaimokejra-game-prop-neg,kaimo-game,0,game
 kaimokejra-game-prop-neg-1,kaimokejra-game-prop-neg,keprop,1,prop
-kaimokejra-game-prop-neg-2,kaimokejra-game-prop-neg,jraneg,2,neg
+kaimokejra-game-prop-neg-2,kaimokejra-game-prop-neg,jra-neg,2,neg
 kamparake-big-prop-0,kamparake-big-prop,kampara-big,0,big
 kamparake-big-prop-1,kamparake-big-prop,keprop,1,prop
 karasake-white-0,karasake-white,karasake-white,0,white
@@ -46,7 +46,7 @@ ntate-mouth-npert-0,ntate-mouth-npert,nta-mouth,0,mouth
 ntate-mouth-npert-1,ntate-mouth-npert,tenpert,1,npert
 panakejra-ear-prop-neg-0,panakejra-ear-prop-neg,pana-ear,0,ear
 panakejra-ear-prop-neg-1,panakejra-ear-prop-neg,keprop,1,prop
-panakejra-ear-prop-neg-2,panakejra-ear-prop-neg,jraneg,2,neg
+panakejra-ear-prop-neg-2,panakejra-ear-prop-neg,jra-neg,2,neg
 pejmani-bewitch-agtnmlz-1,pejmani-bewitch-agtnmlz,ninmlz,1,agtnmlz
 pekepene-alone-0,pekepene-alone,pekepene-alone,0,alone
 romoye-downriver-0,romoye-downriver,romoye-downriver,0,downriver
@@ -59,7 +59,7 @@ tawori-3-uncle-pert-0,tawori-3-uncle-pert,it3,0,3
 tawori-3-uncle-pert-1,tawori-3-uncle-pert,awo-uncle,1,uncle
 tawori-3-uncle-pert-2,tawori-3-uncle-pert,ripert,2,pert
 teijpojra-far-neg-0,teijpojra-far-neg,teijpo-far-1,0,far
-teijpojra-far-neg-1,teijpojra-far-neg,jraneg,1,neg
+teijpojra-far-neg-1,teijpojra-far-neg,jra-neg,1,neg
 teijpono-far-nmlz-0,teijpono-far-nmlz,teijpo-far-1,0,far
 teijpono-far-nmlz-1,teijpono-far-nmlz,nonmlz,1,nmlz
 tejporemi-tasty-nmlz-1,tejporemi-tasty-nmlz,minmlz,1,nmlz

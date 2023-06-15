@@ -266,7 +266,7 @@
             "url": "stems.csv"
         },
         {
-            "dc:extent": 739,
+            "dc:extent": 737,
             "tableSchema": {
                 "columns": [
                     {
@@ -372,7 +372,7 @@
             "url": "morphs.csv"
         },
         {
-            "dc:extent": 232,
+            "dc:extent": 228,
             "tableSchema": {
                 "columns": [
                     {
@@ -665,7 +665,7 @@
             "url": "lexemes.csv"
         },
         {
-            "dc:extent": 575,
+            "dc:extent": 573,
             "tableSchema": {
                 "columns": [
                     {
@@ -863,7 +863,7 @@
             "url": "derivations.csv"
         },
         {
-            "dc:extent": 25,
+            "dc:extent": 24,
             "tableSchema": {
                 "columns": [
                     {
