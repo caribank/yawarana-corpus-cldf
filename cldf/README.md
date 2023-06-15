@@ -28,7 +28,7 @@ property | value
 
 property | value
  --- | ---
-[dc:extent](http://purl.org/dc/terms/extent) | 386
+[dc:extent](http://purl.org/dc/terms/extent) | 379
 
 
 ### Columns
@@ -73,7 +73,7 @@ Name/Property | Datatype | Description
 
 property | value
  --- | ---
-[dc:extent](http://purl.org/dc/terms/extent) | 738
+[dc:extent](http://purl.org/dc/terms/extent) | 739
 
 
 ### Columns
@@ -94,7 +94,7 @@ Name/Property | Datatype | Description
 
 property | value
  --- | ---
-[dc:extent](http://purl.org/dc/terms/extent) | 247
+[dc:extent](http://purl.org/dc/terms/extent) | 232
 
 
 ### Columns
@@ -164,7 +164,7 @@ Name/Property | Datatype | Description
 
 property | value
  --- | ---
-[dc:extent](http://purl.org/dc/terms/extent) | 574
+[dc:extent](http://purl.org/dc/terms/extent) | 575
 
 
 ### Columns
@@ -218,7 +218,7 @@ Name/Property | Datatype | Description
 
 property | value
  --- | ---
-[dc:extent](http://purl.org/dc/terms/extent) | 689
+[dc:extent](http://purl.org/dc/terms/extent) | 665
 
 
 ### Columns
@@ -235,7 +235,7 @@ Name/Property | Datatype | Description
 
 property | value
  --- | ---
-[dc:extent](http://purl.org/dc/terms/extent) | 395
+[dc:extent](http://purl.org/dc/terms/extent) | 387
 
 
 ### Columns
@@ -268,7 +268,7 @@ Name/Property | Datatype | Description
 
 property | value
  --- | ---
-[dc:extent](http://purl.org/dc/terms/extent) | 526
+[dc:extent](http://purl.org/dc/terms/extent) | 525
 
 
 ### Columns
@@ -320,7 +320,7 @@ Name/Property | Datatype | Description
 
 property | value
  --- | ---
-[dc:extent](http://purl.org/dc/terms/extent) | 1364
+[dc:extent](http://purl.org/dc/terms/extent) | 1371
 
 
 ### Columns

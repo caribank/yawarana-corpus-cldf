@@ -68,7 +68,6 @@ ejne-1-2pro-0,ejne-1-2pro,ejne-1-2pro,0
 yaruwaja-laugh-neg-0,yaruwaja-laugh-neg,yaruwa-laugh,0
 wanene-aunt-0,wanene-aunt,wanene-aunt,0
 wire-1pro-0,wire-1pro,wire-1pro,0
-yaruwarijra-laugh-ipfv-neg-0,yaruwarijra-laugh-ipfv-neg,yaruwa-laugh,0
 yaruwari-laugh-ipfv-0,yaruwari-laugh-ipfv,yaruwa-laugh,0
 yakarama-tell-acnnmlz-deriv-stem,yakarama-tell-acnnmlz,yakaramari-tell-acnnmlz,"0,1"
 yakarama-tell-acnnmlz-0,yakarama-tell-acnnmlz,yakarama-tell,0
@@ -80,8 +79,8 @@ yaruwakem-laugh-acnnmlz-prop-nmlz-0,yaruwakem-laugh-acnnmlz-prop-nmlz,yaruwa-lau
 tajtane-say-cncs-deriv-stem,tajtane-say-cncs,tajtane-say-cncs,"0,1"
 tajtane-say-cncs-0,tajtane-say-cncs,taj-say,0
 mokontomo-2pl-pro-0,mokontomo-2pl-pro,mokontomo-2pl-pro,0
-serekapojra-become-tired-des-ipfv-neg-deriv-stem,serekapojra-become-tired-des-ipfv-neg,serekapo-become-tired-des,"0,1"
-serekapojra-become-tired-des-ipfv-neg-0,serekapojra-become-tired-des-ipfv-neg,sereka-become-tired,0
+serekapo-become-tired-des-ipfv-deriv-stem,serekapo-become-tired-des-ipfv,serekapo-become-tired-des,"0,1"
+serekapo-become-tired-des-ipfv-0,serekapo-become-tired-des-ipfv,sereka-become-tired,0
 taro-say-ipfv-0,taro-say-ipfv,taro-say,0
 ta-say-ipfv-0,ta-say-ipfv,ta-say,0
 ya-erg-0,ya-erg,ya-erg,0
@@ -108,7 +107,6 @@ uyiwij-1-lk-house-pert-2,uyiwij-1-lk-house-pert,iwij-house,2
 yaka-all-0,yaka-all,yaka-all,0
 sukuri-silently-0,sukuri-silently,sukuri-silently,0
 itari-hear-ipfv-0,itari-hear-ipfv,ita-hear,0
-wajyakitijra-be-happy-ipfv-neg-0,wajyakitijra-be-happy-ipfv-neg,wajyakiti-be-happy,0
 kajke-say-imp-0,kajke-say-imp,kaj-say,0
 wejsaj-cop-pfv-0,wejsaj-cop-pfv,wej-cop,0
 tawaraij-too-0,tawaraij-too,tawaraij-too,0
@@ -140,8 +138,8 @@ yakere-lk-with-1,yakere-lk-with,akere-with,1
 chiyakon-friend-pert-0,chiyakon-friend-pert,chiyakon-friend,0
 chi-cop-acnnmlz-deriv-stem,chi-cop-acnnmlz,chiri-cop-acnnmlz,"0,1"
 chi-cop-acnnmlz-0,chi-cop-acnnmlz,chi-cop,0
-yarikasemijra-laugh-ptcp-nmlz-priv-deriv-stem,yarikasemijra-laugh-ptcp-nmlz-priv,yarikase-laugh-ptcp,"0,1"
-yarikasemijra-laugh-ptcp-nmlz-priv-0,yarikasemijra-laugh-ptcp-nmlz-priv,yarika-laugh,0
+yarikasemi-laugh-ptcp-nmlz-deriv-stem,yarikasemi-laugh-ptcp-nmlz,yarikase-laugh-ptcp,"0,1"
+yarikasemi-laugh-ptcp-nmlz-0,yarikasemi-laugh-ptcp-nmlz,yarika-laugh,0
 ente-here-loc-0,ente-here-loc,ente-here-loc,0
 ana-1-3pro-0,ana-1-3pro,ana-1-3pro,0
 keyetajpe-grow-pst-0,keyetajpe-grow-pst,keyeta-grow,0
@@ -167,7 +165,6 @@ make-mom-0,make-mom,make-mom,0
 pachi-older-sister-of-woman-0,pachi-older-sister-of-woman,pachi-older-sister-of-woman,0
 yemi-be-hungry-acnnmlz-deriv-stem,yemi-be-hungry-acnnmlz,yemiri-be-hungry-acnnmlz,"0,1"
 yemi-be-hungry-acnnmlz-0,yemi-be-hungry-acnnmlz,yemi-be-hungry-1,0
-asamorijra-cry-ipfv-neg-0,asamorijra-cry-ipfv-neg,asamo-cry,0
 muku-child-0,muku-child,muku-child,0
 tejetum-sick-0,tejetum-sick,tejetum-sick,0
 ijteri-3-go-ipfv-1,ijteri-3-go-ipfv,te-go,1
@@ -235,7 +232,6 @@ winiki-sleep-acnnmlz-0,winiki-sleep-acnnmlz,winiki-sleep,0
 sejpetiri-dream-ipfv-0,sejpetiri-dream-ipfv,sejpeti-dream,0
 sejpejse-dream-sup-deriv-stem,sejpejse-dream-sup,sejpejse-dream-ptcp,"0,1"
 sejpejse-dream-sup-0,sejpejse-dream-sup,sejpej-dream,0
-nopejra-good-neg-0,nopejra-good-neg,nope-good,0
 sejpejse-dream-pst-0,sejpejse-dream-pst,sejpej-dream,0
 najwata-harbor-0,najwata-harbor,najwata-harbor,0
 ka-all-0,ka-all,ka-all,0
@@ -244,8 +240,6 @@ meyerepuntari-2-lk-become-sick-ipfv-2,meyerepuntari-2-lk-become-sick-ipfv,erepun
 toto-non-indian-0,toto-non-indian,toto-non-indian,0
 waimuru-speak-ipfv-0,waimuru-speak-ipfv,waimu-speak,0
 waimu-language-pert-0,waimu-language-pert,waimu-language,0
-warajra-like-neg-0,warajra-like-neg,wara-like,0
-tawarajra-too-neg-0,tawarajra-too-neg,tawara-too,0
 yojse-eat-starch-pst-0,yojse-eat-starch-pst,yoj-eat-starch,0
 wajyama-kiss-ipfv-0,wajyama-kiss-ipfv,wajyama-kiss,0
 tainiri-3p-see-ipfv-1,tainiri-3p-see-ipfv,ini-see,1
@@ -263,7 +257,6 @@ yane-mother-0,yane-mother,yane-mother,0
 meyapichiri-2-grab-ipfv-1,meyapichiri-2-grab-ipfv,yapichi-grab,1
 tuna-water-0,tuna-water,tuna-water,0
 yakiri-lk-worm-pert-1,yakiri-lk-worm-pert,aki-worm,1
-inirijra-see-ipfv-neg-0,inirijra-see-ipfv-neg,ini-see,0
 yawoton-lk-uncle-pert-pl-1,yawoton-lk-uncle-pert-pl,awo-uncle,1
 yapichijpe-grab-pst-0,yapichijpe-grab-pst,yapichi-grab,0
 tejpe-go-pst-0,tejpe-go-pst,te-go,0
@@ -294,7 +287,7 @@ ta-say-acnnmlz-deriv-stem,ta-say-acnnmlz,tari-say-acnnmlz,"0,1"
 ta-say-acnnmlz-0,ta-say-acnnmlz,ta-say,0
 yemese-eat-fruits-eggs-soup-pst-0,yemese-eat-fruits-eggs-soup-pst,yeme-eat-fruits-eggs-soup,0
 sematojpano-die-fut-concl-0,sematojpano-die-fut-concl,sema-die,0
-uyewenkejra-1-lk-ignorant-neg-2,uyewenkejra-1-lk-ignorant-neg,ewenke-ignorant,2
+uyewenke-1-lk-ignorant-2,uyewenke-1-lk-ignorant,ewenke-ignorant,2
 memukuru-2-child-pert-1,memukuru-2-child-pert,muku-child,1
 mewaraijtori-2-husband-pert-1,mewaraijtori-2-husband-pert,waraijto-husband,1
 meyakerejtomo-2-lk-relative-pert-pl-2,meyakerejtomo-2-lk-relative-pert-pl,akere-relative-1,2
@@ -328,8 +321,8 @@ ya-ra-grandchild-0,ya-ra-grandchild,ya-ra-grandchild,0
 pojtepori-want-des-ipfv-deriv-stem,pojtepori-want-des-ipfv,pojtepo-want-des,"0,1"
 pojtepori-want-des-ipfv-0,pojtepori-want-des-ipfv,pojte-want,0
 tarine-fast-0,tarine-fast,tarine-fast,0
-winijpojra-sleep-des-ipfv-neg-deriv-stem,winijpojra-sleep-des-ipfv-neg,winijpo-sleep-des,"0,1"
-winijpojra-sleep-des-ipfv-neg-0,winijpojra-sleep-des-ipfv-neg,winij-sleep,0
+winijpo-sleep-des-ipfv-deriv-stem,winijpo-sleep-des-ipfv,winijpo-sleep-des,"0,1"
+winijpo-sleep-des-ipfv-0,winijpo-sleep-des-ipfv,winij-sleep,0
 asamopeke-cry-prog-tr-0,asamopeke-cry-prog-tr,asamo-cry,0
 moroni-pain-0,moroni-pain,moroni-pain,0
 neme-leave-ipfv-0,neme-leave-ipfv,neme-leave,0
@@ -337,7 +330,6 @@ nemeri-leave-ipfv-0,nemeri-leave-ipfv,neme-leave,0
 imukuru-3-child-pert-1,imukuru-3-child-pert,muku-child,1
 ejpina-often-0,ejpina-often,ejpina-often,0
 neto-n-0,neto-n,neto-n,0
-yewenkejra-lk-ignorant-neg-1,yewenkejra-lk-ignorant-neg,ewenke-ignorant,1
 tapojte-3p-want-ipfv-1,tapojte-3p-want-ipfv,pojte-want,1
 pojte-want-ipfv-0,pojte-want-ipfv,pojte-want,0
 mewaimuruntojpe-2-speak-fut-1,mewaimuruntojpe-2-speak-fut,waimurun-speak,1

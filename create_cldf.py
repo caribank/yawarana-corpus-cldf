@@ -912,6 +912,7 @@ for ex in df.examples.to_dict("records"):
                     "Morpheme_IDs": morpheme_ids,
                 }
             )
+            print(f_id, gramm, obj, gloss)
             wf_ids = {
                 process_wordform(
                     gwf["Analysis"],
