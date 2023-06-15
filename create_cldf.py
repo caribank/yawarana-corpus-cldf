@@ -439,7 +439,7 @@ def process_stem(rec, process):
             elif len(cands) == 0:
                 complicated_stems.append(rec.copy())
                 log.warning(f"Could not find stempart {part} for stem {form}")
-                exit()
+                # exit()
             elif len(cands) > 1:
                 log.warning(f"Unable to disambiguate stem parts for {rec['Form']}")
                 print(cands)
@@ -577,7 +577,7 @@ def resolve_productive_stem(lex_id, obj, gloss, pos):
     if len(stem_cands) > 1:
         log.warning(f"Ambiguity in resolving productive derivation {obj}&{process}:")
         print(stem_cands)
-        exit()
+        # exit()
         return None, None
     if len(stem_cands) == 0:
         log.warning(
@@ -912,7 +912,6 @@ for ex in df.examples.to_dict("records"):
                     "Morpheme_IDs": morpheme_ids,
                 }
             )
-            print(f_id, gramm, obj, gloss)
             wf_ids = {
                 process_wordform(
                     gwf["Analysis"],
