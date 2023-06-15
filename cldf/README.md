@@ -202,7 +202,7 @@ Name/Property | Datatype | Description
 
 property | value
  --- | ---
-[dc:extent](http://purl.org/dc/terms/extent) | 24
+[dc:extent](http://purl.org/dc/terms/extent) | 25
 
 
 ### Columns
