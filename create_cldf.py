@@ -546,11 +546,16 @@ def build_productive_stem(source_stem, process, obj):
     return stem_form, stem_glosses, stem_id
 
 
-def resolve_productive_stem(lex, process, obj, gloss, pos):
+def resolve_productive_stem(lex_id, obj, gloss, pos):
+    lex, process = lex_id.rsplit("&", 1)
     log.debug(
-        f"Uniparser lexeme: {lex}\nactual wordform: {obj} '{gloss}'\nuniparser process: {process}"
+        f"Uniparser lexeme: {lex_id}\nactual wordform: {obj} '{gloss}'\nuniparser process: {process}\nlexeme: {lex}"
     )
-    cands = df.lexemes[df.lexemes["Name"] == lex]
+    if "&" in lex:
+        sub_stem_id, sub_lex_id = resolve_productive_stem(lex, obj, gloss, pos)
+        cands = df.lexemes[df.lexemes["ID"] == sub_lex_id]
+    else:
+        cands = df.lexemes[df.lexemes["Name"] == lex]
     if len(cands) > 1:
         cands = cands[
             cands.apply(
@@ -563,7 +568,8 @@ def resolve_productive_stem(lex, process, obj, gloss, pos):
         log.warning(f"Could not disambiguate stem {lex}\n{cands.to_string()}")
         exit()
     elif len(cands) == 0:
-        log.warning(f"Found no candidates for stem {lex}")
+        log.warning(f"Found no candidates for stem {lex_id}")
+        # exit()
         return None, None
     stem_cands = df.stems[df.stems["Lexeme_ID"] == source_lex.name]
     if len(stem_cands) > 1:
@@ -571,11 +577,13 @@ def resolve_productive_stem(lex, process, obj, gloss, pos):
     if len(stem_cands) > 1:
         log.warning(f"Ambiguity in resolving productive derivation {obj}&{process}:")
         print(stem_cands)
+        exit()
         return None, None
     if len(stem_cands) == 0:
         log.warning(
             f"Unable to resolve productive derivation {obj}&{process} in form {obj} '{gloss}'."
         )
+        exit()
         return None, None
     source_stem = stem_cands.iloc[0]
     # todo: do these need to find their way back in?
@@ -586,6 +594,7 @@ def resolve_productive_stem(lex, process, obj, gloss, pos):
     new_stem_form, new_stem_gloss, new_stem_id = build_productive_stem(
         source_stem, process, obj
     )
+    # print(new_stem_form, new_stem_gloss, new_stem_id)
     if not new_stem_form:
         return None, None
     if new_stem_id not in productive_stems:
@@ -691,9 +700,8 @@ def process_wordform(obj, gloss, lex_id, gramm, morpheme_ids, **kwargs):
         if not isinstance(morpheme_ids, list):
             morpheme_ids = morpheme_ids.split(",")
         if "&" in lex_id:
-            source_lex, process = lex_id.rsplit("&", 1)
             stem_id, source_id = resolve_productive_stem(
-                source_lex, process, obj, gloss, get_pos(gramm)
+                lex_id, obj, gloss, get_pos(gramm)
             )
             if stem_id:
                 if gloss in productive_stems[stem_id]["Gloss"]:

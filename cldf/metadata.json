@@ -160,7 +160,7 @@
             "url": "wordforms.csv"
         },
         {
-            "dc:extent": 665,
+            "dc:extent": 673,
             "tableSchema": {
                 "columns": [
                     {
@@ -574,7 +574,7 @@
             "url": "inflectionalcategories.csv"
         },
         {
-            "dc:extent": 552,
+            "dc:extent": 560,
             "tableSchema": {
                 "columns": [
                     {
@@ -743,7 +743,7 @@
             "url": "morphemes.csv"
         },
         {
-            "dc:extent": 126,
+            "dc:extent": 134,
             "tableSchema": {
                 "columns": [
                     {
@@ -1059,7 +1059,7 @@
             "url": "wordformstems.csv"
         },
         {
-            "dc:extent": 811,
+            "dc:extent": 827,
             "tableSchema": {
                 "columns": [
                     {
