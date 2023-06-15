@@ -189,7 +189,11 @@ def add_to_proc_dict(x):
         process = "detrz"
     else:
         process = x["ID"]
-    deriv_proc_dic[x["ID"]] = {"Form": x["Name"], "Gloss": x["Translation"], "Process": process}
+    deriv_proc_dic[x["ID"]] = {
+        "Form": x["Name"],
+        "Gloss": x["Translation"],
+        "Process": process,
+    }
 
 
 df.derivation_morphemes.apply(add_to_proc_dict, axis=1)
@@ -342,7 +346,11 @@ def get_stempart_cands(rec, part, process):
         cands = cands[cands["ID"] == "tavbz"]
     elif len(cands) > 2 and process == "macaus":
         cands = cands[cands["ID"] == "macaus"]
-    elif len(cands) > 1 and process == "detrz" and "DETRZ" in list(cands["Parameter_ID"].apply(lambda x: x[0])):
+    elif (
+        len(cands) > 1
+        and process == "detrz"
+        and "DETRZ" in list(cands["Parameter_ID"].apply(lambda x: x[0]))
+    ):
         cands = cands[cands["Parameter_ID"].apply(lambda x: x == ["DETRZ"])]
     elif "DETRZ" in list(cands["Parameter_ID"].apply(lambda x: x[0])):
         cands = cands[cands["Parameter_ID"].apply(lambda x: x == ["DETRZ"])]
@@ -361,6 +369,7 @@ def get_stempart_cands(rec, part, process):
     elif len(cands) > 1 and process in deriv_proc_dic:
         cands = cands[cands["ID"] == process]
     return cands
+
 
 def process_stem(rec, process):
     rec["Form"] = rec["Form"].split(SEP)
@@ -668,6 +677,7 @@ def identify_complex_stem_position(obj, stem):
 
 # todo: this should only add inflectional values if they are in the gramm argument
 def process_wordform(obj, gloss, lex_id, gramm, morpheme_ids, **kwargs):
+    # print(f"processing wordform {obj} '{gloss}'")
     if gloss in ["***", "?", ""]:
         return None
     wf_id = humidify(f"{strip_form(obj)}-{gloss}", unique=False, key="wordforms")
@@ -716,6 +726,7 @@ def process_wordform(obj, gloss, lex_id, gramm, morpheme_ids, **kwargs):
                 morpheme_ids.append(source_id)
             else:
                 log.warning(f"Unable to find derivational source for {obj} '{gloss}'")
+                # exit()
         elif "+" in lex_id:
             print("UH OH", "lex_id", lex_id, "obj", obj, "gloss", gloss, get_pos(gramm))
             exit()
