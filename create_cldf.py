@@ -552,7 +552,7 @@ def resolve_productive_stem(lex_id, obj, gloss, pos):
         f"Uniparser lexeme: {lex_id}\nactual wordform: {obj} '{gloss}'\nuniparser process: {process}\nlexeme: {lex}"
     )
     if "&" in lex:
-        sub_stem_id, sub_lex_id = resolve_productive_stem(lex, obj, gloss, pos)
+        stem_id, sub_lex_id = resolve_productive_stem(lex, obj, gloss, pos)
         cands = df.lexemes[df.lexemes["ID"] == sub_lex_id]
     else:
         cands = df.lexemes[df.lexemes["Name"] == lex]
@@ -585,40 +585,49 @@ def resolve_productive_stem(lex_id, obj, gloss, pos):
         )
         exit()
         return None, None
-    source_stem = stem_cands.iloc[0]
-    # todo: do these need to find their way back in?
-    # if len(cands) == 0:
-    #     cands = df.bound_root_morphs[df.bound_root_morphs["Form"] == obj]
-    # if len(cands) > 1 and process in deriv_source_pos:
-    #     cands = cands[cands["POS"].isin(deriv_source_pos[process])]
-    new_stem_form, new_stem_gloss, new_stem_id = build_productive_stem(
-        source_stem, process, obj
-    )
-    # print(new_stem_form, new_stem_gloss, new_stem_id)
-    if not new_stem_form:
-        return None, None
-    if new_stem_id not in productive_stems:
-        stemrec = {
-            "Form": new_stem_form,
-            "Base_Stem": source_stem.ID,
-            "Translation": new_stem_gloss,
-            "Affix_ID": process,
-            "POS": pos,
-        }
-        for part in splitform(new_stem_form):
-            res = get_stempart_cands(stemrec, part, process)
-            if len(res) == 1 and res.iloc[0]["Morpheme_ID"] == process:
-                stemrec["Affix_ID"] = res.iloc[0]["ID"]
-        parsed_stem = process_stem(
-            stemrec,
-            process,
+    if "&" not in lex:
+        source_stem = stem_cands.iloc[0]
+        # todo: do these need to find their way back in?
+        # if len(cands) == 0:
+        #     cands = df.bound_root_morphs[df.bound_root_morphs["Form"] == obj]
+        # if len(cands) > 1 and process in deriv_source_pos:
+        #     cands = cands[cands["POS"].isin(deriv_source_pos[process])]
+        new_stem_form, new_stem_gloss, new_stem_id = build_productive_stem(
+            source_stem, process, obj
         )
-        parsed_stem["Parameter_ID"] = parsed_stem["Translation"]
-        parsed_stem["Name"] = parsed_stem["Form"][0]
-        productive_lexemes[new_stem_id] = parsed_stem
-        parsed_stem["Lexeme_ID"] = new_stem_id
-        productive_stems[new_stem_id] = parsed_stem
-    return new_stem_id, source_stem.Lexeme_ID
+        # print(new_stem_form, new_stem_gloss, new_stem_id)
+        if not new_stem_form:
+            return None, None
+        if new_stem_id not in productive_stems:
+            stemrec = {
+                "Form": new_stem_form,
+                "Base_Stem": source_stem.ID,
+                "Translation": new_stem_gloss,
+                "Affix_ID": process,
+                "POS": pos,
+            }
+            for part in splitform(new_stem_form):
+                res = get_stempart_cands(stemrec, part, process)
+                if len(res) == 1 and res.iloc[0]["Morpheme_ID"] == process:
+                    stemrec["Affix_ID"] = res.iloc[0]["ID"]
+            parsed_stem = process_stem(
+                stemrec,
+                process,
+            )
+            parsed_stem["Parameter_ID"] = parsed_stem["Translation"]
+            parsed_stem["Name"] = parsed_stem["Form"][0]
+            productive_lexemes[new_stem_id] = parsed_stem
+            parsed_stem["Lexeme_ID"] = new_stem_id
+            productive_stems[new_stem_id] = parsed_stem
+        return new_stem_id, source_stem.Lexeme_ID
+    else:
+        new_stem_id = stem_id
+        # print("lexeme:", lex)
+        # print("stem_id:", stem_id)
+        # print("sub_stem_id:", sub_lex_id)
+        return stem_id, sub_lex_id
+
+    
 
 
 lex_stem_dic = {}
