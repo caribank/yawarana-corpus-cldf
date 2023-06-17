@@ -100,6 +100,7 @@ uyiwij-1-lk-house-pert-2,uyiwij-1-lk-house-pert,iwij-house,2
 yaka-all-0,yaka-all,yaka-all,0
 sukuri-silently-0,sukuri-silently,sukuri-silently,0
 itari-hear-ipfv-0,itari-hear-ipfv,ita-hear,0
+wajyakiti-be-happy-ipfv-0,wajyakiti-be-happy-ipfv,wajyakiti-be-happy,0
 kajke-say-imp-0,kajke-say-imp,kaj-say,0
 wejsaj-cop-pfv-0,wejsaj-cop-pfv,wej-cop,0
 tawaraij-too-0,tawaraij-too,tawaraij-too,0
@@ -123,7 +124,6 @@ onono-another-0,onono-another,onono-another,0
 yatum-day-0,yatum-day,yatum-day,0
 takontomo-say-ipfv-pl-0,takontomo-say-ipfv-pl,ta-say,0
 inija-see-neg-0,inija-see-neg,ini-see,0
-wajyakiti-be-happy-ipfv-0,wajyakiti-be-happy-ipfv,wajyakiti-be-happy,0
 uyare-1-alone-1,uyare-1-alone,yare-alone,1
 peremekiri-talk-ipfv-0,peremekiri-talk-ipfv,peremeki-talk,0
 aniki-who-0,aniki-who,aniki-who-1,0
@@ -223,8 +223,6 @@ empare-already-0,empare-already,empare-already,0
 winiki-sleep-acnnmlz-deriv-stem,winiki-sleep-acnnmlz,winikiri-sleep-acnnmlz,"0,1"
 winiki-sleep-acnnmlz-0,winiki-sleep-acnnmlz,winiki-sleep,0
 sejpetiri-dream-ipfv-0,sejpetiri-dream-ipfv,sejpeti-dream,0
-sejpejse-dream-sup-deriv-stem,sejpejse-dream-sup,sejpejse-dream-ptcp,"0,1"
-sejpejse-dream-sup-0,sejpejse-dream-sup,sejpej-dream,0
 sejpejse-dream-pst-0,sejpejse-dream-pst,sejpej-dream,0
 najwata-harbor-0,najwata-harbor,najwata-harbor,0
 ka-all-0,ka-all,ka-all,0
@@ -243,12 +241,14 @@ mewine-2-from-1,mewine-2-from,wine-from,1
 ejsejpeti-1-2-dream-ipfv-1,ejsejpeti-1-2-dream-ipfv,sejpeti-dream,1
 yakaramari-tell-ipfv-0,yakaramari-tell-ipfv,yakarama-tell,0
 ejchiyakon-1-2-friend-pert-1,ejchiyakon-1-2-friend-pert,chiyakon-friend,1
+sejpejse-dream-sup-deriv-stem,sejpejse-dream-sup,sejpejse-dream-ptcp,"0,1"
+sejpejse-dream-sup-0,sejpejse-dream-sup,sejpej-dream,0
 mesejpetijpe-2-dream-pst-1,mesejpetijpe-2-dream-pst,sejpeti-dream,1
 winikiri-sleep-ipfv-0,winikiri-sleep-ipfv,winiki-sleep,0
 ejnomo-ejnomo-0,ejnomo-ejnomo,ejnomo-ejnomo,0
+tuna-water-0,tuna-water,tuna-water,0
 yane-mother-0,yane-mother,yane-mother,0
 meyapichiri-2-grab-ipfv-1,meyapichiri-2-grab-ipfv,yapichi-grab,1
-tuna-water-0,tuna-water,tuna-water,0
 yakiri-lk-worm-pert-1,yakiri-lk-worm-pert,aki-worm,1
 yawoton-lk-uncle-pert-pl-1,yawoton-lk-uncle-pert-pl,awo-uncle,1
 yapichijpe-grab-pst-0,yapichijpe-grab-pst,yapichi-grab,0
@@ -260,6 +260,7 @@ tayakarama-3p-tell-ipfv-1,tayakarama-3p-tell-ipfv,yakarama-tell,1
 ati-plot-of-cultivated-land-0,ati-plot-of-cultivated-land,ati-plot-of-cultivated-land,0
 yare-lk-leaf-pert-1,yare-lk-leaf-pert,are-leaf,1
 yakete-cut-ipfv-0,yakete-cut-ipfv,yakete-cut,0
+moroni-pain-0,moroni-pain,moroni-pain,0
 ye-tooth-pert-0,ye-tooth-pert,ye-tooth,0
 wejkari-fall-ipfv-0,wejkari-fall-ipfv,wejka-fall,0
 wejka-fall-ipfv-0,wejka-fall-ipfv,wejka-fall,0
@@ -317,7 +318,6 @@ tarine-fast-0,tarine-fast,tarine-fast,0
 winijpo-sleep-des-ipfv-deriv-stem,winijpo-sleep-des-ipfv,winijpo-sleep-des,"0,1"
 winijpo-sleep-des-ipfv-0,winijpo-sleep-des-ipfv,winij-sleep,0
 asamopeke-cry-prog-tr-0,asamopeke-cry-prog-tr,asamo-cry,0
-moroni-pain-0,moroni-pain,moroni-pain,0
 neme-leave-ipfv-0,neme-leave-ipfv,neme-leave,0
 nemeri-leave-ipfv-0,nemeri-leave-ipfv,neme-leave,0
 imukuru-3-child-pert-1,imukuru-3-child-pert,muku-child,1

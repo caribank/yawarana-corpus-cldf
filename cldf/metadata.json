@@ -665,7 +665,7 @@
             "url": "lexemes.csv"
         },
         {
-            "dc:extent": 573,
+            "dc:extent": 574,
             "tableSchema": {
                 "columns": [
                     {
@@ -1310,7 +1310,7 @@
             "url": "texts.csv"
         },
         {
-            "dc:extent": 1371,
+            "dc:extent": 1389,
             "tableSchema": {
                 "columns": [
                     {

@@ -98,6 +98,7 @@ wanene-aunt-0,wanene-aunt,wanene-aunt,0,aunt
 wire-1pro-0,wire-1pro,wire-1pro,0,1pro
 yaruwari-laugh-ipfv-0,yaruwari-laugh-ipfv,yaruwa-laugh,0,laugh
 yaruwari-laugh-ipfv-1,yaruwari-laugh-ipfv,ri,1,ipfv
+jra-neg-0,jra-neg,jra-neg,0,neg
 tajne-3-pl-0,tajne-3-pl,ta-3,0,3
 tajne-3-pl-1,tajne-3-pl,jnepl1,1,pl
 yakarama-tell-acnnmlz-1,yakarama-tell-acnnmlz,rinmlz-zero,1,acnnmlz
@@ -122,7 +123,6 @@ ki-ugh-0,ki-ugh,ki-ugh,0,ugh
 mokontomo-2pl-pro-0,mokontomo-2pl-pro,mokontomo-2pl-pro,0,"2pl,pro"
 serekapo-become-tired-des-ipfv-1,serekapo-become-tired-des-ipfv,podes,1,des
 serekapo-become-tired-des-ipfv-2,serekapo-become-tired-des-ipfv,ri-zero,2,ipfv
-jra-neg-0,jra-neg,jra-neg,0,neg
 ka-q-0,ka-q,ka-q,0,q
 taro-say-ipfv-0,taro-say-ipfv,taro-say,0,say
 taro-say-ipfv-1,taro-say-ipfv,ri-zero,1,ipfv
@@ -165,6 +165,8 @@ yaka-all-0,yaka-all,yaka-all,0,all
 sukuri-silently-0,sukuri-silently,sukuri-silently,0,silently
 itari-hear-ipfv-0,itari-hear-ipfv,ita-hear,0,hear
 itari-hear-ipfv-1,itari-hear-ipfv,ri,1,ipfv
+wajyakiti-be-happy-ipfv-0,wajyakiti-be-happy-ipfv,wajyakiti-be-happy,0,be-happy
+wajyakiti-be-happy-ipfv-1,wajyakiti-be-happy-ipfv,ri-zero,1,ipfv
 kajke-say-imp-0,kajke-say-imp,kaj-say,0,say
 kajke-say-imp-1,kajke-say-imp,keimp,1,imp
 wejsaj-cop-pfv-0,wejsaj-cop-pfv,wej-cop,0,cop
@@ -210,8 +212,6 @@ takontomo-say-ipfv-pl-2,takontomo-say-ipfv-pl,kontomopl,2,pl
 inija-see-neg-0,inija-see-neg,ini-see,0,see
 inija-see-neg-1,inija-see-neg,janeg,1,neg
 ke-ugh-0,ke-ugh,ke-ugh,0,ugh
-wajyakiti-be-happy-ipfv-0,wajyakiti-be-happy-ipfv,wajyakiti-be-happy,0,be-happy
-wajyakiti-be-happy-ipfv-1,wajyakiti-be-happy-ipfv,ri-zero,1,ipfv
 uyare-1-alone-0,uyare-1-alone,u1,0,1
 uyare-1-alone-1,uyare-1-alone,yare-alone,1,alone
 peremekiri-talk-ipfv-0,peremekiri-talk-ipfv,peremeki-talk,0,talk
@@ -368,7 +368,6 @@ winiki-sleep-acnnmlz-0,winiki-sleep-acnnmlz,winiki-sleep,0,sleep
 winiki-sleep-acnnmlz-1,winiki-sleep-acnnmlz,rinmlz-zero,1,acnnmlz
 sejpetiri-dream-ipfv-1,sejpetiri-dream-ipfv,ri,1,ipfv
 aaa-ah-0,aaa-ah,aaa-ah,0,ah
-sejpejse-dream-sup-1,sejpejse-dream-sup,septcp,1,sup
 sejpejse-dream-pst-1,sejpejse-dream-pst,sepst,1,pst
 najwata-harbor-0,najwata-harbor,najwata-harbor,0,harbor
 ka-all-0,ka-all,ka-all,0,all
@@ -404,6 +403,7 @@ yakaramari-tell-ipfv-1,yakaramari-tell-ipfv,ri,1,ipfv
 ejchiyakon-1-2-friend-pert-0,ejchiyakon-1-2-friend-pert,ej12,0,1-2
 ejchiyakon-1-2-friend-pert-1,ejchiyakon-1-2-friend-pert,chiyakon-friend,1,friend
 ejchiyakon-1-2-friend-pert-2,ejchiyakon-1-2-friend-pert,rupert-zero,2,pert
+sejpejse-dream-sup-1,sejpejse-dream-sup,septcp,1,sup
 mesejpetijpe-2-dream-pst-0,mesejpetijpe-2-dream-pst,me2,0,2
 mesejpetijpe-2-dream-pst-2,mesejpetijpe-2-dream-pst,jpepst1,2,pst
 winikiri-sleep-ipfv-0,winikiri-sleep-ipfv,winiki-sleep,0,sleep
@@ -411,11 +411,11 @@ winikiri-sleep-ipfv-1,winikiri-sleep-ipfv,ri-ri,1,ipfv
 eee-hey-0,eee-hey,eee-hey,0,hey
 e-e-yes-0,e-e-yes,e-e-yes,0,yes
 ejnomo-ejnomo-0,ejnomo-ejnomo,ejnomo-ejnomo,0,ejnomo
+tuna-water-0,tuna-water,tuna-water,0,water
 yane-mother-0,yane-mother,yane-mother,0,mother
 meyapichiri-2-grab-ipfv-0,meyapichiri-2-grab-ipfv,me2,0,2
 meyapichiri-2-grab-ipfv-1,meyapichiri-2-grab-ipfv,yapichi-grab,1,grab
 meyapichiri-2-grab-ipfv-2,meyapichiri-2-grab-ipfv,ri,2,ipfv
-tuna-water-0,tuna-water,tuna-water,0,water
 yakiri-lk-worm-pert-0,yakiri-lk-worm-pert,ylk,0,lk
 yakiri-lk-worm-pert-1,yakiri-lk-worm-pert,aki-worm,1,worm
 yakiri-lk-worm-pert-2,yakiri-lk-worm-pert,rypert,2,pert
@@ -438,6 +438,7 @@ yare-lk-leaf-pert-1,yare-lk-leaf-pert,are-leaf,1,leaf
 yare-lk-leaf-pert-2,yare-lk-leaf-pert,rupert-zero,2,pert
 yakete-cut-ipfv-0,yakete-cut-ipfv,yakete-cut,0,cut
 yakete-cut-ipfv-1,yakete-cut-ipfv,ri-zero,1,ipfv
+moroni-pain-0,moroni-pain,moroni-pain,0,pain
 ye-tooth-pert-0,ye-tooth-pert,ye-tooth,0,tooth
 ye-tooth-pert-1,ye-tooth-pert,rupert-zero,1,pert
 wejkari-fall-ipfv-0,wejkari-fall-ipfv,wejka-fall,0,fall
@@ -545,7 +546,6 @@ winijpo-sleep-des-ipfv-1,winijpo-sleep-des-ipfv,podes,1,des
 winijpo-sleep-des-ipfv-2,winijpo-sleep-des-ipfv,ri-zero,2,ipfv
 asamopeke-cry-prog-tr-0,asamopeke-cry-prog-tr,asamo-cry,0,cry
 asamopeke-cry-prog-tr-1,asamopeke-cry-prog-tr,pekeprog,1,"prog,tr"
-moroni-pain-0,moroni-pain,moroni-pain,0,pain
 neme-leave-ipfv-0,neme-leave-ipfv,neme-leave,0,leave
 neme-leave-ipfv-1,neme-leave-ipfv,ri-zero,1,ipfv
 nemeri-leave-ipfv-0,nemeri-leave-ipfv,neme-leave,0,leave
