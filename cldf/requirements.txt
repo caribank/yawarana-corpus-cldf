@@ -5,7 +5,7 @@ certifi==2022.9.24
 cffconvert==2.0.0
 cffi==1.15.1
 chardet==5.0.0
--e git+ssh://git@github.com/fmatter/cldf-ldd.git@62ebc15216a52afad9aa814013bce1d7e917f454#egg=cldf_ldd
+-e git+ssh://git@github.com/fmatter/cldf-ldd.git@1f9f41b53c491dc82a4cb4e16309a7b5070ebf74#egg=cldf_ldd
 cldfbench==1.13.0
 cldfcatalog==1.5.1
 cldfviz==0.12.0

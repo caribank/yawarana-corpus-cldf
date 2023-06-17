@@ -233,6 +233,13 @@
                         "required": false,
                         "separator": "; ",
                         "name": "Source"
+                    },
+                    {
+                        "dc:extent": "singlevalued",
+                        "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#partOfSpeech",
+                        "required": false,
+                        "name": "Part_Of_Speech"
                     }
                 ],
                 "foreignKeys": [
@@ -339,6 +346,13 @@
                         "required": false,
                         "separator": "; ",
                         "name": "Source"
+                    },
+                    {
+                        "dc:extent": "singlevalued",
+                        "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#partOfSpeech",
+                        "required": false,
+                        "name": "Part_Of_Speech"
                     }
                 ],
                 "foreignKeys": [
@@ -721,6 +735,13 @@
                         "required": false,
                         "separator": "; ",
                         "name": "Source"
+                    },
+                    {
+                        "dc:extent": "singlevalued",
+                        "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#partOfSpeech",
+                        "required": false,
+                        "name": "Part_Of_Speech"
                     }
                 ],
                 "foreignKeys": [
@@ -1046,6 +1067,17 @@
                         ],
                         "reference": {
                             "resource": "stems.csv",
+                            "columnReference": [
+                                "ID"
+                            ]
+                        }
+                    },
+                    {
+                        "columnReference": [
+                            "Wordform_ID"
+                        ],
+                        "reference": {
+                            "resource": "wordforms.csv",
                             "columnReference": [
                                 "ID"
                             ]

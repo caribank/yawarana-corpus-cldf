@@ -68,6 +68,7 @@ Name/Property | Datatype | Description
 [Segments](http://cldf.clld.org/v1.0/terms.rdf#segments) | list of `string` (separated by ` `) | 
 [Comment](http://cldf.clld.org/v1.0/terms.rdf#comment) | `string` | 
 [Source](http://cldf.clld.org/v1.0/terms.rdf#source) | list of `string` (separated by `; `) | References [sources.bib::BibTeX-key](./sources.bib)
+[Part_Of_Speech](http://cldf.clld.org/v1.0/terms.rdf#partOfSpeech) | `string` | 
 
 ## <a name="table-morphscsv"></a>Table [morphs.csv](./morphs.csv)
 
@@ -89,6 +90,7 @@ Name/Property | Datatype | Description
 `Parameter_ID` | list of `string` (separated by `; `) | A reference to the meaning denoted by the morph.
 [Comment](http://cldf.clld.org/v1.0/terms.rdf#comment) | `string` | 
 [Source](http://cldf.clld.org/v1.0/terms.rdf#source) | list of `string` (separated by `; `) | References [sources.bib::BibTeX-key](./sources.bib)
+[Part_Of_Speech](http://cldf.clld.org/v1.0/terms.rdf#partOfSpeech) | `string` | 
 
 ## <a name="table-inflectionscsv"></a>Table [inflections.csv](./inflections.csv)
 
@@ -178,6 +180,7 @@ Name/Property | Datatype | Description
 `Parameter_ID` | list of `string` (separated by `; `) | A reference to the meaning denoted by the morpheme.
 [Comment](http://cldf.clld.org/v1.0/terms.rdf#comment) | `string` | 
 [Source](http://cldf.clld.org/v1.0/terms.rdf#source) | list of `string` (separated by `; `) | References [sources.bib::BibTeX-key](./sources.bib)
+[Part_Of_Speech](http://cldf.clld.org/v1.0/terms.rdf#partOfSpeech) | `string` | 
 
 ## <a name="table-derivationscsv"></a>Table [derivations.csv](./derivations.csv)
 
@@ -243,7 +246,7 @@ property | value
 Name/Property | Datatype | Description
  --- | --- | --- 
 [ID](http://cldf.clld.org/v1.0/terms.rdf#id) | `string` | Primary key
-`Wordform_ID` | `string` | The associated wordform.
+`Wordform_ID` | `string` | The associated wordform.<br>References [wordforms.csv::ID](#table-wordformscsv)
 `Stem_ID` | `string` | The stem of the associated wordform.<br>References [stems.csv::ID](#table-stemscsv)
 `Index` | list of `integer` (separated by `,`) | Specifies the position(s) of an stem in a wordform.
 
