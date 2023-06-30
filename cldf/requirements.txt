@@ -5,7 +5,7 @@ certifi==2022.9.24
 cffconvert==2.0.0
 cffi==1.15.1
 chardet==5.0.0
--e git+ssh://git@github.com/fmatter/cldf-ldd.git@1f9f41b53c491dc82a4cb4e16309a7b5070ebf74#egg=cldf_ldd
+-e git+ssh://git@github.com/fmatter/cldf-ldd.git@167fe6df5a2788994566426fae7202fe7538893e#egg=cldf_ldd
 cldfbench==1.13.0
 cldfcatalog==1.5.1
 cldfviz==0.12.0
@@ -28,6 +28,7 @@ jsonschema==3.2.0
 lxml==4.9.1
 Markdown==3.4.1
 MarkupSafe==2.1.1
+-e git+ssh://git@github.com/fmatter/morphinder.git@c2b6cca7346da146ab944207d320a76d3c31983c#egg=morphinder
 newick==1.7.0
 numpy==1.18.5
 openpyxl==3.1.2
@@ -42,7 +43,7 @@ pycountry==22.3.5
 pyglottolog==3.10.0
 pykwalify==1.8.0
 pylatexenc==2.10
--e git+ssh://git@github.com/fmatter/pylingdocs.git@9228f9f2b1524e7f08d8722272eba4c260c805f6#egg=pylingdocs
+-e git+ssh://git@github.com/fmatter/pylingdocs.git@56bd0f08d1fc45b011e91f5ca6dc74f0ffcc67ad#egg=pylingdocs
 pyrsistent==0.19.2
 python-dateutil==2.8.2
 python-frontmatter==1.0.0
@@ -62,8 +63,9 @@ termcolor==2.1.0
 toml==0.10.2
 tqdm==4.62.2
 typing_extensions==4.4.0
--e git+ssh://git@github.com/fmatter/uniparser-yawarana.git@06f6cb59af92845d6c12cb96c995555f2741f4b8#egg=uniparser_yawarana
+-e git+ssh://git@github.com/fmatter/uniparser-yawarana.git@479265db42c51e863b34aa3cac0813ccc449c831#egg=uniparser_yawarana
 uritemplate==4.1.1
 urllib3==1.26.12
 wcwidth==0.2.5
+-e git+ssh://git@github.com/fmatter/writio.git@0be462ed05cdad593a79e848d1bbf6930986d89b#egg=writio
 zipp==3.10.0

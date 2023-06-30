@@ -264,6 +264,17 @@
                                 "ID"
                             ]
                         }
+                    },
+                    {
+                        "columnReference": [
+                            "Part_Of_Speech"
+                        ],
+                        "reference": {
+                            "resource": "partsofspeech.csv",
+                            "columnReference": [
+                                "ID"
+                            ]
+                        }
                     }
                 ],
                 "primaryKey": [
@@ -373,6 +384,17 @@
                         ],
                         "reference": {
                             "resource": "morphemes.csv",
+                            "columnReference": [
+                                "ID"
+                            ]
+                        }
+                    },
+                    {
+                        "columnReference": [
+                            "Part_Of_Speech"
+                        ],
+                        "reference": {
+                            "resource": "partsofspeech.csv",
                             "columnReference": [
                                 "ID"
                             ]
@@ -511,7 +533,7 @@
                         "dc:description": "The gloss for the inflectional value.",
                         "dc:extent": "singlevalued",
                         "datatype": "string",
-                        "required": true,
+                        "required": false,
                         "name": "Gloss_ID"
                     }
                 ],
@@ -751,6 +773,17 @@
                         ],
                         "reference": {
                             "resource": "languages.csv",
+                            "columnReference": [
+                                "ID"
+                            ]
+                        }
+                    },
+                    {
+                        "columnReference": [
+                            "Part_Of_Speech"
+                        ],
+                        "reference": {
+                            "resource": "partsofspeech.csv",
                             "columnReference": [
                                 "ID"
                             ]

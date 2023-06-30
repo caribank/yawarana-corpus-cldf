@@ -24,6 +24,7 @@ from humidifier import get_values, humidify
 from pycldf.dataset import MD_SUFFIX
 from pycldf.sources import Source
 from pycldf.util import pkg_path
+from morphinder import identify_complex_stem_position
 from pylingdocs.cldf import tables as pld_tables
 from pylingdocs.preprocessing import preprocess_cldfviz
 from segments import Profile, Tokenizer
@@ -682,15 +683,6 @@ def identify_part(obj, gloss, ids):
         return kinds
     raise ValueError(f"Could not find any morph or stem {obj} '{gloss}'. IDs: {ids}")
 
-
-def identify_complex_stem_position(obj, stem):
-    indices = []
-    objs = obj.split("-")
-    stems = stem.split("-")
-    for st in stems:
-        if st in objs:
-            indices.append(objs.index(st))
-    return indices
 
 
 # todo: this should only add inflectional values if they are in the gramm argument
