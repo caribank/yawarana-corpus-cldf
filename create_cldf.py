@@ -1284,7 +1284,7 @@ additional_columns = {
 }
 spec = CLDFSpec(dir="cldf", module="Generic", metadata_fname="metadata.json")
 if args.full:
-    spec = CLDFSpec(dir="full_cldf", module="Generic", metadata_fname="metadata.json")
+    spec = CLDFSpec(dir="full", module="Generic", metadata_fname="metadata.json")
 with CLDFWriter(spec) as writer:
     # metadata
 
