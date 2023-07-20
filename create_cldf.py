@@ -572,7 +572,7 @@ def build_productive_stem(source_stem, process, obj):
     return stem_form, stem_glosses, stem_id
 
 
-semi_inflections = ["rinmlz", "tojpepurp", "sapenmlz", "jpenmlz"]
+semi_inflections = ["rinmlz", "tojpepurp", "sapenmlz", "jpenmlz", "septcp", "tanecncs"]
 def resolve_productive_stem(lex_id, obj, gloss, pos):
     lex, process = lex_id.rsplit("&", 1)
     log.debug(
