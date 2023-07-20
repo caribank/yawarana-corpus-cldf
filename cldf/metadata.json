@@ -610,7 +610,7 @@
             "url": "inflectionalcategories.csv"
         },
         {
-            "dc:extent": 531,
+            "dc:extent": 503,
             "tableSchema": {
                 "columns": [
                     {
