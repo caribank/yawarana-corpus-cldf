@@ -293,6 +293,8 @@ df.roots = df.roots[
 stem_pos_list = ["vt", "vi", "n", "postp", "pn", "adv"]
 df.root_lex = df.roots[df.roots["POS"].isin(stem_pos_list)].copy()
 
+df.root_lex = df.root_lex[~(df.root_lex["Translation"].apply(is_name))]
+
 df.stems = df.root_lex.explode("Form")
 df.stems["Lexeme_ID"] = df.stems["ID"]
 df.stems["ID"] = df.stems.apply(
@@ -309,7 +311,6 @@ df.root_morphs["ID"] = df.root_morphs.apply(
 df.root_morphs.apply(add_to_morph_dic, axis=1)
 df.root_morphs["Name"] = df.root_morphs["Form"]
 
-df.stems = df.stems[~(df.stems["Translation"].apply(is_name))]
 stemparts = [
     {
         "ID": x["ID"],
