@@ -160,7 +160,7 @@
             "url": "wordforms.csv"
         },
         {
-            "dc:extent": 644,
+            "dc:extent": 616,
             "tableSchema": {
                 "columns": [
                     {
@@ -1058,7 +1058,7 @@
             "url": "wordformparts.csv"
         },
         {
-            "dc:extent": 358,
+            "dc:extent": 357,
             "tableSchema": {
                 "columns": [
                     {
@@ -1124,7 +1124,7 @@
             "url": "wordformstems.csv"
         },
         {
-            "dc:extent": 763,
+            "dc:extent": 735,
             "tableSchema": {
                 "columns": [
                     {
@@ -1211,7 +1211,7 @@
             "url": "stemparts.csv"
         },
         {
-            "dc:extent": 525,
+            "dc:extent": 514,
             "tableSchema": {
                 "columns": [
                     {
