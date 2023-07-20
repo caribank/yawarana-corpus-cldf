@@ -109,7 +109,10 @@ t = Tokenizer(profile=prf)
 
 
 def tokenize(s):
-    return t(s, column="IPA").split(" ")
+    tokens = t(s, column="IPA").split(" ")
+    if "�" in tokens:
+        return []
+    return tokens
 
 
 # time keeping purposes
@@ -260,9 +263,8 @@ df.roots["ID"] = df.roots.apply(
     lambda x: humidify(f"{x.Name}-{x.Gloss[0]}", unique=True, key="morpheme"),
     axis=1,
 )
+df.roots["Parameter_ID"] = df.roots["Translation"]
 df.roots["Gloss"] = df.roots["Gloss"].apply(glossify)
-df.roots["Parameter_ID"] = df.roots["Gloss"]
-
 df.roots = df.roots[
     [
         "ID",
@@ -282,6 +284,7 @@ df.roots = df.roots[
 # only roots with these POS are assumed to be treated as stems/lexemes (i.e., take inflectional morphology)
 stem_pos_list = ["vt", "vi", "n", "postp", "pn", "adv"]
 df.root_lex = df.roots[df.roots["POS"].isin(stem_pos_list)].copy()
+
 df.stems = df.root_lex.explode("Form")
 df.stems["Lexeme_ID"] = df.stems["ID"]
 df.stems["ID"] = df.stems.apply(
@@ -483,6 +486,7 @@ df.derived_lex["Main_Stem"] = df.derived_lex["ID"]
 
 df.stems["Morpho_Segments"] = df.stems["Form"]
 join_dfs("stems", "stems", "derived_stems")
+
 join_dfs("lexemes", "root_lex", "derived_lex")
 df.lexemes = df.lexemes.set_index("ID", drop=False)
 df.stems["Gloss_ID"] = df.stems["Gloss"].apply(id_glosses)
@@ -1220,7 +1224,7 @@ df.productive_stems["Language_ID"] = "yab"
 
 
 join_dfs("stems", "stems", "productive_stems")
-
+df.stems.rename(columns={"POS": "Part_Of_Speech"}, inplace=True)
 
 df.examples["Media_ID"] = df.examples.apply(
     lambda x: x["ID"] if x["ID"] in examples_with_audio else "", axis=1
