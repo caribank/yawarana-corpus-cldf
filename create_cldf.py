@@ -49,11 +49,11 @@ log = get_colorlog(__name__, sys.stdout, level=logging.INFO)
 
 ## Config
 
-# the cell-internal separator used in all sort of tables
+# the cell-internal separator used in all sorts of tables
 SEP = "; "
-# derivations are stored here
+# derivations and bound roots
 UP_DIR = Path("/home/florianm/Dropbox/development/uniparser-yawarana/data")
-# location where all audio is stored
+# all audio files
 AUDIO_PATH = Path(
     "/home/florianm/Dropbox/research/cariban/yawarana/yawarana_corpus/audio"
 )
@@ -61,8 +61,11 @@ AUDIO_PATH = Path(
 WORD_AUDIO_PATH = AUDIO_PATH / "wordforms"
 
 ## Global helpers
-# use pandas to read csvs and not use NaN
+
+
 def cread(filename):
+    # use pandas to read csvs and not use NaN
+    # use ID as index, split (inherently multivalued) translations
     df = pd.read_csv(filename, encoding="utf-8", keep_default_na=False)
     if "Translation" in df.columns:
         splitcol(df, "Translation")
@@ -99,7 +102,7 @@ def join_dfs(name, *keys):
             delattr(df, key)
 
 
-# tokenize into segments
+# for tokenizing into segments
 phonemes = cread("etc/phonemes.csv")
 prf = Profile(*phonemes.to_dict("records"))
 t = Tokenizer(profile=prf)
@@ -109,6 +112,7 @@ def tokenize(s):
     return t(s, column="IPA").split(" ")
 
 
+# time keeping purposes
 def timer(msg):
     toc = time.perf_counter()
     print(f"{msg}: {toc - start_time:0.4f} seconds")
@@ -133,10 +137,11 @@ def ipaify(s):
     return t(s, column="IPA", segment_separator="", separator=" ")
 
 
+# keep a running dict of all morphs, used for identifying parts of forms and stems
 morph_dic = {}
 
 
-def add_to_morph_dict(morph):
+def add_to_morph_dic(morph):
     for g in morph["Translation"]:
         morph_tuple = (f'{morph["Form"].strip("-")}', glossify(g))
         morph_dic.setdefault(morph_tuple, {})
@@ -176,7 +181,7 @@ for kind in [
     morph_meanings = dict(zip(morphemes["ID"], morphemes["Translation"]))
     morphs["Translation"] = morphs["Morpheme_ID"].map(morph_meanings)
     morphs["Parameter_ID"] = morphs["Translation"]
-    morphs.apply(add_to_morph_dict, axis=1)
+    morphs.apply(add_to_morph_dic, axis=1)
     morphs["Gloss"] = morphs["Translation"].apply(glossify)
     setattr(df, f"{kind}_morphs", morphs)
     setattr(df, f"{kind}_morphemes", morphemes)
@@ -221,15 +226,14 @@ dic = pd.read_csv(
     "../yawarana_dictionary/annotated_dictionary.csv",
     keep_default_na=False,
 )
-# keep only roots
-dic_roots = dic[dic["Translation_Root"] != ""].copy()
+dic_roots = dic[dic["Translation_Root"] != ""].copy()  # keep only roots
 dic_roots.rename(columns={"Translation_Root": "Translation"}, inplace=True)
-# cut off lemma-forming suffixes
-dic_roots = dic_roots.apply(lambda x: trim_dic_suff(x, SEP), axis=1)
-dic_roots["Translation"] = dic_roots["Translation"].apply(lambda x: x.replace("-", "_"))
-dic_roots["Translation"] = dic_roots["Translation"].apply(lambda x: x.split(SEP))
+dic_roots = dic_roots.apply(
+    lambda x: trim_dic_suff(x, SEP), axis=1
+)  # cut off lemma-forming suffixes
+splitcol(dic_roots, "Translation")
 dic_roots["Gloss"] = dic_roots["Translation"].apply(glossify)
-# get variants
+# retrieve variants from other column
 dic_roots["Form"] = dic_roots.apply(
     lambda x: SEP.join(list(x["Form"].split(SEP) + x["Variants"].split(SEP))).strip(
         SEP
@@ -242,13 +246,15 @@ dic_roots["Form"] = dic_roots.apply(
 manual_roots = cread("etc/manual_roots.csv")
 manual_roots["Gloss"] = manual_roots["Translation"]
 
-# a dataframe containing root morphemes
+# build a dataframe containing root morphemes
 df.roots = pd.concat([dic_roots, manual_roots])
 df.roots["Language_ID"] = "yab"
 # process roots
 for split_col in ["Form"]:
-    df.roots[split_col] = df.roots[split_col].apply(lambda x: x.split(SEP))
-df.roots["Name"] = df.roots["Form"].apply(lambda x: x[0])
+    splitcol(df.roots, split_col)
+df.roots["Name"] = df.roots["Form"].apply(
+    lambda x: x[0]
+)  # main allomorph is label for root
 # create IDs
 df.roots["ID"] = df.roots.apply(
     lambda x: humidify(f"{x.Name}-{x.Gloss[0]}", unique=True, key="morpheme"),
@@ -257,22 +263,23 @@ df.roots["ID"] = df.roots.apply(
 df.roots["Gloss"] = df.roots["Gloss"].apply(glossify)
 df.roots["Parameter_ID"] = df.roots["Gloss"]
 
-keep_cols = [
-    "ID",
-    "Language_ID",
-    "Name",
-    "Form",
-    "Translation",
-    "Gloss",
-    "Parameter_ID",
-    "POS",
-    "Comment",
+df.roots = df.roots[
+    [
+        "ID",
+        "Language_ID",
+        "Name",
+        "Form",
+        "Translation",
+        "Gloss",
+        "Parameter_ID",
+        "POS",
+        "Comment",
+    ]
 ]
-df.roots = df.roots[keep_cols]
 
 
-# ?roots["Description"] = roots["Parameter_ID"]
-# only roots with these POS are assumed to be stems/lexemes (i.e., take inflectional morphology)
+# todo: needed? roots["Description"] = roots["Parameter_ID"]
+# only roots with these POS are assumed to be treated as stems/lexemes (i.e., take inflectional morphology)
 stem_pos_list = ["vt", "vi", "n", "postp", "pn", "adv"]
 df.root_lex = df.roots[df.roots["POS"].isin(stem_pos_list)].copy()
 df.stems = df.root_lex.explode("Form")
@@ -282,13 +289,13 @@ df.stems["ID"] = df.stems.apply(
 )
 df.root_lex["Main_Stem"] = df.root_lex["ID"]
 
-
+# all roots are also morphs
 df.root_morphs = df.roots.explode("Form")
 df.root_morphs["Morpheme_ID"] = df.root_morphs["ID"]
 df.root_morphs["ID"] = df.root_morphs.apply(
     lambda x: humidify(f"{x.Form}-{x.Gloss[0]}", unique=True, key="morphids"), axis=1
 )
-df.root_morphs.apply(add_to_morph_dict, axis=1)
+df.root_morphs.apply(add_to_morph_dic, axis=1)
 df.root_morphs["Name"] = df.root_morphs["Form"]
 
 stemparts = [
@@ -408,6 +415,7 @@ def process_stem(rec, process):
         parts = re.split(r"-|\+", form)
         form = strip_form(form)
         derived_parts[form] = []
+        # print(parts)
         for idx, part in enumerate(parts):
             cands = get_stempart_cands(rec, part, processes[idx])
             if len(cands) == 1:
@@ -446,7 +454,7 @@ def process_stem(rec, process):
                 print(cands)
                 # exit()
         rec["Morpho_Segments"].append(" ".join(parts))
-    rec["Gloss"] = glossify(rec["Translation"])
+    rec["Gloss"] = glossify(rec["Translation"], segmented=True)
     rec["Form"] = [x.replace("+", "") for x in rec["Form"]]
     return rec
 
@@ -484,7 +492,7 @@ df.stems["Language_ID"] = "yab"
 df.stems["Segments"] = df.stems["Name"].apply(tokenize)
 
 
-df.stems["Morpho_Segments"] = df.stems["Morpho_Segments"].apply(lambda x: x.split(" "))
+splitcol(df.stems, "Morpho_Segments", sep=" ")
 
 
 # a dict mapping object-gloss tuples to stem IDs
@@ -547,6 +555,7 @@ def build_productive_stem(source_stem, process, obj):
     return stem_form, stem_glosses, stem_id
 
 
+semi_inflections = ["rinmlz", "tojpepurp", "sapenmlz", "jpenmlz"]
 def resolve_productive_stem(lex_id, obj, gloss, pos):
     lex, process = lex_id.rsplit("&", 1)
     log.debug(
@@ -593,7 +602,16 @@ def resolve_productive_stem(lex_id, obj, gloss, pos):
         #     cands = df.bound_root_morphs[df.bound_root_morphs["Form"] == obj]
         # if len(cands) > 1 and process in deriv_source_pos:
         #     cands = cands[cands["POS"].isin(deriv_source_pos[process])]
-        new_stem_form, new_stem_gloss, new_stem_id = build_productive_stem(
+        if process in semi_inflections:
+            return source_stem["ID"], source_stem["Lexeme_ID"]
+            print("OK")
+            print("proc", process)
+            print(stem_cands)
+            print("src", source_stem)
+            print("obj", obj)
+            exit()
+        else:
+            new_stem_form, new_stem_gloss, new_stem_id = build_productive_stem(
             source_stem, process, obj
         )
         # print(new_stem_form, new_stem_gloss, new_stem_id)
@@ -627,8 +645,6 @@ def resolve_productive_stem(lex_id, obj, gloss, pos):
         # print("stem_id:", stem_id)
         # print("sub_stem_id:", sub_lex_id)
         return stem_id, sub_lex_id
-
-    
 
 
 lex_stem_dic = {}
@@ -684,7 +700,6 @@ def identify_part(obj, gloss, ids):
     raise ValueError(f"Could not find any morph or stem {obj} '{gloss}'. IDs: {ids}")
 
 
-
 # todo: this should only add inflectional values if they are in the gramm argument
 def process_wordform(obj, gloss, lex_id, gramm, morpheme_ids, **kwargs):
     # print(f"processing wordform {obj} '{gloss}'")
@@ -693,10 +708,6 @@ def process_wordform(obj, gloss, lex_id, gramm, morpheme_ids, **kwargs):
     wf_id = humidify(f"{strip_form(obj)}-{gloss}", unique=False, key="wordforms")
     if wf_id in wf_dict:
         return wf_id
-    if wf_id in ["pe-ess", "taro-say-ipfv"]:
-        log.error(obj)
-        log.error(gloss)
-        log.error(kwargs)
     if morpheme_ids:
         if not isinstance(morpheme_ids, list):
             morpheme_ids = morpheme_ids.split(",")
@@ -705,32 +716,35 @@ def process_wordform(obj, gloss, lex_id, gramm, morpheme_ids, **kwargs):
                 lex_id, obj, gloss, get_pos(gramm)
             )
             if stem_id:
-                if gloss in productive_stems[stem_id]["Gloss"]:
-                    # todo: it would be great if I could figure out the positions of ANY productive stem in the wordform
-                    wf_stems.append(
-                        {
-                            "ID": f"{wf_id}-deriv-stem",
-                            "Index": [0, len(obj.split("-")) - 1],
-                            "Stem_ID": stem_id,
-                            "Wordform_ID": wf_id,
-                        }
-                    )
-                else:
-                    stemform = productive_stems[stem_id]["Form"][0]
-                    if stemform in obj:
+                if stem_id  in productive_stems:
+                    if gloss in productive_stems[stem_id]["Gloss"]:
+                        # todo: it would be great if I could figure out the positions of ANY productive stem in the wordform
                         wf_stems.append(
                             {
                                 "ID": f"{wf_id}-deriv-stem",
-                                "Index": identify_complex_stem_position(obj, stemform),
+                                "Index": [0, len(obj.split("-")) - 1],
                                 "Stem_ID": stem_id,
                                 "Wordform_ID": wf_id,
                             }
                         )
                     else:
-                        log.warning(
-                            f"The form {obj} '{gloss}' contains the stem {stemform} '{', '.join(productive_stems[stem_id]['Gloss'])}'; can it know about its wordformstem?"
-                        )
-
+                        stemform = productive_stems[stem_id]["Form"][0]
+                        if stemform in obj:
+                            wf_stems.append(
+                                {
+                                    "ID": f"{wf_id}-deriv-stem",
+                                    "Index": identify_complex_stem_position(obj, stemform),
+                                    "Stem_ID": stem_id,
+                                    "Wordform_ID": wf_id,
+                                }
+                            )
+                        else:
+                            log.warning(
+                                f"The form {obj} '{gloss}' contains the stem {stemform} '{', '.join(productive_stems[stem_id]['Gloss'])}'; can it know about its wordformstem?"
+                            )
+                            exit()
+            else:
+                log.error(f"Could not find stem ID for wordform {obj} '{gloss}")
             if source_id:
                 morpheme_ids.append(source_id)
             else:
