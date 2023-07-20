@@ -62,6 +62,14 @@ WORD_AUDIO_PATH = AUDIO_PATH / "wordforms"
 
 ## Global helpers
 
+def is_name(string):
+    # identify personal names
+    if isinstance(string, list):
+        string = string[0]
+    if re.match("^[A-Z]\.$", string):
+        return True
+    return False
+
 
 def cread(filename):
     # use pandas to read csvs and not use NaN
@@ -301,6 +309,7 @@ df.root_morphs["ID"] = df.root_morphs.apply(
 df.root_morphs.apply(add_to_morph_dic, axis=1)
 df.root_morphs["Name"] = df.root_morphs["Form"]
 
+df.stems = df.stems[~(df.stems["Translation"].apply(is_name))]
 stemparts = [
     {
         "ID": x["ID"],
@@ -420,6 +429,8 @@ def process_stem(rec, process):
         derived_parts[form] = []
         # print(parts)
         for idx, part in enumerate(parts):
+            if is_name(part):
+                continue
             cands = get_stempart_cands(rec, part, processes[idx])
             if len(cands) == 1:
                 hit = cands.iloc[0]
@@ -486,6 +497,7 @@ df.derived_lex["Main_Stem"] = df.derived_lex["ID"]
 
 df.stems["Morpho_Segments"] = df.stems["Form"]
 join_dfs("stems", "stems", "derived_stems")
+
 
 join_dfs("lexemes", "root_lex", "derived_lex")
 df.lexemes = df.lexemes.set_index("ID", drop=False)
