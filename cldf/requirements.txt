@@ -43,7 +43,7 @@ pycountry==22.3.5
 pyglottolog==3.10.0
 pykwalify==1.8.0
 pylatexenc==2.10
--e git+ssh://git@github.com/fmatter/pylingdocs.git@56bd0f08d1fc45b011e91f5ca6dc74f0ffcc67ad#egg=pylingdocs
+-e git+ssh://git@github.com/fmatter/pylingdocs.git@ecb0b3c64c799f69e6ac2f92c120b613dfbe9392#egg=pylingdocs
 pyrsistent==0.19.2
 python-dateutil==2.8.2
 python-frontmatter==1.0.0
