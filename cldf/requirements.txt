@@ -63,7 +63,7 @@ termcolor==2.1.0
 toml==0.10.2
 tqdm==4.62.2
 typing_extensions==4.4.0
--e git+ssh://git@github.com/fmatter/uniparser-yawarana.git@c7bd1ac93183400105416938bc88f1e2da2a4114#egg=uniparser_yawarana
+-e git+ssh://git@github.com/fmatter/uniparser-yawarana.git@0a33591f5f91bd36bfa76328f859fddd9a6f531c#egg=uniparser_yawarana
 uritemplate==4.1.1
 urllib3==1.26.12
 wcwidth==0.2.5

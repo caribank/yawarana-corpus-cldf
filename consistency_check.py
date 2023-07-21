@@ -4,11 +4,13 @@ from writio import load
 from itertools import combinations
 
 
+# yawarana-specific formal alternations
 reduced = ["j", "n"]
-
-
 vowels = "aeiouïë"
+
+
 def distance(a, b):
+    # variation in vowels is rampant, ignore them altogether
     for vowel in vowels:
         a = a.replace(vowel, "V")
         b = b.replace(vowel, "V")
@@ -48,6 +50,3 @@ for file in ["morphs", "stems"]:
         print(f"Duplicate {file}:")
         print(dupes)
         print("")
-
-
-print(distance("tajnomo", "tajnon"))
