@@ -610,7 +610,7 @@
             "url": "inflectionalcategories.csv"
         },
         {
-            "dc:extent": 495,
+            "dc:extent": 494,
             "tableSchema": {
                 "columns": [
                     {
@@ -701,7 +701,7 @@
             "url": "lexemes.csv"
         },
         {
-            "dc:extent": 573,
+            "dc:extent": 572,
             "tableSchema": {
                 "columns": [
                     {
