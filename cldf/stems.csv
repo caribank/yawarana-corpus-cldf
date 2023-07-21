@@ -395,11 +395,10 @@ ke-ins,yab,ke,ke-ins,INS,ke,k e,,,postp
 ewenke-ignorant,yab,ewenke,ewenke-ignorant,ignorant,ewenke,e w e n k e,,,postp
 suku-urine,yab,suku,suku-urine,urine,suku,s u k u,,,n
 suj-urine,yab,suj,suku-urine,urine,suj,s u h,,,n
-mesuku-blood,yab,mesuku,mesuku-blood,blood,mesuku,m e s u k u,,,n
-mesuj-blood,yab,mesuj,mesuku-blood,blood,mesuj,m e s u h,,,n
+mesuku-blood,yab,mesuku,mesuku-blood,blood,mesuku,m e s u k u,-tu PERT,,n
+mesuj-blood,yab,mesuj,mesuku-blood,blood,mesuj,m e s u h,-tu PERT,,n
 enka-finish,yab,ënka,enka-finish,finish,ënka,ə n k a,,,vt
 enejka-watch,yab,enejka,enejka-watch,watch,enejka,e n e h k a,,,vt
-wajto-fire-1,yab,wajto,wajto-fire-1,fire,wajto,w a h t o,,,n
 tawejka-dawn,yab,tawejka,tawejka-dawn,dawn,tawejka,t a w e h k a,,,vi
 aniki-who,yab,anïkï,aniki-who,who,anïkï,a n ɨ k ɨ,,,pn
 aniki-who-1,yab,aniki,aniki-who,who,aniki,a n i k i,,,pn
@@ -476,7 +475,6 @@ sempinuj-close-eyes,yab,sëmpinuj,sempinuku-close-eyes,close eyes,sëmpinuj,s ə
 pe-ess,yab,pe,pe-ess,ESS,pe,p e,,,postp
 kerejpe-old,yab,kërëjpë,kerejpe-old,old,kërëjpë,k ə r ə h p ə,Looks like a lexicalized *-jpë*.,,n
 kere-old,yab,kërë,kere-old,old,kërë,k ə r ə,Bound root?,,n
-mesuku-blood-1,yab,mesuku,mesuku-blood-1,blood,mesuku,m e s u k u,-tu PERT,,n
 enu-eye,yab,ënu,enu-eye,eye,ënu,ə n u,,,n
 emekunu-hand,yab,emekunu,emekunu-hand,hand,emekunu,e m e k u n u,,,n
 ere-liver,yab,ere,ere-liver,liver,ere,e r e,,,n
