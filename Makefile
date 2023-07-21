@@ -28,6 +28,7 @@ release:
 	git merge dev
 	git push; git push --tags
 	git checkout dev
+	git merge main
 	bump2version patch
 	git commit -am "bump"; git push
 
