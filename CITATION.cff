@@ -11,7 +11,7 @@ authors:
 -   family-names: Gildea
     given-names: Spike
 abstract: A CLDF dataset containing the data used for a digital sketch grammar of Yawarana, consisting of an annotated corpus and a morphological dictionary.
-url: https://github.com/caribank/yawarana-corpus-cldf/releases/tag/0.0.5.draft
+url: https://github.com/caribank/yawarana-corpus-cldf/
 date-released: 2023-07-21
 keywords:
 - digital linguistics

@@ -4,7 +4,6 @@ from datetime import datetime
 from jinja2 import Template
 
 md = load("etc/metadata.yaml")
-md["url"] += f"releases/tag/{md['version']}"
 md["authors"] = []
 a_dic = {
     "Given": "family-names",
