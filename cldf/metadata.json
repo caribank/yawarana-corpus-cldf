@@ -25,7 +25,7 @@
     "rdf:type": "http://www.w3.org/ns/dcat#Distribution",
     "tables": [
         {
-            "dc:extent": 374,
+            "dc:extent": 373,
             "tableSchema": {
                 "columns": [
                     {
@@ -408,7 +408,7 @@
             "url": "morphs.csv"
         },
         {
-            "dc:extent": 228,
+            "dc:extent": 226,
             "tableSchema": {
                 "columns": [
                     {
@@ -971,7 +971,7 @@
             "url": "derivationalprocesses.csv"
         },
         {
-            "dc:extent": 653,
+            "dc:extent": 650,
             "tableSchema": {
                 "columns": [
                     {
@@ -1058,7 +1058,7 @@
             "url": "wordformparts.csv"
         },
         {
-            "dc:extent": 348,
+            "dc:extent": 347,
             "tableSchema": {
                 "columns": [
                     {
@@ -1245,7 +1245,7 @@
             "url": "glosses.csv"
         },
         {
-            "dc:extent": 10,
+            "dc:extent": 11,
             "tableSchema": {
                 "columns": [
                     {
@@ -1375,7 +1375,7 @@
             "url": "texts.csv"
         },
         {
-            "dc:extent": 1388,
+            "dc:extent": 1387,
             "tableSchema": {
                 "columns": [
                     {
