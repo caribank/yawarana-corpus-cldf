@@ -1,0 +1,8 @@
+title: Yawarana corpus
+version: 0.0.3.draft
+keywords:
+  - digital linguistics
+  - CLDF
+url: https://github.com/caribank/yawarana-corpus-cldf/
+license: CC-BY-SA-4.0
+abstract: A CLDF dataset containing the data used for a digital sketch grammar of Yawarana, consisting of an annotated corpus and a morphological dictionary.
