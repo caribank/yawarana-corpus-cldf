@@ -225,6 +225,7 @@ sema-die,sema-die,sema-die,0,die
 esema-die,esema-die,esema-die,0,die
 tajme-ugly,tajme-ugly,tajme-ugly,0,ugly
 tajnomo-piaroa,tajnomo-piaroa,tajnomo-piaroa,0,piaroa
+tajnon-piaroa,tajnon-piaroa,tajnon-piaroa,0,piaroa
 tajromini-bad-omen,tajromini-bad-omen,tajromini-bad-omen,0,bad-omen
 tajromin-bad-omen,tajromin-bad-omen,tajromin-bad-omen,0,bad-omen
 tajropo-have-fever,tajropo-have-fever,tajropo-have-fever,0,have-fever
@@ -432,7 +433,6 @@ empam-learn,empam-learn,empam-learn,0,learn
 yakucho-p-a,yakucho-p-a,yakucho-p-a,0,"p,a"
 akino-younger-brother,akino-younger-brother,akino-younger-brother,0,younger-brother
 yakara-believe,yakara-believe,yakara-believe,0,believe
-tajnon-piaroa,tajnon-piaroa,tajnon-piaroa,0,piaroa
 pupuri-bactris-gasipaes,pupuri-bactris-gasipaes,pupuri-bactris-gasipaes,0,bactris-gasipaes
 pipiri-bactris-gasipaes,pipiri-bactris-gasipaes,pipiri-bactris-gasipaes,0,bactris-gasipaes
 pipiri-bactris-gasipaes-1,pipiri-bactris-gasipaes-1,pipiri-bactris-gasipaes-1,0,bactris-gasipaes
@@ -496,8 +496,6 @@ yemi-be-hungry-1,yemi-be-hungry-1,yemi-be-hungry-1,0,be-hungry
 ijmojka-cook,ijmojka-cook,ijmojka-cook,0,cook
 ijmoka-cook,ijmoka-cook,ijmoka-cook,0,cook
 padrastro-stepfather,padrastro-stepfather,padrastro-stepfather,0,stepfather
-rafa-rafa,rafa-rafa,rafa-rafa,0,rafa
-perez-perez,perez-perez,perez-perez,0,perez
 akere-with,akere-with,akere-with,0,with
 ka-all,ka-all,ka-all,0,all
 maijte-go-imp,maijte-go-imp,maijte-go-imp,0,"go,imp"

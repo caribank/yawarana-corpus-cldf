@@ -25,7 +25,7 @@
     "rdf:type": "http://www.w3.org/ns/dcat#Distribution",
     "tables": [
         {
-            "dc:extent": 375,
+            "dc:extent": 374,
             "tableSchema": {
                 "columns": [
                     {
@@ -160,7 +160,7 @@
             "url": "wordforms.csv"
         },
         {
-            "dc:extent": 608,
+            "dc:extent": 606,
             "tableSchema": {
                 "columns": [
                     {
@@ -610,7 +610,7 @@
             "url": "inflectionalcategories.csv"
         },
         {
-            "dc:extent": 494,
+            "dc:extent": 491,
             "tableSchema": {
                 "columns": [
                     {
@@ -701,7 +701,7 @@
             "url": "lexemes.csv"
         },
         {
-            "dc:extent": 572,
+            "dc:extent": 571,
             "tableSchema": {
                 "columns": [
                     {
@@ -971,7 +971,7 @@
             "url": "derivationalprocesses.csv"
         },
         {
-            "dc:extent": 654,
+            "dc:extent": 653,
             "tableSchema": {
                 "columns": [
                     {
@@ -1058,7 +1058,7 @@
             "url": "wordformparts.csv"
         },
         {
-            "dc:extent": 350,
+            "dc:extent": 348,
             "tableSchema": {
                 "columns": [
                     {
@@ -1124,7 +1124,7 @@
             "url": "wordformstems.csv"
         },
         {
-            "dc:extent": 719,
+            "dc:extent": 717,
             "tableSchema": {
                 "columns": [
                     {
@@ -1211,7 +1211,7 @@
             "url": "stemparts.csv"
         },
         {
-            "dc:extent": 514,
+            "dc:extent": 513,
             "tableSchema": {
                 "columns": [
                     {
@@ -1375,7 +1375,7 @@
             "url": "texts.csv"
         },
         {
-            "dc:extent": 1389,
+            "dc:extent": 1388,
             "tableSchema": {
                 "columns": [
                     {
