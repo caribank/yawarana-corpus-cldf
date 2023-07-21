@@ -8,8 +8,6 @@ authors:
     affiliation: University of Oregon
 -   family-names: Cáceres Arandia
     given-names: Natalia
--   family-names: Mattéi-Müller
-    given-names: Marie-Claude
 -   family-names: Gildea
     given-names: Spike
 abstract: A CLDF dataset containing the data used for a digital sketch grammar of Yawarana, consisting of an annotated corpus and a morphological dictionary.
