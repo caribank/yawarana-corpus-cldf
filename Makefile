@@ -30,7 +30,6 @@ release:
 	git checkout dev
 	git merge main
 	bump2version patch
-	git checkout dev
 	git merge main
 	git commit -am "bump"; git push
 
