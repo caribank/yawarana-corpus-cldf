@@ -62,6 +62,7 @@ WORD_AUDIO_PATH = AUDIO_PATH / "wordforms"
 
 ## Global helpers
 
+
 def is_name(string):
     # identify personal names
     if isinstance(string, list):
@@ -574,6 +575,8 @@ def build_productive_stem(source_stem, process, obj):
 
 
 semi_inflections = ["rinmlz", "tojpepurp", "sapenmlz", "jpenmlz", "septcp", "tanecncs"]
+
+
 def resolve_productive_stem(lex_id, obj, gloss, pos):
     lex, process = lex_id.rsplit("&", 1)
     log.debug(
@@ -630,8 +633,8 @@ def resolve_productive_stem(lex_id, obj, gloss, pos):
             exit()
         else:
             new_stem_form, new_stem_gloss, new_stem_id = build_productive_stem(
-            source_stem, process, obj
-        )
+                source_stem, process, obj
+            )
         # print(new_stem_form, new_stem_gloss, new_stem_id)
         if not new_stem_form:
             return None, None
@@ -734,7 +737,7 @@ def process_wordform(obj, gloss, lex_id, gramm, morpheme_ids, **kwargs):
                 lex_id, obj, gloss, get_pos(gramm)
             )
             if stem_id:
-                if stem_id  in productive_stems:
+                if stem_id in productive_stems:
                     if gloss in productive_stems[stem_id]["Gloss"]:
                         # todo: it would be great if I could figure out the positions of ANY productive stem in the wordform
                         wf_stems.append(
@@ -751,7 +754,9 @@ def process_wordform(obj, gloss, lex_id, gramm, morpheme_ids, **kwargs):
                             wf_stems.append(
                                 {
                                     "ID": f"{wf_id}-deriv-stem",
-                                    "Index": identify_complex_stem_position(obj, stemform),
+                                    "Index": identify_complex_stem_position(
+                                        obj, stemform
+                                    ),
                                     "Stem_ID": stem_id,
                                     "Wordform_ID": wf_id,
                                 }
