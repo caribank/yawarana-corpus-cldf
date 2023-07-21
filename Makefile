@@ -1,3 +1,4 @@
+VERSION = $(shell yq -p=props .bumpversion.cfg | yq eval ".current_version"  )
 .PHONY: cldf
 
 build: download cldf readme
@@ -21,15 +22,16 @@ download:
 	cp /home/florianm/Dropbox/research/cariban/yawarana/yawarana_corpus/flexports/sentences.csv raw/flexamples.csv
 
 release:
-# 	make cldf_release
-# 	make github
-# 	make readme
-# 	make pdf
-# 	make download_extra
-# 	git add -f cldf
-# 	git commit -am 'release $(VERSION)'
-# 	git tag -a $(VERSION) -m 'release $(VERSION)'
-# 	git push; git push --tags
+	git checkout dev
+	make build
+	git commit -am 'release $(VERSION)'
+	git tag -a $(VERSION) -m 'release $(VERSION)'
+	git checkout main
+	git merge dev
+	git push; git push --tags
+	git checkout dev
+	bump2version patch
+	git commit -am "bump"; git push
 
 github:
 	python3 var/create_github_stuff.py
