@@ -1,9 +1,5 @@
 title: Yawarana corpus
-<<<<<<< HEAD
-version: version: 0.0.5
-=======
-version: 0.0.4
->>>>>>> main
+version: 0.0.5.draft
 keywords:
   - digital linguistics
   - CLDF
