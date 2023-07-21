@@ -917,7 +917,7 @@
             "url": "derivations.csv"
         },
         {
-            "dc:extent": 23,
+            "dc:extent": 17,
             "tableSchema": {
                 "columns": [
                     {

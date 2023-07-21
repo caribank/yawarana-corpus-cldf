@@ -574,7 +574,7 @@ def build_productive_stem(source_stem, process, obj):
     return stem_form, stem_glosses, stem_id
 
 
-semi_inflections = ["rinmlz", "tojpepurp", "sapenmlz", "jpenmlz", "septcp", "tanecncs"]
+semi_inflections = ["rinmlz", "tojpepurp", "sapenmlz", "jpenmlz", "septcp", "tanecncs", "neinf"]   # todo should these receive some different treatment?
 
 
 def resolve_productive_stem(lex_id, obj, gloss, pos):
