@@ -22,8 +22,6 @@ download:
 	cp /home/florianm/Dropbox/research/cariban/yawarana/yawarana_corpus/flexports/sentences.csv raw/flexamples.csv
 
 release:
-	git checkout dev
-	make build
 	git commit -am 'release $(VERSION)'
 	git tag -a $(VERSION) -m 'release $(VERSION)'
 	git checkout main
