@@ -1,0 +1,22 @@
+version: 0.0.3.draft
+title: Yawarana corpus
+authors:
+-   family-names: Matter
+    given-names: Florian
+    orcid: https://orcid.org/0000-0002-2545-5154
+    email: fmatter@mailbox.org
+    affiliation: University of Oregon
+-   family-names: Cáceres Arandia
+    given-names: Natalia
+-   family-names: Mattéi-Müller
+    given-names: Marie-Claude
+-   family-names: Gildea
+    given-names: Spike
+abstract: A CLDF dataset containing the data used for a digital sketch grammar of Yawarana, consisting of an annotated corpus and a morphological dictionary.
+url: https://github.com/caribank/yawarana-corpus-cldf/releases/tag/0.0.3.draft
+date-released: 2023-07-21
+keywords:
+- digital linguistics
+- CLDF
+license: CC-BY-SA-4.0
+type: dataset
