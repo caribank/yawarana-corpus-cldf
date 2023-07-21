@@ -1,0 +1,12 @@
+version: {{version}}
+title: {{title}}
+authors:
+{% for author in authors %}{%for k, v in author.items() %}{%if loop.index == 1 %}- {% else %}  {% endif %}{%if k != None%}  {{k}}: {%if k == "orcid"%}https://orcid.org/{%endif%}{{v}}{%endif%}
+{% endfor %}{% endfor %}abstract: {{abstract}}
+url: {{url}}
+date-released: {{date}}
+keywords:{% for kw in keywords %}
+- {{kw}}{% endfor %}
+license: {{license}}
+type: dataset
+message: Please cite the dataset using these metadata.
