@@ -1,6 +1,5 @@
 .DS_Store
 errors.log
-Makefile
 RELEASING.md
 .~lock.*.csv#
 raw/*
