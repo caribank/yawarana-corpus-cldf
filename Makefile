@@ -27,9 +27,10 @@ release:
 	git checkout main
 	git merge dev
 	git push; git push --tags
-	git checkout dev
 	bump2version patch
 	git commit -am "bump"; git push
+	git checkout dev
+	git merge main
 
 github:
 	python3 var/create_github_stuff.py
