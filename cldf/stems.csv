@@ -225,6 +225,7 @@ sema-die,yab,sëma,sema-die,die,sëma,s ə m a,Looks like a DETRZ?,,vi
 esema-die,yab,ësëma,sema-die,die,ësëma,ə s ə m a,Looks like a DETRZ?,,vi
 tajme-ugly,yab,tajme,tajme-ugly,ugly,tajme,t a h m e,,,adv
 tajnomo-piaroa,yab,tajnomo,tajnomo-piaroa,Piaroa,tajnomo,t a h n o m o,,,n
+tajnon-piaroa,yab,tajnon,tajnomo-piaroa,Piaroa,tajnon,t a h n o n,,,n
 tajromini-bad-omen,yab,tajromini,tajromini-bad-omen,bad omen,tajromini,t a h r o m i n i,,,n
 tajromin-bad-omen,yab,tajromin,tajromini-bad-omen,bad omen,tajromin,t a h r o m i n,,,n
 tajropo-have-fever,yab,tajropo,tajropo-have-fever,have fever,tajropo,t a h r o p o,,,vi
@@ -432,7 +433,6 @@ empam-learn,yab,ëmpam,empami-learn,learn,ëmpam,ə m p a m,,,vi
 yakucho-p-a,yab,yakucho,yakucho-p-a,P. A.,yakucho,j a k u t͡ʃ o,,,n
 akino-younger-brother,yab,akino,akino-younger-brother,younger brother,akino,a k i n o,,,n
 yakara-believe,yab,yakara,yakara-believe,believe,yakara,j a k a r a,,,vi
-tajnon-piaroa,yab,tajnon,tajnon-piaroa,Piaroa,tajnon,t a h n o n,,,n
 pupuri-bactris-gasipaes,yab,pupuri,pupuri-bactris-gasipaes,Bactris gasipaes,pupuri,p u p u r i,,,n
 pipiri-bactris-gasipaes,yab,pïpïri,pupuri-bactris-gasipaes,Bactris gasipaes,pïpïri,p ɨ p ɨ r i,,,n
 pipiri-bactris-gasipaes-1,yab,pïpïrï,pupuri-bactris-gasipaes,Bactris gasipaes,pïpïrï,p ɨ p ɨ r ɨ,,,n
@@ -496,8 +496,6 @@ yemi-be-hungry-1,yab,yëmi,yemi-be-hungry,be hungry,yëmi,j ə m i,,,vi
 ijmojka-cook,yab,ijmojka,ijmojka-cook,cook,ijmojka,i h m o h k a,,,vt
 ijmoka-cook,yab,ijmoka,ijmojka-cook,cook,ijmoka,i h m o k a,,,vt
 padrastro-stepfather,yab,padrastro,padrastro-stepfather,stepfather,padrastro,p a d r a s t r o,,,n
-rafa-rafa,yab,rafa,rafa-rafa,Rafa,rafa,r a f a,,,n
-perez-perez,yab,perez,perez-perez,Perez,perez,p e r e s,,,n
 akere-with,yab,akërë,akere-with,with,akërë,a k ə r ə,,,postp
 ka-all,yab,ka,ka-all,ALL,ka,k a,,,postp
 maijte-go-imp,yab,maijtë,maijte-go-imp,go.IMP,maijtë,m a i h t ə,,,vi

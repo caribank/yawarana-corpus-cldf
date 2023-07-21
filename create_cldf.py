@@ -230,6 +230,7 @@ df.bound_root_morphs["Morpheme_ID"] = df.bound_root_morphs["ID"]
 df.bound_root_morphs["ID"] = df.bound_root_morphs.apply(
     lambda x: humidify(f'{x["Form"]}-{x["Translation"]}', key="morphs"), axis=1
 )
+df.bound_root_morphs["Name"] = df.bound_root_morphs["Form"]
 
 ## Lexicon
 # enriched LIFT export from MCMM
