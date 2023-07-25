@@ -26,7 +26,8 @@ release:
 	git tag -a $(VERSION) -m 'release $(VERSION)'
 	git checkout main
 	git merge dev
-	git push; git push --tags
+	git push
+	git push --tags
 	git checkout dev
 	git merge main
 	bump2version patch

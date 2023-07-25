@@ -25,7 +25,7 @@
     "rdf:type": "http://www.w3.org/ns/dcat#Distribution",
     "tables": [
         {
-            "dc:extent": 274,
+            "dc:extent": 311,
             "tableSchema": {
                 "columns": [
                     {
@@ -160,7 +160,7 @@
             "url": "wordforms.csv"
         },
         {
-            "dc:extent": 601,
+            "dc:extent": 612,
             "tableSchema": {
                 "columns": [
                     {
@@ -284,7 +284,7 @@
             "url": "stems.csv"
         },
         {
-            "dc:extent": 735,
+            "dc:extent": 752,
             "tableSchema": {
                 "columns": [
                     {
@@ -408,7 +408,7 @@
             "url": "morphs.csv"
         },
         {
-            "dc:extent": 147,
+            "dc:extent": 153,
             "tableSchema": {
                 "columns": [
                     {
@@ -610,7 +610,7 @@
             "url": "inflectionalcategories.csv"
         },
         {
-            "dc:extent": 485,
+            "dc:extent": 496,
             "tableSchema": {
                 "columns": [
                     {
@@ -701,7 +701,7 @@
             "url": "lexemes.csv"
         },
         {
-            "dc:extent": 569,
+            "dc:extent": 584,
             "tableSchema": {
                 "columns": [
                     {
@@ -797,7 +797,7 @@
             "url": "morphemes.csv"
         },
         {
-            "dc:extent": 94,
+            "dc:extent": 95,
             "tableSchema": {
                 "columns": [
                     {
@@ -971,7 +971,7 @@
             "url": "derivationalprocesses.csv"
         },
         {
-            "dc:extent": 461,
+            "dc:extent": 505,
             "tableSchema": {
                 "columns": [
                     {
@@ -1058,7 +1058,7 @@
             "url": "wordformparts.csv"
         },
         {
-            "dc:extent": 256,
+            "dc:extent": 287,
             "tableSchema": {
                 "columns": [
                     {
@@ -1124,7 +1124,7 @@
             "url": "wordformstems.csv"
         },
         {
-            "dc:extent": 708,
+            "dc:extent": 720,
             "tableSchema": {
                 "columns": [
                     {
@@ -1211,7 +1211,7 @@
             "url": "stemparts.csv"
         },
         {
-            "dc:extent": 505,
+            "dc:extent": 517,
             "tableSchema": {
                 "columns": [
                     {
@@ -1375,7 +1375,7 @@
             "url": "texts.csv"
         },
         {
-            "dc:extent": 796,
+            "dc:extent": 805,
             "tableSchema": {
                 "columns": [
                     {
@@ -1838,7 +1838,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#MediaTable",
-            "dc:extent": 175,
+            "dc:extent": 232,
             "tableSchema": {
                 "columns": [
                     {

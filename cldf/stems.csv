@@ -2,13 +2,22 @@ ID,Language_ID,Name,Lexeme_ID,Parameter_ID,Morpho_Segments,Segments,Comment,Sour
 achi-wilderness,yab,achi,achi-wilderness,wilderness,achi,a t͡ʃ i,,,n
 aijkorono-recovered,yab,aijkorono,aijkorono-recovered,recovered,aijkorono,a i h k o r o n o,,,n
 ajpachi-undergrowth,yab,ajpachi,ajpachi-undergrowth,undergrowth,ajpachi,a h p a t͡ʃ i,,,n
+ajyu-tucuma-palm,yab,ajyu,ajyu-tucuma-palm,tucuma (palm),ajyu,a h j u,,,n
+ako-pylon,yab,ako,ako-pylon,pylon,ako,a k o,,,n
 aki-worm,yab,akï,aki-worm,worm; maggot,akï,a k ɨ,,,n
+amaka-sweet-yucca,yab,amaka,amaka-sweet-yucca,sweet yucca,amaka,a m a k a,,,n
 amu-ripeness,yab,amu,amu-ripeness,ripeness,amu,a m u,,,n
 ami-unidentified-plant,yab,amï,ami-unidentified-plant,unidentified plant,amï,a m ɨ,,,n
 ana-1-3pro,yab,ana,ana-1-3pro,1+3PRO,ana,a n a,,,pn
+anaijke-wild-pineapple-sp,yab,anaijkë,anaijke-wild-pineapple-sp,wild pineapple sp.,anaijkë,a n a i h k ə,,,n
+anake-ant-sp,yab,anakë,anake-ant-sp,ant sp.,anakë,a n a k ə,,,n
+anau-ant-sp,yab,anau,anau-ant-sp,ant sp.,anau,a n a u,,,n
 anoto-annatto,yab,anoto,anoto-annatto,annatto,anoto,a n o t o,,,n
 anta-island,yab,anta,anta-island,island,anta,a n t a,,,n
 ante-fish-hook,yab,antë,ante-fish-hook,fish hook,antë,a n t ə,,,n
+apa-decrease,yab,apa,apa-decrease,decrease,apa,a p a,,,vi
+apereku-ceiba,yab,apereku,apereku-ceiba,ceiba,apereku,a p e r e k u,,,n
+aperemu-chrysalis,yab,aperemu,aperemu-chrysalis,chrysalis,aperemu,a p e r e m u,,,n
 api-ripeness,yab,api,api-ripeness,ripeness,api,a p i,,,n
 apo-later,yab,apo,apo-later,later; meanwhile,apo,a p o,,,adv
 apuni-soap,yab,apuni,apuni-soap,soap,apuni,a p u n i,,,n
@@ -499,6 +508,7 @@ akere-with,yab,akërë,akere-with,with,akërë,a k ə r ə,,,postp
 ka-all,yab,ka,ka-all,ALL,ka,k a,,,postp
 maijte-go-imp,yab,maijtë,maijte-go-imp,go.IMP,maijtë,m a i h t ə,,,vi
 ejnomo-ejnomo,yab,ejnomo,ejnomo-ejnomo,ejnomo,ejnomo,e h n o m o,mother of the water,,n
+enirepeke-recently,yab,enirëpëke,enirepeke-recently,recently,enirëpëke,e n i r ə p ə k e,,,adv
 sujta-urinate,yab,sujta,sujta-urinate,urinate,suj ta,s u h t a,,,vi
 kaimota-hunt,yab,kaimota,kaimota-hunt,hunt,kaimo ta,k a i m o t a,,,vi
 meteta-thin,yab,mëtëta,meteta-thin,thin,mëtë ta,m ə t ə t a,,,vi
@@ -580,6 +590,7 @@ tepeti-go-plur,yab,tëpëti,tepeti-go-plur,go (PLUR),të pëti,t ə p ə t i,,,v
 sejpeti-dream,yab,sejpëti,sejpeti-dream,dream,sej pëti,s e h p ə t i,,,vi
 sejpej-dream,yab,sejpëj,sejpeti-dream,dream,sej pëj,s e h p ə h,,,vi
 mujnajte-bury,yab,mujnajtë,mujnajte-bury,bury,mujna jtë,m u h n a h t ə,,,vt
+ajpachike-undergrowth-prop,yab,ajpachi-ke,ajpachike-undergrowth-prop,undergrowth-PROP,ajpachi ke,,,,adv
 asereke-dry-cough-prop,yab,asere-ke,asereke-dry-cough-prop,dry_cough-PROP,asere ke,,,,adv
 enirono-now-nmlz,yab,eniro-no,enirono-now-nmlz,now-NMLZ; today-NMLZ,eniro no,,,,n
 ijmokani-cook-agtnmlz,yab,ijmoka-ni,ijmokani-cook-agtnmlz,cook-AGTNMLZ,ijmoka ni,,,,n
