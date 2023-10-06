@@ -1,5 +1,5 @@
 VERSION = $(shell yq -p=props .bumpversion.cfg | yq eval ".current_version"  )
-.PHONY: cldf
+.PHONY: cldf full
 
 build: download cldf readme
 

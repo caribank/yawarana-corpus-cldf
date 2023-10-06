@@ -90,7 +90,7 @@ def debug_dfs(key=None):
             continue
         print(data)
         print(k)
-    sys.exit()
+    # sys.exit()
 
 
 # turn glosses into gloss IDs
@@ -605,7 +605,7 @@ def resolve_productive_stem(lex_id, obj, gloss, pos):
         source_lex = cands.iloc[0]
     elif len(cands) > 1:
         log.warning(f"Could not disambiguate stem {lex}\n{cands.to_string()}")
-        exit()
+        # exit()
     elif len(cands) == 0:
         log.warning(f"Found no candidates for stem {lex_id}")
         # exit()
@@ -622,7 +622,7 @@ def resolve_productive_stem(lex_id, obj, gloss, pos):
         log.warning(
             f"Unable to resolve productive derivation {obj}&{process} in form {obj} '{gloss}'."
         )
-        exit()
+        # exit()
         return None, None
     if "&" not in lex:
         source_stem = stem_cands.iloc[0]
@@ -705,6 +705,7 @@ def lexeme2stem(lex, obj, pos):
 
 
 def identify_part(obj, gloss, ids):
+    print(obj, gloss)
     kinds = {}
     if (obj, gloss) in morph_dic:
         cands = morph_dic[(obj, gloss)]
@@ -731,7 +732,7 @@ def identify_part(obj, gloss, ids):
 
 # todo: this should only add inflectional values if they are in the gramm argument
 def process_wordform(obj, gloss, lex_id, gramm, morpheme_ids, **kwargs):
-    # print(f"processing wordform {obj} '{gloss}'")
+    print(f"processing wordform {obj} '{gloss}'")
     if gloss in ["***", "?", ""]:
         return None
     wf_id = humidify(f"{strip_form(obj)}-{gloss}", unique=False, key="wordforms")
@@ -773,7 +774,7 @@ def process_wordform(obj, gloss, lex_id, gramm, morpheme_ids, **kwargs):
                             log.warning(
                                 f"The form {obj} '{gloss}' contains the stem {stemform} '{', '.join(productive_stems[stem_id]['Gloss'])}'; can it know about its wordformstem?"
                             )
-                            exit()
+                            # exit()
             else:
                 log.error(f"Could not find stem ID for wordform {obj} '{gloss}")
             if source_id:
@@ -786,6 +787,7 @@ def process_wordform(obj, gloss, lex_id, gramm, morpheme_ids, **kwargs):
             exit()
         else:
             stem_id = lexeme2stem(lex_id, obj, get_pos(gramm))
+        print(obj, gloss)
         for idx, (part, partgloss) in enumerate(zip(obj.split("-"), gloss.split("-"))):
             if partgloss == "***":
                 continue
@@ -933,6 +935,7 @@ examples_with_audio = []
 for col in split_cols:
     splitcol(df.examples, col, sep="\t")
 for ex in df.examples.to_dict("records"):
+    print(ex[split_cols[0]], ex[split_cols[1]])
     g_shift = 0  # to keep up to date with how many g-words there are in total
     for idx, (obj, gloss, stem_id, gramm, morpheme_ids) in enumerate(
         zip(*[ex[col] for col in split_cols])

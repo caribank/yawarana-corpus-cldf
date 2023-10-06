@@ -255,6 +255,7 @@ yaruwatopo-laugh-circ-nmlz-1,yaruwatopo-laugh-circ-nmlz,toponmlz,1,"circ,nmlz"
 inke-see-imp-0,inke-see-imp,in-see,0,see
 inke-see-imp-1,inke-see-imp,keimp,1,imp
 ire-3ana-inan-0,ire-3ana-inan,ire-3ana-inan,0,"3ana,inan"
+chipeke-because-0,chipeke-because,chipeke-because,0,because
 mere-med-inan-0,mere-med-inan,mere-med-inan,0,"med,inan"
 yaruwatepeke-laugh-prog-intr-0,yaruwatepeke-laugh-prog-intr,yaruwa-laugh,0,laugh
 yaruwatepeke-laugh-prog-intr-1,yaruwatepeke-laugh-prog-intr,tepeke,1,"prog,intr"
@@ -263,6 +264,8 @@ chi-cop-ipfv-1,chi-cop-ipfv,ri-zero,1,ipfv
 kontomo-pl-0,kontomo-pl,kontomopl,0,pl
 ini-see-acnnmlz-0,ini-see-acnnmlz,ini-see,0,see
 ini-see-acnnmlz-1,ini-see-acnnmlz,rinmlz-zero,1,acnnmlz
+waimu-speak-ipfv-0,waimu-speak-ipfv,waimu-speak,0,speak
+waimu-speak-ipfv-1,waimu-speak-ipfv,ri-zero,1,ipfv
 ijpe-put-pst-0,ijpe-put-pst,i-put,0,put
 ijpe-put-pst-1,ijpe-put-pst,jpepst1,1,pst
 yekerema-boast-sexually-ipfv-0,yekerema-boast-sexually-ipfv,yekerema-boast-sexually,0,boast-sexually
@@ -313,6 +316,7 @@ aroma-limpet-0,aroma-limpet,aroma-limpet,0,limpet
 yakuri-agouti-0,yakuri-agouti,yakuri-agouti,0,agouti
 ya-obl-0,ya-obl,ya-obl,0,obl
 makampra-aunt-0,makampra-aunt,makampra-aunt,0,aunt
+maijte-go-imp-0,maijte-go-imp,maijte-go-imp,0,"go,imp"
 kaimotata-hunt-motimp-1,kaimotata-hunt-motimp,tamotimp,1,motimp
 mukuton-child-pl-0,mukuton-child-pl,muku-child,0,child
 mukuton-child-pl-1,mukuton-child-pl,tonpl,1,pl
@@ -392,6 +396,7 @@ n-ints-0,n-ints,n-ints,0,ints
 sepanse-get-married-pst-0,sepanse-get-married-pst,sepan-get-married,0,get-married
 sepanse-get-married-pst-1,sepanse-get-married-pst,sepst,1,pst
 rafa-r-0,rafa-r,rafa-r,0,r
+perez-p-0,perez-p,perez-p,0,p-1
 keyatase-grow-pst-1,keyatase-grow-pst,sepst,1,pst
 yatam-adolescent-0,yatam-adolescent,yatam-adolescent,0,adolescent
 tese-go-pst-0,tese-go-pst,te-go,0,go
@@ -405,6 +410,8 @@ padrastro-stepfather-pert-1,padrastro-stepfather-pert,rupert-zero,1,pert
 keyamase-raise-pst-1,keyamase-raise-pst,sepst,1,pst
 wera-like-0,wera-like,wera-like,0,like
 waraijtokomo-man-0,waraijtokomo-man,waraijtokomo-man,0,man
+tapaja-beat-neg-0,tapaja-beat-neg,tapa-beat,0,beat
+tapaja-beat-neg-1,tapaja-beat-neg,janeg,1,neg
 waraijtokon-man-0,waraijtokon-man,waraijtokon-man,0,man
 takere-3-with-0,takere-3-with,it3,0,3
 takere-3-with-1,takere-3-with,akere-with,1,with
