@@ -14,7 +14,7 @@
     "prov:wasGeneratedBy": [
         {
             "dc:title": "python",
-            "dc:description": "3.7.13"
+            "dc:description": "3.8.10"
         },
         {
             "dc:title": "python-packages",
@@ -503,7 +503,7 @@
             "url": "inflections.csv"
         },
         {
-            "dc:extent": 16,
+            "dc:extent": 17,
             "tableSchema": {
                 "columns": [
                     {
@@ -1211,7 +1211,7 @@
             "url": "stemparts.csv"
         },
         {
-            "dc:extent": 530,
+            "dc:extent": 531,
             "tableSchema": {
                 "columns": [
                     {

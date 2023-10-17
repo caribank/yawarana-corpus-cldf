@@ -882,6 +882,7 @@ for wf in dic_wordforms.to_dict("records"):
             "Media_ID": filename.replace(".wav", ""),
         }
         res = split_cliticized(wf)
+        input(list(res))
         wf_ids = {
             process_wordform(
                 gwf["Analysis"],
@@ -921,6 +922,8 @@ if args.full:
     df.examples = cread("raw/full_examples.csv")
 else:
     df.examples = cread("raw/examples.csv")
+df.examples.rename(columns={"Record_Number": "Sentence_Number"}, inplace=True)
+
 df.examples["Language_ID"] = "yab"
 df.examples["Primary_Text"] = df.examples["Primary_Text"].apply(
     lambda x: x.replace("#", "")

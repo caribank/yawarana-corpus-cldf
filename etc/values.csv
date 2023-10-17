@@ -1,17 +1,18 @@
-ID,Name,Description,Category_ID,Gloss
-1,first,,person,1
-2,second,,person,2
-3,third,,person,3
-ipfv,imperfective,,aspect,IPFV
-pst,past,,tense,PST
-pl,plural,,number,PL
-prog,progressive,,aspect,PROG
-pfv,perfective,,aspect,PFV
-pert,pertensive,,possession,PERT
-npert,nonpertensive,,possession,NPERT
-neg,negative,,polarity,NEG
-fut,future,,tense,FUT
-12,first inclusive,,person,1+2
-13,first exclusive,,person,1+3
-imp,imperative,,mood,IMP
-hort,hortative,,mood,HORT
+"ID","Name","Description","Category_ID","Gloss"
+1,"first",,"person",1
+2,"second",,"person",2
+3,"third",,"person",3
+"ipfv","imperfective",,"aspect","IPFV"
+"pst","past",,"tense","PST"
+"pl","plural",,"number","PL"
+"prog","progressive",,"aspect","PROG"
+"pfv","perfective",,"aspect","PFV"
+"pert","pertensive",,"possession","PERT"
+"npert","nonpertensive",,"possession","NPERT"
+"neg","negative",,"polarity","NEG"
+"fut","future",,"tense","FUT"
+12,"first inclusive",,"person","1+2"
+13,"first exclusive",,"person","1+3"
+"imp","imperative",,"mood","IMP"
+"hort","hortative",,"mood","HORT"
+"irr","irrealis",,"mood","IRR"
