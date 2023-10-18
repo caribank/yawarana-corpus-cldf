@@ -1,319 +1,201 @@
 ID,Language_ID,Form,Description,Part_Of_Speech,Parameter_ID,Morpho_Segments,Stem_ID,Segments,Comment,Source,Media_ID
-ajpachike-undergrowth-prop,yab,ajpachike,,adv,weeded,ajpachi ke,,,,muller2021yawarana,YarLex_0052_PaPe_apachike-02
-ajyuru-tucuma-palm-pert,yab,ajyuru,,n,tucuma (palm),ajyu ru,,,,muller2021yawarana,YarLex_0016_PaPe_ajyuru
-aka-ouch-cry-of-pain,yab,aka,,ideo,ouch (cry of pain),aka,,,,muller2021yawarana,YarLex_0017_AnFo_aka-02
-amuru-ripeness-pert,yab,amuru,,n,ripeness,amu ru,,,,muller2021yawarana,YarLex_0034_AnFo_amuru-02
-aniki-who,yab,aniki,,pn,who?,aniki,,,,muller2021yawarana,YarLex_0044_PaPe_aniki-02
-apiri-ripeness-pert,yab,apiri,,n,ripeness,api ri,,,,muller2021yawarana,YarLex_0062_PaPe_apiiri
-apo-later,yab,apo,,adv,later; meanwhile,apo,,,,muller2021yawarana,YarLex_0068_AnFo_apo
-arajmate-dangerous,yab,arajmatë,,adv,dangerous,arajmatë,,,,muller2021yawarana,YarLex_0074_AnFo_arajmate-02
-arokate-difficult,yab,arokatë,,adv,difficult,arokatë,,,,muller2021yawarana,YarLex_0092_AnFo_arokate
-asakontompene-four,yab,asakontompene,,adv,four,asakontompene,,,,muller2021yawarana,YarLex_0110_AnFo_asakontompene
-asake-two,yab,asakë,,adv,two,asakë,,,,muller2021yawarana,YarLex_0101_AnFo_asake
-asane-2-mother-pert,yab,asanë,,n,your mother,a sanë ∅,,,,muller2021yawarana,YarLex_0114_PaPe_asane
-asereke-dry-cough-prop,yab,asereke,,adv,tuberculous,asere ke,,,,muller2021yawarana,YarLex_0126_AnFo_asereke
-atiri-plot-of-cultivated-land-pert,yab,atiri,,n,plot of cultivated land,ati ri,,,,muller2021yawarana,
-atirijpe-plot-of-cultivated-land-pert-pst,yab,atirijpë,,n,old field,ati ri jpë,,,,muller2021yawarana,YarLex_0155_PaPe_atirijpe
-ayawori-2-lk-uncle-pert,yab,ayawori,,n,your uncle; your father in law,a y awo ri,,,,muller2021yawarana,
-chijchipuru-body-movement-pert,yab,chijchipuru,,n,move (body),chijchipu ru,,,,muller2021yawarana,
-ejne-1-2pro,yab,ejnë,,pn,1+2PRO,ejnë,,,,muller2021yawarana,YarLex_0291_AnFo_ejne-02
-eni-prox-inan,yab,eni,,dem,PROX.INAN,eni,,,,muller2021yawarana,YarLex_0358_AnFo_eni-02
-enijpete-one,yab,enijpëtë,,adv,one,enijpëtë,,,,muller2021yawarana,YarLex_0360_AnFo_enijpete-02
-enirono-now-nmlz,yab,enirono,,n,new,eniro no,,,,muller2021yawarana,YarLex_0368_PaPe_enirono-02
-ente-here-loc,yab,entë,,adv,here.LOC,entë,,,,muller2021yawarana,YarLex_0376_PaPe_ente
-ewine-here-all,yab,ewinë,,adv,here.ALL,ewinë,,,,muller2021yawarana,YarLex_0434_PaPe_ewine
-ijmokani-cook-agtnmlz,yab,ijmokani,,n,cook,ijmoka ni,,,,muller2021yawarana,YarLex_0466_AnFo_ijmokani
-ijtari-3-foot-pert,yab,ijtari,,n,foot,i jta ri,,,,muller2021yawarana,YarLex_0449_AnFo_ijtari
-inawe-have,yab,inawë,,postp,have,inawë,,,,muller2021yawarana,YarLex_0479_PaPe_inawe
-intipijke-small,yab,intipijkë,,adv,small,intipijkë,,,,muller2021yawarana,YarLex_0486_AnFo_intipijke
-irejpe-then,yab,irëjpë,,adv,then,irëjpë,,,,muller2021yawarana,YarLex_0494_PaPe_irejpe
-kamparake-big-prop,yab,kamparake,,adv,large,kampara ke,,,,muller2021yawarana,
-karasake-white,yab,karasake,,adv,white,karasake,,,,muller2021yawarana,YarLex_0618_PaPe_karasake-02
-kasori-fat-pert,yab,kasori,,n,fat,kaso ri,,,,muller2021yawarana,YarLex_0639_AnFo_kasori
-kawe-high,yab,kawë,,adv,high,kawë,,,,muller2021yawarana,YarLex_0666_AnFo_kawe
-kojpaye-at-night,yab,kojpaye,,adv,at night,kojpaye,,,,muller2021yawarana,YarLex_0767_AnFo_kojpaye
-kori-brassolis-sophorae-pert,yab,kori,,n,brassolis sophorae,ko ri,,,,muller2021yawarana,YarLex_0787_AnFo_kori-02
-kururu-prochilodus-mariae-pert,yab,kururu,,n,prochilodus mariae,kuru ru,,,,muller2021yawarana,YarLex_0832_PaPe_kururu
-kuyari-tree-sp-pert,yab,kuyari,,n,tree.sp,kuya ri,,,,muller2021yawarana,YarLex_0839_PaPe_kuyari-02
-kemuru-pus-pert,yab,këmuru,,n,pus,këmu ru,,,,muller2021yawarana,YarLex_0704_PaPe_kemuru
-kereke-old-prop,yab,kërëke,,adv,black,kërë ke,,,,muller2021yawarana,YarLex_0719_AnFo_kereke
-kerekemi-old-prop-nmlz,yab,kërëkemï,,n,black,kërë ke mï,,,,muller2021yawarana,
-keya-think-acnnmlz,yab,këya,,adv,think-ACNNMLZ,këya ∅,,,,muller2021yawarana,
+ajpachike-undergrowth-prop,yab,ajpachike,,,weeded,ajpachi ke,,,,muller2021yawarana,YarLex_0052_PaPe_apachike-02
+ajyuru-tucuma-palm-pert,yab,ajyuru,,,tucuma (palm),ajyu ru,,,,muller2021yawarana,YarLex_0016_PaPe_ajyuru
+aka-ouch-cry-of-pain,yab,aka,,,ouch (cry of pain),aka,,,,muller2021yawarana,YarLex_0017_AnFo_aka-02
+amuru-ripeness-pert,yab,amuru,,,ripeness,amu ru,,,,muller2021yawarana,YarLex_0034_AnFo_amuru-02
+aniki-who,yab,aniki,,,who?,aniki,,,,muller2021yawarana,YarLex_0044_PaPe_aniki-02
+apiri-ripeness-pert,yab,apiri,,,ripeness,api ri,,,,muller2021yawarana,YarLex_0062_PaPe_apiiri
+apo-later,yab,apo,,,later; meanwhile,apo,,,,muller2021yawarana,YarLex_0068_AnFo_apo
+arajmate-dangerous,yab,arajmatë,,,dangerous,arajmatë,,,,muller2021yawarana,YarLex_0074_AnFo_arajmate-02
+arokate-difficult,yab,arokatë,,,difficult,arokatë,,,,muller2021yawarana,YarLex_0092_AnFo_arokate
+asakontompene-four,yab,asakontompene,,,four,asakontompene,,,,muller2021yawarana,YarLex_0110_AnFo_asakontompene
+asake-two,yab,asakë,,,two,asakë,,,,muller2021yawarana,YarLex_0101_AnFo_asake
+asane-2-mother-pert,yab,asanë,,,your mother,a sanë ∅,,,,muller2021yawarana,YarLex_0114_PaPe_asane
+asereke-dry-cough-prop,yab,asereke,,,tuberculous,asere ke,,,,muller2021yawarana,YarLex_0126_AnFo_asereke
+atiri-plot-of-cultivated-land-pert,yab,atiri,,,plot of cultivated land,ati ri,,,,muller2021yawarana,
+atirijpe-plot-of-cultivated-land-pert-pst,yab,atirijpë,,,old field,ati ri jpë,,,,muller2021yawarana,YarLex_0155_PaPe_atirijpe
+ayawori-2-lk-uncle-pert,yab,ayawori,,,your uncle; your father in law,a y awo ri,,,,muller2021yawarana,
+chijchipuru-body-movement-pert,yab,chijchipuru,,,move (body),chijchipu ru,,,,muller2021yawarana,
+ejne-1-2pro,yab,ejnë,,,1+2PRO,ejnë,,,,muller2021yawarana,YarLex_0291_AnFo_ejne-02
+eni-prox-inan,yab,eni,,,PROX.INAN,eni,,,,muller2021yawarana,YarLex_0358_AnFo_eni-02
+enijpete-one,yab,enijpëtë,,,one,enijpëtë,,,,muller2021yawarana,YarLex_0360_AnFo_enijpete-02
+enirono-now-nmlz,yab,enirono,,,new,eniro no,,,,muller2021yawarana,YarLex_0368_PaPe_enirono-02
+ente-here-loc,yab,entë,,,here.LOC,entë,,,,muller2021yawarana,YarLex_0376_PaPe_ente
+ewine-here-all,yab,ewinë,,,here.ALL,ewinë,,,,muller2021yawarana,YarLex_0434_PaPe_ewine
+ijmokani-cook-agtnmlz,yab,ijmokani,,,cook,ijmoka ni,,,,muller2021yawarana,YarLex_0466_AnFo_ijmokani
+ijtari-3-foot-pert,yab,ijtari,,,foot,i jta ri,,,,muller2021yawarana,YarLex_0449_AnFo_ijtari
+inawe-have,yab,inawë,,,have,inawë,,,,muller2021yawarana,YarLex_0479_PaPe_inawe
+intipijke-small,yab,intipijkë,,,small,intipijkë,,,,muller2021yawarana,YarLex_0486_AnFo_intipijke
+irejpe-then,yab,irëjpë,,,then,irëjpë,,,,muller2021yawarana,YarLex_0494_PaPe_irejpe
+kamparake-big-prop,yab,kamparake,,,large,kampara ke,,,,muller2021yawarana,
+karasake-white,yab,karasake,,,white,karasake,,,,muller2021yawarana,YarLex_0618_PaPe_karasake-02
+kasori-fat-pert,yab,kasori,,,fat,kaso ri,,,,muller2021yawarana,YarLex_0639_AnFo_kasori
+kawe-high,yab,kawë,,,high,kawë,,,,muller2021yawarana,YarLex_0666_AnFo_kawe
+kojpaye-at-night,yab,kojpaye,,,at night,kojpaye,,,,muller2021yawarana,YarLex_0767_AnFo_kojpaye
+kori-brassolis-sophorae-pert,yab,kori,,,brassolis sophorae,ko ri,,,,muller2021yawarana,YarLex_0787_AnFo_kori-02
+kururu-prochilodus-mariae-pert,yab,kururu,,,prochilodus mariae,kuru ru,,,,muller2021yawarana,YarLex_0832_PaPe_kururu
+kuyari-tree-sp-pert,yab,kuyari,,,tree.sp,kuya ri,,,,muller2021yawarana,YarLex_0839_PaPe_kuyari-02
+kemuru-pus-pert,yab,këmuru,,,pus,këmu ru,,,,muller2021yawarana,YarLex_0704_PaPe_kemuru
+kereke-old-prop,yab,kërëke,,,black,kërë ke,,,,muller2021yawarana,YarLex_0719_AnFo_kereke
+kerekemi-old-prop-nmlz,yab,kërëkemï,,,black,kërë ke mï,,,,muller2021yawarana,
+keya-think-acnnmlz,yab,këya,,n,think-ACNNMLZ,këya ∅,,,,muller2021yawarana,
 pe-ess,yab,pe,,postp,ESS,pe,,,,muller2021yawarana,
-michi-med-anim,yab,michi,,dem,MED.ANIM,michi,,,,muller2021yawarana,YarLex_0978_AnFo_michi-02
-morone-hurting,yab,morone,,adv,hurting,morone,,,,muller2021yawarana,YarLex_1021_PaPe_morone
-mune-bulbous,yab,mune,,adv,bulbous,mune,,,,muller2021yawarana,YarLex_1073_AnFo_mune
-mejki-dist-anim,yab,mëjkï,,pn,DIST.ANIM,mëjkï,,,,muller2021yawarana,YarLex_0941_PaPe_mejki-02
-mijna-there-all,yab,mïjna,,adv,there.ALL,mïjna,,,,muller2021yawarana,YarLex_0986_AnFo_mijna
-najmo-grandmother,yab,najmo,,n,grandmother,najmo,,,,muller2021yawarana,YarLex_1096_AnFo_najmo
-nakiri-thirst-pert,yab,nakiri,,n,thirst,naki ri,,,,muller2021yawarana,YarLex_1099_PaPe_nakiri-02
-nonokemi-earth-prop-nmlz,yab,nonokemï,,n,landowner,nono ke mï,,,,muller2021yawarana,YarLex_1121_AnFo_nonokemi
-nopano-good-nmlz,yab,nopano,,n,good,nop ano,,,,muller2021yawarana,YarLex_1125_PaPe_nopano-02
-nope-good,yab,nope,,adv,good,nope,,,,muller2021yawarana,YarLex_1128_PaPe_nope
-ntate-mouth-npert,yab,ntatë,,n,mouth,nta të,,,,muller2021yawarana,YarLex_1137_PaPe_ntate
-nuru-tongue-pert,yab,nuru,,n,tongue,nu ru,,,,muller2021yawarana,YarLex_1140_AnFo_nuru-02
-pakuri-arrow-tip-pert,yab,pakuri,,n,arrow tip,paku ri,,,,muller2021yawarana,YarLex_1237_AnFo_pakuri
-pejmani-bewitch-agtnmlz,yab,pejmani,,n,shaman,pejma ni,,,,muller2021yawarana,YarLex_1302_AnFo_pejmari-02
-pepoye-above-perl,yab,pepoye,,postp,above.PERL,pepoye,,,,muller2021yawarana,YarLex_2976_PaPe_pepoye 
-peri-palm-sp-pert,yab,peri,,n,palm.sp,pe ri,,,,muller2021yawarana,YarLex_1347_PaPe_peri
-poseti-belly,yab,poseti,,n,belly,poseti,,,,muller2021yawarana,YarLex_1495_AnFo_poseti
-puturu-feel-ipfv,yab,puturu,,vt,to feel,putu ru,,,,muller2021yawarana,YarLex_3007_AnFo_puuturu
-peke-about,yab,pëkë,,postp,about,pëkë,,,,muller2021yawarana,YarLex_1311_PaPe_tepeke-02
-pekepene-alone,yab,pëkëpene,,postp,alone,pëkëpene,,,,muller2021yawarana,
-romoye-downriver,yab,romoye,,adv,downriver,romoye,,,,muller2021yawarana,YarLex_1568_AnFo_romoye-02
-rui-older-brother,yab,rui,,n,older brother,rui,,,,muller2021yawarana,YarLex_1574_AnFo_rui
-saparari-heavy-pot-pert,yab,saparari,,n,heavy pot,sapara ri,,,,muller2021yawarana,YarLex_1612_AnFo_saparari
-sukase-all,yab,sukase,,adv,all,sukase,,,,muller2021yawarana,YarLex_1757_AnFo_sukase-02
-tajme-ugly,yab,tajme,,adv,ugly,tajme,,,,muller2021yawarana,YarLex_1803_AnFo_tajme
-takunuru-laziness-pert,yab,takunuru,,n,laziness,takunu ru,,,,muller2021yawarana,YarLex_1837_AnFo_takunuru
-tapire-red,yab,tapire,,adv,red,tapire,,,,muller2021yawarana,YarLex_1864_AnFo_tapiire
-tarine-fast,yab,tarine,,adv,fast,tarine,,,,muller2021yawarana,YarLex_1890_PaPe_tarine
-tawaru-nyctidromus-albicollis-pert,yab,tawaru,,n,nyctidromus albicollis,tawa ru,,,,muller2021yawarana,YarLex_1920_PaPe_tawaru
-tawori-3-uncle-pert,yab,tawori,,n,his / her uncle / father in law,t awo ri,,,,muller2021yawarana,
-teijpono-far-nmlz,yab,teijpono,,n,long; far,teijpo no,,,,muller2021yawarana,YarLex_1948_PaPe_teijpono
-tejpore-tasty,yab,tejpore,,adv,tasty,tejpore,,,,muller2021yawarana,YarLex_1957_AnFo_tejpore
-tejporemi-tasty-nmlz,yab,tejporemï,,n,tasty,tejpore mï,,,,muller2021yawarana,
-tejweti-3-hammock-pert,yab,tejweti,,n,hammock,t ejwe ti,,,,muller2021yawarana,
-tepese-3-escape-pst,yab,tepese,,vi,expensive,t epe se,,,,muller2021yawarana,YarLex_2004_PaPe_tepese
-terepunu-3-sick-pert,yab,terepunu,,n,sick,t erepunu ∅,,,,muller2021yawarana,YarLex_2020_AnFo_terepunu
-tesekemi-prop-name-prop-nmlz,yab,tesekemï,,n,named,t ese ke mï,,,,muller2021yawarana,YarLex_2030_PaPe_teseke
-toti-3-meat-pert,yab,toti,,n,food,t oti ∅,,,,muller2021yawarana,YarLex_2104_AnFo_tooti
-tujnaka-iller,yab,tujnaka,,adv,iller,tujnaka,,,,muller2021yawarana,YarLex_2123_AnFo_tujnaka
-teijpo-far,yab,tëijpo,,adv,far; long,tëijpo,,,,muller2021yawarana,YarLex_1945_PaPe_teijpo-02
-tewi-3pro,yab,tëwï,,pn,3PRO,tëwï,,,,muller2021yawarana,YarLex_2046_PaPe_tewi
-tewisantomo-3pro-pl,yab,tëwïsantomo,,pn,3PRO.PL,tëwïsantomo,,,,muller2021yawarana,YarLex_2048_AnFo_tewisantomo
-wanene-aunt,yab,wanene,,n,aunt,wanene,,,,muller2021yawarana,YarLex_2263_AnFo_wanene-02
-waraijtori-husband-pert,yab,waraijtori,,n,husband,waraijto ri,,,,muller2021yawarana,YarLex_2280_AnFo_warijtori
-wenaru-vomit-pert,yab,wenaru,,n,vomit,wena ru,,,,muller2021yawarana,YarLex_2377_AnFo_wenaru
-weseyu-be-brave-acnnmlz,yab,weseyu,,adv,be_brave-ACNNMLZ,weseyu ∅,,,,muller2021yawarana,
-weseyuru-be-brave-ipfv,yab,weseyuru,,vi,be brave,weseyu ru,,,,muller2021yawarana,
-wire-1pro,yab,wïrë,,pn,1PRO,wïrë,,,,muller2021yawarana,YarLex_2428_AnFo_wire
-yane-mother,yab,yanë,,n,mother,yanë,,,,muller2021yawarana,YarLex_2531_AnFo_yane
-yumpe-fairly,yab,yumpe,,adv,fairly; much,yumpe,,,,muller2021yawarana,YarLex_2821_AnFo_yumpe
-yewukuru-answer-ipfv,yab,yëwukuru,,vt,to answer,yëwuku ru,,,,muller2021yawarana,YarLex_2752_PaPe_yeukuru
-ejpina-often,yab,ëjpïna,,adv,often,ëjpïna,,,,muller2021yawarana,YarLex_0298_AnFo_ejpina-02
-ejte-house-npert,yab,ëjtë,,n,house,ëj të,,,,muller2021yawarana,YarLex_0308_AnFo_ejte
-eke-which,yab,ëkë,,intj,which,ëkë,,,,muller2021yawarana,YarLex_0271_PaPe_eke-02
-empare-already,yab,ëmpare,,adv,already,ëmpare,,,,muller2021yawarana,YarLex_0356_AnFo_empare-02
-enukuru-go-up-ipfv,yab,ënukuru,,vi,to go up,ënuku ru,,,,muller2021yawarana,YarLex_0380_PaPe_enukuru
-ati-what,yab,ati,,intj,what,ati,,,,,
-re-emp,yab,rë,,part,EMP,rë,,,,,
-warai-like,yab,warai,,postp,like,warai,,,,,
-mere-2pro,yab,mërë,,pn,2PRO,mërë,,,,,
-iniri-see-ipfv,yab,iniri,,vt,see-IPFV,ini ri,,,,,
-meyarika-2-laugh-ipfv,yab,mëyarika,,vi,2-laugh-IPFV,më yarika ∅,,,,,
-ti-hsy,yab,ti,,part,HSY,ti,,,,,
-meyaruwari-2-laugh-ipfv,yab,mëyaruwari,,vi,2-laugh-IPFV,më yaruwa ri,,,,,
-mepekepene-2-alone,yab,mëpëkëpene,,postp,2-alone,më pëkëpene,,,,,
-yaruwaja-laugh-neg,yab,yaruwaja,,vi,laugh-NEG,yaruwa ja,,,,,
-enka-right,yab,ënka,,part,right,ënka,,,,,
-yaruwari-laugh-ipfv,yab,yaruwari,,vi,laugh-IPFV,yaruwa ri,,,,,
-jra-neg,yab,jra,,part,NEG,jra,,,,,
-tajne-3-pl,yab,tajne,,pn,3-PL,ta jne,,,,,
-yakarama-tell-acnnmlz,yab,yakarama,,n,tell-ACNNMLZ,yakarama ∅,,,,,
-nwa-thus,yab,nwa,,part,thus,nwa,,,,,
-esene-see-self-ipfv,yab,esene,,vi,see_self-IPFV,esene ∅,,,,,
-mare-rel-inan,yab,mare,,part,REL.INAN,mare,,,,,
-tawara-too,yab,tawara,,adv,too,tawara,,,,,
-neke-cntr,yab,neke,,part,CNTR,neke,,,,,
-ne-ints,yab,ne,,part,INTS,ne,,,,,
-kwase-how,yab,kwase,,part,how,kwase,,,,,
-yaruwakem-laugh-acnnmlz-prop-nmlz,yab,yaruwakem,,adv,laugh-ACNNMLZ-PROP-NMLZ,yaruwa ∅ ke m,,,,,
-pinire-neg,yab,pïnirë,,part,NEG,pïnirë,,,,,
-mekisantomo-dist-anim-pl,yab,mëkïsantomo,,dem,DIST.ANIM.PL,mëkïsantomo,,,,,
-tajtane-say-cncs,yab,tajtane,,advl,say-CNCS,taj tane,,,,,
-ki-ugh,yab,kï,,intj,ugh,kï,,,,,
-mokontomo-2pl-pro,yab,mokontomo,,pn,2PL.PRO,mokontomo,,,,,
-serekapo-become-tired-des-ipfv,yab,serekapo,,vi,become_tired-DES-IPFV,sereka po ∅,,,,,
-ka-q,yab,ka,,part,Q,ka,,,,,
-taro-say-ipfv,yab,taro,,vt,say-IPFV,taro ∅,,,,,
-ta-say-ipfv,yab,ta,,vt,say-IPFV,ta ∅,,,,,
-ta-like,yab,ta,,part,like,ta,,,,,
-ya-erg,yab,ya,,postp,ERG,ya,,,,,
-pokono-about-nmlz,yab,pokono,,n,about-NMLZ,poko no,,,,,
-iri-put-ipfv,yab,iri,,vt,put-IPFV,i ri,,,,,
-minte-there-loc,yab,mïntë,,adv,there.LOC,mïntë,,,,,
-tunam-hide-acnnmlz,yab,tunam,,n,hide-ACNNMLZ,tunam ∅,,,,,
-yarikari-laugh-ipfv,yab,yarikari,,vi,laugh-IPFV,yarika ri,,,,,
-tawaja-thus-neg,yab,tawaja,,adv,thus.NEG,tawaja,,,,,
-yarikaja-laugh-neg,yab,yarikaja,,vi,laugh-NEG,yarika ja,,,,,
-pirare-neg-exist,yab,pïrarë,,part,NEG.EXIST,pïrarë,,,,,
-seneja-see-self-neg,yab,seneja,,vi,see_self-NEG,sene ja,,,,,
-yarikatopo-laugh-circ-nmlz,yab,yarikatopo,,n,laugh-CIRC.NMLZ,yarika topo,,,,,
-taitapo-3p-hear-des-ipfv,yab,taitapo,,vt,3P-hear-DES-IPFV,ta ita po ∅,,,,,
-chiri-cop-acnnmlz,yab,chiri,,n,COP-ACNNMLZ,chi ri,,,,,
-ma-rst,yab,ma,,part,RST,ma,,,,,
-yewenke-lk-ignorant,yab,yewenke,,postp,LK-ignorant,y ewenke,,,,,
-senejkari-stay-ipfv,yab,senejkarï,,vi,stay-IPFV,senejka rï,,,,,
-uyiwij-1-lk-house-pert,yab,uyïwïj,,n,1-LK-house-PERT,u y ïwïj ∅,,,,,
-yaka-all,yab,yaka,,postp,ALL,yaka,,,,,
-sukuri-silently,yab,sukuri,,adv,silently,sukuri,,,,,
-itari-hear-ipfv,yab,itari,,vt,hear-IPFV,ita ri,,,,,
-wajyakiti-be-happy-ipfv,yab,wajyakïtï,,vi,be_happy-IPFV,wajyakïtï ∅,,,,,
-kajke-say-imp,yab,kajkë,,vi,say-IMP,kaj kë,,,,,
-wejsaj-cop-pfv,yab,wejsaj,,vi,COP-PFV,wej saj,,,,,
-tawaraij-too,yab,tawaraij,,adv,too,tawaraij,,,,,
-yawe-loc,yab,yawë,,postp,LOC,yawë,,,,,
-usenejkari-1-stay-ipfv,yab,usenejkari,,vi,1-stay-IPFV,u senejka ri,,,,,
-chipokono-because,yab,chipokono,,part,because,chipokono,,,,,
-pana-dat,yab,pana,,postp,DAT,pana,,,,,
-yaruwatopo-laugh-circ-nmlz,yab,yaruwatopo,,n,laugh-CIRC.NMLZ,yaruwa topo,,,,,
-inke-see-imp,yab,inkë,,vt,see-IMP,in kë,,,,,
-ire-3ana-inan,yab,irë,,dem,3ANA.INAN,irë,,,,,
-chipeke-because,yab,chipëkë,,part,because,chipëkë,,,,,
-mere-med-inan,yab,mërë,,dem,MED.INAN,mërë,,,,,
-yaruwatepeke-laugh-prog-intr,yab,yaruwatëpëkë,,vi,laugh-PROG.INTR,yaruwa tëpëkë,,,,,
-chi-cop-ipfv,yab,chi,,vi,COP-IPFV,chi ∅,,,,,
-kontomo-pl,yab,kontomo,,part,PL,kontomo,,,,,
-ini-see-acnnmlz,yab,ini,,n,see-ACNNMLZ,ini ∅,,,,,
-waimu-speak-ipfv,yab,waimu,,vi,speak-IPFV,waimu ∅,,,,,
-ijpe-put-pst,yab,ijpë,,vt,put-PST,i jpë,,,,,
-yekerema-boast-sexually-ipfv,yab,yekerema,,vt,boast_sexually-IPFV,yekerema ∅,,,,,
-pinika-prob,yab,pïnika,,part,PROB,pïnika,,,,,
-chipokon-because,yab,chipokon,,part,because,chipokon,,,,,
-yaruwa-laugh-ipfv,yab,yaruwa,,vi,laugh-IPFV,yaruwa ∅,,,,,
-mare-still,yab,mare,,adv,still,mare,,,,,
-sa-eval,yab,sa,,part,EVAL,sa,,,,,
-onono-another,yab,onono,,n,another,onono,,,,,
-pare-also,yab,parë,,part,also,parë,,,,,
-yatum-day,yab,yatum,,n,day,yatum,,,,,
-inija-see-neg,yab,inija,,vt,see-NEG,ini ja,,,,,
-ke-ugh,yab,kë,,intj,ugh,kë,,,,,
-uyare-1-alone,yab,uyarë,,postp,1-alone,u yarë,,,,,
-peremekiri-talk-ipfv,yab,përemekïrï,,vi,talk-IPFV,përemekï rï,,,,,
-narepe-part,yab,narëpe,,part,PART,narëpe,,,,,
-yakere-lk-with,yab,yakërë,,postp,LK-with,y akërë,,,,,
-chiyakon-friend-pert,yab,chiyakon,,n,friend-PERT,chiyakon ∅,,,,,
-chi-cop-acnnmlz,yab,chi,,n,COP-ACNNMLZ,chi ∅,,,,,
-yarikasemi-laugh-ptcp-nmlz,yab,yarikasemï,,n,laugh-PTCP-NMLZ,yarika se mï,,,,,
-ana-1-3pro,yab,ana,,pn,1+3PRO,ana,,,,,
-keyetajpe-grow-pst,yab,këyetajpë,,vi,grow-PST,këyeta jpë,,,,,
-yimi-lk-father,yab,yïmï,,n,LK-father,y ïmï,,,,,
-semajpe-die-pst-acnnmlz,yab,sëmajpë,,n,die-PST.ACNNMLZ,sëma jpë,,,,,
-keyetase-grow-pst,yab,këyetase,,vi,grow-PST,këyeta se,,,,,
-papa-father,yab,papa,,n,father,papa,,,,,
-kampra-big,yab,kampra,,n,big,kampra,,,,,
-yoti-lk-meat-pert,yab,yoti,,n,LK-meat-PERT,y oti ∅,,,,,
-wejsape-cop-pfv,yab,wejsapë,,vi,COP-PFV,wej sapë,,,,,
-yojte-fish-with-hook-ipfv,yab,yojtë,,vt,fish_with_hook-IPFV,yojtë ∅,,,,,
-aroma-limpet,yab,aroma,,n,limpet,aroma,,,,,
-yakuri-agouti,yab,yakuri,,n,agouti,yakuri,,,,,
-ya-obl,yab,ya,,postp,OBL,ya,,,,,
-makampra-aunt,yab,makampra,,n,aunt,makampra,,,,,
-maijte-go-imp,yab,maijtë,,vi,go.IMP,maijtë,,,,,
-kaimotata-hunt-motimp,yab,kaimotata,,vi,hunt-MOTIMP,kaimota ta,,,,,
-mukuton-child-pl,yab,mukuton,,n,child-PL,muku ton,,,,,
-yomiri-be-hungry-ipfv,yab,yomiri,,vi,be_hungry-IPFV,yomi ri,,,,,
-asamori-cry-ipfv,yab,asamori,,vi,cry-IPFV,asamo ri,,,,,
-make-mom,yab,makë,,n,mom,makë,,,,,
-pachi-older-sister-of-woman,yab,pachi,,n,older_sister_of_woman,pachi,,,,,
-kere-prox-anim,yab,kërë,,dem,PROX.ANIM,kërë,,,,,
-taki-cnfrm,yab,takï,,part,CNFRM,takï,,,,,
-yemi-be-hungry-acnnmlz,yab,yëmi,,n,be_hungry-ACNNMLZ,yëmi ∅,,,,,
-muku-child,yab,muku,,n,child,muku,,,,,
-tejetum-sick,yab,tejetum,,n,sick,tejetum,,,,,
-pano-fmr,yab,pano,,part,FMR,pano,,,,,
-ijteri-3-go-ipfv,yab,ijtëri,,vi,3-go-IPFV,ij të ri,,,,,
-ipakuri-3-arrow-tip-pert,yab,ipakuri,,n,3-arrow_tip-PERT,i paku ri,,,,,
-sakara-hoplias-malabaricus,yab,sakara,,n,hoplias_malabaricus,sakara,,,,,
-nepi-bring-ipfv,yab,nepï,,vt,bring-IPFV,nepï ∅,,,,,
-yakono-lk-younger-sister-of-woman-pert,yab,yakono,,n,LK-younger_sister_of_woman-PERT,y akono ∅,,,,,
-ijmojkake-cook-imp,yab,ijmojkakë,,vt,cook-IMP,ijmojka kë,,,,,
-i-put-ipfv,yab,i,,vt,put-IPFV,i ∅,,,,,
-ijmojka-cook-ipfv,yab,ijmojka,,vt,cook-IPFV,ijmojka ∅,,,,,
-serematojpe-eat-purp,yab,serematojpe,,advl,eat-PURP,serema tojpe,,,,,
-pan-fmr,yab,pan,,part,FMR,pan,,,,,
-patajpe-axe-pst,yab,patajpë,,n,axe-PST,pata jpë,,,,,
-te-loc,yab,të,,postp,LOC,të,,,,,
-semasaj-die-abs-nmlz,yab,sëmasaj,,n,die-ABS.NMLZ,sëma saj,,,,,
-pipi-younger-brother-of-woman,yab,pipi,,n,younger_brother_of_woman,pipi,,,,,
-chawe-loc,yab,chawë,,postp,LOC,chawë,,,,,
-tase-say-pst,yab,tase,,vt,say-PST,ta se,,,,,
-mukutomo-child-pl,yab,mukutomo,,n,child-PL,muku tomo,,,,,
-asamo-cry-ipfv,yab,asamo,,vi,cry-IPFV,asamo ∅,,,,,
-tapeke-say-prog-tr,yab,tapëkë,,vt,say-PROG.TR,ta pëkë,,,,,
-weroro-dog,yab,weroro,,n,dog,weroro,,,,,
-yare-bring-ipfv,yab,yarë,,vt,bring-IPFV,yarë ∅,,,,,
-kejmatojpe-hunt-purp,yab,këjmatojpe,,advl,hunt-PURP,këjma tojpe,,,,,
-taturu-3p-give-ipfv,yab,taturu,,vt,3P-give-IPFV,ta tu ru,,,,,
-ijmokatojpe-cook-purp,yab,ijmokatojpe,,advl,cook-PURP,ijmoka tojpe,,,,,
-tujpe-give-pst,yab,tujpë,,vt,give-PST,tu jpë,,,,,
-keyatajpe-grow-pst,yab,këyatajpë,,vi,grow-PST,këyata jpë,,,,,
-kimii-chili,yab,kïmïi,,n,chili,kïmïi,,,,,
-yeme-eat-fruits-eggs-soup-ipfv,yab,yeme,,vt,"eat(fruits,_eggs,_soup)-IPFV",yeme ∅,,,,,
-sere-bitter-manioc,yab,sere,,n,bitter_manioc,sere,,,,,
-yokiri-eat-starch-ipfv,yab,yokïrï,,vt,eat(starch)-IPFV,yokï rï,,,,,
-sukutaka-yucuta,yab,sukutaka,,n,yucuta,sukutaka,,,,,
-yeni-drink-ipfv,yab,yeni,,vt,drink-IPFV,yeni ∅,,,,,
-yemetikene-eat-fruits-eggs-soup-post,yab,yemetïkene,,vt,"eat(fruits,_eggs,_soup)-POST",yeme tïkene,,,,,
-n-ints,yab,n,,part,INTS,n,,,,,
-sepanse-get-married-pst,yab,sepanse,,vi,get_married-PST,sepan se,,,,,
-rafa-r,yab,rafa,,n,R.,rafa,,,,,
-perez-p,yab,perez,,n,P.,perez,,,,,
-keyatase-grow-pst,yab,këyatase,,vi,grow-PST,këyata se,,,,,
-yatam-adolescent,yab,yatam,,n,adolescent,yatam,,,,,
-tese-go-pst,yab,tëse,,vi,go-PST,të se,,,,,
-waraijtokom-man,yab,waraijtokom,,n,man,waraijtokom,,,,,
-ijtese-3-go-pst,yab,ijtëse,,vi,3-go-PST,ij të se,,,,,
-padrastro-stepfather-pert,yab,padrastro,,n,stepfather-PERT,padrastro ∅,,,,,
-keyamase-raise-pst,yab,këyamase,,vt,raise-PST,këyama se,,,,,
-wera-like,yab,wëra,,postp,like,wëra,,,,,
-waraijtokomo-man,yab,waraijtokomo,,n,man,waraijtokomo,,,,,
-tapaja-beat-neg,yab,tapaja,,vt,beat-NEG,tapa ja,,,,,
-waraijtokon-man,yab,waraijtokon,,n,man,waraijtokon,,,,,
-takere-3-with,yab,takërë,,postp,3-with,t akërë,,,,,
-impare-already,yab,ïmparë,,adv,already,ïmparë,,,,,
-wa-thus,yab,wa,,part,thus,wa,,,,,
-tajtojpe-say-purp,yab,tajtojpe,,advl,say-PURP,taj tojpe,,,,,
-wejtane-cop-cncs,yab,wejtane,,advl,COP-CNCS,wej tane,,,,,
-teijpe-far,yab,tëijpë,,adv,far,tëijpë,,,,,
-pijke-dim,yab,pïjkë,,part,DIM,pïjkë,,,,,
-yiwiti-lk-house-pert,yab,yïwïtï,,n,LK-house-PERT,y ïwïtï ∅,,,,,
-yiwij-lk-house-pert,yab,yïwïj,,n,LK-house-PERT,y ïwïj ∅,,,,,
-senejka-stay-ipfv,yab,senejka,,vi,stay-IPFV,senejka ∅,,,,,
-taji-foc,yab,taji,,part,FOC,taji,,,,,
-waijta-mouse,yab,waijta,,n,mouse,waijta,,,,,
-winijse-sleep-sup,yab,wïnïjse,,adv,sleep-SUP,wïnïj se,,,,,
-yutu-forest,yab,yutu,,n,forest,yutu,,,,,
-winijse-sleep-pst,yab,wïnïjse,,vi,sleep-PST,wïnïj se,,,,,
-tawani-darkness,yab,tawani,,n,darkness,tawani,,,,,
-enujse-go-up-pst,yab,ënujse,,vi,go_up-PST,ënuj se,,,,,
-waijtaton-mouse-pl,yab,waijtaton,,n,mouse-PL,waijta ton,,,,,
-nwajte-dance-ipfv,yab,nwajtë,,vi,dance-IPFV,nwajtë ∅,,,,,
-sakunkai-s,yab,sakunkai,,intj,S.,sakunkai,,,,,
-wurijyampijke-woman-dim,yab,wurijyampïjkë,,n,woman-DIM,wurijyam pïjkë,,,,,
-kantajne-sing-ipfv-pl,yab,kantajnë,,vi,sing-IPFV-PL,kanta ∅ jnë,,,,,
-nai-do-ipfv,yab,nai,,vt,do-IPFV,nai ∅,,,,,
-konton-pl,yab,konton,,part,PL,konton,,,,,
-oki-chicha,yab,okï,,n,chicha,okï,,,,,
-yeni-drink-ipfv-1,yab,yëni,,vt,drink-IPFV,yëni ∅,,,,,
-soj-splash,yab,soj,,ideo,splash,soj,,,,,
-naijpetiri-do-plur-ipfv,yab,naijpëtiri,,vt,do-PLUR-IPFV,naij pëti ri,,,,,
-waijtatomo-mouse-pl,yab,waijtatomo,,n,mouse-PL,waijta tomo,,,,,
-nwajteri-dance-ipfv,yab,nwajtëri,,vi,dance-IPFV,nwajtë ri,,,,,
-ejwenakase-vomit-pst,yab,ëjwenakase,,vi,vomit-PST,ëjwenaka se,,,,,
-iwenaru-3-vomit-pert,yab,iwenaru,,n,3-vomit-PERT,i wena ru,,,,,
-sujtase-urinate-pst,yab,sujtase,,vi,urinate-PST,sujta se,,,,,
-aaa-ah,yab,aaa,,intj,ah,aaa,,,,,
-usukuru-1-urine-pert,yab,usukuru,,n,1-urine-PERT,u suku ru,,,,,
-usujta-1-urinate-ipfv,yab,usujta,,vi,1-urinate-IPFV,u sujta ∅,,,,,
-konopo-rain,yab,konopo,,n,rain,konopo,,,,,
-wejsare-come-imn,yab,wejsarë,,vi,come-IMN,wej sarë,,,,,
-tawejka-dawn-acnnmlz,yab,tawejka,,n,dawn-ACNNMLZ,tawejka ∅,,,,,
-waijtatomojpe-mouse-pl-pst,yab,waijtatomojpë,,n,mouse-PL-PST,waijta tomo jpë,,,,,
-tipase-go-in-group-pst,yab,tipase,,vi,go_in_group-PST,tipa se,,,,,
-ejwenakajpe-vomit-pst-acnnmlz,yab,ëjwenakajpë,,n,vomit-PST.ACNNMLZ,ëjwenaka jpë,,,,,
-tainpetiri-3p-see-plur-ipfv,yab,tainpëtiri,,vt,3P-see-PLUR-IPFV,ta in pëti ri,,,,,
-inpeti-see-plur-ipfv,yab,inpëti,,vt,see-PLUR-IPFV,in pëti ∅,,,,,
-wenakajpe-vomit-pst,yab,wenakajpë,,vt,vomit-PST,wenaka jpë,,,,,
-ekete-where,yab,ëkëtë,,adv,where,ëkëtë,,,,,
-eki-chicha,yab,ëkï,,n,chicha,ëkï,,,,,
-wenarujpe-vomit-pert-pst,yab,wenarujpë,,n,vomit-PERT-PST,wena ru jpë,,,,,
-kerejpe-old,yab,kërëjpë,,n,old,kërëjpë,,,,,
-tipapejsejne-go-in-group-plur-pst-pl,yab,tipapëjsejne,,vi,go_in_group-PLUR-PST-PL,tipa pëj se jne,,,,,
-waijtajne-mouse-pl,yab,waijtajne,,n,mouse-PL,waijta jne,,,,,
-ajpachi-undergrowth,yab,ajpachi,,n,undergrowth,ajpachi,,,,,
-ekejna-where-nmlz,yab,ëkëjna,,n,where-NMLZ,ëkëj na,,,,,
-wonse-enter-pst,yab,wonse,,vi,enter-PST,won se,,,,,
-maniki-rel-anim,yab,maniki,,part,REL.ANIM,maniki,,,,,
-tiwij-3-house-pert,yab,tïwïj,,n,3-house-PERT,t ïwïj ∅,,,,,
+michi-med-anim,yab,michi,,,MED.ANIM,michi,,,,muller2021yawarana,YarLex_0978_AnFo_michi-02
+morone-hurting,yab,morone,,,hurting,morone,,,,muller2021yawarana,YarLex_1021_PaPe_morone
+mune-bulbous,yab,mune,,,bulbous,mune,,,,muller2021yawarana,YarLex_1073_AnFo_mune
+mejki-dist-anim,yab,mëjkï,,,DIST.ANIM,mëjkï,,,,muller2021yawarana,YarLex_0941_PaPe_mejki-02
+mijna-there-all,yab,mïjna,,,there.ALL,mïjna,,,,muller2021yawarana,YarLex_0986_AnFo_mijna
+najmo-grandmother,yab,najmo,,,grandmother,najmo,,,,muller2021yawarana,YarLex_1096_AnFo_najmo
+nakiri-thirst-pert,yab,nakiri,,,thirst,naki ri,,,,muller2021yawarana,YarLex_1099_PaPe_nakiri-02
+nonokemi-earth-prop-nmlz,yab,nonokemï,,,landowner,nono ke mï,,,,muller2021yawarana,YarLex_1121_AnFo_nonokemi
+nopano-good-nmlz,yab,nopano,,,good,nop ano,,,,muller2021yawarana,YarLex_1125_PaPe_nopano-02
+nope-good,yab,nope,,,good,nope,,,,muller2021yawarana,YarLex_1128_PaPe_nope
+ntate-mouth-npert,yab,ntatë,,,mouth,nta të,,,,muller2021yawarana,YarLex_1137_PaPe_ntate
+nuru-tongue-pert,yab,nuru,,,tongue,nu ru,,,,muller2021yawarana,YarLex_1140_AnFo_nuru-02
+pakuri-arrow-tip-pert,yab,pakuri,,,arrow tip,paku ri,,,,muller2021yawarana,YarLex_1237_AnFo_pakuri
+pejmani-bewitch-agtnmlz,yab,pejmani,,,shaman,pejma ni,,,,muller2021yawarana,YarLex_1302_AnFo_pejmari-02
+pepoye-above-perl,yab,pepoye,,,above.PERL,pepoye,,,,muller2021yawarana,YarLex_2976_PaPe_pepoye 
+peri-palm-sp-pert,yab,peri,,,palm.sp,pe ri,,,,muller2021yawarana,YarLex_1347_PaPe_peri
+poseti-belly,yab,poseti,,,belly,poseti,,,,muller2021yawarana,YarLex_1495_AnFo_poseti
+puturu-feel-ipfv,yab,puturu,,,to feel,putu ru,,,,muller2021yawarana,YarLex_3007_AnFo_puuturu
+peke-about,yab,pëkë,,,about,pëkë,,,,muller2021yawarana,YarLex_1311_PaPe_tepeke-02
+pekepene-alone,yab,pëkëpene,,,alone,pëkëpene,,,,muller2021yawarana,
+romoye-downriver,yab,romoye,,,downriver,romoye,,,,muller2021yawarana,YarLex_1568_AnFo_romoye-02
+rui-older-brother,yab,rui,,,older brother,rui,,,,muller2021yawarana,YarLex_1574_AnFo_rui
+saparari-heavy-pot-pert,yab,saparari,,,heavy pot,sapara ri,,,,muller2021yawarana,YarLex_1612_AnFo_saparari
+sukase-all,yab,sukase,,,all,sukase,,,,muller2021yawarana,YarLex_1757_AnFo_sukase-02
+tajme-ugly,yab,tajme,,,ugly,tajme,,,,muller2021yawarana,YarLex_1803_AnFo_tajme
+takunuru-laziness-pert,yab,takunuru,,,laziness,takunu ru,,,,muller2021yawarana,YarLex_1837_AnFo_takunuru
+tapire-red,yab,tapire,,,red,tapire,,,,muller2021yawarana,YarLex_1864_AnFo_tapiire
+tarine-fast,yab,tarine,,,fast,tarine,,,,muller2021yawarana,YarLex_1890_PaPe_tarine
+tawaru-nyctidromus-albicollis-pert,yab,tawaru,,,nyctidromus albicollis,tawa ru,,,,muller2021yawarana,YarLex_1920_PaPe_tawaru
+tawori-3-uncle-pert,yab,tawori,,,his / her uncle / father in law,t awo ri,,,,muller2021yawarana,
+teijpono-far-nmlz,yab,teijpono,,,long; far,teijpo no,,,,muller2021yawarana,YarLex_1948_PaPe_teijpono
+tejpore-tasty,yab,tejpore,,,tasty,tejpore,,,,muller2021yawarana,YarLex_1957_AnFo_tejpore
+tejporemi-tasty-nmlz,yab,tejporemï,,,tasty,tejpore mï,,,,muller2021yawarana,
+tejweti-3-hammock-pert,yab,tejweti,,,hammock,t ejwe ti,,,,muller2021yawarana,
+tepese-3-escape-pst,yab,tepese,,,expensive,t epe se,,,,muller2021yawarana,YarLex_2004_PaPe_tepese
+terepunu-3-sick-pert,yab,terepunu,,,sick,t erepunu ∅,,,,muller2021yawarana,YarLex_2020_AnFo_terepunu
+tesekemi-prop-name-prop-nmlz,yab,tesekemï,,,named,t ese ke mï,,,,muller2021yawarana,YarLex_2030_PaPe_teseke
+toti-3-meat-pert,yab,toti,,,food,t oti ∅,,,,muller2021yawarana,YarLex_2104_AnFo_tooti
+tujnaka-iller,yab,tujnaka,,,iller,tujnaka,,,,muller2021yawarana,YarLex_2123_AnFo_tujnaka
+teijpo-far,yab,tëijpo,,,far; long,tëijpo,,,,muller2021yawarana,YarLex_1945_PaPe_teijpo-02
+tewi-3pro,yab,tëwï,,,3PRO,tëwï,,,,muller2021yawarana,YarLex_2046_PaPe_tewi
+tewisantomo-3pro-pl,yab,tëwïsantomo,,,3PRO.PL,tëwïsantomo,,,,muller2021yawarana,YarLex_2048_AnFo_tewisantomo
+wanene-aunt,yab,wanene,,,aunt,wanene,,,,muller2021yawarana,YarLex_2263_AnFo_wanene-02
+waraijtori-husband-pert,yab,waraijtori,,,husband,waraijto ri,,,,muller2021yawarana,YarLex_2280_AnFo_warijtori
+wenaru-vomit-pert,yab,wenaru,,,vomit,wena ru,,,,muller2021yawarana,YarLex_2377_AnFo_wenaru
+weseyu-be-brave-acnnmlz,yab,weseyu,,n,be_brave-ACNNMLZ,weseyu ∅,,,,muller2021yawarana,
+weseyuru-be-brave-ipfv,yab,weseyuru,,,be brave,weseyu ru,,,,muller2021yawarana,
+wire-1pro,yab,wïrë,,,1PRO,wïrë,,,,muller2021yawarana,YarLex_2428_AnFo_wire
+yane-mother,yab,yanë,,,mother,yanë,,,,muller2021yawarana,YarLex_2531_AnFo_yane
+yumpe-fairly,yab,yumpe,,,fairly; much,yumpe,,,,muller2021yawarana,YarLex_2821_AnFo_yumpe
+yewukuru-answer-ipfv,yab,yëwukuru,,,to answer,yëwuku ru,,,,muller2021yawarana,YarLex_2752_PaPe_yeukuru
+ejpina-often,yab,ëjpïna,,,often,ëjpïna,,,,muller2021yawarana,YarLex_0298_AnFo_ejpina-02
+ejte-house-npert,yab,ëjtë,,,house,ëj të,,,,muller2021yawarana,YarLex_0308_AnFo_ejte
+eke-which,yab,ëkë,,,which,ëkë,,,,muller2021yawarana,YarLex_0271_PaPe_eke-02
+empare-already,yab,ëmpare,,,already,ëmpare,,,,muller2021yawarana,YarLex_0356_AnFo_empare-02
+enukuru-go-up-ipfv,yab,ënukuru,,,to go up,ënuku ru,,,,muller2021yawarana,YarLex_0380_PaPe_enukuru
+tawara-too,yab,tawara,,,too,tawara,,,,,
+re-emp,yab,rë,,,EMP,rë,,,,,
+ana-1-3pro,yab,ana,,,1+3PRO,ana,,,,,
+keyetajpe-grow-pst,yab,këyetajpë,,,grow-PST,këyeta jpë,,,,,
+chi-cop-acnnmlz,yab,chi,,,COP-ACNNMLZ,chi ∅,,,,,
+yawe-loc,yab,yawë,,,LOC,yawë,,,,,
+yimi-lk-father,yab,yïmï,,,LK-father,y ïmï,,,,,
+semajpe-die-pst-acnnmlz,yab,sëmajpë,,,die-PST.ACNNMLZ,sëma jpë,,,,,
+keyetase-grow-pst,yab,këyetase,,,grow-PST,këyeta se,,,,,
+papa-father,yab,papa,,,father,papa,,,,,
+kampra-big,yab,kampra,,,big,kampra,,,,,
+ya-erg,yab,ya,,,ERG,ya,,,,,
+yoti-lk-meat-pert,yab,yoti,,,LK-meat-PERT,y oti ∅,,,,,
+wejsape-cop-pfv,yab,wejsapë,,,COP-PFV,wej sapë,,,,,
+yojte-fish-with-hook-ipfv,yab,yojtë,,,fish_with_hook-IPFV,yojtë ∅,,,,,
+ta-like,yab,ta,,,like,ta,,,,,
+aroma-limpet,yab,aroma,,,limpet,aroma,,,,,
+warai-like,yab,warai,,,like,warai,,,,,
+yakuri-agouti,yab,yakuri,,,agouti,yakuri,,,,,
+wejsaj-cop-pfv,yab,wejsaj,,,COP-PFV,wej saj,,,,,
+makampra-aunt,yab,makampra,,,aunt,makampra,,,,,
+ta-say-ipfv,yab,ta,,,say-IPFV,ta ∅,,,,,
+maijte-go-imp,yab,maijtë,,,go.IMP,maijtë,,,,,
+kaimotata-hunt-motimp,yab,kaimotata,,,hunt-MOTIMP,kaimota ta,,,,,
+mukuton-child-pl,yab,mukuton,,,child-PL,muku ton,,,,,
+yomiri-be-hungry-ipfv,yab,yomiri,,,be_hungry-IPFV,yomi ri,,,,,
+asamori-cry-ipfv,yab,asamori,,,cry-IPFV,asamo ri,,,,,
+ire-3ana-inan,yab,irë,,,3ANA.INAN,irë,,,,,
+make-mom,yab,makë,,,mom,makë,,,,,
+pachi-older-sister-of-woman,yab,pachi,,,older_sister_of_woman,pachi,,,,,
+kere-prox-anim,yab,kërë,,,PROX.ANIM,kërë,,,,,
+taki-cnfrm,yab,takï,,,CNFRM,takï,,,,,
+yemi-be-hungry-acnnmlz,yab,yëmi,,,be_hungry-ACNNMLZ,yëmi ∅,,,,,
+pinire-neg,yab,pïnirë,,,NEG,pïnirë,,,,,
+jra-neg,yab,jra,,,NEG,jra,,,,,
+muku-child,yab,muku,,,child,muku,,,,,
+tejetum-sick,yab,tejetum,,,sick,tejetum,,,,,
+pinika-prob,yab,pïnika,,,PROB,pïnika,,,,,
+pano-fmr,yab,pano,,,FMR,pano,,,,,
+ijteri-3-go-ipfv,yab,ijtëri,,,3-go-IPFV,ij të ri,,,,,
+ipakuri-3-arrow-tip-pert,yab,ipakuri,,,3-arrow_tip-PERT,i paku ri,,,,,
+yakere-lk-with,yab,yakërë,,,LK-with,y akërë,,,,,
+sakara-hoplias-malabaricus,yab,sakara,,,hoplias_malabaricus,sakara,,,,,
+nepi-bring-ipfv,yab,nepï,,,bring-IPFV,nepï ∅,,,,,
+yakono-lk-younger-sister-of-woman-pert,yab,yakono,,,LK-younger_sister_of_woman-PERT,y akono ∅,,,,,
+ijmojkake-cook-imp,yab,ijmojkakë,,,cook-IMP,ijmojka kë,,,,,
+pana-dat,yab,pana,,,DAT,pana,,,,,
+ijmojka-cook-ipfv,yab,ijmojka,,,cook-IPFV,ijmojka ∅,,,,,
+serematojpe-eat-purp,yab,serematojpe,,,eat-PURP,serema tojpe,,,,,
+ma-rst,yab,ma,,,RST,ma,,,,,
+pan-fmr,yab,pan,,,FMR,pan,,,,,
+patajpe-axe-pst,yab,patajpë,,,axe-PST,pata jpë,,,,,
+te-loc,yab,të,,,LOC,të,,,,,
+semasaj-die-abs-nmlz,yab,sëmasaj,,,die-ABS.NMLZ,sëma saj,,,,,
+pipi-younger-brother-of-woman,yab,pipi,,,younger_brother_of_woman,pipi,,,,,
+chawe-loc,yab,chawë,,,LOC,chawë,,,,,
+mukutomo-child-pl,yab,mukutomo,,,child-PL,muku tomo,,,,,
+asamo-cry-ipfv,yab,asamo,,,cry-IPFV,asamo ∅,,,,,
+mare-rel-inan,yab,mare,,,REL.INAN,mare,,,,,
+tapeke-say-prog-tr,yab,tapëkë,,,say-PROG.TR,ta pëkë,,,,,
+weroro-dog,yab,weroro,,,dog,weroro,,,,,
+yare-bring-ipfv,yab,yarë,,,bring-IPFV,yarë ∅,,,,,
+kejmatojpe-hunt-purp,yab,këjmatojpe,,,hunt-PURP,këjma tojpe,,,,,
+taturu-3p-give-ipfv,yab,taturu,,,3P-give-IPFV,ta tu ru,,,,,
+ijmokatojpe-cook-purp,yab,ijmokatojpe,,,cook-PURP,ijmoka tojpe,,,,,
+tujpe-give-pst,yab,tujpë,,,give-PST,tu jpë,,,,,
+keyatajpe-grow-pst,yab,këyatajpë,,,grow-PST,këyata jpë,,,,,
+onono-another,yab,onono,,,another,onono,,,,,
+kimii-chili,yab,kïmïi,,,chili,kïmïi,,,,,
+yeme-eat-fruits-eggs-soup-ipfv,yab,yeme,,,eat(fruits_eggs_soup)-IPFV,yeme ∅,,,,,
+sere-bitter-manioc,yab,sere,,,bitter_manioc,sere,,,,,
+yokiri-eat-starch-ipfv,yab,yokïrï,,,eat(starch)-IPFV,yokï rï,,,,,
+sukutaka-yucuta,yab,sukutaka,,,yucuta,sukutaka,,,,,
+yeni-drink-ipfv,yab,yeni,,,drink-IPFV,yeni ∅,,,,,
+yemetikene-eat-fruits-eggs-soup-post,yab,yemetïkene,,,eat(fruits_eggs_soup)-POST,yeme tïkene,,,,,
+nwa-thus,yab,nwa,,,thus,nwa,,,,,
+neke-cntr,yab,neke,,,CNTR,neke,,,,,
+n-ints,yab,n,,,INTS,n,,,,,
+ti-hsy,yab,ti,,,HSY,ti,,,,,
+sepanse-get-married-pst,yab,sepanse,,,get_married-PST,sepan se,,,,,
+rafa-r,yab,rafa,,,R.,rafa,,,,,
+perez-p,yab,perez,,,P.,perez,,,,,
+keyatase-grow-pst,yab,këyatase,,,grow-PST,këyata se,,,,,
+yatam-adolescent,yab,yatam,,,adolescent,yatam,,,,,
+tese-go-pst,yab,tëse,,,go-PST,të se,,,,,
+waraijtokom-man,yab,waraijtokom,,,man,waraijtokom,,,,,
+ijtese-3-go-pst,yab,ijtëse,,,3-go-PST,ij të se,,,,,
+padrastro-stepfather-pert,yab,padrastro,,,stepfather-PERT,padrastro ∅,,,,,
+keyamase-raise-pst,yab,këyamase,,,raise-PST,këyama se,,,,,
+wera-like,yab,wëra,,,like,wëra,,,,,
+waraijtokomo-man,yab,waraijtokomo,,,man,waraijtokomo,,,,,
+tapaja-beat-neg,yab,tapaja,,,beat-NEG,tapa ja,,,,,
+waraijtokon-man,yab,waraijtokon,,,man,waraijtokon,,,,,
+takere-3-with,yab,takërë,,,3-with,t akërë,,,,,
+impare-already,yab,ïmparë,,,already,ïmparë,,,,,
+wa-thus,yab,wa,,,thus,wa,,,,,
+tajtojpe-say-purp,yab,tajtojpe,,,say-PURP,taj tojpe,,,,,
+wejtane-cop-cncs,yab,wejtane,,,COP-CNCS,wej tane,,,,,
+teijpe-far,yab,tëijpë,,,far,tëijpë,,,,,
+pijke-dim,yab,pïjkë,,,DIM,pïjkë,,,,,
+yiwiti-lk-house-pert,yab,yïwïtï,,,LK-house-PERT,y ïwïtï ∅,,,,,
+yiwij-lk-house-pert,yab,yïwïj,,,LK-house-PERT,y ïwïj ∅,,,,,
+senejka-stay-ipfv,yab,senejka,,,stay-IPFV,senejka ∅,,,,,

@@ -25,7 +25,7 @@
     "rdf:type": "http://www.w3.org/ns/dcat#Distribution",
     "tables": [
         {
-            "dc:extent": 318,
+            "dc:extent": 200,
             "tableSchema": {
                 "columns": [
                     {
@@ -160,7 +160,7 @@
             "url": "wordforms.csv"
         },
         {
-            "dc:extent": 624,
+            "dc:extent": 614,
             "tableSchema": {
                 "columns": [
                     {
@@ -408,7 +408,7 @@
             "url": "morphs.csv"
         },
         {
-            "dc:extent": 157,
+            "dc:extent": 85,
             "tableSchema": {
                 "columns": [
                     {
@@ -610,7 +610,7 @@
             "url": "inflectionalcategories.csv"
         },
         {
-            "dc:extent": 508,
+            "dc:extent": 498,
             "tableSchema": {
                 "columns": [
                     {
@@ -797,7 +797,7 @@
             "url": "morphemes.csv"
         },
         {
-            "dc:extent": 95,
+            "dc:extent": 85,
             "tableSchema": {
                 "columns": [
                     {
@@ -971,7 +971,7 @@
             "url": "derivationalprocesses.csv"
         },
         {
-            "dc:extent": 516,
+            "dc:extent": 309,
             "tableSchema": {
                 "columns": [
                     {
@@ -1058,7 +1058,7 @@
             "url": "wordformparts.csv"
         },
         {
-            "dc:extent": 292,
+            "dc:extent": 187,
             "tableSchema": {
                 "columns": [
                     {
@@ -1124,7 +1124,7 @@
             "url": "wordformstems.csv"
         },
         {
-            "dc:extent": 732,
+            "dc:extent": 711,
             "tableSchema": {
                 "columns": [
                     {
@@ -1211,7 +1211,7 @@
             "url": "stemparts.csv"
         },
         {
-            "dc:extent": 531,
+            "dc:extent": 512,
             "tableSchema": {
                 "columns": [
                     {
@@ -1315,7 +1315,7 @@
             "url": "partsofspeech.csv"
         },
         {
-            "dc:extent": 3,
+            "dc:extent": 1,
             "tableSchema": {
                 "columns": [
                     {
@@ -1375,7 +1375,7 @@
             "url": "texts.csv"
         },
         {
-            "dc:extent": 815,
+            "dc:extent": 294,
             "tableSchema": {
                 "columns": [
                     {
@@ -1581,7 +1581,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ExampleTable",
-            "dc:extent": 153,
+            "dc:extent": 55,
             "tableSchema": {
                 "columns": [
                     {
@@ -1674,7 +1674,13 @@
                         "dc:description": "The positions of this record in the text.",
                         "datatype": "integer",
                         "required": false,
-                        "name": "Record_Number"
+                        "name": "Sentence_Number"
+                    },
+                    {
+                        "dc:description": "The number of the phrase in this record.",
+                        "datatype": "integer",
+                        "required": false,
+                        "name": "Phrase_Number"
                     },
                     {
                         "dc:description": "The speaker who uttered this record.",
@@ -1838,7 +1844,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#MediaTable",
-            "dc:extent": 234,
+            "dc:extent": 140,
             "tableSchema": {
                 "columns": [
                     {

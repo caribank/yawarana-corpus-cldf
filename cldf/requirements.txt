@@ -4,6 +4,7 @@ binaryornot==0.4.4
 certifi==2023.7.22
 cffconvert==2.0.0
 chardet==5.2.0
+-e git+ssh://git@github.com/fmatter/cldf-ldd.git@681bc872c85d0ba81c44983939651aa0030384ac#egg=cldf_ldd
 cldf_rel==0.0.4
 cldfbench==1.14.0
 cldfcatalog==1.5.1
@@ -18,6 +19,7 @@ gitdb==4.0.10
 greenlet==3.0.0
 humidifier==0.0.2
 idna==3.4
+invoke==2.2.0
 isodate==0.6.1
 Jinja2==3.1.2
 jmespath==1.0.1
@@ -38,14 +40,17 @@ pybtex==0.24.0
 pycldf==1.35.0
 pycountry==22.3.5
 pyglottolog==3.12.0
+pyigt==2.0.0
 pykwalify==1.8.0
+-e git+ssh://git@github.com/fmatter/pylacoan.git@1f784da34adc2760c56b65af6cab0189db290005#egg=pylacoan
 pylatexenc==2.10
--e git+ssh://git@github.com/fmatter/pylingdocs.git@eebe320293b0c4b8914d6b0c77edd8ea3bbb810d#egg=pylingdocs
+-e git+ssh://git@github.com/fmatter/pylingdocs.git@2bab3fd6abc32753927b5f4389f550d00d5302e4#egg=pylingdocs
 pyrsistent==0.19.3
 python-dateutil==2.8.2
 python-frontmatter==1.0.0
 python-slugify==8.0.1
 pytz==2023.3.post1
+questionary==2.0.1
 rdflib==6.3.2
 regex==2023.10.3
 requests==2.31.0
@@ -59,10 +64,10 @@ tabulate==0.9.0
 termcolor==2.3.0
 tqdm==4.66.1
 Unidecode==1.3.7
--e git+ssh://git@github.com/fmatter/uniparser-yawarana.git@cc589117a5767ae136fb70d64872ee35f62989ae#egg=uniparser_yawarana
+-e git+ssh://git@github.com/fmatter/uniparser-yawarana.git@95a36857986641fc599816e3b8119e02f5703a5e#egg=uniparser_yawarana
 uritemplate==4.1.1
 urllib3==2.0.6
 watchdog==3.0.0
 wcwidth==0.2.8
-writio==0.0.1
+-e git+ssh://git@github.com/fmatter/writio.git@584a1b9701f36cb7e8f6de21da881256036cdcac#egg=writio
 zipp==3.17.0
