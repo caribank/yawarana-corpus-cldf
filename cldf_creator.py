@@ -832,7 +832,7 @@ def create(full=False):
                             "ID": humidify(filename, key="wf_audio", unique=True),
                             "Name": filename.replace(".wav", ""),
                             "Media_Type": "x/wav",
-                            "Download_URL": f"audio/{filename}",
+                            "Download_URL": f"{filename}",
                         }
                     )
                 else:
