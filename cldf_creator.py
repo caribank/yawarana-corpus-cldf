@@ -990,7 +990,7 @@ def create(full=False):
                     "ID": ex["ID"],
                     "Name": ex["ID"],
                     "Media_Type": "audio/wav",
-                    "Download_URL": "audio/" + ex["ID"] + ".wav",
+                    "Download_URL": ex["ID"] + ".wav",
                 }
             )
             examples_with_audio.append(ex["ID"])
