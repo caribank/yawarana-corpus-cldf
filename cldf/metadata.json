@@ -25,7 +25,7 @@
     "rdf:type": "http://www.w3.org/ns/dcat#Distribution",
     "tables": [
         {
-            "dc:extent": 200,
+            "dc:extent": 203,
             "tableSchema": {
                 "columns": [
                     {
@@ -284,7 +284,7 @@
             "url": "stems.csv"
         },
         {
-            "dc:extent": 765,
+            "dc:extent": 763,
             "tableSchema": {
                 "columns": [
                     {
@@ -408,7 +408,7 @@
             "url": "morphs.csv"
         },
         {
-            "dc:extent": 85,
+            "dc:extent": 87,
             "tableSchema": {
                 "columns": [
                     {
@@ -701,7 +701,7 @@
             "url": "lexemes.csv"
         },
         {
-            "dc:extent": 596,
+            "dc:extent": 595,
             "tableSchema": {
                 "columns": [
                     {
@@ -971,7 +971,7 @@
             "url": "derivationalprocesses.csv"
         },
         {
-            "dc:extent": 309,
+            "dc:extent": 314,
             "tableSchema": {
                 "columns": [
                     {
@@ -1058,7 +1058,7 @@
             "url": "wordformparts.csv"
         },
         {
-            "dc:extent": 187,
+            "dc:extent": 190,
             "tableSchema": {
                 "columns": [
                     {
@@ -1375,7 +1375,7 @@
             "url": "texts.csv"
         },
         {
-            "dc:extent": 294,
+            "dc:extent": 312,
             "tableSchema": {
                 "columns": [
                     {

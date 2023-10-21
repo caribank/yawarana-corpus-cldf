@@ -11,6 +11,10 @@ def cldf(c):
     load(c)
     create()
 
+@task
+def full(c):
+    load(c)
+    create(full=True)
 
 @task
 def load(c):

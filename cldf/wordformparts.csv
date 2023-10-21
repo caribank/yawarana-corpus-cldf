@@ -182,6 +182,7 @@ warai-like-0,warai-like,warai-like,0,like
 yakuri-agouti-0,yakuri-agouti,yakuri-agouti,0,agouti
 wejsaj-cop-pfv-0,wejsaj-cop-pfv,wej-cop,0,cop
 wejsaj-cop-pfv-1,wejsaj-cop-pfv,sajpfv,1,pfv
+ya-obl-0,ya-obl,ya-obl,0,obl
 makampra-aunt-0,makampra-aunt,makampra-aunt,0,aunt
 ta-say-ipfv-0,ta-say-ipfv,ta-say,0,say
 ta-say-ipfv-1,ta-say-ipfv,ri-zero,1,ipfv
@@ -223,6 +224,8 @@ yakono-lk-younger-sister-of-woman-pert-2,yakono-lk-younger-sister-of-woman-pert,
 ijmojkake-cook-imp-0,ijmojkake-cook-imp,ijmojka-cook,0,cook
 ijmojkake-cook-imp-1,ijmojkake-cook-imp,keimp,1,imp
 pana-dat-0,pana-dat,pana-dat,0,dat
+i-put-ipfv-0,i-put-ipfv,i-put,0,put
+i-put-ipfv-1,i-put-ipfv,ri-zero,1,ipfv
 ijmojka-cook-ipfv-0,ijmojka-cook-ipfv,ijmojka-cook,0,cook
 ijmojka-cook-ipfv-1,ijmojka-cook-ipfv,ri-zero,1,ipfv
 serematojpe-eat-purp-1,serematojpe-eat-purp,tojpepurp,1,purp
@@ -235,6 +238,8 @@ semasaj-die-abs-nmlz-0,semasaj-die-abs-nmlz,sema-die,0,die
 semasaj-die-abs-nmlz-1,semasaj-die-abs-nmlz,sajnmlz,1,"abs,nmlz"
 pipi-younger-brother-of-woman-0,pipi-younger-brother-of-woman,pipi-younger-brother-of-woman,0,younger-brother-of-woman
 chawe-loc-0,chawe-loc,chawe-loc,0,loc
+tase-say-pst-0,tase-say-pst,ta-say,0,say
+tase-say-pst-1,tase-say-pst,sepst,1,pst
 mukutomo-child-pl-0,mukutomo-child-pl,muku-child,0,child
 mukutomo-child-pl-1,mukutomo-child-pl,tomopl,1,pl
 asamo-cry-ipfv-0,asamo-cry-ipfv,asamo-cry,0,cry

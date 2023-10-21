@@ -260,7 +260,9 @@ def create(full=False):
         lambda x: x[0]
     )  # main allomorph is label for root
     # create IDs
+    df.roots["temp"] = df.roots["ID"]
     df.roots["ID"] = idify(df.roots, ["Name", "Gloss"], key="morpheme")
+    df.roots["ID"] = df.roots.apply(lambda x: x["ID"] if not x["temp"] or len(x["temp"]) > 20 else x["temp"],axis=1)
     df.roots["Parameter_ID"] = df.roots["Translation"]
     df.roots["Gloss"] = df.roots["Gloss"].apply(glossify)
     df.roots = df.roots[
@@ -564,7 +566,7 @@ def create(full=False):
                 )
             ]
             print("reduced cands:")
-            input(cands)
+            print(cands)
         if len(cands) == 1:
             source_lex = cands.iloc[0]
         elif len(cands) > 1:
