@@ -1,19 +1,16 @@
 ID,Language_ID,Form,Description,Part_Of_Speech,Parameter_ID,Morpho_Segments,Stem_ID,Segments,Comment,Source,Media_ID
 ajpachike-undergrowth-prop,yab,ajpachike,,,weeded,ajpachi ke,,,,muller2021yawarana,YarLex_0052_PaPe_apachike-02
-ajyuru-tucuma-palm-pert,yab,ajyuru,,,tucuma (palm),ajyu ru,,,,muller2021yawarana,YarLex_0016_PaPe_ajyuru
+jra-neg,yab,jra,,part,NEG,jra,,,,muller2021yawarana,
 aka-ouch-cry-of-pain,yab,aka,,,ouch (cry of pain),aka,,,,muller2021yawarana,YarLex_0017_AnFo_aka-02
-amuru-ripeness-pert,yab,amuru,,,ripeness,amu ru,,,,muller2021yawarana,YarLex_0034_AnFo_amuru-02
 aniki-who,yab,aniki,,,who?,aniki,,,,muller2021yawarana,YarLex_0044_PaPe_aniki-02
-apiri-ripeness-pert,yab,apiri,,,ripeness,api ri,,,,muller2021yawarana,YarLex_0062_PaPe_apiiri
 apo-later,yab,apo,,,later; meanwhile,apo,,,,muller2021yawarana,YarLex_0068_AnFo_apo
 arajmate-dangerous,yab,arajmatë,,,dangerous,arajmatë,,,,muller2021yawarana,YarLex_0074_AnFo_arajmate-02
 arokate-difficult,yab,arokatë,,,difficult,arokatë,,,,muller2021yawarana,YarLex_0092_AnFo_arokate
 asakontompene-four,yab,asakontompene,,,four,asakontompene,,,,muller2021yawarana,YarLex_0110_AnFo_asakontompene
 asake-two,yab,asakë,,,two,asakë,,,,muller2021yawarana,YarLex_0101_AnFo_asake
+jne-pl,yab,jne,,part,PL,jne,,,,muller2021yawarana,
 asane-2-mother-pert,yab,asanë,,,your mother,a sanë ∅,,,,muller2021yawarana,YarLex_0114_PaPe_asane
 asereke-dry-cough-prop,yab,asereke,,,tuberculous,asere ke,,,,muller2021yawarana,YarLex_0126_AnFo_asereke
-atiri-plot-of-cultivated-land-pert,yab,atiri,,,plot of cultivated land,ati ri,,,,muller2021yawarana,
-atirijpe-plot-of-cultivated-land-pert-pst,yab,atirijpë,,,old field,ati ri jpë,,,,muller2021yawarana,YarLex_0155_PaPe_atirijpe
 ayawori-2-lk-uncle-pert,yab,ayawori,,,your uncle; your father in law,a y awo ri,,,,muller2021yawarana,
 chijchipuru-body-movement-pert,yab,chijchipuru,,,move (body),chijchipu ru,,,,muller2021yawarana,
 ejne-1-2pro,yab,ejnë,,,1+2PRO,ejnë,,,,muller2021yawarana,YarLex_0291_AnFo_ejne-02
@@ -27,6 +24,7 @@ ijtari-3-foot-pert,yab,ijtari,,,foot,i jta ri,,,,muller2021yawarana,YarLex_0449_
 inawe-have,yab,inawë,,,have,inawë,,,,muller2021yawarana,YarLex_0479_PaPe_inawe
 intipijke-small,yab,intipijkë,,,small,intipijkë,,,,muller2021yawarana,YarLex_0486_AnFo_intipijke
 irejpe-then,yab,irëjpë,,,then,irëjpë,,,,muller2021yawarana,YarLex_0494_PaPe_irejpe
+kaimoke-game-prop,yab,kaimoke,,adv,game-PROP,kaimo ke,,,,muller2021yawarana,
 kamparake-big-prop,yab,kamparake,,,large,kampara ke,,,,muller2021yawarana,
 karasake-white,yab,karasake,,,white,karasake,,,,muller2021yawarana,YarLex_0618_PaPe_karasake-02
 kasori-fat-pert,yab,kasori,,,fat,kaso ri,,,,muller2021yawarana,YarLex_0639_AnFo_kasori
@@ -53,6 +51,7 @@ nope-good,yab,nope,,,good,nope,,,,muller2021yawarana,YarLex_1128_PaPe_nope
 ntate-mouth-npert,yab,ntatë,,,mouth,nta të,,,,muller2021yawarana,YarLex_1137_PaPe_ntate
 nuru-tongue-pert,yab,nuru,,,tongue,nu ru,,,,muller2021yawarana,YarLex_1140_AnFo_nuru-02
 pakuri-arrow-tip-pert,yab,pakuri,,,arrow tip,paku ri,,,,muller2021yawarana,YarLex_1237_AnFo_pakuri
+panake-ear-prop,yab,panake,,adv,ear-PROP,pana ke,,,,muller2021yawarana,
 pejmani-bewitch-agtnmlz,yab,pejmani,,,shaman,pejma ni,,,,muller2021yawarana,YarLex_1302_AnFo_pejmari-02
 pepoye-above-perl,yab,pepoye,,,above.PERL,pepoye,,,,muller2021yawarana,YarLex_2976_PaPe_pepoye 
 peri-palm-sp-pert,yab,peri,,,palm.sp,pe ri,,,,muller2021yawarana,YarLex_1347_PaPe_peri
@@ -70,6 +69,7 @@ tapire-red,yab,tapire,,,red,tapire,,,,muller2021yawarana,YarLex_1864_AnFo_tapiir
 tarine-fast,yab,tarine,,,fast,tarine,,,,muller2021yawarana,YarLex_1890_PaPe_tarine
 tawaru-nyctidromus-albicollis-pert,yab,tawaru,,,nyctidromus albicollis,tawa ru,,,,muller2021yawarana,YarLex_1920_PaPe_tawaru
 tawori-3-uncle-pert,yab,tawori,,,his / her uncle / father in law,t awo ri,,,,muller2021yawarana,
+teijpo-far,yab,teijpo,,adv,far,teijpo,,,,muller2021yawarana,
 teijpono-far-nmlz,yab,teijpono,,,long; far,teijpo no,,,,muller2021yawarana,YarLex_1948_PaPe_teijpono
 tejpore-tasty,yab,tejpore,,,tasty,tejpore,,,,muller2021yawarana,YarLex_1957_AnFo_tejpore
 tejporemi-tasty-nmlz,yab,tejporemï,,,tasty,tejpore mï,,,,muller2021yawarana,
@@ -79,7 +79,7 @@ terepunu-3-sick-pert,yab,terepunu,,,sick,t erepunu ∅,,,,muller2021yawarana,Yar
 tesekemi-prop-name-prop-nmlz,yab,tesekemï,,,named,t ese ke mï,,,,muller2021yawarana,YarLex_2030_PaPe_teseke
 toti-3-meat-pert,yab,toti,,,food,t oti ∅,,,,muller2021yawarana,YarLex_2104_AnFo_tooti
 tujnaka-iller,yab,tujnaka,,,iller,tujnaka,,,,muller2021yawarana,YarLex_2123_AnFo_tujnaka
-teijpo-far,yab,tëijpo,,,far; long,tëijpo,,,,muller2021yawarana,YarLex_1945_PaPe_teijpo-02
+teijpo-far-1,yab,tëijpo,,,far; long,tëijpo,,,,muller2021yawarana,YarLex_1945_PaPe_teijpo-02
 tewi-3pro,yab,tëwï,,,3PRO,tëwï,,,,muller2021yawarana,YarLex_2046_PaPe_tewi
 tewisantomo-3pro-pl,yab,tëwïsantomo,,,3PRO.PL,tëwïsantomo,,,,muller2021yawarana,YarLex_2048_AnFo_tewisantomo
 wanene-aunt,yab,wanene,,,aunt,wanene,,,,muller2021yawarana,YarLex_2263_AnFo_wanene-02
@@ -131,7 +131,6 @@ kere-prox-anim,yab,kërë,,,PROX.ANIM,kërë,,,,,
 taki-cnfrm,yab,takï,,,CNFRM,takï,,,,,
 yemi-be-hungry-acnnmlz,yab,yëmi,,,be_hungry-ACNNMLZ,yëmi ∅,,,,,
 pinire-neg,yab,pïnirë,,,NEG,pïnirë,,,,,
-jra-neg,yab,jra,,,NEG,jra,,,,,
 muku-child,yab,muku,,,child,muku,,,,,
 tejetum-sick,yab,tejetum,,,sick,tejetum,,,,,
 pinika-prob,yab,pïnika,,,PROB,pïnika,,,,,

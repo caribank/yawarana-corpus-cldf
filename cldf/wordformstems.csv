@@ -1,10 +1,7 @@
 ID,Wordform_ID,Stem_ID,Index
 ajpachike-undergrowth-prop-deriv-stem,ajpachike-undergrowth-prop,ajpachike-undergrowth-prop,"0,1"
 ajpachike-undergrowth-prop-0,ajpachike-undergrowth-prop,ajpachi-undergrowth,0
-ajyuru-tucuma-palm-pert-0,ajyuru-tucuma-palm-pert,ajyu-tucuma-palm,0
-amuru-ripeness-pert-0,amuru-ripeness-pert,amu-ripeness,0
 aniki-who-0,aniki-who,aniki-who-1,0
-apiri-ripeness-pert-0,apiri-ripeness-pert,api-ripeness,0
 apo-later-0,apo-later,apo-later,0
 arajmate-dangerous-0,arajmate-dangerous,arajmate-dangerous,0
 arokate-difficult-0,arokate-difficult,arokate-difficult,0
@@ -13,8 +10,6 @@ asake-two-0,asake-two,asake-two,0
 asane-2-mother-pert-1,asane-2-mother-pert,sane-mother,1
 asereke-dry-cough-prop-deriv-stem,asereke-dry-cough-prop,asereke-dry-cough-prop,"0,1"
 asereke-dry-cough-prop-0,asereke-dry-cough-prop,asere-dry-cough,0
-atiri-plot-of-cultivated-land-pert-0,atiri-plot-of-cultivated-land-pert,ati-plot-of-cultivated-land,0
-atirijpe-plot-of-cultivated-land-pert-pst-0,atirijpe-plot-of-cultivated-land-pert-pst,ati-plot-of-cultivated-land,0
 ayawori-2-lk-uncle-pert-2,ayawori-2-lk-uncle-pert,awo-uncle,2
 chijchipuru-body-movement-pert-0,chijchipuru-body-movement-pert,chijchipu-body-movement,0
 ejne-1-2pro-0,ejne-1-2pro,ejne-1-2pro,0
@@ -29,6 +24,8 @@ ijtari-3-foot-pert-1,ijtari-3-foot-pert,jta-foot,1
 inawe-have-0,inawe-have,inawe-have,0
 intipijke-small-0,intipijke-small,intipijke-small,0
 irejpe-then-0,irejpe-then,irejpe-then,0
+kaimoke-game-prop-deriv-stem,kaimoke-game-prop,kaimoke-game-prop,"0,1"
+kaimoke-game-prop-0,kaimoke-game-prop,kaimo-game,0
 kamparake-big-prop-deriv-stem,kamparake-big-prop,kamparake-big-prop,"0,1"
 kamparake-big-prop-0,kamparake-big-prop,kampara-big,0
 karasake-white-0,karasake-white,karasake-white,0
@@ -59,6 +56,8 @@ nope-good-0,nope-good,nope-good,0
 ntate-mouth-npert-0,ntate-mouth-npert,nta-mouth,0
 nuru-tongue-pert-0,nuru-tongue-pert,nu-tongue,0
 pakuri-arrow-tip-pert-0,pakuri-arrow-tip-pert,paku-arrow-tip,0
+panake-ear-prop-deriv-stem,panake-ear-prop,panake-ear-prop,"0,1"
+panake-ear-prop-0,panake-ear-prop,pana-ear,0
 pejmani-bewitch-agtnmlz-deriv-stem,pejmani-bewitch-agtnmlz,pejmani-bewitch-agtnmlz,"0,1"
 pejmani-bewitch-agtnmlz-0,pejmani-bewitch-agtnmlz,pejma-bewitch,0
 pepoye-above-perl-0,pepoye-above-perl,pepoye-above-perl,0
@@ -77,6 +76,7 @@ tapire-red-0,tapire-red,tapire-red,0
 tarine-fast-0,tarine-fast,tarine-fast,0
 tawaru-nyctidromus-albicollis-pert-0,tawaru-nyctidromus-albicollis-pert,tawa-nyctidromus-albicollis,0
 tawori-3-uncle-pert-1,tawori-3-uncle-pert,awo-uncle,1
+teijpo-far-0,teijpo-far,teijpo-far-1,0
 teijpono-far-nmlz-deriv-stem,teijpono-far-nmlz,teijpono-far-nmlz,"0,1"
 teijpono-far-nmlz-0,teijpono-far-nmlz,teijpo-far-1,0
 tejpore-tasty-0,tejpore-tasty,tejpore-tasty,0
@@ -88,7 +88,7 @@ terepunu-3-sick-pert-1,terepunu-3-sick-pert,erepunu-sick,1
 tesekemi-prop-name-prop-nmlz-1,tesekemi-prop-name-prop-nmlz,ese-name,1
 toti-3-meat-pert-1,toti-3-meat-pert,oti-meat,1
 tujnaka-iller-0,tujnaka-iller,tujnaka-iller,0
-teijpo-far-0,teijpo-far,teijpo-far,0
+teijpo-far-1-0,teijpo-far-1,teijpo-far,0
 tewi-3pro-0,tewi-3pro,tewi-3pro,0
 tewisantomo-3pro-pl-0,tewisantomo-3pro-pl,tewisantomo-3pro-pl,0
 wanene-aunt-0,wanene-aunt,wanene-aunt,0

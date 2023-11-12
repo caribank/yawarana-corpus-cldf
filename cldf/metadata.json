@@ -25,7 +25,7 @@
     "rdf:type": "http://www.w3.org/ns/dcat#Distribution",
     "tables": [
         {
-            "dc:extent": 203,
+            "dc:extent": 202,
             "tableSchema": {
                 "columns": [
                     {
@@ -151,6 +151,17 @@
                                 "ID"
                             ]
                         }
+                    },
+                    {
+                        "columnReference": [
+                            "Language_ID"
+                        ],
+                        "reference": {
+                            "resource": "languages.csv",
+                            "columnReference": [
+                                "ID"
+                            ]
+                        }
                     }
                 ],
                 "primaryKey": [
@@ -160,7 +171,7 @@
             "url": "wordforms.csv"
         },
         {
-            "dc:extent": 614,
+            "dc:extent": 616,
             "tableSchema": {
                 "columns": [
                     {
@@ -256,10 +267,10 @@
                     },
                     {
                         "columnReference": [
-                            "Lexeme_ID"
+                            "Language_ID"
                         ],
                         "reference": {
-                            "resource": "lexemes.csv",
+                            "resource": "languages.csv",
                             "columnReference": [
                                 "ID"
                             ]
@@ -271,6 +282,17 @@
                         ],
                         "reference": {
                             "resource": "partsofspeech.csv",
+                            "columnReference": [
+                                "ID"
+                            ]
+                        }
+                    },
+                    {
+                        "columnReference": [
+                            "Lexeme_ID"
+                        ],
+                        "reference": {
+                            "resource": "lexemes.csv",
                             "columnReference": [
                                 "ID"
                             ]
@@ -380,6 +402,17 @@
                     },
                     {
                         "columnReference": [
+                            "Language_ID"
+                        ],
+                        "reference": {
+                            "resource": "languages.csv",
+                            "columnReference": [
+                                "ID"
+                            ]
+                        }
+                    },
+                    {
+                        "columnReference": [
                             "Morpheme_ID"
                         ],
                         "reference": {
@@ -408,7 +441,7 @@
             "url": "morphs.csv"
         },
         {
-            "dc:extent": 87,
+            "dc:extent": 81,
             "tableSchema": {
                 "columns": [
                     {
@@ -610,7 +643,7 @@
             "url": "inflectionalcategories.csv"
         },
         {
-            "dc:extent": 498,
+            "dc:extent": 500,
             "tableSchema": {
                 "columns": [
                     {
@@ -764,6 +797,11 @@
                         "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#partOfSpeech",
                         "required": false,
                         "name": "Part_Of_Speech"
+                    },
+                    {
+                        "datatype": "string",
+                        "separator": ",",
+                        "name": "Tags"
                     }
                 ],
                 "foreignKeys": [
@@ -788,6 +826,17 @@
                                 "ID"
                             ]
                         }
+                    },
+                    {
+                        "columnReference": [
+                            "Language_ID"
+                        ],
+                        "reference": {
+                            "resource": "languages.csv",
+                            "columnReference": [
+                                "ID"
+                            ]
+                        }
                     }
                 ],
                 "primaryKey": [
@@ -797,7 +846,7 @@
             "url": "morphemes.csv"
         },
         {
-            "dc:extent": 85,
+            "dc:extent": 87,
             "tableSchema": {
                 "columns": [
                     {
@@ -971,7 +1020,7 @@
             "url": "derivationalprocesses.csv"
         },
         {
-            "dc:extent": 314,
+            "dc:extent": 309,
             "tableSchema": {
                 "columns": [
                     {
@@ -1019,6 +1068,17 @@
                 "foreignKeys": [
                     {
                         "columnReference": [
+                            "Wordform_ID"
+                        ],
+                        "reference": {
+                            "resource": "wordforms.csv",
+                            "columnReference": [
+                                "ID"
+                            ]
+                        }
+                    },
+                    {
+                        "columnReference": [
                             "Gloss_ID"
                         ],
                         "reference": {
@@ -1034,17 +1094,6 @@
                         ],
                         "reference": {
                             "resource": "morphs.csv",
-                            "columnReference": [
-                                "ID"
-                            ]
-                        }
-                    },
-                    {
-                        "columnReference": [
-                            "Wordform_ID"
-                        ],
-                        "reference": {
-                            "resource": "wordforms.csv",
                             "columnReference": [
                                 "ID"
                             ]
@@ -1124,7 +1173,7 @@
             "url": "wordformstems.csv"
         },
         {
-            "dc:extent": 711,
+            "dc:extent": 715,
             "tableSchema": {
                 "columns": [
                     {
@@ -1725,10 +1774,10 @@
                     },
                     {
                         "columnReference": [
-                            "Text_ID"
+                            "Speaker_ID"
                         ],
                         "reference": {
-                            "resource": "texts.csv",
+                            "resource": "speakers.csv",
                             "columnReference": [
                                 "ID"
                             ]
@@ -1736,10 +1785,10 @@
                     },
                     {
                         "columnReference": [
-                            "Speaker_ID"
+                            "Text_ID"
                         ],
                         "reference": {
-                            "resource": "speakers.csv",
+                            "resource": "texts.csv",
                             "columnReference": [
                                 "ID"
                             ]
@@ -1754,7 +1803,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#FormTable",
-            "dc:extent": 2,
+            "dc:extent": 8,
             "tableSchema": {
                 "columns": [
                     {
@@ -1844,7 +1893,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#MediaTable",
-            "dc:extent": 140,
+            "dc:extent": 136,
             "tableSchema": {
                 "columns": [
                     {

@@ -19,9 +19,9 @@ def full(c):
 @task
 def load(c):
     c.run(
-        """cp ../yawarana_corpus/annotation/output/good.csv raw/examples.csv
-    cp ../yawarana_corpus/annotation/output/full.csv raw/full_examples.csv
-    cp /home/florianm/Dropbox/research/cariban/yawarana/yawarana_corpus/flexports/sentences.csv raw/flexamples.csv
+        """cp ../corpus/annotation/output/good.csv raw/examples.csv
+    cp ../corpus/annotation/output/full.csv raw/full_examples.csv
+    cp /home/florianm/Dropbox/research/cariban/yawarana/corpus/flexports/sentences.csv raw/flexamples.csv
 """
     )
 

@@ -52,7 +52,7 @@ SEP = "; "
 UP_DIR = Path("/home/florianm/Dropbox/development/uniparser-yawarana/data")
 # all audio files
 AUDIO_PATH = Path(
-    "/home/florianm/Dropbox/research/cariban/yawarana/yawarana_corpus/audio"
+    "/home/florianm/Dropbox/research/cariban/yawarana/corpus/audio"
 )
 # wordform audio files
 WORD_AUDIO_PATH = AUDIO_PATH / "wordforms"
@@ -228,7 +228,7 @@ def create(full=False):
 
     # enriched LIFT export from MCMM
     dic = pd.read_csv(
-        "../yawarana_dictionary/annotated_dictionary.csv",
+        "../dictionary/annotated_dictionary.csv",
         keep_default_na=False,
     )
     dic_roots = dic[dic["Translation_Root"] != ""].copy()  # keep only roots
@@ -276,6 +276,7 @@ def create(full=False):
             "Parameter_ID",
             "POS",
             "Comment",
+            "Tags"
         ]
     ]
 
@@ -1014,12 +1015,10 @@ def create(full=False):
     found_texts = set(list(df.examples["Text_ID"]))
 
     texts = {}
-    text_list = cread("../yawarana_corpus/text_metadata.csv")
-    with open("../yawarana_corpus/text_metadata.yaml", "r", encoding="utf-8") as file:
-        text_metadata = yaml.load(file, Loader=yaml.SafeLoader)
+    text_list = cread("../corpus/texts.csv")
     for text in text_list.to_dict("records"):
-        if text["id"] in text_metadata:
-            text.update(**text_metadata[text["id"]])
+        # if text["id"] in text_metadata: # todo clean up this entire mess
+        #     text.update(**text_metadata[text["id"]])
         if text["id"] in found_texts:
             texts[text["id"]] = text
 
@@ -1046,7 +1045,7 @@ def create(full=False):
 
     # # Multiword forms
     # pn_v_forms = cread(
-    #     "/home/florianm/Dropbox/research/cariban/yawarana/yawarana_corpus/annotation/output/multiword.csv"
+    #     "/home/florianm/Dropbox/research/cariban/yawarana/corpus/annotation/output/multiword.csv"
     # )
     # pn_v_forms.rename(columns={"Gloss": "Parameter_ID"}, inplace=True)
     # pn_v_forms = pd.concat([pn_v_forms, pd.DataFrame.from_dict(dic_forms)])
@@ -1072,7 +1071,7 @@ def create(full=False):
     df.forms = pn_v_forms
 
     # pn_v_infl = cread(
-    #     "/home/florianm/Dropbox/research/cariban/yawarana/yawarana_corpus/annotation/output/inflections.csv"
+    #     "/home/florianm/Dropbox/research/cariban/yawarana/corpus/annotation/output/inflections.csv"
     # )
 
     def resolve_wf_data(rec):
@@ -1111,6 +1110,7 @@ def create(full=False):
     join_dfs("morphs", "morphs", "bound_root_morphs")
     join_dfs("morphemes", "morphemes", "bound_roots")
     # join_dfs("inflections", "inflections", "pnvinfl")
+    splitcol(df.morphemes, "Tags", sep=",")
 
     df.productive_lexemes = pd.DataFrame.from_dict(productive_lexemes.values())
     df.productive_lexemes["Language_ID"] = "yab"
@@ -1194,6 +1194,7 @@ def create(full=False):
                 "datatype": "string",
             },
         ],
+        "morphemes": [{"name": "Tags", "datatype": "string", "separator": ","}]
     }
     spec = CLDFSpec(dir="cldf", module="Generic", metadata_fname="metadata.json")
     if full:

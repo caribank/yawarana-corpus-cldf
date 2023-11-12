@@ -4,11 +4,11 @@ binaryornot==0.4.4
 certifi==2023.7.22
 cffconvert==2.0.0
 chardet==5.2.0
--e git+ssh://git@github.com/fmatter/cldf-ldd.git@681bc872c85d0ba81c44983939651aa0030384ac#egg=cldf_ldd
+-e git+ssh://git@github.com/fmatter/cldf-ldd.git@94856dc7652fca7661fd1bece1f78400f35b6741#egg=cldf_ldd
 cldf_rel==0.0.4
 cldfbench==1.14.0
 cldfcatalog==1.5.1
-cldfviz==1.0.0
+-e git+ssh://git@github.com/cldf/cldfviz.git@4a1ddb648fe45f6acbbaaac35787b0d6f8b40d33#egg=cldfviz
 click==8.1.7
 clldutils==3.20.0
 colorama==0.4.6
@@ -40,11 +40,12 @@ pybtex==0.24.0
 pycldf==1.35.0
 pycountry==22.3.5
 pyglottolog==3.12.0
+pygraid==0.1.0
 pyigt==2.0.0
 pykwalify==1.8.0
--e git+ssh://git@github.com/fmatter/pylacoan.git@1f784da34adc2760c56b65af6cab0189db290005#egg=pylacoan
+-e git+ssh://git@github.com/fmatter/pylacoan.git@f0eb9312238d0ef0f7bc36bf60cfdcb6a4f4b211#egg=pylacoan
 pylatexenc==2.10
--e git+ssh://git@github.com/fmatter/pylingdocs.git@d63b70f8e5c3aa4984f845ca5fdeaf8152513783#egg=pylingdocs
+-e git+ssh://git@github.com/fmatter/pylingdocs.git@c701ce76b17aecd064506338df1c4a5593ccf343#egg=pylingdocs
 pyrsistent==0.19.3
 python-dateutil==2.8.2
 python-frontmatter==1.0.0
@@ -64,10 +65,10 @@ tabulate==0.9.0
 termcolor==2.3.0
 tqdm==4.66.1
 Unidecode==1.3.7
--e git+ssh://git@github.com/fmatter/uniparser-yawarana.git@b4e54e4d66e0e6818b49a6f3c986c95f03cb7254#egg=uniparser_yawarana
+-e git+ssh://git@github.com/fmatter/uniparser-yawarana.git@c06dd7245531b1d69e30fe9858a1d36ce0075050#egg=uniparser_yawarana
 uritemplate==4.1.1
 urllib3==2.0.6
 watchdog==3.0.0
 wcwidth==0.2.8
--e git+ssh://git@github.com/fmatter/writio.git@9b7c902685f4e2150db5e508234c241d443a0537#egg=writio
+writio==0.1.0
 zipp==3.17.0
