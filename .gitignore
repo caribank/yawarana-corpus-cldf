@@ -1,5 +1,7 @@
+full
 .DS_Store
 errors.log
 RELEASING.md
 .~lock.*.csv#
-raw/*
+raw/flexamples.csv
+raw/full_examples.csv
